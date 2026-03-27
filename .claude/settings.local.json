@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\(f''''T{r[\"\"topic_id\"\"]}: {\"\"ERROR: \"\"+r[\"\"error\"\"] if \"\"error\"\" in r else r.get\\(\"\"label\"\",\"\"ok\"\"\\)}''''\\) for r in data]\")",
+      "WebFetch(domain:www.volkswagen-newsroom.com)",
+      "Bash(python scrapers/link_extractor_uk.py --pages 2)",
+      "Bash(python -c \":*)",
+      "Bash(python scrapers/scraper_uk.py --max-pages 5 --workers 3 --no-resume)",
+      "Bash(python scrapers/cleaner_uk.py)",
+      "Bash(python scrapers/link_extractor_uk.py)",
+      "Bash(python scrapers/scraper_uk.py --max-pages 15 --workers 8)",
+      "Bash(python:*)",
+      "Bash(Rscript R_code_STM_uk.R)"
+    ]
+  }
+}

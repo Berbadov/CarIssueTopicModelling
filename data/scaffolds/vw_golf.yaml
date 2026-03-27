@@ -1,0 +1,176 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Vehicle Knowledge Scaffold — VW Golf (Mk5 / Mk6 / Mk7)
+# ──────────────────────────────────────────────────────────────────────────────
+# Schema is intentionally generic so the same structure can be reused for
+# other make/model forums (bmw_3series.yaml, toyota_corolla.yaml, etc.).
+#
+# Top-level keys:
+#   meta            — identifies the vehicle and corpus
+#   year_cohorts    — named year bands used for stratified analysis
+#   engine_families — engine family codes with displacement/year mappings
+#   transmissions   — gearbox codes with compatibility and known failures
+# ──────────────────────────────────────────────────────────────────────────────
+
+meta:
+  make: VW
+  model: Golf
+  generations: [5, 6, 7]
+  corpus_years: [2005, 2024]
+  forum_language: tr
+  forum_url: golftutkusu.com
+
+# ── Year cohorts ──────────────────────────────────────────────────────────────
+# Used for stratified breakdowns in build_bundle.
+# year_max is exclusive (i.e. < year_max).
+year_cohorts:
+  pre_2014:
+    label: "Golf 5/6 era (EA111)"
+    year_min: 2000
+    year_max: 2014
+    notes: >
+      EA111 engine family in TSI variants. Famous for oil consumption due to
+      piston ring and valve stem seal design. DSG was DQ200 first gen.
+  cohort_2014_2017:
+    label: "Golf 7 early (EA211)"
+    year_min: 2014
+    year_max: 2018
+    notes: >
+      EA211 replaced EA111 — oil consumption issue resolved in TSI.
+      DQ200 second generation (revised mechatronic from 2014).
+  cohort_2018_plus:
+    label: "Golf 7 facelift / Golf 8 intro"
+    year_min: 2018
+    year_max: 2099
+    notes: >
+      1.5 TSI EA211 evo introduced (Miller cycle, ACT cylinder deactivation).
+      Mild hybrid variants in some markets.
+
+# ── Engine families ───────────────────────────────────────────────────────────
+# code          — internal VW family code
+# fuel_type     — petrol | diesel
+# displacements — list of displacement labels as used in engine_group field
+# year_range    — [first_year, last_year] inclusive production years
+# known_issues  — list of known issues; stm_topic links to corpus topic IDs
+engine_families:
+
+  - code: EA111
+    fuel_type: petrol
+    displacements: ["1.2_TSI", "1.4_TSI"]
+    year_range: [2005, 2013]
+    known_issues:
+      - stm_topic: 2
+        issue: oil_consumption
+        severity: high
+        notes: >
+          Piston rings and valve stem seals allow oil into combustion chamber.
+          Affects pre-2014 production. EA211 (post-2014) resolved this.
+          Key distinguisher: year < 2014 + 1.4 TSI or 1.2 TSI.
+      - stm_topic: null
+        issue: timing_chain_tensioner
+        severity: medium
+        notes: >
+          Plastic timing chain tensioner failure at high mileage (>100k km).
+          Rattling on cold start is the main symptom.
+
+  - code: EA211
+    fuel_type: petrol
+    displacements: ["1.2_TSI", "1.4_TSI", "1.5_TSI"]
+    year_range: [2012, 2024]
+    known_issues:
+      - stm_topic: null
+        issue: none_major
+        notes: >
+          Oil consumption issue from EA111 was resolved. Generally reliable.
+          1.5 TSI evo has cylinder deactivation (ACT) — occasional rough idle
+          during transition is normal.
+
+  - code: EA189
+    fuel_type: diesel
+    displacements: ["1.6_TDI", "2.0_TDI"]
+    year_range: [2008, 2015]
+    known_issues:
+      - stm_topic: 6
+        issue: dpf_regeneration_failure
+        severity: medium
+        notes: >
+          DPF soot load builds up on short urban trips. Regeneration requires
+          sustained highway speeds. Frequent regen failures clog the DPF.
+      - stm_topic: 1
+        issue: injector_wear
+        severity: high
+        notes: >
+          Diesel injector wear and seal failures. Return-flow increase measurable
+          via OBD. Common after 150k km.
+      - stm_topic: null
+        issue: nox_emissions_software
+        severity: low  # from reliability/repair perspective
+        notes: >
+          Dieselgate-affected engines. Software update may affect performance
+          and DPF behavior. Not a mechanical failure per se.
+
+  - code: EA288
+    fuel_type: diesel
+    displacements: ["1.6_TDI", "2.0_TDI"]
+    year_range: [2013, 2024]
+    known_issues:
+      - stm_topic: 6
+        issue: dpf_regeneration_failure
+        severity: medium
+        notes: >
+          Same short-trip DPF sensitivity as EA189. SCR/AdBlue system added
+          on higher-output variants; AdBlue sensor faults are common.
+
+# ── Transmissions ─────────────────────────────────────────────────────────────
+# code              — common name used in forum discussions
+# internal_code     — VW internal gearbox code
+# type              — DSG_7speed_dry | DSG_6speed_wet | manual_5speed | manual_6speed
+# compatible_engines — displacement labels this gearbox is typically paired with
+# year_range        — [first_year, last_year] production
+# known_names_tr    — Turkish terms users actually write in forum (for search/RAG)
+# known_issues      — known failure modes; stm_topic links to corpus topics
+transmissions:
+
+  - code: DQ200
+    internal_code: "0AM"
+    type: DSG_7speed_dry
+    compatible_engines: ["1.2_TSI", "1.4_TSI"]
+    year_range: [2008, 2023]
+    known_names_tr: ["dsg", "çift kavramalı", "sanziman", "otomatik", "vites"]
+    known_issues:
+      - stm_topic: 10
+        issue: mechatronic_unit_failure
+        part_code: "0AM325065"
+        severity: high
+        notes: >
+          Mechatronic unit (combines TCU + valve body + solenoids) is the primary
+          failure point. Symptoms: judder at low speed, gear slip, limp mode.
+          DQ200 uses a DRY dual clutch — less tolerant of stop-start traffic than
+          DQ250. Revised mechatronic from 2014 is more reliable.
+      - stm_topic: 7
+        issue: clutch_pack_wear
+        severity: medium
+        notes: >
+          Dry clutch packs wear faster in heavy traffic. Users report shudder
+          during engagement (esp. cold). Not always a mechatronic fault.
+
+  - code: DQ250
+    internal_code: "02E"
+    type: DSG_6speed_wet
+    compatible_engines: ["2.0_TDI", "2.0_TSI", "1.8_TSI"]
+    year_range: [2003, 2023]
+    known_names_tr: ["dsg", "otomatik", "6 vitesli dsg"]
+    known_issues:
+      - stm_topic: null
+        issue: oil_leak_rear_seal
+        severity: low
+        notes: >
+          Rear differential seal leaks at high mileage. Wet clutch design is
+          generally more robust than DQ200 for stop-start use.
+
+  - code: MQ350
+    internal_code: "0CF"
+    type: manual_6speed
+    compatible_engines: ["1.6_TDI", "2.0_TDI", "2.0_TSI", "1.4_TSI"]
+    year_range: [2012, 2024]
+    known_names_tr: ["manuel", "el vitesi", "düz vites"]
+    known_issues: []
