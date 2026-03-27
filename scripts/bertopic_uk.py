@@ -77,7 +77,34 @@ COSMETIC_PATTERNS = [
 INFOTAINMENT_PATTERNS = [
     r"\bcarplay\b", r"\bandroid auto\b", r"\bbluetooth\b",
     r"\bsat nav\b", r"\binfotainment\b", r"\bhead unit\b",
-    r"\btouchscreen\b", r"\bdab\b",
+    r"\btouchscreen\b", r"\bdab\b", r"\bsd card\b",
+    r"\busb\b", r"\bapple music\b", r"\bspotify\b",
+    r"\bnavigation\b", r"\bmaps?\b", r"\bstreaming\b",
+]
+
+PURCHASE_PATTERNS = [
+    # Finance
+    r"\bfinance\b", r"\bpcp\b", r"\blease\b", r"\bleasing\b",
+    r"\bdeposit\b", r"\bmonthly payment\b", r"\bequity\b",
+    r"\bballoon\b", r"\bhire purchase\b", r"\bapr\b",
+    r"\btrade.?in\b", r"\bpart.?exchange\b",
+    # Order tracking / delivery
+    r"\bbuild week\b", r"\ballocation\b", r"\blead time\b",
+    r"\bin transit\b", r"\bdelivery date\b", r"\border number\b",
+    r"\border status\b", r"\bshipped\b",
+    # Insurance
+    r"\binsurance\b", r"\bpolicy\b", r"\bpremium\b",
+    r"\bclaim(?:s)?\b", r"\binsurer\b", r"\bunderwriter\b",
+]
+
+APPEARANCE_PATTERNS = [
+    r"\bcolou?rs?\b", r"\bmetallic\b", r"\bpearl\b",
+    r"\bwrap(?:ped|s)?\b", r"\btint(?:s|ed)?\b",
+    r"\bvinyl\b", r"\bplasti.?dip\b",
+    r"\bbadge\b", r"\bdecal\b", r"\bstripe\b", r"\bsticker\b",
+    r"\bemblem\b", r"\bmudflaps?\b", r"\bmud flaps?\b",
+    r"\bboot liner\b", r"\bfloor mats?\b", r"\brubber mats?\b",
+    r"\bcarpet\b",
 ]
 
 TECHNICAL_REASON_TAGS = [
@@ -89,6 +116,8 @@ _COMPILED_TECHNICAL = [re.compile(p, re.IGNORECASE) for p in TECHNICAL_PATTERNS]
 _COMPILED_CHRONIC = [re.compile(p, re.IGNORECASE) for p in CHRONIC_PATTERNS]
 _COMPILED_COSMETIC = [re.compile(p, re.IGNORECASE) for p in COSMETIC_PATTERNS]
 _COMPILED_INFOTAINMENT = [re.compile(p, re.IGNORECASE) for p in INFOTAINMENT_PATTERNS]
+_COMPILED_PURCHASE = [re.compile(p, re.IGNORECASE) for p in PURCHASE_PATTERNS]
+_COMPILED_APPEARANCE = [re.compile(p, re.IGNORECASE) for p in APPEARANCE_PATTERNS]
 
 # ── Mileage extraction (ported from R_code_STM_uk.R lines 42-73) ────────────
 
@@ -227,6 +256,10 @@ def compute_scores(df: pd.DataFrame) -> pd.DataFrame:
         lambda t: count_pattern_hits(t, _COMPILED_COSMETIC))
     df["infotainment_score"] = df["txt"].apply(
         lambda t: count_pattern_hits(t, _COMPILED_INFOTAINMENT))
+    df["purchase_score"] = df["txt"].apply(
+        lambda t: count_pattern_hits(t, _COMPILED_PURCHASE))
+    df["appearance_score"] = df["txt"].apply(
+        lambda t: count_pattern_hits(t, _COMPILED_APPEARANCE))
 
     # Reason-based technical hint
     reason_lower = df["reason"].fillna("").str.lower()
@@ -234,12 +267,24 @@ def compute_scores(df: pd.DataFrame) -> pd.DataFrame:
     df["reason_technical_hint"] = reason_lower.str.contains(
         tag_pattern, regex=True).astype(int)
 
-    # Focus score & technical bucket (R lines 172-177)
+    # Focus score: reward mechanical signal, penalise all non-mechanical categories.
+    # Chronic terms ("still", "keeps", "again") only count when technical_score > 0,
+    # otherwise they inflate non-mechanical threads ("still waiting for delivery").
+    effective_chronic = df["chronic_score"].where(df["technical_score"] > 0, 0)
+
+    # Non-mechanical penalty = sum of all non-mech categories (uncapped).
+    # A thread hitting multiple non-mech categories is genuinely less mechanical.
+    non_mech_penalty = (
+        df["cosmetic_score"]
+        + df["infotainment_score"]
+        + df["purchase_score"]
+        + df["appearance_score"]
+    )
     df["focus_score"] = (
         df["technical_score"]
-        + 2 * df["chronic_score"]
+        + 2 * effective_chronic
         + df["reason_technical_hint"]
-        - df["cosmetic_score"].clip(upper=3)
+        - non_mech_penalty
     )
     df["technical_bucket"] = pd.Categorical(
         np.where(df["focus_score"] >= 4, "high",
@@ -391,7 +436,8 @@ def compute_embeddings(docs: list[str], force: bool = False,
 # ═════════════════════════════════════════════════════════════════════════════
 
 def fit_bertopic(docs: list[str], embeddings: np.ndarray,
-                 min_cluster_size: int = 30) -> tuple:
+                 min_cluster_size: int = 30,
+                 seed_topics: list[list[str]] | None = None) -> tuple:
     from bertopic import BERTopic
     from bertopic.representation import KeyBERTInspired
     from hdbscan import HDBSCAN
@@ -422,6 +468,7 @@ def fit_bertopic(docs: list[str], embeddings: np.ndarray,
         hdbscan_model=hdbscan_model,
         vectorizer_model=vectorizer_model,
         representation_model=representation_model,
+        seed_topic_list=seed_topics,
         top_n_words=15,
         verbose=True,
         calculate_probabilities=True,
@@ -578,6 +625,73 @@ def save_outputs(df: pd.DataFrame, topic_model, topics: list,
 
 
 # ═════════════════════════════════════════════════════════════════════════════
+# PHASE 6: Post-hoc covariate regression
+# ═════════════════════════════════════════════════════════════════════════════
+
+def covariate_regression(df: pd.DataFrame, topics: list) -> None:
+    """Multinomial logistic regression: P(topic | engine_group, log_mileage, bucket)."""
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.preprocessing import OneHotEncoder
+
+    log.info("Running post-hoc covariate regression ...")
+
+    df_reg = df.copy()
+    df_reg["topic"] = topics
+
+    # Drop outlier topic (-1)
+    df_reg = df_reg[df_reg["topic"] != -1].copy()
+
+    # Only keep topics with enough samples
+    topic_counts = df_reg["topic"].value_counts()
+    valid_topics = topic_counts[topic_counts >= 5].index
+    df_reg = df_reg[df_reg["topic"].isin(valid_topics)].copy()
+
+    if len(valid_topics) < 2:
+        log.warning("Not enough topics for regression, skipping")
+        return
+
+    # Prepare features
+    # Log-transform mileage (fill missing with median, add 1 to avoid log(0))
+    miles = df_reg["mileage_miles"].copy()
+    miles = miles.fillna(miles.median() if miles.median() is not np.nan else 50000)
+    df_reg["mileage_log"] = np.log1p(miles.clip(lower=0))
+
+    # One-hot encode engine_group and technical_bucket
+    cat_cols = df_reg[["engine_group", "technical_bucket"]].astype(str)
+    ohe = OneHotEncoder(sparse_output=False, drop="first", handle_unknown="ignore")
+    cat_encoded = ohe.fit_transform(cat_cols)
+    cat_names = ohe.get_feature_names_out(["engine_group", "technical_bucket"])
+
+    X = np.column_stack([df_reg["mileage_log"].values, cat_encoded])
+    feature_names = ["mileage_log"] + list(cat_names)
+    y = df_reg["topic"].values
+
+    # Fit multinomial logistic regression
+    model = LogisticRegression(
+        multi_class="multinomial", solver="lbfgs",
+        max_iter=1000, C=1.0,
+    )
+    model.fit(X, y)
+    log.info("Regression accuracy: %.1f%%", model.score(X, y) * 100)
+
+    # Build coefficient table: one row per (topic, feature)
+    rows = []
+    classes = model.classes_
+    for i, topic_id in enumerate(classes):
+        for j, feat in enumerate(feature_names):
+            rows.append({
+                "topic": int(topic_id) + 1,  # 1-indexed
+                "feature": feat,
+                "coefficient": round(float(model.coef_[i, j]), 4),
+            })
+
+    coeff_df = pd.DataFrame(rows)
+    coeff_path = DATA_DIR / "bertopic_covariate_effects_uk.csv"
+    coeff_df.to_csv(coeff_path, index=False)
+    log.info("Saved covariate effects to %s (%d rows)", coeff_path.name, len(coeff_df))
+
+
+# ═════════════════════════════════════════════════════════════════════════════
 # MAIN
 # ═════════════════════════════════════════════════════════════════════════════
 
@@ -589,15 +703,31 @@ def main():
                         help="HDBSCAN min_cluster_size (default: 30)")
     parser.add_argument("--force-embed", action="store_true",
                         help="Force recompute embeddings even if cached")
+    parser.add_argument("--filter-bucket", type=str, default="medium",
+                        choices=["low", "medium", "high"],
+                        help="Min technical_bucket to keep (default: medium)")
+    parser.add_argument("--no-guided", action="store_true",
+                        help="Disable guided BERTopic (no seed topics)")
+    parser.add_argument("--force-prepare", action="store_true",
+                        help="Force re-aggregation and re-scoring (ignore cached prepared data)")
     args = parser.parse_args()
 
     # Phase 1: Prepare data
-    if PREPARED_PATH.exists():
+    if PREPARED_PATH.exists() and not args.force_prepare:
         log.info("Loading cached prepared data from %s", PREPARED_PATH)
         df = pd.read_csv(PREPARED_PATH)
         log.info("Loaded %d threads", len(df))
     else:
         df = prepare_data()
+
+    # Phase 1b: Pre-filter by technical_bucket
+    bucket_order = {"low": 0, "medium": 1, "high": 2}
+    min_bucket = bucket_order[args.filter_bucket]
+    df["_bucket_ord"] = df["technical_bucket"].map(bucket_order)
+    n_before = len(df)
+    df = df[df["_bucket_ord"] >= min_bucket].drop(columns=["_bucket_ord"]).reset_index(drop=True)
+    log.info("Pre-filter (bucket >= %s): %d -> %d threads", args.filter_bucket, n_before, len(df))
+    is_filtered = args.filter_bucket != "low"
 
     # Phase 2: Clean text for embedding
     docs = df["txt"].apply(clean_text_for_embedding).tolist()
@@ -611,14 +741,19 @@ def main():
         docs = [d for d, v in zip(docs, valid_mask) if v]
 
     # Phase 3: Embeddings
-    embeddings = compute_embeddings(docs, force=args.force_embed)
+    embeddings = compute_embeddings(docs, force=args.force_embed, filtered=is_filtered)
 
     # Phase 4: BERTopic
+    seed_topics = None if args.no_guided else SEED_TOPIC_LIST
     topic_model, topics, probs = fit_bertopic(
-        docs, embeddings, min_cluster_size=args.min_cluster_size)
+        docs, embeddings, min_cluster_size=args.min_cluster_size,
+        seed_topics=seed_topics)
 
     # Phase 5: Outputs
     save_outputs(df, topic_model, topics, probs)
+
+    # Phase 6: Covariate regression
+    covariate_regression(df, topics)
 
     log.info("Done.")
 
