@@ -1,0 +1,26 @@
+topic,terms_frex,terms_prob,prevalence_pct,chronic_signal,thread_count,mileage_median_miles,mileage_p20_miles,mileage_p80_miles
+1,"seats, leather, diesel, s3, petrol, dcc, hatch, series, nav, torque","seats, leather, diesel, s3, petrol, dcc, hatch, series, nav, torque",15.2,1.081,1085,18000,4000,35000
+2,"nav, card, sd, sd card, music, discover, usb, maps, nav pro, iphone","nav, card, sd, sd card, music, discover, usb, maps, nav pro, iphone",10.3,0.648,736,6420,2000,27800
+3,"finance, pcp, deposit, gfv, lease, dtd, deals, contribution, equity, 5k","finance, pcp, deposit, gfv, lease, dtd, deals, contribution, equity, 5k",7.1,1.146,508,13000,4000,29000
+4,"led, beam, assist, headlights, bulb, bulbs, fog, headlight, xenon, coding","led, beam, assist, headlights, bulb, bulbs, fog, headlight, xenon, coding",5.5,0.503,390,22541,5000,40000
+5,"clutch, throttle, map, revo, torque, tuning, pedal box, dtuk, remap, ecu","clutch, throttle, map, revo, torque, tuning, pedal box, dtuk, remap, ecu",6.3,0.92,451,7000,2000,30000
+6,"coolant, pump, temperature, aircon, thermostat, leak, water pump, bag, seal, smell","coolant, pump, temperature, aircon, thermostat, leak, water pump, bag, seal, smell",5.1,0.891,366,24000,5000,47349
+7,"oil change, service plan, fluid, servicing, filter, brake fluid, inspection, policy, extended, long life","oil change, service plan, fluid, servicing, filter, brake fluid, inspection, policy, extended, long life",4.5,0.808,323,15000,6600,30000
+8,"tracker, build week, confirmed, bw, transit, emden, ship, progress, boat, port","tracker, build week, confirmed, bw, transit, emden, ship, progress, boat, port",4.5,1.095,317,12500,3800,30000
+9,"rattle, shock, shocks, rattles, creaking, noises, rattling, bearing, mounts, alignment","rattle, shock, shocks, rattles, creaking, noises, rattling, bearing, mounts, alignment",4.0,0.873,283,18000,2500,42000
+10,"spacers, 225, offset, 235, bolts, prets, bbs, cm, caps, pretoria","spacers, 225, offset, 235, bolts, prets, bbs, cm, caps, pretoria",3.7,0.561,262,4000,2000,25000
+11,"exhaust, cat, gpf, intake, milltek, delete, pipe, filter, res, downpipe","exhaust, cat, gpf, intake, milltek, delete, pipe, filter, res, downpipe",3.6,0.474,253,5000,2000,32799
+12,"spoiler, plates, diffuser, badges, tape, gloss, gloss black, number plate, rear diffuser, holes","spoiler, plates, diffuser, badges, tape, gloss, gloss black, number plate, rear diffuser, holes",3.6,0.38,255,5000,1000,30000
+13,"michelin, bridgestones, grip, winter tyres, snow, conti, bridgestone, ps4, goodyear, winters","michelin, bridgestones, grip, winter tyres, snow, conti, bridgestone, ps4, goodyear, winters",2.9,0.907,205,16000,7000,25000
+14,"battery, keyless, fob, stolen, security, batteries, police, alarm, key fob, agm","battery, keyless, fob, stolen, security, batteries, police, alarm, key fob, agm",2.8,0.965,201,17000,5600,30800
+15,"chip, chips, coat, wax, body shop, stone chips, detailer, paintwork, lacquer, cleaner","chip, chips, coat, wax, body shop, stone chips, detailer, paintwork, lacquer, cleaner",2.7,0.634,191,10000,1880,27600
+16,"pure white, colours, tornado, tornado red, carbon grey, oryx, carbon steel, steel grey, steel, oryx white","pure white, colours, tornado, tornado red, carbon grey, oryx, carbon steel, steel grey, steel, oryx white",2.4,0.723,173,10000,3000,32000
+17,"mpg, tank, average, octane, petrol, unleaded, 95, figures, commute, ron","mpg, tank, average, octane, petrol, unleaded, 95, figures, commute, ron",2.1,1.103,146,6500,2000,20000
+18,"radar, braking, assist, lane, cruise, message, traffic, emergency, cruise control, bus","radar, braking, assist, lane, cruise, message, traffic, emergency, cruise control, bus",1.9,0.842,133,4500,2200,19000
+19,"codes, code, coil, faults, battery, epc, errors, epc light, plugs, scan","codes, code, coil, faults, battery, epc, errors, epc light, plugs, scan",2.0,0.763,139,15000,6000,47600
+20,"discs, discs pads, calipers, disc, brembo, pad, rear discs, rears, caliper, rear brakes","discs, discs pads, calipers, disc, brembo, pad, rear discs, rears, caliper, rear brakes",1.8,0.597,129,13000,4000,31200
+21,"diamond, diamond cut, alloy, powder, coated, refurb, lacquer, powder coated, white worm, worm","diamond, diamond cut, alloy, powder, coated, refurb, lacquer, powder coated, white worm, worm",1.7,0.84,119,14000,3000,20000
+22,"dcc, comfort, dampers, eibach, vwr, bilstein, comfort mode, firm, b6, handling","dcc, comfort, dampers, eibach, vwr, bilstein, comfort mode, firm, b6, handling",1.7,0.866,119,12500,2000,34000
+23,"customer service, manager, exeter, service manager, appointment, sit wait, wiring, birmingham, vwuk, dept","customer service, manager, exeter, service manager, appointment, sit wait, wiring, birmingham, vwuk, dept",1.4,0.816,103,9000,3600,32000
+24,"handbrake, auto hold, stop start, battery, start stop, autohold, foot brake, release, engage, clutch","handbrake, auto hold, stop start, battery, start stop, autohold, foot brake, release, engage, clutch",1.4,1.165,103,9000,2200,39000
+25,"mirror, mirrors, window, flap, fold, tailgate, reset, folding, cap, filler","mirror, mirrors, window, flap, fold, tailgate, reset, folding, cap, filler",1.6,0.557,115,6073,1000,10565

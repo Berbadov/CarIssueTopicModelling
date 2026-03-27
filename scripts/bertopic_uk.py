@@ -1,0 +1,627 @@
+#!/usr/bin/env python3
+"""
+bertopic_uk.py
+──────────────
+BERTopic pipeline for UK Golf GTI forum topic modelling.
+
+Phases:
+  1. Thread aggregation (port of R_code_STM_uk.R lines 117-196)
+  2. Text cleaning & stopword strategy
+  3. Sentence embedding (all-mpnet-base-v2, GPU)
+  4. BERTopic fit (UMAP → HDBSCAN → c-TF-IDF)
+  5. Output CSVs compatible with generate_issue_knowledge.py
+
+Usage:
+    python scripts/bertopic_uk.py [--skip-embed] [--min-cluster-size 30]
+"""
+
+import argparse
+import json
+import logging
+import os
+import re
+from pathlib import Path
+
+# Prevent TensorFlow import conflicts (not needed for this pipeline)
+os.environ["USE_TF"] = "NO"
+os.environ["TRANSFORMERS_NO_TF"] = "1"
+
+import numpy as np
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer, ENGLISH_STOP_WORDS
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(message)s",
+    datefmt="%H:%M:%S",
+)
+log = logging.getLogger(__name__)
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data" / "processed"
+INPUT_CSV = ROOT / "cleaned_messages_uk.csv"
+EMBEDDING_PATH = DATA_DIR / "uk_thread_embeddings.npy"
+EMBEDDING_FILTERED_PATH = DATA_DIR / "uk_thread_embeddings_filtered.npy"
+PREPARED_PATH = DATA_DIR / "uk_threads_prepared.csv"
+
+# ── Pattern sets (ported from R_code_STM_uk.R lines 77-109) ─────────────────
+
+TECHNICAL_PATTERNS = [
+    r"\bengine\b", r"\bgearbox\b", r"\btransmission\b", r"\bclutch\b",
+    r"\bturbo\b", r"\binjector\b", r"\btiming\b", r"\bcambelt\b",
+    r"\btiming chain\b", r"\btiming belt\b", r"\bthermostat\b",
+    r"\bwater pump\b", r"\bradiator\b", r"\bdpf\b", r"\begr\b",
+    r"\babs\b", r"\besp\b", r"\bspark plug\b", r"\bcoilpack\b",
+    r"\bcoil pack\b", r"\bbrakes?\b", r"\bpads?\b", r"\bdisc\b",
+    r"\bshock absorber\b", r"\bwishbone\b", r"\bsteering\b",
+    r"\bsensor\b", r"\boil\b", r"\bleak\b", r"\bnoise\b",
+    r"\bvibration\b", r"\bknock\b", r"\bsmoke\b", r"\bmisfire\b",
+    r"\blimp mode\b", r"\bfault code\b", r"\bvcds\b", r"\bdsg\b",
+    r"\bflywheel\b", r"\bdmf\b", r"\bcoolant\b", r"\boverheating\b",
+]
+
+CHRONIC_PATTERNS = [
+    r"\bkeeps?\b", r"\bstill\b", r"\brecurring\b", r"\bpersistent\b",
+    r"\bongoing\b", r"\bagain\b", r"\brepeat\b", r"\bunresolved\b",
+    r"\bnever fixed\b", r"\bkeep having\b", r"\bhappens again\b",
+    r"\bback again\b", r"\bstill happening\b",
+]
+
+COSMETIC_PATTERNS = [
+    r"\brespray\b", r"\bpaintwork\b", r"\bbodywork\b",
+    r"\bdent\b", r"\bscratch\b", r"\bscuff\b",
+    r"\bppf\b", r"\bdetailing\b", r"\bpolish\b",
+    r"\balloy refurb\b", r"\bpanel\b",
+]
+
+INFOTAINMENT_PATTERNS = [
+    r"\bcarplay\b", r"\bandroid auto\b", r"\bbluetooth\b",
+    r"\bsat nav\b", r"\binfotainment\b", r"\bhead unit\b",
+    r"\btouchscreen\b", r"\bdab\b",
+]
+
+TECHNICAL_REASON_TAGS = [
+    "engine", "gearbox", "transmission", "brake", "electrical",
+    "cooling", "suspension", "exhaust", "turbo", "clutch",
+]
+
+_COMPILED_TECHNICAL = [re.compile(p, re.IGNORECASE) for p in TECHNICAL_PATTERNS]
+_COMPILED_CHRONIC = [re.compile(p, re.IGNORECASE) for p in CHRONIC_PATTERNS]
+_COMPILED_COSMETIC = [re.compile(p, re.IGNORECASE) for p in COSMETIC_PATTERNS]
+_COMPILED_INFOTAINMENT = [re.compile(p, re.IGNORECASE) for p in INFOTAINMENT_PATTERNS]
+
+# ── Mileage extraction (ported from R_code_STM_uk.R lines 42-73) ────────────
+
+def extract_mileage_info(text: str) -> dict:
+    if not text or pd.isna(text):
+        return {"miles": None, "confidence": "none"}
+    t = text.lower()
+
+    # "50k miles", "50k mls", "50k mi", "50K"
+    m = re.search(r"\b(\d{1,3})\s*k\s*(?:miles?|mls?|mi)?\b", t)
+    if m:
+        return {"miles": int(m.group(1)) * 1000, "confidence": "high"}
+
+    # "50,000 miles", "50000 miles"
+    m = re.search(r"\b(\d{1,3}(?:[,.]\d{3})+|\d{4,})\s*(?:miles?|mls?)\b", t)
+    if m:
+        return {"miles": int(re.sub(r"[^0-9]", "", m.group(1))), "confidence": "high"}
+
+    # "65000 on the clock"
+    m = re.search(r"\b(\d{4,})\s+on\s+(?:the\s+)?clock\b", t)
+    if m:
+        return {"miles": int(m.group(1)), "confidence": "medium"}
+
+    # "mileage: 65000"
+    m = re.search(r"\bmileage\s*[:=]?\s*(\d{4,})\b", t)
+    if m:
+        return {"miles": int(m.group(1)), "confidence": "medium"}
+
+    # km fallback (convert to miles / 1.609)
+    m = re.search(r"\b(\d{1,3}(?:[,.]\d{3})+|\d{4,})\s*km\b", t)
+    if m:
+        km = int(re.sub(r"[^0-9]", "", m.group(1)))
+        return {"miles": int(km / 1.609), "confidence": "low"}
+
+    return {"miles": None, "confidence": "none"}
+
+
+def count_pattern_hits(text: str, compiled_patterns: list) -> int:
+    if not text or pd.isna(text):
+        return 0
+    return sum(1 for p in compiled_patterns if p.search(text))
+
+
+# ── Engine group mapping (from R_code_STM_uk.R lines 184-195) ───────────────
+
+ENGINE_GROUP_MAP = {
+    "MK8": "MK8", "MK7.5": "MK7.5", "MK7": "MK7",
+    "MK6": "MK6", "MK5": "MK5",
+    "2.0_TSI": "2.0_TSI", "EA888": "2.0_TSI",
+    "1.4_TSI": "1.4_TSI", "EA211": "1.4_TSI",
+    "Golf_R": "Golf_R",
+    "unknown": "unknown",
+}
+
+
+def map_engine_group(code: str) -> str:
+    if pd.isna(code):
+        return "unknown"
+    return ENGINE_GROUP_MAP.get(code, "other")
+
+
+# ── Quote stripping (from cleaner_uk.py) ─────────────────────────────────────
+
+_QUOTE_PREFIX = re.compile(r"^quote\s+from\s*:[^.!?\n]{0,80}", re.IGNORECASE)
+
+
+def strip_quote_prefix(text: str) -> str:
+    return _QUOTE_PREFIX.sub("", text).strip()
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# PHASE 1: Thread aggregation
+# ═════════════════════════════════════════════════════════════════════════════
+
+def aggregate_threads(df_raw: pd.DataFrame) -> pd.DataFrame:
+    log.info("Aggregating %d messages into threads ...", len(df_raw))
+
+    groups = df_raw.groupby(["thread_name", "thread_url"], sort=False)
+    rows = []
+
+    for (tname, turl), grp in groups:
+        msgs = grp["message"].tolist()
+        reasons = grp["reason"].tolist()
+        engine_codes = grp["engine_code"].tolist()
+
+        # Filter follow-up messages: keep first always, then keep if
+        # cosmetic_hits < 2 OR technical_hits > 0  (R line 131)
+        if len(msgs) <= 1:
+            kept = msgs
+        else:
+            kept = [msgs[0]]
+            for msg in msgs[1:]:
+                cosm = count_pattern_hits(msg, _COMPILED_COSMETIC)
+                tech = count_pattern_hits(msg, _COMPILED_TECHNICAL)
+                if cosm < 2 or tech > 0:
+                    kept.append(msg)
+            if not kept:
+                kept = [msgs[0]]
+
+        txt = " ".join(str(m) for m in kept if m and not pd.isna(m))
+
+        # Mileage: first non-missing across all messages
+        mileage_info = {"miles": None, "confidence": "none"}
+        for msg in msgs:
+            info = extract_mileage_info(str(msg) if msg else "")
+            if info["miles"] is not None:
+                mileage_info = info
+                break
+
+        rows.append({
+            "thread_name": tname,
+            "thread_url": turl,
+            "txt": txt,
+            "reason": reasons[0] if reasons else None,
+            "engine_code": engine_codes[0] if engine_codes else "unknown",
+            "mileage_miles": mileage_info["miles"],
+            "mileage_confidence": mileage_info["confidence"],
+            "n_messages": len(msgs),
+        })
+
+    df = pd.DataFrame(rows)
+    df["doc_id"] = range(1, len(df) + 1)
+    df["doc_name"] = df["doc_id"].apply(lambda x: f"doc_{x:05d}")
+
+    log.info("Aggregated into %d threads", len(df))
+    return df
+
+
+def compute_scores(df: pd.DataFrame) -> pd.DataFrame:
+    log.info("Computing pattern scores ...")
+    df["technical_score"] = df["txt"].apply(
+        lambda t: count_pattern_hits(t, _COMPILED_TECHNICAL))
+    df["chronic_score"] = df["txt"].apply(
+        lambda t: count_pattern_hits(t, _COMPILED_CHRONIC))
+    df["cosmetic_score"] = df["txt"].apply(
+        lambda t: count_pattern_hits(t, _COMPILED_COSMETIC))
+    df["infotainment_score"] = df["txt"].apply(
+        lambda t: count_pattern_hits(t, _COMPILED_INFOTAINMENT))
+
+    # Reason-based technical hint
+    reason_lower = df["reason"].fillna("").str.lower()
+    tag_pattern = "|".join(TECHNICAL_REASON_TAGS)
+    df["reason_technical_hint"] = reason_lower.str.contains(
+        tag_pattern, regex=True).astype(int)
+
+    # Focus score & technical bucket (R lines 172-177)
+    df["focus_score"] = (
+        df["technical_score"]
+        + 2 * df["chronic_score"]
+        + df["reason_technical_hint"]
+        - df["cosmetic_score"].clip(upper=3)
+    )
+    df["technical_bucket"] = pd.Categorical(
+        np.where(df["focus_score"] >= 4, "high",
+                 np.where(df["focus_score"] >= 2, "medium", "low")),
+        categories=["low", "medium", "high"],
+        ordered=True,
+    )
+
+    # Engine group
+    df["engine_group"] = df["engine_code"].apply(map_engine_group)
+
+    return df
+
+
+def filter_threads(df: pd.DataFrame) -> pd.DataFrame:
+    n_before = len(df)
+    # R lines 200-201: remove cosmetic-dominated and infotainment-dominated
+    mask_cosm = (df["cosmetic_score"] > df[["technical_score"]].clip(lower=1).iloc[:, 0]) & (df["technical_score"] < 2)
+    mask_info = (df["infotainment_score"] > 3) & (df["technical_score"] < 1)
+    df = df[~mask_cosm & ~mask_info].copy()
+    log.info("Filtered: %d -> %d threads (removed %d)", n_before, len(df), n_before - len(df))
+    return df
+
+
+def prepare_data() -> pd.DataFrame:
+    df_raw = pd.read_csv(INPUT_CSV)
+    log.info("Loaded %d raw messages from %s", len(df_raw), INPUT_CSV.name)
+
+    df = aggregate_threads(df_raw)
+    df = compute_scores(df)
+    df = filter_threads(df)
+
+    # Reset doc IDs after filtering
+    df["doc_id"] = range(1, len(df) + 1)
+    df["doc_name"] = df["doc_id"].apply(lambda x: f"doc_{x:05d}")
+
+    log.info("Engine group distribution:\n%s", df["engine_group"].value_counts().to_string())
+    log.info("Technical bucket distribution:\n%s", df["technical_bucket"].value_counts().to_string())
+
+    df.to_csv(PREPARED_PATH, index=False)
+    log.info("Saved prepared data to %s", PREPARED_PATH)
+    return df
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# PHASE 2: Stopwords & text cleaning
+# ═════════════════════════════════════════════════════════════════════════════
+
+FORUM_STOPWORDS = {
+    # Forum meta
+    "post", "thread", "forum", "reply", "quote", "edited", "page",
+    "member", "joined", "posts", "golfgtiforum", "topic", "board",
+    "moderator", "admin", "sticky", "locked", "moved", "index",
+    # Generic filler (from R_code_STM_uk.R lines 237-248)
+    "just", "also", "get", "got", "know", "think", "would", "could",
+    "really", "thing", "bit", "lot", "way", "time", "one", "two",
+    "going", "like", "use", "used", "using", "new", "old",
+    "actually", "probably", "maybe", "seems", "quite", "still",
+    "well", "much", "even", "though", "around", "back", "good",
+    "need", "want", "make", "look", "come", "right", "left",
+    "put", "run", "try", "tried", "doing", "done", "went", "said",
+    "say", "let", "see", "day", "days", "year", "years", "ago",
+    "bought", "buy", "buying", "sell", "selling", "sold", "price",
+    # Generic car terms (don't differentiate topics)
+    "car", "cars", "golf", "gti", "vw", "volkswagen",
+    "mk5", "mk6", "mk7", "mk8", "mk7.5",
+    "drive", "driving", "drove", "road", "vehicle",
+    # Forum social
+    "anyone", "lol", "cheers", "thanks", "thank", "mate", "guys",
+    "tbh", "imo", "afaik", "iirc", "fwiw", "imho",
+    "hi", "hello", "hey", "great", "nice", "sorry",
+    "people", "chap", "chaps", "folk", "folks",
+    "hope", "help", "helps", "question", "advice",
+}
+
+ALL_STOPWORDS = list(ENGLISH_STOP_WORDS | FORUM_STOPWORDS)
+
+# ── Guided BERTopic seed topics (from Turkish STM mechanical categories) ─────
+
+SEED_TOPIC_LIST = [
+    # T1 Turkish: Diesel injector issues
+    ["diesel", "injector", "injection", "tdi", "fuel", "fuelling", "nozzle"],
+    # T2 Turkish: Cooling system
+    ["coolant", "water pump", "thermostat", "radiator", "overheating", "temperature"],
+    # T3 Turkish: Timing / turbo
+    ["timing chain", "timing belt", "cambelt", "turbo", "wastegate", "boost"],
+    # T4 Turkish: Suspension / steering
+    ["suspension", "shock", "wishbone", "steering", "control arm", "bearing"],
+    # T5 Turkish: DSG / gearbox
+    ["dsg", "gearbox", "clutch", "flywheel", "mechatronic", "gear", "shudder"],
+    # T6 Turkish: DPF / idle vibration
+    ["dpf", "regen", "regeneration", "egr", "idle", "vibration", "particulate"],
+    # T7 Turkish: Brakes
+    ["brakes", "discs", "pads", "caliper", "brembo", "brake fluid"],
+    # T8 Turkish: Warning lights / electrics
+    ["epc", "warning light", "fault code", "limp mode", "check engine", "sensor", "vcds"],
+    # T9 Turkish: Battery
+    ["battery", "alternator", "starter", "agm", "charging", "voltage"],
+    # T10 Turkish: Lighting / sensors
+    ["headlight", "led", "bulb", "xenon", "sensor", "wiring"],
+    # Additional UK-specific
+    ["oil", "consumption", "leak", "sump", "dipstick", "burning oil"],
+    ["exhaust", "cat", "gpf", "downpipe", "manifold", "emissions"],
+    ["rattle", "noise", "knock", "creak", "squeak", "vibration"],
+    ["water leak", "seal", "drain", "damp", "condensation"],
+]
+
+_URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
+
+
+def clean_text_for_embedding(text: str) -> str:
+    """Light cleaning before sentence embedding — keep natural English."""
+    if not text or pd.isna(text):
+        return ""
+    t = str(text)
+    t = _URL_RE.sub("", t)
+    t = strip_quote_prefix(t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# PHASE 3: Embedding
+# ═════════════════════════════════════════════════════════════════════════════
+
+def compute_embeddings(docs: list[str], force: bool = False,
+                       filtered: bool = False) -> np.ndarray:
+    cache_path = EMBEDDING_FILTERED_PATH if filtered else EMBEDDING_PATH
+    if cache_path.exists() and not force:
+        log.info("Loading cached embeddings from %s", cache_path)
+        emb = np.load(cache_path)
+        if emb.shape[0] == len(docs):
+            return emb
+        log.warning("Cached embeddings shape %s != doc count %d, recomputing",
+                     emb.shape, len(docs))
+
+    from sentence_transformers import SentenceTransformer
+
+    log.info("Computing embeddings with all-mpnet-base-v2 on GPU ...")
+    model = SentenceTransformer("all-mpnet-base-v2", device="cuda")
+    embeddings = model.encode(docs, show_progress_bar=True, batch_size=128)
+    np.save(cache_path, embeddings)
+    log.info("Saved embeddings (%s) to %s", embeddings.shape, cache_path)
+    return embeddings
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# PHASE 4: BERTopic
+# ═════════════════════════════════════════════════════════════════════════════
+
+def fit_bertopic(docs: list[str], embeddings: np.ndarray,
+                 min_cluster_size: int = 30) -> tuple:
+    from bertopic import BERTopic
+    from bertopic.representation import KeyBERTInspired
+    from hdbscan import HDBSCAN
+    from sentence_transformers import SentenceTransformer
+    from umap import UMAP
+
+    umap_model = UMAP(
+        n_neighbors=15, n_components=5, min_dist=0.0,
+        metric="cosine", random_state=42,
+    )
+    hdbscan_model = HDBSCAN(
+        min_cluster_size=min_cluster_size, min_samples=10,
+        metric="euclidean", cluster_selection_method="eom",
+        prediction_data=True,
+    )
+    vectorizer_model = CountVectorizer(
+        stop_words=ALL_STOPWORDS,
+        ngram_range=(1, 2), min_df=3, max_df=0.85,
+    )
+    representation_model = KeyBERTInspired()
+
+    # Need embedding model for KeyBERTInspired to compute word embeddings
+    embedding_model = SentenceTransformer("all-mpnet-base-v2", device="cuda")
+
+    topic_model = BERTopic(
+        embedding_model=embedding_model,
+        umap_model=umap_model,
+        hdbscan_model=hdbscan_model,
+        vectorizer_model=vectorizer_model,
+        representation_model=representation_model,
+        top_n_words=15,
+        verbose=True,
+        calculate_probabilities=True,
+    )
+
+    topics, probs = topic_model.fit_transform(docs, embeddings=embeddings)
+
+    # Stats
+    n_topics = len(set(topics)) - (1 if -1 in topics else 0)
+    n_outliers = sum(1 for t in topics if t == -1)
+    outlier_pct = n_outliers / len(topics) * 100
+    log.info("Topics: %d | Outliers: %d (%.1f%%)", n_topics, n_outliers, outlier_pct)
+
+    # Reassign outliers using distributions strategy
+    if n_outliers > 0:
+        log.info("Reassigning outliers with 'distributions' strategy ...")
+        new_topics = topic_model.reduce_outliers(
+            docs, topics, strategy="distributions")
+        topic_model.update_topics(
+            docs, topics=new_topics, vectorizer_model=vectorizer_model)
+        topics = new_topics
+        n_remaining = sum(1 for t in topics if t == -1)
+        log.info("Outliers after reassignment: %d (%.1f%%)",
+                 n_remaining, n_remaining / len(topics) * 100)
+
+    return topic_model, topics, probs
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# PHASE 5: Output generation
+# ═════════════════════════════════════════════════════════════════════════════
+
+def save_outputs(df: pd.DataFrame, topic_model, topics: list,
+                 probs: np.ndarray) -> None:
+    log.info("Generating output files ...")
+
+    # Align topics with df
+    df = df.copy()
+    df["dominant_topic"] = [t + 1 for t in topics]  # 1-indexed like STM
+
+    # Probability of dominant topic
+    if probs is not None and probs.ndim == 2:
+        df["topic_gamma"] = [
+            float(probs[i, t]) if t >= 0 else 0.0
+            for i, t in enumerate(topics)
+        ]
+        df["gamma_vector"] = [
+            json.dumps(probs[i].tolist()) for i in range(len(probs))
+        ]
+    else:
+        df["topic_gamma"] = 0.0
+        df["gamma_vector"] = "[]"
+
+    # ── bertopic_thread_enriched_uk.csv ──────────────────────────────────────
+    enriched_cols = [
+        "doc_name", "thread_name", "thread_url", "dominant_topic",
+        "topic_gamma", "engine_group", "mileage_miles",
+        "mileage_confidence", "technical_bucket", "chronic_score",
+        "n_messages", "gamma_vector",
+    ]
+    enriched_path = DATA_DIR / "bertopic_thread_enriched_uk.csv"
+    df[enriched_cols].to_csv(enriched_path, index=False)
+    log.info("Saved %s (%d rows)", enriched_path.name, len(df))
+
+    # ── bertopic_top_terms_uk.csv ────────────────────────────────────────────
+    topic_info = topic_model.get_topic_info()
+    term_rows = []
+    for tid in sorted(topic_info["Topic"].unique()):
+        if tid == -1:
+            continue
+        words = topic_model.get_topic(tid)
+        terms_str = ", ".join(w for w, _ in words[:15])
+        term_rows.append({
+            "topic": tid + 1,
+            "terms_prob": terms_str,
+            "terms_ctfidf": terms_str,
+        })
+    terms_df = pd.DataFrame(term_rows)
+    terms_path = DATA_DIR / "bertopic_top_terms_uk.csv"
+    terms_df.to_csv(terms_path, index=False)
+    log.info("Saved %s (%d topics)", terms_path.name, len(terms_df))
+
+    # ── llm_issue_input_uk.csv ───────────────────────────────────────────────
+    llm_rows = []
+    total_docs = len(df)
+    for _, trow in terms_df.iterrows():
+        tid = int(trow["topic"])
+        topic_threads = df[df["dominant_topic"] == tid]
+        thread_count = len(topic_threads)
+        prevalence_pct = round(thread_count / total_docs * 100, 1)
+        chronic_signal = round(topic_threads["chronic_score"].mean(), 3) if thread_count > 0 else 0.0
+
+        miles = topic_threads["mileage_miles"].dropna()
+        if len(miles) >= 5:
+            mileage_median = int(miles.median())
+            mileage_p20 = int(miles.quantile(0.2))
+            mileage_p80 = int(miles.quantile(0.8))
+        else:
+            mileage_median = mileage_p20 = mileage_p80 = None
+
+        llm_rows.append({
+            "topic": tid,
+            "terms_frex": trow["terms_prob"],
+            "terms_prob": trow["terms_prob"],
+            "prevalence_pct": prevalence_pct,
+            "chronic_signal": chronic_signal,
+            "thread_count": thread_count,
+            "mileage_median_miles": mileage_median,
+            "mileage_p20_miles": mileage_p20,
+            "mileage_p80_miles": mileage_p80,
+        })
+    llm_df = pd.DataFrame(llm_rows)
+    llm_path = DATA_DIR / "llm_issue_input_uk.csv"
+    llm_df.to_csv(llm_path, index=False)
+    log.info("Saved %s", llm_path.name)
+
+    # ── bertopic_topic_engine_effects_uk.csv ─────────────────────────────────
+    effect_rows = []
+    engine_totals = df["engine_group"].value_counts()
+    for tid in sorted(df["dominant_topic"].unique()):
+        if tid == 0:  # outlier bucket (was -1, now 0 after +1)
+            continue
+        topic_threads = df[df["dominant_topic"] == tid]
+        eng_counts = topic_threads["engine_group"].value_counts()
+        for eng, cnt in eng_counts.items():
+            effect_rows.append({
+                "topic": tid,
+                "engine_group": eng,
+                "count": cnt,
+                "pct_of_topic": round(cnt / len(topic_threads) * 100, 1),
+                "pct_of_engine_group": round(
+                    cnt / engine_totals.get(eng, 1) * 100, 1),
+            })
+    effects_df = pd.DataFrame(effect_rows)
+    effects_path = DATA_DIR / "bertopic_topic_engine_effects_uk.csv"
+    effects_df.to_csv(effects_path, index=False)
+    log.info("Saved %s", effects_path.name)
+
+    # ── Save model ───────────────────────────────────────────────────────────
+    model_path = DATA_DIR / "bertopic_model_uk"
+    topic_model.save(str(model_path), serialization="safetensors",
+                     save_ctfidf=True, save_embedding_model="all-mpnet-base-v2")
+    log.info("Saved BERTopic model to %s", model_path)
+
+    # ── Print topic overview ─────────────────────────────────────────────────
+    log.info("\n=== TOPIC OVERVIEW ===")
+    for _, row in terms_df.iterrows():
+        tid = int(row["topic"])
+        llm_row = llm_df[llm_df["topic"] == tid].iloc[0]
+        log.info("  T%d (%.1f%%, %d threads): %s",
+                 tid, llm_row["prevalence_pct"],
+                 int(llm_row["thread_count"]),
+                 row["terms_prob"][:80])
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# MAIN
+# ═════════════════════════════════════════════════════════════════════════════
+
+def main():
+    parser = argparse.ArgumentParser(description="BERTopic UK forum pipeline")
+    parser.add_argument("--skip-embed", action="store_true",
+                        help="Reuse cached embeddings (skip recomputation)")
+    parser.add_argument("--min-cluster-size", type=int, default=30,
+                        help="HDBSCAN min_cluster_size (default: 30)")
+    parser.add_argument("--force-embed", action="store_true",
+                        help="Force recompute embeddings even if cached")
+    args = parser.parse_args()
+
+    # Phase 1: Prepare data
+    if PREPARED_PATH.exists():
+        log.info("Loading cached prepared data from %s", PREPARED_PATH)
+        df = pd.read_csv(PREPARED_PATH)
+        log.info("Loaded %d threads", len(df))
+    else:
+        df = prepare_data()
+
+    # Phase 2: Clean text for embedding
+    docs = df["txt"].apply(clean_text_for_embedding).tolist()
+
+    # Remove empty docs
+    valid_mask = [bool(d.strip()) for d in docs]
+    if not all(valid_mask):
+        n_empty = sum(1 for v in valid_mask if not v)
+        log.warning("Removing %d empty documents", n_empty)
+        df = df[valid_mask].reset_index(drop=True)
+        docs = [d for d, v in zip(docs, valid_mask) if v]
+
+    # Phase 3: Embeddings
+    embeddings = compute_embeddings(docs, force=args.force_embed)
+
+    # Phase 4: BERTopic
+    topic_model, topics, probs = fit_bertopic(
+        docs, embeddings, min_cluster_size=args.min_cluster_size)
+
+    # Phase 5: Outputs
+    save_outputs(df, topic_model, topics, probs)
+
+    log.info("Done.")
+
+
+if __name__ == "__main__":
+    main()

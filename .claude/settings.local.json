@@ -10,7 +10,10 @@
       "Bash(python scrapers/link_extractor_uk.py)",
       "Bash(python scrapers/scraper_uk.py --max-pages 15 --workers 8)",
       "Bash(python:*)",
-      "Bash(Rscript R_code_STM_uk.R)"
+      "Bash(Rscript R_code_STM_uk.R)",
+      "Bash(pip install:*)",
+      "Bash(python scripts/bertopic_uk.py)",
+      "Bash(TF_USE_LEGACY_KERAS=0 TRANSFORMERS_NO_TF=1 python -c \"import os; os.environ[''USE_TF'']=''NO''; os.environ[''TRANSFORMERS_NO_TF'']=''1''; from sentence_transformers import SentenceTransformer; print\\(''OK''\\)\")"
     ]
   }
 }
