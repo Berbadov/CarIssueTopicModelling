@@ -13,7 +13,19 @@
       "Bash(Rscript R_code_STM_uk.R)",
       "Bash(pip install:*)",
       "Bash(python scripts/bertopic_uk.py)",
-      "Bash(TF_USE_LEGACY_KERAS=0 TRANSFORMERS_NO_TF=1 python -c \"import os; os.environ[''USE_TF'']=''NO''; os.environ[''TRANSFORMERS_NO_TF'']=''1''; from sentence_transformers import SentenceTransformer; print\\(''OK''\\)\")"
+      "Bash(TF_USE_LEGACY_KERAS=0 TRANSFORMERS_NO_TF=1 python -c \"import os; os.environ[''USE_TF'']=''NO''; os.environ[''TRANSFORMERS_NO_TF'']=''1''; from sentence_transformers import SentenceTransformer; print\\(''OK''\\)\")",
+      "Bash(python3 -c \"import pandas as pd; df=pd.read_csv\\(''D:/CarIssueTopicModelling/data/processed/uk_threads_prepared.csv''\\); print\\(df[''engine_group''].value_counts\\(\\)\\); print\\(''---''\\); print\\(df[''engine_code''].value_counts\\(\\)\\)\")",
+      "Bash(ls:*)",
+      "WebSearch",
+      "WebFetch(domain:documentation.history.mot.api.gov.uk)",
+      "WebFetch(domain:www.data.gov.uk)",
+      "WebFetch(domain:www.nimblefins.co.uk)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.check-vehicle-recalls.service.gov.uk)",
+      "WebFetch(domain:www.gov.uk)",
+      "WebFetch(domain:open.data.dvsa.gov.uk)",
+      "WebFetch(domain:ckan.publishing.service.gov.uk)",
+      "WebFetch(domain:data.dft.gov.uk)"
     ]
   }
 }

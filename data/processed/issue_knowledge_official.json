@@ -1,0 +1,1610 @@
+[
+  {
+    "topic_id": 1,
+    "label": "Excessive oil consumption and oil system failures leading to engine damage",
+    "label_short": "Oil consumption/leaks",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "1.4_TSI",
+      "1.2_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "2000-2013",
+    "known_part_codes": [
+      {
+        "code": "EA111",
+        "name": "Engine assembly (pre-2014)",
+        "notes": "Piston rings and valve stem seals known for oil consumption"
+      }
+    ],
+    "engine_notes": "EA111 engines (pre-2014 1.4 TSI, 1.2 TSI) are particularly susceptible to oil consumption due to piston ring and valve seal design.",
+    "prevalence_pct": 7.1,
+    "chronic_signal": 0.0,
+    "summary": "This topic captures widespread reports of excessive oil consumption and oil system failures in VW Golf models, with multiple incidents of engines seizing or sustaining damage due to oil loss. Complaints describe oil pans being damaged by road contact, engines consuming a quart of oil per 1000 miles, and sudden oil pressure loss leading to catastrophic failure.",
+    "warning_signs": [
+      "Low oil pressure warning light illuminating",
+      "Frequent need to add oil between changes",
+      "Oil pan damage from road contact due to low clearance"
+    ],
+    "inspection_advice": "Check for oil leaks underneath the vehicle, verify oil level and condition, and ask for maintenance records showing oil consumption patterns. Inspect the oil pan for damage, especially on older models.",
+    "data_quality": "medium",
+    "thread_count": 144,
+    "notes": "Source data is predominantly US NHTSA complaints with limited engine specification details (86.8% unknown). Year distribution suggests older vehicles (2000-2013) are most affected."
+  },
+  {
+    "topic_id": 2,
+    "label": "Transmission shifting issues including DSG failure, gear slip, and manual clutch problems",
+    "label_short": "Transmission shifting",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "TDI_unknown"
+    ],
+    "affected_years": "2011-2022",
+    "known_part_codes": [
+      {
+        "code": "DQ200",
+        "name": "DSG 7-speed dry clutch mechatronic unit",
+        "notes": "Primary failure point for DSG issues; revised unit from 2014 is more reliable"
+      },
+      {
+        "code": "DQ250",
+        "name": "DSG 6-speed wet clutch",
+        "notes": "Generally robust but can have rear seal leaks at high mileage"
+      }
+    ],
+    "engine_notes": "Issues span both petrol (2.0_TSI) and diesel (TDI) engines, indicating the problem is transmission-specific rather than engine-dependent.",
+    "prevalence_pct": 5.7,
+    "chronic_signal": 0.0,
+    "summary": "This topic aggregates widespread transmission-related complaints, primarily focusing on DSG (Direct-Shift Gearbox) failures and manual transmission clutch issues. Symptoms include harsh shifting, gear slip, loss of power, transmission entering emergency/limp mode, and shuddering during engagement, with some incidents occurring at very low mileage.",
+    "warning_signs": [
+      "Judder or shudder during low-speed acceleration or clutch engagement",
+      "Harsh shifts, gear slip, or loss of power while driving",
+      "Transmission warning messages or emergency/limp mode activation"
+    ],
+    "inspection_advice": "For DSG-equipped Golfs, test drive in stop-start traffic to check for low-speed shudder or hesitation, and scan for transmission fault codes. For manuals, check for clutch engagement smoothness and any unusual noises.",
+    "data_quality": "medium",
+    "thread_count": 114,
+    "notes": "High proportion of documents have unknown engine spec (79.8%). Data is complaint-dominated (NHTSA complaints and CarProblemZoo), lacking TSB or recall data which could indicate official recognition."
+  },
+  {
+    "topic_id": 3,
+    "label": "High pressure fuel pump (HPFP) failure in diesel engines causing sudden engine stall",
+    "label_short": "HPFP failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": 40000,
+    "onset_mileage_range": "40k-60k miles",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": "2009-2015",
+    "known_part_codes": [
+      {
+        "code": "03L130755",
+        "name": "High pressure fuel pump",
+        "notes": "Common failure part on EA189 diesel engines"
+      }
+    ],
+    "engine_notes": "Primarily affects EA189 diesel engines (1.6_TDI and 2.0_TDI) from the Dieselgate era, with failures often occurring around 40k mile service intervals.",
+    "prevalence_pct": 4.9,
+    "chronic_signal": 0.0,
+    "summary": "High pressure fuel pump failures in diesel Golf models cause sudden engine stall while driving, often with metallic debris contamination requiring complete fuel system replacement. The issue appears most prevalent in 2010-2012 TDI models around 40,000 mile service intervals, creating significant safety concerns during traffic operation.",
+    "warning_signs": [
+      "Diesel glow plug warning light illumination",
+      "Metallic pinging noise before engine shutdown",
+      "Rough engine running preceding stall"
+    ],
+    "inspection_advice": "Check service history for HPFP replacement on 2009-2015 diesel Golfs, particularly around 40k mile intervals, and verify no fuel system contamination exists.",
+    "data_quality": "high",
+    "thread_count": 98,
+    "notes": "US-market data only; affected vehicles predate Dieselgate resolution; no European market data included in this topic."
+  },
+  {
+    "topic_id": 4,
+    "label": "Airbag system malfunction: inadvertent deployment or failure to deploy in collision",
+    "label_short": "Airbag malfunctions",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown"
+    ],
+    "affected_years": "2000-2004",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Airbag control module/sensor",
+        "notes": "Likely related to early 2000s airbag systems"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 3.8,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes serious airbag system malfunctions in early 2000s VW Golf models, with two distinct failure modes: spontaneous deployment without collision (often triggered by road irregularities) and failure to deploy during moderate-to-severe collisions. The incidents show no clear engine-specific pattern and appear concentrated in 2000-2004 model years.",
+    "warning_signs": [
+      "Previous airbag warning lights",
+      "Unusual electrical system behavior",
+      "Vehicle history of minor impacts that might have compromised sensors"
+    ],
+    "inspection_advice": "Check for any airbag warning lights during pre-purchase inspection and review vehicle history for airbag-related recalls, particularly for 2000-2004 model years.",
+    "data_quality": "medium",
+    "thread_count": 76,
+    "notes": "Data dominated by NHTSA complaints (76%) with insufficient mileage data; represents safety-critical but likely recall-addressed issues from early 2000s models."
+  },
+  {
+    "topic_id": 5,
+    "label": "Fuel pump failure causing sudden engine stall and power loss",
+    "label_short": "Fuel pump failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "TDI_unknown"
+    ],
+    "affected_years": "2010-2013",
+    "known_part_codes": [],
+    "engine_notes": "The issue appears across both petrol (2.0 TSI) and diesel (TDI) engines, suggesting a fuel system component failure not limited to a single engine family.",
+    "prevalence_pct": 3.6,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes failures of the fuel pump, often the high-pressure pump, leading to sudden engine stall, loss of power, and an inability to restart. The failure can occur at highway speeds, creating a significant safety hazard, and often requires replacement of the pump and sometimes the entire contaminated fuel system.",
+    "warning_signs": [
+      "Engine warning light or flashing glow plug indicator",
+      "Sudden loss of power or engine stalling, especially at speed",
+      "Rough idle or difficulty starting"
+    ],
+    "inspection_advice": "When buying a used Golf, scan for historical fuel pressure or fuel pump fault codes (e.g., P0190) and listen for unusual noises from the fuel tank area. A test drive should include highway speeds to check for any power loss or hesitation.",
+    "data_quality": "medium",
+    "thread_count": 73,
+    "notes": "Data is complaint-dominated (NHTSA complaints, CarProblemZoo) with no TSB or recall documents, suggesting this is a common owner-reported failure not formally addressed by a widespread recall. Most engine specs are unknown, limiting precise engine family correlation."
+  },
+  {
+    "topic_id": 6,
+    "label": "Clock spring failure causing loss of steering wheel controls and airbag warnings",
+    "label_short": "Clock spring failure",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown",
+      "TDI_unknown"
+    ],
+    "affected_years": "2015-2017",
+    "known_part_codes": [
+      {
+        "code": "5G0959653",
+        "name": "Clockspring/Spiral Spring",
+        "notes": "Common replacement part for steering wheel electrical connections"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 3.3,
+    "chronic_signal": 0.0,
+    "summary": "Clock spring (spiral cable) failures are reported across multiple model years, causing simultaneous loss of steering wheel-mounted controls including horn, cruise control, and audio buttons, along with airbag warning lights. The issue appears to affect vehicles primarily from 2015-2017 model years, with some reports of repeat failures within short timeframes.",
+    "warning_signs": [
+      "Airbag warning light illumination",
+      "Loss of steering wheel controls (horn, cruise, audio)",
+      "Ratcheting or clicking sound from steering wheel during turns"
+    ],
+    "inspection_advice": "When test driving, check all steering wheel controls including horn, cruise control, and audio buttons, and verify no airbag warning lights are illuminated while turning the wheel through its full range.",
+    "data_quality": "medium",
+    "thread_count": 66,
+    "notes": "Data is US-market only from complaint sources; insufficient engine specification data prevents correlation with specific powertrains."
+  },
+  {
+    "topic_id": 7,
+    "label": "Infotainment and Driver Assistance System Intermittent Failures and Component Protection Mode",
+    "label_short": "Infotainment/ADAS Faults",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2022-2023",
+    "known_part_codes": [],
+    "engine_notes": "No specific engine-related failure pattern identified; issue appears to be with the vehicle's electronic control units and software, independent of powertrain.",
+    "prevalence_pct": 2.7,
+    "chronic_signal": 0.0,
+    "summary": "This topic clusters reports of intermittent failures in the infotainment system and advanced driver assistance systems (ADAS), including the SOS emergency call function, front assist, park assist, and backup camera. A common and severe symptom is the infotainment system entering 'component protection' mode, causing it to reboot in a loop and rendering multiple comfort and safety features unavailable.",
+    "warning_signs": [
+      "Infotainment screen rebooting repeatedly",
+      "Error messages for 'Front Assist' or 'SOS function not available'",
+      "Backup camera or parking sensors intermittently failing",
+      "System entering 'Component Protection' mode"
+    ],
+    "inspection_advice": "When buying a used Golf, especially a 2022-2023 model, test all infotainment functions, the backup camera, and cycle the ignition multiple times to check for intermittent reboots or error messages related to driver assistance systems.",
+    "data_quality": "medium",
+    "thread_count": 55,
+    "notes": "Data is heavily skewed toward recent model years (2022-2023) and sourced primarily from owner complaints (CarProblemZoo, NHTSA), with no representation from technical service bulletins or recalls, suggesting this may be an emerging or software-related issue not yet formally addressed."
+  },
+  {
+    "topic_id": 8,
+    "label": "Fuel system leaks and fueling problems, including tandem pump failures and recall-related issues",
+    "label_short": "Fuel system leaks",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "TDI_unknown"
+    ],
+    "affected_years": "2000-2022",
+    "known_part_codes": [
+      {
+        "code": null,
+        "name": "Tandem fuel pump",
+        "notes": "Common failure point on older models, especially 2004 Golf"
+      }
+    ],
+    "engine_notes": "No strong engine-specific pattern; appears across multiple engine types and years.",
+    "prevalence_pct": 3.4,
+    "chronic_signal": 0.0,
+    "summary": "This topic captures fuel system leaks and fueling problems in VW Golf models, including tandem fuel pump failures (notably on a 2004 model), fuel tank overflow issues, and recall-related fuel odor problems. The data spans model years from 2000 to 2022, with a concentration of reports from 2015-2017 vehicles, and includes both owner complaints and recall notifications (e.g., NHTSA campaign 24V110000).",
+    "warning_signs": [
+      "Strong fuel odor inside the vehicle",
+      "Fuel leaking from the tank or engine area, especially on inclines",
+      "Fuel overflow or backflow when filling the tank",
+      "Check engine light with DTC P0456 (evaporative emissions leak)"
+    ],
+    "inspection_advice": "Check for fuel odors inside the cabin, inspect the fuel tank area and tandem pump (if equipped) for signs of leaks or residue, and verify if any open fuel system recalls (e.g., 24V110000) have been addressed.",
+    "data_quality": "medium",
+    "thread_count": 69,
+    "notes": "Source data is heavily weighted toward NHTSA complaints (46 of 69 documents), with limited engine specification details (93% unknown). Includes recall-related reports which may inflate prevalence for specific model years."
+  },
+  {
+    "topic_id": 9,
+    "label": "Power window regulator failure causing windows to fall into door or become stuck",
+    "label_short": "Window regulator failure",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown",
+      "2.0_TSI",
+      "TDI_unknown"
+    ],
+    "affected_years": "2000-2016",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Window regulator assembly",
+        "notes": "Plastic mounting components prone to breakage"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 2.5,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report chronic failures of power window regulators across various VW Golf model years, with windows falling into doors or becoming stuck in the down position. Dealerships reported high demand for replacement parts, indicating this is a widespread pattern rather than isolated incidents.",
+    "warning_signs": [
+      "Grinding noise when operating window",
+      "Window moves slowly or hesitates",
+      "Window falls into door cavity when rolled down"
+    ],
+    "inspection_advice": "Test all power windows multiple times during purchase inspection, listening for grinding noises and checking for smooth operation, as regulator failures are common across many model years.",
+    "data_quality": "medium",
+    "thread_count": 50,
+    "notes": "Data primarily from NHTSA complaints with limited engine specification details; issue appears to affect multiple generations and engine types."
+  },
+  {
+    "topic_id": 10,
+    "label": "Sunroof glass spontaneous shattering/explosion while driving",
+    "label_short": "Sunroof explosion",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "TDI_unknown"
+    ],
+    "affected_years": "2010-2021",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Sunroof glass panel assembly",
+        "notes": "Likely specific to panoramic or large sunroof variants"
+      }
+    ],
+    "engine_notes": "No clear engine-specific pattern; reports span TDI diesel and 2.0 TSI petrol engines.",
+    "prevalence_pct": 2.4,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report the sunroof glass spontaneously shattering or exploding while driving at highway speeds, often with no external impact or warning. The event is described as extremely loud (like a gunshot or explosion), can occur in various weather conditions, and poses a safety risk due to potential glass ingress and driver distraction.",
+    "warning_signs": [
+      "Sudden, loud explosive noise from roof while driving",
+      "Glass shards falling into cabin (if sunshade is open)"
+    ],
+    "inspection_advice": "Inspect the sunroof glass for any existing cracks, stress marks, or uneven sealing. Check service history for sunroof glass replacement and verify the sliding shade operates smoothly without binding.",
+    "data_quality": "medium",
+    "thread_count": 48,
+    "notes": "Data is complaint-dominated (NHTSA complaints, CarProblemZoo) with no TSB or recall documents in this bundle; engine spec is mostly unknown (83.3%)."
+  },
+  {
+    "topic_id": 11,
+    "label": "Panoramic sunroof water leaks into interior causing electrical and safety system damage",
+    "label_short": "Sunroof leaks",
+    "system_component": "other",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [],
+    "affected_years": "2002-2021",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 2.4,
+    "chronic_signal": 0.0,
+    "summary": "Panoramic sunroofs on VW Golf models leak water into the interior through the headliner, A-pillars, and sunroof frame seals, often during rain, snow, or car washes. The leaks can soak electronics, carpets, and seats, potentially causing electrical faults, mold, and water damage to critical safety components like side airbags.",
+    "warning_signs": [
+      "Damp spots or water stains on headliner where it meets A-pillars",
+      "Water dripping into interior during rain or car wash",
+      "Electrical warning lights (airbag, traction, engine) appearing after heavy rain"
+    ],
+    "inspection_advice": "Check the headliner around the sunroof perimeter and A-pillars for water stains, discoloration, or dampness, and inspect the sunroof drain tubes for blockages during a pre-purchase inspection.",
+    "data_quality": "medium",
+    "thread_count": 48,
+    "notes": "Data is US-only (NHTSA complaints and CarProblemZoo), lacks engine-specific breakdown, and includes a mix of model years from 2002-2021 with peak reports from 2015-2018 models."
+  },
+  {
+    "topic_id": 12,
+    "label": "Headlight electrical faults and aiming issues",
+    "label_short": "Headlight faults",
+    "system_component": "lighting",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown",
+      "TDI_unknown",
+      "2.0_TSI"
+    ],
+    "affected_years": "2000-2021 (peaks 2011-2012)",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 2.2,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report intermittent headlight failures where lights do not turn on immediately after ignition, often accompanied by dashboard error messages and exterior light fault warnings. Additional reports describe persistent headlight aiming problems, with some dealers claiming the misalignment is a design characteristic that cannot be corrected.",
+    "warning_signs": [
+      "Headlights fail to illuminate immediately on startup",
+      "Dashboard error messages for multiple exterior lights",
+      "Persistent headlight misalignment despite bulb replacement"
+    ],
+    "inspection_advice": "Test headlight operation through multiple ignition cycles and check for any exterior lighting fault messages on the dashboard. Visually inspect headlight aim during a nighttime test drive.",
+    "data_quality": "medium",
+    "thread_count": 45,
+    "notes": "Data from US owner complaints only; no TSB or recall data included. Engine specification mostly unknown, suggesting this is a platform-wide electrical issue rather than engine-specific."
+  },
+  {
+    "topic_id": 13,
+    "label": "Takata airbag recall - parts availability and deployment failure complaints",
+    "label_short": "Takata Airbag Recall",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown",
+      "TDI_unknown",
+      "2.0_TSI"
+    ],
+    "affected_years": "2010-2018",
+    "known_part_codes": [
+      {
+        "code": "NHTSA 16V078000",
+        "name": "Takata airbag inflator replacement",
+        "notes": "Recall campaign number"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 2.1,
+    "chronic_signal": 0.0,
+    "summary": "This topic captures owner complaints and reports related to the massive Takata airbag inflator recall affecting multiple manufacturers, including Volkswagen Golf. Owners report receiving recall notices but experiencing significant delays in parts availability, with some describing non-deployment incidents during accidents.",
+    "warning_signs": [
+      "Recall notice received from manufacturer",
+      "Airbag warning light",
+      "Non-deployment during collision"
+    ],
+    "inspection_advice": "Check the VIN against NHTSA recall databases for open Takata airbag recalls and verify completion with documentation. This is a critical safety issue unrelated to vehicle condition.",
+    "data_quality": "high",
+    "thread_count": 43,
+    "notes": "Recall-dominated topic with minimal mechanical failure data; primarily documents administrative delays and safety concerns rather than inherent vehicle defects."
+  },
+  {
+    "topic_id": 14,
+    "label": "Front and rear suspension coil spring fracture",
+    "label_short": "Coil spring fracture",
+    "system_component": "suspension",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2019",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 2.0,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes the sudden fracture of front or rear suspension coil springs, often resulting in a loud clunk, loss of vehicle control, and strong pulling to one side. The issue is documented in owner complaints and is the subject of a specific NHTSA safety recall for certain 2019 model year vehicles (Jetta GLI, Golf Alltrack, Golf GTI) related to improperly machined front wheel bearings that can cause excessive stress on suspension components.",
+    "warning_signs": [
+      "Loud clunk or metallic sound from suspension while driving",
+      "Vehicle suddenly begins shaking or pulling strongly to one side"
+    ],
+    "inspection_advice": "When inspecting a used VW Golf, especially a 2019 model, check for any signs of uneven ride height, inspect the coil springs for visible cracks or corrosion, and verify if any open safety recalls for suspension components have been addressed.",
+    "data_quality": "medium",
+    "thread_count": 40,
+    "notes": "Data is recall-dominated for 2019 models, but complaints span multiple model years (2000-2020), suggesting a broader, chronic issue with suspension coil springs beyond the specific recall."
+  },
+  {
+    "topic_id": 15,
+    "label": "Fuel tank suction jet pump failure causing fuel leaks and tank pressurization",
+    "label_short": "Suction pump leak",
+    "system_component": "other",
+    "issue_type": "fluid_leak",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2015-2018",
+    "known_part_codes": [
+      {
+        "code": "20Y6",
+        "name": "Safety Recall Code",
+        "notes": "Recall for 2015-2016 GTI models for suction pump failure"
+      }
+    ],
+    "engine_notes": "Primarily affects 2.0 TSI engines (GTI/R) from mid-2010s, with documented recall for 2015-2016 models but complaints extending to 2017-2018.",
+    "prevalence_pct": 2.2,
+    "chronic_signal": 0.0,
+    "summary": "A failure of the suction jet pump (fuel pump) inside the fuel tank causes fuel leaks from the rear passenger side, often near the exhaust, and can lead to tank pressurization, bulging, and raw fuel entering the charcoal canister or engine intake. This issue was subject to Safety Recall 20Y6 for 2015-2016 GTI models, but numerous complaints indicate similar failures in unreported model years like 2017, with repair costs reaching $2,000-$4,000 for full fuel system replacement.",
+    "warning_signs": [
+      "Strong smell of gasoline, especially after refueling",
+      "Visible fuel leaking from rear passenger side wheel well or bumper",
+      "Difficulty filling fuel tank (pump clicks off early, fuel overflows)",
+      "Fuel tank appears bulged or pressurized"
+    ],
+    "inspection_advice": "When inspecting a used Golf (especially 2015-2018 GTI with 2.0 TSI), check for fuel odors around the rear bumper, look for fuel stains or residue under the car near the fuel tank, and verify if any recalls (like 20Y6) were completed.",
+    "data_quality": "medium",
+    "thread_count": 45,
+    "notes": "Data is US-only (NHTSA complaints dominate) and recall-related; mileage data is insufficient, but issue appears time/usage dependent rather than mileage-specific."
+  },
+  {
+    "topic_id": 16,
+    "label": "Airbag warning light illumination without deployment",
+    "label_short": "Airbag warning light",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown"
+    ],
+    "affected_years": "2000-2019",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Airbag control module or sensor",
+        "notes": "Often referenced in complaints but specific part not identified in data"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 2.6,
+    "chronic_signal": 0.0,
+    "summary": "This topic clusters widespread reports of the airbag warning light illuminating and staying on in VW Golf models, despite no accident or deployment history. The issue spans multiple model years (2000-2019) and appears as a common electrical/sensor fault, with owners frequently citing dealer diagnostics and repair costs as a significant annoyance.",
+    "warning_signs": [
+      "Airbag warning light illuminated on dashboard",
+      "No prior accident or airbag deployment"
+    ],
+    "inspection_advice": "When buying a used VW Golf, check for an illuminated airbag warning light during the test drive and cold start; scan for fault codes in the airbag control module as part of a pre-purchase inspection.",
+    "data_quality": "medium",
+    "thread_count": 53,
+    "notes": "Data is dominated by NHTSA complaints and CarProblemZoo reports; engine specificity is low (98% unknown), suggesting the issue is not strongly linked to a particular powertrain."
+  },
+  {
+    "topic_id": 17,
+    "label": "ABS/Electronic Stability Control module failure and warning light illumination",
+    "label_short": "ABS/ESC Module",
+    "system_component": "brakes",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2009-2010",
+    "known_part_codes": [
+      {
+        "code": "45F2",
+        "name": "ABS Control Unit Recall",
+        "notes": "Safety recall for 2009-2010 models"
+      }
+    ],
+    "engine_notes": "No specific engine pattern identified beyond the 2.0_TSI mentions; issue appears electrical/control module related.",
+    "prevalence_pct": 2.0,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes failures of the Antilock Brake System (ABS) and Electronic Stability Control (ESC) control module, often triggering warning lights and potentially causing loss of vehicle control during ABS/ESC activation. The issue is documented in owner complaints and is the subject of a specific safety recall (45F2) for 2009-2010 model year VW Golf and related vehicles.",
+    "warning_signs": [
+      "ABS, ESC, and/or airbag warning lights illuminating intermittently or persistently",
+      "Diagnostic trouble code (DTC) 01130 related to the central ABS control module"
+    ],
+    "inspection_advice": "Check for any stored ABS/ESC fault codes and verify if the ABS, ESC, and brake warning lights illuminate and then extinguish normally during vehicle start-up. Confirm if the safety recall 45F2 has been performed on 2009-2010 models.",
+    "data_quality": "medium",
+    "thread_count": 40,
+    "notes": "Data is heavily weighted toward US market NHTSA complaints and a specific recall; engine spec is unknown for 90% of documents, limiting engine-specific analysis."
+  },
+  {
+    "topic_id": 18,
+    "label": "Brake light switch failure causing no brake lights, gear shift lock, and EPC warning",
+    "label_short": "Brake light switch",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown",
+      "TDI_unknown",
+      "2.0_TSI"
+    ],
+    "affected_years": "2000-2005",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Brake light switch",
+        "notes": "Same part number as used in Jetta models from same era"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 2.3,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes a chronic failure of the brake light switch, primarily affecting early 2000s VW Golf models. The failure causes multiple safety and operational issues: brake lights stop working, the vehicle may not shift out of park, the EPC warning light illuminates, and in some cases the vehicle stalls while driving.",
+    "warning_signs": [
+      "Brake lights not illuminating when pedal is pressed",
+      "EPC warning light on dashboard",
+      "Vehicle unable to shift out of park",
+      "Intermittent glow plug warning light"
+    ],
+    "inspection_advice": "For 2000-2005 Golf models, test brake light operation and check for any EPC warning lights; verify the vehicle shifts smoothly out of park, as this switch was subject to a recall on Jetta models but not Golf.",
+    "data_quality": "medium",
+    "thread_count": 46,
+    "notes": "Data is US-only and complaint-dominated; documents reference a known recall for the same part on Jetta models but not Golf, suggesting a potential oversight."
+  },
+  {
+    "topic_id": 19,
+    "label": "Cooling system leaks from water pump and thermostat housing",
+    "label_short": "Coolant leaks",
+    "system_component": "cooling",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "onset_mileage_typical_miles": 65000,
+    "onset_mileage_range": "40k-80k miles",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "2012-2022",
+    "known_part_codes": [
+      {
+        "code": "EA888",
+        "name": "Thermostat housing assembly",
+        "notes": "Gen 3 prone to failure"
+      },
+      {
+        "code": "N/A",
+        "name": "Water pump",
+        "notes": "Often replaced with thermostat housing"
+      }
+    ],
+    "engine_notes": "Primarily affects EA888 Gen 3 engines (1.8L and 2.0L TSI), with a known history of water pump/thermostat housing issues across VW/Audi models.",
+    "prevalence_pct": 1.8,
+    "chronic_signal": 0.0,
+    "summary": "The EA888 Gen 3 engine's thermostat housing and water pump are prone to coolant leaks, often requiring replacement between 40k-80k miles. This is a recurring issue with reports of repeat failures even after replacement, suggesting a persistent manufacturing or design weakness in the cooling system components.",
+    "warning_signs": [
+      "Visible coolant leaks under the engine",
+      "Low coolant level with frequent top-ups required",
+      "Sweet smell from engine bay",
+      "Check engine light with cooling system codes"
+    ],
+    "inspection_advice": "Check for dried coolant residue around the thermostat housing and water pump area, inspect coolant level and condition, and review service history for previous cooling system repairs.",
+    "data_quality": "medium",
+    "thread_count": 36,
+    "notes": "Source data is complaint-dominated (NHTSA complaints and CarProblemZoo) with limited official TSB or recall coverage; engine spec data is mostly unknown (91.7%), but representative snippets strongly point to EA888 Gen 3 engines."
+  },
+  {
+    "topic_id": 20,
+    "label": "Electrical fire hazard from seat heaters and HVAC controls",
+    "label_short": "Seat heater fire",
+    "system_component": "electrical",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown"
+    ],
+    "affected_years": "2000-2015",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 1.6,
+    "chronic_signal": 0.0,
+    "summary": "Multiple reports describe electrical fires originating from seat heaters and HVAC control panels, with incidents involving smoke, burning plastic smells, and in one case a seat bursting into flames. The issue appears across multiple model years (2000-2015) and is documented primarily in NHTSA complaints, indicating a serious safety hazard rather than routine wear.",
+    "warning_signs": [
+      "Burning plastic smell in cabin",
+      "Smoke from HVAC control panel or seat area",
+      "Overheating of driver's seat"
+    ],
+    "inspection_advice": "Check for any recalls related to seat heaters or HVAC electrical systems, and inspect wiring under seats and behind the dashboard for signs of melting or previous repairs.",
+    "data_quality": "medium",
+    "thread_count": 32,
+    "notes": "Engine spec data is insufficient (94% unknown), but issue appears independent of powertrain. Primarily US NHTSA complaint data with no clear recall linkage in provided knowledge."
+  },
+  {
+    "topic_id": 21,
+    "label": "Fuel system leak causing strong fuel smell and potential pooling",
+    "label_short": "Fuel leak",
+    "system_component": "other",
+    "issue_type": "fluid_leak",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [],
+    "affected_years": "2000-2018",
+    "known_part_codes": [
+      {
+        "code": null,
+        "name": "Fuel pump connector/assembly",
+        "notes": "Mentioned as cracking in multiple repairs"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 1.7,
+    "chronic_signal": 0.0,
+    "summary": "Multiple reports describe a strong fuel smell, often accompanied by visible fuel leaking or pooling, typically at the rear passenger side or tire well. The issue manifests as difficulty refueling (pump shutting off), hissing/gurgling sounds from the fuel tank, and in some cases, engine hesitation or power loss.",
+    "warning_signs": [
+      "Strong smell of fuel inside or outside the vehicle",
+      "Visible fuel puddles under the rear of the car, especially on the passenger side"
+    ],
+    "inspection_advice": "When inspecting a used Golf, check the area around the rear passenger-side tire well and under the car for any fuel stains or strong odor, and listen for unusual hissing from the fuel tank area after driving.",
+    "data_quality": "medium",
+    "thread_count": 34,
+    "notes": "Data is US-only (NHTSA complaints dominate). No specific engine or mileage pattern identified; issue spans many model years. Some reports mention a cracked fuel pump connector as a known failure point among mechanics."
+  },
+  {
+    "topic_id": 22,
+    "label": "NHTSA regulatory recall for non-compliance issues affecting multiple model years",
+    "label_short": "Regulatory recall",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "medium",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2011-2016",
+    "known_part_codes": [],
+    "engine_notes": "Primarily affects 2.0 TSI engines (GTI/R) based on the data, but recall documents indicate broader vehicle inclusion beyond just engine type.",
+    "prevalence_pct": 2.4,
+    "chronic_signal": 0.0,
+    "summary": "This topic is dominated by NHTSA recall documents indicating Volkswagen recalled certain 2011-2016 Golf and GTI vehicles (among other models) due to modifications made during an internal evaluation period that may cause the vehicles to not comply with all applicable regulatory requirements. Owner complaints also reference a separate, unlisted recall concern for 2022-2023 GTI/R models regarding an insecurely installed radiator that can lead to coolant hose rupture and coolant loss.",
+    "warning_signs": [
+      "Official recall notification from manufacturer",
+      "Check for unrepaired open recalls on specific VIN"
+    ],
+    "inspection_advice": "Always check the vehicle's VIN for open recalls on the NHTSA website before purchase, paying specific attention to 2011-2016 Golf/GTI models and newer 2022-2023 GTI/R models for radiator installation issues.",
+    "data_quality": "high",
+    "thread_count": 49,
+    "notes": "Topic is heavily recall-dominated (39 of 49 docs from NHTSA recalls); engine spec data is limited with 61% unknown, but 2.0_TSI is the most identified spec. Snippets suggest two distinct recall issues across different model years."
+  },
+  {
+    "topic_id": 23,
+    "label": "Airbag warning light illumination due to sensor or control unit faults",
+    "label_short": "Airbag warning light",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [],
+    "affected_years": "2000-2019",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Airbag control unit",
+        "notes": "Often referenced in complaints"
+      },
+      {
+        "code": "unknown",
+        "name": "Side airbag sensor",
+        "notes": "Commonly cited fault component"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 1.5,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report persistent airbag warning light illumination, often indicating a fault in the airbag sensor or control unit. Dealers frequently diagnose expensive repairs ($700+), and the system may become completely inoperative if not addressed, creating a significant safety risk.",
+    "warning_signs": [
+      "Airbag warning light stays illuminated while driving",
+      "Warning message on information screen about airbag system"
+    ],
+    "inspection_advice": "During a test drive, verify the airbag warning light extinguishes after startup and remains off. Scan for fault codes in the airbag control module.",
+    "data_quality": "medium",
+    "thread_count": 31,
+    "notes": "Data is US-only (NHTSA complaints and CarProblemZoo). No engine-specific pattern identified; issue spans multiple model years. No mileage trend data available."
+  },
+  {
+    "topic_id": 24,
+    "label": "Aftermarket water pump recall affecting 2.0L TDI engines (Dieselgate-related models)",
+    "label_short": "Water pump recall",
+    "system_component": "cooling",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TDI"
+    ],
+    "affected_years": "2009-2012",
+    "known_part_codes": [
+      {
+        "code": "TFW 41127",
+        "name": "Tru-Flow Water Pump",
+        "notes": "Aftermarket replacement part with defective pulley/sprocket"
+      }
+    ],
+    "engine_notes": "This recall specifically targets 2.0L TDI common rail diesel engines (EA189 generation) that were subject to Dieselgate emissions modifications.",
+    "prevalence_pct": 1.7,
+    "chronic_signal": 0.0,
+    "summary": "This topic represents a safety recall for aftermarket water pumps (Gates Tru-Flow TFW 41127) installed on 2009-2012 VW Golf, Jetta, and Audi A3 vehicles with 2.0L TDI engines. The recall addresses defective water pump pulleys/sprockets that could fail and cause sudden coolant loss, potentially leading to engine overheating and safety hazards.",
+    "warning_signs": [
+      "Coolant leaks from water pump area",
+      "Overheating engine",
+      "Unusual noise from water pump pulley"
+    ],
+    "inspection_advice": "Check service records for water pump replacement history and verify any aftermarket water pumps don't have the recalled TFW 41127 part number or black-colored pulley without 'US9377' stamping.",
+    "data_quality": "high",
+    "thread_count": 34,
+    "notes": "Recall-dominated data (24/34 documents from NHTSA recalls); includes Audi A3 and Jetta Sportwagen models sharing same platform/engines; engine spec data shows 44% unknown but recall specifics confirm 2.0L TDI focus"
+  },
+  {
+    "topic_id": 25,
+    "label": "Brake light switch and hazard flasher relay failures causing erratic warning lights and non-functional brake lights",
+    "label_short": "Brake light switch / hazard flasher",
+    "system_component": "electrical",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown"
+    ],
+    "affected_years": "2000-2007",
+    "known_part_codes": [
+      {
+        "code": "1J0941503C",
+        "name": "Brake light switch",
+        "notes": "Common failure part in early 2000s models"
+      },
+      {
+        "code": "1J0959653",
+        "name": "Hazard flasher relay/switch",
+        "notes": "Subject of recall 04V584000"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 1.4,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes failures of the brake light switch and hazard flasher relay/switch in early 2000s VW Golf models, with many reports referencing official NHTSA recalls (04V584000). The primary symptom is a flashing glow plug warning light on the dashboard, accompanied by non-functional brake lights, creating a significant safety hazard. Owners report that some vehicles with identical symptoms fall outside the official recall VIN ranges, suggesting the problem may be more widespread than the recall coverage.",
+    "warning_signs": [
+      "Glow plug warning light flashing while driving",
+      "Brake lights not illuminating when pedal is pressed",
+      "Erratic or rapid clicking from turn signal/hazard relay"
+    ],
+    "inspection_advice": "When inspecting a used Golf from 2000-2007, have an assistant verify brake light operation while pressing the pedal, and check for any flashing warning lights on the dashboard during a test drive. Verify if the VIN was included in recall 04V584000.",
+    "data_quality": "high",
+    "thread_count": 29,
+    "notes": "Data is heavily recall-dominated (NHTSA recall documents make up 10 of 29 sources) and appears specific to early 2000s US-market vehicles. No engine-specific pattern identified."
+  },
+  {
+    "topic_id": 26,
+    "label": "Seat belt and accessory belt tensioner failures",
+    "label_short": "Belt tensioners",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [],
+    "affected_years": "2001-2017",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 1.5,
+    "chronic_signal": 0.0,
+    "summary": "This topic combines two distinct belt-related issues: seat belt failures (primarily rear seat belts jamming, failing to retract, or unlatching) and accessory belt tensioner descriptions (serpentine/AC belt tensioners). The seat belt issues appear in older models (2001-2006) and are documented in NHTSA complaints and recalls, indicating a safety-critical failure. The accessory belt tensioner descriptions appear in later model snippets but lack explicit failure reports.",
+    "warning_signs": [
+      "Rear seat belt jamming or failing to retract",
+      "Seat belt pulling out with no tension or making unusual noises",
+      "Difficulty latching rear lap belts"
+    ],
+    "inspection_advice": "Test all seat belts, especially rear belts, for smooth retraction and secure latching. Check for any recalls related to seat belt mechanisms on older Golf models.",
+    "data_quality": "medium",
+    "thread_count": 31,
+    "notes": "Topic combines two mechanically distinct systems (safety seat belts and engine accessory belts). Seat belt data is recall/complaint-driven; accessory belt data is descriptive without clear failure patterns. Engine spec mostly unknown."
+  },
+  {
+    "topic_id": 27,
+    "label": "Driver frontal airbag inflator rupture risk (Takata recall)",
+    "label_short": "Airbag Inflator Recall",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "TDI_unknown"
+    ],
+    "affected_years": "2010-2014",
+    "known_part_codes": [
+      {
+        "code": "Takata inflator",
+        "name": "Driver frontal airbag inflator module",
+        "notes": "Part of NHTSA recall 16V-061"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 1.3,
+    "chronic_signal": 0.0,
+    "summary": "This topic is dominated by NHTSA safety recall documents describing a defect in the driver's frontal airbag inflator supplied by Takata. Upon airbag deployment in a crash, excessive internal pressure may cause the inflator to rupture or explode, posing a serious injury risk from metal fragments.",
+    "warning_signs": [
+      "No pre-failure warning signs",
+      "Recall notice from manufacturer"
+    ],
+    "inspection_advice": "Check the vehicle's recall status via the VIN on NHTSA.gov or with a VW dealer to confirm the Takata airbag inflator recall has been completed. This is a critical safety item.",
+    "data_quality": "high",
+    "thread_count": 26,
+    "notes": "Data is recall-dominated (22 of 26 documents from nhtsa_recall). This is a known, widespread safety campaign (Takata) not specific to VW engineering. The engine spec breakdown is largely 'unknown' as the recall affects multiple powertrains."
+  },
+  {
+    "topic_id": 28,
+    "label": "Premature rear brake pad and rotor wear due to sticking calipers or sliding pins",
+    "label_short": "Rear brake wear",
+    "system_component": "brakes",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": 30000,
+    "onset_mileage_range": "20k-40k miles",
+    "affected_engines": [
+      "TDI_unknown"
+    ],
+    "affected_years": "2000-2017",
+    "known_part_codes": [],
+    "engine_notes": "Reports include TDI models, but insufficient engine spec data to confirm if this is diesel-specific.",
+    "prevalence_pct": 1.6,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report premature and uneven wear of rear brake pads and rotors, often requiring replacement well under 30,000 miles. A common diagnosis from service personnel is that brake dust accumulation causes the rear brake components to stick, leading to accelerated wear while the front brakes remain in good condition.",
+    "warning_signs": [
+      "Grinding noise from rear brakes",
+      "Brake warning light illumination",
+      "Noticeably faster rear pad wear compared to front"
+    ],
+    "inspection_advice": "When inspecting a used Golf, check the rear brake pad thickness and rotor condition, especially on higher-mileage examples. Listen for grinding noises and ask for service records to see if rear brakes have been replaced multiple times.",
+    "data_quality": "medium",
+    "thread_count": 32,
+    "notes": "Data is complaint-dominated (NHTSA complaints, CarProblemZoo) with no TSB or recall data. Engine spec data is mostly unknown, limiting engine-specific conclusions. Year data is broad and inconsistent (many reports list placeholder years like 2000)."
+  },
+  {
+    "topic_id": 29,
+    "label": "Electrical system and ECU failures causing engine shutdowns, power loss, and instrument cluster blackouts",
+    "label_short": "Electrical/ECU Failures",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown",
+      "TDI_unknown"
+    ],
+    "affected_years": "2000-2020",
+    "known_part_codes": [
+      {
+        "code": "5Q1.905.865",
+        "name": "Engine control unit or related electrical component",
+        "notes": "Mentioned in snippet as replaced part"
+      }
+    ],
+    "engine_notes": "No clear engine-specific pattern; issues appear across petrol and diesel variants based on limited TDI mentions.",
+    "prevalence_pct": 1.8,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes electrical and engine control unit (ECU) failures that manifest as sudden engine shutdowns while driving, rough idling with EPC warnings, or complete instrument cluster blackouts while the engine remains running. The failures are intermittent and often require ECU resets or replacements, with incidents occurring at various mileages including very low mileage (5k miles).",
+    "warning_signs": [
+      "EPC (Electronic Power Control) warning light illumination",
+      "Sudden engine shutdown without warning while driving",
+      "Instrument cluster or electrical systems going dead while vehicle is in motion",
+      "Rough idle accompanied by shaking and EPC light"
+    ],
+    "inspection_advice": "Check for any stored ECU fault codes and test for intermittent electrical failures by running all systems (lights, wipers, infotainment) while monitoring for voltage drops or system resets.",
+    "data_quality": "medium",
+    "thread_count": 37,
+    "notes": "Source data is complaint-dominated (NHTSA complaints and CarProblemZoo) with insufficient mileage data; engine specifications are mostly unknown, limiting precise engine-family correlation."
+  },
+  {
+    "topic_id": 30,
+    "label": "Sunroof and door water leaks causing interior damage and electrical risk",
+    "label_short": "Sunroof/Water Leaks",
+    "system_component": "other",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2016-2022",
+    "known_part_codes": [
+      {
+        "code": null,
+        "name": "Sunroof frame/drain assembly",
+        "notes": "Stress cracks in frame; clogged or misrouted drains"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 1.4,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes chronic water leaks into the interior, primarily from sunroof frame cracks or clogged drains, and secondarily from door seal/drain issues. Water ingress saturates the headliner, A-pillars, and can drip onto critical electronics like the ACC cruise control module, posing electrical short and potential airbag safety risks.",
+    "warning_signs": [
+      "Water stains or dampness on headliner, A-pillars, or door panels",
+      "Dripping water onto center console or electronics after rain",
+      "Musty odor or mold in cabin"
+    ],
+    "inspection_advice": "When buying a used VW Golf (especially 2016-2022 models with a sunroof), inspect the headliner and A-pillars for water stains, run water over the sunroof and check for leaks inside, and verify all door drains are clear.",
+    "data_quality": "medium",
+    "thread_count": 29,
+    "notes": "Data is US-market complaint dominated (nhtsa_complaint, carproblemzoo); lacks TSB/recall documents in this bundle. Mileage data insufficient. Most engine specs unknown, but 2.0_TSI (GTI) appears in reports."
+  },
+  {
+    "topic_id": 31,
+    "label": "Tire sidewall blowouts, tread separation, and rapid cracking",
+    "label_short": "Tire failures",
+    "system_component": "suspension",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown",
+      "TDI_unknown",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 1.4,
+    "chronic_signal": 0.0,
+    "summary": "This topic documents sudden tire failures including sidewall blowouts, tread separation, and rapid cracking on the outer edges, often occurring at highway speeds with minimal warning. The reports span multiple model years and tire brands, with some incidents occurring on nearly new tires with low mileage.",
+    "warning_signs": [
+      "Vibration or thumping noise while driving",
+      "Vehicle pulling hard to one side",
+      "Visible cracking on tire sidewalls or outer edges"
+    ],
+    "inspection_advice": "When buying a used VW Golf, carefully inspect all tires for sidewall cracking, uneven wear, and check the manufacturing date, regardless of tread depth.",
+    "data_quality": "medium",
+    "thread_count": 29,
+    "notes": "Data comes exclusively from owner complaints (NHTSA and CarProblemZoo) with no manufacturer TSBs or recalls in this bundle; some complaints explicitly state the issue is with replacement tires rather than original equipment."
+  },
+  {
+    "topic_id": 32,
+    "label": "Turbocharger failure and diesel fuel system issues causing stalling and power loss",
+    "label_short": "Turbo failure & stalling",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": "2000-2011",
+    "known_part_codes": [],
+    "engine_notes": "Primarily affects EA189 diesel engines (1.6_TDI, 2.0_TDI) from the 2000-2011 period, with turbo failures and fuel system issues leading to dangerous stalling.",
+    "prevalence_pct": 1.9,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes turbocharger failures and diesel fuel system problems in TDI Golf models, particularly from the 2000-2011 period. Owners report sudden turbo failures, dangerous stalling while in motion (sometimes in traffic), and intermittent power loss followed by white smoke emissions.",
+    "warning_signs": [
+      "Sudden loss of power during acceleration",
+      "Engine stalling while vehicle is still moving",
+      "White smoke from exhaust after power loss episodes",
+      "Reduced turbo performance ('pep') after replacement"
+    ],
+    "inspection_advice": "When buying a used TDI Golf from 2000-2011, test drive for turbo responsiveness and watch for any hesitation or stalling during acceleration, especially when shifting from 1st to 2nd gear.",
+    "data_quality": "medium",
+    "thread_count": 39,
+    "notes": "Data comes exclusively from owner complaints (NHTSA and CarProblemZoo) with no technical service bulletins or recalls included; engine specifications are often unspecified in complaints."
+  },
+  {
+    "topic_id": 33,
+    "label": "Brake system failures including fluid loss, pedal chatter, and hill hold malfunction",
+    "label_short": "Brake system failures",
+    "system_component": "brakes",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2005-2023",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Brake fluid reservoir/level sensor",
+        "notes": "Associated with low fluid warnings"
+      },
+      {
+        "code": "unknown",
+        "name": "Hill Hold Control module/software",
+        "notes": "Affects 2022-2023 GTI/R manual models"
+      }
+    ],
+    "engine_notes": "Primary signal from 2.0_TSI (GTI/R) models, but reports span multiple engine types suggesting a broader brake system issue.",
+    "prevalence_pct": 1.5,
+    "chronic_signal": 0.0,
+    "summary": "This topic reveals two distinct brake system safety issues in VW Golf models. The first involves sudden brake failure with low fluid warnings, pedal chatter, and loss of hydraulic pressure, documented across multiple model years. The second is a specific hill hold control malfunction in 2022-2023 GTI/R manual models where brakes remain fully engaged after stopping on inclines and won't release normally.",
+    "warning_signs": [
+      "'Brake: Fluid Low' warning message appears",
+      "Brake pedal goes to floor with chattering noise",
+      "Brakes remain engaged on hills after releasing pedal",
+      "Unusual vibration when turning off engine"
+    ],
+    "inspection_advice": "Check for brake fluid leaks at all four wheels and master cylinder, test hill hold function on inclines, and verify no recall campaigns for brake system components are outstanding.",
+    "data_quality": "medium",
+    "thread_count": 30,
+    "notes": "Data dominated by NHTSA complaints with specific safety incidents; includes both chronic failure patterns and specific recall-worthy defects."
+  },
+  {
+    "topic_id": 34,
+    "label": "Front axle, CV joint, and brake caliper failures with associated steering hose leaks",
+    "label_short": "Front axle/brake issues",
+    "system_component": "suspension",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [],
+    "affected_years": "2000-2017",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 1.3,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes a cluster of front suspension and brake component failures, primarily affecting early 2000s models. Issues include CV joint failure requiring axle shaft replacement, frozen front brake calipers, leaking power steering hoses, and premature wheel bearing wear, often occurring together on the same vehicle.",
+    "warning_signs": [
+      "Vibration at highway speeds (especially over 80 mph)",
+      "Clicking or grinding noise from front wheels during turns",
+      "Brake drag or uneven braking",
+      "Power steering fluid leaks near rear of hose"
+    ],
+    "inspection_advice": "When inspecting a used VW Golf, check for CV boot tears, test for brake caliper binding, inspect power steering hoses for leaks near connections, and verify all suspension bolts (particularly axle-to-transmission bolts) are properly torqued.",
+    "data_quality": "medium",
+    "thread_count": 26,
+    "notes": "Data is US-only from owner complaints; no engine specification data available; year distribution suggests this primarily affects earlier generations (2000-2003) but some reports extend to 2017 models."
+  },
+  {
+    "topic_id": 35,
+    "label": "Hood latch mechanism failure causing inability to open hood or sudden unlatching while driving",
+    "label_short": "Hood Latch Failure",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [],
+    "affected_years": "2000-2015",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 1.1,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes failures of the hood latch mechanism, with two distinct failure modes: the internal release handle breaking, preventing the hood from being opened for maintenance, and the latch releasing unexpectedly while driving, causing the hood to fly up and shatter the windshield. The issue spans multiple model years and appears to be a body/chassis component failure unrelated to specific powertrains.",
+    "warning_signs": [
+      "Difficulty or increased resistance when pulling the interior hood release handle",
+      "Unusual noises or looseness from the hood latch area while driving"
+    ],
+    "inspection_advice": "When inspecting a used VW Golf, test the interior hood release handle for smooth operation and verify the hood latches securely when closed; check for any recall history related to the hood latch mechanism.",
+    "data_quality": "medium",
+    "thread_count": 22,
+    "notes": "Data is US-only (NHTSA complaints) and lacks engine specification details, suggesting this is a body/chassis issue not tied to specific powertrains. The year range (2000-2015) indicates a potential long-running design or part quality issue."
+  },
+  {
+    "topic_id": 36,
+    "label": "Sharp interior trim causing hand and finger lacerations",
+    "label_short": "Sharp trim injuries",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2015-2018",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Chrome trim around shifter/console",
+        "notes": "Also affects START/STOP button and steering wheel trim"
+      }
+    ],
+    "engine_notes": "No specific engine pattern; issue is related to interior trim design and materials.",
+    "prevalence_pct": 1.0,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report serious hand and finger lacerations from sharp, exposed edges on interior chrome trim pieces, particularly around the gear shifter, console, START/STOP button, and steering wheel. The injuries are described as severe, with significant bleeding, and one snippet references a recall on similar trim for 2017 vehicles.",
+    "warning_signs": [
+      "Visible sharp edges on chrome interior trim",
+      "Peeling or flaking coating on plastic trim pieces",
+      "Reports of cuts when reaching into storage compartments near shifter"
+    ],
+    "inspection_advice": "When inspecting a used VW Golf, run your fingers carefully along all interior chrome trim edges, especially around the shifter, console, and steering wheel, checking for sharp, unfinished, or peeling metal or plastic that could cause injury.",
+    "data_quality": "medium",
+    "thread_count": 21,
+    "notes": "Data is US-only from NHTSA complaints and CarProblemZoo; one snippet mentions a recall on 2017 vehicles, suggesting this may be a known safety issue addressed by manufacturer."
+  },
+  {
+    "topic_id": 37,
+    "label": "EPC/Check Engine Light with Throttle/Turbo Issues and Power Loss",
+    "label_short": "EPC Light / Power Loss",
+    "system_component": "engine",
+    "issue_type": "intermittent_fault",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2013-2017",
+    "known_part_codes": [
+      {
+        "code": "P00AF00",
+        "name": "Turbocharger Boost Control 'A' Module",
+        "notes": "Common code with seized wastegate actuator"
+      }
+    ],
+    "engine_notes": "Primarily reported on 2.0 TSI (GTI/R) engines, with symptoms pointing to throttle body or turbocharger wastegate actuator faults.",
+    "prevalence_pct": 1.6,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes recurring illumination of the EPC (Electronic Power Control) warning light, often accompanied by sudden engine power loss, stuttering, or complete engine cut-off. The fault is frequently intermittent, can be cleared temporarily by restarting the vehicle, and is linked to throttle body malfunctions or turbocharger wastegate actuator seizure, particularly in early Mk7 GTIs.",
+    "warning_signs": [
+      "EPC or check engine light illuminates, especially under acceleration",
+      "Sudden loss of power or turbo boost, sometimes with engine stutter or cut-off"
+    ],
+    "inspection_advice": "When buying a used Golf (especially GTI/R), check for stored fault codes related to throttle body (G186) or turbocharger boost control (P00AF00), and test drive to see if the EPC light triggers under load.",
+    "data_quality": "medium",
+    "thread_count": 32,
+    "notes": "Data is US-market complaint heavy; engine spec is mostly unknown, but known patterns align with 2.0 TSI issues."
+  },
+  {
+    "topic_id": 38,
+    "label": "Rear coil spring fracture and suspension component failure",
+    "label_short": "Coil spring fracture",
+    "system_component": "suspension",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2013-2017",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Rear coil spring assembly",
+        "notes": "Specific VW part numbers not identified in data"
+      }
+    ],
+    "engine_notes": "No clear engine-specific pattern; issue appears across multiple engine types with insufficient engine spec data.",
+    "prevalence_pct": 1.2,
+    "chronic_signal": 0.0,
+    "summary": "Multiple reports describe rear coil springs snapping completely, which can result in loss of suspension and increased accident risk. Some owners reference existing recalls for suspension issues but report difficulty obtaining information about coverage from manufacturers.",
+    "warning_signs": [
+      "Snapping or cracking sound from rear suspension",
+      "Vehicle sitting unevenly or sagging at rear",
+      "Unusual handling or erratic driving behavior"
+    ],
+    "inspection_advice": "Visually inspect rear coil springs for cracks, corrosion, or fractures, especially on 2013-2017 models. Check for uneven ride height and ask about any suspension-related recall work performed.",
+    "data_quality": "medium",
+    "thread_count": 25,
+    "notes": "Data dominated by NHTSA complaints (16/25) with insufficient engine specification details (96% unknown). Year distribution suggests potential cluster around 2013-2017 models."
+  },
+  {
+    "topic_id": 39,
+    "label": "Engine stalls when coming to a stop with clutch depressed or in neutral (manual transmission)",
+    "label_short": "Stalling at stops",
+    "system_component": "engine",
+    "issue_type": "intermittent_fault",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "TDI_unknown"
+    ],
+    "affected_years": "2018-2019",
+    "known_part_codes": [],
+    "engine_notes": "Reports are concentrated on 2018-2019 models, but engine-specific pattern is unclear due to high 'unknown' spec data.",
+    "prevalence_pct": 1.4,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report the engine stalling without warning when coming to a stop, either with the clutch fully depressed or while in neutral. The stall is often described as subtle and quiet, resembling an auto start-stop function, and creates a significant safety hazard in traffic.",
+    "warning_signs": [
+      "Engine shuts off quietly when braking to a stop",
+      "No stall shudder or typical stalling symptoms",
+      "Occurs with clutch depressed or transmission in neutral"
+    ],
+    "inspection_advice": "Test drive the vehicle in stop-and-go traffic, paying close attention to engine behavior when coming to a complete stop with the clutch depressed. Check for any stored fault codes related to idle control or fuel delivery.",
+    "data_quality": "medium",
+    "thread_count": 29,
+    "notes": "Data is US-only (NHTSA complaints dominate) and lacks detailed mileage or engine specification information for most reports."
+  },
+  {
+    "topic_id": 40,
+    "label": "Sudden engine stalling and failure to restart while driving",
+    "label_short": "Engine stalling",
+    "system_component": "engine",
+    "issue_type": "intermittent_fault",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown"
+    ],
+    "affected_years": "2000-2015",
+    "known_part_codes": [],
+    "engine_notes": "Engine spec is largely unknown, but one report mentions TDI, suggesting diesel variants could be affected.",
+    "prevalence_pct": 1.5,
+    "chronic_signal": 0.0,
+    "summary": "Owners report the engine suddenly cutting out while driving, often at low speeds or in traffic, with immediate loss of power and steering. The vehicle may fail to restart immediately but sometimes restarts after several hours, indicating an intermittent electrical or fuel system fault.",
+    "warning_signs": [
+      "Engine suddenly dies while driving, especially at low speeds or after deceleration",
+      "Vehicle fails to restart immediately after stalling, but may restart after a long cooldown period"
+    ],
+    "inspection_advice": "Check for any stored fault codes related to fuel delivery, ignition, or crankshaft sensors. Test drive in stop-and-go traffic to monitor for unexpected stalling.",
+    "data_quality": "medium",
+    "thread_count": 31,
+    "notes": "Source data is complaint-only (NHTSA complaints and CarProblemZoo), no TSB or recall data present. Engine spec is 97% unknown, limiting precise engine family correlation."
+  },
+  {
+    "topic_id": 41,
+    "label": "Door lock and latch mechanism failures causing inoperative locks, automatic locking, and door handle malfunctions",
+    "label_short": "Door lock failures",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [],
+    "affected_years": "2000-2024",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 1.5,
+    "chronic_signal": 0.0,
+    "summary": "This topic describes failures in door lock and latch mechanisms across multiple Golf generations, with issues ranging from rear door locks becoming completely inoperative to doors automatically locking with keys inside. The problem manifests as doors failing to lock/unlock via remote or interior button, requiring manual locking via door sill slots, and door handles becoming unresponsive unless pressure is applied to the door.",
+    "warning_signs": [
+      "Rear door locks stop responding to remote or interior lock button",
+      "Doors automatically lock with keys in ignition or after remote unlock",
+      "Door handles feel locked when doors are actually unlocked, requiring pressure on door to engage latch"
+    ],
+    "inspection_advice": "Test all door locks multiple times with both remote and interior buttons, check for any door handle resistance or need to push on doors to make handles work, and verify doors don't automatically relock after remote unlocking.",
+    "data_quality": "medium",
+    "thread_count": 30,
+    "notes": "No engine-specific pattern identified; issue spans 2000-2024 model years with no clear mileage correlation. Data comes from owner complaints only (no TSBs or recalls)."
+  },
+  {
+    "topic_id": 42,
+    "label": "Engine check light illumination due to sensor failures (oxygen sensor, mass airflow sensor)",
+    "label_short": "Check Engine Sensors",
+    "system_component": "engine",
+    "issue_type": "sensor_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown"
+    ],
+    "affected_years": "2000-2010",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Oxygen Sensor (O2)",
+        "notes": "Leaking carbon monoxide mentioned in complaint"
+      },
+      {
+        "code": "unknown",
+        "name": "Mass Airflow Sensor (MAF)",
+        "notes": "Multiple failures reported, especially on diesel models"
+      }
+    ],
+    "engine_notes": "Diesel models specifically mentioned for mass airflow sensor failures causing power loss.",
+    "prevalence_pct": 1.1,
+    "chronic_signal": 0.0,
+    "summary": "This topic groups reports of the engine check light illuminating due to failures of critical engine sensors, primarily the oxygen sensor and mass airflow sensor. Symptoms include repeated check light warnings, stalling, loss of engine power, and in one case, a hazardous carbon monoxide leak from a faulty oxygen sensor.",
+    "warning_signs": [
+      "Engine check light illuminates repeatedly",
+      "Intermittent loss of engine power or stalling",
+      "Check light returns soon after sensor replacement"
+    ],
+    "inspection_advice": "When buying a used Golf, use an OBD-II scanner to check for stored or pending fault codes related to the oxygen sensor (P0130-P0167 series) or mass airflow sensor (P0100-P0103), and verify the check engine light is off and stays off after a test drive.",
+    "data_quality": "medium",
+    "thread_count": 22,
+    "notes": "Data is complaint-dominated (NHTSA complaints, CarProblemZoo) with no TSB or recall documents. Engine spec is unknown for all documents, limiting engine-specific analysis. Year data suggests older vehicles (2000-2004) are prominent."
+  },
+  {
+    "topic_id": 43,
+    "label": "Intermittent engine stalling at low speed or idle in manual transmission Golf GTI/GLI",
+    "label_short": "Engine stalling",
+    "system_component": "engine",
+    "issue_type": "intermittent_fault",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": "low mileage (under 2k miles)",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2019-2021",
+    "known_part_codes": [],
+    "engine_notes": "Primarily affects 2.0 TSI (EA888) engines in manual transmission (MQ350) GTI/GLI models from the 2019 model year onward.",
+    "prevalence_pct": 1.3,
+    "chronic_signal": 0.0,
+    "summary": "Reports describe an intermittent, gentle engine stall occurring when coming to a stop or while stationary, typically after the vehicle is fully warmed up. The stall happens with the clutch fully depressed or in neutral, is not accompanied by warning lights, and affects primarily 2019-2021 Golf GTI/GLI models with the 2.0 TSI engine and manual transmission.",
+    "warning_signs": [
+      "Engine stalls gently when braking to a stop (5-0 mph)",
+      "Engine stalls while stationary after coming to a halt",
+      "Rough idle or shudder just before stalling (sometimes)"
+    ],
+    "inspection_advice": "For used 2019+ manual GTI/GLI, test drive until fully warm and perform multiple low-speed stops; monitor for any subtle, unexpected engine shut-offs without driver error.",
+    "data_quality": "medium",
+    "thread_count": 26,
+    "notes": "Data is US-only (NHTSA complaints, CarProblemZoo) and heavily clustered on the 2019 model year; insufficient mileage data to assess long-term pattern."
+  },
+  {
+    "topic_id": 44,
+    "label": "Violent steering wheel shaking and power steering failure at highway speeds",
+    "label_short": "Steering vibration failure",
+    "system_component": "suspension",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2012-2022",
+    "known_part_codes": [],
+    "engine_notes": "The 2.0_TSI (GTI/R) appears most frequently in reports, but insufficient engine data prevents definitive correlation.",
+    "prevalence_pct": 1.2,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report sudden, violent shaking of the steering wheel and complete loss of power steering while driving at highway speeds (around 80 mph), often accompanied by multiple warning lights (ABS, steering, suspension). The issue occurs without warning and makes the vehicle difficult to control, representing a significant safety hazard.",
+    "warning_signs": [
+      "Sudden, violent steering wheel vibration at highway speeds",
+      "Multiple dashboard warning lights illuminating simultaneously (ABS, steering, suspension)"
+    ],
+    "inspection_advice": "Check for any technical service bulletins or recalls related to steering components, suspension control modules, or wheel bearings, and test drive at highway speeds to monitor for steering vibration.",
+    "data_quality": "medium",
+    "thread_count": 24,
+    "notes": "Data is complaint-dominated (CarProblemZoo and NHTSA complaints) with no TSB or recall documents in this topic bundle; engine spec is unknown for 75% of reports."
+  },
+  {
+    "topic_id": 45,
+    "label": "Thermostat housing and water pump coolant leaks",
+    "label_short": "Cooling system leaks",
+    "system_component": "cooling",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown"
+    ],
+    "affected_years": "2002-2019",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 0.9,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report recurring coolant leaks from the thermostat housing and/or water pump, often requiring expensive repairs exceeding $2,000. The issue is described as a common design flaw, with some vehicles experiencing repeat failures even after replacement.",
+    "warning_signs": [
+      "Frequent low coolant warnings",
+      "Visible coolant leaks under the vehicle",
+      "Coolant level dropping faster than expected"
+    ],
+    "inspection_advice": "Check for dried coolant residue around the thermostat housing and water pump, and verify the coolant level is stable and at the correct mark in the reservoir.",
+    "data_quality": "medium",
+    "thread_count": 19,
+    "notes": "Engine spec data is insufficient; all documents are from owner complaints (NHTSA and CarProblemZoo), no TSB or recall data present."
+  },
+  {
+    "topic_id": 46,
+    "label": "Seat mechanism failures and structural creaking in rear seat area",
+    "label_short": "Seat mechanism failures",
+    "system_component": "other",
+    "issue_type": "safety_recall",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown",
+      "TDI_unknown"
+    ],
+    "affected_years": "2001-2022",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Seat lock mechanism",
+        "notes": "Forward/aft adjustment mechanism prone to jamming"
+      },
+      {
+        "code": "unknown",
+        "name": "Rear seat cushion structural components",
+        "notes": "Potential welding or structural defects beneath cushion"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 0.9,
+    "chronic_signal": 0.0,
+    "summary": "This topic reveals two distinct seat-related issues: driver's seat forward/aft lock mechanism failures that prevent the seat from locking in position, creating a safety hazard where the seat slides during braking; and structural creaking or potential manufacturing defects in the rear seat cushion area that owners suspect may indicate improper welding or missing components. Both issues appear across multiple model years from 2001 to 2022 without clear engine-specific patterns.",
+    "warning_signs": [
+      "Driver's seat slides backward when applying brake pressure",
+      "Creaking sounds when pressing on rear seat cushion",
+      "Seat adjustment mechanism fails to lock in position"
+    ],
+    "inspection_advice": "Test all seat adjustment positions thoroughly, applying pressure to ensure locks engage properly, and check for unusual creaking or flexing in rear seat area during test drive.",
+    "data_quality": "medium",
+    "thread_count": 18,
+    "notes": "Data comes exclusively from owner complaints (NHTSA and CarProblemZoo) with no technical service bulletins or recalls, suggesting these may be less common but potentially serious issues."
+  },
+  {
+    "topic_id": 47,
+    "label": "Forward Collision Warning / Automatic Emergency Braking System Malfunction",
+    "label_short": "False AEB Activation",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "unknown"
+    ],
+    "affected_years": "2016-2022",
+    "known_part_codes": [
+      {
+        "code": "unknown",
+        "name": "Bosch Radar Warning System / Forward Collision Sensor",
+        "notes": "Mentioned in snippet as held with plastic"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 1.0,
+    "chronic_signal": 0.0,
+    "summary": "The forward collision warning (FCW) and automatic emergency braking (AEB) systems are experiencing malfunctions, including both failure to activate during actual obstacles and, more commonly, false activations that trigger sudden, hard braking with no proximate cause. These false activations occur at various speeds and road conditions, creating a significant rear-end collision hazard for the driver and following traffic.",
+    "warning_signs": [
+      "Sudden, unexpected hard braking with dashboard warning light",
+      "Forward collision alarm activating with no visible obstacle",
+      "System braking for non-threats like road patches, ice, or debris"
+    ],
+    "inspection_advice": "When test driving, ensure the forward collision warning/automatic emergency braking system is active and note if any warning lights are present; ask the seller if they have experienced any unexpected braking events and check for any related service history.",
+    "data_quality": "medium",
+    "thread_count": 21,
+    "notes": "Data is complaint-only (NHTSA, CarProblemZoo), no TSB or recall data included; engine specifications are unknown for all reports."
+  },
+  {
+    "topic_id": 48,
+    "label": "Fuel tank failure causing gasoline leaks during refueling and operation",
+    "label_short": "Fuel tank leak",
+    "system_component": "other",
+    "issue_type": "fluid_leak",
+    "severity": "high",
+    "confidence": "medium",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2002-2021",
+    "known_part_codes": [
+      {
+        "code": null,
+        "name": "Fuel tank assembly with integrated pump",
+        "notes": "Molded pump-in-tank design mentioned in reports"
+      }
+    ],
+    "engine_notes": null,
+    "prevalence_pct": 0.9,
+    "chronic_signal": 0.0,
+    "summary": "Multiple owners report catastrophic fuel tank failures where gasoline leaks profusely from the tank area, often near the right rear wheel well. The leaks occur both during refueling attempts and while driving, creating significant fire safety hazards and requiring expensive dealership repairs.",
+    "warning_signs": [
+      "Strong gasoline odor from rear of vehicle",
+      "Fuel leaking from passenger side rear wheel well during or after refueling",
+      "Inability to accept fuel during refueling attempts"
+    ],
+    "inspection_advice": "Check for gasoline odors around the fuel tank area and inspect the right rear wheel well for any signs of fuel residue or staining before purchase.",
+    "data_quality": "medium",
+    "thread_count": 19,
+    "notes": "Data from US market complaints only; insufficient engine specification data (94.7% unknown); spans multiple generations without clear pattern"
+  }
+]

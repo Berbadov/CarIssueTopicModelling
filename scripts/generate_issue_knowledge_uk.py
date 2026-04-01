@@ -105,15 +105,23 @@ def build_bundle(topic_id: int, data: dict) -> dict:
     mileage_p20 = int(p20) if pd.notna(p20) else None
     mileage_p80 = int(p80) if pd.notna(p80) else None
 
-    # Engine group breakdown
+    # Engine spec breakdown (displacement + fuel type)
     topic_threads = enriched[enriched["dominant_topic"] == topic_id]
     if len(topic_threads) > 0:
-        eng_counts = topic_threads["engine_group"].value_counts().reset_index()
-        eng_counts.columns = ["engine_group", "n"]
-        eng_counts["pct"] = (eng_counts["n"] / len(topic_threads) * 100).round(1)
-        engine_breakdown = eng_counts.to_dict("records")
+        spec_counts = topic_threads["engine_spec"].value_counts().reset_index()
+        spec_counts.columns = ["engine_spec", "n"]
+        spec_counts["pct"] = (spec_counts["n"] / len(topic_threads) * 100).round(1)
+        engine_breakdown = spec_counts.to_dict("records")
     else:
         engine_breakdown = []
+
+    # Production year breakdown
+    if len(topic_threads) > 0:
+        year_counts = topic_threads["prod_year"].dropna().value_counts().head(8).reset_index()
+        year_counts.columns = ["year", "n"]
+        year_breakdown = year_counts.to_dict("records")
+    else:
+        year_breakdown = []
 
     # Covariate effects
     topic_effects = effects[effects["topic"] == topic_id][
@@ -146,6 +154,7 @@ def build_bundle(topic_id: int, data: dict) -> dict:
         "mileage_p20_miles": mileage_p20,
         "mileage_p80_miles": mileage_p80,
         "engine_breakdown": engine_breakdown,
+        "year_breakdown": year_breakdown,
         "covariate_effects": topic_effects,
         "snippets": snippets,
     }
@@ -194,8 +203,10 @@ SCAFFOLD_CONTEXT = build_scaffold_context(SCAFFOLD)
 SYSTEM_PROMPT = (
     "You are an automotive data analyst specializing in UK VW Golf forum data. "
     "You will receive a structured data bundle for one BERTopic topic extracted from "
-    "~2,700 UK English forum threads about VW Golf cars (primarily MK5–MK8, majority MK7/MK7.5). "
-    "The forum is golfgtiforum.co.uk — users are enthusiast owners of Golf GTI/GTD/R models. "
+    "~2,700 UK English forum threads about VW Golf cars from golfgtiforum.co.uk. "
+    "Users are enthusiast owners of Golf GTI/GTD/R models. "
+    "Engine specs are given as displacement+fuel (e.g. 2.0_TSI, 1.6_TDI, 1.5_TSI). "
+    "GTI = 2.0 TSI, GTD = 2.0 TDI, Golf R = 2.0 TSI. "
     "Mileage values are in MILES (UK). "
     "Return ONLY valid JSON — no markdown, no explanation, no code fences."
 )
@@ -227,10 +238,13 @@ Chronic signal score: {bundle["chronic_signal"]} (higher = more recurring/unreso
 Mileage distribution (dominant-topic threads):
   {mileage_line}
 
-Engine group / generation breakdown (% of dominant-topic threads):
+Engine spec breakdown (% of dominant-topic threads):
 {json.dumps(bundle["engine_breakdown"], ensure_ascii=False, indent=2)}
 
-Covariate effects (multinomial logistic regression coefficients — positive = more prevalent for that group):
+Production year breakdown (top years):
+{json.dumps(bundle["year_breakdown"], ensure_ascii=False, indent=2)}
+
+Covariate effects (multinomial logistic regression coefficients — positive = more prevalent for that engine/year):
 {json.dumps(bundle["covariate_effects"], ensure_ascii=False, indent=2)}
 
 Representative thread snippets (English, ranked by relevance):
@@ -248,9 +262,10 @@ Representative thread snippets (English, ranked by relevance):
   "confidence": "low | medium | high",
   "onset_mileage_typical_miles": null,
   "onset_mileage_range": "e.g. 20k-50k miles or null",
-  "affected_generations": ["e.g. MK7", "MK7.5"],
+  "affected_engines": ["e.g. 2.0_TSI", "1.6_TDI"],
+  "affected_years": "e.g. 2013-2018 or null",
   "known_part_codes": [{{"code": "e.g. 0AM325065", "name": "e.g. DQ200 mechatronic unit", "notes": "optional"}}],
-  "generation_notes": "1 sentence on generation-specific patterns or null",
+  "engine_notes": "1 sentence on engine-specific patterns or null",
   "prevalence_pct": {bundle["prevalence_pct"]},
   "chronic_signal": {bundle["chronic_signal"]},
   "summary": "2 sentences describing the issue pattern as observed in the data",

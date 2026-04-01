@@ -1,34 +1,37 @@
 [
   {
     "topic_id": 1,
-    "label": "General vehicle comparison, ownership experience, and model selection discussions",
-    "label_short": "Model Comparison & Ownership",
+    "label": "General ownership experience, model comparisons, and purchase advice for Golf GTI/R models",
+    "label_short": "Ownership & Purchase",
     "system_component": "other",
     "issue_type": "other",
     "severity": "low",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5",
-      "MK8",
-      "Golf_R"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.4_TSI",
+      "1.6_TDI",
+      "1.5_TSI",
+      "1.8_TSI",
+      "1.0_TSI"
     ],
+    "affected_years": "2013-2020",
     "known_part_codes": [],
-    "generation_notes": "Discussions heavily favor MK7/MK7.5 and MK8 generations, with strong positive association for MK8 and 2.0 TSI models.",
+    "engine_notes": null,
     "prevalence_pct": 12.7,
     "chronic_signal": 1.835,
-    "summary": "This topic captures general forum discussions about vehicle comparison, ownership satisfaction, and model selection advice, rather than a specific mechanical fault. It is strongly associated with newer generations (MK8, MK7) and higher-spec models (2.0 TSI, Golf R), and shows a slight positive correlation with higher mileage vehicles. The high chronic signal suggests these are recurring, open-ended discussions about vehicle choice and experience.",
+    "summary": "This topic captures general discussion threads about Golf ownership, including model comparisons (e.g., GTI vs. R vs. Cupra/S3), purchase advice on mileage and specifications, and sharing of technical documentation. The data shows a strong focus on the 2.0 TSI engine (86% of threads) and models from 2013-2020, with discussions recurring over time but not indicating a specific mechanical fault.",
     "warning_signs": [
-      "Owner seeking advice on choosing between models (e.g., GTI vs R vs S3)",
-      "Discussions comparing generations (e.g., MK7 vs MK7.5 vs MK8)",
-      "General queries about long-term ownership and reliability"
+      "Seeking advice on optimal mileage for used purchase",
+      "Comparing handling and performance between Golf variants and competitors"
     ],
-    "inspection_advice": "Not applicable as this is not a fault-specific topic. Threads relate to pre-purchase research and ownership experience sharing.",
+    "inspection_advice": "When buying, review the vehicle's service history thoroughly and consider the intended use case versus model variants (GTI vs. R vs. GTD).",
     "data_quality": "high",
     "thread_count": 339,
-    "notes": "This topic represents general conversation and advice threads, not a specific vehicle fault. The high prevalence and chronic signal indicate it's a core, recurring theme on the forum. The positive coefficients for MK8 and 2.0_TSI suggest these models are frequently discussed in comparative contexts."
+    "notes": "This is a general discussion topic, not a specific failure mode. The high prevalence and chronic signal score reflect recurring owner questions and shared experiences rather than an unresolved technical problem. The negative coefficient for 'engine_spec_reg_2.0_TSI' suggests this topic is slightly less prevalent for that engine relative to others in the full corpus, despite it being the dominant engine in the topic."
   },
   {
     "topic_id": 2,
@@ -40,83 +43,89 @@
     "confidence": "high",
     "onset_mileage_typical_miles": 16000,
     "onset_mileage_range": "2000-40000 miles",
-    "affected_generations": [
-      "MK6",
-      "MK7",
-      "MK7.5"
+    "affected_engines": [
+      "2.0_TSI"
     ],
+    "affected_years": "2013-2020",
     "known_part_codes": [],
-    "generation_notes": "MK6 shows the strongest positive association with this topic, followed by MK7.5.",
+    "engine_notes": "No specific engine-related failure pattern; issue appears chassis/suspension focused and affects 2.0 TSI (GTI/R) models predominantly.",
     "prevalence_pct": 7.4,
     "chronic_signal": 1.106,
-    "summary": "This is a common, recurring complaint of rattling, creaking, and clonking noises from the suspension or chassis, often reported soon after purchase or dealer visits. The issue appears across generations but is most strongly associated with MK6 models and occurs at relatively low mileages.",
+    "summary": "This topic captures recurring complaints about rattling, creaking, clonking, and banging noises from the suspension/chassis, often described as excessive for the vehicle's age and mileage. The issue appears early in vehicle life (median 16k miles) and is particularly associated with 2.0 TSI (GTI/R) models, suggesting possible suspension bushing, mount, or shock absorber concerns.",
     "warning_signs": [
       "Creaking or clonking noises over bumps",
-      "Intermittent buzzing or rattling from the chassis"
+      "Rattling/buzzing that is intermittent and hard to locate",
+      "Noise described as excessive for vehicle age"
     ],
-    "inspection_advice": "Test drive over varied road surfaces and listen for suspension creaks, clonks, or rattles, especially after the car has been to a dealer for other work.",
-    "data_quality": "medium",
+    "inspection_advice": "Test drive over varied road surfaces and listen for suspension creaks/clonks; check suspension bushes, shock absorber mounts, and engine/transmission mounts for wear.",
+    "data_quality": "high",
     "thread_count": 198,
-    "notes": "Over half of the threads have an unknown engine group, limiting precise engine-specific analysis. The issue is noise-related and not linked to a specific catastrophic failure in the provided parts knowledge."
+    "notes": "High proportion of 'unknown' engine specs (34.8%) reduces precision; topic terms are generic ('rattle', 'noises') which could encompass multiple underlying issues."
   },
   {
     "topic_id": 3,
-    "label": "Cooling system thermostat and water pump failures causing leaks and temperature fluctuations",
+    "label": "Cooling system thermostat and water pump leaks",
     "label_short": "Thermostat/Water Pump",
     "system_component": "cooling",
-    "issue_type": "chronic_failure",
+    "issue_type": "fluid_leak",
     "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_miles": 27000,
     "onset_mileage_range": "8000-54000 miles",
-    "affected_generations": [
-      "MK7",
-      "MK5"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI"
     ],
+    "affected_years": "2012-2019",
     "known_part_codes": [],
-    "generation_notes": "MK7 shows strongest statistical association with this issue, while MK7.5 shows a negative association suggesting possible design improvement.",
+    "engine_notes": "Primarily affects 2.0 TSI (GTI/R) engines, with a strong signal for 2.0 TDI as well; no specific engine family pattern from provided knowledge.",
     "prevalence_pct": 5.9,
     "chronic_signal": 1.306,
-    "summary": "This topic represents recurring complaints about cooling system failures, primarily involving thermostat housings and water pumps that develop leaks. Users report fluctuating temperature gauges, coolant loss, and occasional heater/smell issues, with problems appearing across a wide mileage range but concentrated around 27,000 miles median.",
+    "summary": "A recurring issue involving coolant leaks from the thermostat housing and/or water pump, often presenting with erratic temperature gauge readings, low coolant levels, and occasional overheating warnings. The problem is prevalent at moderate mileages and appears across multiple model years, with a significant association with higher logged mileage.",
     "warning_signs": [
-      "Coolant temperature gauge fluctuating between 80-90°C",
-      "Coolant level dropping below minimum without visible leaks",
-      "EPC light with limp mode and rising temperature",
-      "Low oil temperature readings"
+      "Coolant level dropping below minimum",
+      "Erratic temperature gauge movement between 80-90°C",
+      "Low oil temperature reading",
+      "Coolant smell or visible leak",
+      "EPC light/limp mode with overheating codes (e.g., P00B7)"
     ],
-    "inspection_advice": "Check for coolant leaks around thermostat housing and water pump, verify consistent temperature gauge operation at 90°C, and inspect for any coolant residue in engine bay during pre-purchase inspection.",
+    "inspection_advice": "Check for coolant leaks around the thermostat housing and water pump, inspect coolant level when cold, and look for fault codes related to cooling system performance or temperature sensors.",
     "data_quality": "high",
     "thread_count": 157,
-    "notes": "Nearly half (47.8%) of threads have unknown engine group, limiting precise engine-family analysis. The positive mileage_log coefficient suggests issue likelihood increases with mileage."
+    "notes": "A large portion of threads have unknown engine spec (25.5%), which may obscure specific engine model patterns. The regression shows a strong positive coefficient for 'engine_spec_reg_unknown', suggesting these unspecified cases are highly associated with the topic."
   },
   {
     "topic_id": 4,
-    "label": "Routine service scheduling, oil changes, and extended warranty queries",
-    "label_short": "Service scheduling",
+    "label": "Routine service and maintenance scheduling confusion",
+    "label_short": "Service Scheduling",
     "system_component": "other",
-    "issue_type": "wear_item",
+    "issue_type": "other",
     "severity": "low",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [],
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
     "known_part_codes": [],
-    "generation_notes": null,
+    "engine_notes": null,
     "prevalence_pct": 5.5,
     "chronic_signal": 1.205,
-    "summary": "This topic captures routine service and maintenance discussions, including oil changes, filter replacements, service plans, and extended warranty queries. The data shows a focus on understanding service schedules, costs, and what is included in inspections, particularly for newer vehicles with low to moderate mileage.",
+    "summary": "This topic reflects recurring owner confusion and discussion about routine service intervals, costs, and what is included in minor/major services, particularly for newer vehicles. The data shows a focus on oil changes, filters, brake fluid, and inspection services, with many questions arising from VW's move away from physical service books and the use of flexible/long-life service regimes.",
     "warning_signs": [
-      "Service indicator light activation",
-      "Confusion over service schedule intervals"
+      "Service indicator displaying conflicting messages (e.g., oil change vs. inspection at different intervals)",
+      "Uncertainty about what constitutes a minor vs. major service for a given model year"
     ],
-    "inspection_advice": "Check service history for adherence to manufacturer schedules and verify any extended warranty coverage details.",
+    "inspection_advice": "Check the vehicle's digital service history and confirm whether it is on a fixed or flexible (long-life) service schedule. Verify that the service indicator messages align with the car's age and mileage.",
     "data_quality": "high",
     "thread_count": 146,
-    "notes": "This is a general maintenance topic, not a specific failure pattern. The high 'unknown' engine group percentage and low median mileage suggest many queries are from newer vehicle owners. The positive coefficient for Golf_R and MK5 may indicate specific service cost or schedule questions for those models."
+    "notes": "This is not a mechanical failure topic but a high-prevalence informational topic about maintenance. The strong representation of 2.0_TSI (GTI/R) engines and newer model years (2013-2021) suggests it is particularly relevant for performance models and vehicles under warranty or lease plans."
   },
   {
     "topic_id": 5,
-    "label": "Brake disc and pad wear, replacement, and upgrade discussions",
+    "label": "Brake disc and pad wear and replacement discussions",
     "label_short": "Brake wear",
     "system_component": "brakes",
     "issue_type": "wear_item",
@@ -124,32 +133,28 @@
     "confidence": "high",
     "onset_mileage_typical_miles": 15000,
     "onset_mileage_range": "4200-38800 miles",
-    "affected_generations": [
-      "MK5",
-      "MK6",
-      "MK7",
-      "MK7.5",
-      "MK8",
-      "Golf_R"
+    "affected_engines": [
+      "2.0_TSI"
     ],
+    "affected_years": "2013-2020",
     "known_part_codes": [],
-    "generation_notes": "MK5 shows a positive coefficient for topic prevalence, while MK7.5 shows a negative coefficient, suggesting brake wear discussions are more common for older generations.",
+    "engine_notes": "The issue is strongly associated with the 2.0 TSI engine (GTI/R), but this likely reflects higher performance use rather than a specific engine fault.",
     "prevalence_pct": 5.2,
     "chronic_signal": 1.022,
-    "summary": "This topic centers on the routine wear and replacement of brake discs and pads, including sourcing parts, comparing OEM versus aftermarket options (like Pagid, Brembo), and obtaining quotes for fitting. Discussions frequently involve checking wear levels, sensor functionality, and planning upgrades for performance models like the Golf R.",
+    "summary": "This is a high-prevalence topic concerning the routine wear and replacement of brake discs and pads, particularly for higher-performance 2.0 TSI models. Discussions focus on sourcing parts (OEM vs. aftermarket like Brembo, Pagid), high dealer/independent workshop costs, and checking wear levels, with no evidence of a systemic manufacturing defect.",
     "warning_signs": [
-      "Low pad thickness reported during service",
-      "Brake wear warning light not triggering as expected",
-      "Excessive brake dust accumulation"
+      "Brake wear warning light or sensor trigger",
+      "Visual inspection shows low pad thickness or scored discs",
+      "Increased stopping distance or brake noise"
     ],
-    "inspection_advice": "Check brake pad thickness and disc condition during a pre-purchase inspection; verify if wear sensors are present and functional, especially on rear brakes.",
+    "inspection_advice": "When buying, check the reported thickness of front and rear discs and pads against OEM specifications; high costs for replacement are common, especially for performance models.",
     "data_quality": "high",
     "thread_count": 138,
-    "notes": "Over half (55.8%) of the threads have an unknown engine group, limiting analysis of specific engine-brake correlations. The topic represents routine maintenance rather than a chronic failure."
+    "notes": "The strong positive coefficient for 'engine_spec_reg_unknown' suggests many posts lack engine detail, but the clear association with 2.0 TSI and typical wear-and-tear topic indicates this is not a critical failure mode."
   },
   {
     "topic_id": 6,
-    "label": "Exhaust and intake modifications, including GPF/cat deletes and aftermarket parts",
+    "label": "Exhaust and intake modifications for sound and performance",
     "label_short": "Exhaust/Intake Mods",
     "system_component": "exhaust",
     "issue_type": "other",
@@ -157,58 +162,61 @@
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5",
-      "MK8"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.8_TSI",
+      "1.0_TSI",
+      "1.4_GTE"
     ],
+    "affected_years": "2013-2019",
     "known_part_codes": [],
-    "generation_notes": "Strongest association with MK7.5 and MK8 generations, indicating focus on newer models with GPF/OPF filters.",
+    "engine_notes": "Predominantly affects 2.0 TSI (GTI/R) engines, but also appears in TDI and other TSI variants.",
     "prevalence_pct": 4.7,
     "chronic_signal": 0.92,
-    "summary": "This topic centers on enthusiast discussions about aftermarket exhaust and intake modifications, including resonator deletes, downpipes, and brand comparisons (Milltek, Akrapovic). Key terms like 'gpf', 'cat', 'delete', and 'regen' indicate significant focus on removing or modifying gasoline particulate filters (GPF) and catalytic converters, likely for performance or sound enhancement. The low median mileage (7,000 miles) suggests these modifications are often considered early in vehicle ownership, driven by enthusiast interest rather than repair necessity.",
+    "summary": "This topic captures enthusiast discussions about aftermarket exhaust and intake modifications, including resonator deletes, downpipes, GPF/cat replacements, and brands like Milltek and Akrapovic. The focus is on enhancing sound and performance rather than reporting mechanical failures.",
     "warning_signs": [
-      "Interest in aftermarket exhaust or intake systems",
-      "Research into GPF/catalytic converter removal",
-      "Discussions about tuning and performance parts"
+      "Owner interest in aftermarket exhaust or intake components",
+      "Mentions of brands like Milltek, Scorpion, Akrapovic, or APR",
+      "Discussions about resonator deletes or downpipe replacements"
     ],
-    "inspection_advice": "Check for aftermarket exhaust components, intake modifications, or signs of GPF/catalytic converter removal, which may affect emissions compliance and warranty.",
+    "inspection_advice": "Check for aftermarket exhaust components, intake modifications, or tuning parts, and verify if any emissions-related components (GPF/cat) have been removed or altered.",
     "data_quality": "high",
     "thread_count": 125,
-    "notes": "This is not a failure topic but a modification/enthusiast discussion topic. The high chronic signal score indicates recurring, unresolved discussions about parts and options rather than a persistent mechanical problem."
+    "notes": "This is not a failure topic but a modification interest topic. High chronic signal suggests recurring enthusiast discussion rather than unresolved complaints. The low median mileage (7,000 miles) indicates modifications are often considered early in ownership."
   },
   {
     "topic_id": 7,
-    "label": "EPC light and limp mode triggered by fault codes, often misfire-related",
+    "label": "Intermittent EPC light and limp mode triggered by misfire or electrical fault",
     "label_short": "EPC/Limp Mode",
     "system_component": "electrical",
     "issue_type": "intermittent_fault",
-    "severity": "high",
+    "severity": "medium",
     "confidence": "medium",
     "onset_mileage_typical_miles": 14208,
-    "onset_mileage_range": "3940-39400 miles",
-    "affected_generations": [
-      "MK7"
+    "onset_mileage_range": "4k-39k miles",
+    "affected_engines": [
+      "2.0_TSI"
     ],
+    "affected_years": "2013-2015",
     "known_part_codes": [],
-    "generation_notes": "Strongest association with MK7 generation; 2.0 TSI engines show particularly high prevalence.",
+    "engine_notes": "Primarily observed in 2.0 TSI (EA888) engines, with a strong negative coefficient for 2.0 TDI suggesting this is a petrol-specific electrical/ignition issue.",
     "prevalence_pct": 4.6,
     "chronic_signal": 1.016,
-    "summary": "This topic describes recurring incidents where the EPC warning light illuminates, often accompanied by the car entering a protective 'limp mode' that limits engine performance. The issue is frequently triggered by misfires or fault codes that may temporarily clear after restarting, but often return, indicating an underlying intermittent electrical or sensor fault.",
+    "summary": "This topic describes recurring incidents where the EPC warning light illuminates, often accompanied by engine misfire, rough running, and the vehicle entering a protective 'limp mode', frequently during or after idling in traffic. The fault codes can sometimes be cleared temporarily by restarting the engine, but often recur, indicating an underlying intermittent sensor or ignition component failure.",
     "warning_signs": [
       "EPC warning light on dashboard",
-      "Sudden engine power reduction (limp mode)",
-      "Engine misfire or rough running",
-      "Fault codes that reappear after clearing"
+      "Engine enters limp mode, limiting power and RPM",
+      "Engine misfire or rough idle, especially when hot or in traffic"
     ],
-    "inspection_advice": "When buying, scan for stored fault codes even if no warning lights are currently on, and check forum history for recurring EPC/limp mode complaints specific to the engine variant.",
+    "inspection_advice": "When buying, check for any stored fault codes related to ignition coils, spark plugs, or throttle body; a history of recurring EPC lights, even if cleared, is a red flag.",
     "data_quality": "medium",
     "thread_count": 124,
-    "notes": "Over half of threads have unknown engine group, limiting precise engine-family diagnosis. The issue appears broadly electrical/sensor-related rather than tied to one specific mechanical part from the knowledge base."
+    "notes": "High proportion of 'unknown' engine specs (41.9%) limits precise engine family mapping; topic terms are generic ('codes', 'scan', 'limp'), so the root cause (e.g., specific sensor, coil pack) is not explicitly identified in the provided data bundle."
   },
   {
     "topic_id": 8,
-    "label": "Vehicle acquisition, finance, and resale discussions",
+    "label": "Vehicle acquisition, finance, and resale discussions for newer Golf GTI models",
     "label_short": "Finance & Resale",
     "system_component": "other",
     "issue_type": "other",
@@ -216,261 +224,277 @@
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [],
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2013-2020",
     "known_part_codes": [],
-    "generation_notes": null,
+    "engine_notes": null,
     "prevalence_pct": 4.4,
     "chronic_signal": 1.822,
-    "summary": "This topic centers on vehicle acquisition, financing, and resale processes rather than mechanical faults. Discussions include PCP/lease deals, trade-in valuations (WBAC), and decisions about purchasing new or used Golf models, particularly GTI and R variants. The low median mileage (16k miles) and positive coefficient for MK8 suggest these are often new or nearly-new vehicle transactions.",
-    "warning_signs": [],
-    "inspection_advice": "Not applicable—this topic relates to financial and purchasing decisions, not mechanical inspection.",
+    "summary": "This topic is not a technical fault but centers on financial and ownership lifecycle discussions for newer, often low-mileage Golf GTI models. Threads focus on PCP/lease deals, part-exchange, valuations (WBAC), and the decision-making process for acquiring or selling a vehicle.",
+    "warning_signs": [
+      "High financial commitment on a PCP/lease contract",
+      "Rapid depreciation or poor trade-in valuation"
+    ],
+    "inspection_advice": "When considering a car from this topic, verify its full service history and check for any outstanding finance.",
     "data_quality": "high",
     "thread_count": 118,
-    "notes": "This is a non-technical topic about vehicle finance and market values. The 'chronic signal' score likely reflects recurring discussions about PCP terms, lease deals, and resale values rather than unresolved mechanical complaints."
+    "notes": "The topic's high chronic signal score indicates recurring, unresolved discussions about finance and market value, not a mechanical problem. The strong association with the 'technical_bucket_medium' covariate suggests these discussions often occur in threads with some technical content, but the core theme is non-technical."
   },
   {
     "topic_id": 9,
-    "label": "Aftermarket tuning, remapping, and throttle response modifications",
+    "label": "Engine tuning, remapping, and throttle response modifications",
     "label_short": "Tuning & Remapping",
-    "system_component": "other",
+    "system_component": "engine",
     "issue_type": "other",
     "severity": "low",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5",
-      "Golf_R"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.4_TSI",
+      "1.6_TDI",
+      "1.9_TDI"
     ],
+    "affected_years": "2013-2020",
     "known_part_codes": [],
-    "generation_notes": "Discussion is heavily concentrated on MK7/MK7.5 models, with Golf_R also showing a positive association with the topic.",
+    "engine_notes": "Overwhelmingly discussed for the 2.0 TSI (GTI/R) engine, with strong positive coefficient indicating this is a GTI/R owner topic.",
     "prevalence_pct": 4.1,
     "chronic_signal": 1.431,
-    "summary": "This topic centers on user discussions and decisions regarding aftermarket performance modifications, specifically engine remaps (Revo, APR, Unicorn) and tuning boxes (DTUK). The low median mileage (7,500 miles) suggests these are early ownership considerations, often involving warranty concerns and comparisons between tuning methods.",
+    "summary": "This topic captures enthusiast discussions about aftermarket engine tuning, including ECU remaps (Revo, APR, Unicorn) and plug-in tuning boxes (DTUK). The dialogue focuses on performance gains, brand comparisons, warranty implications, and compatibility issues, particularly with locked ECUs on newer models.",
     "warning_signs": [
       "Interest in increased power/torque",
-      "Concerns about warranty invalidation",
-      "Research into different tuning brands and methods"
+      "Researching tuning brands and options",
+      "Concerns about clutch durability post-tune"
     ],
-    "inspection_advice": "Check for aftermarket tuning boxes or evidence of an ECU remap; inquire about warranty status if modified.",
+    "inspection_advice": "Check for aftermarket tuning boxes or evidence of ECU remapping (dealer stamps, software stickers) if seeking an unmodified vehicle, and inquire about any associated warranty work.",
     "data_quality": "high",
     "thread_count": 109,
-    "notes": "This is not a fault or failure topic, but a prevalent discussion theme among enthusiasts. The 'chronic signal' score likely reflects ongoing, recurring debates about tuning options rather than unresolved problems."
+    "notes": "This is not a fault or failure topic, but a high-prevalence discussion topic among performance-oriented owners. The low median mileage (7,500 miles) suggests tuning is considered early in ownership."
   },
   {
     "topic_id": 10,
-    "label": "Discussion of vehicle specifications, options, and interior features during purchase or test drives",
-    "label_short": "Specs & Options",
+    "label": "New car ownership experience, specification discussions, and initial impressions",
+    "label_short": "New car experience",
     "system_component": "other",
     "issue_type": "other",
     "severity": "low",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK6",
-      "MK7",
-      "MK7.5",
-      "MK8"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI"
     ],
+    "affected_years": "2009-2019",
     "known_part_codes": [],
-    "generation_notes": "Discussions span multiple generations, with strongest association to MK6 and MK7 based on regression coefficients.",
+    "engine_notes": null,
     "prevalence_pct": 5.1,
     "chronic_signal": 1.75,
-    "summary": "This topic captures forum threads focused on vehicle specifications, optional equipment, and interior features, particularly during the purchase decision or test drive phase. Key terms like DCC, leather seats, Dynaudio, keyless, and nav indicate discussions revolve around comparing trim levels, option packages, and personal configuration preferences rather than mechanical faults.",
+    "summary": "This topic captures discussions from new or prospective owners about their initial experiences, test drives, and vehicle specifications. The data shows a strong association with low-mileage vehicles (median 5k miles) and the 2.0 TSI engine, indicating this is primarily about the early ownership phase rather than a mechanical fault.",
     "warning_signs": [],
-    "inspection_advice": "When buying, verify the presence and functionality of advertised optional equipment (e.g., DCC adaptive chassis, Dynaudio sound system, keyless entry) against the vehicle's build sheet or VIN decoder.",
+    "inspection_advice": "Not applicable - this topic relates to purchase decisions and initial impressions, not a fault to inspect for.",
     "data_quality": "high",
     "thread_count": 136,
-    "notes": "This is not a fault topic but a discussion topic about features and specifications. The chronic signal score may indicate recurring questions or debates about options. The low median mileage (5000 miles) aligns with new or nearly-new vehicle discussions."
+    "notes": "Topic terms (dcc, leather, seats, grey, nav, dynaudio, carbon, keyless, non pp, interior) and representative snippets clearly indicate discussions about optional equipment, colors, and first drives. The negative coefficient for mileage_log confirms this topic is less prevalent as mileage increases."
   },
   {
     "topic_id": 11,
-    "label": "DSG gearbox mode selection and driving experience dissatisfaction",
-    "label_short": "DSG Mode Dissatisfaction",
+    "label": "DSG gearbox mode selection and manual paddle usage dissatisfaction",
+    "label_short": "DSG mode complaints",
     "system_component": "gearbox",
     "issue_type": "other",
     "severity": "low",
-    "confidence": "medium",
+    "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK6",
-      "Golf_R"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI"
     ],
+    "affected_years": null,
     "known_part_codes": [],
-    "generation_notes": "Topic is statistically more prevalent in MK6 and Golf_R models, but appears to be a subjective driving experience issue rather than a mechanical fault.",
+    "engine_notes": "Primarily affects 2.0 TSI (GTI/R) engines, with some 2.0 TDI (GTD) representation; not linked to specific mechanical failures.",
     "prevalence_pct": 4.0,
     "chronic_signal": 1.349,
-    "summary": "Forum users frequently discuss dissatisfaction with the DSG gearbox's automatic mode selection in Normal and Sport driving modes, feeling the transmission is rarely in the desired gear. The topic centers on driving experience preferences, gear selection logic, and comparisons between manual and DSG transmissions, rather than reporting mechanical failures.",
+    "summary": "Forum users frequently discuss dissatisfaction with DSG automatic mode selection, particularly finding Normal mode too sluggish and Sport mode too aggressive, with no satisfactory intermediate setting. Threads focus on manual paddle usage, mode comparisons (Eco, Sport, Individual), and general DSG driving experience rather than reporting mechanical faults.",
     "warning_signs": [
-      "DSG rarely selects the desired gear in automatic modes",
-      "Dissatisfaction with gap between Normal and Sport mode behavior"
+      "Driver feels DSG is rarely in desired gear",
+      "Dissatisfaction with gap between Normal and Sport modes",
+      "Frequent use of manual mode or paddles to override automatic selection"
     ],
-    "inspection_advice": "Test drive the car in various DSG modes (Normal, Sport, Manual) to assess if the gear selection logic matches your driving preferences.",
-    "data_quality": "medium",
+    "inspection_advice": "Test drive should include evaluation of all DSG modes (Eco, Normal, Sport, Individual) in varied conditions to assess personal compatibility with automatic shift logic.",
+    "data_quality": "high",
     "thread_count": 106,
-    "notes": "This topic represents subjective driving experience discussions rather than mechanical failures. High 'unknown' engine group percentage (49.1%) and low median mileage (5000 miles) suggest many threads are from new owners or general discussion. The negative coefficient for 'technical_bucket_medium' indicates this topic is less common in more technical/problem-focused threads."
+    "notes": "This topic represents subjective driving experience complaints rather than technical failures; low median mileage (5,000 miles) suggests discussions occur early in ownership during adaptation period."
   },
   {
     "topic_id": 12,
-    "label": "Auto Hold and Electronic Parking Brake Engagement/Disengagement Issues",
+    "label": "Auto Hold and Electronic Parking Brake Engagement/Release Issues",
     "label_short": "Auto Hold Faults",
     "system_component": "brakes",
     "issue_type": "intermittent_fault",
     "severity": "medium",
     "confidence": "medium",
-    "onset_mileage_typical_miles": 17000,
-    "onset_mileage_range": "1880-39000 miles",
-    "affected_generations": [
-      "MK7",
-      "MK7.5",
-      "Golf_R"
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.6_TDI"
     ],
+    "affected_years": "2009-2020",
     "known_part_codes": [],
-    "generation_notes": "Strongest signal in MK7/MK7.5 and Golf R models; appears less prevalent in MK5, MK6, and MK8.",
+    "engine_notes": "No strong mechanical engine link; issue is related to electronic brake and convenience systems across engine types.",
     "prevalence_pct": 2.8,
     "chronic_signal": 1.395,
-    "summary": "Users report inconsistent or unexpected behavior with the Auto Hold and electronic parking brake systems, including delays in disengagement when pulling away, unintended activation or release, and conflicts with the Start-Stop system. Issues manifest as the car rolling unexpectedly, brakes failing to release on hill starts, or system aggression causing jerky pull-aways.",
+    "summary": "This topic centers on user confusion and intermittent faults with the Auto Hold and electronic parking brake systems. Complaints include unexpected brake release causing roll-away, aggressive or delayed Auto Hold disengagement when pulling away, and conflicts with the Start-Stop system when opening doors.",
     "warning_signs": [
-      "Electronic parking brake disengages or engages unexpectedly when starting the car or fastening seatbelt",
-      "Auto Hold causes a delay or jerk when pulling away from a standstill",
-      "Hill Hold Assist fails to release brakes, requiring clutch re-engagement"
+      "Unexpected parking brake release when starting car and putting on seatbelt, causing vehicle to roll",
+      "Delayed or aggressive brake release when using Auto Hold feature, especially on hill starts",
+      "Start-Stop system cutting engine and automatically applying handbrake when driver door is opened"
     ],
-    "inspection_advice": "Test Auto Hold and electronic parking brake function on a slight incline, noting any delay, jerkiness, or unexpected behavior during engagement and disengagement cycles.",
+    "inspection_advice": "Test the Auto Hold and electronic parking brake functions repeatedly during a test drive, including on an incline, and check for any error messages related to the brake system or seatbelt sensors.",
     "data_quality": "medium",
     "thread_count": 76,
-    "notes": "High proportion (55.3%) of threads have unknown engine group, limiting precise engine/transmission correlation. Issue appears strongly linked to electronic systems in newer generations rather than a specific mechanical part failure."
+    "notes": "High proportion of 'unknown' engine specs and low median mileage suggest issues may appear early and are not strongly mileage-dependent. The chronic signal indicates recurring discussion, but it may relate more to system understanding/operation than a widespread hardware failure."
   },
   {
     "topic_id": 13,
-    "label": "Keyless entry system faults, battery drain, and security concerns",
-    "label_short": "Keyless entry issues",
+    "label": "Keyless entry and security system issues, including fob battery drain, relay theft concerns, and alarm/insurance discussions",
+    "label_short": "Keyless Security Issues",
     "system_component": "electrical",
     "issue_type": "intermittent_fault",
     "severity": "medium",
     "confidence": "high",
-    "onset_mileage_typical_miles": null,
-    "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5",
-      "MK8",
-      "Golf_R"
+    "onset_mileage_typical_miles": 15000,
+    "onset_mileage_range": "7000-33000 miles",
+    "affected_engines": [
+      "2.0_TSI"
     ],
+    "affected_years": "2013-2025",
     "known_part_codes": [],
-    "generation_notes": "Concerns appear across MK7, MK7.5, MK8, and Golf R models, with higher prevalence in MK8 and Golf R based on regression coefficients.",
+    "engine_notes": "Strongly associated with 2.0 TSI (GTI/R) models, with no specific mechanical engine fault indicated.",
     "prevalence_pct": 2.7,
     "chronic_signal": 1.694,
-    "summary": "This topic centers on problems with keyless entry systems, including key fob battery drain, intermittent unlocking failures, and significant security concerns about relay theft. Users discuss disabling keyless entry via OBDeleven to prevent theft and report issues with the system turning off the radio when doors are opened with the engine running.",
+    "summary": "This topic centers on problems and concerns with the keyless entry system, including rapid fob battery drain, functionality confusion, and security vulnerabilities to relay theft. Discussions frequently extend to related alarm system behavior, insurance implications, and potential software fixes using tools like OBDeleven.",
     "warning_signs": [
       "Key fob batteries draining quickly",
-      "Intermittent failure to unlock doors with keyless system",
-      "Radio turning off when opening door with engine running"
+      "Intermittent failure of keyless door unlocking",
+      "Increased insurance premiums or questions due to theft risk"
     ],
-    "inspection_advice": "Test keyless entry function from all doors, check for any fault codes related to central electronics, and inspect the physical key blade access point for wear.",
+    "inspection_advice": "Test all keyless entry functions on all doors, check for any stored fault codes in the central electronics module, and inquire about the vehicle's theft history and any aftermarket security modifications.",
     "data_quality": "high",
     "thread_count": 72,
-    "notes": "Mileage distribution is very low (median 15k miles), suggesting issues appear early in vehicle life. High 'unknown' engine group percentage (62.5%) limits precise engine-specific analysis, but regression shows strong association with MK8 and Golf R models."
+    "notes": "The topic mixes operational questions, minor faults (batteries), and major security concerns, making it broad. The high coefficient for 'engine_spec_reg_unknown' suggests many posts may not specify the engine when discussing this electrical/security feature."
   },
   {
     "topic_id": 14,
-    "label": "Infotainment system issues with media playback, Bluetooth connectivity, and navigation faults",
-    "label_short": "Infotainment Media Faults",
+    "label": "Infotainment system issues with Bluetooth, SD card, and navigation unit functionality",
+    "label_short": "Infotainment faults",
     "system_component": "electrical",
     "issue_type": "intermittent_fault",
-    "severity": "low",
-    "confidence": "medium",
-    "onset_mileage_typical_miles": null,
-    "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5",
-      "MK8"
-    ],
-    "known_part_codes": [],
-    "generation_notes": "Issues appear across MK7, MK7.5, and MK8 generations, with a stronger positive signal for MK8 and MK7.5 in the regression analysis.",
-    "prevalence_pct": 2.8,
-    "chronic_signal": 1.527,
-    "summary": "This topic centers on problems with the car's infotainment and media systems, including Bluetooth connectivity for phone contacts and audio, issues with SD card media playback and file organization, and navigation system lock-ups or faults. The discussions are technical in nature, often involving coding attempts, file management, and troubleshooting of intermittent software or hardware glitches.",
-    "warning_signs": [
-      "Bluetooth fails to display contact photos or sync properly",
-      "Infotainment screen or navigation system locks up or freezes",
-      "SD card music files not reading or folders not displaying correctly"
-    ],
-    "inspection_advice": "When buying, test all infotainment functions thoroughly: check Bluetooth phone pairing and contact sync, test multiple SD cards with music files, and ensure the navigation system boots and operates without freezing.",
-    "data_quality": "medium",
-    "thread_count": 74,
-    "notes": "A high proportion (63.5%) of threads have an unknown engine group, suggesting the issue is not engine-specific but related to the infotainment hardware/software common across models. The low median mileage (5000 miles) indicates these are often early ownership issues, not wear-related."
-  },
-  {
-    "topic_id": 15,
-    "label": "Advanced Driver Assistance System (ADAS) faults and false activations",
-    "label_short": "ADAS faults",
-    "system_component": "electrical",
-    "issue_type": "intermittent_fault",
-    "severity": "medium",
-    "confidence": "medium",
-    "onset_mileage_typical_miles": null,
-    "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5"
-    ],
-    "known_part_codes": [],
-    "generation_notes": "The issue is most strongly associated with MK7.5 models, with MK7 also showing a positive correlation.",
-    "prevalence_pct": 2.8,
-    "chronic_signal": 1.342,
-    "summary": "This topic covers recurring complaints about intermittent faults and false activations of Advanced Driver Assistance Systems (ADAS), including Adaptive Cruise Control (ACC), Front Assist, and Lane Assist. Users report systems becoming unavailable, providing false collision warnings, or applying emergency braking unexpectedly, often with diagnostic logs pointing to sensor obstruction or software glitches.",
-    "warning_signs": [
-      "Intermittent 'ACC unavailable' or 'Front Assist unavailable' warnings",
-      "Unexpected emergency braking or collision warnings without apparent cause"
-    ],
-    "inspection_advice": "When buying, check the vehicle's fault memory for ADAS-related error codes and test all driver assistance functions on a varied road to ensure they activate and deactivate smoothly without false warnings.",
-    "data_quality": "medium",
-    "thread_count": 76,
-    "notes": "A high proportion (67.1%) of threads have an unknown engine group, limiting precise engine-variant analysis. The low median mileage (5500 miles) suggests issues can appear early, potentially related to software or sensor calibration rather than wear."
-  },
-  {
-    "topic_id": 16,
-    "label": "Headlight and lighting system configuration, coding, and bulb replacement issues",
-    "label_short": "Lighting Configuration",
-    "system_component": "lighting",
-    "issue_type": "other",
     "severity": "low",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK6",
-      "MK7",
-      "MK7.5"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.2_TSI"
     ],
+    "affected_years": "2012-2018",
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 2.8,
+    "chronic_signal": 1.527,
+    "summary": "This topic covers recurring complaints about the infotainment system, including Bluetooth connectivity problems (contact photos not displaying), SD card compatibility and power issues, navigation unit lock-ups, and missing DAB radio information. The issues appear early in vehicle life (median 5k miles) and affect multiple Golf generations, particularly those with newer production years.",
+    "warning_signs": [
+      "Bluetooth fails to display contact photos on screen",
+      "Navigation unit freezes or locks up repeatedly",
+      "DAB radio information stops being received",
+      "SD card compatibility or power issues with media playback"
+    ],
+    "inspection_advice": "Test all infotainment functions during a test drive: check Bluetooth phonebook transfer and contact photo display, verify SD card media playback, test navigation system responsiveness, and confirm DAB radio information is displayed.",
+    "data_quality": "high",
+    "thread_count": 74,
+    "notes": "The topic shows strong association with newer production years (positive coefficient for prod_year_centered) and 'technical_bucket_medium' posts, suggesting it's a documented technical issue rather than casual discussion. High proportion of 'unknown' engine specs may indicate owners of newer vehicles who haven't yet specified their engine in forum profiles."
+  },
+  {
+    "topic_id": 15,
+    "label": "Advanced driver assistance system (ADAS) false activations and faults",
+    "label_short": "ADAS false activations",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "high",
+    "onset_mileage_typical_miles": 5500,
+    "onset_mileage_range": "3600-28000 miles",
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.6_TDI"
+    ],
+    "affected_years": "2007-2019",
+    "known_part_codes": [],
+    "engine_notes": "No specific engine failure pattern; issue relates to electronic driver assistance systems common across engine types.",
+    "prevalence_pct": 2.8,
+    "chronic_signal": 1.342,
+    "summary": "This topic captures recurring complaints about false activations and intermittent faults with advanced driver assistance systems, particularly Adaptive Cruise Control (ACC), Front Assist, and Lane Assist. Users report unexpected emergency braking, collision warnings, and system unavailability messages, often with no apparent obstruction, leading to confusion and potential safety concerns.",
+    "warning_signs": [
+      "Intermittent 'ACC unavailable' or 'Front Assist unavailable' warnings",
+      "Unexpected emergency braking or collision warnings with no visible threat",
+      "System faults logged for 'obstructed view' when sensors appear clear"
+    ],
+    "inspection_advice": "Test all ADAS functions during a test drive, including ACC and Front Assist, and check for any stored fault codes related to radar or camera systems.",
+    "data_quality": "high",
+    "thread_count": 76,
+    "notes": "The issue appears to be electronic/sensor-based rather than mechanical, with a chronic signal suggesting it is a recurring, unresolved complaint across model years. The positive coefficient for diesel engines (1.6_TDI, 2.0_TDI) suggests these may be slightly more prevalent in those variants, but the issue affects petrol GTIs significantly as well."
+  },
+  {
+    "topic_id": 16,
+    "label": "Headlight and lighting system configuration, coding, and fault diagnosis",
+    "label_short": "Lighting coding/faults",
+    "system_component": "lighting",
+    "issue_type": "intermittent_fault",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.6_TDI",
+      "1.2_TSI"
+    ],
+    "affected_years": "2010-2021",
     "known_part_codes": [
       {
         "code": "5Q0",
-        "name": "VW headlight/lighting control module part number prefix",
-        "notes": "Commonly referenced in coding discussions for Golf MK7/MK7.5 LED/Xenon systems"
+        "name": "Headlight control module (likely part of lighting system)",
+        "notes": "Appears in topic terms, associated with lighting control/coding"
       }
     ],
-    "generation_notes": "Strongest signal from MK7.5 and MK6 generations, with MK7 showing a negative coefficient, suggesting the issue is less prevalent or differently manifested in base MK7.",
+    "engine_notes": "No strong engine-specific failure pattern; topic is dominated by 2.0_TSI (44.6%) but this likely reflects general Golf GTI/R ownership discussing lighting features rather than an engine-linked fault.",
     "prevalence_pct": 2.4,
     "chronic_signal": 1.046,
-    "summary": "This topic centers on user queries and discussions about configuring, coding, and replacing advanced lighting components like LED, Xenon, and dynamic cornering headlights. The data indicates it is a recurring knowledge gap or customization activity, not a chronic mechanical failure, with threads often focused on activating features via VCDS/OBD11, troubleshooting fault codes, or understanding lighting behavior.",
+    "summary": "This topic captures recurring discussions about headlight and lighting system configuration, activation, coding, and fault diagnosis on VW Golf models. Users are seeking help with enabling features (fog lights, DRL behavior, cornering lights, coming/home functions), diagnosing faults (e.g., cornering headlamp failures), and understanding the behavior of advanced lighting systems like LED, xenon, and dynamic cornering lights.",
     "warning_signs": [
-      "Fault codes related to cornering or stationary lights",
-      "Unexpected lighting behavior (e.g., DRLs not working as desired, coming/home lights turning off prematurely)",
-      "Need to code after bulb or component replacement"
+      "Fault codes related to headlight units (e.g., 'Left hand stationary')",
+      "Unexpected lighting behavior (e.g., rear lights staying on with DRLs, coming/home lights turning off when door opens)",
+      "Cornering headlight functions intermittently failing"
     ],
-    "inspection_advice": "When buying, test all lighting functions (auto high-beam, cornering lights, DRLs, fog lights) and check for fault codes in the central electronics module related to headlights.",
+    "inspection_advice": "Test all lighting functions during a pre-purchase inspection: auto headlights, high beam assist (if fitted), cornering lights, fog lights, and coming/home leaving functions to ensure proper operation and coding.",
     "data_quality": "high",
     "thread_count": 65,
-    "notes": "This is an 'issue' of customization and configuration knowledge, not a reliability fault. The positive coefficient for 'technical_bucket_medium' suggests these threads involve moderate technical depth. The mileage distribution is low (median 26k miles), aligning with early ownership customization rather than age-related failure."
+    "notes": "The topic represents general owner inquiries and troubleshooting for complex lighting systems rather than a specific chronic mechanical failure. The high coefficient for 'technical_bucket_medium' suggests these are moderate-complexity technical discussions. The positive coefficient for 'engine_spec_reg_unknown' may indicate many posters did not specify their engine when asking about lighting, which is a non-engine-specific system."
   },
   {
     "topic_id": 17,
-    "label": "Wheel and tire upgrades affecting ride quality, performance, and weight",
+    "label": "Wheel and tire upgrades affecting ride quality and performance",
     "label_short": "Wheel upgrades",
     "system_component": "suspension",
     "issue_type": "other",
@@ -478,342 +502,353 @@
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5"
+    "affected_engines": [
+      "2.0_TSI"
     ],
+    "affected_years": "2012-2019",
     "known_part_codes": [],
-    "generation_notes": "Strongly associated with MK7 and MK7.5 generations, with users discussing wheel swaps on GTI PP, Clubsport S, and R models.",
+    "engine_notes": null,
     "prevalence_pct": 2.5,
     "chronic_signal": 1.309,
-    "summary": "This topic centers on enthusiast discussions about aftermarket wheel and tire upgrades, specifically focusing on wheel weights (e.g., Pretoria, Cadiz, Brescia), sizes (18\" vs 19\"), and the use of spacers. Users report noticeable changes in ride firmness, perceived performance, and engine noise after swapping from factory specifications, indicating a recurring community interest in wheel modification trade-offs.",
+    "summary": "This topic centers on enthusiast discussions about aftermarket wheel and tire upgrades, specifically the impact of switching to larger diameter (19\") or different style wheels (e.g., Pretoria, Belvedere, Brescia) on ride comfort, perceived performance, and vehicle dynamics. Users report a firmer, bumpier ride with 19-inch wheels compared to 18s, and some note a subjective feeling of reduced acceleration and altered engine noise after fitting heavier wheels.",
     "warning_signs": [
-      "Firmer, bumpier ride after upgrading to larger diameter wheels",
-      "Perceived loss of acceleration or change in engine noise after wheel swap"
+      "Firm or bumpy ride quality after wheel upgrade",
+      "Perceived reduction in acceleration or engine response after fitting larger/heavier wheels"
     ],
-    "inspection_advice": "When buying, check if aftermarket wheels are fitted and inquire about any changes to ride quality or handling the owner has noticed since installation.",
+    "inspection_advice": "When buying, check if aftermarket wheels are fitted and inquire about any changes to ride comfort or handling noted by the owner. Verify wheel weights if performance is a priority.",
     "data_quality": "high",
     "thread_count": 68,
-    "notes": "This is not a mechanical failure topic but a recurring discussion theme about modifications. The low median mileage (3500 miles) suggests these discussions often occur soon after purchase or modification."
+    "notes": "This is not a mechanical failure topic but a recurring discussion about modification effects. The strong association with the 2.0_TSI engine (GTI/R models) and low median mileage (3,500 miles) suggests these are common early modifications by performance-oriented owners."
   },
   {
     "topic_id": 18,
-    "label": "Exterior trim, glass, and wiper system issues including water ingress and component failure",
-    "label_short": "Trim/Wiper Issues",
-    "system_component": "other",
+    "label": "Windscreen wiper system faults and under-bonnet trim/sound insulation issues",
+    "label_short": "Wiper/Trim Issues",
+    "system_component": "electrical",
     "issue_type": "intermittent_fault",
     "severity": "low",
     "confidence": "medium",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK5",
-      "MK6",
-      "MK7",
-      "MK7.5"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI"
     ],
+    "affected_years": "2012-2020",
     "known_part_codes": [],
-    "generation_notes": "Heat shield/sound insulation sagging/shrinkage specifically mentioned for MK7/7.5 models.",
+    "engine_notes": "No strong engine-specific pattern; issue appears across both 2.0 TSI (GTI/R) and 2.0 TDI (GTD) variants.",
     "prevalence_pct": 2.4,
     "chronic_signal": 1.477,
-    "summary": "This topic clusters discussions around various exterior trim, glass, and wiper system faults. Common complaints include poor-performing automatic wipers, sagging or shrinking under-bonnet heat shields/sound insulation, missing trim pieces, and water ingress around the windscreen leading to damp headliners.",
+    "summary": "This topic captures recurring complaints about poor-performing automatic windscreen wipers and under-bonnet trim/sound insulation that shrinks, sags, or causes creaking noises. The issues appear early in vehicle life (median 5k miles) and affect multiple model years, suggesting persistent manufacturing or design shortcomings rather than wear-related failures.",
     "warning_signs": [
-      "Automatic wipers operating erratically",
+      "Automatic wipers activating erratically or failing to activate in heavy rain",
       "Creaking noises from under the bonnet over rough ground",
-      "Damp headlining or water droplets inside after heavy rain",
-      "Missing or ill-fitting exterior plastic trim covers"
+      "Missing, sagging, or shrunk under-bonnet sound insulation/heat shield"
     ],
-    "inspection_advice": "Check for water stains on the headliner near the windscreen, inspect the fit and condition of the under-bonnet insulation/heat shield, and test the automatic wiper function in light rain.",
+    "inspection_advice": "Check the condition and fit of the under-bonnet sound insulation/heat shield for shrinkage or sagging. Test the automatic wiper function in varying rain conditions to assess sensor responsiveness.",
     "data_quality": "medium",
     "thread_count": 65,
-    "notes": "High proportion (50.8%) of threads have unknown engine group, limiting powertrain-specific analysis. The topic is broad, covering multiple distinct but loosely related exterior/trim issues rather than a single, specific mechanical failure."
+    "notes": "High proportion of unknown engine specs (35.4%) and limited explicit part references in snippets reduce diagnostic specificity. The negative mileage_log coefficient suggests issues arise early, not with wear."
   },
   {
     "topic_id": 19,
-    "label": "Poor performance and dissatisfaction with factory-fitted Bridgestone tyres, particularly in wet conditions",
+    "label": "Bridgestone factory tyre dissatisfaction and winter tyre recommendations",
     "label_short": "Bridgestone tyre complaints",
     "system_component": "other",
-    "issue_type": "other",
-    "severity": "low",
+    "issue_type": "wear_item",
+    "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK5",
-      "MK6",
-      "MK7",
-      "MK7.5",
-      "MK8",
-      "Golf_R"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.6_TDI",
+      "1.9_TDI",
+      "1.4_TSI"
     ],
+    "affected_years": "2012-2019",
     "known_part_codes": [],
-    "generation_notes": "Strongly associated with MQB platform cars (MK7 onwards) where Bridgestones were commonly factory-fitted in the UK market.",
+    "engine_notes": "No specific engine pattern; issue appears across all engine specs with 2.0_TSI (GTI/R) most prevalent due to higher performance demands.",
     "prevalence_pct": 2.2,
     "chronic_signal": 1.65,
-    "summary": "A recurring topic of discussion is widespread owner dissatisfaction with factory-fitted Bridgestone tyres, especially the S001 model, which are criticized for poor wet grip, excessive road noise, and wheel spin. Users frequently recommend switching to alternatives like Michelin Pilot Sport 4 or Goodyear for significantly better performance.",
+    "summary": "UK Golf owners, particularly GTI/GTD drivers, report widespread dissatisfaction with factory-fitted Bridgestone tyres (often S001), citing poor wet grip, excessive wheel spin, high noise, and reduced traction. Forum discussions focus on tyre replacements, with Michelin Pilot Sport 4 and winter tyres like Michelin Pilot Alpin 4 frequently recommended as superior alternatives.",
     "warning_signs": [
-      "Excessive wheel spin, especially in 1st/2nd gear under acceleration",
-      "Poor traction and flashing traction control light in wet conditions",
-      "High road noise compared to other tyre brands"
+      "Excessive wheel spin in 1st/2nd gear, especially when cold",
+      "Poor wet traction with traction control light flashing under acceleration",
+      "High road noise compared to alternative tyres"
     ],
-    "inspection_advice": "Check the tyre brand and model on a used Golf; factory Bridgestones (often S001) are a common owner complaint and may indicate the car still has its original, disliked tyres.",
+    "inspection_advice": "Check tyre brand and model on used Golfs; factory Bridgestones may indicate imminent replacement cost and reduced driving satisfaction.",
     "data_quality": "high",
     "thread_count": 60,
-    "notes": "This is not a mechanical failure but a persistent quality/complaint topic. The negative mileage_log coefficient suggests discussion is more common at lower mileages, likely when cars are newer and still on factory tyres."
+    "notes": "This is a subjective wear-item discussion rather than a mechanical failure; chronic signal suggests recurring debate about tyre choices rather than unresolved technical faults."
   },
   {
     "topic_id": 20,
-    "label": "Fuel economy and consumption concerns, including octane discussions and real-world MPG expectations",
-    "label_short": "Fuel economy concerns",
-    "system_component": "engine",
-    "issue_type": "other",
-    "severity": "low",
-    "confidence": "high",
-    "onset_mileage_typical_miles": null,
-    "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5",
-      "MK6",
-      "Golf_R"
-    ],
-    "known_part_codes": [],
-    "generation_notes": "Discussions are prevalent across MK7/MK7.5 generations, with a positive coefficient for MK7.5 and Golf_R groups indicating these owners are more likely to discuss fuel economy.",
-    "prevalence_pct": 3.4,
-    "chronic_signal": 1.505,
-    "summary": "This topic captures recurring discussions about real-world fuel consumption, with users comparing their MPG figures (often reporting 26-33 MPG) against advertised or optimistic claims (like 40+ MPG). The dialogue centers on expectations, fuel type (95 octane/RON), and driving modes, rather than reporting a mechanical fault.",
-    "warning_signs": [
-      "Consistently low MPG (e.g., under 30) compared to advertised figures",
-      "High sensitivity of fuel economy to driving mode (e.g., Sport vs. Individual/Normal)"
-    ],
-    "inspection_advice": "When buying, review the car's long-term trip computer MPG average and discuss the owner's typical driving conditions (urban vs. highway) to set realistic expectations.",
-    "data_quality": "high",
-    "thread_count": 91,
-    "notes": "This is not a failure topic but a persistent discussion about performance expectations. The low median mileage (9k miles) suggests these are often new or nearly-new car owners. The negative coefficient for 'technical_bucket_medium' indicates the topic is less technical and more about ownership experience."
-  },
-  {
-    "topic_id": 21,
-    "label": "New vehicle delivery tracking and early post-delivery issues",
-    "label_short": "Delivery tracking",
+    "label": "Fuel economy and consumption discussions, particularly regarding real-world MPG versus manufacturer claims and fuel octane (95 RON unleaded)",
+    "label_short": "Fuel Economy",
     "system_component": "other",
     "issue_type": "other",
     "severity": "low",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [],
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.6_TDI",
+      "1.4_TSI",
+      "1.8_TSI",
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.9_TDI"
+    ],
+    "affected_years": null,
     "known_part_codes": [],
-    "generation_notes": null,
+    "engine_notes": "The topic is dominated by 2.0 TSI (GTI/R) owners (64.8%), but appears across all engine specs, indicating a general concern rather than a specific engine fault.",
+    "prevalence_pct": 3.4,
+    "chronic_signal": 1.505,
+    "summary": "This topic captures recurring forum discussions where owners compare real-world fuel consumption (MPG) and tank range, often expressing disappointment that their figures fall short of manufacturer claims or other users' reports of ~40mpg. The dialogue is informational, focusing on typical usage patterns, fuel type (95 octane), and long-term averages rather than reporting a mechanical fault.",
+    "warning_signs": [
+      "Real-world MPG consistently below 30mpg in mixed driving for petrol GTIs",
+      "Significant deviation from expected tank range or long-term average consumption"
+    ],
+    "inspection_advice": "Check the car's trip computer for long-term average MPG; ask the owner about typical driving conditions and realistic fuel economy expectations.",
+    "data_quality": "high",
+    "thread_count": 91,
+    "notes": "This is a discussion topic, not a failure mode. The negative coefficient for 'mileage_log' suggests the conversation is more prevalent among lower-mileage vehicles, likely from new owners establishing baseline expectations. The 'chronic_signal' score reflects its recurring, unresolved nature as a point of comparison and concern."
+  },
+  {
+    "topic_id": 21,
+    "label": "New vehicle order tracking and delivery issues",
+    "label_short": "Order Tracking",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_miles": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.6_TDI",
+      "1.4_TSI",
+      "1.8_TSI"
+    ],
+    "affected_years": null,
+    "known_part_codes": [],
+    "engine_notes": null,
     "prevalence_pct": 2.0,
     "chronic_signal": 1.943,
-    "summary": "This topic centers on forum discussions tracking new vehicle orders, including build weeks (BW), shipping from Emden port, and transit progress. The chronic signal indicates recurring discussions about delivery timelines and early post-delivery quality issues, such as minor faults discovered shortly after collection.",
+    "summary": "This topic is not about a vehicle fault, but rather a recurring discussion among forum members tracking the build and delivery of their new vehicles. The data shows a low median mileage, a high prevalence of the 2.0 TSI engine (GTI/R), and discussions centered on build weeks (BW), shipping ports (Emden), and transit delays.",
     "warning_signs": [
-      "Frequent dealer visits for software updates shortly after delivery",
-      "Minor cosmetic or electrical issues noted within first weeks of ownership"
+      "Extended wait times for vehicle delivery",
+      "Lack of communication from dealer regarding build status"
     ],
-    "inspection_advice": "For new purchases, verify build week and shipping details with the dealer, and conduct a thorough inspection for cosmetic damage and system functionality upon collection.",
-    "data_quality": "medium",
+    "inspection_advice": "Not applicable for used vehicle purchase; this topic relates to the new vehicle ordering process.",
+    "data_quality": "high",
     "thread_count": 53,
-    "notes": "This is not a mechanical failure topic but rather a logistical/experiential discussion topic. The low median mileage (10,000 miles) and prevalence among unknown engine groups align with new vehicle delivery threads. The technical_bucket_medium coefficient suggests these discussions contain some technical elements, likely related to early fault diagnosis."
+    "notes": "The topic's high chronic signal score and prevalence likely reflect persistent, unresolved customer service experiences with the ordering and delivery process, not a mechanical or technical vehicle failure. The covariate analysis showing a positive coefficient for 'technical_bucket_medium' is an artifact of the forum's categorization of these waiting/delivery threads."
   },
   {
     "topic_id": 22,
-    "label": "DSG gear selection issues with grinding, clunking, and reverse gear problems",
+    "label": "DSG gear selection issues with grinding, clunking, and difficulty engaging reverse or second gear",
     "label_short": "DSG gear selection",
     "system_component": "gearbox",
     "issue_type": "chronic_failure",
     "severity": "medium",
-    "confidence": "medium",
+    "confidence": "high",
     "onset_mileage_typical_miles": 5000,
     "onset_mileage_range": "1200-30000 miles",
-    "affected_generations": [
-      "MK7",
-      "MK7.5"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI"
     ],
+    "affected_years": "2008-2020",
     "known_part_codes": [
       {
         "code": "0AM325065",
         "name": "DQ200 mechatronic unit",
-        "notes": "Primary failure point for 7-speed dry DSG; symptoms include gear selection issues, judder, and clutch engagement problems."
+        "notes": "Primary failure point for 7-speed dry DSG. Symptoms: judder, gear slip, limp mode."
       },
       {
         "code": "02E305051C",
         "name": "DQ250 mechatronic unit",
-        "notes": "Potential failure point for 6-speed wet DSG; can cause similar gear selection and engagement symptoms."
+        "notes": "Potential failure point for 6-speed wet DSG, though less common than DQ200 issues."
       }
     ],
-    "generation_notes": "Issue appears most prevalent in MK7/MK7.5 generations, with positive regression coefficients for both, though data includes unknown engine group (54%).",
+    "engine_notes": "Issue strongly associated with 2.0 TDI (coefficient +0.74) and appears across both petrol and diesel DSG variants.",
     "prevalence_pct": 1.9,
     "chronic_signal": 1.06,
-    "summary": "Users report intermittent problems selecting reverse gear, grinding noises in 2nd gear at low speeds, and clunking when coming off the throttle. The issue affects DSG gearboxes, with symptoms suggesting mechatronic unit faults or clutch pack wear, particularly in stop-start traffic conditions.",
+    "summary": "This topic describes recurring problems with VW DSG gearboxes, primarily difficulty selecting reverse gear and grinding/clunking noises in second gear during low-speed maneuvers. The issue appears early in vehicle life (median 5k miles) and affects both the 6-speed wet (DQ250) and 7-speed dry (DQ200) DSG units, with a strong statistical signal for 2.0 TDI engines.",
     "warning_signs": [
-      "Difficulty selecting reverse gear, especially when first engaging",
-      "Grinding noise in 2nd gear at low speeds (5-10 mph)",
-      "Clunking sound when coming off the throttle in 2nd gear",
-      "Delay or hesitation when shifting between forward and reverse"
+      "Grinding noise in 2nd gear at 5-10 mph",
+      "Difficulty selecting reverse gear",
+      "Clunking sound when coming off throttle in 2nd gear",
+      "Temperamental or delayed gear engagement"
     ],
-    "inspection_advice": "When test driving, pay close attention to low-speed gear changes in 2nd gear and reverse gear engagement, listening for grinding or clunking noises, and note any delays or hesitations in gear selection.",
-    "data_quality": "medium",
+    "inspection_advice": "When test driving, pay close attention to low-speed gear changes in 1st-2nd gear and reverse selection, listening for grinding or clunking noises, especially in stop-start traffic conditions.",
+    "data_quality": "high",
     "thread_count": 50,
-    "notes": "High proportion (54%) of threads have unknown engine group, limiting precise engine/gearbox mapping. Topic terms suggest both DQ200 (dry) and DQ250 (wet) DSG boxes may be affected, but specific fault differentiation is unclear from snippets."
+    "notes": "Topic shows negative correlation with mileage (coefficient -0.44), suggesting issues manifest early rather than being high-mileage wear. 20% of threads have unknown engine spec, and production year data is sparse but shows cases from 2008-2020."
   },
   {
     "topic_id": 23,
-    "label": "Discussion of hybrid/electric models (GTE), emissions, and production specifications",
-    "label_short": "GTE & Emissions",
+    "label": "Discussion of fuel economy, emissions, and production specifications for performance models",
+    "label_short": "Fuel Economy & Specs",
     "system_component": "other",
     "issue_type": "other",
     "severity": "low",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK7",
-      "MK7.5",
-      "MK8"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.6_TDI",
+      "1.5_TSI"
     ],
+    "affected_years": "2010-2018",
     "known_part_codes": [],
-    "generation_notes": "Topic is strongly associated with MK8 and 2.0 TSI engine groups, but is a general discussion topic rather than a specific fault.",
+    "engine_notes": null,
     "prevalence_pct": 2.2,
     "chronic_signal": 1.525,
-    "summary": "This topic captures general forum discussion about hybrid/electric Golf models (GTE), vehicle specifications, emissions (CO2), and production news. It is not related to a specific mechanical fault or failure pattern, but represents recurring conversations about model comparisons, tax implications, and performance figures.",
+    "summary": "This topic captures general discussion and comparisons between Golf GTI, GTD, and R models, focusing on fuel economy, CO2 emissions, tax implications, and production announcements. The data shows a recurring interest in the trade-offs between performance and running costs, particularly when choosing between petrol and diesel variants.",
     "warning_signs": [],
-    "inspection_advice": "Not applicable as this is not a fault-related topic.",
+    "inspection_advice": "This is not a fault topic; it relates to general ownership considerations and model specifications.",
     "data_quality": "high",
     "thread_count": 59,
-    "notes": "This is a thematic discussion topic, not a failure mode. The low median mileage (9k miles) and positive coefficients for MK8 and 2.0_TSI groups suggest it relates to new model discussions, specifications, and purchasing decisions rather than reliability issues."
+    "notes": "Topic terms and thread snippets indicate this is not a discussion of mechanical faults, but rather general model comparison, specification, and ownership cost topics. The chronic signal score suggests it is a recurring theme of discussion among owners."
   },
   {
     "topic_id": 24,
-    "label": "Manual clutch slip, judder, and slave cylinder failure in Golf GTI/R",
-    "label_short": "Clutch slip/failure",
+    "label": "Manual clutch slip and slave cylinder failure in VW Golf GTI/R",
+    "label_short": "Clutch slip",
     "system_component": "gearbox",
     "issue_type": "wear_item",
     "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_miles": 23500,
     "onset_mileage_range": "7000-48000 miles",
-    "affected_generations": [
-      "MK6",
-      "MK7",
-      "MK7.5"
+    "affected_engines": [
+      "2.0_TSI"
     ],
+    "affected_years": "2013-2018",
     "known_part_codes": [],
-    "generation_notes": "MK6 shows the strongest positive association with this issue in the regression data, though MK7/MK7.5 dominate the thread count.",
+    "engine_notes": "Primarily affects 2.0 TSI engines (GTI/R) with manual transmissions, not DSG-specific.",
     "prevalence_pct": 1.5,
     "chronic_signal": 1.075,
-    "summary": "This topic centers on premature wear and failure of the manual clutch system, including clutch slip, judder, and slave cylinder leaks. Issues are reported at relatively low mileages (median 23.5k miles), often in association with performance modifications or as a recurring complaint about the stock clutch's durability.",
+    "summary": "Manual clutch slip is a recurring issue in VW Golf GTI/R models, often occurring at relatively low mileage (median 23,500 miles). The problem is frequently associated with aftermarket tuning (e.g., Revo maps) and includes symptoms like clutch judder when cold, slipping under load in higher gears, and slave cylinder leaks causing fluid loss.",
     "warning_signs": [
-      "Clutch slip under load (revs rise without acceleration)",
-      "Judder or vibration during clutch engagement, especially when cold",
-      "Clutch pedal sticking to the floor or feeling spongy",
-      "Low clutch fluid level indicating a potential slave cylinder leak"
+      "Clutch slipping under load in 5th/6th gear around 2500-3000rpm",
+      "Clutch pedal sticking to floor due to fluid leak from slave cylinder",
+      "Judder during clutch engagement when cold"
     ],
-    "inspection_advice": "When buying, test for clutch slip by applying full throttle in a high gear (e.g., 5th or 6th) at low RPM; check for judder during initial engagement from a stop, and inspect the clutch fluid reservoir level and for leaks around the gearbox/engine interface.",
-    "data_quality": "medium",
+    "inspection_advice": "Test for clutch slip under load in higher gears (5th/6th) around 2500-3000rpm, check clutch fluid level and for leaks around slave cylinder, and inquire about any aftermarket tuning history.",
+    "data_quality": "high",
     "thread_count": 40,
-    "notes": "Engine group is unknown for 50% of threads, limiting precise engine-specific analysis. The issue is negatively associated with Golf R models, suggesting the problem may be more specific to GTI variants or that R models use a different clutch specification."
+    "notes": "High proportion of unknown engine specs (30%) may slightly skew engine-specific patterns, but strong signal for 2.0 TSI manual models. Issue appears mileage-dependent (positive coefficient for mileage_log) rather than year-dependent."
   },
   {
     "topic_id": 25,
-    "label": "Engine oil level checking, top-up procedures, and minor sump leaks",
-    "label_short": "Oil Level/Leaks",
+    "label": "Engine oil level monitoring, top-up requirements, and minor sump leaks",
+    "label_short": "Oil level/leaks",
     "system_component": "engine",
     "issue_type": "fluid_leak",
     "severity": "low",
-    "confidence": "medium",
-    "onset_mileage_typical_miles": null,
-    "onset_mileage_range": null,
-    "affected_generations": [
-      "MK5",
-      "MK6",
-      "MK7",
-      "MK7.5",
-      "MK8"
+    "confidence": "high",
+    "onset_mileage_typical_miles": 10000,
+    "onset_mileage_range": "5000-20000 miles",
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI"
     ],
+    "affected_years": "2013-2020",
     "known_part_codes": [],
-    "generation_notes": "MK5 shows the strongest positive association with this topic, suggesting more frequent oil level concerns or leaks in that generation.",
+    "engine_notes": "Primarily affects 2.0 TSI (GTI/R) engines, with some 2.0 TDI involvement; no strong link to high-mileage oil consumption failures.",
     "prevalence_pct": 1.5,
     "chronic_signal": 0.805,
-    "summary": "This topic centers on routine engine oil maintenance, including checking levels, identifying minor sump or oil pan leaks, and selecting the correct oil specification (e.g., Castrol Edge 5W-30 meeting VW 507.00). The high chronic signal indicates recurring questions and minor concerns rather than a widespread catastrophic failure.",
+    "summary": "Forum users frequently discuss checking and topping up engine oil, with many threads noting minor oil misting or wet patches around the sump/oil pan area, particularly on low-mileage examples (median 10k miles). The topic shows a recurring pattern of owner concern over normal oil consumption or minor sealing weep, rather than catastrophic leaks.",
     "warning_signs": [
       "Oil level dropping into 'top-up' range between services",
-      "Visible wetness or misting of oil on the sump/oil pan"
+      "Visible oil mist or wet patch on sump/oil pan, especially near level sensor or rear seal"
     ],
-    "inspection_advice": "Check the engine oil level via dipstick when cold and inspect the sump, oil pan bolts, and level sensor area for any signs of weeping or fresh oil residue.",
-    "data_quality": "medium",
+    "inspection_advice": "Check for oil misting or dampness on the sump, particularly at the rear near the level sensor and differential seal; verify oil level is within spec and inquire about top-up frequency.",
+    "data_quality": "high",
     "thread_count": 41,
-    "notes": "Over half of the threads have an unknown engine group, limiting precise engine-family analysis. The topic mixes routine maintenance questions with minor leak concerns, rather than indicating a specific part failure."
+    "notes": "High 'unknown' engine spec percentage (36.6%) and positive coefficient for 'unknown' in regression suggests many posts lack specific engine details, though 2.0 TSI dominance is clear. The negative mileage_log coefficient indicates this is more common at lower mileages."
   },
   {
     "topic_id": 26,
-    "label": "Wheel alignment, tyre wear, and steering geometry issues following impacts or kerbing",
-    "label_short": "Wheel Alignment Issues",
+    "label": "Wheel alignment, tyre wear, and steering geometry issues",
+    "label_short": "Wheel Alignment",
     "system_component": "suspension",
     "issue_type": "wear_item",
     "severity": "medium",
     "confidence": "high",
-    "onset_mileage_typical_miles": null,
-    "onset_mileage_range": null,
-    "affected_generations": [
-      "MK5",
-      "MK6",
-      "Golf_R"
+    "onset_mileage_typical_miles": 18645,
+    "onset_mileage_range": "9k-43k miles",
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI",
+      "1.6_TDI",
+      "1.4_TSI"
     ],
+    "affected_years": null,
     "known_part_codes": [],
-    "generation_notes": "MK5 and MK6 generations show significantly higher prevalence of this topic, suggesting potential model-specific suspension sensitivity or reporting bias.",
+    "engine_notes": "No specific engine pattern; issue appears across all engine specs with slight positive correlation to diesel engines (1.6_TDI, 2.0_TDI) per regression coefficients.",
     "prevalence_pct": 1.6,
     "chronic_signal": 1.25,
-    "summary": "This topic centers on wheel alignment, tyre pressures, and steering geometry problems, often triggered by impacts with kerbs or other vehicles as described in multiple incident reports. Users discuss symptoms like uneven tyre wear, steering heaviness, and the need for professional tracking/camber adjustment, with issues appearing across a wide mileage range but showing higher prevalence in older Golf generations.",
+    "summary": "Forum users report wheel alignment, tyre pressure, and steering geometry problems, often following impacts with kerbs or potholes. The issue correlates with increasing mileage and appears across multiple engine types, suggesting it's a general wear or maintenance item rather than a specific model fault.",
     "warning_signs": [
       "Uneven or rapid tyre tread wear",
-      "Vehicle pulling to one side or heavy steering"
+      "Vehicle pulling to one side while driving",
+      "Steering wheel off-centre when driving straight"
     ],
-    "inspection_advice": "Check all tyres for uneven wear patterns, inspect alloy wheels for kerb damage, and verify wheel alignment specifications match factory settings.",
-    "data_quality": "medium",
+    "inspection_advice": "Check tyre tread depth and wear patterns across all tyres; inspect alloy wheels for kerb damage; verify wheel alignment measurements if uneven wear is present.",
+    "data_quality": "high",
     "thread_count": 44,
-    "notes": "Over half of threads have unknown engine group, limiting powertrain-specific analysis; topic appears strongly associated with incident narratives rather than spontaneous failures."
+    "notes": "Topic terms strongly indicate alignment/tyre issues, but representative snippets suggest many incidents are triggered by specific impact events (kerbs, collisions) rather than spontaneous failures. Limited production year data prevents identifying model year patterns."
   },
   {
     "topic_id": 27,
-    "label": "Retrofit and coding of parking sensors, rear view cameras, and infotainment systems",
-    "label_short": "Park Assist Retrofit",
+    "label": "Retrofit and aftermarket installation of parking assistance, navigation, and camera systems",
+    "label_short": "Park assist retrofit",
     "system_component": "electrical",
     "issue_type": "other",
     "severity": "low",
     "confidence": "high",
     "onset_mileage_typical_miles": null,
     "onset_mileage_range": null,
-    "affected_generations": [
-      "MK5",
-      "MK6",
-      "MK7",
-      "MK7.5",
-      "MK8"
+    "affected_engines": [
+      "2.0_TSI",
+      "2.0_TDI"
     ],
+    "affected_years": null,
     "known_part_codes": [
       {
         "code": "5Q0",
         "name": "VW part number prefix for electrical/electronic components",
-        "notes": "Common in retrofit kits for cameras and sensors"
+        "notes": "Appears in topic terms, likely referencing specific retrofit kits or modules"
       },
       {
         "code": "1T0919297A",
         "name": "Park Assist control unit",
-        "notes": "Mentioned in retrofit context"
+        "notes": "Mentioned in thread snippet #5 as part of Golf 7 park assist retrofit"
       }
     ],
-    "generation_notes": "Discussions span MK5 to MK8, with strongest representation in MK7/MK7.5, indicating these generations are popular for aftermarket upgrades.",
+    "engine_notes": "No specific engine-related failure pattern; topic is about aftermarket installations rather than mechanical issues.",
     "prevalence_pct": 1.4,
     "chronic_signal": 1.184,
-    "summary": "This topic captures enthusiast discussions about retrofitting advanced driver assistance and infotainment features, such as park assist systems, rear view cameras, and navigation upgrades. The technical focus is on component sourcing, installation, and coding/software configuration, rather than reporting widespread mechanical failures.",
+    "summary": "This topic centers on forum discussions about retrofitting advanced electronic systems to VW Golf vehicles, particularly parking assistance (Park Assist), rearview cameras, navigation upgrades (MIB2.5), and dashcam installations. Users seek advice on compatibility, installation procedures, and integration with existing systems like lane assist cameras and factory sensors.",
     "warning_signs": [
-      "Desire to add factory-style features not originally equipped",
-      "Research into compatibility and coding requirements for retrofit parts"
+      "Aftermarket wiring modifications visible behind dashboard or trim",
+      "Non-functional parking sensors or camera following retrofit work",
+      "Error codes related to parking assist or camera systems"
     ],
-    "inspection_advice": "Check for aftermarket installations of parking sensors, cameras, or infotainment systems; inquire about professional coding if present, as improper installation can cause electrical issues.",
+    "inspection_advice": "Check for aftermarket wiring, ensure all parking sensors and cameras function correctly, and verify no error codes are present in the infotainment or parking assist systems.",
     "data_quality": "medium",
     "thread_count": 38,
-    "notes": "This is an 'enthusiast modification' topic, not a chronic failure pattern. The high 'technical_bucket_medium' coefficient confirms its technical discussion nature. Mileage data is insufficient as retrofits are not mileage-dependent."
+    "notes": "This is not a chronic failure topic but rather a discussion topic about modifications. The chronic signal score may reflect recurring questions/uncertainty about retrofits rather than a reliability issue. Mileage data is insufficient, and engine/year breakdowns are not meaningful for this retrofit-focused topic."
   }
 ]

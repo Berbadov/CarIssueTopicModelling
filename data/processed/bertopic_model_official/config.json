@@ -1,0 +1,170 @@
+{
+  "calculate_probabilities": true,
+  "language": null,
+  "low_memory": false,
+  "min_topic_size": 10,
+  "n_gram_range": [
+    1,
+    1
+  ],
+  "nr_topics": null,
+  "seed_topic_list": [
+    [
+      "oil",
+      "consumption",
+      "burning",
+      "quart",
+      "excessive",
+      "blue smoke",
+      "oil level"
+    ],
+    [
+      "timing chain",
+      "tensioner",
+      "rattle",
+      "chain",
+      "timing",
+      "noise",
+      "stretch"
+    ],
+    [
+      "turbo",
+      "boost",
+      "wastegate",
+      "surge",
+      "power loss",
+      "turbocharger",
+      "actuator"
+    ],
+    [
+      "coolant",
+      "water pump",
+      "thermostat",
+      "overheating",
+      "temperature",
+      "radiator",
+      "housing"
+    ],
+    [
+      "dpf",
+      "particulate filter",
+      "regeneration",
+      "egr",
+      "emissions",
+      "diesel",
+      "soot"
+    ],
+    [
+      "dsg",
+      "transmission",
+      "gearbox",
+      "shudder",
+      "hesitation",
+      "clutch pack",
+      "mechatronic"
+    ],
+    [
+      "injector",
+      "injection",
+      "fuel",
+      "misfire",
+      "rough idle",
+      "cylinder",
+      "hpfp"
+    ],
+    [
+      "steer",
+      "steering",
+      "eps",
+      "power steering",
+      "torque steer",
+      "column"
+    ],
+    [
+      "brakes",
+      "brake",
+      "pedal",
+      "caliper",
+      "vibration",
+      "discs",
+      "abs"
+    ],
+    [
+      "carbon",
+      "intake",
+      "deposit",
+      "direct injection",
+      "valve",
+      "walnut blast"
+    ],
+    [
+      "check engine",
+      "warning light",
+      "epc",
+      "fault code",
+      "limp mode",
+      "sensor"
+    ],
+    [
+      "battery",
+      "alternator",
+      "electrical",
+      "voltage",
+      "charging",
+      "short circuit"
+    ],
+    [
+      "suspension",
+      "control arm",
+      "bearing",
+      "knock",
+      "strut",
+      "spring",
+      "coilover"
+    ],
+    [
+      "oil leak",
+      "coolant leak",
+      "seal",
+      "gasket",
+      "leak",
+      "seepage"
+    ],
+    [
+      "sunroof",
+      "water leak",
+      "panoramic",
+      "drain",
+      "headliner",
+      "seal"
+    ],
+    [
+      "airbag",
+      "takata",
+      "inflator",
+      "seatbelt",
+      "pretensioner"
+    ],
+    [
+      "clutch",
+      "flywheel",
+      "dmf",
+      "dual mass",
+      "slip",
+      "judder"
+    ],
+    [
+      "cam follower",
+      "camshaft",
+      "follower",
+      "wear",
+      "tappet",
+      "lobe"
+    ]
+  ],
+  "top_n_words": 10,
+  "verbose": true,
+  "zeroshot_min_similarity": 0.7,
+  "zeroshot_topic_list": null,
+  "embedding_model": "all-mpnet-base-v2"
+}

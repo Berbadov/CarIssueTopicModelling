@@ -599,7 +599,7 @@ stm_k_summary <- stm_k_metrics %>%
 # At K = 12 the two extra topics were consistently absorbed by cosmetic and
 # infotainment content (body-damage assessor threads, CarPlay threads) which
 # are now filtered out above, making those extra slots unnecessary.
-K_FINAL <- 20 # used to be 15, testing with 20
+K_FINAL <- 25
 
 cat(sprintf("Fitting final STM with K = %d...\n", K_FINAL))
 

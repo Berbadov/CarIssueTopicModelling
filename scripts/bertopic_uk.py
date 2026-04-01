@@ -161,7 +161,7 @@ def count_pattern_hits(text: str, compiled_patterns: list) -> int:
     return sum(1 for p in compiled_patterns if p.search(text))
 
 
-# ── Engine group mapping (from R_code_STM_uk.R lines 184-195) ───────────────
+# ── Engine group mapping (legacy MK-gen, kept as secondary tag) ───────────────
 
 ENGINE_GROUP_MAP = {
     "MK8": "MK8", "MK7.5": "MK7.5", "MK7": "MK7",
@@ -177,6 +177,84 @@ def map_engine_group(code: str) -> str:
     if pd.isna(code):
         return "unknown"
     return ENGINE_GROUP_MAP.get(code, "other")
+
+
+# ── Engine spec extraction (displacement + fuel type) ─────────────────────────
+# Scans full aggregated thread text for displacement+fuel mentions.
+# This supplements the cleaner-level extraction which only sees title + 5 msgs.
+
+_ENGINE_SPEC_PATTERNS = [
+    (re.compile(r"\b2\.0\s*tdi\b", re.IGNORECASE),   "2.0_TDI"),
+    (re.compile(r"\b2\.0\s*tsi\b", re.IGNORECASE),   "2.0_TSI"),
+    (re.compile(r"\b2\.0\s*tfsi\b", re.IGNORECASE),  "2.0_TSI"),
+    (re.compile(r"\b1\.6\s*tdi\b", re.IGNORECASE),   "1.6_TDI"),
+    (re.compile(r"\b1\.5\s*tsi\b", re.IGNORECASE),   "1.5_TSI"),
+    (re.compile(r"\b1\.5\s*tfsi\b", re.IGNORECASE),  "1.5_TSI"),
+    (re.compile(r"\b1\.4\s*tsi\b", re.IGNORECASE),   "1.4_TSI"),
+    (re.compile(r"\b1\.4\s*tfsi\b", re.IGNORECASE),  "1.4_TSI"),
+    (re.compile(r"\b1\.2\s*tsi\b", re.IGNORECASE),   "1.2_TSI"),
+    (re.compile(r"\b1\.8\s*tsi\b", re.IGNORECASE),   "1.8_TSI"),
+    (re.compile(r"\b1\.8\s*tfsi\b", re.IGNORECASE),  "1.8_TSI"),
+    (re.compile(r"\b1\.9\s*tdi\b", re.IGNORECASE),   "1.9_TDI"),
+    (re.compile(r"\b1\.0\s*tsi\b", re.IGNORECASE),   "1.0_TSI"),
+    (re.compile(r"\bea888\b", re.IGNORECASE),         "2.0_TSI"),
+    (re.compile(r"\bea211\b", re.IGNORECASE),         "1.4_TSI"),
+    (re.compile(r"\bea189\b", re.IGNORECASE),         "2.0_TDI"),
+    (re.compile(r"\bea288\b", re.IGNORECASE),         "2.0_TDI"),
+]
+
+_PROD_YEAR_RE = re.compile(r"\b(200[3-9]|201\d|202[0-6])\b")
+
+
+# Inference rules for implicit engine spec from model variant names.
+# On golfgtiforum.co.uk, "GTI" always means 2.0 TSI, "GTD" always means 2.0 TDI, etc.
+_VARIANT_INFERENCE = [
+    (re.compile(r"\bgti\b", re.IGNORECASE),     "2.0_TSI"),
+    (re.compile(r"\bgtd\b", re.IGNORECASE),     "2.0_TDI"),
+    (re.compile(r"\bgolf\s*r\b", re.IGNORECASE), "2.0_TSI"),
+    (re.compile(r"\br32\b", re.IGNORECASE),      "3.2_VR6"),
+    (re.compile(r"\bgte\b", re.IGNORECASE),      "1.4_GTE"),
+]
+
+# Bare fuel-type mentions without displacement (weaker signal, kept as partial tag)
+_BARE_FUEL_INFERENCE = [
+    (re.compile(r"\btdi\b", re.IGNORECASE), "TDI_unknown"),
+    (re.compile(r"\btsi\b", re.IGNORECASE), "TSI_unknown"),
+]
+
+
+def extract_engine_spec_from_text(text: str) -> str:
+    """Extract displacement+fuel from arbitrary text block.
+
+    Priority: explicit displacement+fuel > EA-family code > variant inference > bare fuel type.
+    """
+    if not text or pd.isna(text):
+        return "unknown"
+    # 1. Explicit displacement+fuel or EA code
+    for pattern, spec in _ENGINE_SPEC_PATTERNS:
+        if pattern.search(text):
+            return spec
+    # 2. Infer from variant name (GTI → 2.0_TSI, GTD → 2.0_TDI, etc.)
+    for pattern, spec in _VARIANT_INFERENCE:
+        if pattern.search(text):
+            return spec
+    # 3. Bare fuel type (TDI/TSI without displacement)
+    for pattern, spec in _BARE_FUEL_INFERENCE:
+        if pattern.search(text):
+            return spec
+    return "unknown"
+
+
+def extract_prod_year_from_text(text: str) -> str | None:
+    """Extract the most likely production year from text (most frequent mention)."""
+    if not text or pd.isna(text):
+        return None
+    from collections import Counter
+    matches = _PROD_YEAR_RE.findall(text)
+    if not matches:
+        return None
+    counts = Counter(matches)
+    return counts.most_common(1)[0][0]
 
 
 # ── Quote stripping (from cleaner_uk.py) ─────────────────────────────────────
@@ -197,6 +275,10 @@ def aggregate_threads(df_raw: pd.DataFrame) -> pd.DataFrame:
 
     groups = df_raw.groupby(["thread_name", "thread_url"], sort=False)
     rows = []
+
+    # Check if cleaner-level engine_spec/prod_year columns exist
+    has_engine_spec_col = "engine_spec" in df_raw.columns
+    has_prod_year_col = "prod_year" in df_raw.columns
 
     for (tname, turl), grp in groups:
         msgs = grp["message"].tolist()
@@ -227,12 +309,29 @@ def aggregate_threads(df_raw: pd.DataFrame) -> pd.DataFrame:
                 mileage_info = info
                 break
 
+        # Engine spec: try full thread text first (more signal), fall back to
+        # cleaner-level column, then "unknown"
+        engine_spec = extract_engine_spec_from_text(txt)
+        if engine_spec == "unknown" and has_engine_spec_col:
+            cleaner_specs = grp["engine_spec"].dropna().tolist()
+            if cleaner_specs and str(cleaner_specs[0]) != "unknown":
+                engine_spec = str(cleaner_specs[0])
+
+        # Production year: try full thread text, fall back to cleaner column
+        prod_year = extract_prod_year_from_text(txt)
+        if prod_year is None and has_prod_year_col:
+            cleaner_years = grp["prod_year"].dropna().tolist()
+            if cleaner_years:
+                prod_year = str(int(float(cleaner_years[0])))
+
         rows.append({
             "thread_name": tname,
             "thread_url": turl,
             "txt": txt,
             "reason": reasons[0] if reasons else None,
             "engine_code": engine_codes[0] if engine_codes else "unknown",
+            "engine_spec": engine_spec,
+            "prod_year": prod_year,
             "mileage_miles": mileage_info["miles"],
             "mileage_confidence": mileage_info["confidence"],
             "n_messages": len(msgs),
@@ -293,8 +392,14 @@ def compute_scores(df: pd.DataFrame) -> pd.DataFrame:
         ordered=True,
     )
 
-    # Engine group
+    # Engine group (legacy MK-gen, kept as secondary tag)
     df["engine_group"] = df["engine_code"].apply(map_engine_group)
+
+    # Engine spec should already be set from aggregate_threads(); ensure column exists
+    if "engine_spec" not in df.columns:
+        df["engine_spec"] = df["txt"].apply(extract_engine_spec_from_text)
+    if "prod_year" not in df.columns:
+        df["prod_year"] = df["txt"].apply(extract_prod_year_from_text)
 
     return df
 
@@ -321,7 +426,9 @@ def prepare_data() -> pd.DataFrame:
     df["doc_id"] = range(1, len(df) + 1)
     df["doc_name"] = df["doc_id"].apply(lambda x: f"doc_{x:05d}")
 
-    log.info("Engine group distribution:\n%s", df["engine_group"].value_counts().to_string())
+    log.info("Engine spec distribution:\n%s", df["engine_spec"].value_counts().to_string())
+    log.info("Production year distribution:\n%s", df["prod_year"].value_counts().to_string())
+    log.info("Engine group (legacy) distribution:\n%s", df["engine_group"].value_counts().to_string())
     log.info("Technical bucket distribution:\n%s", df["technical_bucket"].value_counts().to_string())
 
     df.to_csv(PREPARED_PATH, index=False)
@@ -525,9 +632,9 @@ def save_outputs(df: pd.DataFrame, topic_model, topics: list,
     # ── bertopic_thread_enriched_uk.csv ──────────────────────────────────────
     enriched_cols = [
         "doc_name", "thread_name", "thread_url", "dominant_topic",
-        "topic_gamma", "engine_group", "mileage_miles",
-        "mileage_confidence", "technical_bucket", "chronic_score",
-        "n_messages", "gamma_vector",
+        "topic_gamma", "engine_spec", "prod_year", "engine_group",
+        "mileage_miles", "mileage_confidence", "technical_bucket",
+        "chronic_score", "n_messages", "gamma_vector",
     ]
     enriched_path = DATA_DIR / "bertopic_thread_enriched_uk.csv"
     df[enriched_cols].to_csv(enriched_path, index=False)
@@ -569,6 +676,20 @@ def save_outputs(df: pd.DataFrame, topic_model, topics: list,
         else:
             mileage_median = mileage_p20 = mileage_p80 = None
 
+        # Top engine specs for this topic (e.g. "2.0_TSI: 65%, 2.0_TDI: 20%")
+        spec_counts = topic_threads["engine_spec"].value_counts()
+        top_specs = ", ".join(
+            f"{spec}: {cnt/thread_count*100:.0f}%"
+            for spec, cnt in spec_counts.head(4).items()
+            if spec != "unknown"
+        )
+
+        # Top production years
+        year_counts = topic_threads["prod_year"].dropna().value_counts()
+        top_years = ", ".join(
+            f"{int(float(yr))}" for yr in year_counts.head(5).index
+        )
+
         llm_rows.append({
             "topic": tid,
             "terms_frex": trow["terms_prob"],
@@ -576,6 +697,8 @@ def save_outputs(df: pd.DataFrame, topic_model, topics: list,
             "prevalence_pct": prevalence_pct,
             "chronic_signal": chronic_signal,
             "thread_count": thread_count,
+            "top_engine_specs": top_specs,
+            "top_prod_years": top_years,
             "mileage_median_miles": mileage_median,
             "mileage_p20_miles": mileage_p20,
             "mileage_p80_miles": mileage_p80,
@@ -586,21 +709,22 @@ def save_outputs(df: pd.DataFrame, topic_model, topics: list,
     log.info("Saved %s", llm_path.name)
 
     # ── bertopic_topic_engine_effects_uk.csv ─────────────────────────────────
+    # Primary breakdown by engine_spec (displacement+fuel), not MK-gen
     effect_rows = []
-    engine_totals = df["engine_group"].value_counts()
+    spec_totals = df["engine_spec"].value_counts()
     for tid in sorted(df["dominant_topic"].unique()):
         if tid == 0:  # outlier bucket (was -1, now 0 after +1)
             continue
         topic_threads = df[df["dominant_topic"] == tid]
-        eng_counts = topic_threads["engine_group"].value_counts()
-        for eng, cnt in eng_counts.items():
+        spec_counts = topic_threads["engine_spec"].value_counts()
+        for spec, cnt in spec_counts.items():
             effect_rows.append({
                 "topic": tid,
-                "engine_group": eng,
+                "engine_spec": spec,
                 "count": cnt,
                 "pct_of_topic": round(cnt / len(topic_threads) * 100, 1),
-                "pct_of_engine_group": round(
-                    cnt / engine_totals.get(eng, 1) * 100, 1),
+                "pct_of_engine_spec": round(
+                    cnt / spec_totals.get(spec, 1) * 100, 1),
             })
     effects_df = pd.DataFrame(effect_rows)
     effects_path = DATA_DIR / "bertopic_topic_engine_effects_uk.csv"
@@ -629,7 +753,7 @@ def save_outputs(df: pd.DataFrame, topic_model, topics: list,
 # ═════════════════════════════════════════════════════════════════════════════
 
 def covariate_regression(df: pd.DataFrame, topics: list) -> None:
-    """Multinomial logistic regression: P(topic | engine_group, log_mileage, bucket)."""
+    """Multinomial logistic regression: P(topic | engine_spec, prod_year, log_mileage, bucket)."""
     from sklearn.linear_model import LogisticRegression
     from sklearn.preprocessing import OneHotEncoder
 
@@ -656,14 +780,32 @@ def covariate_regression(df: pd.DataFrame, topics: list) -> None:
     miles = miles.fillna(miles.median() if miles.median() is not np.nan else 50000)
     df_reg["mileage_log"] = np.log1p(miles.clip(lower=0))
 
-    # One-hot encode engine_group and technical_bucket
-    cat_cols = df_reg[["engine_group", "technical_bucket"]].astype(str)
+    # Production year as numeric (fill missing with median, center around 2015)
+    year_series = pd.to_numeric(df_reg["prod_year"], errors="coerce")
+    year_median = year_series.median()
+    if pd.isna(year_median):
+        year_median = 2016.0
+    year_series = year_series.fillna(year_median)
+    df_reg["prod_year_centered"] = year_series - 2015  # center so coefficients are interpretable
+
+    # One-hot encode engine_spec and technical_bucket
+    # Filter out rare engine_specs (< 10 threads) to avoid one-hot explosion
+    spec_counts = df_reg["engine_spec"].value_counts()
+    rare_specs = spec_counts[spec_counts < 10].index
+    df_reg["engine_spec_reg"] = df_reg["engine_spec"].replace(
+        {s: "other" for s in rare_specs})
+
+    cat_cols = df_reg[["engine_spec_reg", "technical_bucket"]].astype(str)
     ohe = OneHotEncoder(sparse_output=False, drop="first", handle_unknown="ignore")
     cat_encoded = ohe.fit_transform(cat_cols)
-    cat_names = ohe.get_feature_names_out(["engine_group", "technical_bucket"])
+    cat_names = ohe.get_feature_names_out(["engine_spec_reg", "technical_bucket"])
 
-    X = np.column_stack([df_reg["mileage_log"].values, cat_encoded])
-    feature_names = ["mileage_log"] + list(cat_names)
+    X = np.column_stack([
+        df_reg["mileage_log"].values,
+        df_reg["prod_year_centered"].values,
+        cat_encoded,
+    ])
+    feature_names = ["mileage_log", "prod_year_centered"] + list(cat_names)
     y = df_reg["topic"].values
 
     # Fit multinomial logistic regression

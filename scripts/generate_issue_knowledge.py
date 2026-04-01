@@ -33,7 +33,7 @@ log = logging.getLogger(__name__)
 
 DATA_DIR = Path(r"D:\wstm\data\processed")
 SCAFFOLD_DIR = Path(r"D:\wstm\data\scaffolds")
-K = 20
+K = 25
 MODEL = "deepseek-chat"
 
 # ── Load parts scaffold ───────────────────────────────────────────────────────
@@ -270,7 +270,16 @@ SYSTEM_PROMPT = (
     "You are an automotive data analyst specializing in Turkish VW Golf forum data. "
     "You will receive a structured data bundle for one STM topic extracted from ~1,978 "
     "Turkish forum threads about VW Golf cars (Golf 5/6/7, majority Golf 7). "
-    "Return ONLY valid JSON — no markdown, no explanation, no code fences."
+    "Return ONLY valid JSON — no markdown, no explanation, no code fences.\n\n"
+    "CRITICAL RULES for engine attribution:\n"
+    "- Only populate 'affected_engines' if the covariate effect for a specific engine is "
+    "clearly elevated (positive estimate with CI not crossing zero) AND the topic terms "
+    "or snippets explicitly reference that engine. A general issue (oil consumption, leaks, "
+    "electrical faults) that affects all engines must use [\"all\"] or omit specific engines.\n"
+    "- Only set issue_type to 'chronic_failure' if the chronic_signal score is meaningfully "
+    "above 0.3 AND the snippets show repeated unresolved complaints. Low chronic_signal with "
+    "common symptoms (oil, coolant, noise) is a 'wear_item' or 'intermittent_fault', not chronic.\n"
+    "- Be conservative: when in doubt, broaden affected_engines rather than narrowing to one."
 )
 
 
@@ -331,7 +340,7 @@ Representative thread snippets (Turkish, ranked by relevance score):
   "confidence": "low | medium | high",
   "onset_mileage_typical_km": null,
   "onset_mileage_range": "e.g. 80k-130k km or null",
-  "affected_engines": ["e.g. 1.4_TSI"],
+  "affected_engines": ["use specific engine only if covariate data clearly supports it, otherwise \"all\""],
   "affected_years": "e.g. pre-2014 or all or null",
   "engine_family_codes": ["e.g. EA111"],
   "known_part_codes": [{{"code": "e.g. 0AM325065", "name": "e.g. DQ200 mechatronic unit", "notes": "optional"}}],
