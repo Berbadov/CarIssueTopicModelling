@@ -253,7 +253,7 @@ def scrape_thread(url: str, max_pages: int) -> dict | None:
             break
 
         current_url = nxt
-        time.sleep(random.uniform(0.2, 0.7))
+        time.sleep(random.uniform(0.05, 0.15))
 
     if not messages:
         return None
@@ -344,7 +344,7 @@ def main() -> None:
 
     def worker(thread_url: str) -> tuple[str, dict | None]:
         scraped = scrape_thread(thread_url, max_pages=args.max_pages)
-        time.sleep(random.uniform(0.1, 0.35))
+        time.sleep(random.uniform(0.02, 0.08))
         return thread_url, scraped
 
     with ThreadPoolExecutor(max_workers=args.workers) as pool:

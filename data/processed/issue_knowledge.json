@@ -1,7 +1,7 @@
 [
   {
     "topic_id": 1,
-    "label": "Headlight bulb replacement and beam alignment issues",
+    "label": "Headlight bulb replacement and beam alignment discussions",
     "label_short": "Headlight bulb/alignment",
     "system_component": "lighting",
     "issue_type": "wear_item",
@@ -9,634 +9,507 @@
     "confidence": "high",
     "onset_mileage_typical_km": null,
     "onset_mileage_range": null,
-    "affected_engines": [],
+    "affected_engines": [
+      "all"
+    ],
     "affected_years": "all",
     "engine_family_codes": [],
     "known_part_codes": [],
     "engine_notes": null,
     "prevalence_pct": 4.5,
     "chronic_signal": 0.623,
-    "summary": "This topic centers on headlight bulb replacements (Philips, Osram Xenarc D3S, H11) and beam alignment adjustments (far_ayari). Users discuss bulb color temperatures (4300K, 6000K), seek original parts (orjinal), and mention service visits for alignment. The issue appears across all engine types and model years without mechanical failure patterns.",
+    "summary": "This topic is dominated by discussions about headlight bulb replacements (Philips, Osram Xenarc, H11), color temperatures (4300K, 6000K), and the need for professional beam alignment (far ayari). The high chronic signal suggests recurring questions and advice-seeking about this maintenance item, not a chronic failure.",
     "warning_signs": [
-      "Dim or uneven headlight output",
-      "Headlight beam misalignment affecting visibility"
+      "Dim or poor headlight illumination",
+      "Headlight beam pattern appears misaligned"
     ],
-    "inspection_advice": "Check headlight beam alignment and bulb condition; verify any aftermarket bulb installations match original specifications.",
+    "inspection_advice": "Check headlight beam alignment and clarity of lenses; note if aftermarket bulbs are installed.",
     "data_quality": "high",
     "thread_count": 88,
-    "notes": "The topic shows no correlation with specific engines or mileage; it is a general maintenance/upgrade discussion. High 'unknown' engine percentage suggests the issue is vehicle-wide, not engine-dependent."
+    "notes": "Topic is a clear maintenance/upgrade discussion. The covariate effects show no statistically significant elevation for any specific engine group; all estimates are similar and significant due to the model. The high 'unknown' engine percentage and broad year-cohort spread confirm this is a vehicle-wide topic. Snippets contain unrelated mechanical issues, indicating some topic impurity."
   },
   {
     "topic_id": 2,
-    "label": "Suspension strut mount (top mount) and bearing failure causing knocking and steering stiffness",
-    "label_short": "Strut mount failure",
+    "label": "Front suspension strut mount (top mount) bearing failure causing knocking and steering noise",
+    "label_short": "Strut mount bearing",
     "system_component": "suspension",
-    "issue_type": "wear_item",
+    "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_km": 73000,
     "onset_mileage_range": "40k-127k km",
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [
       {
         "code": "318203",
-        "name": "Suspension strut top mount/bearing",
-        "notes": "Referenced in FREX terms; brands like Lemforder and FAG mentioned"
+        "name": "Suspension strut mount bearing",
+        "notes": "FREX term 318203 suggests a specific part number; brands like Lemforder and FAG are mentioned."
       }
     ],
-    "engine_notes": "Strong association with 1.2 TSI engines (32% of threads), prevalent across both pre-2014 EA111 and post-2014 EA211 cohorts, indicating a chassis/platform issue rather than engine-specific.",
+    "engine_notes": "Threads are predominantly from 1.2 TSI and 1.4 TSI engines across Golf 5/6/7 generations, but covariate effects show no statistically significant elevation for any specific engine group.",
     "prevalence_pct": 4.7,
     "chronic_signal": 0.852,
-    "summary": "This topic describes recurring complaints about suspension strut top mounts and bearings failing, causing knocking noises and stiffness when turning the steering wheel. The issue appears across multiple Golf generations and engine types, with a particularly high representation in 1.2 TSI models, suggesting it's a common wear item rather than a model-year defect.",
+    "summary": "A recurring issue involves the failure of the front strut top mount bearing, characterized by a distinct knocking or creaking noise when turning the steering wheel, especially at low speeds or over bumps. Users report the problem persists and often requires replacement of components like the bearing, strut mount (takoz), or related suspension parts.",
     "warning_signs": [
-      "Knocking or clunking noise from front suspension when going over bumps",
-      "Stiffness or grinding sensation when turning the steering wheel, especially at low speeds"
+      "Knocking or creaking noise from front when turning steering wheel",
+      "Steering feels notchy or heavy at low speeds"
     ],
-    "inspection_advice": "Check for play in the front suspension by bouncing the car and listening for knocks; inspect the strut top mounts for visible wear or cracking, and test steering feel for stiffness or roughness during full lock turns.",
+    "inspection_advice": "When test driving, listen for knocking or creaking from the front suspension during low-speed turns and over speed bumps; check service history for recent strut mount or bearing replacements.",
     "data_quality": "high",
     "thread_count": 84,
-    "notes": "High chronic signal indicates this is a recurring, unresolved complaint pattern. While engine breakdown shows strong 1.2 TSI association, the issue affects multiple engine families and appears to be a chassis component wear item rather than engine-specific."
+    "notes": "Likely upstream contributors: wear of the strut mount bearing due to road conditions and load — users report downstream symptoms only. The covariate effect data appears corrupted (multiple duplicate entries, contradictory estimates); analysis relies on FREX terms, snippets, and thread count breakdowns. Some snippets mention unrelated issues (oil consumption, misfires, gearbox), indicating topic impurity where suspension is the core signal."
   },
   {
     "topic_id": 3,
-    "label": "Diesel injector wear and fuel system faults causing rough idle and performance issues",
-    "label_short": "Injector wear",
+    "label": "Intermittent rough idle and misfire complaints, often with unusual noises and diagnostic trouble codes",
+    "label_short": "Rough Idle/Misfire",
     "system_component": "engine",
     "issue_type": "chronic_failure",
     "severity": "medium",
-    "confidence": "high",
+    "confidence": "medium",
     "onset_mileage_typical_km": 50000,
-    "onset_mileage_range": "5k-113k km",
+    "onset_mileage_range": "5000-113200 km",
     "affected_engines": [
-      "1.6_TDI",
-      "1.2_TSI",
-      "1.4_TSI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA189",
-      "EA111",
-      "EA211"
-    ],
-    "known_part_codes": [
-      {
-        "code": "STM T1",
-        "name": "Diesel injector wear and seal failures",
-        "notes": "Return-flow increase measurable via OBD. Common after 150k km."
-      }
-    ],
-    "engine_notes": "Strongest signal from 1.6 TDI engines across all year cohorts, with notable presence in pre-2014 EA111 petrol engines (1.2/1.4 TSI) and early Golf 7 EA211 engines.",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Threads mention 1.6 TDI and 1.2 TSI engines, but covariate effects show no statistically significant elevation for any specific engine group.",
     "prevalence_pct": 5.8,
     "chronic_signal": 0.803,
-    "summary": "This topic centers on injector-related faults causing rough idle, performance hesitation, and unusual engine noises. The issue appears across multiple engine families but shows particular concentration in 1.6 TDI diesel engines and early EA111 petrol engines, with symptoms often manifesting at moderate mileage.",
+    "summary": "Forum users report a recurring pattern of rough idle, engine hesitation, and unusual 'lambur lumbur' or rattling noises, often accompanied by diagnostic trouble codes like P00AF00. Complaints are persistent and frequently unresolved despite multiple service visits, indicating a chronic diagnostic challenge. The issue manifests across various engine types and model years, with symptoms appearing intermittently, especially when the engine is warm or at idle.",
     "warning_signs": [
-      "Rough idle or engine shaking at idle",
-      "Performance hesitation or power loss during acceleration",
-      "Unusual knocking or rattling sounds from engine"
+      "Intermittent rough idle or engine hesitation",
+      "Unusual rattling or 'lambur lumbur' noise from engine bay at idle"
     ],
-    "inspection_advice": "Check for rough idle when engine is warm, listen for unusual injector noises, and consider an OBD scan for injector return-flow measurements on diesel models.",
+    "inspection_advice": "When buying, test drive the car extensively, paying close attention to idle smoothness when the engine is fully warm. Request a full diagnostic scan for stored fault codes, particularly those related to fuel injection or misfires.",
     "data_quality": "medium",
     "thread_count": 116,
-    "notes": "High proportion of unknown engine group (67.2%) limits precise engine targeting. Covariate effect estimates show no statistically significant engine group differences, suggesting issue may be broader than injectors alone."
+    "notes": "Likely upstream contributors: Faulty fuel injectors, failing engine mounts, or issues with the auxiliary belt system (e.g., alternator pulley) — users report downstream symptoms only. The FREX term 'silecegi' (wiper) suggests topic impurity, possibly from discussions combining engine noise with other unrelated components. Covariate analysis shows no engine-specific signal, so the issue is treated as platform-wide."
   },
   {
     "topic_id": 4,
-    "label": "Oil consumption and engine oil leaks in TSI engines, with related drivability issues",
-    "label_short": "Oil consumption/leaks",
+    "label": "Intermittent engine misfire, rough idle, and oil consumption issues",
+    "label_short": "Misfire & Oil Consumption",
     "system_component": "engine",
-    "issue_type": "fluid_leak",
+    "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "medium",
     "onset_mileage_typical_km": 54000,
     "onset_mileage_range": "4800-114400 km",
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
+      "all"
     ],
-    "affected_years": "pre-2014 and 2014-2017",
-    "engine_family_codes": [
-      "EA111",
-      "EA211"
-    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "Strongest signal in pre-2014 EA111 1.2/1.4 TSI engines (oil consumption known issue), but also appears in early Golf 7 EA211 TSI and some 1.6 TDI threads.",
+    "engine_notes": "No statistically significant elevation for any specific engine group in covariate effects; complaints appear across all engine types and year cohorts.",
     "prevalence_pct": 5.2,
     "chronic_signal": 0.663,
-    "summary": "This topic captures complaints about oil consumption, oil leaks, and related drivability symptoms like rough idle, power loss, and smoke. The issue appears most strongly in pre-2014 EA111 TSI engines (known oil consumption from piston rings/valve seals) but also affects early Golf 7 EA211 TSI and some diesel engines.",
+    "summary": "Forum users report recurring problems with engine misfires, rough idling, and oil consumption, often accompanied by visible leaks and unusual noises. Complaints are persistent and unresolved across various engine types and mileages, indicating a chronic pattern of drivability issues.",
     "warning_signs": [
-      "Oil spots/leaks under engine",
-      "Noticeable oil consumption between changes",
-      "Rough idle or hesitation",
-      "Black or white smoke under acceleration"
+      "Rough idle or engine vibration at standstill",
+      "Visible oil leaks around engine components",
+      "Unusual whining or humming noises at speed",
+      "Engine hesitation or loss of power under acceleration"
     ],
-    "inspection_advice": "Check for oil leaks around engine seals and hoses, inspect oil level history, and look for smoke during cold start or acceleration.",
+    "inspection_advice": "Check for fresh oil leaks around the engine bay and transmission area, listen for abnormal idle vibrations or misfire sounds, and review service history for recurring engine-related fault codes.",
     "data_quality": "medium",
     "thread_count": 111,
-    "notes": "High proportion of threads have unknown engine group (73%), making precise engine mapping difficult. Covariate estimates show similar prevalence across all engine groups, suggesting issue may be broader than just EA111 oil consumption."
+    "notes": "Likely upstream contributors: faulty ignition coils, spark plugs, PCV system, or fuel injectors — users report downstream symptoms only. Topic FREX terms (lcd, demirde, kemikli, logolari, nem, mib, buhulu, cokmesi, fasilali, getvay) are cryptic and not clearly automotive, suggesting topic impurity; classification relies more on PROB terms and representative snippets."
   },
   {
     "topic_id": 5,
-    "label": "Headlight and lighting system faults (LED/halogen failures, AFS errors, coding issues)",
-    "label_short": "Lighting faults",
+    "label": "Headlight and LED lighting system failures, including AFS errors and bulb/coding issues",
+    "label_short": "Headlight/LED failures",
     "system_component": "lighting",
-    "issue_type": "sensor_fault",
+    "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "high",
-    "onset_mileage_typical_km": 26000,
-    "onset_mileage_range": "4600-94000 km",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
     "affected_engines": [
-      "1.6_TDI",
-      "1.4_TSI",
-      "1.2_TSI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA189",
-      "EA288",
-      "EA111",
-      "EA211"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "No strong engine-specific pattern; issue appears across all engine groups and year cohorts with similar prevalence.",
+    "engine_notes": null,
     "prevalence_pct": 9.0,
     "chronic_signal": 0.608,
-    "summary": "This topic covers recurring complaints about headlight and lighting system failures in VW Golf models, including LED/halogen bulb issues, AFS (Adaptive Front-lighting System) errors, and coding-related faults. The problem appears across all Golf generations and engine types, with no specific mechanical linkage to powertrain components.",
+    "summary": "This topic captures widespread and recurring complaints about headlight and LED lighting system malfunctions in VW Golf models. Users report issues such as headlights not turning off (kapanmadi), AFS (Adaptive Front-lighting System) errors, LED failures (led, ledleri), bulbs not illuminating (yanmiyor), and problems related to wiring (kablo) or coding (kodlama).",
     "warning_signs": [
-      "Headlight failure (far/led yanmiyor)",
-      "AFS error messages",
-      "Lighting coding errors after replacement",
-      "Intermittent headlight operation"
+      "Headlight or LED not illuminating",
+      "AFS error message on dashboard",
+      "Headlight remains on after turning off the vehicle"
     ],
-    "inspection_advice": "Check all lighting functions including high beams, low beams, and AFS system if equipped. Scan for lighting-related fault codes and verify proper coding after any bulb or module replacements.",
+    "inspection_advice": "Check all headlight functions (low beam, high beam, AFS if equipped) and scan for fault codes related to lighting control modules.",
     "data_quality": "high",
     "thread_count": 169,
-    "notes": "High proportion of unknown engine group (79.9%) suggests lighting issues are reported broadly without engine specificity. Covariate analysis shows all engine groups have similar effect estimates, confirming this is not engine-dependent."
+    "notes": "Likely upstream contributors: faulty control modules, wiring harness issues, or software coding errors — users report downstream symptoms only. The covariate effect data appears to be corrupted or misformatted (contains duplicate entries and implausible values), so no engine-specific signal can be reliably extracted from it."
   },
   {
     "topic_id": 6,
-    "label": "DSG transmission mechatronic unit and clutch issues, primarily in DQ200 dry-clutch gearboxes",
-    "label_short": "DSG Mechatronic/Clutch",
+    "label": "DSG transmission mechatronic unit failure causing hesitation, jerking, and gear selection errors",
+    "label_short": "DSG Mechatronic Failure",
     "system_component": "gearbox",
     "issue_type": "chronic_failure",
     "severity": "high",
     "confidence": "high",
     "onset_mileage_typical_km": 27500,
-    "onset_mileage_range": "4200-108000 km",
+    "onset_mileage_range": "4k-108k km",
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [
       {
         "code": "0AM325065",
         "name": "DQ200 mechatronic unit",
-        "notes": "Primary failure point for DQ200 7-speed dry DSG; revised unit from 2014 is more reliable."
+        "notes": "Referenced by topic terms 'mekatronik' and 'plate'."
       }
     ],
-    "engine_notes": "The issue spans all generations but is strongly associated with the DQ200 transmission, which is paired with 1.2/1.4 TSI and some 1.6 TDI engines; the 2014-2017 Golf 7 early cohort shows the highest thread volume.",
+    "engine_notes": "No statistically significant engine-specific elevation in covariate effects; issue appears across all engine groups, with threads mentioning 1.6 TDI, 1.2 TSI, and 1.4 TSI.",
     "prevalence_pct": 5.5,
     "chronic_signal": 0.985,
-    "summary": "This topic centers on failures of the DSG transmission, specifically the mechatronic unit and clutch pack in the DQ200 7-speed dry-clutch design. Symptoms include juddering, gear slip, limp mode, and delayed engagement, with complaints recurring across model years and appearing even at relatively low mileage.",
+    "summary": "This topic centers on failures of the DSG transmission's mechatronic control unit, characterized by symptoms like the car not moving ('yurumuyor'), severe jerking, hesitation during gear changes, and error warnings for reverse gear. Complaints are recurrent and often unresolved, appearing across a wide mileage range from very low to high kilometers.",
     "warning_signs": [
-      "Judder or shudder during low-speed acceleration or gear engagement",
-      "Gear slip, delayed shifting, or transmission going into limp mode",
-      "Unusual noises from the transmission area"
+      "Severe jerking or hesitation during acceleration",
+      "Error warnings for gear selection or reverse gear",
+      "Car fails to move or engages gear with a delay"
     ],
-    "inspection_advice": "When buying, test drive in stop-start traffic to check for low-speed judder, and use an OBD scanner to check for stored mechatronic fault codes; inquire about any prior transmission software updates or mechatronic unit replacements.",
-    "data_quality": "medium",
+    "inspection_advice": "When buying, have the DSG transmission scanned for stored mechatronic fault codes and test drive to check for any hesitation, jerking, or delayed engagement, especially from a cold start.",
+    "data_quality": "high",
     "thread_count": 107,
-    "notes": "A high proportion (69.2%) of threads have an unknown engine group, limiting precise engine-transmission mapping; covariate effect estimates for engine groups were not statistically significant, suggesting the issue is transmission-centric rather than engine-specific."
+    "notes": "Likely upstream contributors: Faulty solenoid valves, pressure sensors, or internal valve body wear in the mechatronic unit — users report downstream symptoms only. Covariate effect data shows no statistically significant signal for any specific engine group; all confidence intervals cross zero."
   },
   {
     "topic_id": 7,
-    "label": "Start-stop system malfunction with engine vibration and warning lights",
-    "label_short": "Start-stop failure",
+    "label": "Start-stop system malfunction with engine warning light and rough running",
+    "label_short": "Start-stop fault",
     "system_component": "electrical",
-    "issue_type": "intermittent_fault",
+    "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "medium",
-    "onset_mileage_typical_km": 30000,
-    "onset_mileage_range": "5k-104k km",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI",
-      "1.5_TSI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189",
-      "EA288"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "No strong engine-specific pattern; appears across all major engine groups (petrol and diesel) and year cohorts from pre-2014 to 2018+.",
+    "engine_notes": "No statistically significant engine-specific pattern; issues appear across all engine groups and year cohorts (pre-2014 to 2018+).",
     "prevalence_pct": 4.9,
     "chronic_signal": 0.757,
-    "summary": "This topic describes recurring complaints about the start-stop system malfunctioning, often accompanied by engine warning lights (ESP, motor), engine vibration/shaking, and loss of power. The issue typically occurs after short trips or when restarting the engine, with symptoms like rough idle, exhaust popping, and error messages.",
+    "summary": "Users report recurring start-stop system failures, often accompanied by an intermittent engine warning light, rough engine running, and a loss of power. The problem typically occurs after short trips or when restarting the vehicle, with error messages and symptoms like engine shaking and misfiring sounds from the exhaust.",
     "warning_signs": [
-      "Start-stop error message",
-      "Engine warning light flashing then disappearing",
-      "Excessive engine vibration/shaking during idle or acceleration",
-      "Loss of power or engine stalling"
+      "Intermittent engine warning light",
+      "Start-stop system error message",
+      "Rough engine idle or shaking when accelerating"
     ],
-    "inspection_advice": "Test the start-stop system during a test drive, especially after short trips, and check for any stored error codes related to engine management or ESP systems.",
+    "inspection_advice": "Test the start-stop system on a test drive, check for any stored fault codes related to the engine or start-stop system, and listen for irregular engine sounds or misfires during idle and acceleration.",
     "data_quality": "medium",
     "thread_count": 98,
-    "notes": "High proportion of unknown engine group (75.5%) limits precise engine targeting; covariate effect estimates show no statistically significant engine group associations, suggesting this is a cross-platform electrical/software issue rather than engine-specific."
+    "notes": "FREX terms (tipa, fat32, tipalar, byte) are highly technical and not directly automotive, suggesting topic impurity where forum users discuss file formatting or USB issues alongside vehicle problems. Likely upstream contributors: faulty sensor (e.g., crankshaft/camshaft), weak battery, or software glitch — users report downstream symptoms only. Covariate effects show no statistically significant elevation for any specific engine group."
   },
   {
     "topic_id": 8,
-    "label": "DPF regeneration failures and cleaning discussions",
-    "label_short": "DPF regeneration issues",
+    "label": "Diesel Particulate Filter (DPF) regeneration issues and cleaning concerns",
+    "label_short": "DPF regeneration problems",
     "system_component": "exhaust",
     "issue_type": "chronic_failure",
-    "severity": "high",
+    "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_km": 82500,
     "onset_mileage_range": "66k-120k km",
     "affected_engines": [
-      "1.6_TDI",
-      "1.2_TSI",
-      "1.4_TSI"
+      "all"
     ],
     "affected_years": "all",
     "engine_family_codes": [
-      "EA189",
-      "EA288",
-      "EA111",
-      "EA211"
-    ],
-    "known_part_codes": [],
-    "engine_notes": "Diesel engines (1.6_TDI) show highest thread representation, but petrol engines also appear in discussions about DPF cleaning and regeneration processes.",
-    "prevalence_pct": 4.0,
-    "chronic_signal": 0.759,
-    "summary": "This topic centers on Diesel Particulate Filter (DPF) regeneration failures, cleaning procedures (polisaj), and oil ash accumulation issues. Forum users discuss interrupted regeneration cycles, the need for sustained highway driving to complete regeneration, and various cleaning methods when DPF becomes clogged from short urban trips.",
-    "warning_signs": [
-      "Frequent DPF regeneration attempts",
-      "Reduced power or limp mode during regeneration",
-      "Increased fuel consumption during regeneration cycles"
-    ],
-    "inspection_advice": "Check DPF soot load and ash accumulation values via OBD scan, and review vehicle usage history for predominance of short urban trips versus regular highway driving.",
-    "data_quality": "medium",
-    "thread_count": 81,
-    "notes": "66.7% of threads have unknown engine group, limiting precise engine-specific analysis. Covariate effect estimates show complex patterns but all estimates are marked significant with overlapping confidence intervals."
-  },
-  {
-    "topic_id": 9,
-    "label": "Brake system wear and component replacement discussions",
-    "label_short": "Brake wear issues",
-    "system_component": "brakes",
-    "issue_type": "wear_item",
-    "severity": "medium",
-    "confidence": "high",
-    "onset_mileage_typical_km": 27250,
-    "onset_mileage_range": "3k-106k km",
-    "affected_engines": [
-      "1.6_TDI",
-      "1.2_TSI",
-      "1.4_TSI"
-    ],
-    "affected_years": "all",
-    "engine_family_codes": [
-      "EA189",
-      "EA111",
-      "EA211"
-    ],
-    "known_part_codes": [
-      {
-        "code": "04L141015D",
-        "name": "Sachs clutch pressure plate",
-        "notes": "Mentioned in thread snippet for 2014 Golf 7 1.6TDI manual"
-      }
-    ],
-    "engine_notes": "No strong engine-specific pattern; appears across diesel and petrol engines in both pre-2014 (EA111) and post-2014 (EA211/EA189) cohorts.",
-    "prevalence_pct": 5.4,
-    "chronic_signal": 0.739,
-    "summary": "This topic captures discussions about brake system wear components, including brake pads, discs, and related parts like clutch pressure plates. Users share experiences with unusual noises (squealing, grinding), seek brand recommendations (Luk vs. Sachs), and discuss replacement costs and procedures.",
-    "warning_signs": [
-      "Unusual grinding or squealing noises from wheels during driving",
-      "Clutch vibration or humming noise during engagement (manual transmissions)"
-    ],
-    "inspection_advice": "Check brake pad thickness and disc condition for scoring or wear; listen for abnormal noises during test drive, especially at low speeds or during clutch engagement.",
-    "data_quality": "medium",
-    "thread_count": 108,
-    "notes": "High proportion of unknown engine group (76.9%) limits precise engine-specific analysis; topic appears generic to brake wear rather than a model-specific fault."
-  },
-  {
-    "topic_id": 10,
-    "label": "DSG DQ200 mechatronic unit failure and clutch shudder",
-    "label_short": "DQ200 mechatronic failure",
-    "system_component": "gearbox",
-    "issue_type": "chronic_failure",
-    "severity": "high",
-    "confidence": "high",
-    "onset_mileage_typical_km": 104775,
-    "onset_mileage_range": "54k-156k km",
-    "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
-    ],
-    "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
       "EA189",
       "EA288"
     ],
+    "known_part_codes": [],
+    "engine_notes": "Topic strongly associated with diesel engines (1.6 TDI, 2.0 TDI) based on FREX terms and thread breakdown, though covariate effects show no statistically significant elevation for any specific engine group.",
+    "prevalence_pct": 4.0,
+    "chronic_signal": 0.759,
+    "summary": "This topic centers on Diesel Particulate Filter (DPF) regeneration problems, including failed or interrupted regeneration cycles, concerns about DPF cleaning (polisaj), and oil ash accumulation. Users report issues with the regeneration process occurring at specific RPM ranges (1000-2000 rpm) and describe symptoms of incomplete regeneration requiring manual intervention or professional cleaning.",
+    "warning_signs": [
+      "Frequent DPF regeneration cycles at low speeds",
+      "Regeneration process interrupting normal driving",
+      "Oil ash accumulation warnings",
+      "Reduced engine performance during regeneration attempts"
+    ],
+    "inspection_advice": "Check DPF status and regeneration history via OBD scan, look for excessive oil ash loading, and verify if the vehicle has been used primarily for short trips which can prevent proper DPF regeneration.",
+    "data_quality": "high",
+    "thread_count": 81,
+    "notes": "Likely upstream contributors: Short-trip driving patterns, poor fuel quality, EGR system issues, or faulty temperature sensors — users report downstream symptoms only. Covariate effects show no statistically significant elevation for any specific engine group despite topic's clear diesel association in FREX terms. Many threads have unknown engine specification (66.7%)."
+  },
+  {
+    "topic_id": 9,
+    "label": "Clutch, pressure plate, and release bearing noise and failure requiring replacement",
+    "label_short": "Clutch assembly noise/failure",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [
+      {
+        "code": "04L141015D",
+        "name": "Sachs pressure plate assembly",
+        "notes": "Mentioned in snippet for 1.6 TDI manual"
+      }
+    ],
+    "engine_notes": "Threads mention 1.6 TDI and 1.2/1.4 TSI engines, but covariate effects show no statistically significant elevation for any specific engine group.",
+    "prevalence_pct": 5.4,
+    "chronic_signal": 0.739,
+    "summary": "Forum users report abnormal noises (ticking, humming, knocking) from the clutch area during low-speed driving or clutch engagement, often diagnosed as worn pressure plates, release bearings, or clutch discs requiring replacement. Discussions focus on part selection (Sachs vs. Luk), high repair costs at dealerships, and DIY or independent garage experiences.",
+    "warning_signs": [
+      "Ticking, humming, or knocking noise from clutch area during low-speed driving or when engaging clutch",
+      "Noise that changes or disappears when accelerating"
+    ],
+    "inspection_advice": "Test drive at low speeds (10-30 km/h) and listen for abnormal ticking or humming noises from the transmission tunnel, especially when lightly engaging the clutch or coasting. Check service history for recent clutch or pressure plate replacements.",
+    "data_quality": "medium",
+    "thread_count": 108,
+    "notes": "FREX terms are noisy (tikirt, flac, kararan_dikiz_aynasi_montaji) and not clearly automotive, suggesting topic impurity. However, PROB terms (fren, servise, serviste, volant) and snippets clearly point to clutch/brake assembly issues. Likely upstream contributors: premature wear of dual-mass flywheel or clutch hydraulic components — users report downstream symptoms only."
+  },
+  {
+    "topic_id": 10,
+    "label": "DSG mechatronic unit and transmission fluid specification concerns",
+    "label_short": "DSG Mechatronic/Fluid",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
     "known_part_codes": [
       {
         "code": "0AM325065",
         "name": "DQ200 mechatronic unit",
-        "notes": "Primary failure point for DQ200 7-speed dry DSG. Revised unit from 2014 is more reliable."
+        "notes": "Referenced in topic FREX terms"
+      },
+      {
+        "code": "G 052 182",
+        "name": "DSG fluid for DQ200",
+        "notes": "Specification discussions implied by oil brand terms"
       }
     ],
-    "engine_notes": "Issue spans both petrol (1.2/1.4 TSI) and diesel (1.6 TDI) engines, with no strong year cohort pattern, indicating the problem is transmission-specific rather than engine-specific.",
+    "engine_notes": "Threads span Golf 5/6 and Golf 7 eras, with significant representation from 1.6 TDI and 1.2 TSI engines, but covariate effects show no specific engine is statistically elevated for this transmission-related topic.",
     "prevalence_pct": 4.0,
     "chronic_signal": 0.684,
-    "summary": "This topic centers on failures of the DQ200 7-speed dry DSG transmission, specifically the mechatronic unit and clutch packs. Users report juddering at low speeds, gear slip, limp mode, and difficulty with 1st gear engagement, particularly in stop-start traffic.",
+    "summary": "This topic centers on discussions about DSG transmissions, specifically concerning the mechatronic unit and the correct specification of transmission fluid (e.g., HTHS, 10W60, brands like Motul and Castrol). Users report issues like abnormal noises, shifting problems, and fluid consumption, often seeking advice on proper fluids or diagnosing mechatronic faults. The high chronic signal indicates these are recurring, unresolved complaints rather than simple maintenance questions.",
     "warning_signs": [
-      "Judder or shudder during low-speed acceleration",
-      "Gear slip or hesitation",
-      "Limp mode activation",
-      "Difficulty engaging 1st gear",
-      "Unusual noises during gear changes"
+      "Unusual clunking or 'giyt' sounds during initial movement or gear shifts",
+      "Transmission fluid consumption or concerns about using the correct specification oil"
     ],
-    "inspection_advice": "Test drive in heavy traffic to check for low-speed shudder and gear engagement issues. Request DSG service history and ask if the mechatronic unit has been replaced.",
-    "data_quality": "high",
+    "inspection_advice": "When buying, check for any transmission fault codes related to the mechatronic unit, listen for abnormal clunks or hesitation during low-speed gear changes, and verify the DSG fluid service history and that the correct specification fluid was used.",
+    "data_quality": "medium",
     "thread_count": 78,
-    "notes": "High proportion of threads with unknown engine group (51.3%) suggests users may not always specify engine details when discussing transmission problems. Covariate effect estimates show complex statistical relationships but all engine groups appear affected."
+    "notes": "Likely upstream contributors: Mechatronic unit valve body wear or solenoid failure, incorrect fluid viscosity leading to clutch pack or hydraulic system issues — users report downstream symptoms only. Topic FREX is strongly about transmission fluid specs and the mechatronic unit, but some snippets mention unrelated engine issues (oil consumption, particulate filter), indicating topic impurity."
   },
   {
     "topic_id": 11,
-    "label": "Start-stop battery (EFB/AGM) failure and charging system issues",
-    "label_short": "Battery/Start-Stop Failure",
+    "label": "Start-stop system battery (EFB/AGM) failure and related electrical issues",
+    "label_short": "Battery Failure",
     "system_component": "electrical",
-    "issue_type": "wear_item",
+    "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_km": 72500,
     "onset_mileage_range": "5800-150000 km",
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189"
-    ],
-    "known_part_codes": [
-      {
-        "code": "EFB",
-        "name": "Enhanced Flooded Battery",
-        "notes": "Standard start-stop battery"
-      },
-      {
-        "code": "AGM",
-        "name": "Absorbent Glass Mat Battery",
-        "notes": "Advanced start-stop battery, often Varta brand"
-      }
-    ],
-    "engine_notes": "Most prominent in 1.2 TSI engines (EA211) from the 2014-2017 Golf 7 early cohort, but also affects 1.4 TSI (EA111/EA211) and 1.6 TDI engines across generations.",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Thread distribution shows higher representation in 1.2 TSI and 1.4 TSI engines, particularly in early Golf 7 (2014-2017) models, but covariate effects do not indicate a statistically significant elevation for any specific engine group.",
     "prevalence_pct": 4.6,
     "chronic_signal": 0.894,
-    "summary": "This topic centers on premature failure of EFB or AGM batteries used in start-stop systems, often manifesting as sudden no-start conditions, warning messages ('12v battery almost empty'), and charging system faults. The issue appears across engine types but is most frequently discussed in 1.2 TSI models, with failures occurring at widely varying mileages from very low to high kilometers.",
+    "summary": "This topic centers on premature failure of start-stop system batteries, specifically EFB and AGM types, with users reporting sudden no-start conditions, warning messages, and engine stalling. Complaints are recurring and often unresolved, indicating a chronic issue with the battery's lifespan or the charging system's compatibility.",
     "warning_signs": [
-      "Start-stop system failing to restart engine after auto-stop",
-      "'12v battery almost empty' or similar dashboard warning",
-      "Engine stuttering or misfiring shortly after startup",
-      "Battery test showing low CCA or capacity"
+      "Sudden engine stall or failure to restart after start-stop activation",
+      "\"12V battery almost empty\" or similar low-voltage warning on dashboard"
     ],
-    "inspection_advice": "Check battery age and brand (Varta EFB/AGM common), test cold cranking amps (CCA), and verify start-stop system functionality during test drive, especially at traffic lights.",
+    "inspection_advice": "Check the battery's manufacturing date, test its CCA (Cold Cranking Amps) and state of charge, and verify the vehicle's history of start-stop system warnings or no-start incidents.",
     "data_quality": "high",
     "thread_count": 77,
-    "notes": "Nearly half of threads have unknown engine group, limiting precise engine-specific analysis. Covariate effect estimates appear duplicated/messy in the provided data, but clear patterns emerge from year-cohort and FREX/PROB terms."
+    "notes": "Likely upstream contributors: Inadequate charging profile from the vehicle's energy management system or a mismatch between battery technology and electrical demands — users report downstream symptoms only. The covariate effect data appears corrupted or misformatted (multiple entries per engine group with inconsistent estimates), so engine-specific attribution is not statistically reliable."
   },
   {
     "topic_id": 12,
-    "label": "Cooling system leaks and heater core issues, often with hard starting and fuel consumption increase",
-    "label_short": "Cooling leaks / heater",
+    "label": "Cooling system leaks and heater core issues causing coolant loss and poor heating performance",
+    "label_short": "Coolant leaks / heater core",
     "system_component": "cooling",
-    "issue_type": "fluid_leak",
+    "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "medium",
     "onset_mileage_typical_km": 30000,
-    "onset_mileage_range": "3k-104k km",
+    "onset_mileage_range": "3000-104000 km",
     "affected_engines": [
-      "1.6_TDI",
-      "1.2_TSI",
-      "1.4_TSI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA189",
-      "EA288",
-      "EA111",
-      "EA211"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "Most prominent in 1.6 TDI engines (16.7% of topic threads), especially in Golf 7 early cohort (2014-2017). Also appears in 1.2 TSI and 1.4 TSI across generations.",
+    "engine_notes": "Thread breakdown shows 1.6 TDI appears most frequently (16.7% of threads), but covariate effects show no statistically significant elevation for any specific engine group.",
     "prevalence_pct": 4.4,
     "chronic_signal": 0.83,
-    "summary": "This topic describes cooling system leaks where multiple coolant reservoirs and caps have been replaced without resolving the issue. The problem is often accompanied by hard cold starts, increased fuel consumption, and abnormal engine noise when cold, particularly after refueling events.",
+    "summary": "Forum users report persistent coolant loss issues, often requiring multiple repair attempts and part replacements (caps, reservoirs). Complaints include poor heater performance when the heater core is affected, difficulty starting when cold, and increased fuel consumption. The problem appears early in vehicle life (median 30,000 km) and generates recurring, unresolved discussion threads.",
     "warning_signs": [
-      "Coolant loss requiring frequent top-ups",
-      "Hard cold starting with rough idle",
-      "Increased fuel consumption after refueling",
-      "Loud engine operation when cold",
-      "Heater issues when climate control is activated"
+      "Coolant level dropping repeatedly between services",
+      "Poor heater output or cold air from vents when engine is warm",
+      "Difficulty starting when engine is cold accompanied by rough idle"
     ],
-    "inspection_advice": "Check for coolant leaks around reservoir, caps, and heater core. Monitor cold start behavior and listen for abnormal engine noises during warm-up. Verify heater operation and check for coolant contamination in oil.",
+    "inspection_advice": "Check coolant reservoir for low level or staining, inspect under the dashboard for damp carpet (heater core leak), and ask for service history regarding coolant top-ups or radiator/heater repairs.",
     "data_quality": "medium",
     "thread_count": 84,
-    "notes": "High proportion of unknown engine groups (65.5%) limits precise engine mapping. Covariate effect estimates show no statistically significant engine group differences. Representative snippets suggest possible fuel quality interactions with cooling issues."
+    "notes": "FREX terms include mechanical repair terms (helicoil, rezistans) suggesting thread repair attempts. Topic mixes cooling system leaks with some transmission noise complaints (snippet 2). Likely upstream contributors: plastic coolant component degradation, faulty thermostat housings, or heater core failures — users report downstream symptoms only."
   },
   {
     "topic_id": 13,
-    "label": "High idle RPM and rough running on cold start, with intermittent performance loss",
-    "label_short": "High Idle RPM",
+    "label": "High idle RPM and rough running issues, often with diagnostic trouble codes",
+    "label_short": "High idle RPM",
     "system_component": "engine",
-    "issue_type": "intermittent_fault",
+    "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "medium",
     "onset_mileage_typical_km": 45000,
-    "onset_mileage_range": "14k-123k km",
+    "onset_mileage_range": "14000-122800 km",
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "The issue appears across engine families and years, with notable reports from early Golf 7 (2014-2017) 1.2/1.4 TSI and 1.6 TDI models, as well as some pre-2014 EA111 units.",
+    "engine_notes": "Thread distribution shows complaints across 1.2 TSI, 1.4 TSI, and 1.6 TDI engines in both pre-2014 and 2014-2017 cohorts, but no statistically significant elevation for any specific engine group.",
     "prevalence_pct": 3.5,
     "chronic_signal": 0.878,
-    "summary": "Forum users report a problem where the engine idles at a high RPM (around 650) on cold start, taking an unusually long time to settle to a normal idle speed, sometimes accompanied by rough running, vibration, and intermittent performance loss. The issue is chronic and recurring, with discussions often involving diagnostic checks of ignition components (coils, plugs) and references to specific diagnostic procedures (like VCDS for DSG pressure), but a definitive single cause is not clear from the data.",
+    "summary": "Users report persistent high idle RPM (around 650 rpm) and rough, vibrating engine operation, often accompanied by performance loss. The issue is frequently unresolved despite diagnostic checks and component replacements like ignition coils and spark plugs.",
     "warning_signs": [
-      "High idle RPM (e.g., ~650) on cold start that is slow to normalize",
-      "Intermittent rough running, vibration, or performance loss"
+      "Idle RPM consistently high (~650 rpm)",
+      "Rough, vibrating engine operation at idle",
+      "Reduced engine performance"
     ],
-    "inspection_advice": "On a cold start, monitor the idle RPM and time until it drops to normal (~800 RPM); check for fault codes related to idle control, throttle body, or ignition, and inspect for any recent repairs to these systems.",
+    "inspection_advice": "Check for stored diagnostic trouble codes and monitor idle RPM stability during a cold start and warm-up cycle.",
     "data_quality": "medium",
     "thread_count": 73,
-    "notes": "A high proportion of threads (69.9%) have an unknown engine group, limiting precise engine-family attribution. The statistical effect estimates by engine group are not significant, suggesting the issue is not strongly exclusive to any single engine type. Representative snippets point to a complex, intermittent fault possibly involving multiple systems (idle control, ignition, DSG/engine communication)."
+    "notes": "Likely upstream contributors: vacuum leaks, throttle body issues, or faulty sensors (MAF, MAP, oxygen sensors) — users report downstream symptoms only. High chronic signal indicates recurring complaints. Covariate effects show no statistically significant elevation for any engine group, so engine-specific attribution is not supported."
   },
   {
     "topic_id": 14,
-    "label": "Electrical system faults including airbag warnings, horn issues, and ABS/ESP sensor alerts",
-    "label_short": "Electrical warnings",
+    "label": "Intermittent electrical faults triggering airbag, ABS, and horn warnings",
+    "label_short": "Electrical warning lights",
     "system_component": "electrical",
-    "issue_type": "sensor_fault",
+    "issue_type": "intermittent_fault",
     "severity": "medium",
-    "confidence": "medium",
-    "onset_mileage_typical_km": 32000,
-    "onset_mileage_range": "5k-87k km",
+    "confidence": "high",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI",
-      "1.5_TSI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189",
-      "EA288"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "No strong engine-specific pattern; issue appears across all engine groups and year cohorts with similar prevalence.",
+    "engine_notes": "No specific engine family pattern is evident from the covariate effects or snippets; the issue appears across all engine groups.",
     "prevalence_pct": 4.7,
     "chronic_signal": 0.7,
-    "summary": "This topic covers recurring electrical system warnings and faults, particularly airbag system alerts, horn malfunctions, and ABS/ESP sensor issues. The problems appear across multiple Golf generations and engine types, often occurring at relatively low mileage (median 32,000 km) and generating persistent complaints.",
+    "summary": "This topic captures recurring complaints about intermittent electrical faults, primarily manifesting as dashboard warning lights for airbag (yastigi), ABS, and horn (korna) systems, often appearing after vehicle startup or during operation. Users report these warnings as sporadic and unresolved despite service visits, indicating a persistent electrical gremlin rather than a single failed component.",
     "warning_signs": [
-      "Airbag warning light illumination",
-      "Horn malfunction or failure",
-      "ABS/ESP warning lights",
-      "Intermittent electrical warnings after service"
+      "Airbag warning light illuminates intermittently",
+      "ABS or horn warning lights appear on startup"
     ],
-    "inspection_advice": "Check for stored fault codes in airbag, ABS, and body control modules; verify horn functionality and inspect wiring connections for corrosion.",
-    "data_quality": "medium",
+    "inspection_advice": "When buying, check for any stored fault codes related to airbag, ABS, or horn control modules, and verify if warning lights are present or have a history of recurring after being cleared.",
+    "data_quality": "high",
     "thread_count": 92,
-    "notes": "High proportion of unknown engine group (60.9%) limits precise engine-specific analysis; covariate effect estimates show similar prevalence across all engine groups without clear differentiation."
+    "notes": "Likely upstream contributors: faulty wiring harness connections, ground points, or control module software glitches — users report downstream symptoms only. The covariate effect data appears corrupted (duplicate engine groups, contradictory CI bounds), so engine attribution relies on thread breakdown and FREX terms."
   },
   {
     "topic_id": 15,
-    "label": "Cooling system failures involving water pump and timing belt/pulley issues",
-    "label_short": "Cooling system failure",
+    "label": "Coolant circulation pump (devirdaim pompası) and timing belt (triger) failures, often with coolant leaks and contamination",
+    "label_short": "Coolant Pump & Timing Belt",
     "system_component": "cooling",
     "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_km": 45000,
-    "onset_mileage_range": "10k-120k km",
+    "onset_mileage_range": "10000-120000 km",
     "affected_engines": [
-      "1.6_TDI",
-      "1.4_TSI",
-      "1.2_TSI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189",
-      "EA288"
-    ],
-    "known_part_codes": [
-      {
-        "code": "Contitech/INA",
-        "name": "Timing belt kit/pulley",
-        "notes": "Brands mentioned in FREX terms"
-      },
-      {
-        "code": "Devirdaim pompası",
-        "name": "Water pump/circulation pump",
-        "notes": "Turkish term for water pump"
-      }
-    ],
-    "engine_notes": "Issue appears across multiple engine families and generations, with no single engine showing statistically significant higher prevalence in covariate analysis.",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Threads are distributed across 1.6 TDI, 1.4 TSI, and 1.2 TSI engines in both pre-2014 and 2014+ cohorts, with no single engine showing a statistically significant elevation in prevalence.",
     "prevalence_pct": 4.7,
     "chronic_signal": 0.841,
-    "summary": "This topic describes recurring cooling system failures, primarily involving water pump (devirdaim pompası) leaks and timing belt/pulley (triger/kayış) issues. Users report coolant loss, contaminated coolant turning rusty, and related symptoms across various Golf generations and engine types.",
+    "summary": "This topic centers on failures of the coolant circulation pump (devirdaim pompası) and associated timing belt (triger/kayış) components, often evidenced by coolant loss, contamination (silikat), and related engine warnings. Complaints are recurrent and unresolved, with users reporting repeated replacements and issues with aftermarket parts like Contitech and INA.",
     "warning_signs": [
-      "Coolant level dropping warnings",
-      "Rusty or contaminated coolant visible in reservoir",
-      "Moisture/leaks around water pump area",
-      "Unusual engine noises during startup"
+      "Coolant level dropping rapidly or low coolant warning",
+      "Visible coolant leaks or moisture around the circulation pump",
+      "Unusual engine noise or rough starting, potentially related to timing belt issues",
+      "Coolant contamination or discoloration (e.g., rusty, silikat)"
     ],
-    "inspection_advice": "Check coolant reservoir for proper level and contamination, inspect water pump area for moisture/leaks, and verify timing belt/pulley condition and service history.",
+    "inspection_advice": "Check for coolant leaks around the circulation pump and inspect the timing belt for wear or contamination. Review service history for previous pump or belt replacements and ask about the brand of parts used.",
     "data_quality": "medium",
     "thread_count": 82,
-    "notes": "High proportion of unknown engine group (52.4%) limits precise engine-specific analysis; covariate effects show no statistically significant engine group associations."
+    "notes": "Likely upstream contributors: Premature water pump bearing/seal failure and timing belt degradation — users report downstream symptoms only. Covariate effect data is extensive but contains many duplicate or contradictory entries, making precise engine attribution impossible; all estimates are non-significant."
   },
   {
     "topic_id": 16,
-    "label": "Ignition system misfire and rough idle in TSI engines",
-    "label_short": "Ignition misfire",
+    "label": "Ignition coil and spark plug failures causing engine misfire, rough idle, and EPC light",
+    "label_short": "Ignition Misfire",
     "system_component": "engine",
     "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_km": 30000,
-    "onset_mileage_range": "4k-90k km",
+    "onset_mileage_range": "4000-90000 km",
     "affected_engines": [
-      "1.4_TSI",
-      "1.2_TSI",
-      "1.6_TDI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "Strongest signal from 1.4 TSI and 1.2 TSI engines in Golf 7 early cohort (2014-2017), but also appears in pre-2014 EA111 engines and some 1.6 TDI.",
+    "engine_notes": "Threads are concentrated in 1.4 TSI and 1.2 TSI engines, particularly in the 2014-2017 Golf 7 early cohort, but the statistical covariate effect is not elevated for any specific engine group.",
     "prevalence_pct": 6.0,
     "chronic_signal": 0.956,
-    "summary": "This topic describes ignition system failures causing misfires, rough idle, and engine vibration, often accompanied by EPC warning lights. The issue appears across multiple engine types but is most prominent in 1.4 TSI and 1.2 TSI engines, with symptoms manifesting at relatively low mileage (median 30,000 km).",
+    "summary": "This topic describes recurring problems with ignition coils (bobinler) and spark plugs (bujiler) leading to engine misfire (tekleme), vibration (titreme), rough idle, and illumination of the EPC warning light. Complaints occur across a wide mileage range, often recurring after replacement, indicating a persistent fault pattern.",
     "warning_signs": [
-      "Engine vibration at idle (titreme)",
-      "Misfire/hesitation (tekleme)",
-      "EPC warning light illumination",
-      "Black smoke and oil consumption in some cases"
+      "Engine misfire or stumbling sensation, especially at idle",
+      "Illumination of the EPC warning light accompanied by rough running"
     ],
-    "inspection_advice": "Check for misfire codes with OBD scanner, inspect spark plugs and ignition coils for wear or oil contamination, and monitor for rough idle during test drive.",
+    "inspection_advice": "When buying, check for any stored fault codes related to misfires or ignition coils, and ask for service history regarding recent spark plug or coil pack replacements.",
     "data_quality": "high",
     "thread_count": 87,
-    "notes": "High proportion of threads (51.7%) have unknown engine group, limiting precise engine-specific analysis. Covariate effect estimates show complex patterns but all groups show significant effects."
+    "notes": "Likely upstream contributors: faulty ignition coil design or material degradation, poor-quality spark plugs, or underlying engine management software issues — users report downstream symptoms only. The covariate effect data is extensive but shows no statistically significant elevation for any specific engine group over others, hence affected_engines is set to 'all'."
   },
   {
     "topic_id": 17,
-    "label": "Turbocharger bypass valve failure causing performance issues and unusual noises",
-    "label_short": "Turbo bypass valve",
+    "label": "Turbocharger bypass valve failure and related high-pressure turbocharger turbine inlet issues",
+    "label_short": "Turbo Bypass Valve",
     "system_component": "engine",
     "issue_type": "chronic_failure",
     "severity": "medium",
@@ -644,144 +517,122 @@
     "onset_mileage_typical_km": 100000,
     "onset_mileage_range": "10000-160000 km",
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189",
-      "EA288"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "Affects both petrol (1.2/1.4 TSI) and diesel (1.6 TDI) engines across multiple generations, with significant representation in pre-2014 EA111 and early Golf 7 EA211 cohorts.",
+    "engine_notes": "Threads are distributed across petrol (1.2/1.4 TSI) and diesel (1.6 TDI) engines from both pre-2014 and 2014-2017 cohorts, with no single engine group showing a statistically dominant covariate effect.",
     "prevalence_pct": 4.3,
     "chronic_signal": 0.832,
-    "summary": "This topic describes recurring issues with turbocharger bypass valves, characterized by unusual noises (whistling, rattling), fluctuating fuel consumption, and performance hesitation. The problem appears across multiple engine types and model years, with symptoms often intermittent and difficult to diagnose.",
+    "summary": "Forum users report issues with the turbocharger bypass valve and high-pressure turbine inlet, often describing unusual noises, erratic fuel consumption, and engine vibrations, particularly when the engine is warm. Complaints are recurring and unresolved, with users frequently seeking diagnosis and software updates after multiple services.",
     "warning_signs": [
-      "Whistling or rattling noises from engine bay",
-      "Fluctuating fuel consumption readings",
-      "Performance hesitation or turbo lag",
-      "Intermittent power loss"
+      "Unusual whistling or chain-like noise from the engine bay, especially during acceleration",
+      "Erratic or sudden increases in displayed fuel consumption",
+      "Excessive engine vibration or shuddering when the engine is warm"
     ],
-    "inspection_advice": "Listen for unusual whistling or rattling sounds during acceleration, especially in the 1300-2000 RPM range. Check for diagnostic trouble codes related to turbocharger or boost pressure, and monitor fuel consumption for unexplained fluctuations.",
+    "inspection_advice": "Listen for unusual turbo-related noises during a cold start and a warm test drive, and check the vehicle's service history for any repeated turbocharger or bypass valve diagnostics or software updates.",
     "data_quality": "medium",
     "thread_count": 85,
-    "notes": "High proportion of unknown engine groups (64.7%) limits precise engine-specific analysis. Covariate effect estimates show mixed significance patterns across engine types."
+    "notes": "The FREX terms are heavily numeric and include dates and part-like codes (2032, 653, 980, 2019.11.02), suggesting the topic may be capturing specific part numbers, service bulletins, or date-related incidents, which dilutes the pure symptom signal. Likely upstream contributors: faulty wastegate actuator, cracked turbo housing, or failed boost pressure sensor — users report downstream symptoms only."
   },
   {
     "topic_id": 18,
-    "label": "DSG clutch and brake component issues, including clutch pack wear, brake pad/disk replacement, and Auto Hold system concerns",
-    "label_short": "DSG Clutch & Brakes",
+    "label": "DSG clutch and brake system issues including clutch replacement, brake pad/disk wear, and auto-hold function problems",
+    "label_short": "DSG clutch & brake issues",
     "system_component": "gearbox",
-    "issue_type": "wear_item",
-    "severity": "medium",
+    "issue_type": "chronic_failure",
+    "severity": "high",
     "confidence": "high",
     "onset_mileage_typical_km": 53661,
     "onset_mileage_range": "10000-121000 km",
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
+      "all"
     ],
     "affected_years": "all",
-    "engine_family_codes": [
-      "EA111",
-      "EA211",
-      "EA189",
-      "EA288"
-    ],
+    "engine_family_codes": [],
     "known_part_codes": [
       {
-        "code": "0AM325065",
-        "name": "DQ200 mechatronic unit",
-        "notes": "Primary failure point for DQ200 DSG, but topic focuses more on clutch wear and brake components"
+        "code": "DQ200",
+        "name": "DSG 7-speed dry clutch transmission",
+        "notes": "Frequently mentioned in context of clutch (debriyaj) and gear (vites) issues"
+      },
+      {
+        "code": "ATE",
+        "name": "Brake system components",
+        "notes": "Referenced in brake pad/disk context"
       }
     ],
-    "engine_notes": "Strongest association with 1.2 TSI and 1.4 TSI engines, particularly in Golf 7 early cohort (2014-2017), suggesting DQ200 DSG transmission issues.",
+    "engine_notes": "Thread distribution shows 1.2_TSI (22.0%) and 1.4_TSI (12.7%) are most frequently mentioned, but covariate effects show no statistically significant elevation for any specific engine group.",
     "prevalence_pct": 6.8,
     "chronic_signal": 0.839,
-    "summary": "This topic centers on DSG transmission clutch wear and brake system components, with frequent discussions about clutch replacement costs, brake pad/disk issues (including TRW and ATE brands), and Auto Hold system functionality. The data shows a clear pattern of wear-related complaints appearing at moderate mileage (median ~54k km) across multiple engine types, with particular concentration in 1.2 TSI and 1.4 TSI engines paired with DQ200 DSG transmissions.",
+    "summary": "This topic captures recurring complaints about DSG clutch replacement costs, brake system components (pads, disks), and auto-hold function problems. Users report expensive clutch set replacements at relatively low mileage (median 53,661 km) and seek advice on brake component brands and auto-hold functionality.",
     "warning_signs": [
-      "Clutch shudder during engagement, especially when cold",
-      "High replacement costs for clutch/brake components",
-      "Auto Hold system malfunctions or concerns"
+      "Expensive clutch replacement quotes at dealerships",
+      "Brake pad/disk wear requiring premature replacement",
+      "Auto-hold function not working as expected"
     ],
-    "inspection_advice": "Check for clutch shudder during low-speed maneuvers and test Auto Hold functionality. Inquire about brake component replacement history and listen for unusual noises during braking.",
+    "inspection_advice": "Check service history for clutch replacements, inspect brake pad thickness and disk condition, test auto-hold function during test drive, and verify transmission smoothness in stop-and-go traffic.",
     "data_quality": "high",
     "thread_count": 118,
-    "notes": "High 'unknown' engine group percentage (57.6%) limits precise engine-specific analysis, but strong signals from known 1.2/1.4 TSI engines. Covariate effect estimates show complex patterns but consistently significant effects across engine groups."
+    "notes": "Likely upstream contributors: DQ200 dry clutch design limitations and normal brake component wear — users report downstream symptoms only. Topic shows strong statistical signal but engine attribution is unclear due to 'unknown' engine group dominating (57.6%). FREX terms clearly identify transmission/brake focus despite some snippet noise about timing belts."
   },
   {
     "topic_id": 19,
-    "label": "Cooling system issues with water pump failure and related sensor faults",
-    "label_short": "Cooling system faults",
-    "system_component": "cooling",
-    "issue_type": "chronic_failure",
-    "severity": "medium",
-    "confidence": "high",
-    "onset_mileage_typical_km": 55000,
-    "onset_mileage_range": "34k-84k km",
-    "affected_engines": [
-      "1.2_TSI",
-      "1.6_TDI",
-      "1.4_TSI"
-    ],
-    "affected_years": "2014-2017",
-    "engine_family_codes": [
-      "EA211",
-      "EA189"
-    ],
-    "known_part_codes": [],
-    "engine_notes": "Most prominent in early Golf 7 (2014-2017) with 1.2 TSI engines, but also affects 1.6 TDI and 1.4 TSI variants.",
-    "prevalence_pct": 5.2,
-    "chronic_signal": 0.869,
-    "summary": "This topic describes recurring cooling system problems, particularly water pump failures leading to coolant loss, often accompanied by sensor-related warning lights (ESC, ABS, tire pressure). The issue appears most frequently in early Golf 7 models (2014-2017 cohort) with 1.2 TSI engines, though 1.6 TDI and 1.4 TSI variants are also affected.",
-    "warning_signs": [
-      "Coolant loss requiring frequent top-ups",
-      "Multiple warning lights illuminating simultaneously (ESC, ABS, tire pressure)"
-    ],
-    "inspection_advice": "Check coolant level and look for signs of leaks around the water pump area. Scan for stored fault codes related to cooling system sensors and ABS/ESC modules.",
-    "data_quality": "medium",
-    "thread_count": 99,
-    "notes": "High proportion of threads with unknown engine group (68.7%) limits precise engine-specific analysis. Covariate effect estimates show complex patterns but all engine groups show significant effects."
-  },
-  {
-    "topic_id": 20,
-    "label": "Oil consumption and cylinder misfire issues in TSI and TDI engines",
-    "label_short": "Oil consumption / misfire",
-    "system_component": "engine",
+    "label": "HVAC air distribution flap motor failure and control issues",
+    "label_short": "HVAC Flap Motor",
+    "system_component": "other",
     "issue_type": "chronic_failure",
     "severity": "medium",
     "confidence": "high",
     "onset_mileage_typical_km": 32500,
+    "onset_mileage_range": "3400-84200 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "No specific engine pattern; topic appears across all engine groups and year cohorts, with highest thread counts in early Golf 7 (2014-2017).",
+    "prevalence_pct": 5.2,
+    "chronic_signal": 0.869,
+    "summary": "This topic centers on failures of the HVAC air distribution system, specifically flap motors (petek, yonlendirme) and related control units, often requiring dealer service (serviste) for diagnosis or software updates (guncellemeden). Complaints are recurring and unresolved, with issues appearing at relatively low and widely variable mileage.",
+    "warning_signs": [
+      "Incorrect or stuck airflow direction from vents (klima_yonlendirme)",
+      "Unusual clicking or buzzing noises from behind the dashboard near the center console (konsolu)"
+    ],
+    "inspection_advice": "Test all HVAC airflow modes (defrost, face, foot) for proper operation and listen for unusual mechanical noises from behind the dashboard during mode changes.",
+    "data_quality": "high",
+    "thread_count": 99,
+    "notes": "Likely upstream contributors: faulty flap motor actuators (Behr is a known supplier) or control module software — users report downstream symptoms only. The covariate effect data is extensive but internally inconsistent; no single engine group shows a clear, sustained elevated prevalence signal. PROB terms include generic fault (ariza) and engine mentions (tdi, 1.6, dizel), but these are not reflected in the distinctive FREX terms defining the topic's core issue."
+  },
+  {
+    "topic_id": 20,
+    "label": "Excessive oil consumption and cylinder misfire, often linked to piston ring or valve seal wear",
+    "label_short": "Oil consumption misfire",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_km": 32500,
     "onset_mileage_range": "5200-129200 km",
     "affected_engines": [
-      "1.2_TSI",
-      "1.4_TSI",
-      "1.6_TDI"
+      "all"
     ],
-    "affected_years": "pre-2014 and 2014-2017",
-    "engine_family_codes": [
-      "EA111",
-      "EA189",
-      "EA211"
-    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
     "known_part_codes": [],
-    "engine_notes": "Pre-2014 EA111 TSI engines show oil consumption likely from piston rings/valve seals; 2014-2017 cohort includes both TSI and TDI engines with misfire/cylinder issues.",
+    "engine_notes": "Threads show complaints across 1.2 TSI, 1.4 TSI, and 1.6 TDI engines in both pre-2014 and 2014-2017 cohorts, indicating a widespread issue not confined to a single engine family.",
     "prevalence_pct": 2.8,
     "chronic_signal": 1.462,
-    "summary": "This topic describes recurring complaints about excessive oil consumption and cylinder misfires (eksiltme) across multiple engine types. The issue appears in both pre-2014 EA111 TSI engines and later 2014-2017 TSI/TDI engines, with distinctive terms pointing to piston rings, carbon buildup, and oil-related problems.",
+    "summary": "Users report significant oil loss, with warnings appearing every 3,500-4,000 km, accompanied by engine misfire (eksiltme) and discussions of piston rings (segmanlari) and carbon cleaning. The problem manifests across various engine types and model years, often at moderate to high mileage, and is a recurring topic of unresolved complaints.",
     "warning_signs": [
-      "Low oil level warnings between 3500-4000 km",
-      "Oil pooling around injectors (especially cylinders 3-4)",
-      "Engine misfire or rough running"
+      "Low oil level warning appearing frequently (e.g., every 3,500-4,000 km)",
+      "Engine misfire or rough running (eksiltme)"
     ],
-    "inspection_advice": "Check oil consumption history and inspect injector seals for oil leaks; examine spark plugs and consider compression test for cylinder health.",
+    "inspection_advice": "Check service history for frequent oil top-ups, ask about any engine misfire codes or carbon cleaning procedures, and inspect for oil leaks around injector seals.",
     "data_quality": "high",
     "thread_count": 32,
-    "notes": "High proportion of unknown engine group (40.6%) limits precise engine mapping; covariate estimates show significant effects across all engine groups but direction varies."
+    "notes": "Likely upstream contributors: worn piston rings or valve stem seals causing oil consumption and subsequent carbon buildup on intake valves or spark plugs — users report downstream symptoms only. Covariate effect data appears corrupted (multiple duplicate entries, contradictory CI bounds) and cannot be used for reliable engine-specific attribution."
   }
 ]

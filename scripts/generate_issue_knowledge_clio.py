@@ -53,17 +53,19 @@ def load_data() -> dict:
     effects = pd.read_csv(DATA_DIR / "stm_topic_engine_effects_clio.csv")
     llm_input = pd.read_csv(DATA_DIR / "llm_issue_input_clio.csv")
 
-    top_terms = pd.read_excel(DATA_DIR / "stm_results_clio.xlsx", sheet_name="top_terms")
-    gamma_full = pd.read_excel(DATA_DIR / "stm_results_clio.xlsx", sheet_name="gamma_full")
-    thread_data = pd.read_excel(DATA_DIR / "stm_results_clio.xlsx", sheet_name="thread_topics")
+    # top_terms: frex-only CSV misses terms_prob; llm_issue_input has both
+    top_terms = llm_input[["topic", "terms_frex", "terms_prob"]].copy()
 
-    if "doc_name" in gamma_full.columns and "document" in gamma_full.columns:
-        gamma_full = gamma_full.drop(columns=["document"])
-    elif "doc_name" not in gamma_full.columns and "document" in gamma_full.columns:
-        gamma_full = gamma_full.rename(columns={"document": "doc_name"})
+    # gamma_full: wide CSV (T1..T20 + doc_name) → melt to long (doc_name, topic, gamma)
+    gamma_wide = pd.read_csv(DATA_DIR / "stm_thread_topic_vectors_clio.csv")
+    topic_cols = [c for c in gamma_wide.columns if c.startswith("T") and c[1:].isdigit()]
+    gamma_full = gamma_wide.melt(id_vars="doc_name", value_vars=topic_cols,
+                                 var_name="topic_label", value_name="gamma")
+    gamma_full["topic"] = gamma_full["topic_label"].str[1:].astype(int)
+    gamma_full = gamma_full[["doc_name", "topic", "gamma"]]
 
-    if "doc_name" not in gamma_full.columns:
-        raise ValueError("gamma_full sheet must contain 'doc_name' or 'document' column")
+    # thread_data: stm_thread_enriched has doc_name, txt, technical_score
+    thread_data = enriched[["doc_name", "txt", "technical_score"]].copy()
 
     return {
         "enriched": enriched,

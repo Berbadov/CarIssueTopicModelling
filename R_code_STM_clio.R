@@ -42,7 +42,7 @@ extract_mileage_info <- function(text) {
 
   m <- stringr::str_match(
     t,
-    "\\b(\\d{1,3})\\s*[--]\\s*(\\d{1,3})\\s*(k|bin)\\s*(?:km|kilometre|kilometrede|kilometresi)?\\b"
+    "\\b(\\d{1,3})\\s*[-\\u2013]\\s*(\\d{1,3})\\s*(k|bin)\\s*(?:km|kilometre|kilometrede|kilometresi)?\\b"
   )
   if (!is.na(m[1, 1])) {
     lo <- to_int_km(m[1, 2])
@@ -182,10 +182,11 @@ df <- df %>%
 
 pre_filter_n <- nrow(df)
 df <- df %>%
+  filter(focus_score >= 2L) %>%
   filter(!(cosmetic_score > pmax(1L, technical_score) & technical_score < 2L)) %>%
   filter(!(infotainment_score > 3L & technical_score < 1L))
 
-cat(sprintf("Filtered %d cosmetic/infotainment-dominated threads (%d -> %d)\n", pre_filter_n - nrow(df), pre_filter_n, nrow(df)))
+cat(sprintf("Filtered %d low-signal/cosmetic/infotainment threads (%d -> %d)\n", pre_filter_n - nrow(df), pre_filter_n, nrow(df)))
 
 if (nrow(df) < 20) {
   stop("Too few thread-level documents after filtering (<20). Scrape more data before STM.")
@@ -254,9 +255,9 @@ if (has_engine_var && has_bucket_var) {
 }
 
 if (n_docs >= 500) {
-  k_final <- 20L
-} else if (n_docs >= 250) {
   k_final <- 15L
+} else if (n_docs >= 250) {
+  k_final <- 12L
 } else {
   k_final <- 10L
 }
@@ -387,7 +388,7 @@ if (has_engine_var) {
 
     if (is.null(pe)) next
 
-    means <- as.numeric(pe$means)
+    means <- if (is.list(pe$means)) vapply(pe$means, function(x) as.numeric(x[[1]]), numeric(1)) else as.numeric(pe$means)
     cis <- pe$cis
     if (is.list(cis)) {
       ci_lower <- vapply(cis, function(x) as.numeric(x[1]), numeric(1))

@@ -31,9 +31,9 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-DATA_DIR = Path(r"D:\wstm\data\processed")
-SCAFFOLD_DIR = Path(r"D:\wstm\data\scaffolds")
-K = 25
+DATA_DIR = __PATH__.parent / "data" / "processed"
+SCAFFOLD_DIR = __PATH__.parent / "data" / "scaffolds"
+K = 20
 MODEL = "deepseek-chat"
 
 # ── Load parts scaffold ───────────────────────────────────────────────────────
@@ -235,13 +235,6 @@ def build_scaffold_context(scaffold: dict) -> str:
         disps = ", ".join(ef.get("displacements", []))
         yr = ef.get("year_range", [])
         lines.append(f"  {ef['code']} | {ef['fuel_type']} | {disps} | {yr[0]}–{yr[1]}")
-        for issue in ef.get("known_issues", []):
-            if issue.get("issue") == "none_major":
-                continue
-            tid = f" [STM T{issue['stm_topic']}]" if issue.get("stm_topic") else ""
-            lines.append(
-                f"    • {issue['issue']}{tid}: {issue.get('notes', '').strip()}"
-            )
 
     lines.append("\nTransmissions:")
     for tx in scaffold.get("transmissions", []):
@@ -251,12 +244,6 @@ def build_scaffold_context(scaffold: dict) -> str:
             f"  {tx['code']} ({tx.get('internal_code', '?')}) | {tx['type']} | "
             f"{compat} | {yr[0]}–{yr[1]}"
         )
-        for issue in tx.get("known_issues", []):
-            tid = f" [STM T{issue['stm_topic']}]" if issue.get("stm_topic") else ""
-            part = f" part={issue['part_code']}" if issue.get("part_code") else ""
-            lines.append(
-                f"    • {issue['issue']}{tid}{part}: {issue.get('notes', '').strip()}"
-            )
 
     return "\n".join(lines)
 
@@ -275,11 +262,26 @@ SYSTEM_PROMPT = (
     "- Only populate 'affected_engines' if the covariate effect for a specific engine is "
     "clearly elevated (positive estimate with CI not crossing zero) AND the topic terms "
     "or snippets explicitly reference that engine. A general issue (oil consumption, leaks, "
-    "electrical faults) that affects all engines must use [\"all\"] or omit specific engines.\n"
+    'electrical faults) that affects all engines must use ["all"] or omit specific engines.\n'
     "- Only set issue_type to 'chronic_failure' if the chronic_signal score is meaningfully "
     "above 0.3 AND the snippets show repeated unresolved complaints. Low chronic_signal with "
     "common symptoms (oil, coolant, noise) is a 'wear_item' or 'intermittent_fault', not chronic.\n"
-    "- Be conservative: when in doubt, broaden affected_engines rather than narrowing to one."
+    "- Be conservative: when in doubt, broaden affected_engines rather than narrowing to one.\n"
+    "- engine_family_codes must be populated ONLY from evidence in the provided data bundle "
+    "(FREX/PROB terms, covariate effects, or snippets). Do not use your training knowledge to "
+    "infer which engine families have which components. If the covariate effects show no "
+    "statistically significant elevation for any engine group, set engine_family_codes to [].\n"
+    "- Signal hierarchy: FREX terms represent the topic's statistical identity (most distinctive "
+    "words across the corpus). They take precedence over individual snippet content. label, "
+    "system_component, issue_type, summary, and warning_signs must be consistent with the FREX "
+    "signal. If snippets mention a system not reflected in FREX or PROB terms, that content "
+    "belongs in notes only (as evidence of topic impurity), not in classification fields.\n"
+    "- Upstream cause reasoning: forum users report what they observe (the downstream symptom), "
+    "not the root cause. When a topic's FREX signal describes a downstream observable failure, "
+    "use your domain knowledge to identify likely upstream causes that users would not name. "
+    "Document these in the 'notes' field as: 'Likely upstream contributors: [cause] — users "
+    "report downstream symptoms only.' Do NOT promote upstream causes to label, system_component, "
+    "or warning_signs; they belong in notes only."
 )
 
 
@@ -440,7 +442,6 @@ def main():
     results = [results_map[tid] for tid in range(1, K + 1)]
 
     # ── JSON output ───────────────────────────────────────────────────────────
-    json_path = DATA_DIR / "issue_knowledge.json"
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     log.info(f"Saved: {json_path}")
