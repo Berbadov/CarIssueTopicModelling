@@ -30,7 +30,17 @@ cat(sprintf("Parallel workers: %d\n", n_workers))
 
 # ── 1. Load data ──────────────────────────────────────────────────────────────
 
-df_raw <- read_csv("cleaned_messages_uk.csv", show_col_types = FALSE)
+input_candidates <- c(
+  "data/processed/forums/cleaned_messages_uk.csv",
+  "cleaned_messages_uk.csv"
+)
+input_csv <- input_candidates[file.exists(input_candidates)][1]
+if (is.na(input_csv)) {
+  stop("Input CSV not found. Checked: data/processed/forums/cleaned_messages_uk.csv and cleaned_messages_uk.csv")
+}
+cat(sprintf("Using input: %s\n", input_csv))
+
+df_raw <- read_csv(input_csv, show_col_types = FALSE)
 
 # ── 1a. Mileage extraction (miles-first, also handles km) ────────────────────
 

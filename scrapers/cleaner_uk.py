@@ -4,9 +4,9 @@ cleaner_uk.py
 ──────────────
 Filters and classifies messages from golfgtiforum.co.uk raw scrape.
 Produces:
-  data/processed/cleaned_messages_uk.json  — kept threads (structured)
-  data/processed/rejected_messages_uk.json — rejected (for inspection)
-  cleaned_messages_uk.csv                  — flat CSV for R pipeline
+    data/processed/forums/cleaned_messages_uk.json  — kept threads (structured)
+    data/processed/forums/rejected_messages_uk.json — rejected (for inspection)
+    data/processed/forums/cleaned_messages_uk.csv   — flat CSV for R pipeline
 
 Output CSV columns: thread_name, thread_url, engine_code, message, reason
 
@@ -680,17 +680,20 @@ def filter_main(input_file: str, output_file: str, rejected_file: str, csv_file:
 
 if __name__ == "__main__":
     _root = Path(__file__).parent.parent / "data"
+    input_default = _root / "raw" / "forums" / "messages_uk.json"
+    if not input_default.exists():
+        input_default = _root / "raw" / "messages_uk.json"
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", default=str(_root / "raw" / "messages_uk.json"))
+    parser.add_argument("--input", default=str(input_default))
     parser.add_argument(
-        "--output", default=str(_root / "processed" / "cleaned_messages_uk.json")
+        "--output", default=str(_root / "processed" / "forums" / "cleaned_messages_uk.json")
     )
     parser.add_argument(
-        "--rejected", default=str(_root / "processed" / "rejected_messages_uk.json")
+        "--rejected", default=str(_root / "processed" / "forums" / "rejected_messages_uk.json")
     )
     parser.add_argument(
-        "--csv", default=str(Path(__file__).parent.parent / "cleaned_messages_uk.csv")
+        "--csv", default=str(_root / "processed" / "forums" / "cleaned_messages_uk.csv")
     )
     args = parser.parse_args()
 

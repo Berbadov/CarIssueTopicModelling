@@ -19,12 +19,17 @@ get_script_dir <- function() {
 
 ROOT <- get_script_dir()
 PROCESSED_DIR <- file.path(ROOT, "data", "processed")
-INPUT_CSV <- file.path(ROOT, "cleaned_messages_clio.csv")
+input_candidates <- c(
+  file.path(ROOT, "data", "processed", "forums", "cleaned_messages_clio.csv"),
+  file.path(ROOT, "cleaned_messages_clio.csv")
+)
+INPUT_CSV <- input_candidates[file.exists(input_candidates)][1]
 STOPWORDS_FILE <- file.path(ROOT, "turkce-stop-words.txt")
 
-if (!file.exists(INPUT_CSV)) {
-  stop(sprintf("Input CSV not found: %s", INPUT_CSV))
+if (is.na(INPUT_CSV)) {
+  stop("Input CSV not found. Checked: data/processed/forums/cleaned_messages_clio.csv and cleaned_messages_clio.csv")
 }
+cat(sprintf("Using input: %s\n", INPUT_CSV))
 
 dir.create(PROCESSED_DIR, recursive = TRUE, showWarnings = FALSE)
 

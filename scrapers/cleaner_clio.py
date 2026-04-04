@@ -5,16 +5,16 @@ cleaner_clio.py
 Filter and flatten scraped Renault Clio forum messages.
 
 Input:
-  data/raw/messages_clio.json
+    data/raw/forums/messages_clio.json
 
 Outputs:
-  data/processed/cleaned_messages_clio.json
-  data/processed/rejected_messages_clio.json
-  cleaned_messages_clio.csv
+    data/processed/forums/cleaned_messages_clio.json
+    data/processed/forums/rejected_messages_clio.json
+    data/processed/forums/cleaned_messages_clio.csv
 
 Usage:
   python scrapers/cleaner_clio.py
-  python scrapers/cleaner_clio.py --input data/raw/messages_clio.json
+    python scrapers/cleaner_clio.py --input data/raw/forums/messages_clio.json
 """
 
 import argparse
@@ -326,12 +326,15 @@ def filter_main(input_file: str, output_file: str, rejected_file: str, csv_file:
 
 def main() -> None:
     root = ROOT / "data"
+    input_default = root / "raw" / "forums" / "messages_clio.json"
+    if not input_default.exists():
+        input_default = root / "raw" / "messages_clio.json"
 
     parser = argparse.ArgumentParser(description="Filter and flatten Clio forum messages")
-    parser.add_argument("--input", default=str(root / "raw" / "messages_clio.json"))
-    parser.add_argument("--output", default=str(root / "processed" / "cleaned_messages_clio.json"))
-    parser.add_argument("--rejected", default=str(root / "processed" / "rejected_messages_clio.json"))
-    parser.add_argument("--csv", default=str(ROOT / "cleaned_messages_clio.csv"))
+    parser.add_argument("--input", default=str(input_default))
+    parser.add_argument("--output", default=str(root / "processed" / "forums" / "cleaned_messages_clio.json"))
+    parser.add_argument("--rejected", default=str(root / "processed" / "forums" / "rejected_messages_clio.json"))
+    parser.add_argument("--csv", default=str(root / "processed" / "forums" / "cleaned_messages_clio.csv"))
     args = parser.parse_args()
 
     filter_main(args.input, args.output, args.rejected, args.csv)

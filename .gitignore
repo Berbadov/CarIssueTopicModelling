@@ -1,1 +1,13 @@
 .ForumList.txt
+
+# Python cache artifacts
+__pycache__/
+*.py[cod]
+
+# Local editor/tool state
+.claude/settings.local.json
+
+# LaTeX temporary build files
+*.aux
+*.log
+*.out

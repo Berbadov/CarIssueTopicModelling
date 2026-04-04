@@ -15,7 +15,7 @@ python scrapers/link_extractor_clio.py --max-list-pages 240
 ```
 
 Output:
-- data/raw/extracted_links_clio.json
+- data/raw/forums/extracted_links_clio.json
 
 ## 2) Scrape threads
 
@@ -24,7 +24,7 @@ python scrapers/scraper_clio.py --max-pages 15 --workers 6
 ```
 
 Output:
-- data/raw/messages_clio.json
+- data/raw/forums/messages_clio.json
 
 ## 3) Filter + flatten
 
@@ -33,9 +33,9 @@ python scrapers/cleaner_clio.py
 ```
 
 Outputs:
-- data/processed/cleaned_messages_clio.json
-- data/processed/rejected_messages_clio.json
-- cleaned_messages_clio.csv
+- data/processed/forums/cleaned_messages_clio.json
+- data/processed/forums/rejected_messages_clio.json
+- data/processed/forums/cleaned_messages_clio.csv
 
 ## 4) STM modeling
 

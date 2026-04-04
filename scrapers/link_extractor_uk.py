@@ -5,7 +5,7 @@ link_extractor_uk.py
 Extracts all thread URLs from golfgtiforum.co.uk SMF board 117
 (Golf GTI / General Discussion → Problems & Fixes or equivalent).
 
-Output: data/raw/extracted_links_uk.json  (jsonlines, {"link": "..."})
+Output: data/raw/forums/extracted_links_uk.json  (jsonlines, {"link": "..."})
 
 Usage:
     python scrapers/link_extractor_uk.py [--pages N] [--board URL]
@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup
 # ── Config ────────────────────────────────────────────────────────────────────
 
 BOARD_URL   = "https://www.golfgtiforum.co.uk/index.php?board=117.{offset}"
-OUTPUT_FILE = Path(__file__).parent.parent / "data" / "raw" / "extracted_links_uk.json"
+OUTPUT_FILE = Path(__file__).parent.parent / "data" / "raw" / "forums" / "extracted_links_uk.json"
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",

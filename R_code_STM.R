@@ -26,8 +26,18 @@ cat(sprintf("Parallel workers: %d\n", n_workers))
 
 # ── 1. Load data ──────────────────────────────────────────────────────────────
 
+input_candidates <- c(
+  "data/processed/forums/cleaned_messages.csv",
+  "cleaned_messages.csv"
+)
+input_csv <- input_candidates[file.exists(input_candidates)][1]
+if (is.na(input_csv)) {
+  stop("Input CSV not found. Checked: data/processed/forums/cleaned_messages.csv and cleaned_messages.csv")
+}
+cat(sprintf("Using input: %s\n", input_csv))
+
 df_raw <- read_csv(
-  "cleaned_messages.csv",
+  input_csv,
   show_col_types = FALSE
 )
 

@@ -7,10 +7,10 @@ Scrape Clio forum threads from two platforms:
   - renaultfanclub.com (XenForo)
 
 Input:
-  data/raw/extracted_links_clio.json (jsonlines from link_extractor_clio.py)
+    data/raw/forums/extracted_links_clio.json (jsonlines from link_extractor_clio.py)
 
 Output:
-  data/raw/messages_clio.json (structured list)
+    data/raw/forums/messages_clio.json (structured list)
 
 Usage:
   python scrapers/scraper_clio.py
@@ -31,9 +31,9 @@ import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent.parent
-LINKS_FILE = ROOT / "data" / "raw" / "extracted_links_clio.json"
-OUTPUT_FILE = ROOT / "data" / "raw" / "messages_clio.json"
-CHECKPOINT_FILE = ROOT / "data" / "raw" / "scraper_clio_checkpoint.json"
+LINKS_FILE = ROOT / "data" / "raw" / "forums" / "extracted_links_clio.json"
+OUTPUT_FILE = ROOT / "data" / "raw" / "forums" / "messages_clio.json"
+CHECKPOINT_FILE = ROOT / "data" / "raw" / "forums" / "scraper_clio_checkpoint.json"
 
 DEFAULT_MAX_PAGES = 15
 DEFAULT_WORKERS = 6

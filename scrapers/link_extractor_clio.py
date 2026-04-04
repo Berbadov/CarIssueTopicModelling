@@ -7,11 +7,11 @@ Extract thread URLs for Renault Clio discussions from:
   - renaultfanclub.com (XenForo)
 
 Output:
-  data/raw/extracted_links_clio.json  (jsonlines, {"link": "..."})
+    data/raw/forums/extracted_links_clio.json  (jsonlines, {"link": "..."})
 
 Usage:
   python scrapers/link_extractor_clio.py
-  python scrapers/link_extractor_clio.py --max-list-pages 300 --output data/raw/extracted_links_clio.json
+    python scrapers/link_extractor_clio.py --max-list-pages 300 --output data/raw/forums/extracted_links_clio.json
 """
 
 import argparse
@@ -27,7 +27,7 @@ import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent.parent
-OUTPUT_FILE = ROOT / "data" / "raw" / "extracted_links_clio.json"
+OUTPUT_FILE = ROOT / "data" / "raw" / "forums" / "extracted_links_clio.json"
 
 SEED_FORUMS = [
     "https://www.otoclubturkiye.com/forum/forum/400-clio/",

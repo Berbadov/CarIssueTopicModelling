@@ -3,8 +3,8 @@
 scraper_uk.py
 ──────────────
 Scrapes thread messages from golfgtiforum.co.uk (SMF forum).
-Reads thread URLs from data/raw/extracted_links_uk.json and writes
-grouped thread data to data/raw/messages_uk.json.
+Reads thread URLs from data/raw/forums/extracted_links_uk.json and writes
+grouped thread data to data/raw/forums/messages_uk.json.
 
 Usage:
     python scrapers/scraper_uk.py [--max-pages N] [--workers N] [--no-resume]
@@ -25,9 +25,9 @@ from bs4 import BeautifulSoup
 # ── Config ────────────────────────────────────────────────────────────────────
 
 BASE_URL         = "https://www.golfgtiforum.co.uk"
-LINKS_FILE       = Path(__file__).parent.parent / "data" / "raw" / "extracted_links_uk.json"
-OUTPUT_FILE      = Path(__file__).parent.parent / "data" / "raw" / "messages_uk.json"
-CHECKPOINT_FILE  = Path(__file__).parent.parent / "data" / "raw" / "scraper_uk_checkpoint.json"
+LINKS_FILE       = Path(__file__).parent.parent / "data" / "raw" / "forums" / "extracted_links_uk.json"
+OUTPUT_FILE      = Path(__file__).parent.parent / "data" / "raw" / "forums" / "messages_uk.json"
+CHECKPOINT_FILE  = Path(__file__).parent.parent / "data" / "raw" / "forums" / "scraper_uk_checkpoint.json"
 
 DEFAULT_MAX_PAGES = 15
 DEFAULT_WORKERS   = 8

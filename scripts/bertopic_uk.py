@@ -39,7 +39,17 @@ log = logging.getLogger(__name__)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "processed"
-INPUT_CSV = ROOT / "cleaned_messages_uk.csv"
+
+
+def _resolve_input_csv() -> Path:
+    candidates = [
+        ROOT / "data" / "processed" / "forums" / "cleaned_messages_uk.csv",
+        ROOT / "cleaned_messages_uk.csv",
+    ]
+    return next((p for p in candidates if p.exists()), candidates[0])
+
+
+INPUT_CSV = _resolve_input_csv()
 EMBEDDING_PATH = DATA_DIR / "uk_thread_embeddings.npy"
 EMBEDDING_FILTERED_PATH = DATA_DIR / "uk_thread_embeddings_filtered.npy"
 PREPARED_PATH = DATA_DIR / "uk_threads_prepared.csv"
