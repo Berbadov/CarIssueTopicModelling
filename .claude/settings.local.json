@@ -25,7 +25,8 @@
       "WebFetch(domain:www.gov.uk)",
       "WebFetch(domain:open.data.dvsa.gov.uk)",
       "WebFetch(domain:ckan.publishing.service.gov.uk)",
-      "WebFetch(domain:data.dft.gov.uk)"
+      "WebFetch(domain:data.dft.gov.uk)",
+      "Bash(.venv/Scripts/python run_stm_clio.py)"
     ]
   }
 }

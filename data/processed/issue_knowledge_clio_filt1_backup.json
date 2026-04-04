@@ -1,0 +1,624 @@
+[
+  {
+    "topic_id": 1,
+    "label": "Audio system and speaker installation discussions",
+    "label_short": "Audio system installation",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 2.7,
+    "chronic_signal": 0.6,
+    "summary": "This topic is not a vehicle fault or failure. It consists of user discussions about aftermarket audio system components, speaker upgrades, and installation advice. The terms and snippets are focused on product recommendations, compatibility questions, and sharing installation experiences.",
+    "warning_signs": [
+      "User inquiries about speaker/amplifier compatibility",
+      "Discussions about sourcing parts from AliExpress or aftermarket brands"
+    ],
+    "inspection_advice": "No mechanical inspection is relevant as this is a non-issue topic related to audio system modifications.",
+    "data_quality": "high",
+    "thread_count": 63,
+    "notes": "The topic is clearly a non-issue discussion based on FREX terms (anfi, alpine, bass, hoparlor, subwoofer, pioneer) and representative snippets showing product recommendations and installation questions. The engine breakdown is dominated by 'unknown' (87.3%), and the low, early mileage distribution (median 10,000 km) is consistent with owners making early customizations, not reporting failures. Chronic signal of 0.6 does not indicate a chronic failure, but likely repeated discussion theme."
+  },
+  {
+    "topic_id": 2,
+    "label": "Timing belt (triger kayışı) failure, replacement cost, and service disputes",
+    "label_short": "Timing belt failure",
+    "system_component": "engine",
+    "issue_type": "wear_item",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_km": 20000,
+    "onset_mileage_range": "5000-60000 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [
+      {
+        "code": null,
+        "name": "triger kayışı",
+        "notes": "Timing belt"
+      }
+    ],
+    "engine_notes": "Evidence spans multiple engine groups, but specific engine family codes cannot be reliably inferred from the provided bundle.",
+    "prevalence_pct": 6.0,
+    "chronic_signal": 0.698,
+    "summary": "A high-prevalence topic focused on timing belt (triger kayışı) failures, replacement costs, and disputes with authorized service centers. Complaints frequently mention high service bills for belt replacement around 20,000-60,000 km and discussions about warranty coverage.",
+    "warning_signs": [
+      "High service bill for timing belt replacement",
+      "Noise (ugultu) from engine bay",
+      "Service recommendation for belt change at low mileage (e.g., 20,000 km)"
+    ],
+    "inspection_advice": "Inspect the timing belt and tensioner (gergi) for wear, especially if unusual noise is present. Verify recommended replacement intervals with service history.",
+    "data_quality": "medium",
+    "thread_count": 148,
+    "notes": "High 'unknown' engine group percentage (78.4%) limits precise engine targeting. Covariate effects show all engine groups are significantly associated, supporting a broad issue. The chronic signal is high (0.698), but snippets describe single incidents rather than explicitly chronic, unresolved failures across multiple reports for the same vehicle."
+  },
+  {
+    "topic_id": 3,
+    "label": "General maintenance, oil, and filter discussions with some diesel-specific concerns",
+    "label_short": "Maintenance & Filters",
+    "system_component": "other",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_km": 40000,
+    "onset_mileage_range": "5000-109920 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [
+      "K9K"
+    ],
+    "known_part_codes": [],
+    "engine_notes": "Strongest specific signal is from the 1.5 DCI (K9K) diesel engine, but topic is broad and includes all engine types.",
+    "prevalence_pct": 5.8,
+    "chronic_signal": 0.302,
+    "summary": "This is a broad, high-prevalence topic centered on routine maintenance, specifically oil selection (5w30, 5w40, brands like Elf, Castrol, Motul) and filter (filtresi) replacement. There is a secondary but clear signal related to diesel (DCI) components like DPF and EGR, indicating related queries or issues within general maintenance threads.",
+    "warning_signs": [
+      "Confusion over correct engine oil specification",
+      "Exhaust emission warning light after refueling (diesel)",
+      "Questions about high-mileage (e.g., 200,000 km) diesel engine reliability"
+    ],
+    "inspection_advice": "Verify correct oil specification and filter part numbers for the specific engine. For diesel models with emission warnings, check fuel quality and consider DPF/EGR system condition.",
+    "data_quality": "medium",
+    "thread_count": 128,
+    "notes": "Topic is mixed, combining general maintenance advice with some diesel-specific fault discussions (DPF, EGR). Over 50% of threads have unknown engine type, but the 1.5 DCI is the most identifiable and significant specific engine. The chronic signal is moderate but likely reflects recurring maintenance questions rather than a chronic failure."
+  },
+  {
+    "topic_id": 4,
+    "label": "Manual and automatic transmission issues including gear engagement, clutch problems, and EDC behavior",
+    "label_short": "Transmission Problems",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "onset_mileage_typical_km": 36000,
+    "onset_mileage_range": "4000-92000 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Evidence spans all engine groups, with significant covariate effects for both petrol (TCE) and diesel (DCI) families.",
+    "prevalence_pct": 10.0,
+    "chronic_signal": 0.465,
+    "summary": "This topic covers a wide range of transmission-related complaints, including manual gearbox failures (broken gears), clutch engagement issues (trembling, adjustment), and concerns about EDC dual-clutch automatic behavior (noise, hesitation, start-stop interaction). The problem appears across multiple generations and engine types.",
+    "warning_signs": [
+      "Difficulty engaging gears, especially reverse or second gear",
+      "Unusual noise or 'shouting' from the engine during gear shifts",
+      "Trembling or vibration during clutch engagement",
+      "Hesitation or rolling back when starting from a stop with EDC"
+    ],
+    "inspection_advice": "Check for clutch wear, gear synchronizer condition, and for EDC vehicles, scan for transmission control unit faults and inspect the dual-clutch assembly.",
+    "data_quality": "high",
+    "thread_count": 222,
+    "notes": "High proportion of 'unknown' engine group (74.3%) limits precise engine targeting, but covariate effects and breakdowns show the issue is not isolated to a single powertrain. The topic bundles both manual and automatic (EDC) transmission concerns, which may represent distinct underlying faults."
+  },
+  {
+    "topic_id": 5,
+    "label": "Cooling system overheating and fluid loss issues",
+    "label_short": "Cooling system faults",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "high",
+    "confidence": "high",
+    "onset_mileage_typical_km": 9600,
+    "onset_mileage_range": "4200-87200 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [
+      {
+        "code": null,
+        "name": "thermostat",
+        "notes": "Frequently mentioned in snippets"
+      },
+      {
+        "code": null,
+        "name": "radiator",
+        "notes": "Prominent in FREX terms"
+      }
+    ],
+    "engine_notes": "Evidence spans multiple engine groups (1.5 DCI, 0.9 TCE, 1.2 TCE, 1.4 NA, 1.6 NA) and all generational cohorts, suggesting a broad cooling system concern.",
+    "prevalence_pct": 7.3,
+    "chronic_signal": 0.615,
+    "summary": "A prevalent topic concerning cooling system failures, primarily characterized by overheating (hararet) and coolant loss (antifriz eksilme). Issues appear across multiple Clio generations and engine types, often involving thermostat, radiator, or related components.",
+    "warning_signs": [
+      "Overheating gauge reading (hararet)",
+      "Frequent need to top up coolant (antifriz eksilme)"
+    ],
+    "inspection_advice": "Check for coolant leaks at the thermostat housing, radiator, and hoses. Monitor the coolant level and expansion tank for unexplained drops.",
+    "data_quality": "medium",
+    "thread_count": 171,
+    "notes": "High proportion of threads (75.4%) have unknown engine group, limiting precise engine targeting. Covariate effects show all engine groups have significant positive association, supporting a broad issue. Chronic signal is moderate (0.615), indicating recurring complaints but not overwhelmingly persistent."
+  },
+  {
+    "topic_id": 6,
+    "label": "Tire and wheel selection, fitment, and seasonal change discussions",
+    "label_short": "Tire/Wheel Fitment",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 3.2,
+    "chronic_signal": 0.556,
+    "summary": "This topic consists of general discussions about tire and wheel selection, including brand comparisons (Goodyear, Michelin, Continental, Nokian), sizing (195/55, 205/55), fitment, and seasonal changes. It is not indicative of a mechanical failure or defect.",
+    "warning_signs": [
+      "Discussions about tire brands and models",
+      "Questions regarding wheel fitment and sizing"
+    ],
+    "inspection_advice": "No specific inspection is advised as this is a discussion topic, not a fault.",
+    "data_quality": "high",
+    "thread_count": 73,
+    "notes": "The topic is clearly about tire/wheel selection and seasonal regulations, not a vehicle fault. The chronic signal and mileage distribution are not relevant to a failure mode. Engine breakdown shows most threads are 'unknown', and covariate effects are uniform, confirming this is a general discussion topic unrelated to specific powertrains."
+  },
+  {
+    "topic_id": 7,
+    "label": "Steering system noise and stiffness, potentially related to steering rack, pump, or linkage components",
+    "label_short": "Steering Noise/Stiffness",
+    "system_component": "suspension",
+    "issue_type": "noise",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_km": 10000,
+    "onset_mileage_range": "3200-45400 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Evidence is not engine-specific; issue appears across multiple generations and engine types.",
+    "prevalence_pct": 4.0,
+    "chronic_signal": 0.868,
+    "summary": "A common complaint involves noises (creaking, grinding) and stiffness when turning the steering wheel, often intermittent. Users report sounds from the steering column, rack, or associated linkages, with concerns about steering pumps and control arms.",
+    "warning_signs": [
+      "Creaking or grinding noise when turning the steering wheel, especially at full lock or during sharp turns",
+      "Stiffness or unusual resistance in the steering feel"
+    ],
+    "inspection_advice": "Check steering rack, power steering pump, linkage components (tie rods, control arms), and associated mounts for wear, play, or leaks. Noise can be intermittent, so replication may require specific conditions.",
+    "data_quality": "medium",
+    "thread_count": 95,
+    "notes": "High chronic signal suggests recurring, unresolved complaints. However, engine breakdown data is dominated by 'unknown' (94.7%), limiting engine-specific conclusions. Covariate effects show no strong engine-specific signal, supporting a broad interpretation. Snippets point to a steering/suspension noise issue but are not highly diagnostic for a single root cause."
+  },
+  {
+    "topic_id": 8,
+    "label": "Interior trim rattles and squeaks from dashboard and trunk area",
+    "label_short": "Interior rattles",
+    "system_component": "other",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "onset_mileage_typical_km": 14000,
+    "onset_mileage_range": "2500-36000 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "No specific engine link; issue appears across all engine types based on broad evidence.",
+    "prevalence_pct": 2.0,
+    "chronic_signal": 1.104,
+    "summary": "Users report persistent interior rattles and squeaks, primarily from the dashboard and trunk area, often occurring at low speeds or when accelerating. Complaints are common across all Clio generations and engine types, with many threads mentioning service visits and attempts at DIY fixes like using silicone or spray.",
+    "warning_signs": [
+      "Buzzing or vibration noise from dashboard during acceleration",
+      "Squeaking or rattling sounds from the trunk area"
+    ],
+    "inspection_advice": "Check for loose trim panels, dashboard components, and trunk fittings; test drive at low speeds to replicate the noise.",
+    "data_quality": "medium",
+    "thread_count": 44,
+    "notes": "High proportion of 'unknown' engine data limits precise engine mapping. FREX terms (gicirtisi, cizirti, bagajdan) strongly indicate noise, but snippets also reference unrelated topics (e.g., motor cleaner, BMW), suggesting some topic mixture. Chronic signal is present but weak."
+  },
+  {
+    "topic_id": 9,
+    "label": "Forum price table formatting and discussion",
+    "label_short": "Price table formatting",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 1.2,
+    "chronic_signal": 0.209,
+    "summary": "This topic consists of forum posts containing HTML table formatting for vehicle price lists and specifications. The content is administrative or informational, not related to a mechanical or technical vehicle issue.",
+    "warning_signs": [
+      "Posts containing HTML table tags (td, table, tr, bgcolor, align)",
+      "Lists of vehicle models, years, and prices"
+    ],
+    "inspection_advice": "No vehicle inspection is relevant; this is a data formatting artifact from forum posts.",
+    "data_quality": "high",
+    "thread_count": 25,
+    "notes": "The topic is a clear false positive for vehicle issues. FREX and PROB terms are dominated by HTML/table formatting tags (td, table, align, class, width, bgcolor). Representative snippets show price lists and vehicle specification tables. The engine and year breakdowns are incidental to the listed vehicles in the price tables, not indicative of a fault pattern. Chronic signal is low and not related to a recurring technical problem."
+  },
+  {
+    "topic_id": 10,
+    "label": "Headlight and interior lighting upgrades, modifications, and cleaning discussions",
+    "label_short": "Lighting Upgrades",
+    "system_component": "lighting",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [
+      {
+        "code": "H7",
+        "name": "Headlight bulb type",
+        "notes": "Mentioned in FREX terms"
+      },
+      {
+        "code": "T10",
+        "name": "Bulb type",
+        "notes": "Mentioned in snippet 1"
+      }
+    ],
+    "engine_notes": "No specific engine-related failure pattern; topic is about user modifications across all models.",
+    "prevalence_pct": 5.4,
+    "chronic_signal": 0.575,
+    "summary": "This topic primarily consists of user discussions about upgrading, replacing, or cleaning vehicle lighting components, including headlights (H7 bulbs, LEDs from Osram, Philips) and interior bulbs. It represents a common modification interest rather than a chronic mechanical or electrical failure.",
+    "warning_signs": [
+      "Desire to upgrade lighting for better visibility or aesthetics",
+      "Questions about DIY headlight lens cleaning and polishing"
+    ],
+    "inspection_advice": "Check for aftermarket LED or bulb installations and inspect headlight lens clarity if cleaning is discussed.",
+    "data_quality": "high",
+    "thread_count": 111,
+    "notes": "High chronic signal likely reflects ongoing, repeated community discussions about modifications, not a recurring vehicle fault. The 'unknown' engine group dominates (85.6%), supporting the topic's general, non-engine-specific nature. Snippet 5 mentions a trunk lock issue but is an outlier in a lighting-focused bundle."
+  },
+  {
+    "topic_id": 11,
+    "label": "Clutch and brake pad wear, judder, and performance issues",
+    "label_short": "Clutch/Brake Wear",
+    "system_component": "brakes",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "high",
+    "onset_mileage_typical_km": 32500,
+    "onset_mileage_range": "10000-80000 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Evidence is broad across engine groups, with significant covariate effects for all listed groups, suggesting no single engine is uniquely affected.",
+    "prevalence_pct": 4.9,
+    "chronic_signal": 0.714,
+    "summary": "This topic centers on premature wear of clutch pressure plates (baski balata) and brake pads (fren balata), causing judder, vibration, and power loss, particularly noticeable during starts and in low gears. Complaints frequently question if replacements are covered under warranty and discuss associated costs.",
+    "warning_signs": [
+      "Vibration or judder during acceleration, especially in 1st and 2nd gear",
+      "Clutch engaging higher than normal or feeling 'dry' or notchy"
+    ],
+    "inspection_advice": "Inspect clutch pressure plate and brake pads for premature wear; check for glazing or contamination on the friction surfaces.",
+    "data_quality": "medium",
+    "thread_count": 111,
+    "notes": "The topic mixes clutch and brake component complaints, making precise isolation difficult. A high proportion of threads have an 'unknown' engine group, limiting engine-specific conclusions. The chronic signal is high, but snippets describe typical wear items rather than a systemic, unresolved failure pattern."
+  },
+  {
+    "topic_id": 12,
+    "label": "General vehicle characteristics, performance, and purchase advice discussions",
+    "label_short": "General discussion",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "medium",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "FREX terms include engine codes (k4m, rta) and displacements (1.4, 1.6, 8v, 16v), but topic is not engine-specific.",
+    "prevalence_pct": 4.1,
+    "chronic_signal": 0.278,
+    "summary": "This topic captures broad discussions about vehicle characteristics, likes/dislikes, performance comparisons, fuel consumption, and general purchase or modification advice. It is not focused on a specific mechanical failure or fault.",
+    "warning_signs": [
+      "Vague complaints about vehicle characteristics",
+      "Discussions comparing engine performance or fuel economy"
+    ],
+    "inspection_advice": "No specific inspection is indicated as this is a general discussion topic, not a fault.",
+    "data_quality": "medium",
+    "thread_count": 77,
+    "notes": "Topic is mixed and non-specific. High proportion of 'unknown' engine_group (70.1%) and broad FREX terms (e.g., 'sevmedigim yonleri' - aspects I don't like, 'klimasiz/klimali' - without/with AC) suggest general ownership experience talk, not a technical issue. Covariate effects are uniformly high across all engine groups, confirming lack of specificity. Chronic signal is present but likely reflects recurring general discussion themes."
+  },
+  {
+    "topic_id": 13,
+    "label": "Electrical system warning lights and starting/charging issues",
+    "label_short": "Warning Lights / Charging",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_km": 29000,
+    "onset_mileage_range": "3700-65870 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Evidence suggests broad occurrence across engine types, with significant signals for 0.9_TCE, 1.5_DCI, and 1.4_NA, but high proportion of unknown engine data limits specific mapping.",
+    "prevalence_pct": 8.9,
+    "chronic_signal": 1.0,
+    "summary": "A prevalent topic concerning dashboard warning lights (e.g., 'enjeksiyonu kontrol ettirin'), charging system faults (aku, sarj), and intermittent starting or operational issues. Complaints span multiple generations and engine types, often appearing at relatively low mileage.",
+    "warning_signs": [
+      "Dashboard warning light illumination (e.g., injection system warning)",
+      "Intermittent starting problems or loss of power while driving",
+      "Battery/charging (aku) related warnings or failures"
+    ],
+    "inspection_advice": "Check for diagnostic trouble codes related to injection, turbo pressure (e.g., P0299), and the charging system. Inspect electrical connections, battery health, and alternator output.",
+    "data_quality": "medium",
+    "thread_count": 230,
+    "notes": "High chronic signal (1.0) and representative snippets indicate recurring, unresolved complaints. However, 75% of dominant threads have an unknown engine group, making precise engine-family mapping difficult. Covariate effects show all listed engine groups have similar, significant estimates, supporting a broad issue. The presence of '1.4_NA' in the data, which is not in the provided scaffold, introduces some mapping uncertainty."
+  },
+  {
+    "topic_id": 14,
+    "label": "General discussion and ownership queries for Clio III era models, particularly DCI variants",
+    "label_short": "General Ownership Discussion",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "medium",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "pre-2013",
+    "engine_family_codes": [
+      "K9K"
+    ],
+    "known_part_codes": [],
+    "engine_notes": "Strongest evidence points to 1.5 DCI (K9K) engines in Clio II/III models, but topic appears to be general discussion.",
+    "prevalence_pct": 3.1,
+    "chronic_signal": 0.487,
+    "summary": "This topic appears to capture general forum discussions, ownership queries, and possibly for-sale listings for Renault Clio models, with a strong focus on the Clio III generation and 1.5 DCI engine variants. The FREX terms indicate discussions about specific trim levels (Extreme, Executive, Authentique, Expression) and model years (2007, 2008, 2011, 2012).",
+    "warning_signs": [
+      "Frequent posts about specific model trims and years",
+      "User queries going unanswered in forum threads"
+    ],
+    "inspection_advice": "Review thread content to determine if specific technical issues are being discussed or if this is primarily general ownership conversation.",
+    "data_quality": "medium",
+    "thread_count": 55,
+    "notes": "Topic classification is uncertain; FREX terms (db, clioiii, extreme, edition, night, day, expression, authentique, executive) and snippets suggest this may be a 'catch-all' discussion topic for Clio III models rather than a specific mechanical failure. The high 'unknown' engine percentage and low chronic signal further support this. Covariate effects are nearly identical across all engine groups, indicating no specific engine association for a fault."
+  },
+  {
+    "topic_id": 15,
+    "label": "Idle instability, misfiring, and stalling issues related to ignition and fuel systems",
+    "label_short": "Idle/Misfire Issues",
+    "system_component": "engine",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "onset_mileage_typical_km": 45000,
+    "onset_mileage_range": "4400-123600 km",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Evidence points to a broad issue across many engine types, with strong signals from TCE and NA petrol engines, but specific family mapping is unclear from the data.",
+    "prevalence_pct": 10.4,
+    "chronic_signal": 0.669,
+    "summary": "A common complaint involving unstable idle (rolanti), misfiring (tekleme), and stalling, often linked to ignition components (buji, bobin), throttle body (kelebegi), and fuel system (enjektor, benzinde). The problem appears across multiple generations and engine types, with a significant portion of reports mentioning recent LPG conversions.",
+    "warning_signs": [
+      "Unstable or fluctuating idle speed (rolanti inip cikiyor)",
+      "Engine misfires or stalling, especially at idle or low RPM"
+    ],
+    "inspection_advice": "Check ignition system (spark plugs, coils), throttle body and sensor, fuel injectors, and for vacuum leaks. If LPG is installed, inspect its calibration and components as a primary suspect.",
+    "data_quality": "medium",
+    "thread_count": 232,
+    "notes": "High proportion (81.9%) of threads have unknown engine group, limiting precise engine targeting. Covariate effects show nearly identical estimates across all engine groups, suggesting a pervasive issue rather than one specific to a family. The chronic signal is moderate but not definitive for a chronic_failure classification; snippets describe problems but not necessarily unresolved repeat failures. LPG conversion is a prominent covariate (PROB terms) and may be a major contributing factor."
+  },
+  {
+    "topic_id": 16,
+    "label": "ECO mode button retrofit and related electrical/performance discussions, including comparisons with other models",
+    "label_short": "ECO Mode Retrofit",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "medium",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Topic is not engine-specific; discussions span multiple engine types including 1.5 DCI, 0.9 TCE, and 1.0 TCE.",
+    "prevalence_pct": 2.8,
+    "chronic_signal": 0.445,
+    "summary": "This topic centers on user discussions about retrofitting or enabling the ECO mode button on Renault Clio models, often involving wiring and switch installation. Threads also include broader comparisons with other vehicles like the Fiat Punto and discussions about general vehicle reliability and costs.",
+    "warning_signs": [
+      "ECO mode button missing or non-functional",
+      "Vehicle lacks expected ECO mode feature from factory"
+    ],
+    "inspection_advice": "Check for pre-wired connectors behind blank switch panels and verify compatibility of ECO mode switch parts from donor vehicles.",
+    "data_quality": "medium",
+    "thread_count": 60,
+    "notes": "The topic is broad and mixes technical retrofit discussions with general vehicle complaints and model comparisons. A high proportion of threads have unknown engine specification. The chronic signal is moderate but does not indicate a repeated, unresolved mechanical failure."
+  },
+  {
+    "topic_id": 17,
+    "label": "High fuel consumption complaints and fuel economy discussions",
+    "label_short": "High Fuel Consumption",
+    "system_component": "engine",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "Discussions span multiple engine types including petrol (1.2 NA, 0.9 TCE, 1.2 TCE) and diesel (1.5 DCI), with no single engine family showing dominant issue concentration.",
+    "prevalence_pct": 6.3,
+    "chronic_signal": 0.604,
+    "summary": "This topic represents widespread discussions about fuel consumption rates, fuel economy comparisons, and range anxiety. Users report specific consumption figures (e.g., 5.2 L/100km, 10-11 L/100km), share fuel tank capacity experiences, and debate engine efficiency across multiple generations.",
+    "warning_signs": [
+      "Reported fuel consumption higher than expected",
+      "Frequent discussions about fuel tank range and refueling"
+    ],
+    "inspection_advice": "Monitor actual fuel consumption against manufacturer specifications and check for driving habit influences before assuming mechanical issues.",
+    "data_quality": "high",
+    "thread_count": 153,
+    "notes": "This appears to be a general discussion topic rather than a specific mechanical failure. The chronic signal likely reflects ongoing debates about fuel economy rather than unresolved technical problems. Covariate effects show minimal variation across engine groups, supporting the interpretation as a general concern rather than engine-specific fault."
+  },
+  {
+    "topic_id": 18,
+    "label": "MediaNav/Medianav Evolution infotainment system software update, downgrade, and map file issues",
+    "label_short": "Infotainment Software Issues",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": "No evidence linking issue to specific engine; discussions are infotainment-centric.",
+    "prevalence_pct": 2.6,
+    "chronic_signal": 0.976,
+    "summary": "This topic centers on user-driven software management of the MediaNav/Medianav Evolution infotainment system, including updates, downgrades, and map file installations. Discussions involve specific software versions, troubleshooting update processes, and seeking files for navigation maps or skin modifications.",
+    "warning_signs": [
+      "Infotainment system prompts for or fails during software updates",
+      "Navigation maps are outdated or fail to load after an update attempt"
+    ],
+    "inspection_advice": "Check the current software version in the infotainment settings and consult forum guides for correct update procedures and file sources.",
+    "data_quality": "high",
+    "thread_count": 58,
+    "notes": "Issue is related to infotainment software/user modification, not a mechanical or chronic hardware failure. High chronic signal reflects ongoing user discussions about software versions and procedures, not unresolved product defects. Engine breakdown is dominated by 'unknown' (94.8%), and covariate effects show no meaningful differentiation between engine groups, confirming the issue is vehicle-wide for models equipped with these systems."
+  },
+  {
+    "topic_id": 19,
+    "label": "General discussion and comparison of Clio IV (2013-2019) models, focusing on trim levels, engine options (especially 0.9 TCE and 1.5 DCI), and transmission differences",
+    "label_short": "Model Comparison Discussion",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "medium",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "2013-2019",
+    "engine_family_codes": [
+      "H4Bt",
+      "K9K",
+      "H5Ft"
+    ],
+    "known_part_codes": [],
+    "engine_notes": "Discussion centers on TCE (0.9, 1.2, 1.3) and DCI (1.5) engines, with specific mentions of EDC transmissions.",
+    "prevalence_pct": 6.4,
+    "chronic_signal": 0.358,
+    "summary": "This topic represents a broad, non-technical discussion thread common in forums, where users compare Clio IV models, trims (Icon, Energy, GT Line), engine choices (0.9 TCE, 1.2 TCE, 1.5 DCI), and transmission types (manual vs. EDC). It serves as a general advice and experience-sharing hub for prospective and current owners rather than reporting a specific mechanical fault.",
+    "warning_signs": [
+      "Owner seeking advice on model/engine choice",
+      "Comparisons between model years and trim levels"
+    ],
+    "inspection_advice": "Not applicable for a specific fault. Advice relates to researching model specifications and owner experiences before purchase.",
+    "data_quality": "medium",
+    "thread_count": 126,
+    "notes": "High proportion of 'unknown' engine_group (49.2%) and broad, non-technical snippets suggest this is a general discussion topic, not a specific failure mode. The chronic signal is moderate but likely reflects ongoing, repeated discussion rather than chronic failures. Covariate effects are uniformly low and significant across all engine groups, confirming the topic's broad, non-specific nature. The label is inferred from FREX terms (tce, 0.9, edc, icon, energy, gtline) and snippets discussing model comparisons and features."
+  },
+  {
+    "topic_id": 20,
+    "label": "General ownership discussions, new car delivery, and minor oil leak concerns",
+    "label_short": "General Ownership",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "medium",
+    "onset_mileage_typical_km": null,
+    "onset_mileage_range": null,
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": "all",
+    "engine_family_codes": [],
+    "known_part_codes": [],
+    "engine_notes": null,
+    "prevalence_pct": 2.8,
+    "chronic_signal": 0.359,
+    "summary": "This topic is a mixed collection of general forum discussions, including new car delivery announcements, ownership wishes, and a few isolated reports of minor oil leaks. The low chronic signal and broad, non-specific terms indicate it is not a focused technical failure topic.",
+    "warning_signs": [
+      "New car delivery announcements",
+      "General ownership wishes (kazasiz, belasiz)",
+      "Isolated mention of oil spots under vehicle"
+    ],
+    "inspection_advice": "Not applicable for a specific fault. For oil leak concerns mentioned in some threads, inspect under-engine protection cover and turbo hoses if present.",
+    "data_quality": "medium",
+    "thread_count": 57,
+    "notes": "Topic is a broad mix of content. FREX terms (kazasiz, belasiz, ugurlu, rodaj) suggest many posts are general well-wishes for new cars or break-in periods. A few snippets mention oil leaks, but they are not prevalent or specific enough to define a distinct failure mode. Engine breakdown is dominated by 'unknown' (78.9%), and significant covariate effects are uniform across all engine groups, indicating no specific engine association. Chronic signal is low (0.359), not supporting a chronic failure pattern."
+  }
+]
