@@ -18,6 +18,10 @@ Forum data remains valuable as a frequency baseline and is kept as an experiment
 	- Topic modeling and issue-knowledge generation
 - `stm/`:
 	- Shared STM implementation utilities
+- `pipelines/stm/python/`:
+	- Python STM runner entry points
+- `pipelines/stm/r/`:
+	- Original R STM pipelines
 
 ### Data
 - `data/raw/`:
@@ -30,8 +34,11 @@ Forum data remains valuable as a frequency baseline and is kept as an experiment
 	- Legacy forum root-level artifacts preserved for reporting and reproducibility
 
 ### Reports and Notes
-- `report.tex`, `report.pdf`: comparison report and compiled PDF
-- `CONTEXT.md`, `CLIO_PIPELINE.md`: pipeline runbooks and handoff context
+- `reports/`: comparison report source and generated report artifacts
+- `docs/`: pipeline runbooks, handoff notes, and debug notes
+
+### Testing
+- `tests/`: workspace test and smoke scripts
 
 ## Canonical Paths (Post-Organization)
 
@@ -41,3 +48,12 @@ Forum data remains valuable as a frequency baseline and is kept as an experiment
 - YouTube transcript dump: `data/raw/videos/youtube_transcripts_raw.csv`
 
 STM scripts retain fallback support for legacy root CSV locations so old runs remain reproducible.
+
+## Common Run Commands
+
+- Python STM (Clio): `python pipelines/stm/python/run_stm_clio.py`
+- Python STM (Turkish): `python pipelines/stm/python/run_stm_turkish.py`
+- Python STM (UK): `python pipelines/stm/python/run_stm_uk.py`
+- R STM (Clio): `Rscript pipelines/stm/r/R_code_STM_clio.R`
+- R STM (Turkish): `Rscript pipelines/stm/r/R_code_STM.R`
+- R STM (UK): `Rscript pipelines/stm/r/R_code_STM_uk.R`

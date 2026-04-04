@@ -40,7 +40,7 @@ Outputs:
 ## 4) STM modeling
 
 ```powershell
-Rscript R_code_STM_clio.R
+Rscript pipelines/stm/r/R_code_STM_clio.R
 ```
 
 Outputs:

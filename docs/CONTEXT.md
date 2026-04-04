@@ -1,5 +1,7 @@
 # LemonAid — STM Data Pipeline: Claude Code Handoff
 
+> Note: This is a historical handoff snapshot. Current runnable STM entry points were moved to `pipelines/stm/python/` and `pipelines/stm/r/`, and forum canonical inputs were moved to `data/processed/forums/`.
+
 ## What This Project Is
 
 A **data pipeline** for a second-hand car ad analyzer (lemonaid-app). The end goal is a

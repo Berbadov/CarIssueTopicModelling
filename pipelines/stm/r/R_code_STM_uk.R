@@ -23,6 +23,19 @@ library(openxlsx)
 filter <- dplyr::filter
 lag    <- dplyr::lag
 
+get_script_dir <- function() {
+  cmd_args <- commandArgs(trailingOnly = FALSE)
+  file_arg <- grep("^--file=", cmd_args, value = TRUE)
+  if (length(file_arg) > 0) {
+    return(dirname(normalizePath(sub("^--file=", "", file_arg[1]), winslash = "/")))
+  }
+  getwd()
+}
+
+SCRIPT_DIR <- get_script_dir()
+ROOT <- normalizePath(file.path(SCRIPT_DIR, "..", "..", ".."), winslash = "/")
+setwd(ROOT)
+
 # ── 0. Parallelism ────────────────────────────────────────────────────────────
 n_workers <- max(1L, parallel::detectCores() - 1L)
 plan(multisession, workers = n_workers)
@@ -31,8 +44,8 @@ cat(sprintf("Parallel workers: %d\n", n_workers))
 # ── 1. Load data ──────────────────────────────────────────────────────────────
 
 input_candidates <- c(
-  "data/processed/forums/cleaned_messages_uk.csv",
-  "cleaned_messages_uk.csv"
+  file.path(ROOT, "data", "processed", "forums", "cleaned_messages_uk.csv"),
+  file.path(ROOT, "cleaned_messages_uk.csv")
 )
 input_csv <- input_candidates[file.exists(input_candidates)][1]
 if (is.na(input_csv)) {

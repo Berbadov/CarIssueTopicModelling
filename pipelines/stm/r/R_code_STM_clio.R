@@ -17,7 +17,9 @@ get_script_dir <- function() {
   getwd()
 }
 
-ROOT <- get_script_dir()
+SCRIPT_DIR <- get_script_dir()
+ROOT <- normalizePath(file.path(SCRIPT_DIR, "..", "..", ".."), winslash = "/")
+setwd(ROOT)
 PROCESSED_DIR <- file.path(ROOT, "data", "processed")
 input_candidates <- c(
   file.path(ROOT, "data", "processed", "forums", "cleaned_messages_clio.csv"),

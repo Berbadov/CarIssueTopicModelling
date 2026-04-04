@@ -11,7 +11,7 @@ Covars : engine_group_fac + mileage_log + technical_bucket
 Output : data/processed/*_uk.{csv,xlsx}
 
 Usage:
-    .venv/Scripts/python run_stm_uk.py
+    .venv/Scripts/python pipelines/stm/python/run_stm_uk.py
 """
 
 import sys
@@ -21,7 +21,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT))
 
 from stm.dfm import (
