@@ -1,0 +1,3580 @@
+[
+  {
+    "issue_id": "water_pump_thermostat_housing_leak",
+    "label": "Water pump or thermostat housing coolant leak",
+    "label_short": "Coolant leak",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Low coolant level, visible dried coolant on engine front or belly pan, steam from hood, coolant loss, fluid dripping onto turbo or visible under car.",
+    "cause": "Failing water pump or thermostat housing; plastic coolant adapter prone to fracture.",
+    "fix": "Replace water pump, thermostat housing, or plastic coolant adapter; aftermarket metal adapter recommended.",
+    "warning_signs": [
+      "Coolant warning light",
+      "Overheating",
+      "Sweet smell"
+    ],
+    "inspection_advice": "Check coolant level and for dried residue around front of engine, inspect belly pan for coolant stains, look for cracks in plastic coolant adapter.",
+    "mention_count": 5,
+    "source_videos": [
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights"
+      },
+      {
+        "video_id": "bBnY69Fzf1I",
+        "title": "MK7 GTI Long Term Ownership Review"
+      },
+      {
+        "video_id": "b3YzKwG7HxI",
+        "title": "7 Things To Look For BEFORE Buying An MK7 VW!"
+      },
+      {
+        "video_id": "nvcpoOwqwhI",
+        "title": "How Reliable is the MK7 GTI?"
+      },
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "May involve multiple related cooling system components."
+  },
+  {
+    "issue_id": "cooling_system_thermostat_water_pump_leak",
+    "label": "Thermostat housing and water pump assembly coolant leak",
+    "label_short": "Coolant leak",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Coolant loss with coolant smell from under the hood, sometimes no visible leak; fluctuations in engine temperature.",
+    "cause": "Deterioration of plastic thermostat housing; failing water pump.",
+    "fix": "Replace thermostat/water pump assembly.",
+    "warning_signs": [
+      "Coolant smell",
+      "Low coolant level",
+      "Erratic temperature gauge",
+      "Coolant leaks"
+    ],
+    "inspection_advice": "Inspect for coolant residue around thermostat housing and water pump; monitor temperature gauge during test drive.",
+    "mention_count": 3,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      },
+      {
+        "video_id": "zoSbJVeqdnQ",
+        "title": "Finding Problems on a Used MK7 | Inspection Video"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Merged thermostat housing, water pump, and temperature fluctuation issues as related cooling system failures."
+  },
+  {
+    "issue_id": "turbo_failure",
+    "label": "Early turbocharger failure due to stop/start or wastegate actuator",
+    "label_short": "Turbo failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "2013-2014",
+    "onset_km_range": null,
+    "symptom": "Turbocharger failure, loss of turbo boost, loss of power.",
+    "cause": "Stop/start function causing lack of lubrication and overheating in 2013-2014 models, or wastegate actuator failure.",
+    "fix": "Turbocharger was revised four times; final revision part number is 06K 145 722 H. Replace actuator or entire turbocharger.",
+    "warning_signs": [
+      "Loss of power",
+      "Turbo whine or noise",
+      "Whining noises from turbo"
+    ],
+    "inspection_advice": "Check for turbo revisions; listen for unusual turbo noises; verify service history; check for fault codes related to turbo boost.",
+    "mention_count": 3,
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      },
+      {
+        "video_id": "4f1aVIA801g",
+        "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020"
+      },
+      {
+        "video_id": "UaYN_JlMb48",
+        "title": "MK7 Volkswagen GTI - Common Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Affects early 2013-2014 models with stop/start; later revisions improved reliability. Early failure also noted on 2015 cars for smaller TSI engines."
+  },
+  {
+    "issue_id": "rear_main_seal_failure",
+    "label": "Rear main seal oil leak",
+    "label_short": "Rear main seal leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leak from the rear of the engine.",
+    "cause": "Known failure of the standard seal; PCV failure can contribute.",
+    "fix": "Replace the rear main seal, often done with clutch replacement.",
+    "warning_signs": [
+      "Oil leak at rear of engine",
+      "Oil spots under car",
+      "Low oil level"
+    ],
+    "inspection_advice": "Inspect bell housing area for oil residue; check oil level and for leaks.",
+    "mention_count": 2,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Merged PCV-related and standard seal failure descriptions."
+  },
+  {
+    "issue_id": "dq200_dsg_mechatronics_failure",
+    "label": "DQ200 DSG mechatronics failure causing jerkiness",
+    "label_short": "DSG Mechatronics Failure",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Jerky takeoff from stop, hesitation when shifting, rough behavior when cold, or generally jerky shifts.",
+    "cause": null,
+    "fix": "Gearbox service required.",
+    "warning_signs": [
+      "Jerky shifts",
+      "Hesitation when cold"
+    ],
+    "inspection_advice": "Test drive from cold, check for smooth takeoff and shifts.",
+    "mention_count": 2,
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from 'dsg_gearbox_jerkiness' and 'dq200_dsg_mechatronics_failure' as same core issue."
+  },
+  {
+    "issue_id": "plastic_oil_pan_cracking",
+    "label": "Plastic oil pan cracking and degradation",
+    "label_short": "Oil pan crack",
+    "system_component": "engine",
+    "issue_type": "structural",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil pan cracks easily or becomes brittle with age, leading to oil leaks.",
+    "cause": "Vulnerable plastic construction and material aging.",
+    "fix": "Replace with new oil pan if it cracks or warps.",
+    "warning_signs": [
+      "Oil spots under car",
+      "Low oil level warnings"
+    ],
+    "inspection_advice": "Inspect oil pan for cracks, warping, or signs of oil seepage.",
+    "mention_count": 2,
+    "source_videos": [
+      {
+        "video_id": "2X5bj2gX5z4",
+        "title": "Common Problems of VW MK7 GTI"
+      },
+      {
+        "video_id": "xiaRO3CEkjs",
+        "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Merged from two sources; one specified 2.0_TSI and 1.8_TSI, but 'all' is used as the widest scope."
+  },
+  {
+    "issue_id": "turbocharger_failure_early",
+    "label": "Early turbocharger failure on pre-2015 models",
+    "label_short": "Turbo failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Turbocharger failure, more common on pre-2014/15 cars, can lead to loss of power and unusual noises.",
+    "cause": null,
+    "fix": "Replace turbocharger; dealership replacement under warranty for stock vehicles.",
+    "warning_signs": [
+      "Loss of power",
+      "Excessive smoke from exhaust",
+      "Unusual turbo noises"
+    ],
+    "inspection_advice": "Check for turbo shaft play, signs of oil leakage around turbo, and listen for turbo whine.",
+    "mention_count": 2,
+    "source_videos": [
+      {
+        "video_id": "2X5bj2gX5z4",
+        "title": "Common Problems of VW MK7 GTI"
+      },
+      {
+        "video_id": "xiaRO3CEkjs",
+        "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged two entries on turbo failure; combined symptoms, fixes, and affected engines."
+  },
+  {
+    "issue_id": "intake_valve_carbon_buildup",
+    "label": "Intake valve carbon buildup on direct injection engines",
+    "label_short": "Carbon buildup",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": "160k-190k km",
+    "symptom": "Performance loss, misfires, especially on cold startup.",
+    "cause": "Direct injection design allows carbon accumulation on intake valves.",
+    "fix": "Perform a carbon cleaning service (e.g., walnut blasting).",
+    "warning_signs": [
+      "Rough idle",
+      "Loss of power",
+      "Check engine light for misfires"
+    ],
+    "inspection_advice": "Consider a borescope inspection of intake valves on higher-mileage examples.",
+    "mention_count": 2,
+    "source_videos": [
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights"
+      },
+      {
+        "video_id": "bBnY69Fzf1I",
+        "title": "MK7 GTI Long Term Ownership Review"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Common issue across many direct-injection VW/Audi engines."
+  },
+  {
+    "issue_id": "electronic_handbrake_actuator_failure",
+    "label": "Electronic handbrake actuator failure",
+    "label_short": "Handbrake actuator",
+    "system_component": "brakes",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Electronic handbrake may become noisy or fail to operate correctly.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Noisy operation",
+      "Intermittent failure"
+    ],
+    "inspection_advice": "Test handbrake operation and listen for unusual noises.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "0mbw1oDtRC0",
+        "title": "VW Golf Mk7 - Still a great car 10 years later?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "modern_emissions_system_reliability",
+    "label": "Emissions system reliability issues",
+    "label_short": "Emissions system",
+    "system_component": "exhaust",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Increased unreliability due to complex emissions control systems.",
+    "cause": "Added components for emissions compliance",
+    "fix": null,
+    "warning_signs": [
+      "Check engine light",
+      "Reduced performance"
+    ],
+    "inspection_advice": "Check for fault codes related to emissions systems.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "0mbw1oDtRC0",
+        "title": "VW Golf Mk7 - Still a great car 10 years later?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "carpet_stain_retention",
+    "label": "Carpet difficult to clean",
+    "label_short": "Carpet stains",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Spills are hard to remove from the interior carpet material.",
+    "cause": "Carpet material design",
+    "fix": null,
+    "warning_signs": [
+      "Visible stains",
+      "Discoloration"
+    ],
+    "inspection_advice": "Inspect interior carpets for stains and wear.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "0mbw1oDtRC0",
+        "title": "VW Golf Mk7 - Still a great car 10 years later?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "sunroof_seal_misalignment",
+    "label": "Sunroof seal misalignment or undersized",
+    "label_short": "Sunroof leak",
+    "system_component": "body",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Potential water leaks around the sunroof.",
+    "cause": "Seal wrongly fitted or inadequately sized part from factory.",
+    "fix": "Service bulletins and recalls issued; check seal on used examples.",
+    "warning_signs": [
+      "Water stains",
+      "Damp interior"
+    ],
+    "inspection_advice": "Check for water marks around sunroof and headliner.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "washer_fluid_sensor_failure",
+    "label": "Washer fluid sensor failure",
+    "label_short": "Washer sensor",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Engine management light for washer fluid or sensor rattle.",
+    "cause": "Sensor design susceptible to failure if wrong fluid used.",
+    "fix": null,
+    "warning_signs": [
+      "Warning light",
+      "Rattling noise"
+    ],
+    "inspection_advice": "Check for washer fluid warnings and listen for rattles.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "blower_motor_failure",
+    "label": "HVAC blower motor failure",
+    "label_short": "Blower motor",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Poor heater performance or weak fan speed on all settings.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Weak airflow",
+      "Unusual noises"
+    ],
+    "inspection_advice": "Test all fan speeds and listen for motor noise.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "ac_solenoid_valve_failure",
+    "label": "Air conditioning solenoid valve failure",
+    "label_short": "AC valve",
+    "system_component": "cooling",
+    "issue_type": "sensor_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Poor air conditioning performance with noise from engine bay.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Weak AC",
+      "Unusual engine bay noise"
+    ],
+    "inspection_advice": "Test AC performance and listen for abnormal noises.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "subframe_bolt_failure",
+    "label": "Front subframe bolt failure",
+    "label_short": "Subframe bolts",
+    "system_component": "suspension",
+    "issue_type": "structural",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Clunking sound from front end not caused by worn dampers or bushings.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Front end clunking",
+      "Loose feeling"
+    ],
+    "inspection_advice": "Inspect front subframe bolts for tightness and wear.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "bonnet_release_cable_breakage",
+    "label": "Bonnet release cable breakage",
+    "label_short": "Bonnet cable",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Broken bonnet release cable.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Difficulty opening bonnet",
+      "Cable slack"
+    ],
+    "inspection_advice": "Test bonnet release mechanism for smooth operation.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "plastic_oil_pan_plug_leak",
+    "label": "Plastic oil pan drain plug leak",
+    "label_short": "Oil plug leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leaks from the oil pan.",
+    "cause": "Plastic drain plug not replaced after oil change and reused.",
+    "fix": "Replace plastic drain plug after every oil change.",
+    "warning_signs": [
+      "Oil spots under car",
+      "Low oil level"
+    ],
+    "inspection_advice": "Inspect oil pan and drain plug for leaks and wear.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "carbon_buildup_on_intake_valves",
+    "label": "Carbon buildup on intake valves from direct injection",
+    "label_short": "Carbon buildup",
+    "system_component": "engine",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": "60000 miles",
+    "symptom": "Reduced engine performance or efficiency.",
+    "cause": "Side effect of the direct injection system.",
+    "fix": "Manual cleaning of valves recommended approximately every 60,000 miles.",
+    "warning_signs": [
+      "Reduced power",
+      "Poor fuel economy"
+    ],
+    "inspection_advice": "Check service history for valve cleaning.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "turbocharger_seal_failure_702n",
+    "label": "Turbocharger seal failure on 702N unit",
+    "label_short": "Turbo seal failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Turbocharger failure.",
+    "cause": "Weak seal from turbo to manifold on 06K 145 702N turbo unit.",
+    "fix": "Updated turbo unit (ending 722) fitted from factory or as replacement.",
+    "warning_signs": [
+      "Turbo failure symptoms",
+      "Loss of boost"
+    ],
+    "inspection_advice": "Check turbo unit part number if possible.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "ignition_coil_pack_failure",
+    "label": "Ignition coil pack failure causing misfire",
+    "label_short": "Coil pack failure",
+    "system_component": "engine",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Engine misfire codes (P0300-P0304), poor running, rough idle.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Check engine light",
+      "Rough idle",
+      "Misfire"
+    ],
+    "inspection_advice": "Scan for stored misfire codes.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "evap_fuel_tank_pump_recall_20y6",
+    "label": "EVAP system fuel tank pump recall 20Y6",
+    "label_short": "EVAP pump recall",
+    "system_component": "fuel",
+    "issue_type": "sensor_fault",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Clogged charcoal canister.",
+    "cause": "Faulty pump in fuel tank for EVAP system.",
+    "fix": "Recall 20Y6 to replace the pump.",
+    "warning_signs": [
+      "EVAP system codes",
+      "Fuel smell"
+    ],
+    "inspection_advice": "Check recall status with VIN.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5XND3jWg3sc",
+        "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Official recall exists."
+  },
+  {
+    "issue_id": "engine_oil_seal_leaks",
+    "label": "Oil cap and drain plug seal leaks",
+    "label_short": "Oil seal leaks",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil mist/residue around oil cap; oil leak from drain plug area.",
+    "cause": "Imperfect seal on original oil cap; drain plug reused too many times.",
+    "fix": "Install updated oil cap; replace drain plug with each oil change.",
+    "warning_signs": [
+      "Oil residue on engine",
+      "Oil spots under car"
+    ],
+    "inspection_advice": "Inspect oil cap and drain plug area for leaks.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "zoSbJVeqdnQ",
+        "title": "Finding Problems on a Used MK7 | Inspection Video"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged oil cap and drain plug leak issues as minor engine oil leaks."
+  },
+  {
+    "issue_id": "rear_shock_absorber_knocking",
+    "label": "Rear suspension knocking noise under 30mph",
+    "label_short": "Rear shock knocking",
+    "system_component": "suspension",
+    "issue_type": "noise",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Knocking and rattling noise from the rear suspension, especially under 30mph.",
+    "cause": "Faulty standard Sachs shock absorbers in early models.",
+    "fix": "Replace with Bilstein shock absorbers (part number BLS19-230559).",
+    "warning_signs": [
+      "Knocking from rear over bumps"
+    ],
+    "inspection_advice": "Test drive at low speed over bumps; check for rear suspension noise.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": null
+  },
+  {
+    "issue_id": "excessive_oil_consumption",
+    "label": "Excessive oil consumption from scraper rings or valve guides",
+    "label_short": "Oil consumption",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": "100k-200k km",
+    "symptom": "Engine consumes excessive amounts of oil.",
+    "cause": "Bad design of oil scraper rings with small holes that clog with carbon or faulty valve guides in the cylinder head.",
+    "fix": "Engine repair, potentially piston/ring replacement, or fixed under warranty by VW for valve guides.",
+    "warning_signs": [
+      "Frequent need to top up oil",
+      "Blue exhaust smoke"
+    ],
+    "inspection_advice": "Check oil level history and for signs of oil leaks or smoke.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "4f1aVIA801g",
+        "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from two related oil consumption issues (scraper rings and valve guides)."
+  },
+  {
+    "issue_id": "carbon_buildup_direct_injection",
+    "label": "Carbon buildup on intake valves in direct injection engines",
+    "label_short": "Carbon buildup",
+    "system_component": "engine",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Reduced engine performance, rough idle.",
+    "cause": "Carbon buildup in markets where the engine only has direct injection.",
+    "fix": null,
+    "warning_signs": [
+      "Rough idle",
+      "Reduced power",
+      "Poor fuel economy"
+    ],
+    "inspection_advice": "Consider walnut blasting cleaning if symptoms present; check maintenance records.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Common in direct injection engines without port fuel injection."
+  },
+  {
+    "issue_id": "coolant_housing_leak",
+    "label": "Thermostat/water pump housing coolant leak",
+    "label_short": "Coolant leak",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.8_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Coolant loss, low coolant warning.",
+    "cause": "Leaking housing design.",
+    "fix": "Replace housing with latest revised part.",
+    "warning_signs": [
+      "Low coolant warning light",
+      "Puddles under car"
+    ],
+    "inspection_advice": "Check coolant level and for signs of leaks around the thermostat housing.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "4f1aVIA801g",
+        "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "takata_airbag_recall",
+    "label": "Takata airbag inflator rupture risk recall",
+    "label_short": "Airbag recall",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Airbag may deploy dangerously, potentially causing injury.",
+    "cause": "Airbag inflator absorbs moisture, creating excessive pressure and risk of metal fragment projection.",
+    "fix": "Recall campaign 69Q7 for replacement.",
+    "warning_signs": [
+      "Recall notice",
+      "Airbag warning light"
+    ],
+    "inspection_advice": "Verify recall status with VIN; check for completed airbag replacement.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Critical safety recall; ensure compliance before purchase."
+  },
+  {
+    "issue_id": "subframe_bolt_failure",
+    "label": "Subframe bolt failure",
+    "label_short": "Subframe bolts",
+    "system_component": "suspension",
+    "issue_type": "structural",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Potential suspension noise or looseness.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Clunking from front suspension",
+      "Loose handling"
+    ],
+    "inspection_advice": "Inspect subframe bolts for tightness; check for recalls or service bulletins.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Cause not specified; may be related to torque or material issues."
+  },
+  {
+    "issue_id": "bonnet_mechanism_failure",
+    "label": "Bonnet mechanism or cable failure",
+    "label_short": "Bonnet mechanism",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Difficulty opening or securing the bonnet.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Stiff bonnet release",
+      "Bonnet not latching securely"
+    ],
+    "inspection_advice": "Operate bonnet release multiple times; ensure secure latch.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Safety concern; ensure proper operation to prevent bonnet opening while driving."
+  },
+  {
+    "issue_id": "washer_fluid_sensor_failure",
+    "label": "Washer fluid sensor malfunction",
+    "label_short": "Washer sensor fault",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Washer fluid level warning malfunction.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "False washer fluid warnings"
+    ],
+    "inspection_advice": "Test washer fluid warning with fluid levels; check for sensor errors.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Minor electrical fault; cause not detailed."
+  },
+  {
+    "issue_id": "parcel_shelf_clip_failure",
+    "label": "Parcel shelf retaining clip failure",
+    "label_short": "Parcel shelf clips",
+    "system_component": "body",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Parcel shelf does not stay in place.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Parcel shelf rattles or falls"
+    ],
+    "inspection_advice": "Test parcel shelf retention; check clips for damage.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Minor trim issue; common wear item."
+  },
+  {
+    "issue_id": "timing_chain_stretch_rattle",
+    "label": "Timing chain stretch and rattle",
+    "label_short": "Timing chain rattle",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "A rattling noise comes from the engine.",
+    "cause": "Timing chain stretch.",
+    "fix": null,
+    "warning_signs": [
+      "Rattling noise from engine"
+    ],
+    "inspection_advice": "Listen for rattling from the engine on startup or idle.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "fuel_system_failures",
+    "label": "Fuel pump failure or injector stuck open",
+    "label_short": "Fuel system failure",
+    "system_component": "fuel",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Fuel pump fails causing car to die, or injector stuck open flooding engine causing no-start.",
+    "cause": "Improper plating in fuel pump, or injector mechanical failure.",
+    "fix": "Replace faulty component; fuel pump may have warranty/recall.",
+    "warning_signs": [
+      "Engine dying",
+      "No-start condition",
+      "Fuel smell"
+    ],
+    "inspection_advice": "Check service history for fuel pump recalls or replacements.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "UaYN_JlMb48",
+        "title": "MK7 Volkswagen GTI - Common Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from two raw issues: fuel pump failure and fuel injector stuck open."
+  },
+  {
+    "issue_id": "crank_walk_manual",
+    "label": "Crankshaft thrust bearing failure (crank walk)",
+    "label_short": "Crank walk",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Catastrophic engine failure, potentially preceded by unusual noises.",
+    "cause": "Undersized thrust bearings allowing excessive crankshaft play.",
+    "fix": "Engine repair or replacement.",
+    "warning_signs": [
+      "Unusual engine noises",
+      "Clutch pedal issues"
+    ],
+    "inspection_advice": "Check for excessive crankshaft end play if possible; listen for abnormal noises.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "4f1aVIA801g",
+        "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "air_conditioning_failure",
+    "label": "Air conditioning refrigerant leak or compressor failure",
+    "label_short": "AC failure",
+    "system_component": "cooling",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Air conditioning does not blow cold air.",
+    "cause": "Refrigerant leaks or compressor failure.",
+    "fix": null,
+    "warning_signs": [
+      "AC not blowing cold air"
+    ],
+    "inspection_advice": "Test air conditioning for cold air output.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from two raw issues: refrigerant leak and compressor failure."
+  },
+  {
+    "issue_id": "rear_main_seal_leak",
+    "label": "Engine rear main seal oil leak",
+    "label_short": "Oil leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.8_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leak from between engine and transmission.",
+    "cause": null,
+    "fix": "Seal replacement.",
+    "warning_signs": [
+      "Oil spots under car",
+      "Low oil level"
+    ],
+    "inspection_advice": "Inspect area between engine and transmission for oil residue.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "4f1aVIA801g",
+        "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "thermostat_water_pump_coolant_leak",
+    "label": "Thermostat housing or water pump coolant leak",
+    "label_short": "Coolant leak",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Coolant leak from thermostat housing or water pump, leading to low coolant level and smell.",
+    "cause": null,
+    "fix": "Replace the housing/water pump assembly.",
+    "warning_signs": [
+      "Low coolant level",
+      "Coolant smell"
+    ],
+    "inspection_advice": "Check for coolant residue around thermostat housing and water pump.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "UaYN_JlMb48",
+        "title": "MK7 Volkswagen GTI - Common Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "stuck_ignition_coils",
+    "label": "Ignition coils stuck in cylinder head",
+    "label_short": "Stuck coils",
+    "system_component": "engine",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.8_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Coils break when attempting removal for spark plug service.",
+    "cause": null,
+    "fix": "Careful removal, potential head repair if broken.",
+    "warning_signs": [
+      "Misfires",
+      "Difficulty removing coils"
+    ],
+    "inspection_advice": "Ask about spark plug service history; attempt gentle coil removal if possible.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "4f1aVIA801g",
+        "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "timing_cover_oil_leak",
+    "label": "Upper timing chain cover oil leak",
+    "label_short": "Timing cover leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.8_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leak from top front of engine.",
+    "cause": null,
+    "fix": "Reseal or replace cover.",
+    "warning_signs": [
+      "Oil residue on top front of engine"
+    ],
+    "inspection_advice": "Inspect upper timing cover area for oil leaks.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "4f1aVIA801g",
+        "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "blocked_drainage_channels_leak",
+    "label": "Blocked drainage channels causing water leak",
+    "label_short": "Drain blockage leak",
+    "system_component": "body",
+    "issue_type": "fluid_leak",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Water leaks into the cabin or trunk area.",
+    "cause": "Drainage channels become blocked.",
+    "fix": "Clear the blocked drainage channels.",
+    "warning_signs": [
+      "Damp interior",
+      "Water in footwells or trunk"
+    ],
+    "inspection_advice": "Check for dampness in cabin and trunk, inspect sunroof and door drain channels.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "wiper_smear",
+    "label": "Driver's side wiper smears windscreen",
+    "label_short": "Wiper smear",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The driver's side wiper can smear the windscreen when it rains.",
+    "cause": null,
+    "fix": "Switching the original wiper for a Bosch alternative.",
+    "warning_signs": [
+      "Poor visibility in rain",
+      "Streaking on windshield"
+    ],
+    "inspection_advice": "Test wipers in rain or with washer fluid.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "TPoLnxbsqUE",
+        "title": "Volkswagen Golf Mk7 used review: the best Golf EVER?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": null
+  },
+  {
+    "issue_id": "cooling_system_leaks",
+    "label": "Water pump or thermostat housing coolant leaks",
+    "label_short": "Coolant Leaks",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Slowly dripping coolant, dropping coolant level, sweet smell under hood, or moisture around engine.",
+    "cause": null,
+    "fix": "Replacement with updated parts.",
+    "warning_signs": [
+      "Coolant level drop",
+      "Sweet smell"
+    ],
+    "inspection_advice": "Check for coolant residue around water pump and thermostat housing.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "front_suspension_clunk",
+    "label": "Front suspension thumping or clunking noise",
+    "label_short": "Front Suspension Clunk",
+    "system_component": "suspension",
+    "issue_type": "noise",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Thumping or clunking noise from the front suspension.",
+    "cause": "Worn tie wishbone bushings, strut bearings, or anti-roll bar drop links.",
+    "fix": null,
+    "warning_signs": [
+      "Clunking over bumps"
+    ],
+    "inspection_advice": "Listen for clunks over bumps, check bushings and drop links for wear.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "rear_suspension_bushing_premature_wear",
+    "label": "Premature rear suspension bushing wear",
+    "label_short": "Rear Bushing Wear",
+    "system_component": "suspension",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Knocking noises over bumps or vague handling at higher speeds.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Knocking from rear",
+      "Vague handling"
+    ],
+    "inspection_advice": "Check rear suspension bushings for cracking or play.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "cracked_fuel_filter_valve",
+    "label": "Cracked diesel fuel filter valve leak",
+    "label_short": "Fuel Filter Leak",
+    "system_component": "fuel",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Smell of diesel in the engine bay.",
+    "cause": "Cracked fuel filter valve.",
+    "fix": "Replace the cracked fuel filter valve.",
+    "warning_signs": [
+      "Diesel smell"
+    ],
+    "inspection_advice": "Inspect fuel filter housing for cracks or leaks.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "manual_clutch_flywheel_pulsation",
+    "label": "Manual clutch or flywheel pulsation",
+    "label_short": "Clutch Pulsation",
+    "system_component": "gearbox",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI",
+      "2.0_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Pulsation felt through the clutch pedal when depressed with engine running.",
+    "cause": null,
+    "fix": "Replace clutch or flywheel.",
+    "warning_signs": [
+      "Pulsating clutch pedal"
+    ],
+    "inspection_advice": "Feel for vibration/pulsation in clutch pedal with engine running.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "sunroof_rattle_and_leak",
+    "label": "Sunroof rattle and water leaks",
+    "label_short": "Sunroof issues",
+    "system_component": "body",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Sunroof rattles and can leak water into the cabin during rain.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Rattling from sunroof",
+      "Water ingress during rain"
+    ],
+    "inspection_advice": "Operate sunroof, check for rattles and signs of water staining on headliner.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "UaYN_JlMb48",
+        "title": "MK7 Volkswagen GTI - Common Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "washer_fluid_sensor_failure",
+    "label": "Washer fluid sensor failure",
+    "label_short": "Washer sensor fault",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Windshield washer fluid level sensor fails.",
+    "cause": "Use of certain types of washer fluid, specifically orange Rain-X, is reported to cause failure.",
+    "fix": "Use normal washer fluid to avoid the issue.",
+    "warning_signs": [
+      "False washer fluid warning"
+    ],
+    "inspection_advice": "Check washer fluid warning light operation.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "UaYN_JlMb48",
+        "title": "MK7 Volkswagen GTI - Common Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "start_stop_button_flaking",
+    "label": "Start/stop button finish flakes off",
+    "label_short": "Button finish flakes",
+    "system_component": "body",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Metal finish on the start/stop button peels or flakes off.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Flaking finish on start/stop button"
+    ],
+    "inspection_advice": "Inspect start/stop button for finish wear.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "UaYN_JlMb48",
+        "title": "MK7 Volkswagen GTI - Common Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "electronic_handbrake_sticky",
+    "label": "Electronic handbrake becomes sticky",
+    "label_short": "Sticky Handbrake",
+    "system_component": "brakes",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Electronic parking brake becomes sticky with age.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Handbrake slow to engage/release"
+    ],
+    "inspection_advice": "Test electronic handbrake engagement and release.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "oil_scraper_ring_clogging",
+    "label": "Excessive oil consumption from clogged piston rings",
+    "label_short": "Oil consumption",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": "200k+ km",
+    "symptom": "Excessive oil consumption, up to 1 liter per 1000 km.",
+    "cause": "Clogged oil scraper rings on pistons.",
+    "fix": "Engine disassembly and piston ring replacement.",
+    "warning_signs": [
+      "Frequent need to top up oil",
+      "Blue smoke from exhaust"
+    ],
+    "inspection_advice": "Check oil level and consumption history; inspect for exhaust smoke.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ce2WTs_uBos",
+        "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Common in higher mileage diesel engines."
+  },
+  {
+    "issue_id": "clutch_premature_wear",
+    "label": "Premature clutch wear on manual transmissions",
+    "label_short": "Clutch wear",
+    "system_component": "gearbox",
+    "issue_type": "wear_item",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Clutch wears out prematurely, even without hard driving.",
+    "cause": "Clutch not built for the job.",
+    "fix": "Replace the clutch.",
+    "warning_signs": [
+      "Slipping clutch",
+      "Difficulty engaging gears"
+    ],
+    "inspection_advice": "Test clutch engagement and feel for slipping during acceleration.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Specific to manual transmissions with 2.0 TSI engines."
+  },
+  {
+    "issue_id": "cooling_system_thermostat_leak",
+    "label": "Thermostat coolant leak causing low coolant",
+    "label_short": "Thermostat leak",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Coolant level drops abnormally low due to a leak.",
+    "cause": "Thermostat tends to have an issue.",
+    "fix": "Replace the thermostat, costing approximately 700-900 GBP.",
+    "warning_signs": [
+      "Low coolant warning",
+      "Coolant puddles under car"
+    ],
+    "inspection_advice": "Check coolant level and inspect for leaks around thermostat housing.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Cost estimate provided in GBP."
+  },
+  {
+    "issue_id": "faulty_battery_batch",
+    "label": "Premature battery failure from faulty batch",
+    "label_short": "Battery failure",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Battery fails prematurely.",
+    "cause": "A dodgy set of batteries were fitted to a load of vehicles.",
+    "fix": "Replace the battery, costing approximately 300 GBP fitted.",
+    "warning_signs": [
+      "Slow cranking",
+      "Electrical glitches",
+      "Battery warning light"
+    ],
+    "inspection_advice": "Check battery age and test voltage/cranking performance.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Attributed to a specific batch of faulty batteries."
+  },
+  {
+    "issue_id": "front_radar_assist_failure",
+    "label": "Front radar sensor failure for assist systems",
+    "label_short": "Radar sensor failure",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Radar sensor for cruise control and auto braking fails.",
+    "cause": null,
+    "fix": "Expensive to fix.",
+    "warning_signs": [
+      "ACC or front assist warnings",
+      "System unavailable messages"
+    ],
+    "inspection_advice": "Test adaptive cruise control and front assist functions if equipped.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "low",
+    "notes": "Cause and specific fix cost not detailed."
+  },
+  {
+    "issue_id": "fifth_door_seal_leak",
+    "label": "Fifth door seal leaks causing water ingress",
+    "label_short": "Hatch seal leak",
+    "system_component": "body",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Water leaks from the fifth door (hatchback) due to seal failure.",
+    "cause": "Seals can break.",
+    "fix": "Replace the door seals.",
+    "warning_signs": [
+      "Dampness in cargo area",
+      "Water stains"
+    ],
+    "inspection_advice": "Check for moisture or water marks around hatch seal and in spare wheel well.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "panoramic_roof_rattle_leak",
+    "label": "Panoramic roof rattles and water leaks",
+    "label_short": "Roof Rattle/Leak",
+    "system_component": "body",
+    "issue_type": "noise",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rattling noises on uneven roads, water leaks after heavy rain, or clogged drainage channels.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Rattling roof",
+      "Water stains"
+    ],
+    "inspection_advice": "Check headliner for water marks, test roof operation, listen for rattles.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "early_15_tsi_cold_start_hesitation",
+    "label": "Early 1.5 TSI cold start hesitation",
+    "label_short": "Cold Start Hesitation",
+    "system_component": "engine",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Hesitation or kangarooing when trying to pull away gently, especially when cold.",
+    "cause": null,
+    "fix": "Software updates in later years.",
+    "warning_signs": [
+      "Hesitation when cold"
+    ],
+    "inspection_advice": "Test drive from cold, gentle acceleration.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "heated_mirror_glass_crack",
+    "label": "Heated mirror glass cracks and falls off",
+    "label_short": "Mirror glass crack",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Mirror glass cracks and falls off.",
+    "cause": "Using the heated mirror function too much causes the glass to crack.",
+    "fix": "Replace the mirror glass.",
+    "warning_signs": [
+      "Cracks in mirror glass",
+      "Loose or detached glass"
+    ],
+    "inspection_advice": "Inspect mirror glass for cracks and ensure heating function works.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Attributed to overuse of heated mirror function."
+  },
+  {
+    "issue_id": "rear_wiper_squeak",
+    "label": "Rear wiper persistent squeaking noise",
+    "label_short": "Rear wiper squeak",
+    "system_component": "body",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rear wiper makes a persistent squeaking noise during operation.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Squeaking sound when rear wiper operates"
+    ],
+    "inspection_advice": "Operate rear wiper during test drive to check for noise.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "low",
+    "notes": "Cause and fix not specified in source."
+  },
+  {
+    "issue_id": "switchable_water_pump_sticking",
+    "label": "Water pump sticking closed causing overheating",
+    "label_short": "Water pump sticking",
+    "system_component": "cooling",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Engine overheating due to lack of coolant circulation.",
+    "cause": "Switchable water pump cover gets stuck in the closed position.",
+    "fix": "Replace the water pump.",
+    "warning_signs": [
+      "Overheating gauge",
+      "Coolant temperature warnings"
+    ],
+    "inspection_advice": "Check for overheating history and coolant circulation issues.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ce2WTs_uBos",
+        "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Affects diesel engines with switchable water pumps."
+  },
+  {
+    "issue_id": "coolant_degradation_clogging",
+    "label": "Degraded coolant clogging heater core and system",
+    "label_short": "Coolant degradation clogging",
+    "system_component": "cooling",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Overheating issues and clogged heater core.",
+    "cause": "Coolant degrades, forming deposits that clog the system.",
+    "fix": "Complete coolant system flush and refill with correct coolant.",
+    "warning_signs": [
+      "Poor heater performance",
+      "Overheating",
+      "Discolored coolant"
+    ],
+    "inspection_advice": "Inspect coolant condition and check heater output.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ce2WTs_uBos",
+        "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": "Preventable with regular coolant changes."
+  },
+  {
+    "issue_id": "timing_belt_tensioner_premature_failure",
+    "label": "Timing belt tensioner fails early",
+    "label_short": "Timing belt tensioner",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": "before 150k km",
+    "symptom": "Strange hissing, chirping, or squeaking noises from the timing belt area after cold start.",
+    "cause": "Premature failure of the timing belt tensioner.",
+    "fix": "Replace the timing belt tensioner (and belt).",
+    "warning_signs": [
+      "Hissing or chirping noise after cold start"
+    ],
+    "inspection_advice": "Listen for unusual noises from timing belt cover on cold start.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ce2WTs_uBos",
+        "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "oil_pump_belt_disintegration",
+    "label": "Oil pump belt clogs oil strainer",
+    "label_short": "Oil pump belt",
+    "system_component": "engine",
+    "issue_type": "wear_item",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Reduced oil pressure as belt particles clog the oil strainer.",
+    "cause": "Rubber oil pump drive belt slowly disintegrates over time.",
+    "fix": "Replace the oil pump drive belt.",
+    "warning_signs": [
+      "Low oil pressure warning"
+    ],
+    "inspection_advice": "Check service history for oil pump belt replacement.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ce2WTs_uBos",
+        "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "front_crankshaft_seal_leak",
+    "label": "Front crankshaft seal oil leak",
+    "label_short": "Crankshaft seal leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leak from the front of the engine on the timing belt side.",
+    "cause": null,
+    "fix": "Replace the front crankshaft seal.",
+    "warning_signs": [
+      "Oil spots under front of engine"
+    ],
+    "inspection_advice": "Inspect timing belt area for oil residue.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ce2WTs_uBos",
+        "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "thermostat_housing_coolant_leak",
+    "label": "Thermostat housing coolant leak",
+    "label_short": "Thermostat leak",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Coolant puddle forms under the car overnight.",
+    "cause": "Housing leaks from bottom flange and takeoff points.",
+    "fix": "Replace with superseded VW thermostat housing part.",
+    "warning_signs": [
+      "Coolant puddle under car",
+      "Low coolant level"
+    ],
+    "inspection_advice": "Check for coolant residue around thermostat housing.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "rdQqxKgBEWg",
+        "title": "Two BIG Problems The Volkswagen Golf 7.5 R Has!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "dsg_gearbox_seal_cap_leak",
+    "label": "DSG gearbox seal cap oil leak",
+    "label_short": "DSG seal leak",
+    "system_component": "gearbox",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": "60k km",
+    "symptom": "Gearbox is wet with oil underneath the car.",
+    "cause": "Rubberized sealing caps on gearbox casing fail.",
+    "fix": "Replace caps with aftermarket L-ring seals and perform DSG oil change.",
+    "warning_signs": [
+      "Oil wetness on gearbox casing"
+    ],
+    "inspection_advice": "Inspect DSG gearbox for oil leaks, especially around seals.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "rdQqxKgBEWg",
+        "title": "Two BIG Problems The Volkswagen Golf 7.5 R Has!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "dsg_clunky_low_speed",
+    "label": "DSG clunky low-speed behavior",
+    "label_short": "DSG clunkiness",
+    "system_component": "gearbox",
+    "issue_type": "intermittent_fault",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Gearbox is clunky and jittery with hesitation during low-speed maneuvers like coming out of reverse or a driveway.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Hesitation or jerkiness at low speed"
+    ],
+    "inspection_advice": "Test drive with low-speed maneuvers to assess gearbox behavior.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uWlJroGaFS0",
+        "title": "Volkswagen Golf GTI, is the go-to hot hatch still any good? | ReDriven VW Golf GTI (Mk7/7.5) review."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "interior_water_leaks",
+    "label": "Interior water leaks",
+    "label_short": "Interior leaks",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Interiors are known to leak water.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Damp carpets or musty smell"
+    ],
+    "inspection_advice": "Check interior carpets and footwells for moisture or mold.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uWlJroGaFS0",
+        "title": "Volkswagen Golf GTI, is the go-to hot hatch still any good? | ReDriven VW Golf GTI (Mk7/7.5) review."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "low",
+    "notes": "Symptom description is vague; more specific details needed."
+  },
+  {
+    "issue_id": "engine_catastrophic_failure",
+    "label": "Engine catastrophic failure",
+    "label_short": "Engine failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "low",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Engines imploding with catastrophic and hugely expensive failures are becoming almost common.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Unusual engine noises, loss of power"
+    ],
+    "inspection_advice": "Obtain comprehensive service history and consider pre-purchase inspection.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uWlJroGaFS0",
+        "title": "Volkswagen Golf GTI, is the go-to hot hatch still any good? | ReDriven VW Golf GTI (Mk7/7.5) review."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "low",
+    "notes": "Vague description; no specific cause or fix provided."
+  },
+  {
+    "issue_id": "cabin_blower_control_unit_failure",
+    "label": "Cabin blower control unit software failure",
+    "label_short": "Blower control fault",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "No airflow from vents or intermittent blower operation.",
+    "cause": "Blower control unit software fault.",
+    "fix": "Diagnose with OBD code B10B; likely requires control unit update or replacement.",
+    "warning_signs": [
+      "Intermittent or no airflow from vents"
+    ],
+    "inspection_advice": "Test all fan speeds and check for OBD code B10B.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "turbo_actuator_valve_malfunction",
+    "label": "Turbo actuator valve malfunction",
+    "label_short": "Turbo actuator fault",
+    "system_component": "engine",
+    "issue_type": "sensor_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Harsh handling, sluggishness, and unpredictable idle.",
+    "cause": "Carbon deposits or component failure.",
+    "fix": "Clean or replace the turbo actuator valve.",
+    "warning_signs": [
+      "Sluggish acceleration, rough idle"
+    ],
+    "inspection_advice": "Check for turbo-related fault codes and inspect actuator.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "front_suspension_squeak",
+    "label": "Front suspension squeaking noise",
+    "label_short": "Suspension squeak",
+    "system_component": "suspension",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Squeaking noise from front suspension, especially with windows down.",
+    "cause": "Worn strut mounts, bearings, or bushings.",
+    "fix": "Inspect and replace worn suspension components like strut mounts or control arm bushings.",
+    "warning_signs": [
+      "Squeaking noise over bumps"
+    ],
+    "inspection_advice": "Listen for squeaks during test drive, inspect suspension bushings and mounts.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "ac_compressor_solenoid_valve_defect",
+    "label": "AC compressor solenoid valve defect",
+    "label_short": "AC solenoid defect",
+    "system_component": "cooling",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Intrusive noise from under engine when AC is turned on.",
+    "cause": "Defective solenoid valve in the AC compressor.",
+    "fix": "Replace the faulty solenoid valve in the AC compressor.",
+    "warning_signs": [
+      "Loud noise with AC on"
+    ],
+    "inspection_advice": "Test AC operation and listen for unusual compressor noise.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "camshaft_pulley_nut_loosening",
+    "label": "Camshaft pulley nut loosening",
+    "label_short": "Camshaft nut issue",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Potential engine failure due to camshaft pulley breakage.",
+    "cause": "Unsecured camshaft adjustment nuts.",
+    "fix": "Recall for inspection and securing/replacement of nuts.",
+    "warning_signs": [
+      "Engine noise, potential catastrophic failure"
+    ],
+    "inspection_advice": "Check service history for recall completion.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "fuel_rail_leak",
+    "label": "Fuel rail leak",
+    "label_short": "Fuel rail leak",
+    "system_component": "fuel",
+    "issue_type": "fluid_leak",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Gasoline leak from the fuel rail.",
+    "cause": "Suspect fuel rail component.",
+    "fix": "Recall for inspection and replacement of the fuel rail.",
+    "warning_signs": [
+      "Gasoline smell, visible fuel leak"
+    ],
+    "inspection_advice": "Inspect fuel rail area for leaks or stains.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "defective_wheel_bearing_housings",
+    "label": "Defective wheel bearing housings",
+    "label_short": "Wheel bearing defect",
+    "system_component": "suspension",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Premature wheel bearing failure or noise.",
+    "cause": "Manufacturing defect in wheel bearing housings.",
+    "fix": "Dealer visit for inspection and replacement.",
+    "warning_signs": [
+      "Humming or grinding noise from wheels"
+    ],
+    "inspection_advice": "Test drive and listen for wheel bearing noise, check service history.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "child_safety_lock_disengagement",
+    "label": "Child safety lock sudden disengagement",
+    "label_short": "Child lock issue",
+    "system_component": "body",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rear child safety locks may disengage unexpectedly.",
+    "cause": "Defective lock mechanism.",
+    "fix": "Recall for inspection and repair of the lock mechanism.",
+    "warning_signs": [
+      "Rear doors open from inside unexpectedly"
+    ],
+    "inspection_advice": "Test rear door child locks function.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "thermostat_housing_water_pump_leak",
+    "label": "Faulty thermostat housing or water pump",
+    "label_short": "Cooling system leak",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Coolant leaks, sometimes with low coolant warnings or puddles under the car.",
+    "cause": null,
+    "fix": "Dealership replacement under warranty.",
+    "warning_signs": [
+      "Low coolant warning, coolant puddles"
+    ],
+    "inspection_advice": "Check coolant level and inspect for leaks around thermostat and water pump.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2X5bj2gX5z4",
+        "title": "Common Problems of VW MK7 GTI"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "sunroof_leak_crack_rattle",
+    "label": "Sunroof leaks, cracks, and rattles",
+    "label_short": "Sunroof issues",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Sunroof leaks water, causes roof cracks, squeaks, rattles, and can damage paint.",
+    "cause": null,
+    "fix": "Dealership repair attempts, but problems often recur.",
+    "warning_signs": [
+      "Water leaks, rattles, roof cracks"
+    ],
+    "inspection_advice": "Inspect sunroof seal, check for water stains, operate sunroof for noise.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2X5bj2gX5z4",
+        "title": "Common Problems of VW MK7 GTI"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "crank_walk",
+    "label": "Crankshaft thrust bearing failure (crank walk)",
+    "label_short": "Crank walk",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI",
+      "1.8_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Catastrophic engine failure due to excessive crankshaft play.",
+    "cause": "Undersized thrust bearings.",
+    "fix": "Replace thrust bearings and potentially rebuild engine.",
+    "warning_signs": [
+      "Unusual engine noise",
+      "Clutch pedal feel changes (manual)",
+      "Excessive crankshaft end play"
+    ],
+    "inspection_advice": "Check for crankshaft end play if possible; listen for abnormal engine noises.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "xiaRO3CEkjs",
+        "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "coolant_leak_thermostat_housing",
+    "label": "Thermostat/water pump housing coolant leak",
+    "label_short": "Coolant leak",
+    "system_component": "cooling",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI",
+      "1.8_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Coolant leak from the thermostat/water pump housing.",
+    "cause": "Faulty housing design (pre-facelift cars).",
+    "fix": "Replace housing with latest revised part.",
+    "warning_signs": [
+      "Coolant puddles under car",
+      "Low coolant warning",
+      "Overheating"
+    ],
+    "inspection_advice": "Inspect thermostat/water pump housing area for coolant residue or leaks.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "xiaRO3CEkjs",
+        "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": null
+  },
+  {
+    "issue_id": "rear_main_seal_leak",
+    "label": "Rear main seal oil leak",
+    "label_short": "Rear seal leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI",
+      "1.8_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leak from the rear of the engine.",
+    "cause": null,
+    "fix": "Replace rear main seal.",
+    "warning_signs": [
+      "Oil spots under engine/transmission junction",
+      "Burning oil smell"
+    ],
+    "inspection_advice": "Check for oil leakage at the rear of the engine, near the transmission bellhousing.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "xiaRO3CEkjs",
+        "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "timing_chain_cover_leak",
+    "label": "Upper timing chain cover oil leak",
+    "label_short": "Timing cover leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI",
+      "1.8_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leak from the upper timing chain cover.",
+    "cause": null,
+    "fix": "Reseal or replace timing chain cover.",
+    "warning_signs": [
+      "Oil seepage on top front of engine",
+      "Minor oil drips"
+    ],
+    "inspection_advice": "Inspect upper timing chain cover area for oil residue.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "xiaRO3CEkjs",
+        "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "vacuum_leaks_aging",
+    "label": "Aging vacuum hose and PCV valve leaks",
+    "label_short": "Vacuum leaks",
+    "system_component": "engine",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI",
+      "1.8_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Vacuum leaks causing performance issues like rough idle or hesitation.",
+    "cause": "Cracked plastic/rubber vacuum hoses or faulty PCV valve.",
+    "fix": "Replace cracked hoses or faulty PCV valve.",
+    "warning_signs": [
+      "Rough idle",
+      "Check Engine Light",
+      "Poor acceleration"
+    ],
+    "inspection_advice": "Inspect vacuum hoses and PCV valve for cracks; check for vacuum leaks with smoke test.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "xiaRO3CEkjs",
+        "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": null
+  },
+  {
+    "issue_id": "fuel_tank_suction_pump_recall",
+    "label": "Fuel tank suction pump recall",
+    "label_short": "Fuel pump recall",
+    "system_component": "fuel",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Potential fire risk due to component accumulation in the fuel system.",
+    "cause": null,
+    "fix": "Dealership recall repair, free of charge.",
+    "warning_signs": [
+      "Fuel system warnings",
+      "Potential fire hazard"
+    ],
+    "inspection_advice": "Verify recall completion with VIN check.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2X5bj2gX5z4",
+        "title": "Common Problems of VW MK7 GTI"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "washer_fluid_sensor_fouling",
+    "label": "Windshield washer fluid sensor fouling",
+    "label_short": "Washer sensor fault",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Washer fluid level sensor gives false low-fluid warnings.",
+    "cause": "Rain-X products coat and foul the sensor prongs.",
+    "fix": "Avoid Rain-X washer fluid; sensor requires cleaning or replacement.",
+    "warning_signs": [
+      "Persistent low washer fluid warning despite full reservoir"
+    ],
+    "inspection_advice": "Check washer fluid sensor if warning light is on with full fluid.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2X5bj2gX5z4",
+        "title": "Common Problems of VW MK7 GTI"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": null
+  },
+  {
+    "issue_id": "dashboard_dust_cover_scratches",
+    "label": "Dashboard dust cover easily scratched",
+    "label_short": "Dashboard scratches",
+    "system_component": "body",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Soft-touch dashboard cover scratches very easily.",
+    "cause": "Sensitive material prone to marking.",
+    "fix": "Clean only with a Swiffer duster; avoid microfiber cloths.",
+    "warning_signs": [
+      "Visible fine scratches on dashboard in sunlight"
+    ],
+    "inspection_advice": "Inspect dashboard under good light for scratches or swirl marks.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2X5bj2gX5z4",
+        "title": "Common Problems of VW MK7 GTI"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "high",
+    "notes": null
+  },
+  {
+    "issue_id": "sunroof_leak_squeak",
+    "label": "Sunroof leaks, squeaks, and potential cracking",
+    "label_short": "Sunroof issues",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Sunroof is known to leak, squeak, squeal, and can develop cracks from movement.",
+    "cause": null,
+    "fix": "Stay away from the sunroof if possible; repair involves drain cleaning or seal replacement.",
+    "warning_signs": [
+      "Water stains on headliner",
+      "Squeaking noises when operating",
+      "Visible cracks"
+    ],
+    "inspection_advice": "Test sunroof operation and check headliner for water marks. Consider models without a sunroof.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "PwzmaKYijOc",
+        "title": "Volkswagen MK7 Golf GTI Buyer's Guide - Models, Engines, & Options"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Common complaint across many VW models with panoramic sunroofs."
+  },
+  {
+    "issue_id": "fuel_injector_fouling",
+    "label": "Fuel injector fouling causing misfires",
+    "label_short": "Injector fouling",
+    "system_component": "fuel",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Engine misfires detected by diagnostic scan.",
+    "cause": null,
+    "fix": "Clean or replace the fuel injectors.",
+    "warning_signs": [
+      "Engine misfire codes",
+      "Rough running"
+    ],
+    "inspection_advice": "Scan for stored misfire codes during pre-purchase inspection.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "May be related to carbon buildup or fuel quality."
+  },
+  {
+    "issue_id": "clutch_and_flywheel_issues",
+    "label": "Clutch slip and severe rev hang from flywheel",
+    "label_short": "Clutch/flywheel issues",
+    "system_component": "gearbox",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Clutch slips under low-end torque; rev hang hinders smooth shifting, especially 1st to 2nd.",
+    "cause": "Clutch material not robust for engine torque; dual-mass flywheel design.",
+    "fix": "Clutch replacement job; consider replacing with single-mass flywheel.",
+    "warning_signs": [
+      "Slipping clutch under acceleration",
+      "Difficulty with smooth gear changes"
+    ],
+    "inspection_advice": "Test clutch engagement and shifting feel, especially in lower gears.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "bBnY69Fzf1I",
+        "title": "MK7 GTI Long Term Ownership Review"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Primarily noted on manual transmission 1.4 TSI models."
+  },
+  {
+    "issue_id": "wallowy_handling_suspension_wear",
+    "label": "Wallowy handling from worn suspension components",
+    "label_short": "Suspension wear",
+    "system_component": "suspension",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Car feels wallowy and not planted during cornering.",
+    "cause": null,
+    "fix": "Investigate and replace worn suspension components (bushings, shocks).",
+    "warning_signs": [
+      "Excessive body roll",
+      "Vague steering feel"
+    ],
+    "inspection_advice": "Check for worn bushings, struts, and shocks. Consider a test drive with cornering.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Zq6M7ps8lQ8",
+        "title": "Used Volkswagen Golf Review - Mk 7 (2013 - 2020): The best used family car?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "adaptive_cruise_sensor_fault",
+    "label": "Adaptive cruise control sensor fault",
+    "label_short": "ACC sensor fault",
+    "system_component": "electrical",
+    "issue_type": "sensor_fault",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Adaptive cruise control system does not work.",
+    "cause": "Problem with the sensor or potential prior front-end collision.",
+    "fix": "Check sensor and vehicle history for collision damage.",
+    "warning_signs": [
+      "ACC system error message",
+      "Inoperative cruise control"
+    ],
+    "inspection_advice": "Test adaptive cruise function and check for front-end repair history.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Zq6M7ps8lQ8",
+        "title": "Used Volkswagen Golf Review - Mk 7 (2013 - 2020): The best used family car?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "cam_cradle_valve_cover_seal_leak",
+    "label": "Cam cradle or valve cover sealant oil leak",
+    "label_short": "Oil seal leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil seepage on front of engine, potentially leading to oil in spark plug wells.",
+    "cause": "Special sealant degrades over time.",
+    "fix": "Remove components and reseal with Volkswagen sealant.",
+    "warning_signs": [
+      "Oil spots under car",
+      "Burning oil smell"
+    ],
+    "inspection_advice": "Inspect front engine area for oil residue and check spark plug wells for oil contamination.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "b3YzKwG7HxI",
+        "title": "7 Things To Look For BEFORE Buying An MK7 VW!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "bonnet_release_cable_slip",
+    "label": "Bonnet release cable slips off mechanism",
+    "label_short": "Bonnet cable slip",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Bonnet release lever does not open the bonnet.",
+    "cause": "Cable slips off its mechanism.",
+    "fix": "Cable tie the mechanism or repair the cable.",
+    "warning_signs": [
+      "Loose bonnet lever feel"
+    ],
+    "inspection_advice": "Test bonnet release operation multiple times.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "prets_wheel_cracking",
+    "label": "19-inch Pretoria wheel cracking or buckling",
+    "label_short": "Wheel cracking",
+    "system_component": "suspension",
+    "issue_type": "structural",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Wheels have visible cracks or buckling.",
+    "cause": "Wheel susceptibility to damage.",
+    "fix": "Inspect and replace damaged wheels.",
+    "warning_signs": [
+      "Vibration, visible cracks"
+    ],
+    "inspection_advice": "Closely inspect wheels for hairline cracks, especially on inner barrels.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Specific to 19-inch Pretoria alloy wheels."
+  },
+  {
+    "issue_id": "fuel_flap_lock_sticky",
+    "label": "Fuel flap lock actuator becomes sticky",
+    "label_short": "Fuel flap sticky",
+    "system_component": "body",
+    "issue_type": "intermittent_fault",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Fuel filler door does not open correctly.",
+    "cause": "Lock actuator becomes sticky.",
+    "fix": "Apply silicon spray or replace actuator.",
+    "warning_signs": [
+      "Fuel flap slow to release"
+    ],
+    "inspection_advice": "Test fuel flap release multiple times.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "rear_footwell_water_ingress",
+    "label": "Water ingress in rear passenger footwell",
+    "label_short": "Rear water leak",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Dampness or water in rear passenger footwell.",
+    "cause": "Seal around speakers fails, letting in rainwater.",
+    "fix": "Replace or reseal the speaker seals.",
+    "warning_signs": [
+      "Damp carpet, musty smell"
+    ],
+    "inspection_advice": "Check rear footwell carpets for dampness, especially after rain.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "manual_clutch_slippage",
+    "label": "Manual clutch premature slippage",
+    "label_short": "Clutch slippage",
+    "system_component": "gearbox",
+    "issue_type": "wear_item",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Clutch slips under acceleration, even at standard power.",
+    "cause": "Clutch is a weak point.",
+    "fix": "Replace the clutch assembly.",
+    "warning_signs": [
+      "RPM rises without acceleration, burning smell"
+    ],
+    "inspection_advice": "Test clutch under hard acceleration in higher gears.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Affects manual transmission models with higher torque."
+  },
+  {
+    "issue_id": "pcv_valve_hose_oil_leak",
+    "label": "PCV valve or hose oil leak",
+    "label_short": "PCV leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leaks around PCV valve or on inlet pipe hose.",
+    "cause": "PCV valve failure or hose degradation.",
+    "fix": "Replace PCV valve or hose.",
+    "warning_signs": [
+      "Oil accumulation near valve cover",
+      "Rough idle"
+    ],
+    "inspection_advice": "Check PCV valve and associated hoses for oil residue and cracks.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "b3YzKwG7HxI",
+        "title": "7 Things To Look For BEFORE Buying An MK7 VW!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "sunroof_water_leak",
+    "label": "Sunroof water leakage",
+    "label_short": "Sunroof leak",
+    "system_component": "body",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Water accumulation or stains on headliner or sun visors.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Damp interior",
+      "Musty odor"
+    ],
+    "inspection_advice": "Inspect headliner and sun visors for water stains, check sunroof drains for blockages.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "b3YzKwG7HxI",
+        "title": "7 Things To Look For BEFORE Buying An MK7 VW!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "low",
+    "notes": "Common in many vehicles with sunroofs; cause and fix not specified."
+  },
+  {
+    "issue_id": "turbo_wastegate_sticking",
+    "label": "Turbo wastegate sticking failure",
+    "label_short": "Turbo failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "EPC light and limp mode triggered during boost, progressively worsening.",
+    "cause": "Wastegate and turbo becoming stuck.",
+    "fix": "Replacement of entire turbocharger unit.",
+    "warning_signs": [
+      "Loss of power",
+      "Unusual turbo noises"
+    ],
+    "inspection_advice": "Scan for fault codes related to turbo underboost; test drive to check for boost issues and EPC light.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "nvcpoOwqwhI",
+        "title": "How Reliable is the MK7 GTI?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "plastic_oil_pan_cracking",
+    "label": "Plastic oil pan cracking on impact",
+    "label_short": "Oil pan crack",
+    "system_component": "engine",
+    "issue_type": "structural",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil pan cracked after impact with poor road surfaces.",
+    "cause": "Plastic construction vulnerable to impact damage.",
+    "fix": "Replacement with new oil pan; later models may use metal.",
+    "warning_signs": [
+      "Oil leak after hitting debris",
+      "Low oil pressure light"
+    ],
+    "inspection_advice": "Inspect oil pan for cracks or damage, especially if vehicle has been driven on rough roads.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "nvcpoOwqwhI",
+        "title": "How Reliable is the MK7 GTI?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Later models may have updated design."
+  },
+  {
+    "issue_id": "coolant_reservoir_cracking",
+    "label": "Coolant reservoir developing cracks",
+    "label_short": "Reservoir crack",
+    "system_component": "cooling",
+    "issue_type": "structural",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Visible crack observed in coolant reservoir.",
+    "cause": null,
+    "fix": "Likely requires replacement of reservoir.",
+    "warning_signs": [
+      "Coolant loss without obvious leak elsewhere"
+    ],
+    "inspection_advice": "Visually inspect coolant reservoir for cracks or leaks.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "nvcpoOwqwhI",
+        "title": "How Reliable is the MK7 GTI?"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "haldex_system_failure",
+    "label": "Haldex system loses rear drive due to lack of maintenance",
+    "label_short": "Haldex failure",
+    "system_component": "other",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Front wheels spin under acceleration, rear wheels provide no traction.",
+    "cause": "Lack of maintenance (oil and filter).",
+    "fix": "Service Haldex system, clean filter and change oil.",
+    "warning_signs": [
+      "Front-wheel spin, traction control light"
+    ],
+    "inspection_advice": "Check Haldex service history; test acceleration on loose surface.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Critical for AWD models (Golf R, GTI Performance)."
+  },
+  {
+    "issue_id": "dsg_gear_selector_fault",
+    "label": "DSG gear selector mechanism fault",
+    "label_short": "DSG selector fault",
+    "system_component": "gearbox",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Gear selector warning flashes on dash when shifting from park.",
+    "cause": "Gear selector mechanism issue.",
+    "fix": "Repair or replace the gear selector.",
+    "warning_signs": [
+      "Warning light, difficulty selecting gear"
+    ],
+    "inspection_advice": "Cycle through all gear selector positions and check for warnings.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "front_top_mount_wear",
+    "label": "Front strut top mount or bearing wear",
+    "label_short": "Top mount wear",
+    "system_component": "suspension",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Creaking or knocking noises from front suspension.",
+    "cause": "Top mounts or top mount bearings wear out quickly.",
+    "fix": "Replace worn top mounts or bearings.",
+    "warning_signs": [
+      "Creaking over bumps, steering knock"
+    ],
+    "inspection_advice": "Listen for front-end creaks/knocks during test drive over bumps.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2JvUhYwgEGM",
+        "title": "MK7 VW GOLF R BUYERS GUIDE : DO NOT BUY Without Watching This!"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null
+  },
+  {
+    "issue_id": "sticky_start_stop_button",
+    "label": "Sticky engine start/stop button",
+    "label_short": "Sticky start button",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Vehicle ignition is very hard to switch on, may be mistaken for a non-runner.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [
+      "Button does not depress smoothly"
+    ],
+    "inspection_advice": "Test start/stop button operation repeatedly.",
+    "mention_count": 1,
+    "source_videos": [
+      {
+        "video_id": "jwJeyUW3WZ4",
+        "title": "GOLF 7 GTI FULL BUILD | ENGINE REBUILD | FRONT SMASH REPAIR"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "low",
+    "notes": "Information incomplete; specific cause and fix not provided."
+  }
+]
