@@ -1,0 +1,302 @@
+[
+  {
+    "timestamp": "2026-04-17T21:21:41.158197",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "total_gt": 7,
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ]
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "precision_pct": 39.6,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ]
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 87,
+        "recall_pct": 85.7,
+        "precision_pct": 28.7,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-17T21:21:57.145824",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "total_gt": 7,
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ]
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "precision_pct": 39.6,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ]
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 87,
+        "recall_pct": 85.7,
+        "precision_pct": 28.7,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:08:39.393809",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "total_gt": 7,
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ]
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "precision_pct": 39.6,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ]
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 87,
+        "recall_pct": 85.7,
+        "precision_pct": 28.7,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-18T13:57:58.475810",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "total_gt": 7,
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "precision_pct": 39.6,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 59
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 87,
+        "recall_pct": 85.7,
+        "precision_pct": 28.7,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "GTI": 49,
+            "base": 42,
+            "R": 28,
+            "TDI": 5
+          },
+          "trim_scope_warning_count": 42,
+          "mono_trim_issue_pct": 85.1
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-18T13:58:27.963185",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "total_gt": 7,
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "precision_pct": 39.6,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 59
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 87,
+        "recall_pct": 85.7,
+        "precision_pct": 28.7,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "GTI": 49,
+            "base": 42,
+            "R": 28,
+            "TDI": 5
+          },
+          "trim_scope_warning_count": 42,
+          "mono_trim_issue_pct": 85.1
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-18T14:10:05.097058",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "total_gt": 7,
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "precision_pct": 39.6,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 59
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 87,
+        "recall_pct": 85.7,
+        "precision_pct": 28.7,
+        "found_count": 6,
+        "total_gt": 7,
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "GTI": 49,
+            "base": 42,
+            "R": 28,
+            "TDI": 5
+          },
+          "trim_scope_warning_count": 42,
+          "mono_trim_issue_pct": 85.1
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,59 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Vehicle Knowledge Scaffold — Renault Clio MK4 / Phase I & II (2013–2019)
+# ──────────────────────────────────────────────────────────────────────────────
+# Generation-specific scaffold used by the YouTube extraction pipeline.
+# All model constants (engine windows, feature rules, facelift years) live here.
+# The pipeline reads this at runtime — no Python changes needed for a new model.
+# ──────────────────────────────────────────────────────────────────────────────
+
+meta:
+  make: Renault
+  model: Clio MK4
+  generation: MK4
+  corpus_years: [2013, 2019]
+
+facelifts:
+  - year: 2016
+    label: "Phase II"
+    pre_label: "Phase I"
+
+engine_families:
+
+  - code: H4Bt
+    fuel_type: petrol
+    timing_drive: chain
+    displacements:
+      - code: "0.9_TCE"
+        year_range: [2013, 2019]
+
+  - code: H5Ft
+    fuel_type: petrol
+    timing_drive: belt
+    displacements:
+      - code: "1.2_TCE"
+        year_range: [2013, 2018]
+
+  - code: D4F
+    fuel_type: petrol
+    timing_drive: belt
+    displacements:
+      - code: "1.2_NA"
+        year_range: [2013, 2016]   # carried over from Clio III, phased out Phase I
+
+  - code: K9K
+    fuel_type: diesel
+    timing_drive: belt
+    displacements:
+      - code: "1.5_DCI"
+        year_range: [2013, 2019]
+
+transmissions:
+  - code: EDC6
+    type: dual_clutch_6speed_dry
+    compatible_displacements: ["0.9_TCE", "1.2_TCE", "1.5_DCI"]
+    year_range: [2013, 2019]
+  - code: JR5
+    type: manual_5speed
+    compatible_displacements: ["0.9_TCE", "1.2_TCE", "1.2_NA", "1.5_DCI"]
+    year_range: [2013, 2019]
+
