@@ -70,7 +70,8 @@ def build_scrape_cmd(car: str, slug: str, args: argparse.Namespace) -> list[str]
         "--car", car,
         "--slug", slug,
         "--max-videos", str(args.max_videos),
-        "--max-views", str(args.max_views),
+        "--min-views", str(args.min_views),
+        "--lang", args.lang,
     ]
     if args.disable_prefilter:
         cmd.append("--disable-prefilter")
@@ -169,12 +170,16 @@ def main() -> int:
     )
     # Passthrough flags for scrape
     parser.add_argument("--max-videos", type=int, default=30)
-    parser.add_argument("--max-views", type=int, default=150_000)
+    parser.add_argument("--min-views", type=int, default=80_000)
     parser.add_argument("--disable-prefilter", action="store_true")
+    parser.add_argument("--lang", default="en", help="Language code (en/tr)")
 
     args = parser.parse_args()
 
     slug = args.slug or slug_from_car(args.car)
+    if args.lang != "en":
+        slug = f"{slug}_{args.lang}"
+
     skip = {s.strip() for s in args.skip.split(",") if s.strip()}
     resume_idx = STAGES.index(args.resume_from) if args.resume_from else 0
 
@@ -196,7 +201,7 @@ def main() -> int:
         "started_at": datetime.now(timezone.utc).isoformat(),
         "flags": {
             "max_videos": args.max_videos,
-            "max_views": args.max_views,
+            "min_views": args.min_views,
             "disable_prefilter": args.disable_prefilter,
             "force": args.force,
             "skip": sorted(skip),

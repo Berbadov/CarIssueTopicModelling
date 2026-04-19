@@ -32,7 +32,7 @@ GROUND_TRUTH = {
         {
             "id": "clio_09_ignition_coil",
             "name": "Ignition Coil Failure / Misfire (0.9 TCe)",
-            "patterns": [r"ignition\s+coil", r"misfire", r"rough\s+idl", r"0\.9\s+tce"]
+            "patterns": [r"ignition\s+coil", r"misfire", r"rough\s+idle", r"0\.9\s+tce"]
         },
         {
             "id": "clio_wind_noise",
@@ -95,7 +95,23 @@ DATASETS = [
         "model": "renault_clio_mk4"
     },
     {
+        "file": "data/processed/issue_knowledge_youtube_renault_clio_mk4_topic_final.json",
+        "model": "renault_clio_mk4"
+    },
+    {
         "file": "data/processed/issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "model": "vw_golf_mk7"
+    },
+    {
+        "file": "data/processed/issue_knowledge_youtube_vw_golf_mk7_topic_final.json",
+        "model": "vw_golf_mk7"
+    },
+    {
+        "file": "data/processed/issue_knowledge_youtube_vw_golf_mk7_topic_nosport_final.json",
+        "model": "vw_golf_mk7"
+    },
+    {
+        "file": "data/processed/issue_knowledge_youtube_vw_golf_mk7_topic_balanced_final.json",
         "model": "vw_golf_mk7"
     }
 ]
@@ -110,6 +126,28 @@ def check_match(text, patterns):
         if re.search(pattern, text):
             return True
     return False
+
+
+def count_pattern_hits(text, patterns):
+    if not text:
+        return 0
+    text = str(text).lower()
+    return sum(1 for pattern in patterns if re.search(pattern, text))
+
+
+def build_topic_text(topic):
+    return " ".join(filter(None, [
+        topic.get("issue_id", ""),
+        topic.get("label", ""),
+        topic.get("label_short", ""),
+        topic.get("summary", ""),
+        " ".join(topic.get("warning_signs", [])),
+        topic.get("symptom", ""),
+        topic.get("cause", ""),
+        topic.get("fix", ""),
+        topic.get("inspection_advice", ""),
+        topic.get("notes", ""),
+    ]))
 
 
 def infer_trim_from_title(title):
@@ -193,35 +231,53 @@ def evaluate_dataset(file_path, model_key):
     found_issues = set()
     mapped_topics = 0
     total_topics = len(data)
+    issue_total_patterns = {
+        issue["id"]: max(len(issue["patterns"]), 1)
+        for issue in issues
+    }
+    issue_best_hits = {issue["id"]: 0 for issue in issues}
 
     for topic in data:
-        # Combine text fields from the topic
-        text_content = " ".join(filter(None, [
-            topic.get("label", ""),
-            topic.get("label_short", ""),
-            topic.get("summary", ""),
-            " ".join(topic.get("warning_signs", [])),
-            topic.get("notes", "")
-        ]))
+        text_content = build_topic_text(topic)
 
         topic_matched_any = False
         for issue in issues:
-            if check_match(text_content, issue["patterns"]):
+            hit_count = count_pattern_hits(text_content, issue["patterns"])
+            if hit_count:
                 found_issues.add(issue["id"])
                 topic_matched_any = True
+            if hit_count > issue_best_hits[issue["id"]]:
+                issue_best_hits[issue["id"]] = hit_count
         
         if topic_matched_any:
             mapped_topics += 1
 
     recall = len(found_issues) / len(issues) if issues else 0
     precision = mapped_topics / total_topics if total_topics else 0
+    coverage_recall = (
+        sum(issue_best_hits[issue["id"]] / issue_total_patterns[issue["id"]] for issue in issues) / len(issues)
+        if issues
+        else 0
+    )
+    pattern_recall = (
+        sum(issue_best_hits.values()) / sum(issue_total_patterns.values())
+        if issues
+        else 0
+    )
     trim_stats = compute_trim_stats(data)
 
     missing_issues = [iss["name"] for iss in issues if iss["id"] not in found_issues]
+    found_ids = sorted(found_issues)
+    missing_ids = [iss["id"] for iss in issues if iss["id"] not in found_issues]
 
     print(f"\n--- Benchmark Results for {path.name} ({model_key}) ---")
     print(f"Total Topics Analysed: {total_topics}")
-    print(f"Ground Truth Recall: {len(found_issues)} / {len(issues)} ({(recall * 100):.1f}%)")
+    print(f"Ground Truth Recall (binary): {len(found_issues)} / {len(issues)} ({(recall * 100):.1f}%)")
+    print(
+        "Ground Truth Pattern Coverage: "
+        f"{(coverage_recall * 100):.1f}% "
+        f"(matched patterns: {(pattern_recall * 100):.1f}%)"
+    )
     print(f"Topic Mapping Precision: {mapped_topics} / {total_topics} ({(precision * 100):.1f}%)")
     print(
         "Trim Scope Warnings: "
@@ -250,9 +306,13 @@ def evaluate_dataset(file_path, model_key):
         "dataset": path.name,
         "total_topics": total_topics,
         "recall_pct": round(recall * 100, 1),
+        "coverage_recall_pct": round(coverage_recall * 100, 1),
+        "pattern_recall_pct": round(pattern_recall * 100, 1),
         "precision_pct": round(precision * 100, 1),
         "found_count": len(found_issues),
+        "found_ids": found_ids,
         "total_gt": len(issues),
+        "missing_ids": missing_ids,
         "missing": missing_issues,
         "trim_stats": {
             "trim_distribution": trim_stats["trim_distribution"],
@@ -303,28 +363,37 @@ def main():
         prev_run = history[-2]["results"]
         curr_run = current_run["results"]
         
-        print(f"{'Dataset':<40} | {'Recall':<14} | {'Precision':<14}")
-        print("-" * 75)
+        print(f"{'Dataset':<40} | {'Recall':<14} | {'Coverage':<14} | {'Precision':<14}")
+        print("-" * 92)
         
         for ds_name, curr_data in curr_run.items():
             prev_data = prev_run.get(ds_name)
             
             curr_rec = f"{curr_data['recall_pct']}%"
+            curr_cov = f"{curr_data.get('coverage_recall_pct', 0)}%"
             curr_prec = f"{curr_data['precision_pct']}%"
             
             if prev_data:
                 rec_diff = curr_data['recall_pct'] - prev_data['recall_pct']
+                cov_diff = None
+                if 'coverage_recall_pct' in prev_data:
+                    cov_diff = curr_data.get('coverage_recall_pct', 0) - prev_data['coverage_recall_pct']
                 prec_diff = curr_data['precision_pct'] - prev_data['precision_pct']
                 
                 # Format with explicitly + or -
                 rec_str = f"{curr_rec} ({rec_diff:+.1f}%)" if rec_diff != 0 else f"{curr_rec} (-)"
+                if cov_diff is None:
+                    cov_str = f"{curr_cov} (n/a)"
+                else:
+                    cov_str = f"{curr_cov} ({cov_diff:+.1f}%)" if cov_diff != 0 else f"{curr_cov} (-)"
                 prec_str = f"{curr_prec} ({prec_diff:+.1f}%)" if prec_diff != 0 else f"{curr_prec} (-)"
             else:
                 rec_str = f"{curr_rec} (new)"
+                cov_str = f"{curr_cov} (new)"
                 prec_str = f"{curr_prec} (new)"
                 
-            print(f"{ds_name:<40} | {rec_str:<14} | {prec_str:<14}")
-    print("="*75)
+            print(f"{ds_name:<40} | {rec_str:<14} | {cov_str:<14} | {prec_str:<14}")
+    print("="*92)
 
 if __name__ == "__main__":
     main()

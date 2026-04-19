@@ -1,0 +1,64 @@
+{
+  "car": "VW Golf MK7",
+  "slug": "vw_golf_mk7",
+  "started_at": "2026-04-18T14:00:01.001353+00:00",
+  "flags": {
+    "max_videos": 30,
+    "max_views": 150000,
+    "disable_prefilter": false,
+    "force": true,
+    "skip": [],
+    "resume_from": "extract"
+  },
+  "stages": [
+    {
+      "stage": "scrape",
+      "status": "skipped_by_resume"
+    },
+    {
+      "stage": "extract",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scripts\\extract_youtube_issues.py",
+        "--slug",
+        "vw_golf_mk7"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-18T14:00:01.001439+00:00",
+      "duration_seconds": 3016.46,
+      "output": "data\\processed\\issue_knowledge_youtube_vw_golf_mk7.json",
+      "output_mtime": "2026-04-18T14:50:16.448029+00:00",
+      "status": "ok"
+    },
+    {
+      "stage": "postprocess",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scripts\\postprocess_youtube_issues.py",
+        "--slug",
+        "vw_golf_mk7"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-18T14:50:17.470268+00:00",
+      "duration_seconds": 2.39,
+      "output": "data\\processed\\issue_knowledge_youtube_vw_golf_mk7_final.json",
+      "output_mtime": "2026-04-18T14:50:19.617793+00:00",
+      "status": "ok"
+    },
+    {
+      "stage": "benchmark",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\benchmark_knowledge.py"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-18T14:50:19.861290+00:00",
+      "duration_seconds": 0.19,
+      "output": "data\\benchmarks\\benchmark_history.json",
+      "output_mtime": "2026-04-18T14:50:20.026675+00:00",
+      "status": "ok"
+    }
+  ],
+  "finished_at": "2026-04-18T14:50:20.047744+00:00",
+  "ok": true
+}

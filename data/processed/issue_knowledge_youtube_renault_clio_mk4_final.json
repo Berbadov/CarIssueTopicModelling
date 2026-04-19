@@ -3139,7 +3139,7 @@
     "severity": "high",
     "confidence": "medium",
     "affected_engines": [
-      "1.2_TCE"
+      "0.9_TCE"
     ],
     "affected_years": null,
     "onset_km_range": null,
@@ -3185,17 +3185,17 @@
         "2013-2019"
       ],
       "from_engine_production_windows": [
-        "2013-2018"
+        "2013-2019"
       ],
       "from_model_scope_window": [
-        "2013-2018"
+        "2013-2019"
       ],
       "window_source": "engine",
       "content_combine_rule": "title_only",
       "confidence": "medium",
-      "triangulated": "2013-2018"
+      "triangulated": "2013-2019"
     },
-    "affected_years_triangulated": "2013-2018"
+    "affected_years_triangulated": "2013-2019"
   },
   {
     "issue_id": "touchscreen_volume_controls",

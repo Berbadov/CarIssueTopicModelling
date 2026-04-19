@@ -1,0 +1,1830 @@
+[
+  {
+    "issue_id": "rear_wiper_squeak",
+    "label": "Rear wiper always squeaks",
+    "system_component": "body",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Rear wiper just always squeaks, not much you can do.",
+    "cause": null,
+    "fix": null,
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "zoSbJVeqdnQ",
+        "title": "Finding Problems on a Used MK7 | Inspection Video",
+        "channel": "Deutsche Auto Parts",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "TPoLnxbsqUE",
+        "title": "Volkswagen Golf Mk7 used review: the best Golf EVER?",
+        "channel": "Auto Express",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "yv2_SPxQFLI",
+        "title": "Used Volkswagen Golf Review - Mk 7 (2013 - 2020): The best used family car?",
+        "channel": "Cazoo",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nDkdFw4z1UE",
+        "title": "How to install SoloWerks Coilovers on a MK7 Golf SportWagen S7EP33",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems",
+        "channel": "Sam A",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "ENL7ozzMuJI",
+        "title": "6 years 72k Mile Update For My Mk7.5 Volkswagen GTI - Maintenance Is Adding Up",
+        "channel": "Boston Auto Blog",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1,
+    "topic_size": 14,
+    "topic_top_terms": [
+      "yeah",
+      "mark",
+      "kind",
+      "mark seven",
+      "seven",
+      "funny",
+      "basically",
+      "mark golf",
+      "like",
+      "things"
+    ],
+    "source": "youtube",
+    "mention_count": 7,
+    "distinct_channel_count": 7,
+    "corroboration_count": 7
+  },
+  {
+    "issue_id": "carbon_buildup_oil_consumption",
+    "label": "Carbon buildup and oil consumption",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Gradual loss of engine performance over time and potential excessive oil consumption.",
+    "cause": "Carbon deposits accumulating on intake valves and ports due to direct injection design, with some engines also experiencing oil consumption issues.",
+    "fix": "Walnut blasting or cleaning of intake ports every 60,000-80,000 miles; aftermarket port injection kits available in some markets.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights",
+        "channel": "tevo",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 4,
+    "topic_size": 10,
+    "topic_top_terms": [
+      "carbon",
+      "injection",
+      "carbon buildup",
+      "buildup",
+      "markets",
+      "intake",
+      "oil consumption",
+      "deposits",
+      "consumption",
+      "carbon deposits"
+    ],
+    "source": "youtube",
+    "mention_count": 5,
+    "distinct_channel_count": 5,
+    "corroboration_count": 5,
+    "engine_year_context": [
+      {
+        "engine": "2.0_TSI",
+        "years": "2013-2021",
+        "evidence_hits": 1
+      }
+    ]
+  },
+  {
+    "issue_id": "rear_main_seal_failure",
+    "label": "Rear main seal known to fail",
+    "system_component": "engine",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Rear main seals are known to fail and owners usually opt to change these at the same time as the clutch.",
+    "cause": null,
+    "fix": "Switch to an aftermarket billet aluminium construction for a more permanent resolution that should last the life of the vehicle.",
+    "confidence": "medium",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "s_hLRII-tBU",
+        "title": "Car Servicing - VW Golf MK7",
+        "channel": "Turners Workshop",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights",
+        "channel": "tevo",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 6,
+    "topic_size": 9,
+    "topic_top_terms": [
+      "fail",
+      "120000",
+      "owners",
+      "maintenance",
+      "change",
+      "like subscribe",
+      "developed",
+      "snap",
+      "specific",
+      "supposed replace"
+    ],
+    "source": "youtube",
+    "mention_count": 5,
+    "distinct_channel_count": 5,
+    "corroboration_count": 5
+  },
+  {
+    "issue_id": "early_turbo_failure",
+    "label": "early turbo failure on 2015 GTIs",
+    "system_component": "engine",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "early 2015",
+    "symptom": "Turbo failure causing major engine problems, especially on early 2015 cars.",
+    "cause": "Early revision turbos prone to failure compared to newer model years.",
+    "fix": "Turbo replacement, potentially under warranty if still covered.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "Vgxon_BrQck",
+        "title": "Volkswagen Golf MK7.5, 3 Years Ownership Review (UK)(4K) | Carcode",
+        "channel": "Carcode",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "Zskb3HeOWMA",
+        "title": "Volkswagen Reliability... My Experience",
+        "channel": "NewEnglandPete",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "TxQX5uAQnV8",
+        "title": "Used Mk7 Buyers Guide! How to avoid a previously modified car.",
+        "channel": "Baun Performance",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "ENL7ozzMuJI",
+        "title": "6 years 72k Mile Update For My Mk7.5 Volkswagen GTI - Maintenance Is Adding Up",
+        "channel": "Boston Auto Blog",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "UaYN_JlMb48",
+        "title": "MK7 Volkswagen GTI - Common Problems",
+        "channel": "CashedOutCars",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 24,
+    "topic_size": 7,
+    "topic_top_terms": [
+      "car",
+      "great",
+      "cars",
+      "know",
+      "years",
+      "really",
+      "2015",
+      "problem",
+      "things",
+      "just"
+    ],
+    "source": "youtube",
+    "mention_count": 5,
+    "distinct_channel_count": 5,
+    "corroboration_count": 5
+  },
+  {
+    "issue_id": "water_pump_failure_carbon_buildup",
+    "label": "Water pump failure and carbon buildup issues",
+    "system_component": "cooling",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Coolant leaks, temperature fluctuations, and performance loss with misfires.",
+    "cause": "Plastic water pump housing failure and carbon buildup on fuel injectors/valves.",
+    "fix": "Replace water pump/thermostat and perform carbon cleaning service.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights",
+        "channel": "tevo",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 5,
+    "topic_size": 9,
+    "topic_top_terms": [
+      "fuel",
+      "pump",
+      "issue",
+      "water pump",
+      "injectors",
+      "fuel injectors",
+      "water",
+      "sign",
+      "filters",
+      "carbon"
+    ],
+    "source": "youtube",
+    "mention_count": 4,
+    "distinct_channel_count": 4,
+    "corroboration_count": 4,
+    "engine_year_context": [
+      {
+        "engine": "2.0_TSI",
+        "years": "2013-2021",
+        "evidence_hits": 1
+      }
+    ]
+  },
+  {
+    "issue_id": "dq200_dsg_dry_clutch_problems",
+    "label": "DQ200 dry clutch DSG reliability issues",
+    "system_component": "gearbox",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Jerky takeoff from a stop, hesitation when shifting, rough behavior when cold, and mechatronics failures.",
+    "cause": "Design limitations of the 7-speed dry clutch DQ200 transmission.",
+    "fix": "Opt for the wet clutch DSG versions (DQ250/DQ381) for long-term reliability.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 19,
+    "topic_size": 7,
+    "topic_top_terms": [
+      "clutch",
+      "sixspeed",
+      "wet",
+      "dsg",
+      "dry",
+      "manual",
+      "hand",
+      "dry clutch",
+      "complaints",
+      "longterm"
+    ],
+    "source": "youtube",
+    "mention_count": 4,
+    "distinct_channel_count": 4,
+    "corroboration_count": 4
+  },
+  {
+    "issue_id": "cabin_blower_motor_failure",
+    "label": "Cabin blower motor failure and control issues",
+    "system_component": "electrical",
+    "affected_engines": [],
+    "affected_years": "2012 to 2019",
+    "symptom": "No airflow or reduced airflow from vents, blower motor works intermittently, or HVAC system generates OBD code B10B.",
+    "cause": "Faulty blower motor, blower resistor, blower switch, wiring issues, or blown fuse in HVAC system.",
+    "fix": "Test blower motor and electrical components, replace faulty parts like motor, resistor, or switch, check and replace fuses.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)",
+        "channel": "Luxe Rides & More",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "Vgxon_BrQck",
+        "title": "Volkswagen Golf MK7.5, 3 Years Ownership Review (UK)(4K) | Carcode",
+        "channel": "Carcode",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "s_hLRII-tBU",
+        "title": "Car Servicing - VW Golf MK7",
+        "channel": "Turners Workshop",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights",
+        "channel": "tevo",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1001,
+    "topic_size": 4,
+    "topic_top_terms": [
+      "air",
+      "blower",
+      "car",
+      "golf",
+      "issues",
+      "motor",
+      "blower motor",
+      "turbocharger",
+      "just",
+      "ive"
+    ],
+    "source": "youtube",
+    "mention_count": 4,
+    "distinct_channel_count": 4,
+    "corroboration_count": 4
+  },
+  {
+    "issue_id": "trim_peeling_interior_plastic",
+    "label": "fake metal trim peeling and sharp edges",
+    "system_component": "body",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "The plastic fake metal interior trim starts to bubble, peel, and develop sharp edges that can cut the driver.",
+    "cause": "Material degradation or poor adhesion of the metallic finish on interior plastic trim.",
+    "fix": "Replace the affected trim pieces or apply a protective film to prevent further peeling.",
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "dlAJkW6qK9o",
+        "title": "SOLOWERKS MK7 Golf SportWagon Coilovers Unboxing",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights",
+        "channel": "tevo",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 0,
+    "topic_size": 18,
+    "topic_top_terms": [
+      "white",
+      "uh",
+      "wheels",
+      "coilovers",
+      "like",
+      "little",
+      "did",
+      "dont",
+      "wagon",
+      "um"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "cooling_system_water_pump_leaks",
+    "label": "Cooling system water pump leaks",
+    "system_component": "cooling",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.8_TSI",
+      "2.0_TSI",
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "symptom": "Slowly dripping coolant, dropping coolant level, sweet smell under the hood, or moisture around the engine.",
+    "cause": "Leaks from the water pump or thermostat housing",
+    "fix": "Replace water pump and/or thermostat housing",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 14,
+    "topic_size": 7,
+    "topic_top_terms": [
+      "mk7",
+      "golf mk7",
+      "75 golf",
+      "news",
+      "honest",
+      "cooling",
+      "avoid",
+      "coolant",
+      "golf",
+      "popular"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3,
+    "engine_year_context": [
+      {
+        "engine": "1.5_TSI",
+        "years": "2017",
+        "evidence_hits": 2
+      },
+      {
+        "engine": "2.0_TSI",
+        "years": "2013-2021",
+        "evidence_hits": 1
+      }
+    ]
+  },
+  {
+    "issue_id": "suspension_rattling_noise",
+    "label": "Rear suspension knocking and rattling noise",
+    "system_component": "suspension",
+    "affected_engines": [],
+    "affected_years": "early models",
+    "symptom": "Knocking and rattling noise from the rear suspension, especially under 30mph, often mistaken for trim panel rattles.",
+    "cause": "Suspension component issue, possibly shock absorbers (a revised shock absorber was introduced but noise remained).",
+    "fix": "Inspect and potentially replace suspension components; check for revised parts.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 15,
+    "topic_size": 7,
+    "topic_top_terms": [
+      "suspension",
+      "rattling",
+      "noises",
+      "hear",
+      "noise",
+      "introduced",
+      "remained",
+      "rattling noise",
+      "expensive fix",
+      "car happens"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "turbocharger_failure_early_models",
+    "label": "early turbocharger failure and replacement",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "2013 and 2014",
+    "symptom": "Loss of power and inefficient turbo operation, potentially requiring full turbocharger replacement.",
+    "cause": "Stop/start function causing lack of lubrication leading to overheating in early production models.",
+    "fix": "Replace turbocharger or upgrade actuators, with 2013-2014 models showing higher failure rates.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 26,
+    "topic_size": 6,
+    "topic_top_terms": [
+      "turbocharger",
+      "turbo",
+      "turbocharged",
+      "issues turbocharger",
+      "turbochargers",
+      "efficiently",
+      "significant",
+      "setup",
+      "ultimately",
+      "replace"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3,
+    "engine_year_context": [
+      {
+        "engine": "2.0_TSI",
+        "years": "2013-2021",
+        "evidence_hits": 1
+      }
+    ]
+  },
+  {
+    "issue_id": "rear_caliper_seizing",
+    "label": "GTI rear brake caliper seizing",
+    "system_component": "brakes",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Driver hears persistent screeching noise from the rear brakes, which becomes constant over time.",
+    "cause": "Rear brake caliper seizing up, often requiring replacement.",
+    "fix": "Replace the affected rear caliper, along with brake pads and rotors.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "ENL7ozzMuJI",
+        "title": "6 years 72k Mile Update For My Mk7.5 Volkswagen GTI - Maintenance Is Adding Up",
+        "channel": "Boston Auto Blog",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 30,
+    "topic_size": 6,
+    "topic_top_terms": [
+      "wasnt",
+      "gti",
+      "noise",
+      "rear",
+      "maintenance",
+      "fact",
+      "clips",
+      "hear",
+      "time",
+      "coming"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "dsg_clutch_flywheel_wear",
+    "label": "DSG clutch and flywheel wear",
+    "system_component": "gearbox",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "symptom": "Jerkiness or transmission issues indicating clutch or flywheel wear.",
+    "cause": "Wear of clutch or flywheel components in DSG gearboxes.",
+    "fix": "Replace clutch or flywheel and perform gearbox service.",
+    "confidence": "medium",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "yv2_SPxQFLI",
+        "title": "Used Volkswagen Golf Review - Mk 7 (2013 - 2020): The best used family car?",
+        "channel": "Cazoo",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 33,
+    "topic_size": 6,
+    "topic_top_terms": [
+      "controls",
+      "blame",
+      "theres climate",
+      "new clutch",
+      "failure common",
+      "example like",
+      "controls example",
+      "physical controls",
+      "climate controls",
+      "repaired"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "thermostat_housing_coolant_leak",
+    "label": "Thermostat housing coolant leaks",
+    "system_component": "cooling",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": "older models",
+    "symptom": "Coolant leaks from the thermostat housing area, sometimes leaving puddles on the ground.",
+    "cause": "Plastic thermostat housing integrated into water pump cracks/warps under high heat (OEM design prone to failure).",
+    "fix": "Replace with upgraded/superseded thermostat housing unit (thermostat and water pump replaced together).",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "rdQqxKgBEWg",
+        "title": "Two BIG Problems The Volkswagen Golf 7.5 R Has!",
+        "channel": "Carbonwurks",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 37,
+    "topic_size": 5,
+    "topic_top_terms": [
+      "um",
+      "thermostat",
+      "gearbox",
+      "leaking",
+      "thermostat housing",
+      "housing",
+      "tuning",
+      "obviously",
+      "actually",
+      "hopefully"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      }
+    ]
+  },
+  {
+    "issue_id": "water_pump_leak",
+    "label": "Water pump and thermostat housing leak",
+    "system_component": "cooling",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "The driver notices a coolant leak from the water pump/thermostat housing assembly.",
+    "cause": null,
+    "fix": "Replace the leaking water pump and thermostat housing.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "s_hLRII-tBU",
+        "title": "Car Servicing - VW Golf MK7",
+        "channel": "Turners Workshop",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights",
+        "channel": "tevo",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "AhRpFZIZKDA",
+        "title": "Common MK7 Golf R Problems",
+        "channel": "Sam A",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 41,
+    "topic_size": 4,
+    "topic_top_terms": [
+      "service",
+      "ive got",
+      "ive",
+      "um yeah",
+      "car ive",
+      "got",
+      "um",
+      "private",
+      "car",
+      "id"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "rear_shock_replacement_difficulty",
+    "label": "difficult rear shock replacement process",
+    "system_component": "suspension",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Replacing rear shock absorbers requires specific tools and careful procedure due to tight clearances and welded components.",
+    "cause": "Design with welded nuts on suspension arms and tight clearance around fuel tank requiring TDI-specific springs.",
+    "fix": "Use pass-through sockets, cut zip ties, carefully remove bump stops, and ensure proper spring orientation during installation.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "nDkdFw4z1UE",
+        "title": "How to install SoloWerks Coilovers on a MK7 Golf SportWagen S7EP33",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 2,
+    "topic_size": 12,
+    "topic_top_terms": [
+      "right",
+      "way",
+      "shock",
+      "going",
+      "strut",
+      "spring",
+      "unbolt",
+      "guys",
+      "bolt",
+      "install"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "panoramic_sunroof_water_ingress",
+    "label": "panoramic sunroof water ingress",
+    "system_component": "body",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Water ingress occurs around the panoramic sunroof, potentially leading to interior leaks.",
+    "cause": "Sealing failure or cracks in the sunroof assembly allowing water entry.",
+    "fix": "Inspect and reseal sunroof seals or replace damaged components.",
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 18,
+    "topic_size": 7,
+    "topic_top_terms": [
+      "sunroof",
+      "day",
+      "fun",
+      "getting car",
+      "cruising",
+      "beautiful",
+      "sunshine",
+      "rain",
+      "having car",
+      "panoramic sunroof"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "electronic_handbrake_sticking",
+    "label": "electronic handbrake sticks with age",
+    "system_component": "brakes",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "The electronic handbrake is known to jam or become sticky over time.",
+    "cause": "Age-related wear or mechanism failure",
+    "fix": "Inspect and service the handbrake mechanism",
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 22,
+    "topic_size": 7,
+    "topic_top_terms": [
+      "generation golf",
+      "age",
+      "generation",
+      "known",
+      "golf",
+      "agile",
+      "golden",
+      "magic",
+      "handbrake",
+      "golf let"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "early_mk7_gti_r_turbo_failures",
+    "label": "Early MK7 GTI/R turbo failures",
+    "system_component": "engine",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "early Mark 7 generation",
+    "symptom": "Turbocharger failures in early MK7 Golf GTI and Golf R models.",
+    "cause": "Switch from Borg Warner turbos to IHI turbos (IS20 in GTI, IS38 in R) in early production batches, which had reliability issues.",
+    "fix": "Avoid early MK7 batches; prefer MK7.5 models where turbo issues were worked out.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "ADUK5PFB4k4",
+        "title": "Should You Buy the VW Golf GTI/R? (EA888 Reliability)",
+        "channel": "motoringfan",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "ENL7ozzMuJI",
+        "title": "6 years 72k Mile Update For My Mk7.5 Volkswagen GTI - Maintenance Is Adding Up",
+        "channel": "Boston Auto Blog",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 40,
+    "topic_size": 5,
+    "topic_top_terms": [
+      "think",
+      "turbo",
+      "gti",
+      "mark",
+      "german",
+      "good",
+      "motor",
+      "golf",
+      "reliability",
+      "theyve"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "sump_plug_socket_size_mismatch",
+    "label": "sump plug requires larger socket",
+    "system_component": "engine",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "The sump plug may require a larger socket than the standard 19mm for proper tightening.",
+    "cause": null,
+    "fix": "Use a bigger socket to hold the sump plug securely during tightening.",
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "s_hLRII-tBU",
+        "title": "Car Servicing - VW Golf MK7",
+        "channel": "Turners Workshop",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nDkdFw4z1UE",
+        "title": "How to install SoloWerks Coilovers on a MK7 Golf SportWagen S7EP33",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 44,
+    "topic_size": 4,
+    "topic_top_terms": [
+      "socket",
+      "sump",
+      "19",
+      "good good",
+      "sump plug",
+      "millimeter socket",
+      "sure just",
+      "need bigger",
+      "threads",
+      "millimeter"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "air_conditioning_gremlins",
+    "label": "Air conditioning system gremlins",
+    "system_component": "electrical",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "The air conditioning system is known to have gremlins, affecting the ability to blow cold air.",
+    "cause": null,
+    "fix": null,
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 47,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "air",
+      "air conditioning",
+      "conditioning",
+      "cold",
+      "air intake",
+      "cold air",
+      "blown",
+      "levels choose",
+      "trim levels",
+      "loads"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "headlight_clouding",
+    "label": "Headlight acrylic clouding over time",
+    "system_component": "body",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Headlights become cloudy over time.",
+    "cause": "Acrylic material degradation",
+    "fix": "Headlight restoration kit with polishing",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 48,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "kit",
+      "rays",
+      "headlights",
+      "headlight",
+      "worth",
+      "clear",
+      "did",
+      "time",
+      "little",
+      "right"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "dpf_egr_clogging_city_driving",
+    "label": "DPF and EGR clogging in city driving",
+    "system_component": "exhaust",
+    "affected_engines": [
+      "2.0_TDI",
+      "1.6_TDI"
+    ],
+    "affected_years": null,
+    "symptom": "DPF not regenerating properly, EGR clogging, intake buildup, and warning lights related to emissions during city-only driving.",
+    "cause": "Diesel particulate filter and exhaust gas recirculation system clogging due to insufficient long drives needed for regeneration cycles.",
+    "fix": "Regular long motorway drives to allow DPF regeneration cycles; software updates in later years may improve the issue.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "9s5dyDCpGMs",
+        "title": "120,000 Mile Review: 2018 VW GTI Autobahn (Mk7.5) | Long-Term Ownership Insights",
+        "channel": "tevo",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1000,
+    "topic_size": 5,
+    "topic_top_terms": [
+      "extremely",
+      "music",
+      "tdi",
+      "issues",
+      "car",
+      "reliable",
+      "20 tdi",
+      "20",
+      "occasional",
+      "major"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "wastegate_rattle_boost_issues",
+    "label": "wastegate rattle causing boost problems",
+    "system_component": "exhaust",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Driver notices wastegate rattle leading to inconsistent boost pressures.",
+    "cause": "Wastegate actuator develops play over time, causing the rattle and affecting boost control.",
+    "fix": "Replace wastegate actuator or entire turbocharger assembly.",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1005,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "wastegate",
+      "rattle",
+      "wastegate rattle",
+      "known",
+      "ultimately leads",
+      "blocked known",
+      "blocked",
+      "actuator known",
+      "going lead",
+      "boost pressures"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "modified_examples_clutch_wear",
+    "label": "modified cars risk clutch wear",
+    "system_component": "gearbox",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Clutch wear or failure due to increased stress from remapping and power upgrades.",
+    "cause": "Increased stress on mechanical components from modifications like remapping and power upgrades.",
+    "fix": "Inspect for modifications and ensure honest disclosure from owner before purchase.",
+    "confidence": "medium",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "GBRszP9yMsE",
+        "title": "My 400hp Daily Driver - Volkswagen Mk7 GTI Walkthrough",
+        "channel": "Arkansas Offroad",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1007,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "clutch",
+      "know",
+      "dont",
+      "air south",
+      "wrong remapped",
+      "basically did",
+      "bit power",
+      "bend stage",
+      "buying dont",
+      "applies"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "cold_start_hesitation_kangarooing",
+    "label": "Cold start hesitation kangarooing",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Hesitation or jerking when pulling away gently during a cold start.",
+    "cause": null,
+    "fix": null,
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "Zskb3HeOWMA",
+        "title": "Volkswagen Reliability... My Experience",
+        "channel": "NewEnglandPete",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 1008,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "uh",
+      "guys",
+      "cold",
+      "um",
+      "launch",
+      "sure",
+      "think",
+      "second",
+      "video",
+      "modern"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "thermostat_water_pump_coolant_leak",
+    "label": "Thermostat water pump coolant leak",
+    "system_component": "cooling",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "later 2014 onwards",
+    "symptom": "Coolant smell from under the hood and visible wetness/leak around the thermostat water pump assembly.",
+    "cause": "Leaking thermostat water pump assembly, possibly from poor installation of replacement parts or seal failure between thermostat housing and pump.",
+    "fix": "Replace thermostat water pump assembly with updated kit (includes electronically adjustable thermostat housing and water pump).",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "zoSbJVeqdnQ",
+        "title": "Finding Problems on a Used MK7 | Inspection Video",
+        "channel": "Deutsche Auto Parts",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 1009,
+    "topic_size": 2,
+    "topic_top_terms": [
+      "going",
+      "look",
+      "like",
+      "youre",
+      "car",
+      "oil",
+      "probably",
+      "want",
+      "sure",
+      "actually"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2,
+    "engine_year_context": [
+      {
+        "engine": "2.0_TSI",
+        "years": "2013-2021",
+        "evidence_hits": 1
+      }
+    ]
+  },
+  {
+    "issue_id": "clutch_pulsation_vibration",
+    "label": "Clutch pedal pulsation when engine running",
+    "system_component": "gearbox",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Driver feels a pulsation or vibration through the clutch pedal when the engine is running.",
+    "cause": null,
+    "fix": null,
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nDkdFw4z1UE",
+        "title": "How to install SoloWerks Coilovers on a MK7 Golf SportWagen S7EP33",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1010,
+    "topic_size": 2,
+    "topic_top_terms": [
+      "clutch engine",
+      "foot",
+      "drivers make",
+      "feel pulsation",
+      "engine running",
+      "got little",
+      "form guy",
+      "form",
+      "foot youre",
+      "shock lining"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "excessive_oil_consumption",
+    "label": "excessive oil consumption",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": "2012 to 2019",
+    "symptom": "Oil level drops requiring frequent topping up between oil changes.",
+    "cause": "Specific production batches of engines with excessive oil consumption issues.",
+    "fix": "Regular oil level monitoring and topping up as needed to prevent oil starvation.",
+    "confidence": "medium",
+    "data_quality": "low",
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)",
+        "channel": "Luxe Rides & More",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 2000,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "oil consumption",
+      "burning oil",
+      "burns oil",
+      "consumes oil",
+      "quart of oil",
+      "litre of oil",
+      "liter of oil",
+      "top up oil",
+      "topping up oil",
+      "oil level drops"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      }
+    ]
+  },
+  {
+    "issue_id": "rear_beam_suspension_tank_clearance",
+    "label": "Rear beam suspension limits lowering",
+    "system_component": "suspension",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": "2015",
+    "symptom": "The rear suspension is a solid beam design, which restricts lowering due to proximity to the DEF/diesel tank.",
+    "cause": "Design change from independent rear suspension to a solid beam to accommodate the diesel/AdBlue tank.",
+    "fix": "Use TDI-specific coilovers and avoid excessive lowering to prevent tank damage.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "dlAJkW6qK9o",
+        "title": "SOLOWERKS MK7 Golf SportWagon Coilovers Unboxing",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nDkdFw4z1UE",
+        "title": "How to install SoloWerks Coilovers on a MK7 Golf SportWagen S7EP33",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 52,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "beam",
+      "suspension",
+      "holds",
+      "guys",
+      "rear",
+      "wheels",
+      "lift",
+      "tank",
+      "going",
+      "shock"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 1,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "takata_airbag_recall",
+    "label": "Takata airbag inflator rupture risk",
+    "system_component": "other",
+    "affected_engines": [],
+    "affected_years": "2014 model year vehicles",
+    "symptom": "No direct symptom; recall issued for potential airbag inflator rupture during deployment.",
+    "cause": "Takata airbag inflators absorbing moisture over time, creating excessive pressure and risking housing rupture.",
+    "fix": "Dealer recall replacement of affected airbag inflators (campaign 69Q7).",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 10,
+    "topic_size": 9,
+    "topic_top_terms": [
+      "recall",
+      "model year",
+      "2019",
+      "2017",
+      "airbag",
+      "vehicles",
+      "recalls",
+      "child",
+      "year",
+      "potential"
+    ],
+    "source": "youtube",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "ea211_timing_belt_stretch_risk",
+    "label": "EA211 timing belt stretch risk",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": "very early model years",
+    "symptom": "Timing belt can stretch, leading to catastrophic engine failure due to piston-valve collision.",
+    "cause": "Neglecting timing belt replacement intervals.",
+    "fix": "Replace timing belt at recommended intervals to prevent failure.",
+    "confidence": "medium",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 20,
+    "topic_size": 7,
+    "topic_top_terms": [
+      "ea211",
+      "timing",
+      "timing belt",
+      "belt",
+      "engine",
+      "related issues",
+      "tsi engine",
+      "covers",
+      "14 tsi",
+      "volkswagens"
+    ],
+    "source": "youtube",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "corroboration_count": 1,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      }
+    ]
+  },
+  {
+    "issue_id": "timing_belt_service_interval_turbo_wastegate",
+    "label": "timing belt service interval and turbo wastegate actuator issues",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "symptom": "Potential turbo wastegate actuator problems and concerns about timing belt service intervals.",
+    "cause": "Turbo wastegate actuator failure and timing belt requiring more frequent replacement than expected.",
+    "fix": "Replace turbo wastegate actuator and follow shortened timing belt service intervals.",
+    "confidence": "medium",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 39,
+    "topic_size": 5,
+    "topic_top_terms": [
+      "timing belt",
+      "belt",
+      "timing",
+      "issues turbo",
+      "list going",
+      "wastegate actuator",
+      "service interval",
+      "problem",
+      "jump",
+      "interval"
+    ],
+    "source": "youtube",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "corroboration_count": 1,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      }
+    ]
+  },
+  {
+    "issue_id": "hot_weather_power_decrease",
+    "label": "Hot weather variant lower power output",
+    "system_component": "engine",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "pre-facelift",
+    "symptom": "Vehicles in hot climates have reduced engine power compared to standard models.",
+    "cause": "Engine detuned for reliability in high ambient temperatures.",
+    "fix": "Post-facelift models in most markets received power upgrade to match global output.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "04rxrrv6yyE",
+        "title": "Golf R buyers guide MK7 & MK7.5 (2013-2021) Avoid buying broken Golf R with common faults (2.0TSI)",
+        "channel": "The Miles Driven",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 53,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "code",
+      "world",
+      "facelift",
+      "markets",
+      "engine",
+      "engines",
+      "outputs",
+      "additional",
+      "american",
+      "hot weather"
+    ],
+    "source": "youtube",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "corroboration_count": 1,
+    "engine_year_context": [
+      {
+        "engine": "2.0_TSI",
+        "years": "2013-2021",
+        "evidence_hits": 1
+      }
+    ]
+  },
+  {
+    "issue_id": "ea888_timing_chain_issues",
+    "label": "EA888 timing chain stretch and tensioner",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "pre-Mark 7",
+    "symptom": "Timing chain rattle and potential failure due to chain stretch and tensioner problems.",
+    "cause": "Design/manufacturing issues with EA888 Gen 2 and Gen 1 timing chain systems.",
+    "fix": "Replace timing chain, tensioner, and guides; upgrade to revised parts if available.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "ADUK5PFB4k4",
+        "title": "Should You Buy the VW Golf GTI/R? (EA888 Reliability)",
+        "channel": "motoringfan",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 2001,
+    "topic_size": 1,
+    "topic_top_terms": [
+      "timing chain",
+      "chain stretch",
+      "chain tensioner",
+      "chain rattle",
+      "chain guide"
+    ],
+    "source": "youtube",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "corroboration_count": 1
+  }
+]

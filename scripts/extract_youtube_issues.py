@@ -54,7 +54,7 @@ FILTER_CONTEXT_SECS = 25    # fallback context window (secondary to sentence sco
 MAX_EXTRACT_TOKENS = 2000   # compact schema → smaller output
 MAX_EXTRACT_TOKENS_SHORT = 500  # for Shorts (<120s) — typically one issue
 CONSOLIDATE_BATCH = 10      # issues per consolidation batch
-CONSOLIDATE_TOKENS = 4000   # output cap per consolidation call
+CONSOLIDATE_TOKENS = 8000   # output cap per consolidation call
 LLM_TIMEOUT = 180           # 3 minutes hard timeout
 
 # Metrics tracking
@@ -661,6 +661,12 @@ _MECH_KEYWORDS_HIGH = {
     "fuel pump", "water pump", "heater core", "swirl flap", "carbon buildup",
     "carbon build", "silica", "misfire", "limp mode", "fault code",
     "recall", "tsb", "campaign",
+    # Turkish
+    "mekatronik", "volan", "triger", "zincir", "kayış", "gergi",
+    "karter", "enjektör", "enjektor", "yakıt pompası", "yakit pompasi",
+    "su pompası", "su pompasi", "kalorifer peteği", "kalorifer petegi",
+    "kurum", "tekleme", "limp mod", "arıza kodu", "ariza kodu",
+    "geri çağırma", "geri cagirma", "servis bülteni", "kampanya",
 }
 _MECH_KEYWORDS_LOW = {
     # Failure modes
@@ -677,6 +683,23 @@ _MECH_KEYWORDS_LOW = {
     "electrical", "wiring", "sensor", "ecu", "module", "alternator", "battery",
     # Cost language
     "expensive", "replace", "repair", "fix", "avoid", "problem", "issue", "warning",
+    # Turkish failure modes
+    "arıza", "ariza", "hata", "bozuk", "kırık", "kirik", "çatlak", "catlak",
+    "kaçak", "kacak", "sızdırma", "sizdirma", "aşınma", "asinma", "tıkalı",
+    "tikali", "blok", "patlak", "yırtık", "yirtik", "korozyon", "pas",
+    "titreşim", "titresim", "vuruntu", "tıkırtı", "tikirti", "ses", "gıcırtı",
+    "gicirti", "uğultu", "ugultu", "ıslık", "islik", "stop etme", "tekleme",
+    "rölanti", "rolanti",
+    # Turkish systems
+    "motor", "şanzıman", "sanziman", "debriyaj", "soğutma", "sogutma",
+    "radyatör", "radyator", "termostat", "valf", "piston", "silindir",
+    "katalizör", "katalizor", "yağ", "yag", "conta", "keçe", "kece", "dif",
+    "aks", "travers", "süspansiyon", "suspansiyon", "amortisör", "amortisort",
+    "rulman", "porya", "fren", "elektrik", "tesisat", "sensör", "sensor",
+    "beyin", "modül", "modul", "alternatör", "alternator", "akü", "aku",
+    # Turkish cost language
+    "pahalı", "pahali", "değişim", "degisim", "tamir", "bakım", "bakim",
+    "kaçın", "kacin", "sorun", "problem", "uyarı", "uyari",
 }
 # Combined set for quick membership checks
 _ALL_KEYWORDS = _MECH_KEYWORDS_HIGH | _MECH_KEYWORDS_LOW
@@ -686,6 +709,11 @@ _SYSTEM_KEYWORDS = {
     "engine", "gearbox", "transmiss", "turbo", "coolant", "dsg", "mechatronic",
     "suspension", "electrical", "injector", "egr", "dpf", "timing", "clutch",
     "brake", "exhaust", "fuel pump", "water pump", "alternator", "sensor",
+    # Turkish
+    "motor", "şanzıman", "sanziman", "vites", "soğutma", "sogutma", "mekatronik",
+    "süspansiyon", "suspansiyon", "elektrik", "enjektör", "enjektor", "egzoz",
+    "yakıt pompası", "yakit pompasi", "su pompası", "su pompasi", "alternatör",
+    "alternator", "sensör", "sensor", "debriyaj",
 }
 
 
@@ -854,7 +882,8 @@ EXTRACT_SYSTEM_TMPL = (
     "You are an automotive knowledge extraction engine. "
     "CONTEXT: {scaffold_context}\n"
     "Extract only genuine design/manufacturing defects and known chronic failure patterns. "
-    "SKIP: general maintenance, oil changes, tyre wear, improper-use. "
+    "NOTE: Emission control issues (DPF clogging, EGR soot, AdBlue faults) and carbon buildup ARE chronic failure patterns and SHOULD be extracted, even if linked to driving habits (like short trips). "
+    "SKIP: general maintenance (oil changes, brake pads), tyre wear, improper-use (accidents, ignoring warning lights). "
     "Return ONLY a valid JSON array. No markdown, no explanation."
 )
 
@@ -1074,6 +1103,93 @@ Return the full array, sorted by mention_count descending.
 """
 
 
+def _consolidate_batch(raw_issues: list[dict], scaffold_context: str, n_videos: int, label: str) -> list[dict]:
+    if not raw_issues:
+        return []
+
+    def _parse_json_array(payload: str) -> list[dict] | None:
+        raw_payload = payload.strip()
+        if raw_payload.startswith("```"):
+            raw_payload = raw_payload.split("```", 2)[1]
+            if raw_payload.startswith("json"):
+                raw_payload = raw_payload[4:]
+            raw_payload = raw_payload.strip()
+        try:
+            parsed = json.loads(raw_payload)
+        except json.JSONDecodeError:
+            start = raw_payload.find("[")
+            end = raw_payload.rfind("]")
+            if start < 0 or end < start:
+                return None
+            try:
+                parsed = json.loads(raw_payload[start:end + 1])
+            except json.JSONDecodeError:
+                return None
+        if not isinstance(parsed, list):
+            parsed = [parsed]
+        return [row for row in parsed if isinstance(row, dict)]
+
+    prompt = CONSOLIDATE_USER_TMPL.format(
+        scaffold_context=scaffold_context,
+        n_videos=n_videos,
+        n_issues=len(raw_issues),
+        raw_issues_json=json.dumps(raw_issues, ensure_ascii=False, indent=2),
+    )
+    repair_system = (
+        "You are a strict JSON repair tool. "
+        "Fix malformed JSON into a valid JSON array only. "
+        "Do not add commentary, markdown, or code fences."
+    )
+
+    for attempt in range(1, 4):
+        raw = call_llm(CONSOLIDATE_SYSTEM, prompt, CONSOLIDATE_TOKENS, label=f"consolidate:{label}:a{attempt}")
+        if not raw:
+            raise ValueError(f"Empty consolidation response for {label}")
+        merged = _parse_json_array(raw)
+        if merged is None:
+            if attempt < 3:
+                log.warning(
+                    "  [consolidate:%s] invalid JSON on attempt %d/3; retrying...",
+                    label,
+                    attempt,
+                )
+                continue
+            repair_prompt = (
+                "Repair this malformed JSON into a valid JSON array without changing meaning:\n\n"
+                f"{raw}"
+            )
+            repaired = call_llm(
+                repair_system,
+                repair_prompt,
+                CONSOLIDATE_TOKENS,
+                label=f"consolidate:{label}:repair",
+            )
+            merged = _parse_json_array(repaired)
+            if merged is None:
+                can_passthrough = any(
+                    isinstance(row, dict)
+                    and (
+                        "system_component" in row
+                        or "mention_count" in row
+                        or "source_videos" in row
+                    )
+                    for row in raw_issues
+                )
+                if not can_passthrough:
+                    raise ValueError(f"Unrecoverable malformed consolidation JSON for {label}")
+                log.warning(
+                    "  [consolidate:%s] using passthrough chunk after JSON repair failure",
+                    label,
+                )
+                merged = [row for row in raw_issues if isinstance(row, dict)]
+
+        merged = refresh_issue_counters(merged)
+        log.info("  [consolidate:%s] %d -> %d issues", label, len(raw_issues), len(merged))
+        return merged
+
+    return []
+
+
 def consolidate_issues(all_raw: list[dict], scaffold_context: str, n_videos: int, slug: str = "unknown") -> list[dict]:
     """
     Consolidate raw issues into a clean knowledge base.
@@ -1137,8 +1253,8 @@ def consolidate_issues(all_raw: list[dict], scaffold_context: str, n_videos: int
             log.info("Set still large (%d), doing secondary batch merge...", len(batch_results))
             secondary_results = []
             # Overlap windows so near-duplicate issues from adjacent chunks are compared.
-            secondary_batch_size = 15
-            secondary_stride = 8
+            secondary_batch_size = 10
+            secondary_stride = 5
             for i in range(0, len(batch_results), secondary_stride):
                 chunk = batch_results[i: i + secondary_batch_size]
                 if not chunk:
@@ -1276,9 +1392,9 @@ def main():
     cache_lock = Lock()
 
     def save_cache():
-        with cache_lock:
-            with open(pass1_cache, "w", encoding="utf-8") as f:
-                json.dump(all_raw, f, ensure_ascii=False, indent=2)
+        # Callers hold cache_lock; avoid nested lock acquisition (deadlock).
+        with open(pass1_cache, "w", encoding="utf-8") as f:
+            json.dump(all_raw, f, ensure_ascii=False, indent=2)
 
     # Resume from cache if available
     if pass1_cache.exists():
@@ -1384,15 +1500,28 @@ def main():
 
     # Save confirmed (corroborated) results if requested
     if not args.skip_consolidation and args.filter_confirmed:
-        confirmed = [
-            i for i in final 
-            if i.get("corroboration_count", 0) >= args.min_corroboration
-            or (
-                i.get("corroboration_count", 0) >= 1
-                and i.get("confidence") == "high"
-                and i.get("data_quality") == "high"
+        # Pipeline Rule: Allow single-source issues if they are high-confidence technical hits
+        RESCUE_KEYWORDS = {"dpf", "egr", "edc", "adblue", "injector", "bearing", "timing chain", "timing belt", "turbo"}
+        
+        confirmed = []
+        for i in final:
+            count = i.get("corroboration_count", 0)
+            conf = str(i.get("confidence", "")).lower()
+            dq = str(i.get("data_quality", "")).lower()
+            text = f"{i.get('label','')} {i.get('symptom','')}".lower()
+            
+            # Rule A: Standard corroboration (2+ independent sources)
+            is_corroborated = count >= args.min_corroboration
+            
+            # Rule B: "Smart Trust" for high-quality technical deep dives
+            is_technical_rescue = (
+                count >= 1 and 
+                conf == "high" and 
+                (dq == "high" or any(kw in text for kw in RESCUE_KEYWORDS))
             )
-        ]
+            
+            if is_corroborated or is_technical_rescue:
+                confirmed.append(i)
         conf_out_json = out_json.with_stem(out_json.stem + "_confirmed")
         conf_out_csv = conf_out_json.with_suffix(".csv")
         save_outputs(confirmed, conf_out_json, conf_out_csv)

@@ -50,6 +50,19 @@ engine_families:
       - code: "2.0_TDI"
         year_range: [2013, 2020]
 
+# ── Performance / enthusiast trims ────────────────────────────────────────────
+# Declared so the discovery corpus can be balanced against YouTube's inherent
+# performance-trim bias. max_share = max fraction of the final corpus that may
+# be sport-trim videos; videos whose titles match a token beyond that cap are
+# downsampled. Omit block entirely for models without a performance variant.
+performance_trims:
+  max_share: 0.3
+  tokens:
+    - gti
+    - "golf r"
+    - "mk7 r"
+    - "mk7.5 r"
+
 transmissions:
   - code: DQ200
     type: DSG_7speed_dry

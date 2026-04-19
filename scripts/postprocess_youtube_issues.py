@@ -1125,6 +1125,189 @@ def triangulate_years(
 
 # ── Driver ───────────────────────────────────────────────────────────────────
 
+# ── Cross-brand contamination filter ─────────────────────────────────────────
+#
+# The LLM sometimes borrows wording from similar failure modes in other OEMs
+# (e.g. Ford's 1.0 EcoBoost "wet belt" leaking into a Renault 1.2 TCe entry).
+# We group brands by shared-platform/engine-alliance so genuine overlaps (VAG
+# engines shared across VW/Audi/Seat/Skoda) aren't flagged.
+_BRAND_GROUPS: list[set[str]] = [
+    {"vw", "volkswagen", "audi", "seat", "skoda", "cupra", "porsche", "bentley"},
+    {"renault", "dacia", "nissan", "infiniti", "mitsubishi"},
+    {"ford", "lincoln"},
+    {"toyota", "lexus", "subaru"},
+    {"honda", "acura"},
+    {"hyundai", "kia", "genesis"},
+    {"stellantis", "peugeot", "citroen", "citroën", "opel", "vauxhall",
+     "fiat", "alfa", "lancia", "chrysler", "dodge", "jeep", "ram", "maserati", "ds"},
+    {"bmw", "mini", "rolls-royce"},
+    {"mercedes", "mercedes-benz", "smart"},
+    {"volvo", "polestar", "geely", "lynk"},
+    {"mazda"},
+    {"tesla"},
+    {"jaguar", "land rover", "range rover"},
+]
+# Engine-family tokens that signal another OEM's powertrain; used to catch
+# descriptions that don't name the brand directly (e.g. "EcoBoost", "Prince").
+_FOREIGN_ENGINE_TOKENS: dict[str, set[str]] = {
+    "ford":     {"ecoboost", "duratec", "duratorq"},
+    "bmw":      {"prince", "n20", "n47", "n54", "n55", "b48", "b58"},
+    "toyota":   {"2ar-fe", "1zz", "2zz", "1nz", "2nz"},
+    "honda":    {"earth dreams", "k20", "k24"},
+    "peugeot":  {"prince", "puretech", "hdi", "bluehdi"},
+    "mazda":    {"skyactiv"},
+    "hyundai":  {"theta", "gamma", "nu engine"},
+    "mercedes": {"kompressor", "cdi", "bluetec"},
+    "vw":       {"tsi", "tdi", "tfsi"},
+}
+
+
+def _scaffold_allowed_brands(scaffold: dict) -> set[str]:
+    make = (scaffold.get("meta") or {}).get("make", "").lower().strip()
+    if not make:
+        return set()
+    for group in _BRAND_GROUPS:
+        if make in group:
+            return group
+    return {make}
+
+
+def _check_cross_brand_contamination(
+    issue: dict, allowed: set[str], own_make: str
+) -> str | None:
+    """Return a reason string when the issue text mentions a foreign OEM /
+    foreign engine family; None if clean.
+    """
+    if not allowed:
+        return None
+    parts = [
+        issue.get("label") or "",
+        issue.get("symptom") or "",
+        issue.get("cause") or "",
+        issue.get("notes") or "",
+        issue.get("fix") or "",
+        issue.get("inspection_advice") or "",
+    ]
+    blob = " ".join(str(p) for p in parts).lower()
+    if not blob.strip():
+        return None
+
+    # Word-boundary brand mentions.
+    for group in _BRAND_GROUPS:
+        if group == allowed:
+            continue
+        for brand in group:
+            pat = r"\b" + re.escape(brand) + r"\b"
+            if re.search(pat, blob):
+                return f"foreign_brand:{brand}"
+
+    # Engine-family tokens tied to a specific foreign OEM.
+    for brand, tokens in _FOREIGN_ENGINE_TOKENS.items():
+        if brand in allowed:
+            continue
+        for tok in tokens:
+            pat = r"\b" + re.escape(tok) + r"\b"
+            if re.search(pat, blob):
+                return f"foreign_engine_family:{tok}"
+    return None
+
+
+def drop_cross_brand_contamination(
+    issues: list[dict], scaffold: dict
+) -> tuple[list[dict], list[dict]]:
+    """Return (kept, dropped). Drops issues whose descriptive text names a
+    foreign OEM (outside the scaffold's platform group) or a foreign
+    engine-family token. Logs each drop for audit.
+    """
+    allowed = _scaffold_allowed_brands(scaffold)
+    own_make = (scaffold.get("meta") or {}).get("make", "").lower().strip()
+    kept, dropped = [], []
+    for it in issues:
+        reason = _check_cross_brand_contamination(it, allowed, own_make)
+        if reason is None:
+            kept.append(it)
+        else:
+            it = dict(it)
+            it["_drop_reason"] = reason
+            dropped.append(it)
+            log.info("  [Contamination] Dropping %s — %s", it.get("issue_id"), reason)
+    if dropped:
+        log.info("Cross-brand contamination filter: dropped %d / %d", len(dropped), len(issues))
+    return kept, dropped
+
+
+def validate_hardware_alignment(issue: dict, scaffold: dict):
+    """
+    Fact-check the LLM's engine attribution against the scaffold.
+    Automatically removes engines that don't match the technical description.
+    """
+    label = str(issue.get("label", "")).lower()
+    symptom = str(issue.get("symptom", "")).lower()
+    text = f"{label} {symptom}"
+    
+    affected = issue.get("affected_engines", [])
+    if not isinstance(affected, list):
+        affected = [affected]
+    if not affected or "all" in [str(e).lower() for e in affected]:
+        return
+
+    # Map engine codes to their hardware attributes from scaffold
+    engine_meta = {}
+    for ef in scaffold.get("engine_families", []):
+        drive = str(ef.get("timing_drive", "")).lower()
+        for d in ef.get("displacements", []):
+            code = d.get("code") if isinstance(d, dict) else d
+            if code:
+                engine_meta[str(code)] = {"drive": drive}
+
+    # Guardrail A: Timing Drive Alignment
+    is_chain_issue = "chain" in text
+    is_belt_issue = "belt" in text and "chain" not in text
+    
+    if is_chain_issue or is_belt_issue:
+        new_affected = []
+        for eng in affected:
+            eng_str = str(eng)
+            meta = engine_meta.get(eng_str)
+            if not meta:
+                new_affected.append(eng)
+                continue
+                
+            if is_chain_issue and meta["drive"] == "belt":
+                log.info("  [Guardrail] Removing %s from Chain issue '%s' (Engine is Belt-driven)", eng_str, issue['issue_id'])
+                continue
+            if is_belt_issue and meta["drive"] == "chain":
+                log.info("  [Guardrail] Removing %s from Belt issue '%s' (Engine is Chain-driven)", eng_str, issue['issue_id'])
+                continue
+            new_affected.append(eng)
+        
+        # If we stripped everything, don't leave it empty; try to find a valid one
+        if not new_affected and affected:
+            chain_engines = [code for code, m in engine_meta.items() if m["drive"] == "chain"]
+            if is_chain_issue and chain_engines:
+                new_affected = chain_engines
+            else:
+                new_affected = affected
+        
+        issue["affected_engines"] = new_affected
+
+    # Guardrail B: Transmission Alignment
+    if any(kw in text for kw in ["dsg", "mechatronic", "dual clutch", "edc"]):
+        dsg_engines = set()
+        for tx in scaffold.get("transmissions", []):
+            tx_type = str(tx.get("type", "")).lower()
+            if any(kw in tx_type for kw in ["dual", "dsg", "dct", "edc"]):
+                compat = tx.get("compatible_displacements") or tx.get("compatible_engines") or []
+                dsg_engines.update([str(e) for e in compat])
+        
+        if dsg_engines:
+            new_affected = [e for e in affected if str(e) in dsg_engines]
+            if not new_affected and affected:
+                issue["affected_engines"] = list(dsg_engines)
+            else:
+                issue["affected_engines"] = new_affected
+
+
 def _save(final: list[dict], out_json: Path, out_csv: Path) -> None:
     out_json.parent.mkdir(parents=True, exist_ok=True)
     with open(out_json, "w", encoding="utf-8") as f:
@@ -1151,6 +1334,7 @@ def _write_audit(
     merge_groups: list[list[str]],
     final: list[dict],
     out_md: Path,
+    contam_dropped: list[dict] | None = None,
 ) -> None:
     warnings = [
         (it.get("issue_id"), w)
@@ -1191,6 +1375,7 @@ def _write_audit(
         "## Summary",
         "",
         f"- Input rows: **{orig_count}**",
+        f"- Cross-brand contamination dropped: **{len(contam_dropped or [])}**",
         f"- After dedup: **{len(final)}**",
         f"- Merge groups (> 1 row collapsed): **{len(merge_groups)}**",
         f"- Engine scope warnings: **{len(warnings)}** on "
@@ -1212,6 +1397,16 @@ def _write_audit(
         for grp in sorted(merge_groups, key=lambda g: (-len(g), g[0])):
             lines.append(f"- {len(grp)} rows: " + ", ".join(f"`{i}`" for i in grp))
     lines.append("")
+
+    if contam_dropped:
+        lines.append("## Cross-brand contamination — dropped issues")
+        lines.append("")
+        for it in contam_dropped:
+            lines.append(
+                f"- `{it.get('issue_id')}` — {it.get('_drop_reason')} "
+                f"(label: {str(it.get('label',''))!r})"
+            )
+        lines.append("")
 
     lines.append("## Engine-scope warnings")
     lines.append("")
@@ -1380,6 +1575,12 @@ def main() -> None:
         len(engine_windows), model_window,
     )
 
+    # 0. Cross-brand contamination filter — drop issues whose descriptive
+    #    text names a foreign OEM (outside the scaffold's platform group) or
+    #    a foreign engine-family token. Runs before dedup so contaminated rows
+    #    don't pull valid ones into merged clusters.
+    issues, contam_dropped = drop_cross_brand_contamination(issues, scaffold)
+
     # 1. Dedup
     merge_groups: list[list[str]] = []
     if args.no_dedup:
@@ -1397,6 +1598,10 @@ def main() -> None:
 
     # 2b. Trim-bias guardrails and trim-aware confidence/scoping.
     cleaned = [_apply_trim_bias_controls(it, videos_by_id, slug) for it in cleaned]
+
+    # 2c. Technical hardware guardrails (Chain vs Belt, DSG/EDC compatibility)
+    for it in cleaned:
+        validate_hardware_alignment(it, scaffold)
 
     # 3. Year triangulation
     if not args.no_years:
@@ -1416,7 +1621,8 @@ def main() -> None:
     cleaned.sort(key=lambda r: (-int(r.get("mention_count") or 0), r.get("issue_id") or ""))
 
     _save(cleaned, out_json, out_csv)
-    _write_audit(slug, orig_count, merge_groups, cleaned, audit_md)
+    _write_audit(slug, orig_count, merge_groups, cleaned, audit_md,
+                 contam_dropped=contam_dropped)
 
     log.info("Done — %d → %d issues", orig_count, len(cleaned))
 

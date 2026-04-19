@@ -28,7 +28,7 @@ engine_families:
 
   - code: H5Ft
     fuel_type: petrol
-    timing_drive: belt
+    timing_drive: chain
     displacements:
       - code: "1.2_TCE"
         year_range: [2013, 2018]
@@ -50,7 +50,8 @@ engine_families:
 transmissions:
   - code: EDC6
     type: dual_clutch_6speed_dry
-    compatible_displacements: ["0.9_TCE", "1.2_TCE", "1.5_DCI"]
+    # 0.9 TCe (H4Bt) in Clio Mk4 was manual-only; EDC was paired with 1.2 TCe and 1.5 dCi only.
+    compatible_displacements: ["1.2_TCE", "1.5_DCI"]
     year_range: [2013, 2019]
   - code: JR5
     type: manual_5speed

@@ -55,14 +55,14 @@
       {
         "video_id": "b3YzKwG7HxI",
         "title": "7 Things To Look For BEFORE Buying An MK7 VW!",
-        "channel": "Diego Arias",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       },
       {
         "video_id": "nvcpoOwqwhI",
         "title": "How Reliable is the MK7 GTI?",
-        "channel": "",
+        "channel": "Lucas Huang",
         "video_type_category": "organic",
         "trim": "GTI"
       },
@@ -76,7 +76,7 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       },
@@ -111,14 +111,14 @@
       {
         "video_id": "xiaRO3CEkjs",
         "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "GTI"
       },
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
@@ -132,7 +132,7 @@
       {
         "video_id": "2X5bj2gX5z4",
         "title": "Common Problems of VW MK7 GTI",
-        "channel": "Lucas Huang",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -163,8 +163,8 @@
     "model_scope": [
       "all_vw_golf_mk7"
     ],
-    "distinct_channel_count": 12,
-    "corroboration_count": 13,
+    "distinct_channel_count": 14,
+    "corroboration_count": 14,
     "trim_evidence": {
       "GTI": 7,
       "R": 3,
@@ -224,7 +224,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
@@ -260,8 +260,8 @@
     "model_scope": [
       "golf_gti_mk7"
     ],
-    "distinct_channel_count": 3,
-    "corroboration_count": 3,
+    "distinct_channel_count": 4,
+    "corroboration_count": 4,
     "trim_evidence": {
       "GTI": 3,
       "R": 1
@@ -329,7 +329,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
@@ -343,14 +343,14 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       },
       {
         "video_id": "xiaRO3CEkjs",
         "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "GTI"
       }
@@ -379,8 +379,8 @@
     "model_scope": [
       "all_vw_golf_mk7"
     ],
-    "distinct_channel_count": 2,
-    "corroboration_count": 3,
+    "distinct_channel_count": 4,
+    "corroboration_count": 4,
     "trim_evidence": {
       "GTI": 2,
       "R": 1,
@@ -439,7 +439,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
@@ -460,7 +460,7 @@
       {
         "video_id": "2X5bj2gX5z4",
         "title": "Common Problems of VW MK7 GTI",
-        "channel": "Lucas Huang",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -481,8 +481,8 @@
     "_scope_notes": [
       "system_component=electrical is not engine-scoped; cleared affected_engines (original preserved in affected_engines_original)."
     ],
-    "distinct_channel_count": 3,
-    "corroboration_count": 3,
+    "distinct_channel_count": 4,
+    "corroboration_count": 4,
     "trim_evidence": {
       "GTI": 3,
       "R": 1
@@ -538,21 +538,21 @@
       {
         "video_id": "2X5bj2gX5z4",
         "title": "Common Problems of VW MK7 GTI",
-        "channel": "Lucas Huang",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
       {
         "video_id": "xiaRO3CEkjs",
         "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "GTI"
       },
       {
         "video_id": "nvcpoOwqwhI",
         "title": "How Reliable is the MK7 GTI?",
-        "channel": "",
+        "channel": "Lucas Huang",
         "video_type_category": "organic",
         "trim": "GTI"
       }
@@ -622,7 +622,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
@@ -772,7 +772,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
@@ -867,7 +867,7 @@
       {
         "video_id": "ce2WTs_uBos",
         "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "TDI"
       }
@@ -1014,7 +1014,7 @@
       {
         "video_id": "xiaRO3CEkjs",
         "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "GTI"
       }
@@ -1094,7 +1094,7 @@
       {
         "video_id": "b3YzKwG7HxI",
         "title": "7 Things To Look For BEFORE Buying An MK7 VW!",
-        "channel": "Diego Arias",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -1242,7 +1242,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
@@ -1266,8 +1266,8 @@
     "_scope_notes": [
       "system_component=suspension is not engine-scoped; cleared affected_engines (original preserved in affected_engines_original)."
     ],
-    "distinct_channel_count": 1,
-    "corroboration_count": 1,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2,
     "trim_evidence": {
       "GTI": 1,
       "R": 1
@@ -1323,14 +1323,14 @@
       {
         "video_id": "2X5bj2gX5z4",
         "title": "Common Problems of VW MK7 GTI",
-        "channel": "Lucas Huang",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
       {
         "video_id": "PwzmaKYijOc",
         "title": "Volkswagen MK7 Golf GTI Buyer's Guide - Models, Engines, & Options",
-        "channel": "FCP Euro",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -1402,7 +1402,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       },
@@ -1420,8 +1420,8 @@
     "model_scope": [
       "all_vw_golf_mk7"
     ],
-    "distinct_channel_count": 1,
-    "corroboration_count": 1,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2,
     "trim_evidence": {
       "GTI": 1,
       "R": 1
@@ -1481,14 +1481,14 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       },
       {
         "video_id": "xiaRO3CEkjs",
         "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "GTI"
       }
@@ -1503,7 +1503,7 @@
     "model_scope": [
       "all_vw_golf_mk7"
     ],
-    "distinct_channel_count": 1,
+    "distinct_channel_count": 2,
     "corroboration_count": 2,
     "trim_evidence": {
       "GTI": 1,
@@ -1566,14 +1566,14 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       },
       {
         "video_id": "xiaRO3CEkjs",
         "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "GTI"
       }
@@ -1600,7 +1600,7 @@
     "model_scope": [
       "all_vw_golf_mk7"
     ],
-    "distinct_channel_count": 1,
+    "distinct_channel_count": 2,
     "corroboration_count": 2,
     "trim_evidence": {
       "GTI": 1,
@@ -1788,7 +1788,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -1992,7 +1992,7 @@
       {
         "video_id": "b3YzKwG7HxI",
         "title": "7 Things To Look For BEFORE Buying An MK7 VW!",
-        "channel": "Diego Arias",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -2321,7 +2321,7 @@
       {
         "video_id": "nvcpoOwqwhI",
         "title": "How Reliable is the MK7 GTI?",
-        "channel": "",
+        "channel": "Lucas Huang",
         "video_type_category": "organic",
         "trim": "GTI"
       }
@@ -2452,7 +2452,7 @@
       {
         "video_id": "xiaRO3CEkjs",
         "title": "VW Golf MK7 GTI & R Engine Issues 2013-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "GTI"
       }
@@ -2523,7 +2523,7 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -2586,7 +2586,7 @@
       {
         "video_id": "2X5bj2gX5z4",
         "title": "Common Problems of VW MK7 GTI",
-        "channel": "Lucas Huang",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -2908,7 +2908,7 @@
       {
         "video_id": "b3YzKwG7HxI",
         "title": "7 Things To Look For BEFORE Buying An MK7 VW!",
-        "channel": "Diego Arias",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -3101,7 +3101,7 @@
       {
         "video_id": "2X5bj2gX5z4",
         "title": "Common Problems of VW MK7 GTI",
-        "channel": "Lucas Huang",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -3299,7 +3299,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -3368,7 +3368,7 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -3593,7 +3593,7 @@
       {
         "video_id": "ce2WTs_uBos",
         "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "TDI"
       }
@@ -4050,7 +4050,7 @@
       {
         "video_id": "2X5bj2gX5z4",
         "title": "Common Problems of VW MK7 GTI",
-        "channel": "Lucas Huang",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -4315,7 +4315,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -4383,7 +4383,7 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -4732,7 +4732,7 @@
       {
         "video_id": "ce2WTs_uBos",
         "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "TDI"
       }
@@ -4797,7 +4797,7 @@
       {
         "video_id": "ce2WTs_uBos",
         "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "TDI"
       }
@@ -4997,7 +4997,7 @@
       {
         "video_id": "b3YzKwG7HxI",
         "title": "7 Things To Look For BEFORE Buying An MK7 VW!",
-        "channel": "Diego Arias",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -5060,7 +5060,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -5397,7 +5397,7 @@
       {
         "video_id": "b3YzKwG7HxI",
         "title": "7 Things To Look For BEFORE Buying An MK7 VW!",
-        "channel": "Diego Arias",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -5531,7 +5531,7 @@
       {
         "video_id": "5XND3jWg3sc",
         "title": "Golf GTI buyers guide MK7 & MK7.5 (2013-2020) Avoid buying broken VW GTI with common faults (2.0TSI)",
-        "channel": "The Miles Driven",
+        "channel": "",
         "video_type_category": "list_format",
         "trim": "GTI"
       }
@@ -5674,7 +5674,7 @@
       {
         "video_id": "ce2WTs_uBos",
         "title": "VW Golf MK7 Issues of the Diesel Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "TDI"
       }
@@ -5814,7 +5814,7 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -5944,7 +5944,7 @@
       {
         "video_id": "4f1aVIA801g",
         "title": "VW Golf MK7 Issues of the Petrol Engines 2012-2020",
-        "channel": "different car review",
+        "channel": "",
         "video_type_category": "organic",
         "trim": "base"
       }
@@ -6033,7 +6033,7 @@
       {
         "video_id": "nvcpoOwqwhI",
         "title": "How Reliable is the MK7 GTI?",
-        "channel": "",
+        "channel": "Lucas Huang",
         "video_type_category": "organic",
         "trim": "GTI"
       }
@@ -6278,5 +6278,700 @@
       "fallback_window": "2013-2020",
       "fallback_window_source": "model_window"
     }
+  },
+  {
+    "issue_id": "dsg_gearbox_jerkiness_clunky_shifts",
+    "label": "DSG gearbox jerkiness and clunky shifts",
+    "label_short": "DSG gearbox jerkines",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Gear shifts feel jerky, clunky, or not smooth, with increased resistance, especially in cold weather or going into fourth gear.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "turbo_failure",
+    "label": "Turbocharger failure due to stop/start system",
+    "label_short": "Turbocharger failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "CJXC"
+    ],
+    "affected_years": "2013 and 2014",
+    "symptom": "Turbo failure potentially caused by stop/start system leading to lubrication issues and overheating.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "coolant_system_leak",
+    "label": "Coolant leaks from thermostat, water pump, or plastic adapter",
+    "label_short": "Coolant leaks from t",
+    "system_component": "cooling",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Steam from hood and coolant leak onto turbo, leading to complete coolant loss. Also indicated by low coolant level and coolant smell.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "fuel_injector_misfires",
+    "label": "Fuel injector misfires",
+    "label_short": "Fuel injector misfir",
+    "system_component": "fuel",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "2018",
+    "symptom": "Misfires, rough running, with diagnostic scans indicating fuel injector issues.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "dsg_gearbox_access_cap_oil_leak",
+    "label": "DSG gearbox access cap oil leak",
+    "label_short": "DSG gearbox access c",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "The gearbox is wet with oil where it has been leaking from the access cap.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "carbon_buildup_misfire",
+    "label": "Carbon buildup causing misfire",
+    "label_short": "Carbon buildup causi",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Check engine light for misfire due to carbon buildup on intake, especially on cold startup.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "timing_chain_stretch_rattle",
+    "label": "Timing chain stretch and rattle",
+    "label_short": "Timing chain stretch",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "symptom": "A rattling noise comes from the engine, often at startup or idle.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "fuel_injector_stuck_open",
+    "label": "Fuel injectors sticking open",
+    "label_short": "Fuel injectors stick",
+    "system_component": "fuel",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Fuel injector gets stuck open, flooding the engine and stranding the car.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "fuel_system_failure",
+    "label": "Fuel pump or injector failure",
+    "label_short": "Fuel pump or injecto",
+    "system_component": "fuel",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_TSI"
+    ],
+    "affected_years": "earlier cars",
+    "symptom": "Fuel pump fails, causing the car to die. Fuel injector gets stuck open, flooding the engine and stranding the car.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "coolant_adapter_failure",
+    "label": "Plastic coolant adapter breakage",
+    "label_short": "Plastic coolant adap",
+    "system_component": "cooling",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Steam from hood and coolant leak onto turbo, leading to complete coolant loss.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "turbo_wastegate_stuck",
+    "label": "Turbo wastegate sticking failure",
+    "label_short": "Turbo wastegate stic",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "EPC light and limp mode triggered under boost, progressively worsening.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "early_turbocharger_failure",
+    "label": "Early turbocharger sudden failure",
+    "label_short": "Early turbocharger s",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "first 1 and 1 half years of manufacture",
+    "symptom": "Drastic loss of power, poor acceleration, exhaust smoke, and a distinctive whining noise.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "coolant_leak_thermostat_housing",
+    "label": "Plastic thermostat housing cracks",
+    "label_short": "Plastic thermostat h",
+    "system_component": "cooling",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Coolant leaks from the integrated thermostat housing and water pump assembly.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "wastegate_actuator_rattle",
+    "label": "Turbo wastegate actuator rattle",
+    "label_short": "Turbo wastegate actu",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Wastegate rattle leads to inconsistent boost pressure and a loss of power.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "excessive_oil_consumption",
+    "label": "Excessive engine oil consumption",
+    "label_short": "Excessive engine oil",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "The engine consumes oil at a higher than normal rate.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "dq200_mechatronic_failure",
+    "label": "DQ200 DSG mechatronic unit failure",
+    "label_short": "DQ200 DSG mechatroni",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Gearbox enters limp mode with gear selection issues or warning lights.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "timing_chain_tensioner_failure",
+    "label": "Timing chain tensioner failure",
+    "label_short": "Timing chain tension",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Engine rattling on startup or catastrophic engine failure due to chain jump.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "injector_failure_carbon_buildup",
+    "label": "Fuel injector carbon buildup and failure",
+    "label_short": "Fuel injector carbon",
+    "system_component": "fuel",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Engine misfires, rough idle, and loss of power due to clogged injectors.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "turbo_wastegate_rattle",
+    "label": "Turbocharger wastegate actuator rattle",
+    "label_short": "Turbocharger wastega",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.4_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Audible metallic rattling from the turbo area during acceleration or deceleration.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "adblue_system_faults",
+    "label": "AdBlue system and NOx sensor faults",
+    "label_short": "AdBlue system and NO",
+    "system_component": "exhaust",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "symptom": "Engine warning lights and countdown to reduced power due to AdBlue system errors.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "turbocharger_failures",
+    "label": "Turbocharger failures",
+    "label_short": "Turbocharger failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "EA888 Gen 2",
+      "EA888 Gen 3"
+    ],
+    "affected_years": "pre-Mark 7, early Mark 7 generation",
+    "symptom": "Turbocharger fails, leading to loss of power or engine warning lights. IS20 or IS38 turbocharger fails in early production batches.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "pcv_valve_failure",
+    "label": "PCV valve failure",
+    "label_short": "PCV valve failure",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "EA888 Gen 3",
+      "EA888 Gen 4"
+    ],
+    "affected_years": null,
+    "symptom": "Engine experiences oil consumption or rough idle due to faulty PCV valve.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "diesel_dpf_egr_clogging",
+    "label": "Diesel DPF and EGR clogging",
+    "label_short": "Diesel DPF and EGR c",
+    "system_component": "exhaust",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "symptom": "DPF not regenerating properly, EGR clogging, intake buildup, and warning lights related to emissions, especially with short trips.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "upper_timing_chain_cover_leak",
+    "label": "Upper timing chain cover gasket leak",
+    "label_short": "Upper timing chain c",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Oil leak from the plastic timing chain cover.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "wheel_bearing_wear",
+    "label": "Front or rear wheel bearing wear",
+    "label_short": "Front or rear wheel ",
+    "system_component": "suspension",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Increasing humming or roaring noise from the wheels.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "dsg_cooling_valve_failure",
+    "label": "DSG cooling bypass valve failure",
+    "label_short": "DSG cooling bypass v",
+    "system_component": "gearbox",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "ECU fault code related to gearbox cooling and limp mode.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
+  },
+  {
+    "issue_id": "piston_ring_collapse_tuned",
+    "label": "Piston ring collapse on tuned engines",
+    "label_short": "Piston ring collapse",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Excessive oil consumption or catastrophic piston failure.",
+    "mention_count": 1,
+    "corroboration_count": 1,
+    "source": "youtube",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": null,
+        "title": null,
+        "channel": null
+      }
+    ]
   }
 ]

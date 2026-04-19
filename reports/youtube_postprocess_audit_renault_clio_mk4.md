@@ -84,7 +84,7 @@ _(none)_
   - transcript=[], titles=['2013-2019'], engine_windows=[]
 - `numerous_minor_electrical_faults` → **2013-2019** (confidence=medium, sources=None)
   - transcript=[], titles=['2013-2019'], engine_windows=[]
-- `timing_chain_stretch` → **2013-2018** (confidence=medium, sources=None)
-  - transcript=[], titles=['2013-2019'], engine_windows=['2013-2018']
+- `timing_chain_stretch` → **2013-2019** (confidence=medium, sources=None)
+  - transcript=[], titles=['2013-2019'], engine_windows=['2013-2019']
 - `warning_lights_systems_freezing` → **2013-2019** (confidence=medium, sources=None)
   - transcript=[], titles=['2013-2019'], engine_windows=[]

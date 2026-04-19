@@ -18,6 +18,8 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from scrapers.fetch_youtube_transcripts import search_youtube_videos
+from scripts.extract_youtube_issues import load_scaffold
+from scripts.trim_balance import downsample_performance_videos
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -25,28 +27,18 @@ logging.basicConfig(
 
 # Broad, model-level query templates. These surface general ownership and
 # mechanic content without presupposing any specific issue.
-_QUERY_TEMPLATES = [
-    "{car} problems",
-    "{car} common issues",
-    "{car} review",
-    "{car} ownership experience",
-    "{car} daily driver review",
-    "{car} long term ownership",
-    "{car} family car review",
-    "{car} buyer's guide",
-    "{car} things that break",
-    "{car} reliability",
-    "{car} mechanic workshop",
-    "{car} long term review",
-    "{car} what to look for",
-    "{car} what goes wrong",
+_QUERY_TEMPLATES_EN = [
+    "{car} chronic issues",
+    "{car} chronic problems",
     "{car} known faults",
-    "{car} mechanic review",
-    "{car} workshop inspection",
-    "{car} independent garage review",
 ]
 
-_MECHANIC_SIGNALS = (
+_QUERY_TEMPLATES_TR = [
+    "{car} kronik sorunları",
+    "{car} kronik arızaları",
+]
+
+_MECHANIC_SIGNALS_EN = (
     "mechanic",
     "workshop",
     "garage",
@@ -72,7 +64,27 @@ _MECHANIC_SIGNALS = (
     "what goes wrong",
 )
 
-_LIST_FORMAT_SIGNALS = (
+_MECHANIC_SIGNALS_TR = (
+    "usta",
+    "tamir",
+    "servis",
+    "bakım",
+    "garaj",
+    "mekanik",
+    "atölye",
+    "kronik",
+    "sorun",
+    "ariza",
+    "arıza",
+    "kullanıcı",
+    "inceleme",
+    "alınır mı",
+    "alinir mi",
+    "neden alınmaz",
+    "neden alinmaz",
+)
+
+_LIST_FORMAT_SIGNALS_EN = (
     "buyer's guide",
     "buyers guide",
     "common problems",
@@ -86,9 +98,25 @@ _LIST_FORMAT_SIGNALS = (
     "problems with",
 )
 
+_LIST_FORMAT_SIGNALS_TR = (
+    "alınır mı",
+    "alinir mi",
+    "kronik sorunlar",
+    "dikkat edilmesi gerekenler",
+    "neden alınmaz",
+    "neden alinmaz",
+    "problemleri",
+    "şikayetleri",
+)
+
+# Global variables that will be swapped based on language
+_QUERY_TEMPLATES = _QUERY_TEMPLATES_EN
+_MECHANIC_SIGNALS = _MECHANIC_SIGNALS_EN
+_LIST_FORMAT_SIGNALS = _LIST_FORMAT_SIGNALS_EN
+
 # Entertainment / hype markers — videos that rarely contain owner-grade
 # fault evidence. Only reject when the title shows NO fault/ownership signal.
-_HYPE_SIGNALS = (
+_HYPE_SIGNALS_EN = (
     "drag race",
     " vs ",
     " vs. ",
@@ -106,8 +134,19 @@ _HYPE_SIGNALS = (
     "remap",
 )
 
+_HYPE_SIGNALS_TR = (
+    "yarış",
+    "hız testi",
+    "0-100",
+    "modifiye",
+    "yazılım",
+    "drag",
+    "kapışma",
+    "hızlanma",
+)
+
 # If any of these appear we keep the video even if hype markers also match.
-_FAULT_OR_OWNERSHIP_SIGNALS = (
+_FAULT_OR_OWNERSHIP_SIGNALS_EN = (
     "problem",
     "issue",
     "fault",
@@ -130,7 +169,42 @@ _FAULT_OR_OWNERSHIP_SIGNALS = (
     "miles ownership",
     "years later",
     "after \u2026 miles",
+    "buyer's guide",
+    "buyers guide",
+    "should you buy",
+    "reliability",
+    "everything you need to know",
+    "known problems",
+    "common problems",
 )
+
+_FAULT_OR_OWNERSHIP_SIGNALS_TR = (
+    "sorun",
+    "arıza",
+    "ariza",
+    "problem",
+    "tamir",
+    "bakım",
+    "kronik",
+    "şikayet",
+    "sikayet",
+    "kullanıcı yorumu",
+    "uzun kullanım",
+    "neden alınmaz",
+    "neden alinmaz",
+    "alınır mı",
+    "alinir mi",
+    "neleri bozulur",
+    "masraf",
+    "eksikleri",
+)
+
+# Global variables that will be swapped based on language
+_QUERY_TEMPLATES = _QUERY_TEMPLATES_EN
+_MECHANIC_SIGNALS = _MECHANIC_SIGNALS_EN
+_LIST_FORMAT_SIGNALS = _LIST_FORMAT_SIGNALS_EN
+_HYPE_SIGNALS = _HYPE_SIGNALS_EN
+_FAULT_OR_OWNERSHIP_SIGNALS = _FAULT_OR_OWNERSHIP_SIGNALS_EN
 
 
 def _title_blob(video: dict) -> str:
@@ -141,9 +215,152 @@ def _has_signal(blob: str, signals: tuple[str, ...]) -> bool:
     return any(sig in blob for sig in signals)
 
 
+# ── Cross-brand title filter ────────────────────────────────────────────────
+# YouTube's search results sometimes surface videos from a different OEM that
+# happen to rank for the query (e.g. a Ford 1.0 EcoBoost teardown matching a
+# "Renault Clio chronic issues" search). These contaminate the transcript
+# corpus with wrong-brand engine wording that the LLM then absorbs. We drop
+# any video whose title mentions a foreign OEM or a foreign engine-family
+# token *and* doesn't mention the target make/model from the scaffold.
+_BRAND_GROUPS: list[set[str]] = [
+    {"vw", "volkswagen", "audi", "seat", "skoda", "cupra", "porsche", "bentley"},
+    {"renault", "dacia", "nissan", "infiniti", "mitsubishi"},
+    {"ford", "lincoln"},
+    {"toyota", "lexus", "subaru"},
+    {"honda", "acura"},
+    {"hyundai", "kia", "genesis"},
+    {"peugeot", "citroen", "citroën", "opel", "vauxhall", "fiat",
+     "alfa", "lancia", "chrysler", "dodge", "jeep", "ram", "maserati", "ds"},
+    {"bmw", "mini"},
+    {"mercedes", "mercedes-benz", "smart"},
+    {"volvo", "polestar"},
+    {"mazda"},
+    {"tesla"},
+    {"jaguar", "land rover", "range rover"},
+]
+_FOREIGN_ENGINE_TOKENS: dict[str, set[str]] = {
+    "ford":     {"ecoboost", "duratec", "duratorq"},
+    "bmw":      {"n20", "n47", "n54", "n55", "b48", "b58"},
+    "toyota":   {"2ar-fe", "1zz", "2zz"},
+    "honda":    {"k20", "k24"},
+    "peugeot":  {"puretech", "hdi", "bluehdi"},
+    "mazda":    {"skyactiv"},
+    "mercedes": {"cdi", "bluetec"},
+    "vw":       {"tsi", "tdi", "tfsi"},
+}
+
+
+def _scaffold_allowed_brand_group(scaffold: dict) -> set[str]:
+    make = ((scaffold or {}).get("meta") or {}).get("make", "").lower().strip()
+    if not make:
+        return set()
+    for group in _BRAND_GROUPS:
+        if make in group:
+            return group
+    return {make}
+
+
+def _scaffold_target_tokens(scaffold: dict) -> list[str]:
+    """Tokens the target video title must contain (any one) to be considered
+    on-topic. Derived from scaffold make + model (split on whitespace) plus
+    every engine family code and displacement code declared in the scaffold.
+
+    Engine-code hits let mechanic-niche videos through even when the title
+    doesn't name the make/model (e.g. "EA888 2.0 TSI teardown" for a Golf Mk7).
+    Displacement codes like "1.4_TSI" are expanded to variants the title might
+    use (e.g. "1.4 tsi", "1.4tsi").
+    """
+    meta = (scaffold or {}).get("meta") or {}
+    make = str(meta.get("make", "")).lower().strip()
+    model = str(meta.get("model", "")).lower().strip()
+    toks: list[str] = []
+    if make:
+        toks.append(make)
+    for part in re.split(r"\s+", model):
+        part = part.strip()
+        if part and len(part) >= 2:
+            toks.append(part)
+
+    for ef in scaffold.get("engine_families") or []:
+        fam = str(ef.get("code", "")).strip().lower()
+        if fam and len(fam) >= 3:
+            toks.append(fam)
+        for d in ef.get("displacements") or []:
+            code = d.get("code") if isinstance(d, dict) else d
+            code = str(code or "").strip().lower()
+            if not code:
+                continue
+            # "1.4_tsi" → also accept "1.4 tsi", "1.4tsi"
+            toks.append(code.replace("_", " "))
+            toks.append(code.replace("_", ""))
+    # dedup while preserving order
+    seen: set[str] = set()
+    out: list[str] = []
+    for t in toks:
+        if t not in seen:
+            seen.add(t)
+            out.append(t)
+    return out
+
+
+def cross_brand_title_filter(
+    videos: list[dict], scaffold: dict
+) -> tuple[list[dict], list[dict]]:
+    """On-topic title gate. A video is accepted only when its title mentions
+    the scaffold target (make, model, engine-family code, or displacement
+    code). Otherwise rejected — tagged as `foreign_brand:*` / `foreign_engine:*`
+    when a competing OEM is named, else `off_topic_title`.
+
+    This is cheaper than transcript-level validation: no transcript fetch,
+    no LLM call. No-op when scaffold has no meta.
+    """
+    allowed = _scaffold_allowed_brand_group(scaffold)
+    targets = _scaffold_target_tokens(scaffold)
+    if not allowed or not targets:
+        return videos, []
+
+    accepted: list[dict] = []
+    rejected: list[dict] = []
+    for v in videos:
+        title = str(v.get("title", "")).lower()
+        if not title:
+            accepted.append(v)
+            continue
+
+        if any(re.search(r"\b" + re.escape(t) + r"\b", title) for t in targets):
+            accepted.append(v)
+            continue
+
+        # No target mention → reject. Classify the reason for audit.
+        reason: str = "off_topic_title"
+        for group in _BRAND_GROUPS:
+            if group == allowed:
+                continue
+            for brand in group:
+                if re.search(r"\b" + re.escape(brand) + r"\b", title):
+                    reason = f"foreign_brand:{brand}"
+                    break
+            if reason != "off_topic_title":
+                break
+        if reason == "off_topic_title":
+            for brand, tokens in _FOREIGN_ENGINE_TOKENS.items():
+                if brand in allowed:
+                    continue
+                for tok in tokens:
+                    if re.search(r"\b" + re.escape(tok) + r"\b", title):
+                        reason = f"foreign_engine:{tok}"
+                        break
+                if reason != "off_topic_title":
+                    break
+
+        v["prefilter_reason"] = reason
+        rejected.append(v)
+    return accepted, rejected
+
+
 def relevancy_prefilter(
     videos: list[dict],
-    viral_list_view_threshold: int = 100_000,
+    viral_list_view_threshold: int = 1_500_000,
 ) -> tuple[list[dict], list[dict]]:
     """
     Split candidates into (accepted, rejected) based on content signals.
@@ -376,42 +593,38 @@ def _is_mechanic_niche(video: dict) -> bool:
 
 
 def _view_count_score(view_count: int | None) -> int:
-    """Higher score means more niche / less mainstream."""
+    """Higher views = more credible signal (engagement, reach, corroboration)."""
     if view_count is None:
         return 0
-    if view_count <= 50_000:
+    if view_count >= 3_000_000:
         return 4
-    if view_count <= 150_000:
+    if view_count >= 1_000_000:
         return 3
-    if view_count <= 300_000:
+    if view_count >= 500_000:
         return 2
-    if view_count <= 600_000:
+    if view_count >= 200_000:
         return 1
-    if view_count <= 1_000_000:
-        return 0
-    if view_count <= 3_000_000:
-        return -2
-    return -4
+    return 0
 
 
 def filter_and_rank_candidates(
     candidates: dict[str, dict],
     min_seconds: int = 480,
-    max_views: int | None = 150_000,
+    min_views: int | None = 80_000,
     enable_prefilter: bool = True,
 ) -> tuple[list[dict], list[dict]]:
     """
-    Keep candidates above min_seconds and rank toward niche mechanic videos.
+    Keep candidates above min_seconds and min_views, rank by credibility.
 
     Ranking prefers:
       1) mechanic/workshop-style content
       2) videos surfaced by multiple broad model-level queries
-      3) lower view counts (to drift away from mainstream/popular videos)
+      3) higher view counts (views = engagement / corroboration signal)
       4) longer duration as a weak tie-breaker
 
-    If max_views is set, videos above that threshold are excluded when possible.
-    If this would drop every candidate, cap is treated as a soft preference and
-    we fall back to ranking without hard exclusion.
+    If min_views is set, videos below that threshold are dropped. If that
+    would drop every candidate, the floor is relaxed and we fall back to
+    ranking-only.
     """
     filtered: list[dict] = []
     for video in candidates.values():
@@ -424,22 +637,22 @@ def filter_and_rank_candidates(
         video["view_count_raw"] = view_count_raw
         filtered.append(video)
 
-    if max_views is not None:
-        capped = [
+    if min_views is not None:
+        gated = [
             v
             for v in filtered
-            if v.get("view_count_raw") is None or v["view_count_raw"] <= max_views
+            if v.get("view_count_raw") is None or v["view_count_raw"] >= min_views
         ]
-        if capped:
-            dropped = len(filtered) - len(capped)
+        if gated:
+            dropped = len(filtered) - len(gated)
             if dropped:
                 logging.info(
-                    f"Applied max view cap ({max_views:,}): dropped {dropped} high-view videos"
+                    f"Applied min view floor ({min_views:,}): dropped {dropped} low-view videos"
                 )
-            filtered = capped
+            filtered = gated
         else:
             logging.warning(
-                f"No videos under max view cap ({max_views:,}); using soft niche ranking fallback"
+                f"No videos above min view floor ({min_views:,}); falling back to ranking-only"
             )
 
     rejected: list[dict] = []
@@ -468,11 +681,7 @@ def filter_and_rank_candidates(
         key=lambda v: (
             int(v.get("selection_score", 0)),
             len(v.get("matched_queries", [])),
-            -(
-                int(v["view_count_raw"])
-                if v.get("view_count_raw") is not None
-                else 10**12
-            ),
+            int(v["view_count_raw"]) if v.get("view_count_raw") is not None else 0,
             int(v.get("duration_seconds") or 0),
         ),
         reverse=True,
@@ -486,7 +695,7 @@ def scrape_car_issues(
     max_videos: int = 30,
     min_duration_seconds: int = 120,
     candidates_per_query: int = 15,
-    max_view_count: int | None = 150_000,
+    min_view_count: int | None = 80_000,
     enable_prefilter: bool = True,
     out_dir: Path | None = None,
     cookies_file: str | None = None,
@@ -501,6 +710,22 @@ def scrape_car_issues(
       3. fetch_transcript_structured for selected videos
       4. Write structured JSON output
     """
+    global _QUERY_TEMPLATES, _MECHANIC_SIGNALS, _LIST_FORMAT_SIGNALS
+    global _HYPE_SIGNALS, _FAULT_OR_OWNERSHIP_SIGNALS
+
+    if target_lang == "tr":
+        _QUERY_TEMPLATES = _QUERY_TEMPLATES_TR
+        _MECHANIC_SIGNALS = _MECHANIC_SIGNALS_TR
+        _LIST_FORMAT_SIGNALS = _LIST_FORMAT_SIGNALS_TR
+        _HYPE_SIGNALS = _HYPE_SIGNALS_TR
+        _FAULT_OR_OWNERSHIP_SIGNALS = _FAULT_OR_OWNERSHIP_SIGNALS_TR
+    else:
+        _QUERY_TEMPLATES = _QUERY_TEMPLATES_EN
+        _MECHANIC_SIGNALS = _MECHANIC_SIGNALS_EN
+        _LIST_FORMAT_SIGNALS = _LIST_FORMAT_SIGNALS_EN
+        _HYPE_SIGNALS = _HYPE_SIGNALS_EN
+        _FAULT_OR_OWNERSHIP_SIGNALS = _FAULT_OR_OWNERSHIP_SIGNALS_EN
+
     slug = slug or car_label.lower().replace(" ", "_")
 
     out_dir = out_dir or (ROOT / "data" / "raw" / "videos")
@@ -513,9 +738,36 @@ def scrape_car_issues(
     qualifying, rejected = filter_and_rank_candidates(
         candidates,
         min_duration_seconds,
-        max_views=max_view_count,
+        min_views=min_view_count,
         enable_prefilter=enable_prefilter,
     )
+
+    # Scaffold-driven performance-trim balancing. No-op when the scaffold does
+    # not declare a ``performance_trims`` block, so this generalises to any
+    # model without model-specific scraper logic.
+    try:
+        scaffold = load_scaffold(slug)
+    except Exception as e:
+        logging.info(f"No scaffold loaded for '{slug}' ({e}); skipping trim balancing")
+        scaffold = {}
+
+    # Cross-brand title filter — drops foreign-OEM videos that leaked through
+    # YouTube's search ranking for the target query.
+    qualifying, cross_brand_rejected = cross_brand_title_filter(qualifying, scaffold)
+    if cross_brand_rejected:
+        reasons: dict[str, int] = {}
+        for r in cross_brand_rejected:
+            reasons[r.get("prefilter_reason", "unknown")] = (
+                reasons.get(r.get("prefilter_reason", "unknown"), 0) + 1
+            )
+        logging.info(
+            f"Cross-brand title filter rejected {len(cross_brand_rejected)} videos "
+            f"({', '.join(f'{k}={v}' for k, v in sorted(reasons.items()))})"
+        )
+        rejected.extend(cross_brand_rejected)
+
+    qualifying = downsample_performance_videos(qualifying, scaffold)
+
     selected = qualifying[:max_videos]
 
     if rejected:
@@ -595,7 +847,7 @@ def scrape_car_issues(
             "total_videos": len(videos_out),
             "total_with_transcript": total_ok,
             "duration_filter_seconds": min_duration_seconds,
-            "max_view_count": max_view_count,
+            "min_view_count": min_view_count,
             "prefilter_enabled": enable_prefilter,
             "rejected_candidates": len(rejected),
             "selection_strategy": "mechanic_niche_plus_low_view_count_plus_relevancy_prefilter",
@@ -640,12 +892,13 @@ def main() -> None:
     )
     parser.add_argument("--candidates-per-query", type=int, default=15)
     parser.add_argument(
-        "--max-views",
+        "--min-views",
         type=int,
-        default=150_000,
+        default=80_000,
         help=(
-            "Hard cap for view count to bias toward niche videos (default: 150000). "
-            "If no candidates pass the cap, fallback uses soft ranking."
+            "Minimum view count to qualify (default: 80000). Views are treated "
+            "as a credibility / engagement signal. If no candidates pass the "
+            "floor, fallback uses soft ranking."
         ),
     )
     parser.add_argument(
@@ -672,7 +925,7 @@ def main() -> None:
         max_videos=args.max_videos,
         min_duration_seconds=args.min_duration,
         candidates_per_query=args.candidates_per_query,
-        max_view_count=args.max_views,
+        min_view_count=args.min_views,
         enable_prefilter=not args.disable_prefilter,
         cookies_file=args.cookies_file,
         request_delay=args.request_delay,

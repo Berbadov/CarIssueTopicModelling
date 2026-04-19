@@ -1,0 +1,722 @@
+{
+  "stage": "final",
+  "data": [
+    {
+      "issue_id": "dsg_mechatronic_failure",
+      "label": "DSG mechatronic unit failure",
+      "label_short": "DSG Mechatronic Failure",
+      "system_component": "gearbox",
+      "issue_type": "chronic_failure",
+      "severity": "high",
+      "confidence": "medium",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI",
+        "1.5_TSI",
+        "1.6_TDI",
+        "2.0_TDI"
+      ],
+      "affected_years": "2012-2019",
+      "onset_km_range": null,
+      "symptom": "Mechatronic failure occurs, especially in heavy traffic, requiring repair or replacement.",
+      "cause": null,
+      "fix": "Repair or replacement of the mechatronic unit.",
+      "warning_signs": [
+        "Erratic shifting",
+        "Transmission warning light"
+      ],
+      "inspection_advice": "Check for transmission fault codes and test drive in stop-and-go traffic.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "MXuIMubAxNc",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": "Common in DQ200 DSG transmissions paired with listed engines.",
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "engine_oil_leak",
+      "label": "Engine oil leak",
+      "label_short": "Oil Leak",
+      "system_component": "engine",
+      "issue_type": "fluid_leak",
+      "severity": "medium",
+      "confidence": "medium",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI",
+        "1.5_TSI",
+        "1.6_TDI",
+        "2.0_TDI"
+      ],
+      "affected_years": "2012-2019",
+      "onset_km_range": null,
+      "symptom": "Oil leaks from the engine, often related to turbocharger stress.",
+      "cause": "Turbocharger stress and gasket/seal wear.",
+      "fix": "Identify leak source and replace seals/gaskets.",
+      "warning_signs": [
+        "Oil spots under car",
+        "Low oil level"
+      ],
+      "inspection_advice": "Inspect engine bay and underside for oil residue, especially around turbo and seals.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "MXuIMubAxNc",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": "Can be exacerbated by high mileage and performance tuning.",
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "engine_mount_failure",
+      "label": "Engine mount breakage",
+      "label_short": "Engine Mount Break",
+      "system_component": "engine",
+      "issue_type": "structural",
+      "severity": "medium",
+      "confidence": "medium",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI",
+        "1.5_TSI",
+        "1.6_TDI",
+        "2.0_TDI"
+      ],
+      "affected_years": "2012-2019",
+      "onset_km_range": null,
+      "symptom": "The engine mount breaks, causing movement and potential vibration.",
+      "cause": "Material fatigue and stress.",
+      "fix": "Replace broken engine mount(s).",
+      "warning_signs": [
+        "Excessive engine movement",
+        "Vibration at idle or under load"
+      ],
+      "inspection_advice": "Visually inspect mounts for cracks or separation; check for excessive engine movement when revving.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "MXuIMubAxNc",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "suspension_linkage_issues",
+      "label": "Suspension linkage problems",
+      "label_short": "Suspension Linkage",
+      "system_component": "suspension",
+      "issue_type": "wear_item",
+      "severity": "medium",
+      "confidence": "medium",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI",
+        "1.5_TSI",
+        "1.6_TDI",
+        "2.0_TDI"
+      ],
+      "affected_years": "2012-2019",
+      "onset_km_range": null,
+      "symptom": "Issues with front and rear suspension linkage points are common.",
+      "cause": "Wear and tear on bushings and joints.",
+      "fix": "Replace worn suspension components (bushings, links, ball joints).",
+      "warning_signs": [
+        "Clunking noises over bumps",
+        "Vague steering"
+      ],
+      "inspection_advice": "Check for play in suspension components and inspect bushings for cracking.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "MXuIMubAxNc",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "turbo_intercooler_faults",
+      "label": "Turbo intercooler system faults",
+      "label_short": "Intercooler Faults",
+      "system_component": "engine",
+      "issue_type": "intermittent_fault",
+      "severity": "medium",
+      "confidence": "medium",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI",
+        "1.5_TSI",
+        "1.6_TDI",
+        "2.0_TDI"
+      ],
+      "affected_years": "2012-2019",
+      "onset_km_range": null,
+      "symptom": "Faults occur in the turbo intercooler system, affecting performance.",
+      "cause": "Leaks, blockages, or component failure in the intercooler or piping.",
+      "fix": "Diagnose and repair leaks or replace faulty intercooler components.",
+      "warning_signs": [
+        "Reduced boost/power",
+        "Hissing noises under acceleration"
+      ],
+      "inspection_advice": "Check intercooler and pipes for damage, oil residue, or loose connections.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "MXuIMubAxNc",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "timing_chain_tensioner_noise",
+      "label": "Timing chain tensioner noise and stretch",
+      "label_short": "Timing Chain Noise",
+      "system_component": "engine",
+      "issue_type": "noise",
+      "severity": "high",
+      "confidence": "medium",
+      "affected_engines": [
+        "EA111"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "The timing chain makes noise due to stretching from neglected maintenance.",
+      "cause": "Chain stretch and tensioner wear from poor maintenance.",
+      "fix": "Replace timing chain and tensioner.",
+      "warning_signs": [
+        "Rattling noise from engine on startup or idle"
+      ],
+      "inspection_advice": "Listen for timing chain rattle at cold start; check service history for chain replacement.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "BkqPS1h_El4",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "organic"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": "Primarily affects EA111 petrol engines; can lead to catastrophic failure if ignored.",
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "turbo_wastegate_actuator_leak",
+      "label": "Turbo wastegate actuator leak",
+      "label_short": "Wastegate Leak",
+      "system_component": "engine",
+      "issue_type": "fluid_leak",
+      "severity": "medium",
+      "confidence": "medium",
+      "affected_engines": [
+        "EA111"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "A leak in the turbocharger wastegate actuator causes a loss of power and boost pressure.",
+      "cause": "Leak in wastegate actuator diaphragm or linkage.",
+      "fix": "Replace wastegate actuator or repair leak.",
+      "warning_signs": [
+        "Loss of boost/power",
+        "Whistling or hissing from turbo"
+      ],
+      "inspection_advice": "Check for boost leaks and inspect wastegate actuator for damage or leaks.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "BkqPS1h_El4",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "organic"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "excessive_oil_consumption",
+      "label": "Excessive oil consumption at high mileage",
+      "label_short": "Oil Consumption",
+      "system_component": "engine",
+      "issue_type": "wear_item",
+      "severity": "medium",
+      "confidence": "medium",
+      "affected_engines": [
+        "EA111"
+      ],
+      "affected_years": null,
+      "onset_km_range": "150k-200k km",
+      "symptom": "The engine begins to burn oil, sometimes after 150,000 or 200,000 kilometers.",
+      "cause": "Worn piston rings, valve seals, or turbo seals.",
+      "fix": "Engine overhaul or component replacement (piston rings, valve seals).",
+      "warning_signs": [
+        "Frequent need to top up oil",
+        "Blue smoke from exhaust"
+      ],
+      "inspection_advice": "Check oil level and consumption history; look for blue exhaust smoke on acceleration.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "BkqPS1h_El4",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "organic"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": "Common in high-mileage EA111 engines.",
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "supercharger_failure_piston_damage",
+      "label": "Supercharger failure causing piston damage",
+      "label_short": "Supercharger Failure",
+      "system_component": "engine",
+      "issue_type": "chronic_failure",
+      "severity": "high",
+      "confidence": "low",
+      "affected_engines": [
+        "CAVD"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "A failed supercharger staying active with the turbo causes excessive pressure that cracks the piston ring land.",
+      "cause": "Supercharger mechanical failure leading to overboost.",
+      "fix": "Engine rebuild or replacement, supercharger repair.",
+      "warning_signs": [
+        "Loss of power",
+        "Engine knocking",
+        "Check engine light"
+      ],
+      "inspection_advice": "Check for fault codes related to boost pressure and supercharger operation.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "BkqPS1h_El4",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "organic"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "low",
+      "notes": "Specific to CAVD engine code (1.4 TSI with supercharger and turbo).",
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "dpf_clogging_short_trips",
+      "label": "DPF clogging from short urban trips",
+      "label_short": "DPF Clogging",
+      "system_component": "exhaust",
+      "issue_type": "chronic_failure",
+      "severity": "high",
+      "confidence": "high",
+      "affected_engines": [
+        "1.6_TDI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Diesel particulate filter can clog due to insufficient regeneration cycles, especially with urban driving.",
+      "cause": "Incomplete DPF regeneration from frequent short trips.",
+      "fix": "Forced regeneration, DPF cleaning, or replacement.",
+      "warning_signs": [
+        "Loss of power",
+        "Increased fuel consumption",
+        "DPF warning light"
+      ],
+      "inspection_advice": "Check for DPF warning lights and service history; verify vehicle is used for longer trips to allow regeneration.",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "organic"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "high",
+      "notes": "Common issue for diesel engines used primarily in city driving.",
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "carbon_buildup_intake",
+      "label": "Intake valve carbon buildup",
+      "label_short": "Carbon Buildup",
+      "system_component": "engine",
+      "issue_type": "chronic_failure",
+      "severity": "medium",
+      "confidence": "high",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI",
+        "1.5_TSI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Carbon deposits on intake valves can cause rough idle, misfires, and loss of power.",
+      "cause": "Direct injection design",
+      "fix": "Intake valve cleaning",
+      "warning_signs": [
+        "Rough idle",
+        "Misfires",
+        "Loss of power"
+      ],
+      "inspection_advice": "Check for carbon deposits during intake inspection",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": "Common in direct injection petrol engines",
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "egr_cooler_failure",
+      "label": "EGR cooler failure",
+      "label_short": "EGR Cooler",
+      "system_component": "engine",
+      "issue_type": "chronic_failure",
+      "severity": "high",
+      "confidence": "high",
+      "affected_engines": [
+        "1.6_TDI",
+        "2.0_TDI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Exhaust gas recirculation cooler can clog or leak, leading to coolant loss and overheating.",
+      "cause": "Clogging or leakage",
+      "fix": "EGR cooler replacement",
+      "warning_signs": [
+        "Coolant loss",
+        "Overheating"
+      ],
+      "inspection_advice": "Check for coolant leaks and EGR system condition",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "adblue_system_faults",
+      "label": "AdBlue system faults",
+      "label_short": "AdBlue Faults",
+      "system_component": "exhaust",
+      "issue_type": "intermittent_fault",
+      "severity": "medium",
+      "confidence": "high",
+      "affected_engines": [
+        "2.0_TDI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Selective catalytic reduction system faults can trigger warning lights and limit engine performance.",
+      "cause": "SCR system faults",
+      "fix": "AdBlue system diagnosis and repair",
+      "warning_signs": [
+        "Warning lights",
+        "Limited engine performance"
+      ],
+      "inspection_advice": "Check AdBlue system for faults and fluid level",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "dq200_mechatronic_failure",
+      "label": "DQ200 mechatronic unit failure",
+      "label_short": "DQ200 Mechatronic",
+      "system_component": "gearbox",
+      "issue_type": "chronic_failure",
+      "severity": "high",
+      "confidence": "high",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Dry-clutch DSG mechatronic unit can fail, causing gear shifting issues or loss of drive.",
+      "cause": "Mechatronic unit failure",
+      "fix": "Mechatronic unit repair or replacement",
+      "warning_signs": [
+        "Gear shifting issues",
+        "Loss of drive"
+      ],
+      "inspection_advice": "Test drive for gear shifting smoothness and check for fault codes",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "dq250_clutch_wear",
+      "label": "DQ250 clutch pack wear",
+      "label_short": "DQ250 Clutch",
+      "system_component": "gearbox",
+      "issue_type": "wear_item",
+      "severity": "medium",
+      "confidence": "high",
+      "affected_engines": [
+        "2.0_TDI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Wet-clutch DSG clutch packs can wear prematurely, leading to shuddering or slipping during acceleration.",
+      "cause": "Premature clutch wear",
+      "fix": "Clutch pack replacement",
+      "warning_signs": [
+        "Shuddering",
+        "Slipping during acceleration"
+      ],
+      "inspection_advice": "Test drive for clutch engagement and shudder",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "water_pump_leak",
+      "label": "Water pump leakage",
+      "label_short": "Water Pump",
+      "system_component": "cooling",
+      "issue_type": "fluid_leak",
+      "severity": "medium",
+      "confidence": "high",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI",
+        "1.5_TSI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Plastic impeller water pump can leak coolant, potentially causing overheating.",
+      "cause": "Plastic impeller or seal failure",
+      "fix": "Water pump replacement",
+      "warning_signs": [
+        "Coolant leak",
+        "Overheating"
+      ],
+      "inspection_advice": "Check for coolant leaks around water pump",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "timing_chain_tensioner",
+      "label": "Timing chain tensioner failure",
+      "label_short": "Timing Tensioner",
+      "system_component": "engine",
+      "issue_type": "chronic_failure",
+      "severity": "high",
+      "confidence": "high",
+      "affected_engines": [
+        "1.2_TSI",
+        "1.4_TSI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Timing chain tensioner can fail, leading to chain rattle, jumped timing, and potential engine damage.",
+      "cause": "Tensioner failure",
+      "fix": "Timing chain and tensioner replacement",
+      "warning_signs": [
+        "Chain rattle",
+        "Jumped timing"
+      ],
+      "inspection_advice": "Listen for timing chain rattle on startup",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": "Can cause severe engine damage if not addressed",
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "injector_failure_tdi",
+      "label": "Diesel injector failure",
+      "label_short": "Injector Failure",
+      "system_component": "fuel",
+      "issue_type": "chronic_failure",
+      "severity": "high",
+      "confidence": "high",
+      "affected_engines": [
+        "1.6_TDI",
+        "2.0_TDI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "High-pressure diesel injectors can fail, causing misfires, excessive noise, and increased emissions.",
+      "cause": "Injector failure",
+      "fix": "Injector replacement",
+      "warning_signs": [
+        "Misfires",
+        "Excessive noise",
+        "Increased emissions"
+      ],
+      "inspection_advice": "Check for misfire codes and injector performance",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    },
+    {
+      "issue_id": "dual_mass_flywheel_failure",
+      "label": "Dual mass flywheel failure",
+      "label_short": "Flywheel Failure",
+      "system_component": "gearbox",
+      "issue_type": "wear_item",
+      "severity": "medium",
+      "confidence": "high",
+      "affected_engines": [
+        "1.6_TDI",
+        "2.0_TDI"
+      ],
+      "affected_years": null,
+      "onset_km_range": null,
+      "symptom": "Dual mass flywheel can wear out, causing clutch vibration, rattling noises, and drivetrain shudder.",
+      "cause": "Flywheel wear",
+      "fix": "Dual mass flywheel replacement",
+      "warning_signs": [
+        "Clutch vibration",
+        "Rattling noises",
+        "Drivetrain shudder"
+      ],
+      "inspection_advice": "Listen for rattling and check for vibration during clutch engagement",
+      "mention_count": 1,
+      "distinct_channel_count": 1,
+      "source_videos": [
+        {
+          "video_id": "7G0bWEQARg8",
+          "title": "None",
+          "channel": "None",
+          "video_type_category": "list_format"
+        }
+      ],
+      "source": "youtube",
+      "data_quality": "medium",
+      "notes": null,
+      "corroboration_count": 1
+    }
+  ]
+}
