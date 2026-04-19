@@ -1,0 +1,79 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Vehicle Knowledge Scaffold — VW Golf MK7 (2013–2020)
+# ──────────────────────────────────────────────────────────────────────────────
+# Generation-specific scaffold used by the YouTube extraction pipeline.
+# All model constants (engine windows, feature rules, facelift years) live here.
+# The pipeline reads this at runtime — no Python changes needed for a new model.
+# ──────────────────────────────────────────────────────────────────────────────
+
+meta:
+  make: VW
+  model: Golf MK7
+  generation: MK7
+  corpus_years: [2013, 2020]
+
+facelifts:
+  - year: 2017
+    label: "MK7.5"
+    pre_label: "MK7 pre-facelift"
+
+engine_families:
+
+  - code: EA211
+    fuel_type: petrol
+    timing_drive: belt
+    displacements:
+      - code: "1.0_TSI"
+        year_range: [2016, 2020]
+      - code: "1.2_TSI"
+        year_range: [2013, 2017]
+      - code: "1.4_TSI"
+        year_range: [2013, 2020]
+      - code: "1.5_TSI"
+        year_range: [2017, 2020]
+
+  - code: EA888
+    fuel_type: petrol
+    timing_drive: chain
+    displacements:
+      - code: "1.8_TSI"
+        year_range: [2013, 2020]
+      - code: "2.0_TSI"
+        year_range: [2013, 2020]
+
+  - code: EA288
+    fuel_type: diesel
+    timing_drive: belt
+    displacements:
+      - code: "1.6_TDI"
+        year_range: [2013, 2020]
+      - code: "2.0_TDI"
+        year_range: [2013, 2020]
+
+# ── Performance / enthusiast trims ────────────────────────────────────────────
+# Declared so the discovery corpus can be balanced against YouTube's inherent
+# performance-trim bias. max_share = max fraction of the final corpus that may
+# be sport-trim videos; videos whose titles match a token beyond that cap are
+# downsampled. Omit block entirely for models without a performance variant.
+performance_trims:
+  max_share: 0.3
+  tokens:
+    - gti
+    - "golf r"
+    - "mk7 r"
+    - "mk7.5 r"
+
+transmissions:
+  - code: DQ200
+    type: DSG_7speed_dry
+    compatible_displacements: ["1.2_TSI", "1.4_TSI"]
+    year_range: [2013, 2020]
+  - code: DQ250
+    type: DSG_6speed_wet
+    compatible_displacements: ["1.8_TSI", "2.0_TSI", "2.0_TDI"]
+    year_range: [2013, 2020]
+  - code: DQ381
+    type: DSG_7speed_wet
+    compatible_displacements: ["2.0_TSI", "2.0_TDI"]
+    year_range: [2017, 2020]
+

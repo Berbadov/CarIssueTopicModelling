@@ -1,0 +1,929 @@
+[
+  {
+    "issue_id": "water_ingress_roof_leak",
+    "label": "roof water ingress stains headliner",
+    "system_component": "body",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Water ingress through the roof area causes staining on the roof lining and fogging up of the car.",
+    "cause": "Leak in roof area or sunroof seal failure.",
+    "fix": "Replace headliner and fix leak, or use sealant like Creep and Crack Protect as temporary fix.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "zoSbJVeqdnQ",
+        "title": "Finding Problems on a Used MK7 | Inspection Video",
+        "channel": "Deutsche Auto Parts",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "Vgxon_BrQck",
+        "title": "Volkswagen Golf MK7.5, 3 Years Ownership Review (UK)(4K) | Carcode",
+        "channel": "Carcode",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "Zskb3HeOWMA",
+        "title": "Volkswagen Reliability... My Experience",
+        "channel": "NewEnglandPete",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "udX3VU-Haus",
+        "title": "VW Golf GTD MK7 - LONG TERM TEST REVIEW",
+        "channel": "Our Tim",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "dlAJkW6qK9o",
+        "title": "SOLOWERKS MK7 Golf SportWagon Coilovers Unboxing",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "TxQX5uAQnV8",
+        "title": "Used Mk7 Buyers Guide! How to avoid a previously modified car.",
+        "channel": "Baun Performance",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 7,
+    "topic_size": 9,
+    "topic_top_terms": [
+      "car",
+      "like",
+      "know",
+      "look",
+      "going",
+      "just",
+      "uh",
+      "great",
+      "really",
+      "things"
+    ],
+    "source": "youtube",
+    "mention_count": 7,
+    "distinct_channel_count": 7,
+    "corroboration_count": 7
+  },
+  {
+    "issue_id": "dsg_dry_clutch_cold_behavior",
+    "label": "DSG dry clutch cold hesitation and jerkiness",
+    "system_component": "gearbox",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Jerky takeoff from stop, hesitation when shifting, and rough behavior especially when cold.",
+    "cause": "Design characteristics of 7-speed dry clutch DSG (DQ200) transmission",
+    "fix": "Choose wet clutch DSG versions (DQ250/DQ381) for long-term ownership or ensure proper warm-up before aggressive driving",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "Zskb3HeOWMA",
+        "title": "Volkswagen Reliability... My Experience",
+        "channel": "NewEnglandPete",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 1000,
+    "topic_size": 8,
+    "topic_top_terms": [
+      "uh",
+      "guys",
+      "cold",
+      "um",
+      "like",
+      "sure",
+      "really",
+      "diesel",
+      "music",
+      "cars"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "fuel_filter_leak_after_change",
+    "label": "fuel filter leak after replacement",
+    "system_component": "fuel",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Fuel leak occurs after changing the fuel filter.",
+    "cause": "Improper torque or sealing of the filter housing bolts.",
+    "fix": "Torque bolts to specification (e.g., 5 Nm) and allow system to prime.",
+    "confidence": "medium",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "s_hLRII-tBU",
+        "title": "Car Servicing - VW Golf MK7",
+        "channel": "Turners Workshop",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1002,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "leak",
+      "just",
+      "going",
+      "blocked",
+      "bolts",
+      "bolts torqued",
+      "boost",
+      "blocked known",
+      "changed",
+      "changed fuel"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 3,
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "rear_suspension_beam_fitment_confusion",
+    "label": "Rear beam suspension fitment confusion",
+    "system_component": "suspension",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Owners may order incorrect coilovers if they don't specify the TDI model due to different rear suspension design.",
+    "cause": "The TDI model (diesel) uses a solid rear beam suspension instead of independent rear suspension, requiring different spring diameters.",
+    "fix": "Ensure coilovers are ordered specifically for the TDI model, not just the standard Golf.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "dlAJkW6qK9o",
+        "title": "SOLOWERKS MK7 Golf SportWagon Coilovers Unboxing",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nDkdFw4z1UE",
+        "title": "How to install SoloWerks Coilovers on a MK7 Golf SportWagen S7EP33",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 15,
+    "topic_size": 7,
+    "topic_top_terms": [
+      "rear",
+      "guys",
+      "uh",
+      "coilovers",
+      "suspension",
+      "um",
+      "wheels",
+      "going",
+      "spring",
+      "comparison"
+    ],
+    "source": "youtube",
+    "mention_count": 3,
+    "distinct_channel_count": 2,
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "rear_shock_replacement_difficulty",
+    "label": "difficult rear shock replacement procedure",
+    "system_component": "suspension",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Replacing rear shocks requires careful procedure due to tight clearances and specific tools.",
+    "cause": "Design with welded nuts, tight brake line routing, and limited suspension travel during disassembly.",
+    "fix": "Follow proper sequence: support rear beam, disconnect height sensor, use pass-through sockets, and avoid damaging brake lines.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "s_hLRII-tBU",
+        "title": "Car Servicing - VW Golf MK7",
+        "channel": "Turners Workshop",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nDkdFw4z1UE",
+        "title": "How to install SoloWerks Coilovers on a MK7 Golf SportWagen S7EP33",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1,
+    "topic_size": 12,
+    "topic_top_terms": [
+      "right",
+      "way",
+      "going",
+      "shock",
+      "guys",
+      "strut",
+      "spring",
+      "unbolt",
+      "bolt",
+      "little"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "carbon_buildup_intake_valves",
+    "label": "Carbon buildup on intake valves",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Gradual loss of engine performance over time as valves get gunked up.",
+    "cause": "Direct injection design allows carbon deposits to accumulate on intake valves and ports.",
+    "fix": "Walnut blasting or cleaning intake ports every 60,000 to 80,000 miles.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 9,
+    "topic_size": 9,
+    "topic_top_terms": [
+      "engines",
+      "carbon",
+      "problems",
+      "shouldnt",
+      "miles",
+      "intake",
+      "ultimately",
+      "carbon buildup",
+      "carbon deposits",
+      "handful"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      }
+    ]
+  },
+  {
+    "issue_id": "timing_chain_stretch_ea888",
+    "label": "timing chain stretch on EA888 engines",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Potential timing chain stretch that can lead to catastrophic engine failure over time.",
+    "cause": "Timing chain stretch in EA888 engines, particularly affecting GTI and performance models.",
+    "fix": "Replacement with updated timing chain components to prevent recurrence.",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 16,
+    "topic_size": 6,
+    "topic_top_terms": [
+      "time",
+      "destroy",
+      "units",
+      "failure common",
+      "aligned",
+      "gti models",
+      "fitted",
+      "repaired",
+      "updated",
+      "catastrophic"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "thermostat_housing_coolant_leak",
+    "label": "Thermostat housing coolant leaks",
+    "system_component": "cooling",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": "older models",
+    "symptom": "Coolant leaks from thermostat housing area, sometimes leaving puddles on the ground.",
+    "cause": "Plastic thermostat housing integrated with water pump cracks/warps under high heat.",
+    "fix": "Replace with upgraded/superseded OEM part; aftermarket upgrades available.",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "rdQqxKgBEWg",
+        "title": "Two BIG Problems The Volkswagen Golf 7.5 R Has!",
+        "channel": "Carbonwurks",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 20,
+    "topic_size": 4,
+    "topic_top_terms": [
+      "um",
+      "thermostat",
+      "gearbox",
+      "leaking",
+      "thermostat housing",
+      "housing",
+      "tuning",
+      "obviously",
+      "actually",
+      "coolant"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      }
+    ]
+  },
+  {
+    "issue_id": "panoramic_roof_water_leak_rattles",
+    "label": "panoramic roof water leaks and rattles",
+    "system_component": "body",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Drivers notice water leaks after heavy rain, damp passenger carpets, and rattling noises from the panoramic roof on uneven roads.",
+    "cause": "Clogged drainage channels in panoramic roof system",
+    "fix": "Inspect and clear drainage channels; check for proper roof seal and alignment",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 24,
+    "topic_size": 4,
+    "topic_top_terms": [
+      "noises",
+      "channels",
+      "heavy",
+      "drainage channels",
+      "roads",
+      "signs",
+      "noises uneven",
+      "suspension noises",
+      "drainage",
+      "carefully"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "climate_control_interface_gremlins",
+    "label": "Air conditioning interface gremlins",
+    "system_component": "electrical",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "The air conditioning system is known to have gremlins, such as issues with controls or ensuring cold air output.",
+    "cause": "Loss of physical controls and potential software/interface problems.",
+    "fix": null,
+    "confidence": "medium",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "yv2_SPxQFLI",
+        "title": "Used Volkswagen Golf Review - Mk 7 (2013 - 2020): The best used family car?",
+        "channel": "Cazoo",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 26,
+    "topic_size": 4,
+    "topic_top_terms": [
+      "air",
+      "controls",
+      "conditioning",
+      "air conditioning",
+      "blame",
+      "blown",
+      "controls example",
+      "example like",
+      "physical controls",
+      "theres climate"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "non_standard_wheel_bolt_sizes",
+    "label": "standard vs metric wheel bolt confusion",
+    "system_component": "body",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Owners find wheel bolts are not standard metric sizes, making tire changes or wheel swaps more difficult.",
+    "cause": "Use of non-standard (imperial) bolt sizes on some vehicles instead of expected metric sizes.",
+    "fix": "Use correct standard (imperial) socket set for wheel bolts; pay attention to bolt specifications.",
+    "confidence": "medium",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nDkdFw4z1UE",
+        "title": "How to install SoloWerks Coilovers on a MK7 Golf SportWagen S7EP33",
+        "channel": "PincheAls Garage",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 30,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "standard",
+      "odd",
+      "use",
+      "harder",
+      "fits",
+      "pay attention",
+      "werent",
+      "going use",
+      "little harder",
+      "theyll"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "dsg_clutch_type_confusion",
+    "label": "DSG dry vs wet clutch differences",
+    "system_component": "gearbox",
+    "affected_engines": [],
+    "affected_years": null,
+    "symptom": "Driver may experience confusion or need to identify the correct DSG type (dry or wet clutch) for their vehicle.",
+    "cause": "The vehicle uses two main DSG types: the 7-speed dry clutch DQ200 and the 6-speed wet clutch DQ250, which vary by engine application.",
+    "fix": "Verify the specific DSG type based on the engine and model (e.g., DQ200 for 1.2/1.4 TSI, DQ250 for 1.8/2.0 TSI and 2.0 TDI).",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 32,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "clutch",
+      "sixspeed wet",
+      "dry clutch",
+      "sixspeed",
+      "150",
+      "main",
+      "types",
+      "wet clutch",
+      "blue motion",
+      "dry"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "cooling_system_water_pump_leaks",
+    "label": "Cooling system water pump leaks",
+    "system_component": "cooling",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "2012 to 2019",
+    "symptom": "Slow coolant loss, sweet smell under hood, or moisture around engine.",
+    "cause": "Leaks from water pump or thermostat housing.",
+    "fix": "Replace water pump and/or thermostat housing.",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)",
+        "channel": "Luxe Rides & More",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 35,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "air",
+      "motor",
+      "golf mk7",
+      "mk7",
+      "turbocharger",
+      "issues",
+      "noise",
+      "air conditioning",
+      "conditioning",
+      "wear"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "timing_belt_interval_120k_miles",
+    "label": "Timing belt replacement at 120k miles",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI",
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "symptom": "The timing belt is a scheduled maintenance item requiring replacement at 120,000 miles.",
+    "cause": "Normal wear and service interval for belt-driven engines (EA211 petrol and EA288 diesel families).",
+    "fix": "Replace the timing belt and associated components (tensioner, water pump) at the 120,000-mile service interval.",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1003,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "120000",
+      "120000 miles",
+      "easy",
+      "miles",
+      "developed relatively",
+      "dont immediately",
+      "doesnt fail",
+      "excuses",
+      "excuses leave",
+      "easy fix"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      },
+      {
+        "engine": "1.5_TSI",
+        "years": "2017",
+        "evidence_hits": 2
+      }
+    ]
+  },
+  {
+    "issue_id": "wastegate_actuator_rattle",
+    "label": "wastegate actuator play causing rattle",
+    "system_component": "exhaust",
+    "affected_engines": [
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Drivers notice a rattling noise from the turbo area, often described as wastegate rattle.",
+    "cause": "Wastegate actuator develops excessive play over time",
+    "fix": "Replace wastegate actuator or entire turbocharger assembly",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "RPskR5TPnh0",
+        "title": "Why the Mk7 is the best generation of VW Golf",
+        "channel": "Parkers Cars",
+        "video_type_category": "organic"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1004,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "wastegate",
+      "actuator",
+      "antiroll",
+      "antiroll bar",
+      "bar",
+      "actuator known",
+      "bearings",
+      "bearings antiroll",
+      "bushs",
+      "bushs suspension"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "excessive_oil_consumption",
+    "label": "excessive oil consumption",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.8_TSI",
+      "2.0_TSI"
+    ],
+    "affected_years": "2012 to 2019",
+    "symptom": "The engine burns oil and requires frequent topping up between oil changes.",
+    "cause": "Specific engine production batches with design/manufacturing defects leading to oil consumption.",
+    "fix": "Regularly monitor oil level and top up as needed to prevent oil starvation and engine damage.",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "ftdK1Rg2ob8",
+        "title": "Addressing common faults in VW Golf MK7 (2012-2019)",
+        "channel": "Luxe Rides & More",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 2000,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "oil consumption",
+      "burning oil",
+      "burns oil",
+      "consumes oil",
+      "quart of oil",
+      "litre of oil",
+      "liter of oil",
+      "top up oil",
+      "topping up oil",
+      "oil level drops"
+    ],
+    "source": "youtube",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "corroboration_count": 2,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      }
+    ]
+  },
+  {
+    "issue_id": "timing_belt_stretch_ea211",
+    "label": "EA211 timing belt stretch and failure risk",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.0_TSI",
+      "1.2_TSI",
+      "1.4_TSI",
+      "1.5_TSI"
+    ],
+    "affected_years": null,
+    "symptom": "Timing belt stretching can lead to timing misalignment and catastrophic engine failure.",
+    "cause": "Timing belt wear and stretching beyond service interval limits",
+    "fix": "Replace timing belt according to manufacturer service intervals",
+    "confidence": "high",
+    "data_quality": "high",
+    "source_videos": [
+      {
+        "video_id": "nNJ1RNB9wK0",
+        "title": "The Truth About VW’s EA211 Engine Reliability (VW 1.4 TSI)",
+        "channel": "8020 Automotive",
+        "video_type_category": "organic"
+      }
+    ],
+    "topic_id": 1005,
+    "topic_size": 3,
+    "topic_top_terms": [
+      "timing",
+      "belt",
+      "timing belt",
+      "run",
+      "engine",
+      "dont",
+      "related issues",
+      "run timing",
+      "timing related",
+      "aware"
+    ],
+    "source": "youtube",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "corroboration_count": 1,
+    "engine_year_context": [
+      {
+        "engine": "1.4_TSI",
+        "years": "2012",
+        "evidence_hits": 3,
+        "post_years": [
+          2012
+        ]
+      }
+    ]
+  },
+  {
+    "issue_id": "dpf_egr_clogging",
+    "label": "DPF and EGR clogging in diesels",
+    "system_component": "exhaust",
+    "affected_engines": [
+      "1.6_TDI",
+      "2.0_TDI"
+    ],
+    "affected_years": null,
+    "symptom": "DPF not regenerating properly, EGR clogging, intake buildup, and emissions warning lights during city driving",
+    "cause": "Short trips and city-only driving prevent proper DPF regeneration cycles",
+    "fix": "Regular long motorway drives to allow DPF regeneration, or professional cleaning/replacement of clogged components",
+    "confidence": "high",
+    "data_quality": "medium",
+    "source_videos": [
+      {
+        "video_id": "NVlT0G8sUPA",
+        "title": "VW Golf 7: REAL Reliability Review – Common Problems, Failures & Best Engines",
+        "channel": "Car Issues",
+        "video_type_category": "list_format"
+      }
+    ],
+    "topic_id": 2001,
+    "topic_size": 1,
+    "topic_top_terms": [
+      "dpf",
+      "diesel particulate",
+      "egr valve",
+      "egr cooler",
+      "adblue",
+      "nox sensor"
+    ],
+    "source": "youtube",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "corroboration_count": 1
+  }
+]

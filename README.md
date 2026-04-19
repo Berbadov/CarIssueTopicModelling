@@ -57,3 +57,12 @@ STM scripts retain fallback support for legacy root CSV locations so old runs re
 - R STM (Clio): `Rscript pipelines/stm/r/R_code_STM_clio.R`
 - R STM (Turkish): `Rscript pipelines/stm/r/R_code_STM.R`
 - R STM (UK): `Rscript pipelines/stm/r/R_code_STM_uk.R`
+
+## Visualize Issue Knowledge Output
+
+- Build dashboard HTML:
+	- `python scripts/visualize_issue_knowledge.py --input data/processed/issue_knowledge_youtube_vw_golf_mk7.json`
+- Optional flags:
+	- `--output data/processed/issue_knowledge_youtube_vw_golf_mk7_dashboard.html`
+	- `--title "VW Golf MK7 Issue Dashboard"`
+	- `--open`

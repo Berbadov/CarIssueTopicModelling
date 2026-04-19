@@ -6,6 +6,9 @@ __pycache__/
 
 # Local editor/tool state
 .claude/settings.local.json
+.claude/scheduled_tasks.lock
+data/.claude/
+.idea/
 
 # LaTeX temporary build files
 *.aux

@@ -1,0 +1,464 @@
+[
+  {
+    "issue_id": "egr_valve_sooting",
+    "label": "EGR valve clogging with soot",
+    "system_component": "exhaust",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "The EGR valve becomes completely clogged with soot, preventing it from functioning correctly.",
+    "source_video_id": "OnsM-ZK6Dao",
+    "source_title": "How to clean the Clio 1.5 dci egr valve",
+    "source_channel": "OSMAN SÜER",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "timing_belt_premature_wear",
+    "label": "Timing belt wear and noise",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.2_NA"
+    ],
+    "affected_years": "2014",
+    "symptom": "A rattling or grinding noise from the engine, described as a 'gırt gırt' sound, indicating the timing belt had reached the end of its service life.",
+    "source_video_id": "xPvt2OqZWuQ",
+    "source_title": "Clio 4 | 1.2 BENZİN | RENAULT YETKİLİ SERVİS | TRİGER SETİ DEĞİŞİMİ",
+    "source_channel": "Detaylı İncele",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "post_cat_oxygen_sensor_failure",
+    "label": "Downstream oxygen sensor failure",
+    "system_component": "exhaust",
+    "affected_engines": [
+      "0.9_TCE",
+      "1.0_NA",
+      "1.0_TCE",
+      "1.2_NA",
+      "1.2_TCE",
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "Check engine light illuminates with 'Emissions control' or 'Injection check' warnings, but the vehicle runs normally with no visible performance issues.",
+    "source_video_id": "iJLxP1poXR8",
+    "source_title": "Emisyon Kontrol Ettirin. Oksijen Sensörü Arızası P0141 Enjeksiyon Kontrol Ettirin. Clio 4 15.Bölüm",
+    "source_channel": "GREY GARAGE",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "dpf_clogging_failure",
+    "label": "DPF clogging and regeneration failure",
+    "system_component": "exhaust",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "Vehicle enters limp mode and triggers warning lights due to DPF issues.",
+    "source_video_id": "7Q7DxhV8_pc",
+    "source_title": "Renault Clio 4 1.5 DCi DPF & EGR OFF | Arıza Işığı ve Çekiş Sorunu Kesin Çözüm",
+    "source_channel": "Demirkiranecu.Esenyurt",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "egr_valve_failure",
+    "label": "EGR valve failure and sooting",
+    "system_component": "exhaust",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "EGR fault triggers warning lights and can cause performance issues.",
+    "source_video_id": "7Q7DxhV8_pc",
+    "source_title": "Renault Clio 4 1.5 DCi DPF & EGR OFF | Arıza Işığı ve Çekiş Sorunu Kesin Çözüm",
+    "source_channel": "Demirkiranecu.Esenyurt",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "high_mileage_turbo_failure",
+    "label": "High mileage turbocharger failure",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.6_TDCI"
+    ],
+    "affected_years": null,
+    "symptom": "Turbocharger requires expensive replacement at high mileage.",
+    "source_video_id": "VUZvNyXHA98",
+    "source_title": "500 BİN TL’YE ARABA ALIRKEN YANMAYIN! | Mühendis Gözüyle En Mantıklı 10 Model",
+    "source_channel": "Alınır Mı?",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "mmt_gearbox_jerking",
+    "label": "MMT automated manual gearbox jerking",
+    "system_component": "gearbox",
+    "affected_engines": [],
+    "affected_years": "2007-2010",
+    "symptom": "MMT semi-automatic gearbox causes jerking during gear shifts.",
+    "source_video_id": "VUZvNyXHA98",
+    "source_title": "500 BİN TL’YE ARABA ALIRKEN YANMAYIN! | Mühendis Gözüyle En Mantıklı 10 Model",
+    "source_channel": "Alınır Mı?",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "manual_transmission_gearing",
+    "label": "5-speed manual gearing too short",
+    "system_component": "gearbox",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "At highway speeds, the engine runs at high RPMs, forcing a choice between lagging behind or increased fuel consumption when accelerating.",
+    "source_video_id": "pqJc4bz8bIE",
+    "source_title": "Clio 4 Alınır mı? GERÇEK Kullanıcı Yorumu! | Renault Clio 4 | 1.5 dCi",
+    "source_channel": "Tengri Ekin",
+    "video_type_category": "list_format"
+  },
+  {
+    "issue_id": "manual_window_regulator",
+    "label": "Manual window cranks on some trims",
+    "system_component": "body",
+    "affected_engines": [],
+    "affected_years": "2012",
+    "symptom": "Some early full-option models were equipped with manual window cranks instead of power windows as a cost-saving measure.",
+    "source_video_id": "pqJc4bz8bIE",
+    "source_title": "Clio 4 Alınır mı? GERÇEK Kullanıcı Yorumu! | Renault Clio 4 | 1.5 dCi",
+    "source_channel": "Tengri Ekin",
+    "video_type_category": "list_format"
+  },
+  {
+    "issue_id": "rear_stop_light_failure",
+    "label": "Rear stop light bulb failure",
+    "system_component": "electrical",
+    "affected_engines": [
+      "0.9_TCE",
+      "1.0_NA",
+      "1.0_TCE",
+      "1.2_NA",
+      "1.2_TCE",
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "One side of the rear stop light does not illuminate.",
+    "source_video_id": "Z-pc2C0PFjE",
+    "source_title": "Renault Clio 4 Park ve Fren Lambası Değişimi Nasıl Yapılır I Clio 4 Arka Stop Lambası Değişimi",
+    "source_channel": "Özgürce",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "edc_transmission_overheat_hesitation",
+    "label": "EDC transmission hesitation when hot",
+    "system_component": "gearbox",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "Transmission resists downshifting or hesitates when it gets very hot on long journeys.",
+    "source_video_id": "EGNkJ84FjyE",
+    "source_title": "Renault Clio 4 |1.5 DCİ| EDC İnceleme |Pov Sürüş|",
+    "source_channel": "Ümit Can Karakuş",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "diesel_engine_noise_intrusion",
+    "label": "Excessive diesel engine noise intrusion",
+    "system_component": "engine",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "Excessive diesel engine noise is noticeable and intrusive in the cabin.",
+    "source_video_id": "EGNkJ84FjyE",
+    "source_title": "Renault Clio 4 |1.5 DCİ| EDC İnceleme |Pov Sürüş|",
+    "source_channel": "Ümit Can Karakuş",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "firm_suspension_ride_quality",
+    "label": "Firm suspension ride quality",
+    "system_component": "suspension",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "Suspension is perceived as firm or stiff, transmitting road imperfections into the cabin.",
+    "source_video_id": "EGNkJ84FjyE",
+    "source_title": "Renault Clio 4 |1.5 DCİ| EDC İnceleme |Pov Sürüş|",
+    "source_channel": "Ümit Can Karakuş",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "wind_noise_mirrors_high_speed",
+    "label": "Wind noise from mirrors at high speed",
+    "system_component": "body",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "Wind noise becomes noticeable from the side mirrors at higher speeds.",
+    "source_video_id": "EGNkJ84FjyE",
+    "source_title": "Renault Clio 4 |1.5 DCİ| EDC İnceleme |Pov Sürüş|",
+    "source_channel": "Ümit Can Karakuş",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "steering_wheel_peeling",
+    "label": "Chronic steering wheel peeling",
+    "system_component": "body",
+    "affected_engines": [
+      "0.9_TCE",
+      "1.0_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The steering wheel material peels off over time.",
+    "source_video_id": "_jLCymjPlpM",
+    "source_title": "TURBO GÜCÜ | Renault Clio 0.9 TCE Nasıl ve Alınır Mı? Clio 4 Hız Testi, İnceleme ve Kullanıcı Yorumu",
+    "source_channel": "Uğur Gökçe",
+    "video_type_category": "list_format"
+  },
+  {
+    "issue_id": "short_engine_life",
+    "label": "Short turbo engine lifespan",
+    "system_component": "engine",
+    "affected_engines": [
+      "0.9_TCE",
+      "1.0_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "Engine life is around 200,000 km, with risk of failure after that point.",
+    "source_video_id": "_jLCymjPlpM",
+    "source_title": "TURBO GÜCÜ | Renault Clio 0.9 TCE Nasıl ve Alınır Mı? Clio 4 Hız Testi, İnceleme ve Kullanıcı Yorumu",
+    "source_channel": "Uğur Gökçe",
+    "video_type_category": "list_format"
+  },
+  {
+    "issue_id": "poor_interior_materials",
+    "label": "Poor interior material quality",
+    "system_component": "body",
+    "affected_engines": [
+      "0.9_TCE",
+      "1.0_NA",
+      "1.0_TCE",
+      "1.2_NA",
+      "1.2_TCE",
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "Interior uses low-quality, hard plastics and a cheap-feeling, nylon-like upholstery material.",
+    "source_video_id": "_jLCymjPlpM",
+    "source_title": "TURBO GÜCÜ | Renault Clio 0.9 TCE Nasıl ve Alınır Mı? Clio 4 Hız Testi, İnceleme ve Kullanıcı Yorumu",
+    "source_channel": "Uğur Gökçe",
+    "video_type_category": "list_format"
+  },
+  {
+    "issue_id": "timing_belt_tensioner_failure",
+    "label": "Timing belt tensioner failure",
+    "system_component": "engine",
+    "affected_engines": [
+      "0.9_TCE",
+      "1.0_NA",
+      "1.0_TCE",
+      "1.2_NA",
+      "1.2_TCE",
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "The timing belt tensioner can fail, requiring replacement during major service.",
+    "source_video_id": "KFSsk2kkttY",
+    "source_title": "CLİO 4 AĞIR BAKIM | 1980 TL | 2. BÖLÜM | TRİGER KAYIŞI VE GERGİ RULMANI MONTAJ İŞLEMİ",
+    "source_channel": "Gökhan Göçmen",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "water_pump_leakage",
+    "label": "Water pump leakage",
+    "system_component": "cooling",
+    "affected_engines": [
+      "0.9_TCE",
+      "1.0_NA",
+      "1.0_TCE",
+      "1.2_NA",
+      "1.2_TCE",
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "The water pump can develop leaks or excessive play, requiring inspection and replacement.",
+    "source_video_id": "KFSsk2kkttY",
+    "source_title": "CLİO 4 AĞIR BAKIM | 1980 TL | 2. BÖLÜM | TRİGER KAYIŞI VE GERGİ RULMANI MONTAJ İŞLEMİ",
+    "source_channel": "Gökhan Göçmen",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "engine_mount_fracture",
+    "label": "Engine mount fracture",
+    "system_component": "engine",
+    "affected_engines": [
+      "0.9_TCE",
+      "1.0_NA",
+      "1.0_TCE",
+      "1.2_NA",
+      "1.2_TCE",
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "symptom": "The engine mount can break, causing the engine to move and produce knocking sounds during acceleration.",
+    "source_video_id": "KFSsk2kkttY",
+    "source_title": "CLİO 4 AĞIR BAKIM | 1980 TL | 2. BÖLÜM | TRİGER KAYIŞI VE GERGİ RULMANI MONTAJ İŞLEMİ",
+    "source_channel": "Gökhan Göçmen",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "start_stop_inconsistent",
+    "label": "Start-stop system inconsistent operation",
+    "system_component": "electrical",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The start-stop system works according to its own will and is sometimes not active in traffic.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "ac_performance_insufficient",
+    "label": "Insufficient air conditioning cooling",
+    "system_component": "cooling",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The air conditioning is insufficient for cooling in summer, blows hot air when the engine stops, and takes a long time to cool the entire cabin.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "suspension_excessively_hard",
+    "label": "Excessively hard suspension",
+    "system_component": "suspension",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The shock absorbers are very hard, especially at the rear, making the ride uncomfortable even at low speeds over bumps.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "suspension_creaking_noise_cold",
+    "label": "Suspension creaking noise in cold",
+    "system_component": "suspension",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "When temperatures drop below zero, a creaking noise comes from the suspension over every pothole or bump.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "esp_intervention_abrupt",
+    "label": "Abrupt ESP/ASR intervention",
+    "system_component": "electrical",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The stability control systems cannot be disabled and intervene abruptly by cutting power, which can feel dangerous.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "poor_sound_insulation_wind",
+    "label": "Poor wind noise insulation",
+    "system_component": "body",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "Significant wind noise enters the cabin from the mirrors starting at 70 km/h.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "interior_trim_creaks_rattles",
+    "label": "Interior trim creaks and rattles",
+    "system_component": "body",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "Creaking and rattling noises come from seats, roof pillars, and piano black trim areas, even at low mileage.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "glovebox_poor_quality",
+    "label": "Poor quality, rattling glovebox",
+    "system_component": "body",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The glovebox is flimsy, lacks proper damping, and rattles easily when pressed or during driving.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "window_mechanism_noisy",
+    "label": "Noisy window closing mechanism",
+    "system_component": "body",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The window makes a loud, harsh noise when closing, as it hits the frame without any cushioning.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "hill_holder_inconsistent",
+    "label": "Hill holder system inconsistent",
+    "system_component": "electrical",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The hill holder system sometimes fails to hold the car, causing it to roll back despite full brake pedal application.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  },
+  {
+    "issue_id": "park_sensor_music_muting",
+    "label": "Park sensors do not mute music",
+    "system_component": "electrical",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "symptom": "The parking sensor audio alert does not mute or lower the volume of the music, making it hard to hear.",
+    "source_video_id": "qErRl80nGWk",
+    "source_title": "Bizim Garaj: Renault Clio IV 0.9 Tce Touch Hb Test,Tecrübeler ve Yorumlar",
+    "source_channel": "Bizim Garaj",
+    "video_type_category": "organic"
+  }
+]
