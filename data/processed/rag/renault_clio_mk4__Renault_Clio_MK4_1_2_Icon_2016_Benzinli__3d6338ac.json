@@ -1,0 +1,277 @@
+{
+  "issues": [
+    {
+      "label": "spark plug replacement due to oil contamination risk",
+      "component": "engine",
+      "summary": "Evidence mentions that if oil is found on old spark plug threads, torque specs should be reduced when installing new ones to avoid over-tightening, indicating a potential issue with oil seepage into spark plug wells.",
+      "applies_to_spec": {
+        "match": "mismatch",
+        "notes": "Evidence is for the 0.9 TCE engine (chain-drive, 3-cylinder), while the listing has a 1.2 NA engine (belt-drive, 4-cylinder), so this may not directly apply but highlights a general risk."
+      },
+      "observed_mileage_km": null,
+      "severity": "unknown",
+      "evidence": [
+        {
+          "chunk_id": "pkbM5_z0IKs_0001130",
+          "video_id": "pkbM5_z0IKs",
+          "start": 112.96,
+          "end": 148.96,
+          "url": "https://youtube.com/watch?v=pkbM5_z0IKs&t=112s",
+          "channel": "doit_vehicles",
+          "title": "0.9 Tce Spark Plugs Change ( Renault Clio 4 )",
+          "tier": "fuel-match",
+          "quote": "you have to inspect the old spark plug if you find oil here it means that there is going to be oil on the threads in there as well so when you install the new spark plugs the torque specs should be reduced a little bit"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "spark plug replacement interval at 60,000 km",
+      "component": "engine",
+      "summary": "Evidence states that spark plugs should be replaced at 60,000 kilometers for a petrol engine, suggesting a maintenance requirement.",
+      "applies_to_spec": {
+        "match": "mismatch",
+        "notes": "Evidence is for the 0.9 TCE engine, but the listing's 1.2 NA petrol engine may have similar maintenance needs; the listing mileage is 152,900 km, so this could be relevant if not already serviced."
+      },
+      "observed_mileage_km": 60000,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "KPSlAQV39Ls_0000063",
+          "video_id": "KPSlAQV39Ls",
+          "start": 6.32,
+          "end": 41.64,
+          "url": "https://youtube.com/watch?v=KPSlAQV39Ls&t=6s",
+          "channel": "Jan SV",
+          "title": "Renault clio 4  changing the spark plugs  0.9 TCE  90 PK       OR DACIA 0.9 TCE",
+          "tier": "fuel-match",
+          "quote": "i'm going to replace the three spark plugs today because this is a petrol engine and on sixty thousand kilometers you have to replace them"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "throttle body issues with trouble codes",
+      "component": "engine",
+      "summary": "Evidence describes throttle body not responding during tests due to trouble codes like 'signal incoherence', indicating potential electrical or sensor problems.",
+      "applies_to_spec": {
+        "match": "mismatch",
+        "notes": "Evidence is for the 0.9 TCE engine, but throttle body issues could affect other petrol engines; the listing's 1.2 NA may have similar components."
+      },
+      "observed_mileage_km": null,
+      "severity": "unknown",
+      "evidence": [
+        {
+          "chunk_id": "_WqgVzlnzO4_0003043",
+          "video_id": "_WqgVzlnzO4",
+          "start": 304.32,
+          "end": 339.4,
+          "url": "https://youtube.com/watch?v=_WqgVzlnzO4&t=304s",
+          "channel": "doit_vehicles",
+          "title": "Renault Clio THROTTLE BODY removal & clean 0.9 Tce",
+          "tier": "fuel-match",
+          "quote": "let's see how the throttle body will move when i'm gonna do the bi-directional test okay let's see motorized throttle i think it's not responding because we have some trouble codes signal incoherence"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "MAP sensor importance for engine management",
+      "component": "engine",
+      "summary": "Evidence notes that MAP sensors are critical on engines without a mass airflow sensor, as the computer relies on pressure, temperature, and throttle position for air intake calculations.",
+      "applies_to_spec": {
+        "match": "mismatch",
+        "notes": "Evidence is for the 0.9 TCE engine, but the listing's 1.2 NA may have similar sensor dependencies; failure could lead to vacuum leaks or performance issues."
+      },
+      "observed_mileage_km": null,
+      "severity": "unknown",
+      "evidence": [
+        {
+          "chunk_id": "r6b6WtbMv9s_0002205",
+          "video_id": "r6b6WtbMv9s",
+          "start": 220.48,
+          "end": 256.24,
+          "url": "https://youtube.com/watch?v=r6b6WtbMv9s&t=220s",
+          "channel": "doit_vehicles",
+          "title": "MAP IAT sensor PROBLEM on RENAULT CLIO 4 Tce 0.9",
+          "tier": "general",
+          "quote": "on this engine the map sensors are important since you don't have a mass airflow sensor so basically the computer on this engine has only three values of the air which enters inside the intake manifold"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "fuse testing for electrical components",
+      "component": "electrical",
+      "summary": "Evidence describes a method to test fuses by removing them one by one to identify which fuse controls specific components like the fuel pump, indicating potential electrical troubleshooting needs.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "This is a general electrical issue that could apply to any car, including the listing's 2016 Renault Clio with petrol engine."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "JVqGAmFN8So_0000538",
+          "video_id": "JVqGAmFN8So",
+          "start": 53.84,
+          "end": 89.28,
+          "url": "https://youtube.com/watch?v=JVqGAmFN8So&t=53s",
+          "channel": "doit_vehicles",
+          "title": "0.9 Tce Fuses & Relays location ( box diagram ) RENAULT Clio 4",
+          "tier": "fuel-match",
+          "quote": "you can still find which one of these fuse is responsible for what for example you command the fuel pump to be on by turning the key on remove one of the fuse and see if the pump still is activated"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "suspension looseness at higher speeds",
+      "component": "suspension",
+      "summary": "Evidence mentions that at quicker speeds, the suspension seems a little loose, which could affect handling and comfort.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "This is a general observation about the Renault Clio MK4's suspension, applicable to the 2016 model regardless of engine type."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "Cf7MDFX--NE_0009030",
+          "video_id": "Cf7MDFX--NE",
+          "start": 903.04,
+          "end": 941.56,
+          "url": "https://youtube.com/watch?v=Cf7MDFX--NE&t=903s",
+          "channel": "Paragon Cars London",
+          "title": "2013 RENAULT CLIO DRIVING POV/REVIEW // 0.9L ENGINE!",
+          "tier": "general",
+          "quote": "once you're going quicker the suspension does seem a little bit loose but the steering not a lot of feel"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "interior quality issues with plastic trim",
+      "component": "interior",
+      "summary": "Evidence notes that overall interior quality is subpar with plastic trim, though wear and tear is good, but piano black plastic may scratch easily.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "This is a general comment on the Renault Clio MK4's interior, relevant to the 2016 model year."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "Cf7MDFX--NE_0005014",
+          "video_id": "Cf7MDFX--NE",
+          "start": 501.36,
+          "end": 537.6,
+          "url": "https://youtube.com/watch?v=Cf7MDFX--NE&t=501s",
+          "channel": "Paragon Cars London",
+          "title": "2013 RENAULT CLIO DRIVING POV/REVIEW // 0.9L ENGINE!",
+          "tier": "general",
+          "quote": "it's overall quality is subpar but the one good thing about plastic trim is wear and tear seems to be pretty good there aren't any big scratches anywhere apart from on the piano black plastic trim"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    }
+  ],
+  "coverage": {
+    "confidence": "low",
+    "engine_specific_chunks": 0,
+    "family_chunks": 0,
+    "fuel_chunks": 27,
+    "note": "No videos in the corpus specifically discuss 1.2_NA. Evidence comes from the broader D4F — engine-specific details (e.g. timing belt interval, injector seals) may not appear."
+  },
+  "listing_spec": {
+    "raw_text": "Renault Clio MK4 1.2 Icon 2016\nBenzinli Manuel\n1149 cc 75 hp 4 silindir\nKM: 152.900\nYakıt: Benzinli EURO 5\nÖnden çekiş hatchback\n",
+    "slug": "renault_clio_mk4",
+    "years": [
+      2016
+    ],
+    "engines": [
+      "1.2_NA"
+    ],
+    "engine_families": [
+      "D4F"
+    ],
+    "fuel_types": [
+      "petrol"
+    ],
+    "drive_types": [
+      "belt"
+    ],
+    "transmissions": [],
+    "trims": [],
+    "mileage_km": 152900,
+    "confidence": {
+      "has_year": true,
+      "has_engine": true,
+      "has_transmission": false,
+      "has_mileage": true
+    }
+  },
+  "generated_at": "2026-04-21T07:42:29.342478+00:00",
+  "llm_model": "deepseek-chat",
+  "embed_model": "intfloat/multilingual-e5-base",
+  "retrieval": {
+    "probes": [
+      "common issues and problems",
+      "things that break over time",
+      "ownership experience long term reliability",
+      "engine problems",
+      "transmission problems",
+      "electrical problems",
+      "suspension and steering problems",
+      "interior and trim problems",
+      "brake problems",
+      "petrol engine problems",
+      "turbocharger problems",
+      "ignition coil problems",
+      "spark plug problems",
+      "D4F engine problems",
+      "1.2 NA engine problems"
+    ],
+    "top_k_per_probe": 20,
+    "evidence_count": 60,
+    "tier_counts": {
+      "1": 0,
+      "2": 0,
+      "3": 27,
+      "4": 33
+    }
+  },
+  "usage": {
+    "prompt_tokens": 8550,
+    "completion_tokens": 1501
+  },
+  "duration_seconds": 61.0
+}

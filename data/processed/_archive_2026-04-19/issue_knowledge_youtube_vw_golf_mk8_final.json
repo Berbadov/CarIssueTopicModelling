@@ -1,0 +1,294 @@
+[
+  {
+    "issue_id": "infotainment_system_issues",
+    "label": "Slow, unresponsive, and frustrating infotainment interface",
+    "label_short": "Poor infotainment",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The infotainment system operates with slow, non-smartphone-like software and houses climate and seat controls, making it infuriating and difficult to use while driving.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test infotainment responsiveness and menu navigation during a test drive.",
+    "mention_count": 2,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "nFsGTPz5800",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "...",
+        "trim": "base"
+      },
+      {
+        "video_id": "oQp9KxVqiuQ",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "...",
+        "trim": "base"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from 'infotainment_interface_frustrating' and 'infotainment_system_sluggishness'.",
+    "corroboration_count": 2,
+    "model_scope": [
+      "all_vw_golf_mk8"
+    ],
+    "affected_engines_original": [
+      "1.0_ETSI",
+      "1.0_TSI",
+      "1.4_EHYBRID",
+      "1.5_ETSI",
+      "1.5_TSI",
+      "2.0_TDI",
+      "2.0_TSI"
+    ],
+    "_scope_notes": [
+      "system_component=electrical is not engine-scoped; cleared affected_engines (original preserved in affected_engines_original)."
+    ],
+    "trim_evidence": {
+      "base": 2
+    },
+    "distinct_trim_count": 1,
+    "dominant_trim": "base",
+    "cross_trim_corroboration_count": 0,
+    "trim_scope_warning": false,
+    "affected_years_evidence": {
+      "from_llm_year_phrase": null,
+      "from_llm_year_parsed": [],
+      "from_transcript_context": [],
+      "from_source_video_titles": [],
+      "from_engine_production_windows": [
+        "2020-2025"
+      ],
+      "from_model_scope_window": [
+        "2020-2025"
+      ],
+      "window_source": "engine",
+      "content_combine_rule": "no_content",
+      "confidence": "low",
+      "fallback_window": "2020-2025",
+      "fallback_window_source": "engine"
+    }
+  },
+  {
+    "issue_id": "touch_controls_unlit_night",
+    "label": "Climate and volume touch controls not illuminated at night",
+    "label_short": "Unlit touch controls",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The climate control sliders and volume touch controls are not illuminated in the dark, making them difficult to see and operate at night.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Check visibility of touch controls in low-light conditions.",
+    "mention_count": 2,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "nFsGTPz5800",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "...",
+        "trim": "base"
+      },
+      {
+        "video_id": "oQp9KxVqiuQ",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "...",
+        "trim": "base"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from 'touch_controls_unlit_night' and 'climate_controls_unlit'.",
+    "corroboration_count": 2,
+    "model_scope": [
+      "all_vw_golf_mk8"
+    ],
+    "affected_engines_original": [
+      "1.0_ETSI",
+      "1.0_TSI",
+      "1.4_EHYBRID",
+      "1.5_ETSI",
+      "1.5_TSI",
+      "2.0_TDI",
+      "2.0_TSI"
+    ],
+    "_scope_notes": [
+      "system_component=electrical is not engine-scoped; cleared affected_engines (original preserved in affected_engines_original)."
+    ],
+    "trim_evidence": {
+      "base": 2
+    },
+    "distinct_trim_count": 1,
+    "dominant_trim": "base",
+    "cross_trim_corroboration_count": 0,
+    "trim_scope_warning": false,
+    "affected_years_evidence": {
+      "from_llm_year_phrase": null,
+      "from_llm_year_parsed": [],
+      "from_transcript_context": [],
+      "from_source_video_titles": [],
+      "from_engine_production_windows": [
+        "2020-2025"
+      ],
+      "from_model_scope_window": [
+        "2020-2025"
+      ],
+      "window_source": "engine",
+      "content_combine_rule": "no_content",
+      "confidence": "low",
+      "fallback_window": "2020-2025",
+      "fallback_window_source": "engine"
+    }
+  },
+  {
+    "issue_id": "capacitive_steering_controls",
+    "label": "Accidental capacitive steering wheel button presses",
+    "label_short": "Sensitive steering buttons",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Driver accidentally changes settings or presses buttons when going around corners due to overly sensitive capacitive controls on the steering wheel.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test steering wheel controls during cornering maneuvers.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "oQp9KxVqiuQ",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "...",
+        "trim": "base"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1,
+    "model_scope": [
+      "all_vw_golf_mk8"
+    ],
+    "affected_engines_original": [
+      "1.0_ETSI",
+      "1.0_TSI",
+      "1.4_EHYBRID",
+      "1.5_ETSI",
+      "1.5_TSI",
+      "2.0_TDI",
+      "2.0_TSI"
+    ],
+    "_scope_notes": [
+      "system_component=electrical is not engine-scoped; cleared affected_engines (original preserved in affected_engines_original)."
+    ],
+    "trim_evidence": {
+      "base": 1
+    },
+    "distinct_trim_count": 1,
+    "dominant_trim": "base",
+    "cross_trim_corroboration_count": 0,
+    "trim_scope_warning": false,
+    "affected_years_evidence": {
+      "from_llm_year_phrase": null,
+      "from_llm_year_parsed": [],
+      "from_transcript_context": [],
+      "from_source_video_titles": [],
+      "from_engine_production_windows": [
+        "2020-2025"
+      ],
+      "from_model_scope_window": [
+        "2020-2025"
+      ],
+      "window_source": "engine",
+      "content_combine_rule": "no_content",
+      "confidence": "low",
+      "fallback_window": "2020-2025",
+      "fallback_window_source": "engine"
+    }
+  },
+  {
+    "issue_id": "glossy_plastic_fingerprint_magnet",
+    "label": "Glossy plastic trim attracts dust and fingerprints",
+    "label_short": "Fingerprint magnet trim",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The glossy black plastic trim on the dashboard gets dusty and dirty easily and shows fingerprint marks everywhere.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Inspect dashboard trim for visible smudges and dust accumulation.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "nFsGTPz5800",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "...",
+        "trim": "base"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1,
+    "model_scope": [
+      "all_vw_golf_mk8"
+    ],
+    "affected_engines_original": [
+      "1.4_EHYBRID"
+    ],
+    "_scope_notes": [
+      "system_component=body is not engine-scoped; cleared affected_engines (original preserved in affected_engines_original)."
+    ],
+    "trim_evidence": {
+      "base": 1
+    },
+    "distinct_trim_count": 1,
+    "dominant_trim": "base",
+    "cross_trim_corroboration_count": 0,
+    "trim_scope_warning": false,
+    "affected_years_evidence": {
+      "from_llm_year_phrase": null,
+      "from_llm_year_parsed": [],
+      "from_transcript_context": [],
+      "from_source_video_titles": [],
+      "from_engine_production_windows": [
+        "2020-2025"
+      ],
+      "from_model_scope_window": [
+        "2020-2025"
+      ],
+      "window_source": "engine",
+      "content_combine_rule": "no_content",
+      "confidence": "low",
+      "fallback_window": "2020-2025",
+      "fallback_window_source": "engine"
+    }
+  }
+]

@@ -2875,5 +2875,1935 @@
         }
       }
     }
+  },
+  {
+    "timestamp": "2026-04-19T16:34:51.428594",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 33.6,
+        "pattern_recall_pct": 33.3,
+        "precision_pct": 49.1,
+        "found_count": 6,
+        "found_ids": [
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_09_ignition_coil"
+        ],
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 59
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_topic_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_topic_final.json",
+        "total_topics": 42,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 31.2,
+        "pattern_recall_pct": 33.3,
+        "precision_pct": 35.7,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_wind_noise",
+          "clio_key_card"
+        ],
+        "missing": [
+          "Wind Noise / Door Seals",
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 89
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 114,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 44.8,
+        "pattern_recall_pct": 43.8,
+        "precision_pct": 36.0,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_rear_speaker_leak",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "GTI": 49,
+            "base": 42,
+            "R": 28,
+            "unknown": 27,
+            "TDI": 5
+          },
+          "trim_scope_warning_count": 42,
+          "mono_trim_issue_pct": 88.6
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_final.json",
+        "total_topics": 97,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 31.9,
+        "pattern_recall_pct": 31.2,
+        "precision_pct": 29.9,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 60,
+            "GTI": 48,
+            "TDI": 21,
+            "R": 16,
+            "GTD": 11
+          },
+          "trim_scope_warning_count": 31,
+          "mono_trim_issue_pct": 78.4
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_nosport_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_nosport_final.json",
+        "total_topics": 23,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 41.9,
+        "pattern_recall_pct": 40.6,
+        "precision_pct": 47.8,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 46,
+            "GTD": 1
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 95.7
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_balanced_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_balanced_final.json",
+        "total_topics": 33,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 50.2,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 39.4,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 53,
+            "GTI": 24,
+            "R": 15
+          },
+          "trim_scope_warning_count": 4,
+          "mono_trim_issue_pct": 39.4
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T16:56:23.786613",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 33.6,
+        "pattern_recall_pct": 33.3,
+        "precision_pct": 49.1,
+        "found_count": 6,
+        "found_ids": [
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_09_ignition_coil"
+        ],
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 59
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_topic_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_topic_final.json",
+        "total_topics": 42,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 31.2,
+        "pattern_recall_pct": 33.3,
+        "precision_pct": 35.7,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_wind_noise",
+          "clio_key_card"
+        ],
+        "missing": [
+          "Wind Noise / Door Seals",
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 89
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 114,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 44.8,
+        "pattern_recall_pct": 43.8,
+        "precision_pct": 36.0,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_rear_speaker_leak",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "GTI": 49,
+            "base": 42,
+            "R": 28,
+            "unknown": 27,
+            "TDI": 5
+          },
+          "trim_scope_warning_count": 42,
+          "mono_trim_issue_pct": 88.6
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_final.json",
+        "total_topics": 97,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 31.9,
+        "pattern_recall_pct": 31.2,
+        "precision_pct": 29.9,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 60,
+            "GTI": 48,
+            "TDI": 21,
+            "R": 16,
+            "GTD": 11
+          },
+          "trim_scope_warning_count": 31,
+          "mono_trim_issue_pct": 78.4
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_nosport_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_nosport_final.json",
+        "total_topics": 23,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 41.9,
+        "pattern_recall_pct": 40.6,
+        "precision_pct": 47.8,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 46,
+            "GTD": 1
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 95.7
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_balanced_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_balanced_final.json",
+        "total_topics": 33,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 50.2,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 39.4,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 53,
+            "GTI": 24,
+            "R": 15
+          },
+          "trim_scope_warning_count": 4,
+          "mono_trim_issue_pct": 39.4
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T17:05:32.577963",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 53,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 33.6,
+        "pattern_recall_pct": 33.3,
+        "precision_pct": 49.1,
+        "found_count": 6,
+        "found_ids": [
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_09_ignition_coil"
+        ],
+        "missing": [
+          "Ignition Coil Failure / Misfire (0.9 TCe)"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 59
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_topic_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_topic_final.json",
+        "total_topics": 42,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 31.2,
+        "pattern_recall_pct": 33.3,
+        "precision_pct": 35.7,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_wind_noise",
+          "clio_key_card"
+        ],
+        "missing": [
+          "Wind Noise / Door Seals",
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 89
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 114,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 44.8,
+        "pattern_recall_pct": 43.8,
+        "precision_pct": 36.0,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_rear_speaker_leak",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "GTI": 49,
+            "base": 42,
+            "R": 28,
+            "unknown": 27,
+            "TDI": 5
+          },
+          "trim_scope_warning_count": 42,
+          "mono_trim_issue_pct": 88.6
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_final.json",
+        "total_topics": 97,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 31.9,
+        "pattern_recall_pct": 31.2,
+        "precision_pct": 29.9,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 60,
+            "GTI": 48,
+            "TDI": 21,
+            "R": 16,
+            "GTD": 11
+          },
+          "trim_scope_warning_count": 31,
+          "mono_trim_issue_pct": 78.4
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_nosport_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_nosport_final.json",
+        "total_topics": 23,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 41.9,
+        "pattern_recall_pct": 40.6,
+        "precision_pct": 47.8,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 46,
+            "GTD": 1
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 95.7
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_topic_balanced_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_topic_balanced_final.json",
+        "total_topics": 33,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 50.2,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 39.4,
+        "found_count": 5,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 53,
+            "GTI": 24,
+            "R": 15
+          },
+          "trim_scope_warning_count": 4,
+          "mono_trim_issue_pct": 39.4
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T17:51:01.770030",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 9,
+        "recall_pct": 28.6,
+        "coverage_recall_pct": 11.2,
+        "pattern_recall_pct": 12.1,
+        "precision_pct": 33.3,
+        "found_count": 2,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise",
+          "clio_key_card"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "R-Link Infotainment Glitches / Freezing",
+          "Front Suspension / Anti-Roll Bar Knocking",
+          "Wind Noise / Door Seals",
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 9
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T18:15:02.034972",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 13,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.9,
+        "pattern_recall_pct": 27.3,
+        "precision_pct": 38.5,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_wind_noise",
+          "clio_key_card"
+        ],
+        "missing": [
+          "Wind Noise / Door Seals",
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 13
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T18:21:41.438017",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 13,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.9,
+        "pattern_recall_pct": 27.3,
+        "precision_pct": 38.5,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_wind_noise",
+          "clio_key_card"
+        ],
+        "missing": [
+          "Wind Noise / Door Seals",
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 13
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 31,
+        "recall_pct": 57.1,
+        "coverage_recall_pct": 34.8,
+        "pattern_recall_pct": 31.2,
+        "precision_pct": 29.0,
+        "found_count": 4,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "DSG Transmission / Mechatronics Failure",
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 40
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T18:33:36.231978",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 18,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 27.8,
+        "pattern_recall_pct": 30.3,
+        "precision_pct": 33.3,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_wind_noise",
+          "clio_key_card"
+        ],
+        "missing": [
+          "Wind Noise / Door Seals",
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 19
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 31,
+        "recall_pct": 57.1,
+        "coverage_recall_pct": 34.8,
+        "pattern_recall_pct": 31.2,
+        "precision_pct": 29.0,
+        "found_count": 4,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "DSG Transmission / Mechatronics Failure",
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 40
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T18:58:38.628268",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 18,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 27.8,
+        "pattern_recall_pct": 30.3,
+        "precision_pct": 33.3,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_wind_noise",
+          "clio_key_card"
+        ],
+        "missing": [
+          "Wind Noise / Door Seals",
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 19
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 30,
+        "recall_pct": 57.1,
+        "coverage_recall_pct": 34.8,
+        "pattern_recall_pct": 31.2,
+        "precision_pct": 23.3,
+        "found_count": 4,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "DSG Transmission / Mechatronics Failure",
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 35
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T20:15:50.081253",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 37,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 35.6,
+        "pattern_recall_pct": 36.4,
+        "precision_pct": 45.9,
+        "found_count": 6,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_key_card"
+        ],
+        "missing": [
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 44
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 30,
+        "recall_pct": 57.1,
+        "coverage_recall_pct": 34.8,
+        "pattern_recall_pct": 31.2,
+        "precision_pct": 23.3,
+        "found_count": 4,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "DSG Transmission / Mechatronics Failure",
+          "Infotainment 'Ghost Touching' / Screen Defect",
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 35
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T20:35:37.262589",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 37,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 35.6,
+        "pattern_recall_pct": 36.4,
+        "precision_pct": 45.9,
+        "found_count": 6,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_key_card"
+        ],
+        "missing": [
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 44
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 70,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 49.5,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 44.3,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 90,
+            "TDI": 7
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 98.6
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T20:59:53.802698",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 37,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 35.6,
+        "pattern_recall_pct": 36.4,
+        "precision_pct": 45.9,
+        "found_count": 6,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_key_card"
+        ],
+        "missing": [
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 44
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 70,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 49.5,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 44.3,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 90,
+            "TDI": 7
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 98.6
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T21:30:35.133113",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 37,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 35.6,
+        "pattern_recall_pct": 36.4,
+        "precision_pct": 45.9,
+        "found_count": 6,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_key_card"
+        ],
+        "missing": [
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 44
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 70,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 49.5,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 44.3,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 90,
+            "TDI": 7
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 98.6
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T21:31:00.671812",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 37,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 35.6,
+        "pattern_recall_pct": 36.4,
+        "precision_pct": 45.9,
+        "found_count": 6,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_key_card"
+        ],
+        "missing": [
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 44
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 70,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 49.5,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 44.3,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 90,
+            "TDI": 7
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 98.6
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T21:35:31.369865",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 37,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 35.6,
+        "pattern_recall_pct": 36.4,
+        "precision_pct": 45.9,
+        "found_count": 6,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_key_card"
+        ],
+        "missing": [
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 44
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 70,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 49.5,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 44.3,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 90,
+            "TDI": 7
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 98.6
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T21:44:25.318813",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 37,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 35.6,
+        "pattern_recall_pct": 36.4,
+        "precision_pct": 45.9,
+        "found_count": 6,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_key_card"
+        ],
+        "missing": [
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 44
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 70,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 49.5,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 44.3,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 90,
+            "TDI": 7
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 98.6
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-19T21:50:36.837529",
+    "results": {
+      "issue_knowledge_clio.json": {
+        "dataset": "issue_knowledge_clio.json",
+        "total_topics": 15,
+        "recall_pct": 71.4,
+        "coverage_recall_pct": 24.1,
+        "pattern_recall_pct": 24.2,
+        "precision_pct": 40.0,
+        "found_count": 5,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_key_card",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_oil_consumption",
+          "clio_wind_noise"
+        ],
+        "missing": [
+          "Excessive Oil Consumption / Timing Chain (1.2 TCe)",
+          "Wind Noise / Door Seals"
+        ],
+        "trim_stats": {
+          "trim_distribution": {},
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 0.0
+        }
+      },
+      "issue_knowledge_youtube_renault_clio_mk4_final.json": {
+        "dataset": "issue_knowledge_youtube_renault_clio_mk4_final.json",
+        "total_topics": 37,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 35.6,
+        "pattern_recall_pct": 36.4,
+        "precision_pct": 45.9,
+        "found_count": 6,
+        "found_ids": [
+          "clio_09_ignition_coil",
+          "clio_edc_gearbox",
+          "clio_oil_consumption",
+          "clio_rlink_infotainment",
+          "clio_suspension_noise",
+          "clio_wind_noise"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "clio_key_card"
+        ],
+        "missing": [
+          "Key Card Recognition Failure"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 44
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 100.0
+        }
+      },
+      "issue_knowledge_youtube_vw_golf_mk7_final.json": {
+        "dataset": "issue_knowledge_youtube_vw_golf_mk7_final.json",
+        "total_topics": 70,
+        "recall_pct": 85.7,
+        "coverage_recall_pct": 49.5,
+        "pattern_recall_pct": 50.0,
+        "precision_pct": 44.3,
+        "found_count": 6,
+        "found_ids": [
+          "golf_carbon_buildup",
+          "golf_dsg_transmission",
+          "golf_infotainment_screen",
+          "golf_panoramic_sunroof",
+          "golf_turbo_failure",
+          "golf_water_pump"
+        ],
+        "total_gt": 7,
+        "missing_ids": [
+          "golf_rear_speaker_leak"
+        ],
+        "missing": [
+          "Rear Door Speaker Water Leaks"
+        ],
+        "trim_stats": {
+          "trim_distribution": {
+            "base": 90,
+            "TDI": 7
+          },
+          "trim_scope_warning_count": 0,
+          "mono_trim_issue_pct": 98.6
+        }
+      }
+    }
   }
 ]

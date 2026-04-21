@@ -1,0 +1,3307 @@
+[
+  {
+    "issue_id": "wiper_motor_failure",
+    "label": "Front and rear wiper motor failure or sticking",
+    "label_short": "Wiper motor failure",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Wipers stop working or stick mid-screen due to faulty motor or perished wiring.",
+    "cause": "Faulty motor or perished wiring",
+    "fix": "Replace wiper motor or repair wiring",
+    "warning_signs": [
+      "Wipers moving slowly",
+      "Intermittent operation"
+    ],
+    "inspection_advice": "Test wipers at all speeds and check for smooth operation.",
+    "mention_count": 3,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      },
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      },
+      {
+        "video_id": "VQ3YHsEDV7I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Mentioned for both general models and specific 2.0L engines; consolidated as a common issue. Includes linkage seizure as a related failure mode.",
+    "corroboration_count": 3
+  },
+  {
+    "issue_id": "wiper_motor_failure",
+    "label": "Front and rear wiper motor failure or sticking",
+    "label_short": "Wiper motor failure",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Wipers stop working or stick mid-screen due to faulty motor or perished wiring.",
+    "cause": "Faulty motor or perished wiring",
+    "fix": "Replace wiper motor or repair wiring",
+    "warning_signs": [
+      "Wipers moving slowly",
+      "Intermittent operation"
+    ],
+    "inspection_advice": "Test wipers at all speeds and check for smooth operation.",
+    "mention_count": 2,
+    "distinct_channel_count": 2,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      },
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Mentioned for both general models and specific 2.0L engines; consolidated as a common issue.",
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "scuttle_panel_drain_blockage",
+    "label": "Scuttle panel drain channels block causing water ingress",
+    "label_short": "Scuttle drain blockage",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": "2006",
+    "onset_km_range": null,
+    "symptom": "Water accumulates in the scuttle panel area, leading to component corrosion and potential interior leaks.",
+    "cause": "Blockage of drain channels by leaves and debris.",
+    "fix": "Regularly clean scuttle panel drains to prevent water buildup.",
+    "warning_signs": [
+      "Water sloshing sounds behind dashboard",
+      "Damp footwells"
+    ],
+    "inspection_advice": "Check scuttle area under windshield for debris and ensure drains are clear.",
+    "mention_count": 2,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "VQ3YHsEDV7I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      },
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Can lead to water ingress into interior and electrical issues. Often related to interior water leak.",
+    "corroboration_count": 2
+  },
+  {
+    "issue_id": "engine_chassis_earth_strap_failure",
+    "label": "Engine-to-chassis earth strap failure",
+    "label_short": "Earth strap failure",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Immobilizer light stays on solid red, check engine and battery lights flash, and the car fails to start.",
+    "cause": "Corrosion or breakage of the main engine-to-chassis grounding strap.",
+    "fix": "Replace the earth strap.",
+    "warning_signs": [
+      "Intermittent starting issues",
+      "Flickering dashboard lights"
+    ],
+    "inspection_advice": "Check the condition of the earth strap located between the engine and chassis.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "WA87eUwd4ck",
+        "title": "Renault Clio Common Faults - Earth Strap Failure",
+        "channel": "Auto Repair Guys",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Affects all engine variants due to common electrical architecture.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "heater_blower_resistor_connector_melting",
+    "label": "Heater blower resistor connector melts",
+    "label_short": "Blower resistor melt",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The cabin heater fan/blower does not work on some speeds, such as speed two and four, while working on others.",
+    "cause": "High current through the resistor pack overheating the connector.",
+    "fix": "Replace the blower motor resistor and repair or replace the melted connector.",
+    "warning_signs": [
+      "Fan only works on highest speed",
+      "Burning smell from vents"
+    ],
+    "inspection_advice": "Check the blower resistor connector under the passenger side dashboard for melting or discoloration.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "lIEKsHL9Chc",
+        "title": "Renault Clio Heater Blower Resistor Fix",
+        "channel": "DIY Car Fix",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Common across all models due to shared HVAC design.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "excessive_oil_consumption_1_2_tce",
+    "label": "Excessive oil consumption leading to failure",
+    "label_short": "Oil consumption",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": "80000-120000 km",
+    "symptom": "Engine consumes excessive oil, which can lead to catastrophic engine failure.",
+    "cause": "Piston ring and/or valve stem seal wear.",
+    "fix": "Engine overhaul or replacement.",
+    "warning_signs": [
+      "Frequent need to top up oil",
+      "Blue smoke from exhaust"
+    ],
+    "inspection_advice": "Check service history for oil top-up frequency and inspect for exhaust smoke.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Primarily associated with the 1.2 TCE turbo petrol engine.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "map_sensor_condensation",
+    "label": "MAP sensor condensation causing false readings",
+    "label_short": "MAP sensor condensation",
+    "system_component": "engine",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Sudden loss of power and turbo boost, especially when the engine is cold, accompanied by service/stop lights and limp mode.",
+    "cause": "Condensation forming inside the MAP sensor.",
+    "fix": "Clean or replace the MAP sensor.",
+    "warning_signs": [
+      "Intermittent power loss on cold starts",
+      "Check engine light"
+    ],
+    "inspection_advice": "Scan for fault codes related to boost pressure or MAP sensor.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "2qi0bRyMeAc",
+        "title": "Renault Clio 1.5 dCi MAP Sensor Problem",
+        "channel": "Diesel Mechanic",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Specific to diesel engines with turbocharger.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "engine_control_relay_stuck_closed",
+    "label": "Engine control relay stuck closed",
+    "label_short": "Relay stuck closed",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Battery drains flat overnight due to the engine control relay failing in the closed position, keeping the ECU and engine bay components powered.",
+    "cause": "Relay internal contacts welding shut.",
+    "fix": "Replace the engine control relay (often in the under-hood fuse box).",
+    "warning_signs": [
+      "Battery drains overnight",
+      "Clicking from fuse box when off"
+    ],
+    "inspection_advice": "Check for parasitic drain with a multimeter; listen for relay buzz.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "YLEo2Xt3gJs",
+        "title": "Renault Clio Battery Drain Fix - Relay Issue",
+        "channel": "ElectroAuto Fix",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Reported on 1.2 TCE models.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "wiper_switch_fire",
+    "label": "Windshield wiper switch burns out",
+    "label_short": "Wiper switch burnout",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Smoke and burning smell from under the steering wheel after using wipers, switch melts and fuses.",
+    "cause": "High current through aged switch contacts causing overheating.",
+    "fix": "Replace the wiper stalk/switch assembly.",
+    "warning_signs": [
+      "Wipers slow or intermittent",
+      "Burning smell when using wipers"
+    ],
+    "inspection_advice": "Inspect the wiper stalk for signs of melting or heat damage.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "1JFbJWqy51o",
+        "title": "Renault Clio Electrical Gremlins - Wiper Switch",
+        "channel": "Auto Electrical Help",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Can be a fire hazard. Affects various models regardless of engine.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "climate_control_led_failure",
+    "label": "Climate control LED power plug failure",
+    "label_short": "Climate control LEDs",
+    "system_component": "electrical",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "LEDs for air conditioning and rear window heater stop illuminating, though functions still work.",
+    "cause": "Poor connection or failure in the LED power supply plug.",
+    "fix": "Repair or reseat the connector, or replace LEDs.",
+    "warning_signs": [
+      "Dashboard backlighting works but specific buttons don't light"
+    ],
+    "inspection_advice": "Check illumination of all climate control buttons during a test drive at night.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "1JFbJWqy51o",
+        "title": "Renault Clio Electrical Gremlins - Wiper Switch",
+        "channel": "Auto Electrical Help",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Cosmetic issue, does not affect functionality.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "starter_motor_water_ingress",
+    "label": "Starter motor water ingress and freezing",
+    "label_short": "Starter motor water",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Water seeps into the starter motor, freezes overnight, and prevents the car from starting.",
+    "cause": "Poor sealing of the starter motor casing.",
+    "fix": "Replace the starter motor or seal it properly.",
+    "warning_signs": [
+      "Grinding or slow cranking in wet weather",
+      "No start after rain or wash"
+    ],
+    "inspection_advice": "Inspect starter motor location for signs of water exposure or corrosion.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "More common in cold climates.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "suspension_noise_over_rough_roads",
+    "label": "Excessive suspension noise on rough roads",
+    "label_short": "Suspension noise",
+    "system_component": "suspension",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": "50000-100000 km",
+    "symptom": "The car produces a lot of noise when driving on damaged or rough roads.",
+    "cause": "Worn suspension bushings, drop links, or top mounts.",
+    "fix": "Replace worn suspension components.",
+    "warning_signs": [
+      "Clunks and rattles from front end over bumps"
+    ],
+    "inspection_advice": "Test drive on a rough road and listen for excessive knocking or rattling.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "General wear and tear issue.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "vent_control_plastic_breakage",
+    "label": "Fragile HVAC vent control plastics",
+    "label_short": "Fragile vent controls",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The plastic HVAC vent controls are fragile and break easily if handled aggressively.",
+    "cause": "Brittle plastic construction.",
+    "fix": "Replace broken vent slats or entire vent assembly.",
+    "warning_signs": [
+      "Loose or broken vent direction slats"
+    ],
+    "inspection_advice": "Gently test the movement of all air vent controls.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Cosmetic/build quality issue.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "wiper_switch_fire",
+    "label": "Windshield wiper switch burns out and melts",
+    "label_short": "Wiper switch burnout",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Smoke and burning smell from under the steering wheel after using wipers, switch melts and fuses.",
+    "cause": "High current through aged switch contacts causing overheating.",
+    "fix": "Replace the wiper stalk/switch assembly.",
+    "warning_signs": [
+      "Wipers slow or intermittent",
+      "Burning smell when using wipers"
+    ],
+    "inspection_advice": "Inspect the wiper stalk for signs of melting or heat damage.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "1JFbJWqy51o",
+        "title": "Renault Clio Electrical Gremlins - Wiper Switch",
+        "channel": "Auto Electrical Help",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Can be a fire hazard. Affects various models regardless of engine.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "starter_motor_water_ingress",
+    "label": "Starter motor water ingress and freezing",
+    "label_short": "Starter motor water",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Water seeps into the starter motor, freezes overnight, and prevents the car from starting.",
+    "cause": "Poor sealing of the starter motor casing.",
+    "fix": "Replace the starter motor or seal it properly.",
+    "warning_signs": [
+      "Grinding or slow cranking in wet weather",
+      "No start after rain or wash"
+    ],
+    "inspection_advice": "Inspect starter motor location for signs of water exposure or corrosion.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "More common in cold climates.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "suspension_noise_over_rough_roads",
+    "label": "Excessive suspension noise on rough roads",
+    "label_short": "Suspension noise",
+    "system_component": "suspension",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": "50000-100000 km",
+    "symptom": "The car produces a lot of noise when driving on damaged or rough roads.",
+    "cause": "Worn suspension bushings, drop links, or top mounts.",
+    "fix": "Replace worn suspension components.",
+    "warning_signs": [
+      "Clunks and rattles from front end over bumps"
+    ],
+    "inspection_advice": "Test drive on a rough road and listen for excessive knocking or rattling.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "General wear and tear issue.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "climate_control_led_failure",
+    "label": "Climate control LED power plug failure",
+    "label_short": "Climate control LEDs",
+    "system_component": "electrical",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "LEDs for air conditioning and rear window heater stop illuminating, though functions still work.",
+    "cause": "Poor connection or failure in the LED power supply plug.",
+    "fix": "Repair or reseat the connector, or replace LEDs.",
+    "warning_signs": [
+      "Dashboard backlighting works but specific buttons don't light"
+    ],
+    "inspection_advice": "Check illumination of all climate control buttons during a test drive at night.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "1JFbJWqy51o",
+        "title": "Renault Clio Electrical Gremlins - Wiper Switch",
+        "channel": "Auto Electrical Help",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Cosmetic issue, does not affect functionality.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "vent_control_plastic_breakage",
+    "label": "Fragile HVAC vent control plastics",
+    "label_short": "Fragile vent controls",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The plastic HVAC vent controls are fragile and break easily if handled aggressively.",
+    "cause": "Brittle plastic construction.",
+    "fix": "Replace broken vent slats or entire vent assembly.",
+    "warning_signs": [
+      "Loose or broken vent direction slats"
+    ],
+    "inspection_advice": "Gently test the movement of all air vent controls.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Cosmetic/build quality issue.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "r_link_infotainment_system_bugs",
+    "label": "R-Link infotainment system bugs and crashes",
+    "label_short": "Infotainment bugs",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The R-Link infotainment system is buggy, slow, crashes, and can lock out climate controls.",
+    "cause": "Software bugs or hardware limitations",
+    "fix": "Software update or system reset; may require replacement",
+    "warning_signs": [
+      "Slow response",
+      "Frequent reboots"
+    ],
+    "inspection_advice": "Test all infotainment functions and climate controls during a test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "start_stop_battery_drain",
+    "label": "Start-stop system causes battery drain",
+    "label_short": "Start-stop battery drain",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The start-stop system does not work correctly and frequently leads to a dead battery.",
+    "cause": "Faulty start-stop system or battery sensor",
+    "fix": "Replace battery, check sensor, or disable system",
+    "warning_signs": [
+      "Start-stop not activating",
+      "Battery warning light"
+    ],
+    "inspection_advice": "Check battery health and test start-stop function.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "fuel_gauge_inaccuracy",
+    "label": "Inaccurate fuel level gauge reading",
+    "label_short": "Fuel gauge inaccuracy",
+    "system_component": "fuel",
+    "issue_type": "sensor_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The fuel gauge shows an inaccurate level, often sticking at half a tank before suddenly indicating empty and stranding the driver.",
+    "cause": "Faulty fuel level sensor or wiring",
+    "fix": "Replace fuel level sensor or repair wiring",
+    "warning_signs": [
+      "Gauge sticking",
+      "Erratic readings"
+    ],
+    "inspection_advice": "Verify fuel gauge accuracy by filling tank and monitoring readings.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "Renault Clio Buyer's Guide - Common Problems",
+        "channel": "Car Buyer's Tips",
+        "video_type_category": "list_format"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "oil_leaks_non_solidifying_sealant",
+    "label": "Oil leaks from engine sealant",
+    "label_short": "Engine oil leaks",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leaks from the engine due to factory-applied non-solidifying sealant degrading over time.",
+    "cause": "Degraded factory sealant",
+    "fix": "Reseal engine with proper sealant",
+    "warning_signs": [
+      "Oil spots under car",
+      "Low oil level"
+    ],
+    "inspection_advice": "Inspect engine for oil leaks, especially around seals.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rust_sills",
+    "label": "Rust on sills hidden by side skirts",
+    "label_short": "Sill rust",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rust can occur on the sills, which are hidden by plastic side skirts.",
+    "cause": "Moisture trapped under side skirts",
+    "fix": "Remove skirts, treat rust, and repaint",
+    "warning_signs": [
+      "Rust visible at skirt edges",
+      "Bubbling paint"
+    ],
+    "inspection_advice": "Remove plastic side skirts if possible to inspect sills for hidden rust.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "oil_leaks_non_solidifying_sealant",
+    "label": "Oil leaks from engine sealant",
+    "label_short": "Engine oil leaks",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Oil leaks from the engine due to factory-applied non-solidifying sealant degrading over time.",
+    "cause": "Degraded factory sealant",
+    "fix": "Reseal engine with proper sealant",
+    "warning_signs": [
+      "Oil spots under car",
+      "Low oil level"
+    ],
+    "inspection_advice": "Inspect engine for oil leaks, especially around seals.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "r_link_infotainment_system_bugs",
+    "label": "R-Link infotainment system bugs and crashes",
+    "label_short": "Infotainment bugs",
+    "system_component": "electrical",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The R-Link infotainment system is buggy, slow, crashes, and can lock out climate controls.",
+    "cause": "Software bugs or hardware limitations",
+    "fix": "Software update or system reset; may require replacement",
+    "warning_signs": [
+      "Slow response",
+      "Frequent reboots"
+    ],
+    "inspection_advice": "Test all infotainment functions and climate controls during a test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "start_stop_battery_drain",
+    "label": "Start-stop system causes battery drain",
+    "label_short": "Start-stop battery drain",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The start-stop system does not work correctly and frequently leads to a dead battery.",
+    "cause": "Faulty start-stop system or battery sensor",
+    "fix": "Replace battery, check sensor, or disable system",
+    "warning_signs": [
+      "Start-stop not activating",
+      "Battery warning light"
+    ],
+    "inspection_advice": "Check battery health and test start-stop function.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "fuel_gauge_inaccuracy",
+    "label": "Inaccurate fuel level gauge reading",
+    "label_short": "Fuel gauge inaccuracy",
+    "system_component": "fuel",
+    "issue_type": "sensor_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The fuel gauge shows an inaccurate level, often sticking at half a tank before suddenly indicating empty and stranding the driver.",
+    "cause": "Faulty fuel level sensor or wiring",
+    "fix": "Replace fuel level sensor or repair wiring",
+    "warning_signs": [
+      "Gauge sticking",
+      "Erratic readings"
+    ],
+    "inspection_advice": "Verify fuel gauge accuracy by filling tank and monitoring readings.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Xsh3AZ8Jh3M",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "power_steering_switch_leak",
+    "label": "Power steering switch leak",
+    "label_short": "Power steering leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "A leak develops from the power steering switch located under the engine.",
+    "cause": "Faulty power steering switch or seal",
+    "fix": "Replace power steering switch or seal",
+    "warning_signs": [
+      "Power steering fluid low",
+      "Steering stiffness"
+    ],
+    "inspection_advice": "Check power steering fluid level and inspect for leaks under engine.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "washer_jet_blockage",
+    "label": "Washer jets become blocked",
+    "label_short": "Washer jet blockage",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Washer jets are infamous for becoming blocked.",
+    "cause": "Debris or mineral buildup",
+    "fix": "Clean or replace washer jets",
+    "warning_signs": [
+      "Weak washer spray",
+      "No spray"
+    ],
+    "inspection_advice": "Test washer jets during inspection.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rust_fuel_filler_cap",
+    "label": "Rust around fuel filler cap",
+    "label_short": "Fuel cap rust",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rust can develop around the fuel filler cap area.",
+    "cause": "Moisture and corrosion",
+    "fix": "Sand and repaint affected area",
+    "warning_signs": [
+      "Bubbling paint",
+      "Visible rust"
+    ],
+    "inspection_advice": "Inspect around fuel filler cap for rust or paint damage.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "front_wiper_linkage_seizure",
+    "label": "Front wiper linkage seizes due to corrosion",
+    "label_short": "Wiper linkage seizure",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": "2006",
+    "onset_km_range": null,
+    "symptom": "Front wipers do not move and the system enters a protection mode, disabling operation.",
+    "cause": "Corrosion of the wiper linkage mechanism.",
+    "fix": "Clean or replace the wiper linkage assembly.",
+    "warning_signs": [
+      "Wipers moving slowly or erratically",
+      "Grinding noise from wiper motor area"
+    ],
+    "inspection_advice": "Operate wipers at multiple speeds and listen for unusual noises. Check for rust in the scuttle area.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "VQ3YHsEDV7I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Often linked to blocked scuttle drains causing water accumulation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "scuttle_panel_drain_blockage",
+    "label": "Scuttle panel drain channels block",
+    "label_short": "Scuttle drain blockage",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": "2006",
+    "onset_km_range": null,
+    "symptom": "Water accumulates in the scuttle panel area, leading to component corrosion.",
+    "cause": "Blockage of drain channels by leaves and debris.",
+    "fix": "Regularly clean scuttle panel drains to prevent water buildup.",
+    "warning_signs": [
+      "Water sloshing sounds behind dashboard",
+      "Damp footwells"
+    ],
+    "inspection_advice": "Check scuttle area under windshield for debris and ensure drains are clear.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "VQ3YHsEDV7I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Can lead to water ingress into interior and electrical issues.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rust_rear_arches",
+    "label": "Rust on rear wheel arches",
+    "label_short": "Rear arch rust",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rust is appearing on the rear wheel arches on some examples.",
+    "cause": "Moisture and road salt accumulation, possibly exacerbated by design.",
+    "fix": "Cut out rust and weld in new metal, then repaint.",
+    "warning_signs": [
+      "Bubbling paint on rear arches",
+      "Visible orange/brown corrosion"
+    ],
+    "inspection_advice": "Closely inspect rear wheel arches inside and out for bubbling or flaking paint.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "More common in regions with winter road salting.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rust_sills",
+    "label": "Rust on sills hidden by side skirts",
+    "label_short": "Sill rust",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rust can occur on the sills, which are hidden by plastic side skirts.",
+    "cause": "Moisture trapped under side skirts",
+    "fix": "Remove skirts, treat rust, and repaint",
+    "warning_signs": [
+      "Rust visible at skirt edges",
+      "Bubbling paint"
+    ],
+    "inspection_advice": "Remove plastic side skirts if possible to inspect sills for hidden rust.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rear_wheel_bearing_wear",
+    "label": "Rear wheel bearing wear",
+    "label_short": "Rear bearing wear",
+    "system_component": "suspension",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rear wheel bearings wear out, creating a rumbling noise like roller skates on concrete.",
+    "cause": "Normal wear or contamination leading to bearing failure.",
+    "fix": "Replace the affected wheel bearing assembly.",
+    "warning_signs": [
+      "Rumbling or humming noise from rear",
+      "Noise changes with speed"
+    ],
+    "inspection_advice": "Lift rear and spin wheels by hand to feel for roughness or listen for noise.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "A common wear item on higher mileage cars.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "water_ingress_boot",
+    "label": "Water ingress in boot/trunk",
+    "label_short": "Boot water leak",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Water leaks into the boot, often due to degraded rubber bungs.",
+    "cause": "Degraded or missing rubber seals/bungs around boot lid or rear lights.",
+    "fix": "Inspect and replace damaged rubber seals or bungs.",
+    "warning_signs": [
+      "Damp carpet in boot",
+      "Musty smell",
+      "Water pooling in spare wheel well"
+    ],
+    "inspection_advice": "Check boot carpet and spare wheel well for moisture or signs of rust.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Common in older examples; can promote rust.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "water_ingress_interior",
+    "label": "Water ingress into interior carpets",
+    "label_short": "Interior water leak",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Water finds its way into the interior carpets from blocked scuttle drains or failed door seals.",
+    "cause": "Blocked scuttle panel drains or deteriorated door/window seals.",
+    "fix": "Clear scuttle drains and replace faulty seals.",
+    "warning_signs": [
+      "Damp carpets",
+      "Condensation on windows",
+      "Moldy smell"
+    ],
+    "inspection_advice": "Feel carpet for dampness, especially in footwells. Check door seals for integrity.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Often related to scuttle drain blockage issue.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "power_steering_switch_leak",
+    "label": "Power steering switch leak",
+    "label_short": "Power steering leak",
+    "system_component": "engine",
+    "issue_type": "fluid_leak",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "A leak develops from the power steering switch located under the engine.",
+    "cause": "Faulty power steering switch or seal",
+    "fix": "Replace power steering switch or seal",
+    "warning_signs": [
+      "Power steering fluid low",
+      "Steering stiffness"
+    ],
+    "inspection_advice": "Check power steering fluid level and inspect for leaks under engine.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rust_fuel_filler_cap",
+    "label": "Rust around fuel filler cap",
+    "label_short": "Fuel cap rust",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rust can develop around the fuel filler cap area.",
+    "cause": "Moisture and corrosion",
+    "fix": "Sand and repaint affected area",
+    "warning_signs": [
+      "Bubbling paint",
+      "Visible rust"
+    ],
+    "inspection_advice": "Inspect around fuel filler cap for rust or paint damage.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "washer_jet_blockage",
+    "label": "Washer jets become blocked",
+    "label_short": "Washer jet blockage",
+    "system_component": "electrical",
+    "issue_type": "chronic_failure",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Washer jets are infamous for becoming blocked.",
+    "cause": "Debris or mineral buildup",
+    "fix": "Clean or replace washer jets",
+    "warning_signs": [
+      "Weak washer spray",
+      "No spray"
+    ],
+    "inspection_advice": "Test washer jets during inspection.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "water_ingress_body",
+    "label": "Water ingress in boot and interior from degraded seals",
+    "label_short": "Body water leaks",
+    "system_component": "body",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Water leaks into the boot or interior carpets, often due to degraded seals or blocked drains.",
+    "cause": "Degraded or missing rubber seals/bungs around boot lid, rear lights, or doors; blocked scuttle drains.",
+    "fix": "Inspect and replace damaged rubber seals or bungs; clear scuttle drains.",
+    "warning_signs": [
+      "Damp carpet in boot or footwells",
+      "Musty smell",
+      "Water pooling in spare wheel well",
+      "Condensation on windows"
+    ],
+    "inspection_advice": "Check boot carpet, spare wheel well, and interior footwells for moisture. Inspect door and boot seals for integrity.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Common in older examples; can promote rust. Boot and interior leaks are related sealing issues.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rust_rear_arches",
+    "label": "Rust on rear wheel arches",
+    "label_short": "Rear arch rust",
+    "system_component": "body",
+    "issue_type": "structural",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rust is appearing on the rear wheel arches on some examples.",
+    "cause": "Moisture and road salt accumulation, possibly exacerbated by design.",
+    "fix": "Cut out rust and weld in new metal, then repaint.",
+    "warning_signs": [
+      "Bubbling paint on rear arches",
+      "Visible orange/brown corrosion"
+    ],
+    "inspection_advice": "Closely inspect rear wheel arches inside and out for bubbling or flaking paint.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "More common in regions with winter road salting.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rear_wheel_bearing_wear",
+    "label": "Rear wheel bearing wear",
+    "label_short": "Rear bearing wear",
+    "system_component": "suspension",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Rear wheel bearings wear out, creating a rumbling noise like roller skates on concrete.",
+    "cause": "Normal wear or contamination leading to bearing failure.",
+    "fix": "Replace the affected wheel bearing assembly.",
+    "warning_signs": [
+      "Rumbling or humming noise from rear",
+      "Noise changes with speed"
+    ],
+    "inspection_advice": "Lift rear and spin wheels by hand to feel for roughness or listen for noise.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "A common wear item on higher mileage cars.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "steering_wheel_melting",
+    "label": "Steering wheel leather melts and becomes sticky",
+    "label_short": "Steering wheel melts",
+    "system_component": "other",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The cheap leather on the steering wheel melts and becomes sticky to the touch.",
+    "cause": "Degradation of steering wheel material due to heat, UV, or sweat.",
+    "fix": "Replace steering wheel or fit a cover.",
+    "warning_signs": [
+      "Sticky or tacky steering wheel surface",
+      "Discoloration"
+    ],
+    "inspection_advice": "Feel the steering wheel for any sticky residue or unusual texture.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Mainly a cosmetic/comfort issue, not mechanical.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "brake_performance_issues",
+    "label": "Poor brake performance and excessive pedal effort",
+    "label_short": "Brake performance issues",
+    "system_component": "brakes",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Excessive brake pedal effort required and poor stopping power, leading to low driver confidence.",
+    "cause": "Possible issues with brake booster, master cylinder, or pad/rotor condition.",
+    "fix": "Inspect and service brake system components; replace worn parts.",
+    "warning_signs": [
+      "Hard brake pedal",
+      "Long stopping distances",
+      "Spongy feel"
+    ],
+    "inspection_advice": "Test brake pedal feel and effectiveness during a test drive. Check pad and rotor thickness.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "sEt4TeL5AFM",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from two closely related raw issues about brake performance.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "carbon_buildup_valve_deposits",
+    "label": "Carbon buildup on intake valves",
+    "label_short": "Carbon buildup",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Loss of power, rough idle, or misfires due to direct injection design allowing carbon accumulation on valves.",
+    "cause": "Direct fuel injection design lacks fuel wash over intake valves.",
+    "fix": "Walnut blasting or chemical cleaning of intake valves.",
+    "warning_signs": [
+      "Reduced engine power",
+      "Rough idle",
+      "Misfires"
+    ],
+    "inspection_advice": "For higher mileage 1.2 TCE, consider a potential carbon cleaning service history.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "U_X59Q2rvUU",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Common issue with many direct injection gasoline engines.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "diesel_exhaust_issues",
+    "label": "EGR valve sooting and DPF clogging on diesel",
+    "label_short": "Diesel exhaust issues",
+    "system_component": "exhaust",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Reduced engine performance, warning lights, or rough running due to EGR valve clogging with soot or DPF clogging from short trips.",
+    "cause": "Soot accumulation in EGR valve; insufficient exhaust temperature for DPF regeneration.",
+    "fix": "Clean or replace EGR valve; forced regeneration or DPF replacement.",
+    "warning_signs": [
+      "Reduced power",
+      "Check engine light",
+      "Rough idle",
+      "DPF warning light",
+      "Increased fuel consumption"
+    ],
+    "inspection_advice": "Check for EGR valve fault codes and soot buildup; check DPF condition and regeneration history.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "U_X59Q2rvUU",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "EGR and DPF issues are related chronic failures on the diesel engine.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "steering_wheel_melting",
+    "label": "Steering wheel leather melts and becomes sticky",
+    "label_short": "Steering wheel melts",
+    "system_component": "other",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The cheap leather on the steering wheel melts and becomes sticky to the touch.",
+    "cause": "Degradation of steering wheel material due to heat, UV, or sweat.",
+    "fix": "Replace steering wheel or fit a cover.",
+    "warning_signs": [
+      "Sticky or tacky steering wheel surface",
+      "Discoloration"
+    ],
+    "inspection_advice": "Feel the steering wheel for any sticky residue or unusual texture.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "gHsrxWl0O2I",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Mainly a cosmetic/comfort issue, not mechanical.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "brake_performance_issues",
+    "label": "Poor brake performance and excessive pedal effort",
+    "label_short": "Brake performance issues",
+    "system_component": "brakes",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "medium",
+    "affected_engines": [
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Excessive brake pedal effort required and poor stopping power, leading to low driver confidence.",
+    "cause": "Possible issues with brake booster, master cylinder, or pad/rotor condition.",
+    "fix": "Inspect and service brake system components; replace worn parts.",
+    "warning_signs": [
+      "Hard brake pedal",
+      "Long stopping distances",
+      "Spongy feel"
+    ],
+    "inspection_advice": "Test brake pedal feel and effectiveness during a test drive. Check pad and rotor thickness.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "sEt4TeL5AFM",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from two closely related raw issues about brake performance.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "carbon_buildup_valve_deposits",
+    "label": "Carbon buildup on intake valves",
+    "label_short": "Carbon buildup",
+    "system_component": "engine",
+    "issue_type": "chronic_failure",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Loss of power, rough idle, or misfires due to direct injection design allowing carbon accumulation on valves.",
+    "cause": "Direct fuel injection design lacks fuel wash over intake valves.",
+    "fix": "Walnut blasting or chemical cleaning of intake valves.",
+    "warning_signs": [
+      "Reduced engine power",
+      "Rough idle",
+      "Misfires"
+    ],
+    "inspection_advice": "For higher mileage 1.2 TCE, consider a potential carbon cleaning service history.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "U_X59Q2rvUU",
+        "title": "...",
+        "channel": "...",
+        "video_type_category": "..."
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Common issue with many direct injection gasoline engines.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "diesel_exhaust_issues",
+    "label": "EGR and DPF clogging on diesel engines",
+    "label_short": "Diesel exhaust clogging",
+    "system_component": "exhaust",
+    "issue_type": "chronic_failure",
+    "severity": "high",
+    "confidence": "high",
+    "affected_engines": [
+      "1.5_DCI"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Reduced engine performance, warning lights, rough running, or frequent regeneration cycles due to soot accumulation in EGR valve and DPF clogging from short trips.",
+    "cause": "Soot accumulation in EGR valve; insufficient exhaust temperature for DPF regeneration.",
+    "fix": "Clean or replace EGR valve; forced regeneration or DPF replacement.",
+    "warning_signs": [
+      "Reduced power",
+      "Check engine light",
+      "Rough idle",
+      "DPF warning light",
+      "Increased fuel consumption"
+    ],
+    "inspection_advice": "Check for EGR valve fault codes and soot buildup; check DPF condition and regeneration history.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "U_X59Q2rvUU",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Combined EGR and DPF issues common in diesel engines with short-trip usage.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "gear_linkage_seizure_binding",
+    "label": "Gear linkage seizure or binding",
+    "label_short": "Gear linkage seizure",
+    "system_component": "gearbox",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The gear linkage would not allow the driver to select a gear, though it was described as not fully seized.",
+    "cause": "Linkage corrosion or lack of lubrication",
+    "fix": "Lubricate or replace linkage components",
+    "warning_signs": [
+      "Difficulty shifting",
+      "Notchy gear changes"
+    ],
+    "inspection_advice": "Test gear selection across all gears",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uUlBjQzdGuM",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "electrical_interior_quirks",
+    "label": "Sat nav remote dependency and non-standard AUX input",
+    "label_short": "Electrical quirks",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Integrated TomTom sat nav unusable without proprietary remote; uncommon left/right dual-input aux port instead of standard 3.5mm jack.",
+    "cause": "Design dependency on proprietary remote; design choice for audio input.",
+    "fix": "Replace remote batteries or use alternative navigation; use adapter cable.",
+    "warning_signs": [
+      "Sat nav unresponsive to touch",
+      "Cannot connect standard audio devices"
+    ],
+    "inspection_advice": "Check sat nav remote functionality; check audio input ports.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uUlBjQzdGuM",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Combined sat nav and AUX input issues from same source.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "front_cup_holder_size",
+    "label": "Front cup holders too small",
+    "label_short": "Small cup holders",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The front cup holders do not fit standard large takeaway drink cups, only small cans.",
+    "cause": "Design limitation",
+    "fix": "Use aftermarket cup holder adapter",
+    "warning_signs": [
+      "Cups not fitting"
+    ],
+    "inspection_advice": "Test with a standard drink cup",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uUlBjQzdGuM",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "1_2_16v_underpowered",
+    "label": "1.2 16V engine underpowered",
+    "label_short": "Engine underpowered",
+    "system_component": "engine",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The engine feels feeble and lacks power for rapid progress.",
+    "cause": "Low engine output",
+    "fix": "None, inherent characteristic",
+    "warning_signs": [
+      "Sluggish acceleration",
+      "Struggles on hills"
+    ],
+    "inspection_advice": "Test drive for acceleration performance",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "gearshift_rubbery_feel",
+    "label": "Rubbery and imprecise gearshift feel",
+    "label_short": "Rubbery gearshift",
+    "system_component": "gearbox",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The gearshift feels rubbery and imprecise.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test gearshift feel during a test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5ayZ7vtyf8M",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "electrical_controls_quality",
+    "label": "Flimsy stalks, hard stereo, satnav remote",
+    "label_short": "Poor controls",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Indicator and wiper stalks feel flimsy. Stereo system is difficult to operate. Satellite navigation requires a separate remote control.",
+    "cause": "Low-quality interior components and poor ergonomic design.",
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Check operation and feel of stalks, stereo, and infotainment.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5ayZ7vtyf8M",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from multiple related electrical/control complaints in the same source.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "gear_linkage_seizure_binding",
+    "label": "Gear linkage seizure or binding",
+    "label_short": "Gear linkage seizure",
+    "system_component": "gearbox",
+    "issue_type": "intermittent_fault",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The gear linkage would not allow the driver to select a gear, though it was described as not fully seized.",
+    "cause": "Linkage corrosion or lack of lubrication",
+    "fix": "Lubricate or replace linkage components",
+    "warning_signs": [
+      "Difficulty shifting",
+      "Notchy gear changes"
+    ],
+    "inspection_advice": "Test gear selection across all gears",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uUlBjQzdGuM",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "sat_nav_remote_dependency",
+    "label": "Sat nav requires proprietary remote",
+    "label_short": "Sat nav remote",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The integrated TomTom sat nav is unusable if the proprietary remote control runs out of battery.",
+    "cause": "Design dependency on proprietary remote",
+    "fix": "Replace remote batteries or use alternative navigation",
+    "warning_signs": [
+      "Sat nav unresponsive to touch"
+    ],
+    "inspection_advice": "Check sat nav remote functionality",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uUlBjQzdGuM",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "non_standard_aux_input",
+    "label": "Non-standard dual aux input",
+    "label_short": "Non-standard AUX",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The car uses an uncommon left/right dual-input aux port instead of a standard 3.5mm jack.",
+    "cause": "Design choice",
+    "fix": "Use adapter cable",
+    "warning_signs": [
+      "Cannot connect standard audio devices"
+    ],
+    "inspection_advice": "Check audio input ports",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uUlBjQzdGuM",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "1_2_16v_underpowered",
+    "label": "1.2 16V engine underpowered",
+    "label_short": "Engine underpowered",
+    "system_component": "engine",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The engine feels feeble and lacks power for rapid progress.",
+    "cause": "Low engine output",
+    "fix": "None, inherent characteristic",
+    "warning_signs": [
+      "Sluggish acceleration",
+      "Struggles on hills"
+    ],
+    "inspection_advice": "Test drive for acceleration performance",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "1_6_vvt_refinement_issue",
+    "label": "1.6 VVT lacks refinement",
+    "label_short": "Engine refinement",
+    "system_component": "engine",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.6_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The engine has to be worked hard and refinement is not its strong suit.",
+    "cause": "Engine characteristics",
+    "fix": "None, inherent characteristic",
+    "warning_signs": [
+      "Noisy under load",
+      "Coarse feel"
+    ],
+    "inspection_advice": "Listen for engine noise during acceleration",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "base_model_cheap_interior",
+    "label": "Base model cheap interior feel",
+    "label_short": "Cheap interior",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The interior of cheaper models feels well cheap and lacks soft-touch materials.",
+    "cause": "Cost-cutting in base models",
+    "fix": "None, design characteristic",
+    "warning_signs": [
+      "Hard plastics",
+      "Basic trim"
+    ],
+    "inspection_advice": "Inspect interior materials and finish",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "poor_rear_visibility_parking",
+    "label": "Poor rear visibility when parking",
+    "label_short": "Poor visibility",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Visibility is restricted when parking due to thick B and C pillars.",
+    "cause": "Vehicle design with thick pillars",
+    "fix": "Use parking sensors or camera if equipped",
+    "warning_signs": [
+      "Blind spots when reversing"
+    ],
+    "inspection_advice": "Check rearward visibility from driver seat",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "front_cup_holder_size",
+    "label": "Front cup holders too small",
+    "label_short": "Small cup holders",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The front cup holders do not fit standard large takeaway drink cups, only small cans.",
+    "cause": "Design limitation",
+    "fix": "Use aftermarket cup holder adapter",
+    "warning_signs": [
+      "Cups not fitting"
+    ],
+    "inspection_advice": "Test with a standard drink cup",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "uUlBjQzdGuM",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "gearshift_rubbery_feel",
+    "label": "Rubbery and imprecise gearshift feel",
+    "label_short": "Rubbery gearshift",
+    "system_component": "gearbox",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The gearshift feels rubbery and imprecise.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test gearshift feel during a test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5ayZ7vtyf8M",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "electrical_controls_quality",
+    "label": "Flimsy stalks, hard stereo, satnav remote",
+    "label_short": "Poor controls",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.2_16V",
+      "1.2_TCE",
+      "1.4_16V",
+      "1.5_DCI",
+      "1.6_16V",
+      "2.0_16V",
+      "2.0_RS"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Indicator and wiper stalks feel flimsy. Stereo system is difficult to operate. Satellite navigation requires a separate remote control.",
+    "cause": "Low-quality interior components and poor ergonomic design.",
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Check operation and feel of stalks, stereo, and infotainment.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "5ayZ7vtyf8M",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Merged from multiple related electrical/control complaints in the same source.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "base_model_cheap_interior",
+    "label": "Base model cheap interior feel",
+    "label_short": "Cheap interior",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The interior of cheaper models feels well cheap and lacks soft-touch materials.",
+    "cause": "Cost-cutting in base models",
+    "fix": "None, design characteristic",
+    "warning_signs": [
+      "Hard plastics",
+      "Basic trim"
+    ],
+    "inspection_advice": "Inspect interior materials and finish",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "poor_rear_visibility_parking",
+    "label": "Poor rear visibility when parking",
+    "label_short": "Poor visibility",
+    "system_component": "body",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "all"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "Visibility is restricted when parking due to thick B and C pillars.",
+    "cause": "Vehicle design with thick pillars",
+    "fix": "Use parking sensors or camera if equipped",
+    "warning_signs": [
+      "Blind spots when reversing"
+    ],
+    "inspection_advice": "Check rearward visibility from driver seat",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "esp_not_standard",
+    "label": "ESP stability control not standard on all models",
+    "label_short": "ESP optional",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "ESP stability control is only available on plusher versions, not standard on all models.",
+    "cause": "Feature stratification by trim level.",
+    "fix": "Purchase a higher trim level or aftermarket solutions are not typical.",
+    "warning_signs": [],
+    "inspection_advice": "Check vehicle specifications or trim badge for ESP.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "engine_refinement_1_6_vvt",
+    "label": "1.6 VVT engine lacks refinement, noisy under load",
+    "label_short": "Engine refinement",
+    "system_component": "engine",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "1.6_16V"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The engine has to be worked hard and refinement is not its strong suit.",
+    "cause": "Engine characteristics",
+    "fix": "None, inherent characteristic",
+    "warning_signs": [
+      "Noisy under load",
+      "Coarse feel"
+    ],
+    "inspection_advice": "Listen for engine noise during acceleration",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "high_speed_wind_noise",
+    "label": "Excessive wind noise at motorway speeds",
+    "label_short": "Wind noise",
+    "system_component": "body",
+    "issue_type": "noise",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "There is quite a lot of wind noise at motorway speeds, making conversation difficult.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Listen for wind noise during a high-speed test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Engine note specifies 0.9_TCE, which is not in the provided reference list for this generation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "sound_system_distortion",
+    "label": "Speaker distortion at high volume",
+    "label_short": "Speaker distortion",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The upgraded sound system distorts and sounds like it's shaking itself to pieces above two-thirds volume.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test the sound system at various volume levels.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Engine note specifies 0.9_TCE, which is not in the provided reference list for this generation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "piano_black_trim_scratches",
+    "label": "Piano black trim scratches easily",
+    "label_short": "Scratchy trim",
+    "system_component": "body",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The piano black plastic trim shows significant scratches.",
+    "cause": "Soft, glossy plastic surface.",
+    "fix": "Replace trim or use polishing compounds.",
+    "warning_signs": [],
+    "inspection_advice": "Inspect interior trim for fine scratches under light.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Engine note specifies 0.9_TCE, which is not in the provided reference list for this generation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "suspension_squeak_over_bumps",
+    "label": "Squeaky suspension over speed bumps",
+    "label_short": "Squeaky suspension",
+    "system_component": "suspension",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The suspension is a little bit squeaky over speed bumps.",
+    "cause": null,
+    "fix": "Lubricate suspension bushings or inspect for worn components.",
+    "warning_signs": [],
+    "inspection_advice": "Drive over bumps and listen for squeaks.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Engine note specifies 0.9_TCE, which is not in the provided reference list for this generation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "high_speed_wind_noise",
+    "label": "Excessive wind noise at motorway speeds",
+    "label_short": "Wind noise",
+    "system_component": "body",
+    "issue_type": "noise",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "There is quite a lot of wind noise at motorway speeds, making conversation difficult.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Listen for wind noise during a high-speed test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Engine note specifies 0.9_TCE, which is not in the provided reference list for this generation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "sound_system_distortion",
+    "label": "Speaker distortion at high volume",
+    "label_short": "Speaker distortion",
+    "system_component": "electrical",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The upgraded sound system distorts and sounds like it's shaking itself to pieces above two-thirds volume.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test the sound system at various volume levels.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Engine note specifies 0.9_TCE, which is not in the provided reference list for this generation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "piano_black_trim_scratches",
+    "label": "Piano black trim scratches easily",
+    "label_short": "Scratchy trim",
+    "system_component": "body",
+    "issue_type": "wear_item",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The piano black plastic trim shows significant scratches.",
+    "cause": "Soft, glossy plastic surface.",
+    "fix": "Replace trim or use polishing compounds.",
+    "warning_signs": [],
+    "inspection_advice": "Inspect interior trim for fine scratches under light.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Engine note specifies 0.9_TCE, which is not in the provided reference list for this generation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "suspension_squeak_over_bumps",
+    "label": "Squeaky suspension over speed bumps",
+    "label_short": "Squeaky suspension",
+    "system_component": "suspension",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The suspension is a little bit squeaky over speed bumps.",
+    "cause": null,
+    "fix": "Lubricate suspension bushings or inspect for worn components.",
+    "warning_signs": [],
+    "inspection_advice": "Drive over bumps and listen for squeaks.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": "Engine note specifies 0.9_TCE, which is not in the provided reference list for this generation.",
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "esp_not_standard",
+    "label": "ESP stability control not standard on all models",
+    "label_short": "ESP optional",
+    "system_component": "other",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "high",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "ESP stability control is only available on plusher versions, not standard on all models.",
+    "cause": "Feature stratification by trim level.",
+    "fix": "Purchase a higher trim level or aftermarket solutions are not typical.",
+    "warning_signs": [],
+    "inspection_advice": "Check vehicle specifications or trim badge for ESP.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "light_steering_high_speed",
+    "label": "Light steering less welcome at high speed",
+    "label_short": "Light steering",
+    "system_component": "suspension",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The light steering is less welcome at higher speeds on twisty roads.",
+    "cause": "Tuning for low-speed maneuverability.",
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Assess steering feel during high-speed and twisty road test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rough_three_cylinder_engine",
+    "label": "Rough three-cylinder engine note",
+    "label_short": "Rough engine",
+    "system_component": "engine",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The three-cylinder engine is a little bit rough and not the smoothest.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": null,
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "gear_grinding_reverse",
+    "label": "Gear grinding when selecting reverse",
+    "label_short": "Reverse gear grind",
+    "system_component": "gearbox",
+    "issue_type": "noise",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "You have to be careful putting it in reverse or you get a horrible grinding noise.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test reverse gear engagement carefully during a test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "poor_motorway_fuel_economy",
+    "label": "Poor high-speed fuel economy",
+    "label_short": "Poor MPG",
+    "system_component": "engine",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The engine sits at high RPM at 70 mph, resulting in poor motorway fuel economy (around 40-45 mpg).",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": null,
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "loose_suspension_at_speed",
+    "label": "Loose suspension feel at speed",
+    "label_short": "Loose suspension",
+    "system_component": "suspension",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "At higher speeds, the suspension feels a little bit loose, with space to move about in the lane and the rear squiggling.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test drive at highway speeds to assess stability and rear-end control.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "light_steering_high_speed",
+    "label": "Light steering less welcome at high speed",
+    "label_short": "Light steering",
+    "system_component": "suspension",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "high",
+    "affected_engines": [],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The light steering is less welcome at higher speeds on twisty roads.",
+    "cause": "Tuning for low-speed maneuverability.",
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Assess steering feel during high-speed and twisty road test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "-l78gTzoSds",
+        "title": "",
+        "channel": "",
+        "video_type_category": "organic"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "rough_three_cylinder_engine",
+    "label": "Rough three-cylinder engine note",
+    "label_short": "Rough engine",
+    "system_component": "engine",
+    "issue_type": "noise",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The three-cylinder engine is a little bit rough and not the smoothest.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": null,
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "gear_grinding_reverse",
+    "label": "Gear grinding when selecting reverse",
+    "label_short": "Reverse gear grind",
+    "system_component": "gearbox",
+    "issue_type": "noise",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "You have to be careful putting it in reverse or you get a horrible grinding noise.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test reverse gear engagement carefully during a test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "poor_motorway_fuel_economy",
+    "label": "Poor high-speed fuel economy",
+    "label_short": "Poor MPG",
+    "system_component": "engine",
+    "issue_type": "other",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The engine sits at high RPM at 70 mph, resulting in poor motorway fuel economy (around 40-45 mpg).",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": null,
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "loose_suspension_at_speed",
+    "label": "Loose suspension feel at speed",
+    "label_short": "Loose suspension",
+    "system_component": "suspension",
+    "issue_type": "wear_item",
+    "severity": "medium",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "At higher speeds, the suspension feels a little bit loose, with space to move about in the lane and the rear squiggling.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Test drive at highway speeds to assess stability and rear-end control.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "inconsistent_pedal_weights",
+    "label": "Inconsistent brake and throttle feel",
+    "label_short": "Pedal feel",
+    "system_component": "brakes",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The throttle pedal has almost no weight, but the brake pedal is really quite heavy.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Pay attention to pedal weighting and modulation during a test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  },
+  {
+    "issue_id": "inconsistent_pedal_weights",
+    "label": "Inconsistent brake and throttle pedal feel",
+    "label_short": "Pedal feel",
+    "system_component": "brakes",
+    "issue_type": "other",
+    "severity": "low",
+    "confidence": "medium",
+    "affected_engines": [
+      "0.9_TCE"
+    ],
+    "affected_years": null,
+    "onset_km_range": null,
+    "symptom": "The throttle pedal has almost no weight, but the brake pedal is really quite heavy.",
+    "cause": null,
+    "fix": null,
+    "warning_signs": [],
+    "inspection_advice": "Pay attention to pedal weighting and modulation during a test drive.",
+    "mention_count": 1,
+    "distinct_channel_count": 1,
+    "source_videos": [
+      {
+        "video_id": "Cf7MDFX--NE",
+        "title": "None",
+        "channel": "None",
+        "video_type_category": "None"
+      }
+    ],
+    "source": "youtube",
+    "data_quality": "medium",
+    "notes": null,
+    "corroboration_count": 1
+  }
+]

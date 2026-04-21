@@ -25,12 +25,20 @@ engine_families:
     displacements:
       - code: "1.0_TSI"
         year_range: [2016, 2020]
+        displacement_cc: 999
+        search_alias: ["1.0 TSI", "1.0 turbo"]
       - code: "1.2_TSI"
         year_range: [2013, 2017]
+        displacement_cc: 1197
+        search_alias: ["1.2 TSI", "1.2 turbo"]
       - code: "1.4_TSI"
         year_range: [2013, 2020]
+        displacement_cc: 1395
+        search_alias: ["1.4 TSI", "1.4 turbo"]
       - code: "1.5_TSI"
         year_range: [2017, 2020]
+        displacement_cc: 1498
+        search_alias: ["1.5 TSI", "1.5 turbo"]
 
   - code: EA888
     fuel_type: petrol
@@ -38,8 +46,12 @@ engine_families:
     displacements:
       - code: "1.8_TSI"
         year_range: [2013, 2020]
+        displacement_cc: 1798
+        search_alias: ["1.8 TSI", "1.8 turbo"]
       - code: "2.0_TSI"
         year_range: [2013, 2020]
+        displacement_cc: 1984
+        search_alias: ["2.0 TSI", "2.0 turbo", "Golf GTI"]
 
   - code: EA288
     fuel_type: diesel
@@ -47,8 +59,12 @@ engine_families:
     displacements:
       - code: "1.6_TDI"
         year_range: [2013, 2020]
+        displacement_cc: 1598
+        search_alias: ["1.6 TDI", "1.6 dizel"]
       - code: "2.0_TDI"
         year_range: [2013, 2020]
+        displacement_cc: 1968
+        search_alias: ["2.0 TDI", "2.0 dizel"]
 
 # ── Performance / enthusiast trims ────────────────────────────────────────────
 # Declared so the discovery corpus can be balanced against YouTube's inherent
@@ -56,7 +72,7 @@ engine_families:
 # be sport-trim videos; videos whose titles match a token beyond that cap are
 # downsampled. Omit block entirely for models without a performance variant.
 performance_trims:
-  max_share: 0.3
+  max_share: 0.2
   tokens:
     - gti
     - "golf r"

@@ -1,19 +1,38 @@
 {
   "car": "VW Golf MK7",
   "slug": "vw_golf_mk7",
-  "started_at": "2026-04-18T14:00:01.001353+00:00",
+  "started_at": "2026-04-19T16:40:57.300464+00:00",
   "flags": {
     "max_videos": 30,
-    "max_views": 150000,
+    "min_views": 20000,
     "disable_prefilter": false,
     "force": true,
     "skip": [],
-    "resume_from": "extract"
+    "resume_from": null
   },
   "stages": [
     {
       "stage": "scrape",
-      "status": "skipped_by_resume"
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scrapers\\fetch_youtube_car_issues.py",
+        "--car",
+        "VW Golf MK7",
+        "--slug",
+        "vw_golf_mk7",
+        "--max-videos",
+        "30",
+        "--min-views",
+        "20000",
+        "--lang",
+        "en"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T16:40:57.300518+00:00",
+      "duration_seconds": 140.6,
+      "output": "data\\raw\\videos\\vw_golf_mk7_raw.json",
+      "output_mtime": "2026-04-19T16:43:17.658012+00:00",
+      "status": "ok"
     },
     {
       "stage": "extract",
@@ -24,10 +43,10 @@
         "vw_golf_mk7"
       ],
       "exit_code": 0,
-      "started_at": "2026-04-18T14:00:01.001439+00:00",
-      "duration_seconds": 3016.46,
+      "started_at": "2026-04-19T16:43:17.900206+00:00",
+      "duration_seconds": 3138.06,
       "output": "data\\processed\\issue_knowledge_youtube_vw_golf_mk7.json",
-      "output_mtime": "2026-04-18T14:50:16.448029+00:00",
+      "output_mtime": "2026-04-19T17:35:35.639316+00:00",
       "status": "ok"
     },
     {
@@ -39,10 +58,10 @@
         "vw_golf_mk7"
       ],
       "exit_code": 0,
-      "started_at": "2026-04-18T14:50:17.470268+00:00",
-      "duration_seconds": 2.39,
+      "started_at": "2026-04-19T17:35:35.961595+00:00",
+      "duration_seconds": 1.2,
       "output": "data\\processed\\issue_knowledge_youtube_vw_golf_mk7_final.json",
-      "output_mtime": "2026-04-18T14:50:19.617793+00:00",
+      "output_mtime": "2026-04-19T17:35:37.054860+00:00",
       "status": "ok"
     },
     {
@@ -52,13 +71,13 @@
         "D:\\CarIssueTopicModelling\\benchmark_knowledge.py"
       ],
       "exit_code": 0,
-      "started_at": "2026-04-18T14:50:19.861290+00:00",
-      "duration_seconds": 0.19,
+      "started_at": "2026-04-19T17:35:37.160064+00:00",
+      "duration_seconds": 0.14,
       "output": "data\\benchmarks\\benchmark_history.json",
-      "output_mtime": "2026-04-18T14:50:20.026675+00:00",
+      "output_mtime": "2026-04-19T17:35:37.284631+00:00",
       "status": "ok"
     }
   ],
-  "finished_at": "2026-04-18T14:50:20.047744+00:00",
+  "finished_at": "2026-04-19T17:35:37.295664+00:00",
   "ok": true
 }

@@ -1,0 +1,4493 @@
+{
+  "meta": {
+    "car_model": "Clio MK2",
+    "slug": "renault_clio_mk2",
+    "scraped_at": "2026-04-19T13:57:08.894847+00:00",
+    "queries": [
+      "Clio MK2 chronic issues",
+      "Clio MK2 chronic problems",
+      "Clio MK2 known faults"
+    ],
+    "total_videos": 5,
+    "total_with_transcript": 4,
+    "duration_filter_seconds": 120,
+    "min_view_count": 30000,
+    "prefilter_enabled": true,
+    "rejected_candidates": 4,
+    "selection_strategy": "mechanic_niche_plus_low_view_count_plus_relevancy_prefilter"
+  },
+  "videos": [
+    {
+      "video_id": "3Bu-E5HQqjI",
+      "url": "https://www.youtube.com/watch?v=3Bu-E5HQqjI",
+      "title": "Renault clio not starting - Crankshaft position sensor problem",
+      "channel": "peugeotCitroen2CV",
+      "matched_queries": [
+        "Clio MK2 chronic problems",
+        "Clio MK2 known faults"
+      ],
+      "duration_raw": "3:55",
+      "duration_seconds": 235,
+      "view_count": "1,677,200 views",
+      "view_count_raw": 1677200,
+      "selection_score": 7,
+      "is_niche_mechanic_candidate": false,
+      "video_type_category": "organic",
+      "video_language": null,
+      "transcript_status": "disabled",
+      "transcript_text": "",
+      "transcript_segments": []
+    },
+    {
+      "video_id": "V87ZBmLrkyU",
+      "url": "https://www.youtube.com/watch?v=V87ZBmLrkyU",
+      "title": "Is your clio getting wet inside? WATCH THIS! It's Highly likely this could be your problem",
+      "channel": "MK2 CLIO OWNERS UK",
+      "matched_queries": [
+        "Clio MK2 chronic problems",
+        "Clio MK2 known faults"
+      ],
+      "duration_raw": "4:22",
+      "duration_seconds": 262,
+      "view_count": "33,064 views",
+      "view_count_raw": 33064,
+      "selection_score": 4,
+      "is_niche_mechanic_candidate": false,
+      "video_type_category": "organic",
+      "video_language": "en",
+      "transcript_status": "ok",
+      "transcript_text": "hi guys so it's that time of year it's\ncloudy raining yeah well it's not\nraining at the moment and but many of\nyou will probably have come across your\ncars flooding if you get in your car\nmine's not doing at the moment but I did\nhave it a few weeks back and and your\ncarpets will probably be absolutely\nsodden and like puddles now quick easy\nway to diagnose a problem now I can't\nreally show you the sunroof problem\nbecause looking for me\nI don't have one however if you do have\na sunroof and you get in your car and\nit's flooded first things to look out\nfor is check around all this area is it\nwet check your courtesy light is it full\nof water when you go around the corner\nto water come filling out luck if the\nanswer is yes\nthen you're going to need to reseal it\nand check your drains in your sunroof\nwhich isn't a hard job to do however I\ncan't show you how to do it because I\nhaven't got one and if the answer's no\nthen I'm going to show you an easy stuff\nand just to prevent it from happening in\nthe first place even and it's literally\nit takes five minutes all you do pop\nyour bonnet okay and I will show you\nokay so this thing I went in and it does\nit myself\nwhat engine you've got this applies to\nall rennet leo's so if you look behind\nyour engine down there you've got this\nblack tube\nall of the Clio's have this tube but\nsome are easier to get to than others\nlook it's fairly simple\nokay now this bought tube is your school\ndrain and it's very easy to get blocked\nnow you can flip it off and down there\nit just ends up getting full of dead\nleaves black stuff and all you need to\ndo is just get something like a bottle\nbrush or something like that\nshove up that hole clean it out and what\nyou'll find as well as if your car is\nalready flooded just rip out of that\nstraight onto the road okay it's as\nsimple as that it's just right on your\nbald head now this is basically to drain\nbehind here okay so in there you've got\na hole in the middle and you do have one\non each end as well which dreams behind\nthe wheel arches but nine times out of\nten it's that one you don't need to\nremove all this unless you want to check\nthe side once get it cleaned out and dry\nyour car out but if you're lucky enough\nthat your car hasn't already flooded\ncheck it now it literally takes you five\nminutes check it now get it done before\nyour car floods it's as simple as that\njob anyone can do it",
+      "transcript_segments": [
+        {
+          "text": "hi guys so it's that time of year it's",
+          "start": 13.19,
+          "duration": 9.7
+        },
+        {
+          "text": "cloudy raining yeah well it's not",
+          "start": 19.14,
+          "duration": 6.209
+        },
+        {
+          "text": "raining at the moment and but many of",
+          "start": 22.89,
+          "duration": 5.67
+        },
+        {
+          "text": "you will probably have come across your",
+          "start": 25.349,
+          "duration": 5.64
+        },
+        {
+          "text": "cars flooding if you get in your car",
+          "start": 28.56,
+          "duration": 4.44
+        },
+        {
+          "text": "mine's not doing at the moment but I did",
+          "start": 30.989,
+          "duration": 4.891
+        },
+        {
+          "text": "have it a few weeks back and and your",
+          "start": 33.0,
+          "duration": 5.67
+        },
+        {
+          "text": "carpets will probably be absolutely",
+          "start": 35.88,
+          "duration": 8.43
+        },
+        {
+          "text": "sodden and like puddles now quick easy",
+          "start": 38.67,
+          "duration": 8.46
+        },
+        {
+          "text": "way to diagnose a problem now I can't",
+          "start": 44.31,
+          "duration": 4.68
+        },
+        {
+          "text": "really show you the sunroof problem",
+          "start": 47.13,
+          "duration": 4.74
+        },
+        {
+          "text": "because looking for me",
+          "start": 48.99,
+          "duration": 5.97
+        },
+        {
+          "text": "I don't have one however if you do have",
+          "start": 51.87,
+          "duration": 5.01
+        },
+        {
+          "text": "a sunroof and you get in your car and",
+          "start": 54.96,
+          "duration": 3.54
+        },
+        {
+          "text": "it's flooded first things to look out",
+          "start": 56.88,
+          "duration": 6.63
+        },
+        {
+          "text": "for is check around all this area is it",
+          "start": 58.5,
+          "duration": 11.04
+        },
+        {
+          "text": "wet check your courtesy light is it full",
+          "start": 63.51,
+          "duration": 8.429
+        },
+        {
+          "text": "of water when you go around the corner",
+          "start": 69.54,
+          "duration": 5.999
+        },
+        {
+          "text": "to water come filling out luck if the",
+          "start": 71.939,
+          "duration": 4.441
+        },
+        {
+          "text": "answer is yes",
+          "start": 75.539,
+          "duration": 5.58
+        },
+        {
+          "text": "then you're going to need to reseal it",
+          "start": 76.38,
+          "duration": 7.729
+        },
+        {
+          "text": "and check your drains in your sunroof",
+          "start": 81.119,
+          "duration": 7.68
+        },
+        {
+          "text": "which isn't a hard job to do however I",
+          "start": 84.109,
+          "duration": 6.491
+        },
+        {
+          "text": "can't show you how to do it because I",
+          "start": 88.799,
+          "duration": 6.801
+        },
+        {
+          "text": "haven't got one and if the answer's no",
+          "start": 90.6,
+          "duration": 7.89
+        },
+        {
+          "text": "then I'm going to show you an easy stuff",
+          "start": 95.6,
+          "duration": 5.439
+        },
+        {
+          "text": "and just to prevent it from happening in",
+          "start": 98.49,
+          "duration": 4.71
+        },
+        {
+          "text": "the first place even and it's literally",
+          "start": 101.039,
+          "duration": 5.311
+        },
+        {
+          "text": "it takes five minutes all you do pop",
+          "start": 103.2,
+          "duration": 10.519
+        },
+        {
+          "text": "your bonnet okay and I will show you",
+          "start": 106.35,
+          "duration": 7.369
+        },
+        {
+          "text": "okay so this thing I went in and it does",
+          "start": 115.67,
+          "duration": 5.14
+        },
+        {
+          "text": "it myself",
+          "start": 119.789,
+          "duration": 4.321
+        },
+        {
+          "text": "what engine you've got this applies to",
+          "start": 120.81,
+          "duration": 8.759
+        },
+        {
+          "text": "all rennet leo's so if you look behind",
+          "start": 124.11,
+          "duration": 11.01
+        },
+        {
+          "text": "your engine down there you've got this",
+          "start": 129.569,
+          "duration": 6.571
+        },
+        {
+          "text": "black tube",
+          "start": 135.12,
+          "duration": 5.61
+        },
+        {
+          "text": "all of the Clio's have this tube but",
+          "start": 136.14,
+          "duration": 8.36
+        },
+        {
+          "text": "some are easier to get to than others",
+          "start": 140.73,
+          "duration": 3.77
+        },
+        {
+          "text": "look it's fairly simple",
+          "start": 147.92,
+          "duration": 4.02
+        },
+        {
+          "text": "okay now this bought tube is your school",
+          "start": 163.22,
+          "duration": 8.97
+        },
+        {
+          "text": "drain and it's very easy to get blocked",
+          "start": 168.3,
+          "duration": 9.74
+        },
+        {
+          "text": "now you can flip it off and down there",
+          "start": 172.19,
+          "duration": 9.04
+        },
+        {
+          "text": "it just ends up getting full of dead",
+          "start": 178.04,
+          "duration": 6.88
+        },
+        {
+          "text": "leaves black stuff and all you need to",
+          "start": 181.23,
+          "duration": 7.11
+        },
+        {
+          "text": "do is just get something like a bottle",
+          "start": 184.92,
+          "duration": 4.86
+        },
+        {
+          "text": "brush or something like that",
+          "start": 188.34,
+          "duration": 6.69
+        },
+        {
+          "text": "shove up that hole clean it out and what",
+          "start": 189.78,
+          "duration": 7.08
+        },
+        {
+          "text": "you'll find as well as if your car is",
+          "start": 195.03,
+          "duration": 5.58
+        },
+        {
+          "text": "already flooded just rip out of that",
+          "start": 196.86,
+          "duration": 7.77
+        },
+        {
+          "text": "straight onto the road okay it's as",
+          "start": 200.61,
+          "duration": 5.67
+        },
+        {
+          "text": "simple as that it's just right on your",
+          "start": 204.63,
+          "duration": 7.169
+        },
+        {
+          "text": "bald head now this is basically to drain",
+          "start": 206.28,
+          "duration": 10.23
+        },
+        {
+          "text": "behind here okay so in there you've got",
+          "start": 211.799,
+          "duration": 9.841
+        },
+        {
+          "text": "a hole in the middle and you do have one",
+          "start": 216.51,
+          "duration": 7.92
+        },
+        {
+          "text": "on each end as well which dreams behind",
+          "start": 221.64,
+          "duration": 4.62
+        },
+        {
+          "text": "the wheel arches but nine times out of",
+          "start": 224.43,
+          "duration": 3.869
+        },
+        {
+          "text": "ten it's that one you don't need to",
+          "start": 226.26,
+          "duration": 6.87
+        },
+        {
+          "text": "remove all this unless you want to check",
+          "start": 228.299,
+          "duration": 9.391
+        },
+        {
+          "text": "the side once get it cleaned out and dry",
+          "start": 233.13,
+          "duration": 7.47
+        },
+        {
+          "text": "your car out but if you're lucky enough",
+          "start": 237.69,
+          "duration": 6.26
+        },
+        {
+          "text": "that your car hasn't already flooded",
+          "start": 240.6,
+          "duration": 6.57
+        },
+        {
+          "text": "check it now it literally takes you five",
+          "start": 243.95,
+          "duration": 6.129
+        },
+        {
+          "text": "minutes check it now get it done before",
+          "start": 247.17,
+          "duration": 5.33
+        },
+        {
+          "text": "your car floods it's as simple as that",
+          "start": 250.079,
+          "duration": 6.47
+        },
+        {
+          "text": "job anyone can do it",
+          "start": 252.5,
+          "duration": 4.049
+        }
+      ]
+    },
+    {
+      "video_id": "1t2FLp23JdQ",
+      "url": "https://www.youtube.com/watch?v=1t2FLp23JdQ",
+      "title": "Renault Clio 1.2 Airbag And Service Light On [Causes And Fixes]",
+      "channel": "retrorestore",
+      "matched_queries": [
+        "Clio MK2 chronic problems"
+      ],
+      "duration_raw": "13:26",
+      "duration_seconds": 806,
+      "view_count": "164,506 views",
+      "view_count_raw": 164506,
+      "selection_score": 2,
+      "is_niche_mechanic_candidate": false,
+      "video_type_category": "organic",
+      "video_language": "en",
+      "transcript_status": "ok",
+      "transcript_text": "hi folks if you've got a Renault Clio -\nthis is a 2004 model and we've got an\nairbag light on and also a service light\nnow if you've got that combination of\nlights on this could be your problem\nlet's have a look at it\n[Music]\nright we put the car through the MOT as\nyou know in the previous video the car\nwent through fine we've just got the\ncommon old fault that happens with these\nrenault clio x' is the airbag light and\nthe service law has come on and we've\nhad a look at it there's we've got a\nlittle look around YouTube YouTube said\ntry a few different frames and I'm going\nto show you them things now the things\nthat we've tried which the people who\nhave had this similar problem I've had\nhave not worked so I'll just show you\nwhat they are so that you can rule them\nout before you actually go any further\nwe think we found the problem anyway so\nlet's have a look right so first of all\nwe turn this look renault clio ignition\non and once we start the car\neverything's gone out at the moment and\nas you can see the two lights that come\nback on is a service light and the\nairbag light so even when we start the\ncar up and run it them lights stay on\nokay so what we've found is is that\nlooking on YouTube few people have had\nthe same problem and they've tried a\ncouple of different things and they've\nworked well we've tried these things and\nthey haven't worked and I'm going to\nshow you what we've done we plugged in a\ndiagnostic test as well we actually\nfound where the problem lies but first\nof all the first thing which you'll hear\nif you watch other videos is that people\nsay that the problem lies under the seat\nand it's with the connector and you have\na wiggle the connector and try and get a\ngood connection and that solve the\nproblem some people have done that it\nhas worked some people then say you have\nto cut the connector out and solder the\ncables up well we've actually done that\nI'll show you so first of all this is\nthe gray connector which this two\nconnectors under there's a black one and\nthere's a grey one this is the grey one\nwhich we've taken out a circuit now then\napparently some people over\njust wiggle dis about clean the contacts\nwith contact clean and then put it back\nin it's worked it didn't work in our\ncase and then the other remember the\nstretch early take this connector out\nlike this and if you can see down there\nwe bypass the connector we've soldered\nthe cables that move heat shrink time\ntogether right that was the first port\nof call and again as I said to you that\ndidn't work the next port of course\nbehind this little console here which is\nthe top cover of the drivers\nbinnacle just in fact the drivers\nbinnacle if you actually take this off\nwhat you've got here is a black\nconnector now a lot of people have said\nthey've just pushed that black connector\nin and give it a little wiggle and\npushed it back in and that is solve the\nproblem where it's made the service\nlight and the airbag light go out as\nwell so that might be your problem so\nyou try that first before going any\nfurther right so you might be asking\nwhat that gray cable does with that\nconnector with this here well this goes\nto the there's two things that go into\nthis see one is the airbag cable which\nis the black cable we think we just\ntraced it out and the other one which\ndoes this gray connector is the\npre-tensioner and a pre tension if I\nshould show you where it is\nright this is the obviously the\npassenger seat we're looking at at the\nmoment\nnow it's pre tension or the pre tension\nis it which is what that gray Cawood\ndoes in the event of a crash or\nsomething this has got a little piston\ninside here which pulls the seat turn to\nintentions the belt around you and this\nis what that gray cable does if we undo\nthis socket there which is a little Torx\nbit which we've done in this case you\ncan take the side cover off and if you\ncan see here there's like a little\npiston thing here with a little\nconnector on the top well this is the\nother end of that connector now we're\njust going to disconnect the battery and\nthen we're going to just disconnect this\npre-tensioner here just to see if the\nconnections are okay on there right so\nthis little pre tension okay well this\nis the other end of it\nyou may or may not have a good\nconnection in the old st. mark I mean\nspill as you can see but if you just\npull it out as you can see there look\nthere's a little two pronged terminal\ndown there and as I say that's got a\nlittle explosive device in it already\nimagine which tensions yeah a little\npiston and shoots up there and that\ntightens the seat belt around you in the\nevent of an accident so that's what the\ngray cable does so you just want to make\nsure that again this is all clean and\nmake a decent connections so that's the\npre-tensioner\non the passenger side which says I say\nthat's where that gray cable goes I\nthink no one actually shows that on\ntheir video so that's why we're doing\nthis to show you exactly what that gray\nconnector does is your pre-tensioner\nyour black connector under your seat\nthat one by the looks of it goes up to\nyour airbag in the side of the seat so\nagain that then means a lot more work to\nget out so you can ensure there is that\nthat connections making a good\nconnection by just wiggling the\nconnector and making sure that it's\nclean right now with this tester we were\nable to read the full codes and find out\nexactly what these sockets do under the\nseats the big black one connector does\nthe thoracic seat bag or the air bag on\nthe side have you look here on the side\nof the sit on the side of the passenger\nside seat the small gray connector goes\nto the seatbelt pretensioners just shown\nyou on the other side of the passenger\nseat which tensions up the seatbelt and\na little piston pulls that and tightens\nthat seatbelt in around you now we had\nanother fall which we couldn't find and\nit was side passenger side circuit now\nwe've done a bit more investigation and\nas I said that's nothing to do with\nthese two seat\nplugs under here there is a third one\nand if we show you down the side of the\npassenger side trim that normally runs\nalong there you might be able to see\nthis little thing down here with this\nhere's another sensor which we think\nwe've got our problem because this shows\nup as a short circuit we've only just\nlocated this one but this is another\npart which can bring on the airbag light\nand your service light so we're in the\nprocess now just taking this out because\nit's saying that this is short circuited\nnow when it's a short circuit you know I\ndon't know whether it's sorry it's been\nspilt out on it or it could be just\nfaulty or whatever's but we're gonna\nfind out in a second once we take this\nout\nright okay I've just taken this little\nsensor out now as you can see it's a\nlittle to terminal device and you have\nto take two long bolts out and then it\nlifts out and then underneath there's a\nplug which you just push with a little\nterminal screwdriver pull the connector\nout and then you're left with this so\nbasically we've now disconnected all\nthree sensors on this side the\npre-tensioner we've also disconnected\nthe airbag thoracic airbag on side of\nthe seat and now we've also disconnected\nthe side sensor and all so we're just\ngoing to connect the battery up now read\nthe code reader just make sure that all\nthese things now are showing an open\ncircuit one we're interested in is this\none because if this now shows open\ncircuit we know that this is our problem\nit is a short circuit so Gary's going to\nconnect the battery up there and we'll\nhave a look at the code reader right so\ndiagnose we want to do a scan right now\nlive do a manual scan but we want to\nchoose what we want to check we want to\ncheck the airbag and priests engine is\nright we're just gonna clear the folks\nthat are there at the moment and then\nread them all again because as I said\nwe've got all the way in freely on\nsensors disconnected so we just clear\nthem all and if we read them now these\nare fresh once we put the battery back\non right we've got free so we've got as\nyou can probably see there we've got the\nfront passenger thorax side airbag\ncircuit open circuit now as I said to\nyou that is the black cable and the\nAussie or the black connector under your\nseat the big black one for scroll down\nthis is the gray cable which is this one\nthat everybody talks about that actually\ndoes your passengers frontside buckle\npre tension the circuit and that is open\ncircuit because I've disconnected it as\nyou can see on the side of the seat on\nthat little piston thing there and this\nis the one I want to come up now as open\ncircuit number three\nthere we go passenger side front side\nsensor circuit no signal and the reason\nbeing is because I've taken it out so\nthis is our problem which is causing our\nairbag problem light on our dashboard\nand the service light to come on because\ninitially this was showing as a short\ncircuit now just to prove this is the\ncase I'm now going to plug the other two\nback in in other words this one here and\nwhere's the black one going fishing and\nthe black one there for the side airbag\nand both of them fault should clear and\nthen just leave the single fault which\nwe have still which is this one here\nwhich caused our initial problem so\nGary's going to disconnect the battery\nagain and we'll just connect these up\nquickly and then run the same test right\nit's just going over now just to\ndisconnect the battery cuz I don't like\nplugging seatbelt and airbag stuff in\nwhile we've still got the battery\nconnected right I just disconnected that\nso I'm just gonna push in this one here\nall right that one's pushed back in what\nGary's just gonna connect the one under\nthe seat so now we're gonna connect the\nbattery up see we wouldn't have known\nall this if we didn't have a diagnostic\nmeter because all we had is the same as\nwhat other people had with the lights\nthe service light in the airbag light\nand we've had people with that fault\nwe've had people cut the connectors out\nlike that and it's guesswork you could\nyou have proper equipment sometimes to\ndiagnose a problem so what trying them\nother things but you have to really know\nso right we're gonna go to diagnose\nwe're gonna go to scan Renault latest\nversion we're on the software Clio face\nthis is I'm gonna do a manual scan just\nof the seatbelt and the airbags the\npre-tensioner that's all we want to do\nairbag pretensioners right so we're\ngoing to clear the faults\nand we're going to start afresh so we\njust clear them and I'm hoping now just\nto read one full code to prove a point\nthere we go passenger side front side\nsensor circuit no signal and that's the\nonly fault so any other problem which we\ncan now eliminate is this thing which\nwas the pre-tensioner and if it was a\npre-tensioner all you get on the\ndashboard would be your airbag light as\nwe have there and also our service light\nbut when you've got a piece of equipment\nwhich can read what exactly the problem\nis it tells you exactly what the problem\nis and we've you've just seen us clear\nthe other two faults by plugging them in\nthis is their problem now I don't think\nthis part is recoverable so it's gonna\nneed a new IDs and once you plug that in\nthat will clear that fault and out\nshould go our light right we just phoned\nRenault up this from Renault is 52\npounds and if you get one on eBay our\nfeet know about 15 pound so you make\nyour mind up which way you want to go I\nknow what way we're gonna go so we're\ngonna have to finish this video here but\nI can guarantee this would have sorted\nout the problem because that's now\ncleared all the other fault codes and we\nknow exactly what the cables do by what\nI've just said in the previous video so\nthey'll take a guess if you've got if\nyou've got if you obviously don't check\nthat cable the gray cable but don't\nthink you have to cut it off and then\nsold up like we've had to do I was just\nworking off for YouTube videos now I\nactually know what the situation is the\ngray connector underneath does the\nseatbelt free tensioner the black\nconnector underneath does the fretting\nairbag in the side of the seat and the\nother code which we had stars is this\nthing here which is your side impact bar\nand it's the passenger side front side\nsensor and that's what that is and\nthat's our problem we've just proved it\nby taking out a circuit and it's come up\nthere with open circuits so there you go\nthat's how you find your problem on your\nairbag light your service like coming up\ntogether do you ever do check your\nconnector under there as I said before\njust give it a push in give them\nterminals and wiggle but if you could\nplug a sensor in and actually read what\nthe codes are you now know exactly what\neach of them does anyway I hope that was\nof some interest to you and we're gonna\nget a new one of these not\nran out we're gonna get one off of ebay\nthrough 15 pounds so thanks very much\nsee you in the next video and children\nbye for now\n[Music]\nyou",
+      "transcript_segments": [
+        {
+          "text": "hi folks if you've got a Renault Clio -",
+          "start": 0.0,
+          "duration": 4.95
+        },
+        {
+          "text": "this is a 2004 model and we've got an",
+          "start": 2.37,
+          "duration": 5.159
+        },
+        {
+          "text": "airbag light on and also a service light",
+          "start": 4.95,
+          "duration": 4.53
+        },
+        {
+          "text": "now if you've got that combination of",
+          "start": 7.529,
+          "duration": 4.141
+        },
+        {
+          "text": "lights on this could be your problem",
+          "start": 9.48,
+          "duration": 3.82
+        },
+        {
+          "text": "let's have a look at it",
+          "start": 11.67,
+          "duration": 16.579
+        },
+        {
+          "text": "[Music]",
+          "start": 13.3,
+          "duration": 14.949
+        },
+        {
+          "text": "right we put the car through the MOT as",
+          "start": 28.56,
+          "duration": 4.12
+        },
+        {
+          "text": "you know in the previous video the car",
+          "start": 31.15,
+          "duration": 3.21
+        },
+        {
+          "text": "went through fine we've just got the",
+          "start": 32.68,
+          "duration": 3.3
+        },
+        {
+          "text": "common old fault that happens with these",
+          "start": 34.36,
+          "duration": 4.38
+        },
+        {
+          "text": "renault clio x' is the airbag light and",
+          "start": 35.98,
+          "duration": 5.91
+        },
+        {
+          "text": "the service law has come on and we've",
+          "start": 38.74,
+          "duration": 4.41
+        },
+        {
+          "text": "had a look at it there's we've got a",
+          "start": 41.89,
+          "duration": 3.24
+        },
+        {
+          "text": "little look around YouTube YouTube said",
+          "start": 43.15,
+          "duration": 3.24
+        },
+        {
+          "text": "try a few different frames and I'm going",
+          "start": 45.13,
+          "duration": 3.15
+        },
+        {
+          "text": "to show you them things now the things",
+          "start": 46.39,
+          "duration": 3.63
+        },
+        {
+          "text": "that we've tried which the people who",
+          "start": 48.28,
+          "duration": 3.36
+        },
+        {
+          "text": "have had this similar problem I've had",
+          "start": 50.02,
+          "duration": 3.39
+        },
+        {
+          "text": "have not worked so I'll just show you",
+          "start": 51.64,
+          "duration": 3.39
+        },
+        {
+          "text": "what they are so that you can rule them",
+          "start": 53.41,
+          "duration": 3.0
+        },
+        {
+          "text": "out before you actually go any further",
+          "start": 55.03,
+          "duration": 3.57
+        },
+        {
+          "text": "we think we found the problem anyway so",
+          "start": 56.41,
+          "duration": 4.079
+        },
+        {
+          "text": "let's have a look right so first of all",
+          "start": 58.6,
+          "duration": 3.779
+        },
+        {
+          "text": "we turn this look renault clio ignition",
+          "start": 60.489,
+          "duration": 5.011
+        },
+        {
+          "text": "on and once we start the car",
+          "start": 62.379,
+          "duration": 5.101
+        },
+        {
+          "text": "everything's gone out at the moment and",
+          "start": 65.5,
+          "duration": 3.21
+        },
+        {
+          "text": "as you can see the two lights that come",
+          "start": 67.48,
+          "duration": 3.21
+        },
+        {
+          "text": "back on is a service light and the",
+          "start": 68.71,
+          "duration": 3.81
+        },
+        {
+          "text": "airbag light so even when we start the",
+          "start": 70.69,
+          "duration": 6.23
+        },
+        {
+          "text": "car up and run it them lights stay on",
+          "start": 72.52,
+          "duration": 7.11
+        },
+        {
+          "text": "okay so what we've found is is that",
+          "start": 76.92,
+          "duration": 5.17
+        },
+        {
+          "text": "looking on YouTube few people have had",
+          "start": 79.63,
+          "duration": 4.44
+        },
+        {
+          "text": "the same problem and they've tried a",
+          "start": 82.09,
+          "duration": 3.72
+        },
+        {
+          "text": "couple of different things and they've",
+          "start": 84.07,
+          "duration": 3.24
+        },
+        {
+          "text": "worked well we've tried these things and",
+          "start": 85.81,
+          "duration": 2.94
+        },
+        {
+          "text": "they haven't worked and I'm going to",
+          "start": 87.31,
+          "duration": 2.87
+        },
+        {
+          "text": "show you what we've done we plugged in a",
+          "start": 88.75,
+          "duration": 3.479
+        },
+        {
+          "text": "diagnostic test as well we actually",
+          "start": 90.18,
+          "duration": 3.49
+        },
+        {
+          "text": "found where the problem lies but first",
+          "start": 92.229,
+          "duration": 3.301
+        },
+        {
+          "text": "of all the first thing which you'll hear",
+          "start": 93.67,
+          "duration": 4.229
+        },
+        {
+          "text": "if you watch other videos is that people",
+          "start": 95.53,
+          "duration": 4.08
+        },
+        {
+          "text": "say that the problem lies under the seat",
+          "start": 97.899,
+          "duration": 3.811
+        },
+        {
+          "text": "and it's with the connector and you have",
+          "start": 99.61,
+          "duration": 3.539
+        },
+        {
+          "text": "a wiggle the connector and try and get a",
+          "start": 101.71,
+          "duration": 2.97
+        },
+        {
+          "text": "good connection and that solve the",
+          "start": 103.149,
+          "duration": 3.39
+        },
+        {
+          "text": "problem some people have done that it",
+          "start": 104.68,
+          "duration": 4.079
+        },
+        {
+          "text": "has worked some people then say you have",
+          "start": 106.539,
+          "duration": 4.741
+        },
+        {
+          "text": "to cut the connector out and solder the",
+          "start": 108.759,
+          "duration": 4.5
+        },
+        {
+          "text": "cables up well we've actually done that",
+          "start": 111.28,
+          "duration": 3.9
+        },
+        {
+          "text": "I'll show you so first of all this is",
+          "start": 113.259,
+          "duration": 3.511
+        },
+        {
+          "text": "the gray connector which this two",
+          "start": 115.18,
+          "duration": 3.03
+        },
+        {
+          "text": "connectors under there's a black one and",
+          "start": 116.77,
+          "duration": 3.36
+        },
+        {
+          "text": "there's a grey one this is the grey one",
+          "start": 118.21,
+          "duration": 3.93
+        },
+        {
+          "text": "which we've taken out a circuit now then",
+          "start": 120.13,
+          "duration": 4.199
+        },
+        {
+          "text": "apparently some people over",
+          "start": 122.14,
+          "duration": 4.619
+        },
+        {
+          "text": "just wiggle dis about clean the contacts",
+          "start": 124.329,
+          "duration": 3.721
+        },
+        {
+          "text": "with contact clean and then put it back",
+          "start": 126.759,
+          "duration": 3.301
+        },
+        {
+          "text": "in it's worked it didn't work in our",
+          "start": 128.05,
+          "duration": 3.57
+        },
+        {
+          "text": "case and then the other remember the",
+          "start": 130.06,
+          "duration": 3.03
+        },
+        {
+          "text": "stretch early take this connector out",
+          "start": 131.62,
+          "duration": 3.33
+        },
+        {
+          "text": "like this and if you can see down there",
+          "start": 133.09,
+          "duration": 4.2
+        },
+        {
+          "text": "we bypass the connector we've soldered",
+          "start": 134.95,
+          "duration": 3.9
+        },
+        {
+          "text": "the cables that move heat shrink time",
+          "start": 137.29,
+          "duration": 3.57
+        },
+        {
+          "text": "together right that was the first port",
+          "start": 138.85,
+          "duration": 3.84
+        },
+        {
+          "text": "of call and again as I said to you that",
+          "start": 140.86,
+          "duration": 3.78
+        },
+        {
+          "text": "didn't work the next port of course",
+          "start": 142.69,
+          "duration": 3.72
+        },
+        {
+          "text": "behind this little console here which is",
+          "start": 144.64,
+          "duration": 5.35
+        },
+        {
+          "text": "the top cover of the drivers",
+          "start": 146.41,
+          "duration": 5.35
+        },
+        {
+          "text": "binnacle just in fact the drivers",
+          "start": 149.99,
+          "duration": 3.86
+        },
+        {
+          "text": "binnacle if you actually take this off",
+          "start": 151.76,
+          "duration": 4.5
+        },
+        {
+          "text": "what you've got here is a black",
+          "start": 153.85,
+          "duration": 4.72
+        },
+        {
+          "text": "connector now a lot of people have said",
+          "start": 156.26,
+          "duration": 3.87
+        },
+        {
+          "text": "they've just pushed that black connector",
+          "start": 158.57,
+          "duration": 3.33
+        },
+        {
+          "text": "in and give it a little wiggle and",
+          "start": 160.13,
+          "duration": 3.81
+        },
+        {
+          "text": "pushed it back in and that is solve the",
+          "start": 161.9,
+          "duration": 3.27
+        },
+        {
+          "text": "problem where it's made the service",
+          "start": 163.94,
+          "duration": 3.21
+        },
+        {
+          "text": "light and the airbag light go out as",
+          "start": 165.17,
+          "duration": 4.98
+        },
+        {
+          "text": "well so that might be your problem so",
+          "start": 167.15,
+          "duration": 4.71
+        },
+        {
+          "text": "you try that first before going any",
+          "start": 170.15,
+          "duration": 3.93
+        },
+        {
+          "text": "further right so you might be asking",
+          "start": 171.86,
+          "duration": 4.86
+        },
+        {
+          "text": "what that gray cable does with that",
+          "start": 174.08,
+          "duration": 4.98
+        },
+        {
+          "text": "connector with this here well this goes",
+          "start": 176.72,
+          "duration": 4.41
+        },
+        {
+          "text": "to the there's two things that go into",
+          "start": 179.06,
+          "duration": 4.86
+        },
+        {
+          "text": "this see one is the airbag cable which",
+          "start": 181.13,
+          "duration": 4.83
+        },
+        {
+          "text": "is the black cable we think we just",
+          "start": 183.92,
+          "duration": 3.72
+        },
+        {
+          "text": "traced it out and the other one which",
+          "start": 185.96,
+          "duration": 3.69
+        },
+        {
+          "text": "does this gray connector is the",
+          "start": 187.64,
+          "duration": 4.32
+        },
+        {
+          "text": "pre-tensioner and a pre tension if I",
+          "start": 189.65,
+          "duration": 3.39
+        },
+        {
+          "text": "should show you where it is",
+          "start": 191.96,
+          "duration": 3.0
+        },
+        {
+          "text": "right this is the obviously the",
+          "start": 193.04,
+          "duration": 3.27
+        },
+        {
+          "text": "passenger seat we're looking at at the",
+          "start": 194.96,
+          "duration": 1.8
+        },
+        {
+          "text": "moment",
+          "start": 196.31,
+          "duration": 3.27
+        },
+        {
+          "text": "now it's pre tension or the pre tension",
+          "start": 196.76,
+          "duration": 5.28
+        },
+        {
+          "text": "is it which is what that gray Cawood",
+          "start": 199.58,
+          "duration": 4.17
+        },
+        {
+          "text": "does in the event of a crash or",
+          "start": 202.04,
+          "duration": 3.63
+        },
+        {
+          "text": "something this has got a little piston",
+          "start": 203.75,
+          "duration": 5.22
+        },
+        {
+          "text": "inside here which pulls the seat turn to",
+          "start": 205.67,
+          "duration": 5.61
+        },
+        {
+          "text": "intentions the belt around you and this",
+          "start": 208.97,
+          "duration": 3.93
+        },
+        {
+          "text": "is what that gray cable does if we undo",
+          "start": 211.28,
+          "duration": 3.78
+        },
+        {
+          "text": "this socket there which is a little Torx",
+          "start": 212.9,
+          "duration": 4.08
+        },
+        {
+          "text": "bit which we've done in this case you",
+          "start": 215.06,
+          "duration": 4.62
+        },
+        {
+          "text": "can take the side cover off and if you",
+          "start": 216.98,
+          "duration": 5.16
+        },
+        {
+          "text": "can see here there's like a little",
+          "start": 219.68,
+          "duration": 4.71
+        },
+        {
+          "text": "piston thing here with a little",
+          "start": 222.14,
+          "duration": 3.39
+        },
+        {
+          "text": "connector on the top well this is the",
+          "start": 224.39,
+          "duration": 3.09
+        },
+        {
+          "text": "other end of that connector now we're",
+          "start": 225.53,
+          "duration": 3.62
+        },
+        {
+          "text": "just going to disconnect the battery and",
+          "start": 227.48,
+          "duration": 4.13
+        },
+        {
+          "text": "then we're going to just disconnect this",
+          "start": 229.15,
+          "duration": 4.3
+        },
+        {
+          "text": "pre-tensioner here just to see if the",
+          "start": 231.61,
+          "duration": 3.91
+        },
+        {
+          "text": "connections are okay on there right so",
+          "start": 233.45,
+          "duration": 3.96
+        },
+        {
+          "text": "this little pre tension okay well this",
+          "start": 235.52,
+          "duration": 2.76
+        },
+        {
+          "text": "is the other end of it",
+          "start": 237.41,
+          "duration": 2.1
+        },
+        {
+          "text": "you may or may not have a good",
+          "start": 238.28,
+          "duration": 2.58
+        },
+        {
+          "text": "connection in the old st. mark I mean",
+          "start": 239.51,
+          "duration": 3.09
+        },
+        {
+          "text": "spill as you can see but if you just",
+          "start": 240.86,
+          "duration": 3.44
+        },
+        {
+          "text": "pull it out as you can see there look",
+          "start": 242.6,
+          "duration": 4.29
+        },
+        {
+          "text": "there's a little two pronged terminal",
+          "start": 244.3,
+          "duration": 4.63
+        },
+        {
+          "text": "down there and as I say that's got a",
+          "start": 246.89,
+          "duration": 3.57
+        },
+        {
+          "text": "little explosive device in it already",
+          "start": 248.93,
+          "duration": 4.65
+        },
+        {
+          "text": "imagine which tensions yeah a little",
+          "start": 250.46,
+          "duration": 4.29
+        },
+        {
+          "text": "piston and shoots up there and that",
+          "start": 253.58,
+          "duration": 4.14
+        },
+        {
+          "text": "tightens the seat belt around you in the",
+          "start": 254.75,
+          "duration": 6.03
+        },
+        {
+          "text": "event of an accident so that's what the",
+          "start": 257.72,
+          "duration": 4.68
+        },
+        {
+          "text": "gray cable does so you just want to make",
+          "start": 260.78,
+          "duration": 5.94
+        },
+        {
+          "text": "sure that again this is all clean and",
+          "start": 262.4,
+          "duration": 6.63
+        },
+        {
+          "text": "make a decent connections so that's the",
+          "start": 266.72,
+          "duration": 4.55
+        },
+        {
+          "text": "pre-tensioner",
+          "start": 269.03,
+          "duration": 5.81
+        },
+        {
+          "text": "on the passenger side which says I say",
+          "start": 271.27,
+          "duration": 5.459
+        },
+        {
+          "text": "that's where that gray cable goes I",
+          "start": 274.84,
+          "duration": 3.6
+        },
+        {
+          "text": "think no one actually shows that on",
+          "start": 276.729,
+          "duration": 3.03
+        },
+        {
+          "text": "their video so that's why we're doing",
+          "start": 278.44,
+          "duration": 3.33
+        },
+        {
+          "text": "this to show you exactly what that gray",
+          "start": 279.759,
+          "duration": 3.72
+        },
+        {
+          "text": "connector does is your pre-tensioner",
+          "start": 281.77,
+          "duration": 3.48
+        },
+        {
+          "text": "your black connector under your seat",
+          "start": 283.479,
+          "duration": 4.53
+        },
+        {
+          "text": "that one by the looks of it goes up to",
+          "start": 285.25,
+          "duration": 5.699
+        },
+        {
+          "text": "your airbag in the side of the seat so",
+          "start": 288.009,
+          "duration": 5.701
+        },
+        {
+          "text": "again that then means a lot more work to",
+          "start": 290.949,
+          "duration": 4.951
+        },
+        {
+          "text": "get out so you can ensure there is that",
+          "start": 293.71,
+          "duration": 3.48
+        },
+        {
+          "text": "that connections making a good",
+          "start": 295.9,
+          "duration": 2.73
+        },
+        {
+          "text": "connection by just wiggling the",
+          "start": 297.19,
+          "duration": 3.15
+        },
+        {
+          "text": "connector and making sure that it's",
+          "start": 298.63,
+          "duration": 8.069
+        },
+        {
+          "text": "clean right now with this tester we were",
+          "start": 300.34,
+          "duration": 9.15
+        },
+        {
+          "text": "able to read the full codes and find out",
+          "start": 306.699,
+          "duration": 4.921
+        },
+        {
+          "text": "exactly what these sockets do under the",
+          "start": 309.49,
+          "duration": 5.489
+        },
+        {
+          "text": "seats the big black one connector does",
+          "start": 311.62,
+          "duration": 5.789
+        },
+        {
+          "text": "the thoracic seat bag or the air bag on",
+          "start": 314.979,
+          "duration": 4.981
+        },
+        {
+          "text": "the side have you look here on the side",
+          "start": 317.409,
+          "duration": 8.401
+        },
+        {
+          "text": "of the sit on the side of the passenger",
+          "start": 319.96,
+          "duration": 11.609
+        },
+        {
+          "text": "side seat the small gray connector goes",
+          "start": 325.81,
+          "duration": 10.74
+        },
+        {
+          "text": "to the seatbelt pretensioners just shown",
+          "start": 331.569,
+          "duration": 7.171
+        },
+        {
+          "text": "you on the other side of the passenger",
+          "start": 336.55,
+          "duration": 5.669
+        },
+        {
+          "text": "seat which tensions up the seatbelt and",
+          "start": 338.74,
+          "duration": 5.429
+        },
+        {
+          "text": "a little piston pulls that and tightens",
+          "start": 342.219,
+          "duration": 4.98
+        },
+        {
+          "text": "that seatbelt in around you now we had",
+          "start": 344.169,
+          "duration": 4.921
+        },
+        {
+          "text": "another fall which we couldn't find and",
+          "start": 347.199,
+          "duration": 7.02
+        },
+        {
+          "text": "it was side passenger side circuit now",
+          "start": 349.09,
+          "duration": 6.84
+        },
+        {
+          "text": "we've done a bit more investigation and",
+          "start": 354.219,
+          "duration": 3.361
+        },
+        {
+          "text": "as I said that's nothing to do with",
+          "start": 355.93,
+          "duration": 2.94
+        },
+        {
+          "text": "these two seat",
+          "start": 357.58,
+          "duration": 3.6
+        },
+        {
+          "text": "plugs under here there is a third one",
+          "start": 358.87,
+          "duration": 8.28
+        },
+        {
+          "text": "and if we show you down the side of the",
+          "start": 361.18,
+          "duration": 8.459
+        },
+        {
+          "text": "passenger side trim that normally runs",
+          "start": 367.15,
+          "duration": 4.139
+        },
+        {
+          "text": "along there you might be able to see",
+          "start": 369.639,
+          "duration": 3.96
+        },
+        {
+          "text": "this little thing down here with this",
+          "start": 371.289,
+          "duration": 5.611
+        },
+        {
+          "text": "here's another sensor which we think",
+          "start": 373.599,
+          "duration": 5.011
+        },
+        {
+          "text": "we've got our problem because this shows",
+          "start": 376.9,
+          "duration": 3.419
+        },
+        {
+          "text": "up as a short circuit we've only just",
+          "start": 378.61,
+          "duration": 3.839
+        },
+        {
+          "text": "located this one but this is another",
+          "start": 380.319,
+          "duration": 4.891
+        },
+        {
+          "text": "part which can bring on the airbag light",
+          "start": 382.449,
+          "duration": 6.0
+        },
+        {
+          "text": "and your service light so we're in the",
+          "start": 385.21,
+          "duration": 5.519
+        },
+        {
+          "text": "process now just taking this out because",
+          "start": 388.449,
+          "duration": 3.931
+        },
+        {
+          "text": "it's saying that this is short circuited",
+          "start": 390.729,
+          "duration": 3.81
+        },
+        {
+          "text": "now when it's a short circuit you know I",
+          "start": 392.38,
+          "duration": 3.15
+        },
+        {
+          "text": "don't know whether it's sorry it's been",
+          "start": 394.539,
+          "duration": 3.03
+        },
+        {
+          "text": "spilt out on it or it could be just",
+          "start": 395.53,
+          "duration": 3.509
+        },
+        {
+          "text": "faulty or whatever's but we're gonna",
+          "start": 397.569,
+          "duration": 3.21
+        },
+        {
+          "text": "find out in a second once we take this",
+          "start": 399.039,
+          "duration": 2.641
+        },
+        {
+          "text": "out",
+          "start": 400.779,
+          "duration": 3.271
+        },
+        {
+          "text": "right okay I've just taken this little",
+          "start": 401.68,
+          "duration": 3.69
+        },
+        {
+          "text": "sensor out now as you can see it's a",
+          "start": 404.05,
+          "duration": 3.78
+        },
+        {
+          "text": "little to terminal device and you have",
+          "start": 405.37,
+          "duration": 5.4
+        },
+        {
+          "text": "to take two long bolts out and then it",
+          "start": 407.83,
+          "duration": 4.26
+        },
+        {
+          "text": "lifts out and then underneath there's a",
+          "start": 410.77,
+          "duration": 3.239
+        },
+        {
+          "text": "plug which you just push with a little",
+          "start": 412.09,
+          "duration": 3.15
+        },
+        {
+          "text": "terminal screwdriver pull the connector",
+          "start": 414.009,
+          "duration": 2.731
+        },
+        {
+          "text": "out and then you're left with this so",
+          "start": 415.24,
+          "duration": 3.87
+        },
+        {
+          "text": "basically we've now disconnected all",
+          "start": 416.74,
+          "duration": 4.5
+        },
+        {
+          "text": "three sensors on this side the",
+          "start": 419.11,
+          "duration": 5.19
+        },
+        {
+          "text": "pre-tensioner we've also disconnected",
+          "start": 421.24,
+          "duration": 6.299
+        },
+        {
+          "text": "the airbag thoracic airbag on side of",
+          "start": 424.3,
+          "duration": 5.04
+        },
+        {
+          "text": "the seat and now we've also disconnected",
+          "start": 427.539,
+          "duration": 3.63
+        },
+        {
+          "text": "the side sensor and all so we're just",
+          "start": 429.34,
+          "duration": 3.72
+        },
+        {
+          "text": "going to connect the battery up now read",
+          "start": 431.169,
+          "duration": 3.691
+        },
+        {
+          "text": "the code reader just make sure that all",
+          "start": 433.06,
+          "duration": 3.27
+        },
+        {
+          "text": "these things now are showing an open",
+          "start": 434.86,
+          "duration": 3.51
+        },
+        {
+          "text": "circuit one we're interested in is this",
+          "start": 436.33,
+          "duration": 4.02
+        },
+        {
+          "text": "one because if this now shows open",
+          "start": 438.37,
+          "duration": 4.14
+        },
+        {
+          "text": "circuit we know that this is our problem",
+          "start": 440.35,
+          "duration": 3.84
+        },
+        {
+          "text": "it is a short circuit so Gary's going to",
+          "start": 442.51,
+          "duration": 3.18
+        },
+        {
+          "text": "connect the battery up there and we'll",
+          "start": 444.19,
+          "duration": 3.78
+        },
+        {
+          "text": "have a look at the code reader right so",
+          "start": 445.69,
+          "duration": 6.12
+        },
+        {
+          "text": "diagnose we want to do a scan right now",
+          "start": 447.97,
+          "duration": 7.169
+        },
+        {
+          "text": "live do a manual scan but we want to",
+          "start": 451.81,
+          "duration": 4.68
+        },
+        {
+          "text": "choose what we want to check we want to",
+          "start": 455.139,
+          "duration": 4.761
+        },
+        {
+          "text": "check the airbag and priests engine is",
+          "start": 456.49,
+          "duration": 3.41
+        },
+        {
+          "text": "right we're just gonna clear the folks",
+          "start": 460.86,
+          "duration": 4.029
+        },
+        {
+          "text": "that are there at the moment and then",
+          "start": 463.09,
+          "duration": 4.829
+        },
+        {
+          "text": "read them all again because as I said",
+          "start": 464.889,
+          "duration": 4.111
+        },
+        {
+          "text": "we've got all the way in freely on",
+          "start": 467.919,
+          "duration": 2.731
+        },
+        {
+          "text": "sensors disconnected so we just clear",
+          "start": 469.0,
+          "duration": 3.449
+        },
+        {
+          "text": "them all and if we read them now these",
+          "start": 470.65,
+          "duration": 3.81
+        },
+        {
+          "text": "are fresh once we put the battery back",
+          "start": 472.449,
+          "duration": 7.621
+        },
+        {
+          "text": "on right we've got free so we've got as",
+          "start": 474.46,
+          "duration": 9.6
+        },
+        {
+          "text": "you can probably see there we've got the",
+          "start": 480.07,
+          "duration": 6.54
+        },
+        {
+          "text": "front passenger thorax side airbag",
+          "start": 484.06,
+          "duration": 6.06
+        },
+        {
+          "text": "circuit open circuit now as I said to",
+          "start": 486.61,
+          "duration": 5.339
+        },
+        {
+          "text": "you that is the black cable and the",
+          "start": 490.12,
+          "duration": 4.14
+        },
+        {
+          "text": "Aussie or the black connector under your",
+          "start": 491.949,
+          "duration": 4.411
+        },
+        {
+          "text": "seat the big black one for scroll down",
+          "start": 494.26,
+          "duration": 5.79
+        },
+        {
+          "text": "this is the gray cable which is this one",
+          "start": 496.36,
+          "duration": 6.69
+        },
+        {
+          "text": "that everybody talks about that actually",
+          "start": 500.05,
+          "duration": 5.46
+        },
+        {
+          "text": "does your passengers frontside buckle",
+          "start": 503.05,
+          "duration": 5.369
+        },
+        {
+          "text": "pre tension the circuit and that is open",
+          "start": 505.51,
+          "duration": 5.339
+        },
+        {
+          "text": "circuit because I've disconnected it as",
+          "start": 508.419,
+          "duration": 7.531
+        },
+        {
+          "text": "you can see on the side of the seat on",
+          "start": 510.849,
+          "duration": 8.94
+        },
+        {
+          "text": "that little piston thing there and this",
+          "start": 515.95,
+          "duration": 5.79
+        },
+        {
+          "text": "is the one I want to come up now as open",
+          "start": 519.789,
+          "duration": 5.42
+        },
+        {
+          "text": "circuit number three",
+          "start": 521.74,
+          "duration": 3.469
+        },
+        {
+          "text": "there we go passenger side front side",
+          "start": 525.93,
+          "duration": 6.1
+        },
+        {
+          "text": "sensor circuit no signal and the reason",
+          "start": 528.61,
+          "duration": 6.33
+        },
+        {
+          "text": "being is because I've taken it out so",
+          "start": 532.03,
+          "duration": 5.25
+        },
+        {
+          "text": "this is our problem which is causing our",
+          "start": 534.94,
+          "duration": 5.64
+        },
+        {
+          "text": "airbag problem light on our dashboard",
+          "start": 537.28,
+          "duration": 6.87
+        },
+        {
+          "text": "and the service light to come on because",
+          "start": 540.58,
+          "duration": 6.21
+        },
+        {
+          "text": "initially this was showing as a short",
+          "start": 544.15,
+          "duration": 4.83
+        },
+        {
+          "text": "circuit now just to prove this is the",
+          "start": 546.79,
+          "duration": 5.07
+        },
+        {
+          "text": "case I'm now going to plug the other two",
+          "start": 548.98,
+          "duration": 8.33
+        },
+        {
+          "text": "back in in other words this one here and",
+          "start": 551.86,
+          "duration": 7.5
+        },
+        {
+          "text": "where's the black one going fishing and",
+          "start": 557.31,
+          "duration": 4.96
+        },
+        {
+          "text": "the black one there for the side airbag",
+          "start": 559.36,
+          "duration": 6.32
+        },
+        {
+          "text": "and both of them fault should clear and",
+          "start": 562.27,
+          "duration": 6.21
+        },
+        {
+          "text": "then just leave the single fault which",
+          "start": 565.68,
+          "duration": 5.35
+        },
+        {
+          "text": "we have still which is this one here",
+          "start": 568.48,
+          "duration": 4.23
+        },
+        {
+          "text": "which caused our initial problem so",
+          "start": 571.03,
+          "duration": 2.94
+        },
+        {
+          "text": "Gary's going to disconnect the battery",
+          "start": 572.71,
+          "duration": 3.42
+        },
+        {
+          "text": "again and we'll just connect these up",
+          "start": 573.97,
+          "duration": 5.46
+        },
+        {
+          "text": "quickly and then run the same test right",
+          "start": 576.13,
+          "duration": 4.47
+        },
+        {
+          "text": "it's just going over now just to",
+          "start": 579.43,
+          "duration": 2.94
+        },
+        {
+          "text": "disconnect the battery cuz I don't like",
+          "start": 580.6,
+          "duration": 5.0
+        },
+        {
+          "text": "plugging seatbelt and airbag stuff in",
+          "start": 582.37,
+          "duration": 5.49
+        },
+        {
+          "text": "while we've still got the battery",
+          "start": 585.6,
+          "duration": 4.99
+        },
+        {
+          "text": "connected right I just disconnected that",
+          "start": 587.86,
+          "duration": 8.36
+        },
+        {
+          "text": "so I'm just gonna push in this one here",
+          "start": 590.59,
+          "duration": 5.63
+        },
+        {
+          "text": "all right that one's pushed back in what",
+          "start": 599.31,
+          "duration": 5.62
+        },
+        {
+          "text": "Gary's just gonna connect the one under",
+          "start": 603.64,
+          "duration": 4.38
+        },
+        {
+          "text": "the seat so now we're gonna connect the",
+          "start": 604.93,
+          "duration": 5.67
+        },
+        {
+          "text": "battery up see we wouldn't have known",
+          "start": 608.02,
+          "duration": 4.65
+        },
+        {
+          "text": "all this if we didn't have a diagnostic",
+          "start": 610.6,
+          "duration": 4.38
+        },
+        {
+          "text": "meter because all we had is the same as",
+          "start": 612.67,
+          "duration": 4.86
+        },
+        {
+          "text": "what other people had with the lights",
+          "start": 614.98,
+          "duration": 4.89
+        },
+        {
+          "text": "the service light in the airbag light",
+          "start": 617.53,
+          "duration": 3.81
+        },
+        {
+          "text": "and we've had people with that fault",
+          "start": 619.87,
+          "duration": 3.41
+        },
+        {
+          "text": "we've had people cut the connectors out",
+          "start": 621.34,
+          "duration": 6.12
+        },
+        {
+          "text": "like that and it's guesswork you could",
+          "start": 623.28,
+          "duration": 6.34
+        },
+        {
+          "text": "you have proper equipment sometimes to",
+          "start": 627.46,
+          "duration": 3.81
+        },
+        {
+          "text": "diagnose a problem so what trying them",
+          "start": 629.62,
+          "duration": 3.27
+        },
+        {
+          "text": "other things but you have to really know",
+          "start": 631.27,
+          "duration": 3.89
+        },
+        {
+          "text": "so right we're gonna go to diagnose",
+          "start": 632.89,
+          "duration": 6.93
+        },
+        {
+          "text": "we're gonna go to scan Renault latest",
+          "start": 635.16,
+          "duration": 7.24
+        },
+        {
+          "text": "version we're on the software Clio face",
+          "start": 639.82,
+          "duration": 6.6
+        },
+        {
+          "text": "this is I'm gonna do a manual scan just",
+          "start": 642.4,
+          "duration": 6.9
+        },
+        {
+          "text": "of the seatbelt and the airbags the",
+          "start": 646.42,
+          "duration": 4.73
+        },
+        {
+          "text": "pre-tensioner that's all we want to do",
+          "start": 649.3,
+          "duration": 5.94
+        },
+        {
+          "text": "airbag pretensioners right so we're",
+          "start": 651.15,
+          "duration": 7.2
+        },
+        {
+          "text": "going to clear the faults",
+          "start": 655.24,
+          "duration": 3.11
+        },
+        {
+          "text": "and we're going to start afresh so we",
+          "start": 658.72,
+          "duration": 4.75
+        },
+        {
+          "text": "just clear them and I'm hoping now just",
+          "start": 661.4,
+          "duration": 5.49
+        },
+        {
+          "text": "to read one full code to prove a point",
+          "start": 663.47,
+          "duration": 6.72
+        },
+        {
+          "text": "there we go passenger side front side",
+          "start": 666.89,
+          "duration": 7.26
+        },
+        {
+          "text": "sensor circuit no signal and that's the",
+          "start": 670.19,
+          "duration": 6.36
+        },
+        {
+          "text": "only fault so any other problem which we",
+          "start": 674.15,
+          "duration": 6.45
+        },
+        {
+          "text": "can now eliminate is this thing which",
+          "start": 676.55,
+          "duration": 6.27
+        },
+        {
+          "text": "was the pre-tensioner and if it was a",
+          "start": 680.6,
+          "duration": 4.53
+        },
+        {
+          "text": "pre-tensioner all you get on the",
+          "start": 682.82,
+          "duration": 4.59
+        },
+        {
+          "text": "dashboard would be your airbag light as",
+          "start": 685.13,
+          "duration": 4.2
+        },
+        {
+          "text": "we have there and also our service light",
+          "start": 687.41,
+          "duration": 3.87
+        },
+        {
+          "text": "but when you've got a piece of equipment",
+          "start": 689.33,
+          "duration": 3.54
+        },
+        {
+          "text": "which can read what exactly the problem",
+          "start": 691.28,
+          "duration": 3.57
+        },
+        {
+          "text": "is it tells you exactly what the problem",
+          "start": 692.87,
+          "duration": 3.78
+        },
+        {
+          "text": "is and we've you've just seen us clear",
+          "start": 694.85,
+          "duration": 3.59
+        },
+        {
+          "text": "the other two faults by plugging them in",
+          "start": 696.65,
+          "duration": 4.17
+        },
+        {
+          "text": "this is their problem now I don't think",
+          "start": 698.44,
+          "duration": 4.75
+        },
+        {
+          "text": "this part is recoverable so it's gonna",
+          "start": 700.82,
+          "duration": 4.17
+        },
+        {
+          "text": "need a new IDs and once you plug that in",
+          "start": 703.19,
+          "duration": 3.99
+        },
+        {
+          "text": "that will clear that fault and out",
+          "start": 704.99,
+          "duration": 5.01
+        },
+        {
+          "text": "should go our light right we just phoned",
+          "start": 707.18,
+          "duration": 7.17
+        },
+        {
+          "text": "Renault up this from Renault is 52",
+          "start": 710.0,
+          "duration": 7.98
+        },
+        {
+          "text": "pounds and if you get one on eBay our",
+          "start": 714.35,
+          "duration": 5.28
+        },
+        {
+          "text": "feet know about 15 pound so you make",
+          "start": 717.98,
+          "duration": 3.03
+        },
+        {
+          "text": "your mind up which way you want to go I",
+          "start": 719.63,
+          "duration": 3.03
+        },
+        {
+          "text": "know what way we're gonna go so we're",
+          "start": 721.01,
+          "duration": 3.42
+        },
+        {
+          "text": "gonna have to finish this video here but",
+          "start": 722.66,
+          "duration": 3.06
+        },
+        {
+          "text": "I can guarantee this would have sorted",
+          "start": 724.43,
+          "duration": 3.27
+        },
+        {
+          "text": "out the problem because that's now",
+          "start": 725.72,
+          "duration": 4.32
+        },
+        {
+          "text": "cleared all the other fault codes and we",
+          "start": 727.7,
+          "duration": 4.44
+        },
+        {
+          "text": "know exactly what the cables do by what",
+          "start": 730.04,
+          "duration": 3.33
+        },
+        {
+          "text": "I've just said in the previous video so",
+          "start": 732.14,
+          "duration": 3.81
+        },
+        {
+          "text": "they'll take a guess if you've got if",
+          "start": 733.37,
+          "duration": 4.77
+        },
+        {
+          "text": "you've got if you obviously don't check",
+          "start": 735.95,
+          "duration": 4.29
+        },
+        {
+          "text": "that cable the gray cable but don't",
+          "start": 738.14,
+          "duration": 3.24
+        },
+        {
+          "text": "think you have to cut it off and then",
+          "start": 740.24,
+          "duration": 3.12
+        },
+        {
+          "text": "sold up like we've had to do I was just",
+          "start": 741.38,
+          "duration": 3.81
+        },
+        {
+          "text": "working off for YouTube videos now I",
+          "start": 743.36,
+          "duration": 3.75
+        },
+        {
+          "text": "actually know what the situation is the",
+          "start": 745.19,
+          "duration": 3.54
+        },
+        {
+          "text": "gray connector underneath does the",
+          "start": 747.11,
+          "duration": 3.24
+        },
+        {
+          "text": "seatbelt free tensioner the black",
+          "start": 748.73,
+          "duration": 3.21
+        },
+        {
+          "text": "connector underneath does the fretting",
+          "start": 750.35,
+          "duration": 4.05
+        },
+        {
+          "text": "airbag in the side of the seat and the",
+          "start": 751.94,
+          "duration": 5.19
+        },
+        {
+          "text": "other code which we had stars is this",
+          "start": 754.4,
+          "duration": 5.33
+        },
+        {
+          "text": "thing here which is your side impact bar",
+          "start": 757.13,
+          "duration": 5.1
+        },
+        {
+          "text": "and it's the passenger side front side",
+          "start": 759.73,
+          "duration": 4.81
+        },
+        {
+          "text": "sensor and that's what that is and",
+          "start": 762.23,
+          "duration": 3.93
+        },
+        {
+          "text": "that's our problem we've just proved it",
+          "start": 764.54,
+          "duration": 3.66
+        },
+        {
+          "text": "by taking out a circuit and it's come up",
+          "start": 766.16,
+          "duration": 4.23
+        },
+        {
+          "text": "there with open circuits so there you go",
+          "start": 768.2,
+          "duration": 3.81
+        },
+        {
+          "text": "that's how you find your problem on your",
+          "start": 770.39,
+          "duration": 3.27
+        },
+        {
+          "text": "airbag light your service like coming up",
+          "start": 772.01,
+          "duration": 3.75
+        },
+        {
+          "text": "together do you ever do check your",
+          "start": 773.66,
+          "duration": 3.9
+        },
+        {
+          "text": "connector under there as I said before",
+          "start": 775.76,
+          "duration": 3.6
+        },
+        {
+          "text": "just give it a push in give them",
+          "start": 777.56,
+          "duration": 3.75
+        },
+        {
+          "text": "terminals and wiggle but if you could",
+          "start": 779.36,
+          "duration": 3.87
+        },
+        {
+          "text": "plug a sensor in and actually read what",
+          "start": 781.31,
+          "duration": 3.96
+        },
+        {
+          "text": "the codes are you now know exactly what",
+          "start": 783.23,
+          "duration": 3.78
+        },
+        {
+          "text": "each of them does anyway I hope that was",
+          "start": 785.27,
+          "duration": 3.48
+        },
+        {
+          "text": "of some interest to you and we're gonna",
+          "start": 787.01,
+          "duration": 3.31
+        },
+        {
+          "text": "get a new one of these not",
+          "start": 788.75,
+          "duration": 3.1
+        },
+        {
+          "text": "ran out we're gonna get one off of ebay",
+          "start": 790.32,
+          "duration": 3.6
+        },
+        {
+          "text": "through 15 pounds so thanks very much",
+          "start": 791.85,
+          "duration": 3.51
+        },
+        {
+          "text": "see you in the next video and children",
+          "start": 793.92,
+          "duration": 2.47
+        },
+        {
+          "text": "bye for now",
+          "start": 795.36,
+          "duration": 5.949
+        },
+        {
+          "text": "[Music]",
+          "start": 796.39,
+          "duration": 4.919
+        },
+        {
+          "text": "you",
+          "start": 802.45,
+          "duration": 2.06
+        }
+      ]
+    },
+    {
+      "video_id": "Xsh3AZ8Jh3M",
+      "url": "https://www.youtube.com/watch?v=Xsh3AZ8Jh3M",
+      "title": "Buying a Used 4th Gen Clio? Problems",
+      "channel": "Pit-Stop",
+      "matched_queries": [
+        "Clio MK2 chronic issues"
+      ],
+      "duration_raw": "7:29",
+      "duration_seconds": 449,
+      "view_count": "82,706 views",
+      "view_count_raw": 82706,
+      "selection_score": 2,
+      "is_niche_mechanic_candidate": false,
+      "video_type_category": "organic",
+      "video_language": "en",
+      "transcript_status": "ok",
+      "transcript_text": "hello to winter wonderland\nlook at this place behind me it was\nwinter all right\nand for once we actually get some snow\nit's quite a nice change from all the\nrain and mud and all of that\nanyway considering what we uh what times\nwe live in\nthe pandemic economic\nproblems and such i thought it was\npertinent to talk about\na very popular car the clio\nwell it happens so that uh now that\na lot of public transport has been\nstopped\nwell the only way to get to work really\nwas your own transportation\nso obviously if you didn't have a car\nbefore\nor at least if you're getting something\nelse you need to buy something\nand instead of buying new a lot of\npeople have decided to buy\nused used clios to be more exact the\nfourth generation\nis quite popular actually so how about\nwe talk about a little\nbit about the fourth generation cleo and\nwhat kind of problems\nyou would be facing especially if you\nbought a high mileage car\nthe biggest one is probably the engine\nso\nuh i mean if you're buying a new car or\nan old car\nthe engine is usually quite an important\ndecision if you're getting a diesel\nor a petrol car or whatever so if you're\nbuying a fourth generation clio\nbe aware that the 1.2 liter turbo petrol\nengine does seem to have some problems\nwith oil consumption and i'm not\nexactly sure why the the mechanics can\nprobably tell you and\ncorrect that problem whatever it is but\nyou should have it checked because\napparently they eat oil\nand it can lead to catastrophic engine\nfailure which in most cases is not\nreally a good thing\n[Music]\nnext this is kind of pertinent to well\nwhat is behind me\nwinter and snow the fourth generation\ncleo appears to have some problems with\nits starter motor so just imagine you're\ngoing\nto work in the morning it's cold it's\nfreezing you just want the car to start\nget you to work\nand warm up and it doesn't start well\napparently the force generation\nhas a problem with the starter where uh\nwater will actually seep\ninto the starter it'll freeze overnight\nand\nboom there goes your starter so all\nyou'll probably hear is\nor not even that get that checked\nnow i know saying this is probably a bit\nsilly but uh\nthe clio was never meant to be a\nluxurious\nride still the fourth generation does\nseem to have\na bit of noise when driving along\nespecially on damaged roads\nand well if you're not bothered by that\nmore power to you but if you are well\nprepared to\nspend some money on new uh suspension\nand such\nthis one goes hand in hand with what i\nsaid before about\njust getting into the car in the morning\nand wanting to stay warm\nwell the vents have a tendency to be\nmade from\nslightly less good plastics which means\nthat\nif you're a little bit too aggressive\nwith them especially if you're in a bad\nmood\nand want to get warm quick well you're\ngoing to get even warmer because you\nwill\nbreak them check that out when you're\nbuying a used clio\nand then of course because it is a\nfrench car sorry french people i love\nyou\nit does have a few electronic issues\nshall we say and i actually have a list\nhere because well i would not remember\nthem otherwise\nbut well one is of course we have to\nmention the arling system i've already\ntested quite a few\nclios both the fourth generation the\nfifth generation also the other renaults\nand the r-link\nis just always a bit of a problem\nit'll have bugs it won't work it will be\nslow it'll crash\nit won't let you use the climate\ncontrols it's very annoying now the clio\nespecially the fourth generation does\nhave physical controls\nthankfully so you can still change your\nclimate controls\nnormally but do check when you're\ngetting\na used clio if the r-link works as it\nshould because it is very annoying when\nyou're driving down\nfrom home or to work and you just want\nto listen to some tunes\nand the system just refuses to work\ninfuriating\nthen the other one and i cannot\nobviously check this one but\ni've always said it the start stop\nsystems are just\nstupid and they will use up your\nbatteries well apparently that's a thing\nwith the fourth generation clio\nthe batteries get used up quite badly\nwith the start stop system\nbecause for some reason it doesn't work\nquite like it should\nso most of the times it's a dead battery\nso if you're driving if you're buying a\ncar like that\njust shut it off\nthen there's the wiper motors well both\nat the front and at the back they like\nto take a vacation\na long one as in permanent so\nuh yeah even if it's not raining just\ncheck the wipers\nand well the motors check if everything\nworks if you're buying a used one\nand now the final one and this is a\nbiggie apologies for uh shaking the\ncamera i'm trying to be\ndramatic but it is the uh\nfuel level instrument yes you've heard\nme right fuel level now\nwhat does that have to do with anything\nwell the problem is and we've actually\nseen that on a few cars\nand our friends which had a clio rs\nyeah i believe it was a cleo rs the fuel\nlevel\nwill show you it's full it goes down\nthen it has half fuel\nand then for some reason you'll be\ndriving for quite a long time with half\na fuel\nhalf a tank of fuel and then suddenly\nboom you're dead\non the road not dead dead but without\nany fuel\nso yeah have that checked so the\nquestion is\nis it really worth buying a used fourth\ngeneration clio\nor should you just go for a good deal\non a fifth generation new one which will\nhave warranty\nwhich won't hopefully break down as much\ni mean that's to say they are quite\nreliable i believe but\nit's these little things especially\nelectronics and\nsoftware that kind of let it down\n[Music]\nwell that's it for me and this weird\nvlogging style thing which probably is\nnot going to be very stabilized so again\napologies about that\nso that was about the fourth generation\nclio's problems yeah think about whether\nyou want to buy that\nor a new generation five clio and next\ntime we're actually going to talk about\nwhich engine you should get in a fifth\ngeneration clio because of course\ndiesel or petrol which do i want which\nmore one\nis more fun and which one has well\nbetter fuel consumption until next time",
+      "transcript_segments": [
+        {
+          "text": "hello to winter wonderland",
+          "start": 0.32,
+          "duration": 6.16
+        },
+        {
+          "text": "look at this place behind me it was",
+          "start": 3.919,
+          "duration": 3.521
+        },
+        {
+          "text": "winter all right",
+          "start": 6.48,
+          "duration": 4.0
+        },
+        {
+          "text": "and for once we actually get some snow",
+          "start": 7.44,
+          "duration": 4.72
+        },
+        {
+          "text": "it's quite a nice change from all the",
+          "start": 10.48,
+          "duration": 3.6
+        },
+        {
+          "text": "rain and mud and all of that",
+          "start": 12.16,
+          "duration": 4.8
+        },
+        {
+          "text": "anyway considering what we uh what times",
+          "start": 14.08,
+          "duration": 3.76
+        },
+        {
+          "text": "we live in",
+          "start": 16.96,
+          "duration": 3.92
+        },
+        {
+          "text": "the pandemic economic",
+          "start": 17.84,
+          "duration": 5.76
+        },
+        {
+          "text": "problems and such i thought it was",
+          "start": 20.88,
+          "duration": 4.159
+        },
+        {
+          "text": "pertinent to talk about",
+          "start": 23.6,
+          "duration": 4.56
+        },
+        {
+          "text": "a very popular car the clio",
+          "start": 25.039,
+          "duration": 6.16
+        },
+        {
+          "text": "well it happens so that uh now that",
+          "start": 28.16,
+          "duration": 5.28
+        },
+        {
+          "text": "a lot of public transport has been",
+          "start": 31.199,
+          "duration": 3.281
+        },
+        {
+          "text": "stopped",
+          "start": 33.44,
+          "duration": 2.959
+        },
+        {
+          "text": "well the only way to get to work really",
+          "start": 34.48,
+          "duration": 3.599
+        },
+        {
+          "text": "was your own transportation",
+          "start": 36.399,
+          "duration": 4.32
+        },
+        {
+          "text": "so obviously if you didn't have a car",
+          "start": 38.079,
+          "duration": 3.681
+        },
+        {
+          "text": "before",
+          "start": 40.719,
+          "duration": 3.52
+        },
+        {
+          "text": "or at least if you're getting something",
+          "start": 41.76,
+          "duration": 4.72
+        },
+        {
+          "text": "else you need to buy something",
+          "start": 44.239,
+          "duration": 4.0
+        },
+        {
+          "text": "and instead of buying new a lot of",
+          "start": 46.48,
+          "duration": 3.44
+        },
+        {
+          "text": "people have decided to buy",
+          "start": 48.239,
+          "duration": 4.96
+        },
+        {
+          "text": "used used clios to be more exact the",
+          "start": 49.92,
+          "duration": 4.72
+        },
+        {
+          "text": "fourth generation",
+          "start": 53.199,
+          "duration": 3.68
+        },
+        {
+          "text": "is quite popular actually so how about",
+          "start": 54.64,
+          "duration": 3.36
+        },
+        {
+          "text": "we talk about a little",
+          "start": 56.879,
+          "duration": 4.081
+        },
+        {
+          "text": "bit about the fourth generation cleo and",
+          "start": 58.0,
+          "duration": 4.16
+        },
+        {
+          "text": "what kind of problems",
+          "start": 60.96,
+          "duration": 2.96
+        },
+        {
+          "text": "you would be facing especially if you",
+          "start": 62.16,
+          "duration": 11.68
+        },
+        {
+          "text": "bought a high mileage car",
+          "start": 63.92,
+          "duration": 9.92
+        },
+        {
+          "text": "the biggest one is probably the engine",
+          "start": 73.92,
+          "duration": 3.199
+        },
+        {
+          "text": "so",
+          "start": 76.799,
+          "duration": 2.881
+        },
+        {
+          "text": "uh i mean if you're buying a new car or",
+          "start": 77.119,
+          "duration": 3.441
+        },
+        {
+          "text": "an old car",
+          "start": 79.68,
+          "duration": 3.04
+        },
+        {
+          "text": "the engine is usually quite an important",
+          "start": 80.56,
+          "duration": 4.08
+        },
+        {
+          "text": "decision if you're getting a diesel",
+          "start": 82.72,
+          "duration": 4.96
+        },
+        {
+          "text": "or a petrol car or whatever so if you're",
+          "start": 84.64,
+          "duration": 5.2
+        },
+        {
+          "text": "buying a fourth generation clio",
+          "start": 87.68,
+          "duration": 6.88
+        },
+        {
+          "text": "be aware that the 1.2 liter turbo petrol",
+          "start": 89.84,
+          "duration": 7.04
+        },
+        {
+          "text": "engine does seem to have some problems",
+          "start": 94.56,
+          "duration": 4.16
+        },
+        {
+          "text": "with oil consumption and i'm not",
+          "start": 96.88,
+          "duration": 4.4
+        },
+        {
+          "text": "exactly sure why the the mechanics can",
+          "start": 98.72,
+          "duration": 4.24
+        },
+        {
+          "text": "probably tell you and",
+          "start": 101.28,
+          "duration": 4.879
+        },
+        {
+          "text": "correct that problem whatever it is but",
+          "start": 102.96,
+          "duration": 4.64
+        },
+        {
+          "text": "you should have it checked because",
+          "start": 106.159,
+          "duration": 3.121
+        },
+        {
+          "text": "apparently they eat oil",
+          "start": 107.6,
+          "duration": 4.799
+        },
+        {
+          "text": "and it can lead to catastrophic engine",
+          "start": 109.28,
+          "duration": 5.92
+        },
+        {
+          "text": "failure which in most cases is not",
+          "start": 112.399,
+          "duration": 5.76
+        },
+        {
+          "text": "really a good thing",
+          "start": 115.2,
+          "duration": 2.959
+        },
+        {
+          "text": "[Music]",
+          "start": 119.62,
+          "duration": 4.22
+        },
+        {
+          "text": "next this is kind of pertinent to well",
+          "start": 121.439,
+          "duration": 3.521
+        },
+        {
+          "text": "what is behind me",
+          "start": 123.84,
+          "duration": 4.16
+        },
+        {
+          "text": "winter and snow the fourth generation",
+          "start": 124.96,
+          "duration": 5.04
+        },
+        {
+          "text": "cleo appears to have some problems with",
+          "start": 128.0,
+          "duration": 4.16
+        },
+        {
+          "text": "its starter motor so just imagine you're",
+          "start": 130.0,
+          "duration": 2.8
+        },
+        {
+          "text": "going",
+          "start": 132.16,
+          "duration": 3.28
+        },
+        {
+          "text": "to work in the morning it's cold it's",
+          "start": 132.8,
+          "duration": 4.4
+        },
+        {
+          "text": "freezing you just want the car to start",
+          "start": 135.44,
+          "duration": 2.879
+        },
+        {
+          "text": "get you to work",
+          "start": 137.2,
+          "duration": 3.759
+        },
+        {
+          "text": "and warm up and it doesn't start well",
+          "start": 138.319,
+          "duration": 4.401
+        },
+        {
+          "text": "apparently the force generation",
+          "start": 140.959,
+          "duration": 4.0
+        },
+        {
+          "text": "has a problem with the starter where uh",
+          "start": 142.72,
+          "duration": 3.76
+        },
+        {
+          "text": "water will actually seep",
+          "start": 144.959,
+          "duration": 4.0
+        },
+        {
+          "text": "into the starter it'll freeze overnight",
+          "start": 146.48,
+          "duration": 3.04
+        },
+        {
+          "text": "and",
+          "start": 148.959,
+          "duration": 3.36
+        },
+        {
+          "text": "boom there goes your starter so all",
+          "start": 149.52,
+          "duration": 4.48
+        },
+        {
+          "text": "you'll probably hear is",
+          "start": 152.319,
+          "duration": 5.92
+        },
+        {
+          "text": "or not even that get that checked",
+          "start": 154.0,
+          "duration": 4.239
+        },
+        {
+          "text": "now i know saying this is probably a bit",
+          "start": 164.0,
+          "duration": 3.2
+        },
+        {
+          "text": "silly but uh",
+          "start": 166.0,
+          "duration": 2.959
+        },
+        {
+          "text": "the clio was never meant to be a",
+          "start": 167.2,
+          "duration": 3.119
+        },
+        {
+          "text": "luxurious",
+          "start": 168.959,
+          "duration": 4.56
+        },
+        {
+          "text": "ride still the fourth generation does",
+          "start": 170.319,
+          "duration": 4.64
+        },
+        {
+          "text": "seem to have",
+          "start": 173.519,
+          "duration": 4.401
+        },
+        {
+          "text": "a bit of noise when driving along",
+          "start": 174.959,
+          "duration": 4.801
+        },
+        {
+          "text": "especially on damaged roads",
+          "start": 177.92,
+          "duration": 5.36
+        },
+        {
+          "text": "and well if you're not bothered by that",
+          "start": 179.76,
+          "duration": 5.68
+        },
+        {
+          "text": "more power to you but if you are well",
+          "start": 183.28,
+          "duration": 3.039
+        },
+        {
+          "text": "prepared to",
+          "start": 185.44,
+          "duration": 3.76
+        },
+        {
+          "text": "spend some money on new uh suspension",
+          "start": 186.319,
+          "duration": 5.28
+        },
+        {
+          "text": "and such",
+          "start": 189.2,
+          "duration": 2.399
+        },
+        {
+          "text": "this one goes hand in hand with what i",
+          "start": 193.28,
+          "duration": 3.039
+        },
+        {
+          "text": "said before about",
+          "start": 195.04,
+          "duration": 3.04
+        },
+        {
+          "text": "just getting into the car in the morning",
+          "start": 196.319,
+          "duration": 3.601
+        },
+        {
+          "text": "and wanting to stay warm",
+          "start": 198.08,
+          "duration": 4.32
+        },
+        {
+          "text": "well the vents have a tendency to be",
+          "start": 199.92,
+          "duration": 3.2
+        },
+        {
+          "text": "made from",
+          "start": 202.4,
+          "duration": 3.759
+        },
+        {
+          "text": "slightly less good plastics which means",
+          "start": 203.12,
+          "duration": 3.36
+        },
+        {
+          "text": "that",
+          "start": 206.159,
+          "duration": 2.401
+        },
+        {
+          "text": "if you're a little bit too aggressive",
+          "start": 206.48,
+          "duration": 4.16
+        },
+        {
+          "text": "with them especially if you're in a bad",
+          "start": 208.56,
+          "duration": 2.48
+        },
+        {
+          "text": "mood",
+          "start": 210.64,
+          "duration": 2.48
+        },
+        {
+          "text": "and want to get warm quick well you're",
+          "start": 211.04,
+          "duration": 3.919
+        },
+        {
+          "text": "going to get even warmer because you",
+          "start": 213.12,
+          "duration": 2.24
+        },
+        {
+          "text": "will",
+          "start": 214.959,
+          "duration": 2.56
+        },
+        {
+          "text": "break them check that out when you're",
+          "start": 215.36,
+          "duration": 5.28
+        },
+        {
+          "text": "buying a used clio",
+          "start": 217.519,
+          "duration": 3.121
+        },
+        {
+          "text": "and then of course because it is a",
+          "start": 221.36,
+          "duration": 4.4
+        },
+        {
+          "text": "french car sorry french people i love",
+          "start": 223.2,
+          "duration": 3.44
+        },
+        {
+          "text": "you",
+          "start": 225.76,
+          "duration": 3.44
+        },
+        {
+          "text": "it does have a few electronic issues",
+          "start": 226.64,
+          "duration": 4.56
+        },
+        {
+          "text": "shall we say and i actually have a list",
+          "start": 229.2,
+          "duration": 3.759
+        },
+        {
+          "text": "here because well i would not remember",
+          "start": 231.2,
+          "duration": 2.959
+        },
+        {
+          "text": "them otherwise",
+          "start": 232.959,
+          "duration": 4.401
+        },
+        {
+          "text": "but well one is of course we have to",
+          "start": 234.159,
+          "duration": 5.201
+        },
+        {
+          "text": "mention the arling system i've already",
+          "start": 237.36,
+          "duration": 3.2
+        },
+        {
+          "text": "tested quite a few",
+          "start": 239.36,
+          "duration": 3.2
+        },
+        {
+          "text": "clios both the fourth generation the",
+          "start": 240.56,
+          "duration": 4.0
+        },
+        {
+          "text": "fifth generation also the other renaults",
+          "start": 242.56,
+          "duration": 3.2
+        },
+        {
+          "text": "and the r-link",
+          "start": 244.56,
+          "duration": 4.48
+        },
+        {
+          "text": "is just always a bit of a problem",
+          "start": 245.76,
+          "duration": 6.72
+        },
+        {
+          "text": "it'll have bugs it won't work it will be",
+          "start": 249.04,
+          "duration": 5.279
+        },
+        {
+          "text": "slow it'll crash",
+          "start": 252.48,
+          "duration": 3.44
+        },
+        {
+          "text": "it won't let you use the climate",
+          "start": 254.319,
+          "duration": 3.681
+        },
+        {
+          "text": "controls it's very annoying now the clio",
+          "start": 255.92,
+          "duration": 3.68
+        },
+        {
+          "text": "especially the fourth generation does",
+          "start": 258.0,
+          "duration": 3.04
+        },
+        {
+          "text": "have physical controls",
+          "start": 259.6,
+          "duration": 3.76
+        },
+        {
+          "text": "thankfully so you can still change your",
+          "start": 261.04,
+          "duration": 3.599
+        },
+        {
+          "text": "climate controls",
+          "start": 263.36,
+          "duration": 3.839
+        },
+        {
+          "text": "normally but do check when you're",
+          "start": 264.639,
+          "duration": 3.441
+        },
+        {
+          "text": "getting",
+          "start": 267.199,
+          "duration": 3.841
+        },
+        {
+          "text": "a used clio if the r-link works as it",
+          "start": 268.08,
+          "duration": 4.64
+        },
+        {
+          "text": "should because it is very annoying when",
+          "start": 271.04,
+          "duration": 3.599
+        },
+        {
+          "text": "you're driving down",
+          "start": 272.72,
+          "duration": 4.08
+        },
+        {
+          "text": "from home or to work and you just want",
+          "start": 274.639,
+          "duration": 3.521
+        },
+        {
+          "text": "to listen to some tunes",
+          "start": 276.8,
+          "duration": 4.04
+        },
+        {
+          "text": "and the system just refuses to work",
+          "start": 278.16,
+          "duration": 5.68
+        },
+        {
+          "text": "infuriating",
+          "start": 280.84,
+          "duration": 3.0
+        },
+        {
+          "text": "then the other one and i cannot",
+          "start": 284.8,
+          "duration": 3.36
+        },
+        {
+          "text": "obviously check this one but",
+          "start": 286.32,
+          "duration": 4.24
+        },
+        {
+          "text": "i've always said it the start stop",
+          "start": 288.16,
+          "duration": 4.08
+        },
+        {
+          "text": "systems are just",
+          "start": 290.56,
+          "duration": 4.16
+        },
+        {
+          "text": "stupid and they will use up your",
+          "start": 292.24,
+          "duration": 4.08
+        },
+        {
+          "text": "batteries well apparently that's a thing",
+          "start": 294.72,
+          "duration": 3.36
+        },
+        {
+          "text": "with the fourth generation clio",
+          "start": 296.32,
+          "duration": 4.879
+        },
+        {
+          "text": "the batteries get used up quite badly",
+          "start": 298.08,
+          "duration": 4.72
+        },
+        {
+          "text": "with the start stop system",
+          "start": 301.199,
+          "duration": 3.521
+        },
+        {
+          "text": "because for some reason it doesn't work",
+          "start": 302.8,
+          "duration": 3.36
+        },
+        {
+          "text": "quite like it should",
+          "start": 304.72,
+          "duration": 4.8
+        },
+        {
+          "text": "so most of the times it's a dead battery",
+          "start": 306.16,
+          "duration": 5.92
+        },
+        {
+          "text": "so if you're driving if you're buying a",
+          "start": 309.52,
+          "duration": 3.36
+        },
+        {
+          "text": "car like that",
+          "start": 312.08,
+          "duration": 3.679
+        },
+        {
+          "text": "just shut it off",
+          "start": 312.88,
+          "duration": 2.879
+        },
+        {
+          "text": "then there's the wiper motors well both",
+          "start": 316.72,
+          "duration": 4.08
+        },
+        {
+          "text": "at the front and at the back they like",
+          "start": 319.12,
+          "duration": 3.28
+        },
+        {
+          "text": "to take a vacation",
+          "start": 320.8,
+          "duration": 4.959
+        },
+        {
+          "text": "a long one as in permanent so",
+          "start": 322.4,
+          "duration": 5.84
+        },
+        {
+          "text": "uh yeah even if it's not raining just",
+          "start": 325.759,
+          "duration": 3.841
+        },
+        {
+          "text": "check the wipers",
+          "start": 328.24,
+          "duration": 3.519
+        },
+        {
+          "text": "and well the motors check if everything",
+          "start": 329.6,
+          "duration": 3.599
+        },
+        {
+          "text": "works if you're buying a used one",
+          "start": 331.759,
+          "duration": 3.601
+        },
+        {
+          "text": "and now the final one and this is a",
+          "start": 333.199,
+          "duration": 5.201
+        },
+        {
+          "text": "biggie apologies for uh shaking the",
+          "start": 335.36,
+          "duration": 4.399
+        },
+        {
+          "text": "camera i'm trying to be",
+          "start": 338.4,
+          "duration": 5.359
+        },
+        {
+          "text": "dramatic but it is the uh",
+          "start": 339.759,
+          "duration": 6.641
+        },
+        {
+          "text": "fuel level instrument yes you've heard",
+          "start": 343.759,
+          "duration": 4.16
+        },
+        {
+          "text": "me right fuel level now",
+          "start": 346.4,
+          "duration": 3.2
+        },
+        {
+          "text": "what does that have to do with anything",
+          "start": 347.919,
+          "duration": 3.761
+        },
+        {
+          "text": "well the problem is and we've actually",
+          "start": 349.6,
+          "duration": 3.84
+        },
+        {
+          "text": "seen that on a few cars",
+          "start": 351.68,
+          "duration": 5.6
+        },
+        {
+          "text": "and our friends which had a clio rs",
+          "start": 353.44,
+          "duration": 6.64
+        },
+        {
+          "text": "yeah i believe it was a cleo rs the fuel",
+          "start": 357.28,
+          "duration": 3.28
+        },
+        {
+          "text": "level",
+          "start": 360.08,
+          "duration": 3.28
+        },
+        {
+          "text": "will show you it's full it goes down",
+          "start": 360.56,
+          "duration": 4.24
+        },
+        {
+          "text": "then it has half fuel",
+          "start": 363.36,
+          "duration": 2.72
+        },
+        {
+          "text": "and then for some reason you'll be",
+          "start": 364.8,
+          "duration": 3.6
+        },
+        {
+          "text": "driving for quite a long time with half",
+          "start": 366.08,
+          "duration": 3.119
+        },
+        {
+          "text": "a fuel",
+          "start": 368.4,
+          "duration": 3.04
+        },
+        {
+          "text": "half a tank of fuel and then suddenly",
+          "start": 369.199,
+          "duration": 3.521
+        },
+        {
+          "text": "boom you're dead",
+          "start": 371.44,
+          "duration": 3.759
+        },
+        {
+          "text": "on the road not dead dead but without",
+          "start": 372.72,
+          "duration": 3.52
+        },
+        {
+          "text": "any fuel",
+          "start": 375.199,
+          "duration": 4.241
+        },
+        {
+          "text": "so yeah have that checked so the",
+          "start": 376.24,
+          "duration": 5.04
+        },
+        {
+          "text": "question is",
+          "start": 379.44,
+          "duration": 3.84
+        },
+        {
+          "text": "is it really worth buying a used fourth",
+          "start": 381.28,
+          "duration": 3.28
+        },
+        {
+          "text": "generation clio",
+          "start": 383.28,
+          "duration": 4.32
+        },
+        {
+          "text": "or should you just go for a good deal",
+          "start": 384.56,
+          "duration": 5.6
+        },
+        {
+          "text": "on a fifth generation new one which will",
+          "start": 387.6,
+          "duration": 3.84
+        },
+        {
+          "text": "have warranty",
+          "start": 390.16,
+          "duration": 4.4
+        },
+        {
+          "text": "which won't hopefully break down as much",
+          "start": 391.44,
+          "duration": 5.84
+        },
+        {
+          "text": "i mean that's to say they are quite",
+          "start": 394.56,
+          "duration": 4.32
+        },
+        {
+          "text": "reliable i believe but",
+          "start": 397.28,
+          "duration": 3.44
+        },
+        {
+          "text": "it's these little things especially",
+          "start": 398.88,
+          "duration": 3.599
+        },
+        {
+          "text": "electronics and",
+          "start": 400.72,
+          "duration": 8.59
+        },
+        {
+          "text": "software that kind of let it down",
+          "start": 402.479,
+          "duration": 9.96
+        },
+        {
+          "text": "[Music]",
+          "start": 409.31,
+          "duration": 3.129
+        },
+        {
+          "text": "well that's it for me and this weird",
+          "start": 413.12,
+          "duration": 6.4
+        },
+        {
+          "text": "vlogging style thing which probably is",
+          "start": 416.72,
+          "duration": 5.199
+        },
+        {
+          "text": "not going to be very stabilized so again",
+          "start": 419.52,
+          "duration": 3.679
+        },
+        {
+          "text": "apologies about that",
+          "start": 421.919,
+          "duration": 3.28
+        },
+        {
+          "text": "so that was about the fourth generation",
+          "start": 423.199,
+          "duration": 4.4
+        },
+        {
+          "text": "clio's problems yeah think about whether",
+          "start": 425.199,
+          "duration": 3.521
+        },
+        {
+          "text": "you want to buy that",
+          "start": 427.599,
+          "duration": 3.921
+        },
+        {
+          "text": "or a new generation five clio and next",
+          "start": 428.72,
+          "duration": 4.64
+        },
+        {
+          "text": "time we're actually going to talk about",
+          "start": 431.52,
+          "duration": 4.799
+        },
+        {
+          "text": "which engine you should get in a fifth",
+          "start": 433.36,
+          "duration": 5.04
+        },
+        {
+          "text": "generation clio because of course",
+          "start": 436.319,
+          "duration": 5.201
+        },
+        {
+          "text": "diesel or petrol which do i want which",
+          "start": 438.4,
+          "duration": 3.84
+        },
+        {
+          "text": "more one",
+          "start": 441.52,
+          "duration": 4.16
+        },
+        {
+          "text": "is more fun and which one has well",
+          "start": 442.24,
+          "duration": 8.56
+        },
+        {
+          "text": "better fuel consumption until next time",
+          "start": 445.68,
+          "duration": 5.12
+        }
+      ]
+    },
+    {
+      "video_id": "gHsrxWl0O2I",
+      "url": "https://www.youtube.com/watch?v=gHsrxWl0O2I",
+      "title": "RENAULT CLIO 182 BUYERS GUIDE | Here's Why They're Still Worth Buying!",
+      "channel": "Scottish Car Clan",
+      "matched_queries": [
+        "Clio MK2 chronic problems",
+        "Clio MK2 known faults"
+      ],
+      "duration_raw": "10:17",
+      "duration_seconds": 617,
+      "view_count": "47,279 views",
+      "view_count_raw": 47279,
+      "selection_score": 8,
+      "is_niche_mechanic_candidate": true,
+      "video_type_category": "list_format",
+      "video_language": "en",
+      "transcript_status": "ok",
+      "transcript_text": "[Music]\nthis is a Renault Clio 182 and this\nvideo that you're watching is the\ndefinitive guide to them from the\nspecifications when they were new right\nthrough to the common problems that they\ntend to have today we're going to cover\nit all now let's go\n[Music]\nso introduced in 2004 the range of 182s\ncan be a wee bit confusing but let me\ntalk you through it so at the bottom of\nthe food chain we had the basic 182 now\nthat came with just a small spoiler no\nfront lip and suspension maybe a little\nbit higher than we're used to seeing on\nthese cars so from Factory you could\nthen get one of two or even both cut\npacks applied onto that base 182 cut\npack number one was the spoiler cut pack\nthat added a slightly larger spoiler and\nthe front lip to the car cut pack number\ntwo added slightly lower suspension a\nwider track in these anthracite wheels\nthat you see on this car as well even\nalthough this car doesn't have the cut\npack number two so here's where the\nconfusion starts because although those\nare Cup packs you could also get a\nRenault Clio 182 cup which was a\nseparate model altogether now that car\ncame with the two Cup packs as standard\nand the easiest way to spot one of them\nis it won't have the front headlamp\nwashers because they didn't come with\nxenons now the final 182 was the trophy\nif residuals are important to you this\nmight be the one to look at because it\nwas only 500 made therefore they are\nquite rare they were also all painted\nand red as well so you've chosen your\nspecification of Clio you've found a car\nand now you've gone to have a look at it\nwhat do we need to check\nwell let's start under the Bonnet and\nwhat we've got here is largely the same\ntwo liter four cylinder that you found\nin the Clio 172s now it is a really good\nreliable engine so long as it's been\ntaken care of so check that service book\nmake sure it's been serviced on schedule\nand it's not missed any now the most\nsignificant piece of maintenance is the\ntiming belt on these you want to make\nsure that's been done and the seller's\nnot just putting it into your hands as\nthis labor intensive job is required so\nthe interval on that is 72 000 miles or\nfive years whatever comes first so on\nthat receipt for the timing belt you\nalso want to make sure the auxiliary\nbelt and the tensioner has been replaced\nalso that's a pretty comprehensive job\nand that applies to most cars when\nyou're doing the timing belt now if the\ncar's gone to a specialist someone who\nknows these 182s you may even see the\ndefazer pulley has also been replaced\nthis makes up part of the variable valve\ntiming system and if it's not done and\nstart starting to go faulty you'll hear\nit rattle when hot we'll remind you of\nthat later though don't worry so it\nnever hurts to have a quick look under\nfor leaks Unfortunately they could be\nquite common from us engine usually not\na massive problem and part of the reason\nthat this happens is because when\nRenault assembled these engines they\nused a non-solidifying sealant and over\nthe years the oil eats away at it until\nit eventually Finds Its way through\nthere's also a power steering switch\nthat can be quite common for starting to\nleak underneath the engine overall just\nhave a look underneath for any fluids\nand bring that into negotiations if you\nsee anything as I say usually it can be\nput right with not too much cost\nso out in our gearbox failures\nthankfully are not too much of an issue\nit's not common although some of the\ndrivetrain components can be a bit\nsusceptible to wear General stuff like\nthe clutch the drive shafts and whatnot\nbut we'll talk about that a wee bit more\nonce we get out on that test drive now\nwhile we're at the front here something\nworth mentioning the wipers these can\ngive a bit of trouble usually it tends\nto be a bit achieved wiring sometimes in\nthe door or it can be a filled motor as\nwell so check these usually they'll tend\nto stick mid screen and of course if you\nsee them sticking make sure you bring\nthat into the bargain save yourself a\nbit of money to get that put right\nwasher jets these are Infamous for\nbecoming blocked as well might seem\ninsignificant but remember that's an mot\nfailure here in the UK so it's going to\nneed to get rectified as well\nnow before we get on to this next check\na favorite ask from you guys and that is\nwe're dedicated to becoming the largest\ncar buyer Guide channel on YouTube we\nmake these guides for literally every\ntype of car so it might be a worthwhile\nsubscribe for you also if you're getting\nvalue from this go ahead and hit the\nlike button even leave a comment below\nfor us and on another note if you're in\nthe market for one of these 182s and\nyou're looking for one with none of\nthese common problems\nhere she is this car happens to be for\nsale if you want any details on it drop\na comment below or send an email to the\nemail address in the description\nso unfortunately rust is becoming a wee\nbit of a problem on these cars not as\nmuch as the Japanese equivalent however\nit's still something you want to be\nmindful of usually can tend to be around\nthe filler cap it can also be the cells\nas well be careful when you check these\nby the way because it's got these big\nbulky side skirts on you might think\nyou're looking at the metal sill in fact\nyou're looking at a plastic side skirt\nso get your hand right under there make\nsure everything seems okay in another\narea that's coming to light lately is\naround the rear arches not on this car\ndon't get me wrong but on some examples\nyou can see it around that rear Arch\nfront however is plastic so no worries\nthere so something to be mindful of on\nthese cars particularly as they're\ngetting a little bit older is water\nIngress let's start with the boot or\ntrunk for American viewers I don't\nactually know if you get these in\nAmerica do you maybe someone can confirm\nbut make sure you get right under this\ncarpet have a look for any water of\ncourse and also evidence that there\nthose beam what are there any mold or\nany staining is a dead giveaway quite\noften it is just these little rubber\nbuns that we've got on the side here\nthey can get slightly gummed up they\njust need taken out cleaned a bit of\ntiger seal on there for good measure and\nthat should take care of it but of\ncourse bring that up with the seller\nkeep a little bit of money back we like\na bargain so while we're on that topic\nof water Ingress of course check the\ninterior carpets and under the seats as\nwell there's a few different areas that\nwater can find its way in there's some\nblocked Scuttle drains and also these\ndoor seals can give out let us know if\nyou'd like a DIY filmed of all the\ncommon areas that can cause this kind of\nproblem but for right now we're just\nhighlighting it for you so you can bring\nit up with that sailor and save yourself\na bit of money right I think that's\nenough let's hit the road now\nforeign\nyou know what in our contemporary world\nfull of Mega Power hotches the 182\nreally is a breath of fresh air it kind\nof hearkens back to time when you had to\ncarry a bit of speed through corners you\nhad the plan overtakes a little bit more\ncarefully because you just don't have\nthose slabs of turbocharged torque it\nreally is a fun little car and if what\nyou're looking for is a small involving\nfun car you're not going to be\ndisappointed but anyway what do we need\nto check out on this test drive\nso first thing it's not actually a\nproblem but something I want to make you\naware of and that is you get a fair bit\nof movement out of this gear stick not\nan issue as I say the mounts for them\nare quite weak even if they're in good\ncondition so don't worry about that but\nyou do need to be concerned with however\nis the clutch in the drive shaft so that\nwas something we mentioned just briefly\nback at the garage so the clutch like\nany other car get it in a higher gear\nfloor the throttle and make sure those\nrevs aren't shutting up without the car\ngaining any momentum it's a\nself-adjusting clutch so if it's\nstarting to get high near the top of the\npedal that clutch might need replacement\nsoon and obviously labor intensive job\nyou don't want it all coming out of your\npocket so bring a bit off the coast if\nyou can\ndrive shafts again this is an item that\ncan wear and go wrong and usually you're\ngoing to feel that as a vibration coming\nthrough the steering wheel so just bear\nin mind something quite trivial but it\nis a little bit nasty the touch as the\nsteering wheel can kind of melt it's\nthis cheap leather and as it melts you\nstart to feel it on your hands it can be\na bit sticky so again if that's\nsomething that's going to bother you and\nthe car is a nicer example unfortunately\nthis car does have it that's the only\nthing this car has it's a little bit of\na negative you can maybe bring that into\nthe price keep enough money back so you\ncan get that re-trimmed and looking good\nnow the final thing on this test drive\nof the car is listen out for the rear\nwheel bearings they're susceptible to\nwear and when they do they start to make\nthat wheel bearing Rumble noise like\nroller skates on a concrete floor just\nlisten out for it again it's not the end\nof the world but if it keeps you a bit\nof money back then spread it in your\npocket than the sellers isn't it right\nthat's all the checks you need to do but\ndon't click off of this video just yet\nwait and see what we give it and the\nreliability leaderboard so the Clio 182\nthen how does it score on a reliability\nleaderboard well they actually are\npretty reliable and the grand scheme of\nthings they are simple cars there's not\nan awful lot to go wrong but that being\nsaid there are a couple little bits as\nthey get older a little bit of rust\nwiper motors that sort of thing so it\ncertainly takes a point or two off but\noverall we give it a very respectable\n7.5 out of 10. now thank you so much for\nwatching hit that subscribe button give\nthis video a like and we'll see you on\nthe next one\nforeign",
+      "transcript_segments": [
+        {
+          "text": "[Music]",
+          "start": 0.68,
+          "duration": 5.26
+        },
+        {
+          "text": "this is a Renault Clio 182 and this",
+          "start": 1.94,
+          "duration": 6.04
+        },
+        {
+          "text": "video that you're watching is the",
+          "start": 5.94,
+          "duration": 3.96
+        },
+        {
+          "text": "definitive guide to them from the",
+          "start": 7.98,
+          "duration": 4.079
+        },
+        {
+          "text": "specifications when they were new right",
+          "start": 9.9,
+          "duration": 4.14
+        },
+        {
+          "text": "through to the common problems that they",
+          "start": 12.059,
+          "duration": 3.721
+        },
+        {
+          "text": "tend to have today we're going to cover",
+          "start": 14.04,
+          "duration": 3.26
+        },
+        {
+          "text": "it all now let's go",
+          "start": 15.78,
+          "duration": 16.74
+        },
+        {
+          "text": "[Music]",
+          "start": 17.3,
+          "duration": 19.18
+        },
+        {
+          "text": "so introduced in 2004 the range of 182s",
+          "start": 32.52,
+          "duration": 6.36
+        },
+        {
+          "text": "can be a wee bit confusing but let me",
+          "start": 36.48,
+          "duration": 4.079
+        },
+        {
+          "text": "talk you through it so at the bottom of",
+          "start": 38.88,
+          "duration": 4.74
+        },
+        {
+          "text": "the food chain we had the basic 182 now",
+          "start": 40.559,
+          "duration": 5.34
+        },
+        {
+          "text": "that came with just a small spoiler no",
+          "start": 43.62,
+          "duration": 4.68
+        },
+        {
+          "text": "front lip and suspension maybe a little",
+          "start": 45.899,
+          "duration": 4.441
+        },
+        {
+          "text": "bit higher than we're used to seeing on",
+          "start": 48.3,
+          "duration": 4.62
+        },
+        {
+          "text": "these cars so from Factory you could",
+          "start": 50.34,
+          "duration": 5.399
+        },
+        {
+          "text": "then get one of two or even both cut",
+          "start": 52.92,
+          "duration": 6.54
+        },
+        {
+          "text": "packs applied onto that base 182 cut",
+          "start": 55.739,
+          "duration": 6.3
+        },
+        {
+          "text": "pack number one was the spoiler cut pack",
+          "start": 59.46,
+          "duration": 5.94
+        },
+        {
+          "text": "that added a slightly larger spoiler and",
+          "start": 62.039,
+          "duration": 5.641
+        },
+        {
+          "text": "the front lip to the car cut pack number",
+          "start": 65.4,
+          "duration": 5.28
+        },
+        {
+          "text": "two added slightly lower suspension a",
+          "start": 67.68,
+          "duration": 5.58
+        },
+        {
+          "text": "wider track in these anthracite wheels",
+          "start": 70.68,
+          "duration": 4.68
+        },
+        {
+          "text": "that you see on this car as well even",
+          "start": 73.26,
+          "duration": 3.66
+        },
+        {
+          "text": "although this car doesn't have the cut",
+          "start": 75.36,
+          "duration": 3.9
+        },
+        {
+          "text": "pack number two so here's where the",
+          "start": 76.92,
+          "duration": 4.68
+        },
+        {
+          "text": "confusion starts because although those",
+          "start": 79.26,
+          "duration": 5.34
+        },
+        {
+          "text": "are Cup packs you could also get a",
+          "start": 81.6,
+          "duration": 6.059
+        },
+        {
+          "text": "Renault Clio 182 cup which was a",
+          "start": 84.6,
+          "duration": 5.1
+        },
+        {
+          "text": "separate model altogether now that car",
+          "start": 87.659,
+          "duration": 4.801
+        },
+        {
+          "text": "came with the two Cup packs as standard",
+          "start": 89.7,
+          "duration": 4.68
+        },
+        {
+          "text": "and the easiest way to spot one of them",
+          "start": 92.46,
+          "duration": 4.019
+        },
+        {
+          "text": "is it won't have the front headlamp",
+          "start": 94.38,
+          "duration": 4.199
+        },
+        {
+          "text": "washers because they didn't come with",
+          "start": 96.479,
+          "duration": 5.82
+        },
+        {
+          "text": "xenons now the final 182 was the trophy",
+          "start": 98.579,
+          "duration": 6.121
+        },
+        {
+          "text": "if residuals are important to you this",
+          "start": 102.299,
+          "duration": 3.901
+        },
+        {
+          "text": "might be the one to look at because it",
+          "start": 104.7,
+          "duration": 3.9
+        },
+        {
+          "text": "was only 500 made therefore they are",
+          "start": 106.2,
+          "duration": 4.62
+        },
+        {
+          "text": "quite rare they were also all painted",
+          "start": 108.6,
+          "duration": 4.92
+        },
+        {
+          "text": "and red as well so you've chosen your",
+          "start": 110.82,
+          "duration": 5.159
+        },
+        {
+          "text": "specification of Clio you've found a car",
+          "start": 113.52,
+          "duration": 4.44
+        },
+        {
+          "text": "and now you've gone to have a look at it",
+          "start": 115.979,
+          "duration": 3.541
+        },
+        {
+          "text": "what do we need to check",
+          "start": 117.96,
+          "duration": 3.42
+        },
+        {
+          "text": "well let's start under the Bonnet and",
+          "start": 119.52,
+          "duration": 4.26
+        },
+        {
+          "text": "what we've got here is largely the same",
+          "start": 121.38,
+          "duration": 4.379
+        },
+        {
+          "text": "two liter four cylinder that you found",
+          "start": 123.78,
+          "duration": 5.22
+        },
+        {
+          "text": "in the Clio 172s now it is a really good",
+          "start": 125.759,
+          "duration": 5.161
+        },
+        {
+          "text": "reliable engine so long as it's been",
+          "start": 129.0,
+          "duration": 4.44
+        },
+        {
+          "text": "taken care of so check that service book",
+          "start": 130.92,
+          "duration": 4.92
+        },
+        {
+          "text": "make sure it's been serviced on schedule",
+          "start": 133.44,
+          "duration": 4.74
+        },
+        {
+          "text": "and it's not missed any now the most",
+          "start": 135.84,
+          "duration": 4.74
+        },
+        {
+          "text": "significant piece of maintenance is the",
+          "start": 138.18,
+          "duration": 3.9
+        },
+        {
+          "text": "timing belt on these you want to make",
+          "start": 140.58,
+          "duration": 3.36
+        },
+        {
+          "text": "sure that's been done and the seller's",
+          "start": 142.08,
+          "duration": 3.96
+        },
+        {
+          "text": "not just putting it into your hands as",
+          "start": 143.94,
+          "duration": 4.68
+        },
+        {
+          "text": "this labor intensive job is required so",
+          "start": 146.04,
+          "duration": 5.58
+        },
+        {
+          "text": "the interval on that is 72 000 miles or",
+          "start": 148.62,
+          "duration": 6.119
+        },
+        {
+          "text": "five years whatever comes first so on",
+          "start": 151.62,
+          "duration": 4.8
+        },
+        {
+          "text": "that receipt for the timing belt you",
+          "start": 154.739,
+          "duration": 3.541
+        },
+        {
+          "text": "also want to make sure the auxiliary",
+          "start": 156.42,
+          "duration": 4.02
+        },
+        {
+          "text": "belt and the tensioner has been replaced",
+          "start": 158.28,
+          "duration": 4.739
+        },
+        {
+          "text": "also that's a pretty comprehensive job",
+          "start": 160.44,
+          "duration": 4.74
+        },
+        {
+          "text": "and that applies to most cars when",
+          "start": 163.019,
+          "duration": 4.321
+        },
+        {
+          "text": "you're doing the timing belt now if the",
+          "start": 165.18,
+          "duration": 4.26
+        },
+        {
+          "text": "car's gone to a specialist someone who",
+          "start": 167.34,
+          "duration": 4.92
+        },
+        {
+          "text": "knows these 182s you may even see the",
+          "start": 169.44,
+          "duration": 5.159
+        },
+        {
+          "text": "defazer pulley has also been replaced",
+          "start": 172.26,
+          "duration": 4.74
+        },
+        {
+          "text": "this makes up part of the variable valve",
+          "start": 174.599,
+          "duration": 4.621
+        },
+        {
+          "text": "timing system and if it's not done and",
+          "start": 177.0,
+          "duration": 4.319
+        },
+        {
+          "text": "start starting to go faulty you'll hear",
+          "start": 179.22,
+          "duration": 4.2
+        },
+        {
+          "text": "it rattle when hot we'll remind you of",
+          "start": 181.319,
+          "duration": 3.901
+        },
+        {
+          "text": "that later though don't worry so it",
+          "start": 183.42,
+          "duration": 3.42
+        },
+        {
+          "text": "never hurts to have a quick look under",
+          "start": 185.22,
+          "duration": 4.019
+        },
+        {
+          "text": "for leaks Unfortunately they could be",
+          "start": 186.84,
+          "duration": 4.38
+        },
+        {
+          "text": "quite common from us engine usually not",
+          "start": 189.239,
+          "duration": 4.08
+        },
+        {
+          "text": "a massive problem and part of the reason",
+          "start": 191.22,
+          "duration": 3.72
+        },
+        {
+          "text": "that this happens is because when",
+          "start": 193.319,
+          "duration": 3.78
+        },
+        {
+          "text": "Renault assembled these engines they",
+          "start": 194.94,
+          "duration": 4.86
+        },
+        {
+          "text": "used a non-solidifying sealant and over",
+          "start": 197.099,
+          "duration": 4.681
+        },
+        {
+          "text": "the years the oil eats away at it until",
+          "start": 199.8,
+          "duration": 3.6
+        },
+        {
+          "text": "it eventually Finds Its way through",
+          "start": 201.78,
+          "duration": 3.84
+        },
+        {
+          "text": "there's also a power steering switch",
+          "start": 203.4,
+          "duration": 4.5
+        },
+        {
+          "text": "that can be quite common for starting to",
+          "start": 205.62,
+          "duration": 4.74
+        },
+        {
+          "text": "leak underneath the engine overall just",
+          "start": 207.9,
+          "duration": 4.38
+        },
+        {
+          "text": "have a look underneath for any fluids",
+          "start": 210.36,
+          "duration": 4.5
+        },
+        {
+          "text": "and bring that into negotiations if you",
+          "start": 212.28,
+          "duration": 4.739
+        },
+        {
+          "text": "see anything as I say usually it can be",
+          "start": 214.86,
+          "duration": 4.799
+        },
+        {
+          "text": "put right with not too much cost",
+          "start": 217.019,
+          "duration": 4.701
+        },
+        {
+          "text": "so out in our gearbox failures",
+          "start": 219.659,
+          "duration": 4.681
+        },
+        {
+          "text": "thankfully are not too much of an issue",
+          "start": 221.72,
+          "duration": 4.299
+        },
+        {
+          "text": "it's not common although some of the",
+          "start": 224.34,
+          "duration": 3.84
+        },
+        {
+          "text": "drivetrain components can be a bit",
+          "start": 226.019,
+          "duration": 4.5
+        },
+        {
+          "text": "susceptible to wear General stuff like",
+          "start": 228.18,
+          "duration": 4.08
+        },
+        {
+          "text": "the clutch the drive shafts and whatnot",
+          "start": 230.519,
+          "duration": 4.201
+        },
+        {
+          "text": "but we'll talk about that a wee bit more",
+          "start": 232.26,
+          "duration": 5.399
+        },
+        {
+          "text": "once we get out on that test drive now",
+          "start": 234.72,
+          "duration": 4.2
+        },
+        {
+          "text": "while we're at the front here something",
+          "start": 237.659,
+          "duration": 3.601
+        },
+        {
+          "text": "worth mentioning the wipers these can",
+          "start": 238.92,
+          "duration": 4.26
+        },
+        {
+          "text": "give a bit of trouble usually it tends",
+          "start": 241.26,
+          "duration": 4.08
+        },
+        {
+          "text": "to be a bit achieved wiring sometimes in",
+          "start": 243.18,
+          "duration": 5.22
+        },
+        {
+          "text": "the door or it can be a filled motor as",
+          "start": 245.34,
+          "duration": 5.52
+        },
+        {
+          "text": "well so check these usually they'll tend",
+          "start": 248.4,
+          "duration": 4.74
+        },
+        {
+          "text": "to stick mid screen and of course if you",
+          "start": 250.86,
+          "duration": 3.78
+        },
+        {
+          "text": "see them sticking make sure you bring",
+          "start": 253.14,
+          "duration": 3.36
+        },
+        {
+          "text": "that into the bargain save yourself a",
+          "start": 254.64,
+          "duration": 3.559
+        },
+        {
+          "text": "bit of money to get that put right",
+          "start": 256.5,
+          "duration": 4.32
+        },
+        {
+          "text": "washer jets these are Infamous for",
+          "start": 258.199,
+          "duration": 4.661
+        },
+        {
+          "text": "becoming blocked as well might seem",
+          "start": 260.82,
+          "duration": 4.319
+        },
+        {
+          "text": "insignificant but remember that's an mot",
+          "start": 262.86,
+          "duration": 4.619
+        },
+        {
+          "text": "failure here in the UK so it's going to",
+          "start": 265.139,
+          "duration": 4.261
+        },
+        {
+          "text": "need to get rectified as well",
+          "start": 267.479,
+          "duration": 4.081
+        },
+        {
+          "text": "now before we get on to this next check",
+          "start": 269.4,
+          "duration": 4.859
+        },
+        {
+          "text": "a favorite ask from you guys and that is",
+          "start": 271.56,
+          "duration": 5.28
+        },
+        {
+          "text": "we're dedicated to becoming the largest",
+          "start": 274.259,
+          "duration": 5.341
+        },
+        {
+          "text": "car buyer Guide channel on YouTube we",
+          "start": 276.84,
+          "duration": 4.74
+        },
+        {
+          "text": "make these guides for literally every",
+          "start": 279.6,
+          "duration": 4.44
+        },
+        {
+          "text": "type of car so it might be a worthwhile",
+          "start": 281.58,
+          "duration": 4.679
+        },
+        {
+          "text": "subscribe for you also if you're getting",
+          "start": 284.04,
+          "duration": 3.78
+        },
+        {
+          "text": "value from this go ahead and hit the",
+          "start": 286.259,
+          "duration": 3.301
+        },
+        {
+          "text": "like button even leave a comment below",
+          "start": 287.82,
+          "duration": 4.8
+        },
+        {
+          "text": "for us and on another note if you're in",
+          "start": 289.56,
+          "duration": 5.699
+        },
+        {
+          "text": "the market for one of these 182s and",
+          "start": 292.62,
+          "duration": 4.079
+        },
+        {
+          "text": "you're looking for one with none of",
+          "start": 295.259,
+          "duration": 2.94
+        },
+        {
+          "text": "these common problems",
+          "start": 296.699,
+          "duration": 4.021
+        },
+        {
+          "text": "here she is this car happens to be for",
+          "start": 298.199,
+          "duration": 5.341
+        },
+        {
+          "text": "sale if you want any details on it drop",
+          "start": 300.72,
+          "duration": 5.4
+        },
+        {
+          "text": "a comment below or send an email to the",
+          "start": 303.54,
+          "duration": 4.98
+        },
+        {
+          "text": "email address in the description",
+          "start": 306.12,
+          "duration": 5.22
+        },
+        {
+          "text": "so unfortunately rust is becoming a wee",
+          "start": 308.52,
+          "duration": 5.16
+        },
+        {
+          "text": "bit of a problem on these cars not as",
+          "start": 311.34,
+          "duration": 4.56
+        },
+        {
+          "text": "much as the Japanese equivalent however",
+          "start": 313.68,
+          "duration": 3.54
+        },
+        {
+          "text": "it's still something you want to be",
+          "start": 315.9,
+          "duration": 4.2
+        },
+        {
+          "text": "mindful of usually can tend to be around",
+          "start": 317.22,
+          "duration": 5.28
+        },
+        {
+          "text": "the filler cap it can also be the cells",
+          "start": 320.1,
+          "duration": 4.5
+        },
+        {
+          "text": "as well be careful when you check these",
+          "start": 322.5,
+          "duration": 3.66
+        },
+        {
+          "text": "by the way because it's got these big",
+          "start": 324.6,
+          "duration": 3.78
+        },
+        {
+          "text": "bulky side skirts on you might think",
+          "start": 326.16,
+          "duration": 4.02
+        },
+        {
+          "text": "you're looking at the metal sill in fact",
+          "start": 328.38,
+          "duration": 3.96
+        },
+        {
+          "text": "you're looking at a plastic side skirt",
+          "start": 330.18,
+          "duration": 4.019
+        },
+        {
+          "text": "so get your hand right under there make",
+          "start": 332.34,
+          "duration": 4.199
+        },
+        {
+          "text": "sure everything seems okay in another",
+          "start": 334.199,
+          "duration": 4.921
+        },
+        {
+          "text": "area that's coming to light lately is",
+          "start": 336.539,
+          "duration": 4.981
+        },
+        {
+          "text": "around the rear arches not on this car",
+          "start": 339.12,
+          "duration": 4.859
+        },
+        {
+          "text": "don't get me wrong but on some examples",
+          "start": 341.52,
+          "duration": 4.26
+        },
+        {
+          "text": "you can see it around that rear Arch",
+          "start": 343.979,
+          "duration": 5.101
+        },
+        {
+          "text": "front however is plastic so no worries",
+          "start": 345.78,
+          "duration": 5.699
+        },
+        {
+          "text": "there so something to be mindful of on",
+          "start": 349.08,
+          "duration": 4.14
+        },
+        {
+          "text": "these cars particularly as they're",
+          "start": 351.479,
+          "duration": 3.361
+        },
+        {
+          "text": "getting a little bit older is water",
+          "start": 353.22,
+          "duration": 3.84
+        },
+        {
+          "text": "Ingress let's start with the boot or",
+          "start": 354.84,
+          "duration": 4.62
+        },
+        {
+          "text": "trunk for American viewers I don't",
+          "start": 357.06,
+          "duration": 3.479
+        },
+        {
+          "text": "actually know if you get these in",
+          "start": 359.46,
+          "duration": 3.06
+        },
+        {
+          "text": "America do you maybe someone can confirm",
+          "start": 360.539,
+          "duration": 3.841
+        },
+        {
+          "text": "but make sure you get right under this",
+          "start": 362.52,
+          "duration": 4.14
+        },
+        {
+          "text": "carpet have a look for any water of",
+          "start": 364.38,
+          "duration": 4.08
+        },
+        {
+          "text": "course and also evidence that there",
+          "start": 366.66,
+          "duration": 4.74
+        },
+        {
+          "text": "those beam what are there any mold or",
+          "start": 368.46,
+          "duration": 5.34
+        },
+        {
+          "text": "any staining is a dead giveaway quite",
+          "start": 371.4,
+          "duration": 4.019
+        },
+        {
+          "text": "often it is just these little rubber",
+          "start": 373.8,
+          "duration": 3.119
+        },
+        {
+          "text": "buns that we've got on the side here",
+          "start": 375.419,
+          "duration": 3.72
+        },
+        {
+          "text": "they can get slightly gummed up they",
+          "start": 376.919,
+          "duration": 4.141
+        },
+        {
+          "text": "just need taken out cleaned a bit of",
+          "start": 379.139,
+          "duration": 3.961
+        },
+        {
+          "text": "tiger seal on there for good measure and",
+          "start": 381.06,
+          "duration": 3.84
+        },
+        {
+          "text": "that should take care of it but of",
+          "start": 383.1,
+          "duration": 3.3
+        },
+        {
+          "text": "course bring that up with the seller",
+          "start": 384.9,
+          "duration": 3.359
+        },
+        {
+          "text": "keep a little bit of money back we like",
+          "start": 386.4,
+          "duration": 4.2
+        },
+        {
+          "text": "a bargain so while we're on that topic",
+          "start": 388.259,
+          "duration": 4.681
+        },
+        {
+          "text": "of water Ingress of course check the",
+          "start": 390.6,
+          "duration": 4.5
+        },
+        {
+          "text": "interior carpets and under the seats as",
+          "start": 392.94,
+          "duration": 4.259
+        },
+        {
+          "text": "well there's a few different areas that",
+          "start": 395.1,
+          "duration": 4.08
+        },
+        {
+          "text": "water can find its way in there's some",
+          "start": 397.199,
+          "duration": 4.081
+        },
+        {
+          "text": "blocked Scuttle drains and also these",
+          "start": 399.18,
+          "duration": 4.32
+        },
+        {
+          "text": "door seals can give out let us know if",
+          "start": 401.28,
+          "duration": 4.56
+        },
+        {
+          "text": "you'd like a DIY filmed of all the",
+          "start": 403.5,
+          "duration": 4.319
+        },
+        {
+          "text": "common areas that can cause this kind of",
+          "start": 405.84,
+          "duration": 4.139
+        },
+        {
+          "text": "problem but for right now we're just",
+          "start": 407.819,
+          "duration": 3.72
+        },
+        {
+          "text": "highlighting it for you so you can bring",
+          "start": 409.979,
+          "duration": 3.361
+        },
+        {
+          "text": "it up with that sailor and save yourself",
+          "start": 411.539,
+          "duration": 3.72
+        },
+        {
+          "text": "a bit of money right I think that's",
+          "start": 413.34,
+          "duration": 5.4
+        },
+        {
+          "text": "enough let's hit the road now",
+          "start": 415.259,
+          "duration": 6.481
+        },
+        {
+          "text": "foreign",
+          "start": 418.74,
+          "duration": 3.0
+        },
+        {
+          "text": "you know what in our contemporary world",
+          "start": 425.039,
+          "duration": 6.241
+        },
+        {
+          "text": "full of Mega Power hotches the 182",
+          "start": 428.039,
+          "duration": 5.94
+        },
+        {
+          "text": "really is a breath of fresh air it kind",
+          "start": 431.28,
+          "duration": 5.22
+        },
+        {
+          "text": "of hearkens back to time when you had to",
+          "start": 433.979,
+          "duration": 4.741
+        },
+        {
+          "text": "carry a bit of speed through corners you",
+          "start": 436.5,
+          "duration": 4.199
+        },
+        {
+          "text": "had the plan overtakes a little bit more",
+          "start": 438.72,
+          "duration": 3.84
+        },
+        {
+          "text": "carefully because you just don't have",
+          "start": 440.699,
+          "duration": 4.921
+        },
+        {
+          "text": "those slabs of turbocharged torque it",
+          "start": 442.56,
+          "duration": 5.22
+        },
+        {
+          "text": "really is a fun little car and if what",
+          "start": 445.62,
+          "duration": 5.4
+        },
+        {
+          "text": "you're looking for is a small involving",
+          "start": 447.78,
+          "duration": 5.1
+        },
+        {
+          "text": "fun car you're not going to be",
+          "start": 451.02,
+          "duration": 4.26
+        },
+        {
+          "text": "disappointed but anyway what do we need",
+          "start": 452.88,
+          "duration": 5.099
+        },
+        {
+          "text": "to check out on this test drive",
+          "start": 455.28,
+          "duration": 5.039
+        },
+        {
+          "text": "so first thing it's not actually a",
+          "start": 457.979,
+          "duration": 3.601
+        },
+        {
+          "text": "problem but something I want to make you",
+          "start": 460.319,
+          "duration": 3.361
+        },
+        {
+          "text": "aware of and that is you get a fair bit",
+          "start": 461.58,
+          "duration": 4.32
+        },
+        {
+          "text": "of movement out of this gear stick not",
+          "start": 463.68,
+          "duration": 4.44
+        },
+        {
+          "text": "an issue as I say the mounts for them",
+          "start": 465.9,
+          "duration": 3.84
+        },
+        {
+          "text": "are quite weak even if they're in good",
+          "start": 468.12,
+          "duration": 3.96
+        },
+        {
+          "text": "condition so don't worry about that but",
+          "start": 469.74,
+          "duration": 3.959
+        },
+        {
+          "text": "you do need to be concerned with however",
+          "start": 472.08,
+          "duration": 3.839
+        },
+        {
+          "text": "is the clutch in the drive shaft so that",
+          "start": 473.699,
+          "duration": 3.601
+        },
+        {
+          "text": "was something we mentioned just briefly",
+          "start": 475.919,
+          "duration": 3.481
+        },
+        {
+          "text": "back at the garage so the clutch like",
+          "start": 477.3,
+          "duration": 4.799
+        },
+        {
+          "text": "any other car get it in a higher gear",
+          "start": 479.4,
+          "duration": 4.739
+        },
+        {
+          "text": "floor the throttle and make sure those",
+          "start": 482.099,
+          "duration": 4.38
+        },
+        {
+          "text": "revs aren't shutting up without the car",
+          "start": 484.139,
+          "duration": 4.141
+        },
+        {
+          "text": "gaining any momentum it's a",
+          "start": 486.479,
+          "duration": 3.78
+        },
+        {
+          "text": "self-adjusting clutch so if it's",
+          "start": 488.28,
+          "duration": 3.84
+        },
+        {
+          "text": "starting to get high near the top of the",
+          "start": 490.259,
+          "duration": 3.66
+        },
+        {
+          "text": "pedal that clutch might need replacement",
+          "start": 492.12,
+          "duration": 4.44
+        },
+        {
+          "text": "soon and obviously labor intensive job",
+          "start": 493.919,
+          "duration": 4.441
+        },
+        {
+          "text": "you don't want it all coming out of your",
+          "start": 496.56,
+          "duration": 4.139
+        },
+        {
+          "text": "pocket so bring a bit off the coast if",
+          "start": 498.36,
+          "duration": 3.179
+        },
+        {
+          "text": "you can",
+          "start": 500.699,
+          "duration": 3.78
+        },
+        {
+          "text": "drive shafts again this is an item that",
+          "start": 501.539,
+          "duration": 5.22
+        },
+        {
+          "text": "can wear and go wrong and usually you're",
+          "start": 504.479,
+          "duration": 4.321
+        },
+        {
+          "text": "going to feel that as a vibration coming",
+          "start": 506.759,
+          "duration": 3.961
+        },
+        {
+          "text": "through the steering wheel so just bear",
+          "start": 508.8,
+          "duration": 5.58
+        },
+        {
+          "text": "in mind something quite trivial but it",
+          "start": 510.72,
+          "duration": 6.42
+        },
+        {
+          "text": "is a little bit nasty the touch as the",
+          "start": 514.38,
+          "duration": 4.44
+        },
+        {
+          "text": "steering wheel can kind of melt it's",
+          "start": 517.14,
+          "duration": 4.019
+        },
+        {
+          "text": "this cheap leather and as it melts you",
+          "start": 518.82,
+          "duration": 3.779
+        },
+        {
+          "text": "start to feel it on your hands it can be",
+          "start": 521.159,
+          "duration": 3.3
+        },
+        {
+          "text": "a bit sticky so again if that's",
+          "start": 522.599,
+          "duration": 3.36
+        },
+        {
+          "text": "something that's going to bother you and",
+          "start": 524.459,
+          "duration": 3.721
+        },
+        {
+          "text": "the car is a nicer example unfortunately",
+          "start": 525.959,
+          "duration": 3.841
+        },
+        {
+          "text": "this car does have it that's the only",
+          "start": 528.18,
+          "duration": 3.36
+        },
+        {
+          "text": "thing this car has it's a little bit of",
+          "start": 529.8,
+          "duration": 3.659
+        },
+        {
+          "text": "a negative you can maybe bring that into",
+          "start": 531.54,
+          "duration": 4.44
+        },
+        {
+          "text": "the price keep enough money back so you",
+          "start": 533.459,
+          "duration": 4.861
+        },
+        {
+          "text": "can get that re-trimmed and looking good",
+          "start": 535.98,
+          "duration": 4.919
+        },
+        {
+          "text": "now the final thing on this test drive",
+          "start": 538.32,
+          "duration": 5.639
+        },
+        {
+          "text": "of the car is listen out for the rear",
+          "start": 540.899,
+          "duration": 5.101
+        },
+        {
+          "text": "wheel bearings they're susceptible to",
+          "start": 543.959,
+          "duration": 3.961
+        },
+        {
+          "text": "wear and when they do they start to make",
+          "start": 546.0,
+          "duration": 3.959
+        },
+        {
+          "text": "that wheel bearing Rumble noise like",
+          "start": 547.92,
+          "duration": 4.26
+        },
+        {
+          "text": "roller skates on a concrete floor just",
+          "start": 549.959,
+          "duration": 3.961
+        },
+        {
+          "text": "listen out for it again it's not the end",
+          "start": 552.18,
+          "duration": 3.48
+        },
+        {
+          "text": "of the world but if it keeps you a bit",
+          "start": 553.92,
+          "duration": 3.78
+        },
+        {
+          "text": "of money back then spread it in your",
+          "start": 555.66,
+          "duration": 4.44
+        },
+        {
+          "text": "pocket than the sellers isn't it right",
+          "start": 557.7,
+          "duration": 4.199
+        },
+        {
+          "text": "that's all the checks you need to do but",
+          "start": 560.1,
+          "duration": 3.6
+        },
+        {
+          "text": "don't click off of this video just yet",
+          "start": 561.899,
+          "duration": 4.201
+        },
+        {
+          "text": "wait and see what we give it and the",
+          "start": 563.7,
+          "duration": 5.52
+        },
+        {
+          "text": "reliability leaderboard so the Clio 182",
+          "start": 566.1,
+          "duration": 5.58
+        },
+        {
+          "text": "then how does it score on a reliability",
+          "start": 569.22,
+          "duration": 4.739
+        },
+        {
+          "text": "leaderboard well they actually are",
+          "start": 571.68,
+          "duration": 4.56
+        },
+        {
+          "text": "pretty reliable and the grand scheme of",
+          "start": 573.959,
+          "duration": 4.741
+        },
+        {
+          "text": "things they are simple cars there's not",
+          "start": 576.24,
+          "duration": 4.98
+        },
+        {
+          "text": "an awful lot to go wrong but that being",
+          "start": 578.7,
+          "duration": 4.62
+        },
+        {
+          "text": "said there are a couple little bits as",
+          "start": 581.22,
+          "duration": 3.78
+        },
+        {
+          "text": "they get older a little bit of rust",
+          "start": 583.32,
+          "duration": 4.079
+        },
+        {
+          "text": "wiper motors that sort of thing so it",
+          "start": 585.0,
+          "duration": 4.62
+        },
+        {
+          "text": "certainly takes a point or two off but",
+          "start": 587.399,
+          "duration": 4.701
+        },
+        {
+          "text": "overall we give it a very respectable",
+          "start": 589.62,
+          "duration": 6.36
+        },
+        {
+          "text": "7.5 out of 10. now thank you so much for",
+          "start": 592.1,
+          "duration": 6.1
+        },
+        {
+          "text": "watching hit that subscribe button give",
+          "start": 595.98,
+          "duration": 4.44
+        },
+        {
+          "text": "this video a like and we'll see you on",
+          "start": 598.2,
+          "duration": 4.699
+        },
+        {
+          "text": "the next one",
+          "start": 600.42,
+          "duration": 2.479
+        },
+        {
+          "text": "foreign",
+          "start": 606.6,
+          "duration": 3.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+--- Technical Details ---
+Ad No: 1306075134
+Ad Date: 20 April 2026
+Make: Volkswagen
+Series: Golf
+Model: 1.4 TSI Highline
+Year: 2016
+Fuel Type: Gasoline
+Gear: Automatic
+Vehicle Status: Second Hand
+Body Type: Hatchback 5-door
+KM: 79.000
+Engine Power: 125 hp
+Engine Capacity: 1395 cc
+Wheel Drive: Front-Wheel Drive
+Color: White
+Warranty: No
+Salvage Record: No
+Plate: Turkish (TR) Plate
+From: Dealer
+Exchange: No

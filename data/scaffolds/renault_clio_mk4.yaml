@@ -25,6 +25,8 @@ engine_families:
     displacements:
       - code: "0.9_TCE"
         year_range: [2013, 2019]
+        displacement_cc: 898
+        search_alias: ["0.9 TCE", "900 TCE"]
 
   - code: H5Ft
     fuel_type: petrol
@@ -32,6 +34,8 @@ engine_families:
     displacements:
       - code: "1.2_TCE"
         year_range: [2013, 2018]
+        displacement_cc: 1197
+        search_alias: ["1.2 TCE", "1.2 turbo"]
 
   - code: D4F
     fuel_type: petrol
@@ -39,6 +43,8 @@ engine_families:
     displacements:
       - code: "1.2_NA"
         year_range: [2013, 2016]   # carried over from Clio III, phased out Phase I
+        displacement_cc: 1149
+        search_alias: ["1.2 16V", "1.2 benzinli"]
 
   - code: K9K
     fuel_type: diesel
@@ -46,6 +52,8 @@ engine_families:
     displacements:
       - code: "1.5_DCI"
         year_range: [2013, 2019]
+        displacement_cc: 1461
+        search_alias: ["1.5 dCi", "1.5 dizel"]
 
 transmissions:
   - code: EDC6

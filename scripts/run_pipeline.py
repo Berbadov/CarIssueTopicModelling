@@ -170,7 +170,7 @@ def main() -> int:
     )
     # Passthrough flags for scrape
     parser.add_argument("--max-videos", type=int, default=30)
-    parser.add_argument("--min-views", type=int, default=80_000)
+    parser.add_argument("--min-views", type=int, default=20_000)
     parser.add_argument("--disable-prefilter", action="store_true")
     parser.add_argument("--lang", default="en", help="Language code (en/tr)")
 

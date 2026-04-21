@@ -1,0 +1,99 @@
+meta:
+  make: VW
+  model: Golf MK8
+  generation: MK8
+  corpus_years:
+  - 2020
+  - 2025
+facelifts:
+- year: 2024
+  label: MK8.5
+  pre_label: MK8 pre-facelift
+engine_families:
+- code: EA211
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: 1.0_TSI
+    year_range:
+    - 2020
+    - 2025
+  - code: 1.5_TSI
+    year_range:
+    - 2020
+    - 2025
+- code: EA211_HYBRID
+  fuel_type: hybrid
+  timing_drive: belt
+  displacements:
+  - code: 1.0_ETSI
+    year_range:
+    - 2020
+    - 2025
+  - code: 1.4_EHYBRID
+    year_range:
+    - 2020
+    - 2025
+  - code: 1.5_ETSI
+    year_range:
+    - 2020
+    - 2025
+- code: EA888
+  fuel_type: petrol
+  timing_drive: chain
+  displacements:
+  - code: 2.0_TSI
+    year_range:
+    - 2020
+    - 2025
+- code: EA288
+  fuel_type: diesel
+  timing_drive: belt
+  displacements:
+  - code: 2.0_TDI
+    year_range:
+    - 2020
+    - 2025
+performance_trims:
+  max_share: 0.3
+  tokens:
+  - gti
+  - gti clubsport
+  - golf r
+  - mk8 r
+  - gtd
+  - gte
+transmissions:
+- code: MANUAL_6
+  type: manual_6speed
+  compatible_displacements:
+  - 1.0_TSI
+  - 1.5_TSI
+  - 2.0_TSI
+  - 2.0_TDI
+  year_range:
+  - 2020
+  - 2025
+- code: DQ200
+  type: DSG_7speed_dry
+  compatible_displacements:
+  - 1.0_ETSI
+  - 1.5_ETSI
+  year_range:
+  - 2020
+  - 2025
+- code: DQ381
+  type: DSG_7speed_wet
+  compatible_displacements:
+  - 2.0_TSI
+  - 2.0_TDI
+  year_range:
+  - 2020
+  - 2025
+- code: DQ400E
+  type: DSG_6speed_wet
+  compatible_displacements:
+  - 1.4_EHYBRID
+  year_range:
+  - 2020
+  - 2025

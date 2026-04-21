@@ -1,0 +1,83 @@
+{
+  "car": "Clio MK1",
+  "slug": "renault_clio_mk1",
+  "started_at": "2026-04-19T13:36:48.426400+00:00",
+  "flags": {
+    "max_videos": 15,
+    "min_views": 30000,
+    "disable_prefilter": false,
+    "force": true,
+    "skip": [],
+    "resume_from": null
+  },
+  "stages": [
+    {
+      "stage": "scrape",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scrapers\\fetch_youtube_car_issues.py",
+        "--car",
+        "Clio MK1",
+        "--slug",
+        "renault_clio_mk1",
+        "--max-videos",
+        "15",
+        "--min-views",
+        "30000",
+        "--lang",
+        "en"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T13:36:48.426458+00:00",
+      "duration_seconds": 84.61,
+      "output": "data\\raw\\videos\\renault_clio_mk1_raw.json",
+      "output_mtime": "2026-04-19T13:38:12.739260+00:00",
+      "status": "ok"
+    },
+    {
+      "stage": "extract",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scripts\\extract_youtube_issues.py",
+        "--slug",
+        "renault_clio_mk1"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T13:38:13.038684+00:00",
+      "duration_seconds": 1089.29,
+      "output": "data\\processed\\issue_knowledge_youtube_renault_clio_mk1.json",
+      "output_mtime": "2026-04-19T13:56:21.891193+00:00",
+      "status": "ok"
+    },
+    {
+      "stage": "postprocess",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scripts\\postprocess_youtube_issues.py",
+        "--slug",
+        "renault_clio_mk1"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T13:56:22.328857+00:00",
+      "duration_seconds": 1.34,
+      "output": "data\\processed\\issue_knowledge_youtube_renault_clio_mk1_final.json",
+      "output_mtime": "2026-04-19T13:56:23.568445+00:00",
+      "status": "ok"
+    },
+    {
+      "stage": "benchmark",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\benchmark_knowledge.py"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T13:56:23.673696+00:00",
+      "duration_seconds": 0.17,
+      "output": "data\\benchmarks\\benchmark_history.json",
+      "output_mtime": "2026-04-19T13:56:23.830987+00:00",
+      "status": "ok"
+    }
+  ],
+  "finished_at": "2026-04-19T13:56:23.841990+00:00",
+  "ok": true
+}

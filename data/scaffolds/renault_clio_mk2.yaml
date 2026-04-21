@@ -1,0 +1,138 @@
+meta:
+  make: Renault
+  model: Clio MK2
+  generation: II
+  corpus_years:
+  - 1998
+  - 2012
+facelifts:
+- year: 2001
+  label: Phase 2
+  pre_label: Phase 1
+- year: 2004
+  label: Phase 3
+  pre_label: Phase 2
+engine_families:
+- code: D_TYPE
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: '1.2'
+    year_range:
+    - 1998
+    - 2012
+  - code: 1.2_16V
+    year_range:
+    - 2001
+    - 2012
+- code: K_TYPE
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: '1.4'
+    year_range:
+    - 1998
+    - 2001
+  - code: 1.4_16V
+    year_range:
+    - 1999
+    - 2008
+  - code: '1.6'
+    year_range:
+    - 1998
+    - 2001
+  - code: 1.6_16V
+    year_range:
+    - 1998
+    - 2008
+- code: F_TYPE
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: 2.0_16V
+    year_range:
+    - 2000
+    - 2005
+- code: L_TYPE
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: 3.0_V6
+    year_range:
+    - 2001
+    - 2005
+- code: F_DIESEL
+  fuel_type: diesel
+  timing_drive: belt
+  displacements:
+  - code: 1.9_D
+    year_range:
+    - 1998
+    - 2001
+  - code: 1.9_DTI
+    year_range:
+    - 1999
+    - 2001
+- code: K9K
+  fuel_type: diesel
+  timing_drive: belt
+  displacements:
+  - code: 1.5_DCI
+    year_range:
+    - 2001
+    - 2012
+performance_trims:
+  max_share: 0.25
+  tokens:
+  - rs
+  - '172'
+  - '182'
+  - v6
+transmissions:
+- code: JB
+  type: manual_5speed
+  compatible_displacements:
+  - '1.2'
+  - 1.2_16V
+  - '1.4'
+  - 1.4_16V
+  - '1.6'
+  - 1.6_16V
+  - 1.9_D
+  - 1.9_DTI
+  - 1.5_DCI
+  year_range:
+  - 1998
+  - 2012
+- code: JC
+  type: manual_5speed
+  compatible_displacements:
+  - 2.0_16V
+  year_range:
+  - 2000
+  - 2005
+- code: PK
+  type: manual_6speed
+  compatible_displacements:
+  - 3.0_V6
+  year_range:
+  - 2001
+  - 2005
+- code: DP0
+  type: auto_4speed
+  compatible_displacements:
+  - '1.4'
+  - 1.4_16V
+  - '1.6'
+  - 1.6_16V
+  year_range:
+  - 1998
+  - 2008
+- code: QUICKSHIFT
+  type: automated_manual_5speed
+  compatible_displacements:
+  - 1.2_16V
+  - 1.5_DCI
+  year_range:
+  - 2001
+  - 2012

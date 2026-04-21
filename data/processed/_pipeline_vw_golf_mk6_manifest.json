@@ -1,0 +1,83 @@
+{
+  "car": "VW Golf MK6",
+  "slug": "vw_golf_mk6",
+  "started_at": "2026-04-19T17:54:14.610537+00:00",
+  "flags": {
+    "max_videos": 30,
+    "min_views": 20000,
+    "disable_prefilter": false,
+    "force": true,
+    "skip": [],
+    "resume_from": null
+  },
+  "stages": [
+    {
+      "stage": "scrape",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scrapers\\fetch_youtube_car_issues.py",
+        "--car",
+        "VW Golf MK6",
+        "--slug",
+        "vw_golf_mk6",
+        "--max-videos",
+        "30",
+        "--min-views",
+        "20000",
+        "--lang",
+        "en"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T17:54:14.610592+00:00",
+      "duration_seconds": 203.16,
+      "output": "data\\raw\\videos\\vw_golf_mk6_raw.json",
+      "output_mtime": "2026-04-19T17:57:37.479755+00:00",
+      "status": "ok"
+    },
+    {
+      "stage": "extract",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scripts\\extract_youtube_issues.py",
+        "--slug",
+        "vw_golf_mk6"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T17:57:37.773386+00:00",
+      "duration_seconds": 3177.79,
+      "output": "data\\processed\\issue_knowledge_youtube_vw_golf_mk6.json",
+      "output_mtime": "2026-04-19T18:50:35.245736+00:00",
+      "status": "ok"
+    },
+    {
+      "stage": "postprocess",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\scripts\\postprocess_youtube_issues.py",
+        "--slug",
+        "vw_golf_mk6"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T18:50:35.560262+00:00",
+      "duration_seconds": 1.18,
+      "output": "data\\processed\\issue_knowledge_youtube_vw_golf_mk6_final.json",
+      "output_mtime": "2026-04-19T18:50:36.645207+00:00",
+      "status": "ok"
+    },
+    {
+      "stage": "benchmark",
+      "cmd": [
+        "C:\\Users\\beraat\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\CarIssueTopicModelling\\benchmark_knowledge.py"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-04-19T18:50:36.738205+00:00",
+      "duration_seconds": 0.13,
+      "output": "data\\benchmarks\\benchmark_history.json",
+      "output_mtime": "2026-04-19T18:50:36.861260+00:00",
+      "status": "ok"
+    }
+  ],
+  "finished_at": "2026-04-19T18:50:36.872590+00:00",
+  "ok": true
+}

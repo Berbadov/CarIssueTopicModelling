@@ -1,0 +1,242 @@
+{
+  "issues": [
+    {
+      "label": "EGR valve clogging with carbon deposits",
+      "component": "engine",
+      "summary": "The EGR valve can become blocked by carbon deposits, making it difficult to remove and requiring cleaning or replacement.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence specifically mentions the 1.5 DCI engine, which matches the listing's engine."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "hHK51MNcEsI_0001852",
+          "video_id": "hHK51MNcEsI",
+          "start": 185.22,
+          "end": 225.92,
+          "url": "https://youtube.com/watch?v=hHK51MNcEsI&t=185s",
+          "channel": "UseTool EN",
+          "title": "How to clean the EGR valve Clio mk4 1.5 dCi ♻️",
+          "tier": "engine-match",
+          "quote": "the egr valve is very difficult to remove since it's blocked in place by carbon deposits"
+        },
+        {
+          "chunk_id": "hHK51MNcEsI_0000002",
+          "video_id": "hHK51MNcEsI",
+          "start": 0.24,
+          "end": 36.64,
+          "url": "https://youtube.com/watch?v=hHK51MNcEsI&t=0s",
+          "channel": "UseTool EN",
+          "title": "How to clean the EGR valve Clio mk4 1.5 dCi ♻️",
+          "tier": "engine-match",
+          "quote": "there are myriad of symptoms and breakdown linked to the egr valve clogging up"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 2
+      }
+    },
+    {
+      "label": "Diesel fuel filter replacement required",
+      "component": "fuel",
+      "summary": "The diesel fuel filter needs periodic replacement, involving raising the vehicle and removing components for access.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence refers to the diesel fuel filter for the 1.5 DCI engine, which applies to the listing's diesel model."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "ajWEUTqUl6s_0000002",
+          "video_id": "ajWEUTqUl6s",
+          "start": 0.24,
+          "end": 35.92,
+          "url": "https://youtube.com/watch?v=ajWEUTqUl6s&t=0s",
+          "channel": "UseTool EN",
+          "title": "How to replace the diesel fuel filter Clio mk4 1.5 dCi ⛽",
+          "tier": "engine-match",
+          "quote": "in order to replace the diesel filter it is first necessary to raise the front of your vehicle and take off the front right hand wheel"
+        },
+        {
+          "chunk_id": "ajWEUTqUl6s_0000550",
+          "video_id": "ajWEUTqUl6s",
+          "start": 54.96,
+          "end": 92.5,
+          "url": "https://youtube.com/watch?v=ajWEUTqUl6s&t=54s",
+          "channel": "UseTool EN",
+          "title": "How to replace the diesel fuel filter Clio mk4 1.5 dCi ⛽",
+          "tier": "engine-match",
+          "quote": "you can now see the diesel filter with a socket wrench and a 10mm socket unscrew the three screws from the metal protective plate on the filter"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 2
+      }
+    },
+    {
+      "label": "AdBlue system requires periodic attention",
+      "component": "exhaust",
+      "summary": "The diesel engine includes an AdBlue system that needs occasional refilling or maintenance.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence mentions AdBlue for the 1.5 DCI diesel engine, which matches the listing's fuel type."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "vSPYVcSaL4o_0004828",
+          "video_id": "vSPYVcSaL4o",
+          "start": 482.77,
+          "end": 518.65,
+          "url": "https://youtube.com/watch?v=vSPYVcSaL4o&t=482s",
+          "channel": "Pit-Stop",
+          "title": "Renault Clio 1.5 dCi - 4 Cylinders Are Better Than 3",
+          "tier": "engine-match",
+          "quote": "it's got AdBlue which you have to worry about every now and then"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "Minor interior rattles and noises",
+      "component": "interior",
+      "summary": "The car may develop small rattles, creaks, or clicking noises, especially on rough roads, which can be annoying.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence describes general interior noises in the Clio MK4, which applies to the listing's model year and generation."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "GluV0cvzjB0_0006328",
+          "video_id": "GluV0cvzjB0",
+          "start": 632.84,
+          "end": 669.44,
+          "url": "https://youtube.com/watch?v=GluV0cvzjB0&t=632s",
+          "channel": "Otomobil Günlüklerim",
+          "title": "75 HP | Clio 4 | RENAULT | 1.5 DCI | Otomobil Günlüklerim",
+          "tier": "engine-match",
+          "quote": "ufak tefek gıcırtılar bozuk yolda gelen Tıkırtı sesleri falan bunlar sizi rahatsız edebilir"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "Suspension may feel loose at higher speeds",
+      "component": "suspension",
+      "summary": "The suspension can seem a bit loose or less stable when driving at higher speeds.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence discusses suspension behavior in the Clio MK4, which matches the listing's model generation."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "Cf7MDFX--NE_0009030",
+          "video_id": "Cf7MDFX--NE",
+          "start": 903.04,
+          "end": 941.56,
+          "url": "https://youtube.com/watch?v=Cf7MDFX--NE&t=903s",
+          "channel": "Paragon Cars London",
+          "title": "2013 RENAULT CLIO DRIVING POV/REVIEW // 0.9L ENGINE!",
+          "tier": "general",
+          "quote": "once you're going quicker the suspension does seem a little bit loose"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    }
+  ],
+  "listing_spec": {
+    "raw_text": "2015 Renault Clio MK4 1.5 dCi 90hp\nEDC otomatik vites\nKM: 148.000\nDizel\nKlima, navigasyon, park sensörü\nİkinci el, hasarsız\n",
+    "slug": "renault_clio_mk4",
+    "years": [
+      2015
+    ],
+    "engines": [
+      "1.5_DCI"
+    ],
+    "engine_families": [
+      "K9K"
+    ],
+    "fuel_types": [
+      "diesel"
+    ],
+    "drive_types": [
+      "belt"
+    ],
+    "transmissions": [
+      "EDC",
+      "automatic",
+      "EDC6"
+    ],
+    "trims": [],
+    "mileage_km": 148000,
+    "confidence": {
+      "has_year": true,
+      "has_engine": true,
+      "has_transmission": true,
+      "has_mileage": true
+    }
+  },
+  "generated_at": "2026-04-21T07:12:56.716034+00:00",
+  "llm_model": "deepseek-chat",
+  "embed_model": "intfloat/multilingual-e5-base",
+  "retrieval": {
+    "probes": [
+      "common issues and problems",
+      "things that break over time",
+      "ownership experience long term reliability",
+      "engine problems",
+      "transmission problems",
+      "electrical problems",
+      "suspension and steering problems",
+      "interior and trim problems",
+      "brake problems",
+      "diesel engine problems",
+      "EGR valve problems",
+      "DPF diesel particulate filter problems",
+      "turbocharger problems",
+      "injector problems",
+      "glow plug problems",
+      "K9K engine problems",
+      "1.5 DCI engine problems",
+      "EDC transmission problems",
+      "EDC6 transmission problems"
+    ],
+    "top_k_per_probe": 20,
+    "evidence_count": 60,
+    "tier_counts": {
+      "1": 20,
+      "2": 0,
+      "3": 0,
+      "4": 40
+    }
+  },
+  "usage": {
+    "prompt_tokens": 8536,
+    "completion_tokens": 987
+  },
+  "duration_seconds": 48.2
+}

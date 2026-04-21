@@ -1,10 +1,10 @@
 {
   "car": "Renault Clio MK4",
   "slug": "renault_clio_mk4",
-  "started_at": "2026-04-18T14:50:31.521332+00:00",
+  "started_at": "2026-04-19T16:40:57.281825+00:00",
   "flags": {
     "max_videos": 30,
-    "max_views": 150000,
+    "min_views": 20000,
     "disable_prefilter": false,
     "force": true,
     "skip": [],
@@ -22,14 +22,16 @@
         "renault_clio_mk4",
         "--max-videos",
         "30",
-        "--max-views",
-        "150000"
+        "--min-views",
+        "20000",
+        "--lang",
+        "en"
       ],
       "exit_code": 0,
-      "started_at": "2026-04-18T14:50:31.521413+00:00",
-      "duration_seconds": 228.36,
+      "started_at": "2026-04-19T16:40:57.281904+00:00",
+      "duration_seconds": 133.26,
       "output": "data\\raw\\videos\\renault_clio_mk4_raw.json",
-      "output_mtime": "2026-04-18T14:54:19.552885+00:00",
+      "output_mtime": "2026-04-19T16:43:10.286933+00:00",
       "status": "ok"
     },
     {
@@ -41,10 +43,10 @@
         "renault_clio_mk4"
       ],
       "exit_code": 0,
-      "started_at": "2026-04-18T14:54:19.878091+00:00",
-      "duration_seconds": 3106.54,
+      "started_at": "2026-04-19T16:43:10.544542+00:00",
+      "duration_seconds": 1958.29,
       "output": "data\\processed\\issue_knowledge_youtube_renault_clio_mk4.json",
-      "output_mtime": "2026-04-18T15:46:05.747278+00:00",
+      "output_mtime": "2026-04-19T17:15:48.575155+00:00",
       "status": "ok"
     },
     {
@@ -56,10 +58,10 @@
         "renault_clio_mk4"
       ],
       "exit_code": 0,
-      "started_at": "2026-04-18T15:46:06.421654+00:00",
-      "duration_seconds": 1.41,
+      "started_at": "2026-04-19T17:15:48.833681+00:00",
+      "duration_seconds": 1.1,
       "output": "data\\processed\\issue_knowledge_youtube_renault_clio_mk4_final.json",
-      "output_mtime": "2026-04-18T15:46:07.699751+00:00",
+      "output_mtime": "2026-04-19T17:15:49.849225+00:00",
       "status": "ok"
     },
     {
@@ -69,13 +71,13 @@
         "D:\\CarIssueTopicModelling\\benchmark_knowledge.py"
       ],
       "exit_code": 0,
-      "started_at": "2026-04-18T15:46:07.829256+00:00",
-      "duration_seconds": 0.15,
+      "started_at": "2026-04-19T17:15:49.930058+00:00",
+      "duration_seconds": 0.18,
       "output": "data\\benchmarks\\benchmark_history.json",
-      "output_mtime": "2026-04-18T15:46:07.962757+00:00",
+      "output_mtime": "2026-04-19T17:15:50.100598+00:00",
       "status": "ok"
     }
   ],
-  "finished_at": "2026-04-18T15:46:07.977123+00:00",
+  "finished_at": "2026-04-19T17:15:50.111255+00:00",
   "ok": true
 }

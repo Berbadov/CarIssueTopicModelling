@@ -1,0 +1,98 @@
+meta:
+  make: VW
+  model: Golf MK3
+  generation: MK3
+  corpus_years:
+  - 1991
+  - 1999
+engine_families:
+- code: EA111
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: '1.4'
+    year_range:
+    - 1991
+    - 1997
+  - code: '1.6'
+    year_range:
+    - 1992
+    - 1997
+- code: EA827
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: '1.8'
+    year_range:
+    - 1991
+    - 1997
+  - code: '2.0'
+    year_range:
+    - 1991
+    - 1997
+- code: VR6
+  fuel_type: petrol
+  timing_drive: chain
+  displacements:
+  - code: 2.8_VR6
+    year_range:
+    - 1992
+    - 1997
+  - code: 2.9_VR6
+    year_range:
+    - 1994
+    - 1997
+- code: EA827_DIESEL
+  fuel_type: diesel
+  timing_drive: belt
+  displacements:
+  - code: 1.9_D
+    year_range:
+    - 1991
+    - 1997
+  - code: 1.9_SDI
+    year_range:
+    - 1995
+    - 1997
+  - code: 1.9_TD
+    year_range:
+    - 1991
+    - 1997
+  - code: 1.9_TDI
+    year_range:
+    - 1993
+    - 1997
+performance_trims:
+  max_share: 0.25
+  tokens:
+  - gti
+  - gti 16v
+  - vr6
+transmissions:
+- code: MANUAL_5
+  type: manual_5speed
+  compatible_displacements:
+  - '1.4'
+  - '1.6'
+  - '1.8'
+  - '2.0'
+  - 2.8_VR6
+  - 2.9_VR6
+  - 1.9_D
+  - 1.9_SDI
+  - 1.9_TD
+  - 1.9_TDI
+  year_range:
+  - 1991
+  - 1999
+- code: AUTO_4
+  type: auto_4speed
+  compatible_displacements:
+  - '1.6'
+  - '1.8'
+  - '2.0'
+  - 2.8_VR6
+  - 1.9_TDI
+  year_range:
+  - 1991
+  - 1999

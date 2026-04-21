@@ -1,0 +1,106 @@
+meta:
+  make: Renault
+  model: Clio MK1
+  generation: I
+  corpus_years:
+  - 1990
+  - 1998
+facelifts:
+- year: 1994
+  label: Phase 2
+  pre_label: Phase 1
+- year: 1996
+  label: Phase 3
+  pre_label: Phase 2
+engine_families:
+- code: CLEON
+  fuel_type: petrol
+  timing_drive: chain
+  displacements:
+  - code: '1.1'
+    year_range:
+    - 1990
+    - 1995
+  - code: '1.2'
+    year_range:
+    - 1990
+    - 1996
+- code: ENERGY
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: '1.2'
+    year_range:
+    - 1996
+    - 1998
+  - code: '1.4'
+    year_range:
+    - 1990
+    - 1998
+- code: F_TYPE
+  fuel_type: petrol
+  timing_drive: belt
+  displacements:
+  - code: '1.7'
+    year_range:
+    - 1990
+    - 1994
+  - code: '1.8'
+    year_range:
+    - 1992
+    - 1998
+  - code: '2.0'
+    year_range:
+    - 1993
+    - 1998
+- code: F_DIESEL
+  fuel_type: diesel
+  timing_drive: belt
+  displacements:
+  - code: 1.9_D
+    year_range:
+    - 1991
+    - 1998
+performance_trims:
+  max_share: 0.2
+  tokens:
+  - 16v
+  - williams
+transmissions:
+- code: MANUAL_4
+  type: manual_4speed
+  compatible_displacements:
+  - '1.1'
+  - '1.2'
+  year_range:
+  - 1990
+  - 1998
+- code: JB
+  type: manual_5speed
+  compatible_displacements:
+  - '1.1'
+  - '1.2'
+  - '1.4'
+  - '1.7'
+  - '1.8'
+  - '2.0'
+  - 1.9_D
+  year_range:
+  - 1990
+  - 1998
+- code: MB
+  type: auto_3speed
+  compatible_displacements:
+  - '1.4'
+  - '1.8'
+  year_range:
+  - 1990
+  - 1998
+- code: AD4
+  type: auto_4speed
+  compatible_displacements:
+  - '1.4'
+  - '1.8'
+  year_range:
+  - 1994
+  - 1998

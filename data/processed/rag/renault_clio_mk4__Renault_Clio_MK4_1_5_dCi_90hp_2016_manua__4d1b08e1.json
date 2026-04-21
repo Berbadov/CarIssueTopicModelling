@@ -1,0 +1,408 @@
+{
+  "issues": [
+    {
+      "label": "EGR valve clogging",
+      "component": "engine",
+      "summary": "The evidence indicates that the EGR valve can become clogged with carbon deposits, leading to performance issues and warning lights. Cleaning or replacing it is a common maintenance task.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence directly mentions the 1.5 DCI engine, which matches the listing's K9K diesel engine."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "m8-0Tsivipk_0003890",
+          "video_id": "m8-0Tsivipk",
+          "start": 389.04,
+          "end": 424.56,
+          "url": "https://youtube.com/watch?v=m8-0Tsivipk&t=389s",
+          "channel": "AUTO MOTO FREAK",
+          "title": "1.5 DCI REVIEW, PROBLEMS, RELIABILITY, FAILURES, FUEL CONSUMPTION, TIMING, OIL?",
+          "tier": "engine-match",
+          "quote": "EGR valve issues can get clogged with soot leading to performance issues and warning lights."
+        },
+        {
+          "chunk_id": "hHK51MNcEsI_0001852",
+          "video_id": "hHK51MNcEsI",
+          "start": 185.22,
+          "end": 225.92,
+          "url": "https://youtube.com/watch?v=hHK51MNcEsI&t=185s",
+          "channel": "UseTool EN",
+          "title": "How to clean the EGR valve Clio mk4 1.5 dCi ♻️",
+          "tier": "engine-match",
+          "quote": "the egr valve is very difficult to remove since it's blocked in place by carbon deposits"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 2,
+        "distinct_channels": 2,
+        "evidence_count": 2
+      }
+    },
+    {
+      "label": "Turbocharger failure",
+      "component": "engine",
+      "summary": "Turbocharger failures are mentioned as relatively common, sometimes linked to main bearing issues or neglected oil changes, and can cause performance problems like turbo going out during acceleration.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence specifically references the 1.5 DCI engine's turbocharger, which applies to the listing's diesel engine."
+      },
+      "observed_mileage_km": null,
+      "severity": "expensive",
+      "evidence": [
+        {
+          "chunk_id": "m8-0Tsivipk_0003343",
+          "video_id": "m8-0Tsivipk",
+          "start": 334.32,
+          "end": 371.44,
+          "url": "https://youtube.com/watch?v=m8-0Tsivipk&t=334s",
+          "channel": "AUTO MOTO FREAK",
+          "title": "1.5 DCI REVIEW, PROBLEMS, RELIABILITY, FAILURES, FUEL CONSUMPTION, TIMING, OIL?",
+          "tier": "engine-match",
+          "quote": "Turbocharger failure. While not unique to the 1.5DCI, turbocharger failures were relatively common"
+        },
+        {
+          "chunk_id": "2qi0bRyMeAc_0003695",
+          "video_id": "2qi0bRyMeAc",
+          "start": 369.54,
+          "end": 401.18,
+          "url": "https://youtube.com/watch?v=2qi0bRyMeAc&t=369s",
+          "channel": "TuberBA",
+          "title": "1.5 dCi Renault Clio 2011 Boost Problem SOLVED (Easy Fix)",
+          "tier": "engine-match",
+          "quote": "turbo going out while accelerating most of the time when the engine is relatively cold"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 2,
+        "distinct_channels": 2,
+        "evidence_count": 2
+      }
+    },
+    {
+      "label": "Main bearing failure",
+      "component": "engine",
+      "summary": "Earlier versions of the 1.5 DCI engine had widespread issues with main bearing and crankshaft bearing failures, which could lead to costly repairs.",
+      "applies_to_spec": {
+        "match": "partial",
+        "notes": "The evidence mentions earlier versions up to Euro 5 standards, but the listing is a 2016 model which likely has later revisions; however, the risk may still apply if maintenance is neglected."
+      },
+      "observed_mileage_km": null,
+      "severity": "expensive",
+      "evidence": [
+        {
+          "chunk_id": "m8-0Tsivipk_0002498",
+          "video_id": "m8-0Tsivipk",
+          "start": 249.84,
+          "end": 287.36,
+          "url": "https://youtube.com/watch?v=m8-0Tsivipk&t=249s",
+          "channel": "AUTO MOTO FREAK",
+          "title": "1.5 DCI REVIEW, PROBLEMS, RELIABILITY, FAILURES, FUEL CONSUMPTION, TIMING, OIL?",
+          "tier": "engine-match",
+          "quote": "Main bearing failure, crankshaft bearings. This was"
+        },
+        {
+          "chunk_id": "yB4-OCxOVg8_0002443",
+          "video_id": "yB4-OCxOVg8",
+          "start": 244.28,
+          "end": 280.8,
+          "url": "https://youtube.com/watch?v=yB4-OCxOVg8&t=244s",
+          "channel": "Second Owner",
+          "title": "Renault Captur (2013-2019) - how many problems does it have?",
+          "tier": "engine-match",
+          "quote": "the 1.5 DCI diesel is a design known for many years which may or may not have a problem with bearings"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 2,
+        "distinct_channels": 2,
+        "evidence_count": 2
+      }
+    },
+    {
+      "label": "High-pressure fuel pump (HPFP) failure",
+      "component": "fuel",
+      "summary": "Failure of the high-pressure fuel pump can shed metal fragments into the fuel system, contaminating injectors and the fuel rail, resulting in very expensive repairs.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence directly discusses the 1.5 DCI engine's HPFP, which is relevant to the listing's diesel engine."
+      },
+      "observed_mileage_km": null,
+      "severity": "expensive",
+      "evidence": [
+        {
+          "chunk_id": "m8-0Tsivipk_0003343",
+          "video_id": "m8-0Tsivipk",
+          "start": 334.32,
+          "end": 371.44,
+          "url": "https://youtube.com/watch?v=m8-0Tsivipk&t=334s",
+          "channel": "AUTO MOTO FREAK",
+          "title": "1.5 DCI REVIEW, PROBLEMS, RELIABILITY, FAILURES, FUEL CONSUMPTION, TIMING, OIL?",
+          "tier": "engine-match",
+          "quote": "the HBFB failed, it could shed metal fragments into the fuel system, contaminating injectors and the fuel rail, leading to very costly repairs."
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "Glow plug or controller issues",
+      "component": "electrical",
+      "summary": "Problems with glow plugs or the glow plug controller can cause starting issues, especially in cold conditions, requiring testing and potential replacement.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence mentions glow plug issues in the 1.5 DCI engine, which applies to the listing's diesel engine."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "M5MVfy7XAzI_0000861",
+          "video_id": "M5MVfy7XAzI",
+          "start": 86.08,
+          "end": 122.48,
+          "url": "https://youtube.com/watch?v=M5MVfy7XAzI&t=86s",
+          "channel": "sandy anderson",
+          "title": "Renault Mégane III (2009) 1.5dci Extended Crank during Cold Weather, Fault Codes DF25 & DF31",
+          "tier": "engine-match",
+          "quote": "one of the connectors on the glow plug put our test light in and when we actually actuated the relay it did not light"
+        },
+        {
+          "chunk_id": "MelT3k2BkSc_0020312",
+          "video_id": "MelT3k2BkSc",
+          "start": 2031.2,
+          "end": 2074.32,
+          "url": "https://youtube.com/watch?v=MelT3k2BkSc&t=2031s",
+          "channel": "LM Auto Repairs",
+          "title": "Nissan Qashqai 1.5 dci no power, no boost! Fault finding and repair.",
+          "tier": "engine-match",
+          "quote": "when you try to start the car from cold it comes up with a glow plug controller whatever that is"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 2,
+        "distinct_channels": 2,
+        "evidence_count": 2
+      }
+    },
+    {
+      "label": "Injector faults",
+      "component": "fuel",
+      "summary": "Fuel injectors can fail or become faulty, leading to performance issues such as rough running or starting problems, and may require testing and replacement.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence discusses injector problems in the 1.5 DCI engine, which matches the listing's diesel engine."
+      },
+      "observed_mileage_km": null,
+      "severity": "expensive",
+      "evidence": [
+        {
+          "chunk_id": "_PX_QtCxwS8_0000294",
+          "video_id": "_PX_QtCxwS8",
+          "start": 29.36,
+          "end": 65.6,
+          "url": "https://youtube.com/watch?v=_PX_QtCxwS8&t=29s",
+          "channel": "baz meredith 🤙",
+          "title": "THE ONLY THING THAT LETS THESE 1.5DCI ENGINES DOWN UNBELIEVABLE COMMON FAULT!!!!",
+          "tier": "engine-match",
+          "quote": "cylinder one injection control and cylinder one injection control circuit"
+        },
+        {
+          "chunk_id": "fgKoz8BGyH0_0000545",
+          "video_id": "fgKoz8BGyH0",
+          "start": 54.54,
+          "end": 91.56,
+          "url": "https://youtube.com/watch?v=fgKoz8BGyH0&t=54s",
+          "channel": "baz meredith 🤙",
+          "title": "2014 Renault scenic 1.5dci cylinder 1 injector control circuit (misfire)",
+          "tier": "engine-match",
+          "quote": "injection being faulty uh it might taste good but items are faulty now I think this injector is breaking down only when it's hot"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 2,
+        "distinct_channels": 1,
+        "evidence_count": 2
+      }
+    },
+    {
+      "label": "Timing belt replacement critical",
+      "component": "engine",
+      "summary": "Regular timing belt replacements are emphasized as essential for the 1.5 DCI engine to prevent failures, with neglect leading to potential engine damage.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence highlights timing belt maintenance for the 1.5 DCI engine, which uses a belt drive as specified in the listing."
+      },
+      "observed_mileage_km": null,
+      "severity": "expensive",
+      "evidence": [
+        {
+          "chunk_id": "m8-0Tsivipk_0006108",
+          "video_id": "m8-0Tsivipk",
+          "start": 610.8,
+          "end": 647.84,
+          "url": "https://youtube.com/watch?v=m8-0Tsivipk&t=610s",
+          "channel": "AUTO MOTO FREAK",
+          "title": "1.5 DCI REVIEW, PROBLEMS, RELIABILITY, FAILURES, FUEL CONSUMPTION, TIMING, OIL?",
+          "tier": "engine-match",
+          "quote": "Given its excellent fuel economy, the 1.5DCI could be a great choice for those who do higher mileage, but due diligence on the engine specific version and maintenance is essential."
+        },
+        {
+          "chunk_id": "_WsQxpZlu2g_0001705",
+          "video_id": "_WsQxpZlu2g",
+          "start": 170.48,
+          "end": 205.76,
+          "url": "https://youtube.com/watch?v=_WsQxpZlu2g&t=170s",
+          "channel": "AutoProblems",
+          "title": "Used Renault Kangoo Reliability | Most Common Problems Faults and Issues",
+          "tier": "engine-match",
+          "quote": "possible problems with the toothed belt models up to 2002"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 2,
+        "distinct_channels": 2,
+        "evidence_count": 2
+      }
+    },
+    {
+      "label": "AdBlue system faults",
+      "component": "exhaust",
+      "summary": "Later versions of the 1.5 DCI engine with AdBlue systems can experience faults with the injector, pump, or sensors, potentially causing warning lights or performance issues.",
+      "applies_to_spec": {
+        "match": "mismatch",
+        "notes": "The evidence mentions AdBlue in later Euro5/Euro6 versions post-2010, but the listing is a 2016 model which likely includes AdBlue; however, this is not explicitly confirmed in the evidence for this specific year."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "m8-0Tsivipk_0003890",
+          "video_id": "m8-0Tsivipk",
+          "start": 389.04,
+          "end": 424.56,
+          "url": "https://youtube.com/watch?v=m8-0Tsivipk&t=389s",
+          "channel": "AUTO MOTO FREAK",
+          "title": "1.5 DCI REVIEW, PROBLEMS, RELIABILITY, FAILURES, FUEL CONSUMPTION, TIMING, OIL?",
+          "tier": "engine-match",
+          "quote": "AdBlue system faults, blue DCI problems with the AdBlue injector, pump or knock sensors can occur."
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    },
+    {
+      "label": "Dashboard warning lights",
+      "component": "electrical",
+      "summary": "A common fault can cause multiple dashboard warning lights to illuminate, including engine management, traction control, and chassis control faults.",
+      "applies_to_spec": {
+        "match": "match",
+        "notes": "The evidence describes this issue in a 2014 1.5 DCI, which is similar to the listing's 2016 model and engine."
+      },
+      "observed_mileage_km": null,
+      "severity": "nuisance",
+      "evidence": [
+        {
+          "chunk_id": "xss2UdH0TIQ_0000006",
+          "video_id": "xss2UdH0TIQ",
+          "start": 0.56,
+          "end": 38.04,
+          "url": "https://youtube.com/watch?v=xss2UdH0TIQ&t=0s",
+          "channel": "The Qashqai Guy",
+          "title": "Nissan Qashqai 1.5 dci chassis, stop start, traction control, eml light Exhaust Pressure Sensor fix",
+          "tier": "engine-match",
+          "quote": "there is a common fault where your dashboard will pretty much light up like a Christmas tree you'll get everything from engine management light to emergency brake assist traction control"
+        }
+      ],
+      "corroboration": {
+        "distinct_videos": 1,
+        "distinct_channels": 1,
+        "evidence_count": 1
+      }
+    }
+  ],
+  "coverage": {
+    "confidence": "high",
+    "engine_specific_chunks": 41,
+    "family_chunks": 0,
+    "fuel_chunks": 0,
+    "component_chunks": 21,
+    "note": "Good corpus coverage for 1.5_DCI, 1.5_DCI. Issues shown are grounded in engine-specific evidence."
+  },
+  "listing_spec": {
+    "raw_text": "Renault Clio MK4 1.5 dCi 90hp, 2016, manual, around 180000 km. Main concern is reliability and expensive repairs.",
+    "slug": "renault_clio_mk4",
+    "years": [
+      2016
+    ],
+    "engines": [
+      "1.5_DCI",
+      "1.5_DCI"
+    ],
+    "engine_families": [
+      "K9K"
+    ],
+    "fuel_types": [
+      "diesel"
+    ],
+    "drive_types": [
+      "belt"
+    ],
+    "transmissions": [
+      "manual"
+    ],
+    "trims": [],
+    "mileage_km": 180000,
+    "confidence": {
+      "has_year": true,
+      "has_engine": true,
+      "has_transmission": true,
+      "has_mileage": true
+    }
+  },
+  "generated_at": "2026-04-21T10:29:33.297284+00:00",
+  "llm_model": "deepseek-chat",
+  "embed_model": "intfloat/multilingual-e5-base",
+  "retrieval": {
+    "probes": [
+      "common issues and problems",
+      "things that break over time",
+      "ownership experience long term reliability",
+      "engine problems",
+      "transmission problems",
+      "electrical problems",
+      "suspension and steering problems",
+      "interior and trim problems",
+      "brake problems",
+      "diesel engine problems",
+      "EGR valve problems",
+      "DPF diesel particulate filter problems",
+      "turbocharger problems",
+      "injector problems",
+      "glow plug problems",
+      "K9K engine problems",
+      "1.5 DCI engine problems"
+    ],
+    "top_k_per_probe": 20,
+    "evidence_count": 41,
+    "tier_counts": {
+      "1": 41,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "component_chunks": 21
+  },
+  "usage": {
+    "prompt_tokens": 6388,
+    "completion_tokens": 2022
+  },
+  "duration_seconds": 82.5
+}
