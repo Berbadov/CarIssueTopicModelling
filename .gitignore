@@ -3,7 +3,8 @@
 # Python cache artifacts
 __pycache__/
 *.py[cod]
-
+.github
+.claude
 # Local editor/tool state
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
