@@ -1,0 +1,52 @@
+# Data and Outputs (Hide from GitHub)
+/data_raw/
+/data_processed/
+/chroma_db/
+/outputs/
+
+# Agent related files
+agents.md
+agent*.md
+
+# Irrelevant files and logs
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/

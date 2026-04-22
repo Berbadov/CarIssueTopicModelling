@@ -1,0 +1,79 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Vehicle Knowledge Scaffold — Renault Clio MK4 / Phase I & II (2013–2019)
+# ──────────────────────────────────────────────────────────────────────────────
+# Generation-specific scaffold used by the YouTube extraction pipeline.
+# All model constants (engine windows, feature rules, facelift years) live here.
+# The pipeline reads this at runtime — no Python changes needed for a new model.
+# ──────────────────────────────────────────────────────────────────────────────
+
+meta:
+  make: Renault
+  model: Clio MK4
+  generation: MK4
+  corpus_years: [2013, 2019]
+
+facelifts:
+  - year: 2016
+    label: "Phase II"
+    pre_label: "Phase I"
+
+engine_families:
+
+  - code: H4Bt
+    fuel_type: petrol
+    timing_drive: chain
+    displacements:
+      - code: "0.9_TCE"
+        year_range: [2013, 2019]
+        displacement_cc: 898
+        search_alias: ["0.9 TCE", "900 TCE"]
+
+  - code: H5Ft
+    fuel_type: petrol
+    timing_drive: chain
+    displacements:
+      - code: "1.2_TCE"
+        year_range: [2013, 2018]
+        displacement_cc: 1197
+        search_alias: ["1.2 TCE", "1.2 turbo"]
+
+  - code: D4F
+    fuel_type: petrol
+    timing_drive: belt
+    displacements:
+      - code: "1.2_NA"
+        year_range: [2013, 2018]   # Clio IV phase-II still offered 1.2 16v in several markets
+        displacement_cc: 1149
+        search_alias: ["1.2 16V", "1.2 benzinli"]
+
+  - code: K9K
+    fuel_type: diesel
+    timing_drive: belt   # K9K (1.5 dCi) uses a toothed timing belt (not cam chain)
+    displacements:
+      - code: "1.5_DCI"
+        year_range: [2013, 2019]
+        displacement_cc: 1461
+        search_alias: ["1.5 dCi", "1.5 dizel"]
+        power_variants:
+          - hp: 75
+            label: "75 hp"
+            search_alias: ["75 hp", "75 bg", "75 beygir"]
+          - hp: 90
+            label: "90 hp"
+            search_alias: ["90 hp", "90 bg", "90 beygir"]
+          - hp: 110
+            label: "110 hp"
+            search_alias: ["110 hp", "110 bg", "110 beygir"]
+
+transmissions:
+  - code: EDC6
+    type: dual_clutch_6speed_dry
+    # Clio MK4 EDC on 1.2 TCe / 1.5 dCi is 6-speed (not 7-speed EDC used on newer platforms).
+    compatible_displacements: ["1.2_TCE", "1.5_DCI"]
+    year_range: [2013, 2019]
+    search_alias: ["EDC", "EDC6", "6 EDC", "6-speed EDC"]
+  - code: JR5
+    type: manual_5speed
+    compatible_displacements: ["0.9_TCE", "1.2_TCE", "1.2_NA", "1.5_DCI"]
+    year_range: [2013, 2019]
+

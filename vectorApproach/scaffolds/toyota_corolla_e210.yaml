@@ -1,0 +1,79 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Vehicle Knowledge Scaffold — Toyota Corolla E210 (12th Generation)
+# ──────────────────────────────────────────────────────────────────────────────
+# Focus: 2018–Present
+# Engines: 1.8 Hybrid (2ZR-FXE), 1.2T (8NR-FTS), 1.6 NA (1ZR-FAE), 2.0 Dynamic Force
+# Transmissions: e-CVT, Direct Shift CVT, 6MT
+
+meta:
+  make: Toyota
+  model: Corolla
+  generation: 12th Gen (E210)
+  slug: toyota_corolla_e210
+  corpus_years: [2018, 2026]
+
+engine_families:
+  - code: ZR_SERIES
+    common_name: ZR Engine
+    fuel_type: hybrid_petrol
+    timing_drive: chain
+    displacements:
+      - code: 1.8_HYBRID
+        search_alias: ["1.8 Hybrid", "1.8 HEV", "Hybrid", "2ZR-FXE"]
+        year_range: [2018, 2026]
+      - code: 1.6_VALVEMATIC
+        search_alias: ["1.6 Valvematic", "1.6 NA", "1ZR-FAE", "1.6 Atmosferik"]
+        year_range: [2018, 2022]
+
+  - code: NR_SERIES
+    common_name: NR Turbo
+    fuel_type: petrol
+    timing_drive: chain
+    displacements:
+      - code: 1.2_TURBO
+        search_alias: ["1.2 Turbo", "1.2T", "8NR-FTS"]
+        year_range: [2018, 2022]
+
+  - code: DYNAMIC_FORCE
+    common_name: M Series
+    fuel_type: petrol
+    timing_drive: chain
+    displacements:
+      - code: 1.5_DYNAMIC_FORCE
+        search_alias: ["1.5 Dynamic Force", "1.5 Vision", "1.5 Dream", "M15A-FKS", "3 silindir"]
+        year_range: [2020, 2026]
+      - code: 2.0_HYBRID
+        search_alias: ["2.0 Hybrid", "2.0 HEV", "M20A-FXS"]
+        year_range: [2019, 2026]
+
+transmissions:
+  - code: E-CVT
+    type: power_split_device
+    compatible_displacements: ["1.8_HYBRID", "2.0_HYBRID"]
+    year_range: [2018, 2026]
+  - code: DIRECT_SHIFT_CVT
+    type: cvt_with_launch_gear
+    compatible_displacements: ["1.5_DYNAMIC_FORCE", "2.0_HYBRID", "1.2_TURBO"]
+    year_range: [2019, 2026]
+  - code: MULTIDRIVE_S
+    type: cvt
+    compatible_displacements: ["1.6_VALVEMATIC", "1.5_DYNAMIC_FORCE"]
+    year_range: [2018, 2026]
+  - code: MANUAL_6
+    type: manual_6speed
+    compatible_displacements: ["1.2_TURBO", "1.6_VALVEMATIC", "1.5_DYNAMIC_FORCE"]
+    year_range: [2018, 2026]
+
+performance_trims:
+  tokens: ["GR-Sport", "GR Corolla", "Apex Edition"]
+
+facelifts:
+  - year: 2023
+    label: "5th Gen Hybrid Update"
+    description: "Introduction of 5th Gen Hybrid system, lithium-ion battery across range, and new infotainment."
+
+# Technical Backbone Issues (Ground Truth for verification)
+# 1. Exhaust Heat Exchanger Leak (1.8 Hybrid - Coolant loss)
+# 2. Hybrid Battery Cooling Fan Filter (Clogging/Overheat)
+# 3. 12V Battery Drainage (Deep discharge issues)
+# 4. Infotainment 'R-Link' style lag (Pre-2023 models)
