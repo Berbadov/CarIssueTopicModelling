@@ -44,6 +44,8 @@ Not allowed (issue-level):
 - Turkish forum STM pipeline: complete and stable; do not retrain without explicit reason.
 - UK STM pipeline: in progress.
 - UK STM bug to remember: remove empty DFM rows **before** `convert(..., to="stm")` to keep document/covariate alignment.
+- VectorApproach hotfix (2026-04-22): retrieval now uses EN+TR neutral probes with strict+broad filters; ranking now treats oil-consumption and DQ200/DSG/mechatronic fault phrasing as issue evidence and keeps explicit wrong-engine chunks out of final results.
+- Clio MK4 scaffold correction (2026-04-22): `K9K 1.5_DCI` remains timing-belt, EDC pairing is `EDC6` (6-speed), and `1.2_NA` carryover window updated to 2018.
 
 ## 6) Non-Revisit Decisions
 
