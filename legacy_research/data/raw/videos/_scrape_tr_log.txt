@@ -1,16 +1,0 @@
-2026-04-20 23:11:29,255 - INFO - Collecting candidates for 'VW Golf MK7'...
-2026-04-20 23:11:29,255 - INFO - Searching YouTube for: 'VW Golf MK7 kronik sorunları'
-2026-04-20 23:11:31,596 - INFO - Searching YouTube for: 'VW Golf MK7 kronik arızaları'
-2026-04-20 23:11:33,831 - INFO - Searching YouTube for: 'VW Golf MK7 bilinen arızaları'
-2026-04-20 23:11:35,940 - INFO - Searching YouTube for: 'VW Golf MK7 ikinci el alırken nelere dikkat'
-2026-04-20 23:11:38,710 - INFO - Searching YouTube for: 'VW Golf MK7 uzun dönem kullanım'
-2026-04-20 23:11:40,703 - INFO - Searching YouTube for: 'VW Golf MK7 sahibinden şikayetleri'
-2026-04-20 23:11:42,572 - INFO - Collected 137 unique candidates from 6 queries
-2026-04-20 23:11:42,572 - INFO - Applied min view floor (20,000): dropped 39 low-view videos
-2026-04-20 23:11:42,575 - INFO - Scaffold: fuzzy-matched 'vw_golf.yaml' for slug 'vw_golf_mk7_tr'
-2026-04-20 23:11:42,607 - INFO - Cross-brand title filter rejected 60 videos (foreign_brand:ford=1, off_topic_title=30, wrong_generation=24, wrong_model=5)
-2026-04-20 23:11:42,610 - INFO - Wrote 60 rejected candidates → D:\CarIssueTopicModelling\data\raw\videos\vw_golf_mk7_tr_rejected.json
-2026-04-20 23:11:42,610 - INFO - Selected 10 videos (from 10 qualifying, 137 total candidates)
-2026-04-20 23:11:42,610 - INFO - Fetching transcripts for 10 videos...
-Fetching transcripts:   0%|          | 0/10 [00:00<?, ?it/s]Fetching transcripts:  10%|█         | 1/10 [00:04<00:36,  4.08s/it]Fetching transcripts:  20%|██        | 2/10 [00:08<00:32,  4.09s/it]Fetching transcripts:  30%|███       | 3/10 [00:13<00:32,  4.62s/it]Fetching transcripts:  40%|████      | 4/10 [00:17<00:26,  4.35s/it]Fetching transcripts:  50%|█████     | 5/10 [00:21<00:22,  4.40s/it]Fetching transcripts:  60%|██████    | 6/10 [00:26<00:18,  4.63s/it]Fetching transcripts:  70%|███████   | 7/10 [00:32<00:14,  4.83s/it]Fetching transcripts:  80%|████████  | 8/10 [00:36<00:09,  4.60s/it]Fetching transcripts:  90%|█████████ | 9/10 [00:40<00:04,  4.46s/it]Fetching transcripts: 100%|██████████| 10/10 [00:45<00:00,  4.76s/it]Fetching transcripts: 100%|██████████| 10/10 [00:45<00:00,  4.58s/it]
-2026-04-20 23:12:28,501 - INFO - Saved 10 videos (5 with transcripts) → D:\CarIssueTopicModelling\data\raw\videos\vw_golf_mk7_tr_raw.json
