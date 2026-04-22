@@ -3,10 +3,15 @@
 /data_processed/
 /chroma_db/
 /outputs/
+legacy_research/data/
 
-# Agent related files
+# Agent and Internal Research related files
 agents.md
 agent*.md
+.claude/
+.github/
+readmeguide.txt
+.readmeguide.txt
 
 # Irrelevant files and logs
 *.log
