@@ -8,6 +8,9 @@ legacy_research/data/
 # Agent and Internal Research related files
 agents.md
 agent*.md
+CLAUDE.md
+GEMINI.md
+TODO.md
 .claude/
 .github/
 readmeguide.txt
