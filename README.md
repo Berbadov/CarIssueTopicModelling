@@ -232,8 +232,8 @@ ChromaDB returns JSON-ranked chunks organized by tier, where Tier 1 represents t
 ## 4. Results & Benchmarks
 
 **Key Performance Metric:**
-> **Improved nDCG@10 by 38%** vs. STM/BERTopic baseline on 1,200+ forum posts across 2 languages (TR/EN).
-> *Scope: Technical 'Backbone' issue discovery for Toyota Corolla E210 (1.8 Hybrid) and VW Golf MK7 (1.4 TSI).*
+> **Increased distinct issue discovery by 4.5x** (60+ vs. 13) compared to the STM/BERTopic baseline on 1,200+ forum posts.
+> **Improved Factuality to 93%+** by eliminating engine-scope hallucinations (e.g., misassigning timing belts/chains) through structured RAG filtering.
 
 The following table summarizes recent pipeline runs, evaluating multilingual extraction precision, technical accuracy filtering, and issue-signal identification across three vehicle configurations.
 
