@@ -21,7 +21,7 @@ The **VectorApproach** is the current production pipeline. It delivers equal or 
 
 The following is a complete technical extraction for a **2016 Renault Clio 4 1.2 TCe (180,000 km)**, generated purely from semantically matched YouTube transcripts.
 
-```markdown
+
 ### Issue 1: Excessive Oil Consumption & Catastrophic Engine Failure
 **Source (Pipeline):** Tier 1 Priority (Video Xsh3AZ8Jh3M)
 **Extracted Text:** "the 1.2 liter turbo petrol engine does seem to have some problems with oil
@@ -66,7 +66,7 @@ The combination of the H5Ft engine (prone to fatal oil consumption) and the 6DCT
 EDC transmission (prone to clutch and TCU failures) means this specific drivetrain requires
 meticulous service history verification. Peripheral electrical issues (R-Link, fuel gauges,
 starter faults) further compound high-mileage risks.
-```
+
 
 ---
 
